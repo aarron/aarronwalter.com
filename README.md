@@ -1,1 +1,2 @@
-The personal website of a guy names Aarron Walter. 
+The personal website of a guy named Aarron Walter. 
+
