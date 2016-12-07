@@ -1,0 +1,74 @@
+@import url("http://cloud.typography.com/727400/650722/css/fonts.css");
+* {font-family: 'Whitney A', 'Whitney B', Arial, sans-serif; font-weight: 400; font-style: normal; font-size:18px; color:#474747;}
+body {margin:0; padding:0;}
+h1 {margin:0 0 20px 0; font-size:56px; font-family: 'Knockout 69 A', 'Knockout 69 B', Arial, sans-serif; font-weight: 400; font-style: normal; line-height:.95em; text-transform:uppercase; text-align:center; letter-spacing:0.003em;}
+h2 {margin-top:40px; margin-bottom:10px; padding-bottom:10px; font-size:38px; font-family: 'Knockout 69 A', 'Knockout 69 B'; font-weight: 400; font-style: normal; text-transform:uppercase; letter-spacing:0.01em;}
+ul {margin:0; padding:0; list-style:none;}
+li {margin:10px 0;}
+a {text-decoration:none;}
+.leadin {margin:0 0 60px 0; font-family: 'Whitney A', 'Whitney B', Arial, sans-serif; font-weight:400; font-size:24px; text-align:center;}	
+.leadin a {font-size:24px;}	
+
+#main {margin-left:auto; margin-right:auto; max-width:315px;}
+section {padding:0 0 20px 0;}
+header {margin:30px 0;}
+footer {margin:60px 0 0 0; padding:30px 0;}
+footer div {margin:5px 0 15px 0; font-size:16px;}
+.logo {display:block; margin:60px auto 20px;}
+.hide {display:none;}
+.small {font-size:14px;}
+strong {font-weight:bold; color:#010101;}
+em {font-style:italic;}
+
+/*Color 
+red: #F15A57
+dark blue: #426EB5
+light blue: #53A3DA
+dark grey: #010101
+*/
+body {background:#fff; color:#fff;}
+h1 {color:#010101;}
+h2 {color:; border-bottom:1px dotted #ddd; text-align:center;}
+.leadin {margin:auto; color:#999;}
+a, a:link {color:#F15A57;}
+a:active, a:focus, a:hover {color:#010101; text-decoration:underline;}
+a:visited {color:#f38b89;}
+footer {background:#ddd; color:#fff; text-align:center;}
+footer, footer span {color:#eee;}
+footer div {color:#999;}
+.ornament {
+	display:block; margin:10px auto;
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+.ornament:hover {filter: none; -webkit-filter: grayscale(0);}
+.past {margin-top:30px; text-align:center; color:#999;}
+
+/* Forms */
+.form * {font-size:24px; color:#010101; line-height:1.5em;}
+.form input, .form textarea, .wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select {display:inline; width:95%; padding:3px; border:0; border-bottom:1px dotted #010101; color:#666;}
+textarea {display:block;}
+.button, .button.submit, input.btTxt {display:block; background:none transparent; border-radius:4px; border:2px solid #426EB5; color:#426EB5 !important; font-size:20px; padding:8px 16px; text-align:center; text-transform:uppercase;}
+.button:hover, .button:active {text-decoration:none; background:#426EB5; color:#fff !important;}
+
+/* Wufoo */
+form.wufoo {width:290px; margin:auto;}
+#logo a {margin:60px auto 30px; background:url("http://aarronwalter.com/logo/logo.png") no-repeat center;}
+.wufoo, .wufoo label.desc, .wufoo legend.desc {font-family: 'Whitney A', 'Whitney B', Arial, sans-serif; font-weight: 400; font-style: normal; font-size:18px;}
+#errorLi {border:0;}
+input.text, input.search, textarea.textarea {background:none;}
+.wufoo input.btTxt{width:97%; font-size:24px; padding:8px 16px; text-align:center;}
+#errorMsgLbl, form li.error .desc {color:#F15A57 !important;}
+form p.error, #errorMsg, form li.error p.error {display:none;}
+form li.error {padding:10px;}
+.wufoo h2 {border:0; text-transform:none;}
+#header h2 {display:none;}
+
+/* Respond */
+@media all and (max-width:640px){
+	#main {max-width:90%;}
+	h2 {font-size:42px;}
+	* {font-size:20px;}
+	.leadin {max-width:320px;}
+}
