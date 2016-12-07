@@ -45,6 +45,7 @@ footer div {color:#999;}
 .ornament:hover {filter: none; -webkit-filter: grayscale(0);}
 .past {margin-top:30px; text-align:center; color:#999;}
 
+
 /* Forms */
 .form * {font-size:24px; color:#010101; line-height:1.5em;}
 .form input, .form textarea, .wufoo input.text, .wufoo textarea.textarea, .wufoo input.file, .wufoo select.select {display:inline; width:95%; padding:3px; border:0; border-bottom:1px dotted #010101; color:#666;}
