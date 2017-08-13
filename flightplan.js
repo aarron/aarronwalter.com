@@ -3,8 +3,8 @@ var plan = require('flightplan');
 // configuration
 plan.target('production', [
   {
-    host: 'aarronwalter.com',
-    username: 'aarronwalter.com@s30771.gridserver.com',
+    host: 's30771.gridserver.com',
+    username: 'aarronwalter.com',
     port: 22,
     agent: process.env.SSH_AUTH_SOCK
   },
