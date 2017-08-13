@@ -5,7 +5,7 @@ plan.target('production', [
   {
     host: 'aarronwalter.com',
     username: 'aarronwalter.com@s30771.gridserver.com',
-    port: 2222,
+    port: 22,
     agent: process.env.SSH_AUTH_SOCK
   },
 ]);
@@ -19,5 +19,5 @@ plan.local(function(local) {
   local.log('Copy files to remote hosts');
   var filesToCopy = local.exec('git ls-files', {silent: true});
   // rsync files to all the destination's hosts
-  local.transfer(filesToCopy, '/home/30771/users/.home/domains/aarronwalter.com/html');
+  local.transfer(filesToCopy, 'domains/aarronwalter.com/html');
 });
