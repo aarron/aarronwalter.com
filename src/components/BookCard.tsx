@@ -8,6 +8,7 @@ export interface BookMeta {
   coverUrl?: string | null
   firstPublished?: number
   subjects?: string[]
+  description?: string | null
 }
 
 interface Props {
@@ -40,7 +41,9 @@ export default function BookCard({ book, meta, onOpen }: Props) {
             style={{ display: imgValid === false ? 'none' : undefined }}
             onLoad={e => {
               const img = e.currentTarget
-              setImgValid(img.naturalWidth > 1 && img.naturalHeight > 1)
+              // OL serves a 1×1 GIF for missing covers — reject those specifically.
+              // SVGs and all other real images are accepted on successful load.
+              setImgValid(!(img.naturalWidth === 1 && img.naturalHeight === 1))
             }}
             onError={() => setImgValid(false)}
           />

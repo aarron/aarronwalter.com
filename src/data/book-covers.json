@@ -1,13 +1,13 @@
 {
   "Play It Loud::Brad Tolinski and Alan di Perna": {
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780385685825-M.jpg",
-    "firstPublished": 2016,
-    "subjects": []
+    "coverUrl": "https://m.media-amazon.com/images/I/61nvxOUIoqL._SY522_.jpg",
+    "description": null
   },
   "The Name of This Band Is R.E.M.::Peter Ames Carlin": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14829351-M.jpg",
     "firstPublished": 2024,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "The Old Guard::Greg Rucka": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14643262-M.jpg",
@@ -18,7 +18,8 @@
       "Mercenary troops",
       "Imaginary wars and battles",
       "Comic books, strips"
-    ]
+    ],
+    "description": "\"This is a fairy tale of blood and bullets.  It is a story about time, and age, and ages, and about friendship, and love, and regret.  It is a story of two women and three men who cannot die.  Mostly.  Their names are Andy, Nicky, Joe, Booker, and Nile.  They are soldiers, and their war never ends.  They've been everywhere, seen everything, and fought in virtually every conflict through the present day."
   },
   "Clapton: The Autobiography::Eric Clapton": {
     "coverUrl": "https://covers.openlibrary.org/b/id/4691613-M.jpg",
@@ -29,7 +30,8 @@
       "Biography & Autobiography",
       "Biography",
       "nyt:paperback-nonfiction=2008-06-15"
-    ]
+    ],
+    "description": null
   },
   "Travels with Charley::John Steinbeck": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8219483-M.jpg",
@@ -40,14 +42,16 @@
       "Biography",
       "American Authors",
       "Journeys"
-    ]
+    ],
+    "description": "A quest across America, from the northernmost tip of Maine to California's Monterey Peninsula To hear the speech of the real America, to smell the grass and the tress, to see the colors and the light—these were John Steinbeck's goals as he set out, at the age of fifty-eight, to rediscover the country he had been writing about for so many years."
   },
   "Led Zeppelin::Bob Spitz": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12448084-M.jpg",
     "firstPublished": 2021,
     "subjects": [
       "Music, history and criticism"
-    ]
+    ],
+    "description": null
   },
   "The Old Guard: Tales Through Time::Greg Rucka": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13826472-M.jpg",
@@ -58,7 +62,8 @@
       "Comic books, strips",
       "Mercenary troops",
       "Immortalism"
-    ]
+    ],
+    "description": null
   },
   "The Beatles::Bob Spitz": {
     "coverUrl": "https://covers.openlibrary.org/b/id/190385-M.jpg",
@@ -69,7 +74,8 @@
       "Musicians",
       "Rock music",
       "Biography"
-    ]
+    ],
+    "description": "Even before the Beatles hit the big time, a myth was created. This version of the Beatles legend smoothed the rough edges and filled in the fault lines, and for more than forty years this manicured version of the Beatles story has sustained as truth - until now.\r\n\r\nThe product of almost a decade of research, hundreds of unprecedented interviews, and the discovery of scores of never-before-revealed documents, Bob Spitz's The Beatles is the biography fans have been waiting for -- a vast, complete …"
   },
   "Surrender: 40 Songs, One Story::Bono": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12983763-M.jpg",
@@ -77,7 +83,8 @@
     "subjects": [
       "nyt:combined-print-and-e-book-nonfiction=2022-11-20",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "The White Tiger::Aravind Adiga": {
     "coverUrl": "https://covers.openlibrary.org/b/id/2787359-M.jpg",
@@ -88,7 +95,8 @@
       "Chauffeurs",
       "Poor",
       "Businesspeople"
-    ]
+    ],
+    "description": "Balram Halwai is a complicated man. Servant. Philosopher. Entrepreneur. Murderer. Over the course of seven nights, by the scattered light of a preposterous chandelier, Balram tells the terrible and transfixing story of how he came to be a success in life -- having nothing but his own wits to help him along."
   },
   "The Hound of the Baskervilles::Arthur Conan Doyle": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8063264-M.jpg",
@@ -99,7 +107,8 @@
       "mires",
       "tors",
       "tombs"
-    ]
+    ],
+    "description": "The Hound of the Baskervilles is the third of the four crime novels by British writer Arthur Conan Doyle featuring the detective Sherlock Holmes. Originally serialised in The Strand Magazine from August 1901 to April 1902, it is set in 1889 largely on Dartmoor in Devon in England's West Country and tells the story of an attempted murder inspired by the legend of a fearsome, diabolical hound of supernatural origin. Holmes and Watson investigate the case."
   },
   "Born to Run::Bruce Springsteen": {
     "coverUrl": "https://covers.openlibrary.org/b/id/962287-M.jpg",
@@ -110,7 +119,8 @@
       "Greyhound racing",
       "Juvenile fiction",
       "Greyhounds"
-    ]
+    ],
+    "description": "There was something inside the bag, squeaking and squealing in terror. Patrick didn't think about it. He leaped into the canal.\" For Best Mate, being rescued is only the start of his adventures. From unwanted burden to favourite companion, and from pet to champion race dog, this remarkable greyhound proves that it's not just cats who have more than one life. Cast aside, kidnapped, or living rough on the streets, Best Mate can always find a way to survive. But will he ever find a real home?"
   },
   "Last Train to Memphis::Peter Guralnick": {
     "coverUrl": "https://covers.openlibrary.org/b/id/188916-M.jpg",
@@ -121,7 +131,8 @@
       "Zabavna glasba",
       "Childhood and youth",
       "Biography"
-    ]
+    ],
+    "description": "I have been a fan of Elvis Presley for many years now. But some of the things in this biography of him I did not know. Many things I did. It is a very well written book on Elvis . And I would recommend it to any Elvis fan who wants to know more about him. Many photos I loved. Peggy Myers."
   },
   "Journal of a Solitude::May Sarton": {
     "coverUrl": "https://covers.openlibrary.org/b/id/248674-M.jpg",
@@ -132,7 +143,8 @@
       "Diaries",
       "American Authors",
       "Biography"
-    ]
+    ],
+    "description": "\"I am here alone for the first time in weeks,\" May Sarton begins this book, \"to take up my 'real' life again at last. That is what is strange—that friends, even passionate love,are not my real life, unless there is time alone in which to explore what is happening or what has happened.\" In this journal, she says, \"I hope to break through into the rough, rocky depths,to the matrix itself. There is violence there and anger never resolved."
   },
   "Between Two Fires::Christopher Buehlman": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8441116-M.jpg",
@@ -142,7 +154,8 @@
       "France, fiction",
       "Fiction, horror",
       "Black Death -- Europe"
-    ]
+    ],
+    "description": "And Lucifer said: “Let us rise against Him now in all our numbers, and pull the walls of heaven down…”\r\n\r\nThe year is 1348.\r\n\r\nThomas, a disgraced knight, has found a young girl alone in a dead Norman village. An orphan of the Black Death, and an almost unnerving picture of innocence, she tells Thomas that plague is only part of a larger cataclysm—that the fallen angels under Lucifer are rising in a second war on heaven, and that the world of men has fallen behind the lines of conflict."
   },
   "The Orchard Keeper::Cormac McCarthy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9158770-M.jpg",
@@ -153,7 +166,8 @@
       "Community life -- Fiction",
       "Fiction, psychological",
       "Tennessee, fiction"
-    ]
+    ],
+    "description": "'The Orchard Keeper' tells of John Wesley Rattner, a young boy, and Marion Sylder, an outlaw and bootlegger who, unbeknownst to either of them, has killed the boy's father."
   },
   "Life::Keith Richards": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9069548-M.jpg",
@@ -164,7 +178,8 @@
       "Quartos",
       "Bibliography",
       "Problems, exercises"
-    ]
+    ],
+    "description": "\"Richard is King. A monarch ordained by God to lead his people. But he is also a man of very human weakness. A man whose vanity threatens to divide the great houses of England and drag his people into a dynastic civil war that will last 100 years\"--Container."
   },
   "1177 B.C.: The Year Civilization Collapsed::Eric Cline": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13046612-M.jpg",
@@ -175,7 +190,8 @@
       "Civilization",
       "Sea Peoples",
       "History"
-    ]
+    ],
+    "description": "In 1177 B.C., marauding groups known only as the \"Sea Peoples\" invaded Egypt. The pharaoh’s army and navy managed to defeat them, but the victory so weakened Egypt that it soon slid into decline, as did most of the surrounding civilizations. After centuries of brilliance, the civilized world of the Bronze Age came to an abrupt and cataclysmic end. Kingdoms fell like dominoes over the course of just a few decades. No more Minoans or Mycenaeans. No more Trojans, Hittites, or Babylonians."
   },
   "This Is Your Mind on Plants::Michael Pollan": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10512625-M.jpg",
@@ -186,12 +202,14 @@
       "Mescaline",
       "Caffeine",
       "nyt:paperback-nonfiction=2022-08-07"
-    ]
+    ],
+    "description": "Three essays, each oriented around a psychotropic drug: poppy growing, coffee drinking and mescaline healing."
   },
   "Hamnet::Maggie O'Farrell": {
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9798779507295-M.jpg",
     "firstPublished": 2021,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "Zen and the Art of Motorcycle Maintenance::Robert M. Pirsig": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10673266-M.jpg",
@@ -202,7 +220,8 @@
       "Description and travel",
       "Fathers and sons",
       "Journeys"
-    ]
+    ],
+    "description": "\"The real cycle you're working on is a cycle called 'yourself.'\"One of the most important and influential books of the past half-century, Robert M. Pirsig's Zen and the Art of Motorcycle Maintenance is a powerful, moving, and penetrating examination of how we live and a meditation on how to live better. The narrative of a father on a summer motorcycle trip across America's Northwest with his young son, it becomes a profound personal and philosophical odyssey into life's fundamental questions."
   },
   "Buckeye::Patrick Ryan": {
     "coverUrl": "https://covers.openlibrary.org/b/id/15119658-M.jpg",
@@ -213,7 +232,8 @@
       "Literary Fiction",
       "Historical",
       "War"
-    ]
+    ],
+    "description": "**One town. Two families. A secret that changes everything.**\r\n\r\nIn Bonhomie, Ohio, a stolen moment of passion, sparked in the exuberant aftermath of the Allied victory in Europe, binds Cal Jenkins, a man wounded not in war but by his inability to serve in it, to Margaret Salt, a woman trying to obscure her past. Cal’s wife, Becky, has a spiritual gift: She is a seer who can conjure the dead, helping families connect with those they’ve lost."
   },
   "Pride and Prejudice::Jane Austen": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14348537-M.jpg",
@@ -224,7 +244,8 @@
       "Brothers and sisters",
       "Courtship",
       "Drama"
-    ]
+    ],
+    "description": "Pride and Prejudice is an 1813 novel of manners written by Jane Austen. The novel follows the character development of Elizabeth Bennet, the dynamic protagonist of the book who learns about the repercussions of hasty judgments and comes to appreciate the difference between superficial goodness and actual goodness.\r\n\r\nMr. Bennet, owner of the Longbourn estate in Hertfordshire, has five daughters, but his property is entailed and can only be passed to a male heir."
   },
   "Hamlet::Gareth Hinds": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8281954-M.jpg",
@@ -235,7 +256,8 @@
       "Reyes, reinas, soberanos",
       "Venganza",
       "History and criticism"
-    ]
+    ],
+    "description": "In this quintessential Shakespeare tragedy, a young prince's halting pursuit of revenge for the murder of his father unfolds in a series of highly charged confrontations that have held audiences spellbound for nearly four centuries. Those fateful exchanges, and the anguished soliloquies that precede and follow them, probe depths of human feeling rarely sounded in any art."
   },
   "The Demon of Unrest::Erik Larson": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14815012-M.jpg",
@@ -243,7 +265,8 @@
     "subjects": [
       "nyt:combined-print-and-e-book-nonfiction=2024-05-19",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "The Right Stuff::Tom Wolfe": {
     "coverUrl": "https://covers.openlibrary.org/b/id/3326778-M.jpg",
@@ -254,7 +277,8 @@
       "Large type books",
       "HISTORY / United States / 20th Century",
       "TECHNOLOGY & ENGINEERING / Aeronautics & Astronautics"
-    ]
+    ],
+    "description": null
   },
   "The Devil in the White City::Erik Larson": {
     "coverUrl": "https://covers.openlibrary.org/b/id/541027-M.jpg",
@@ -265,7 +289,8 @@
       "Open Library Staff Picks",
       "Serial murders",
       "Nonfiction"
-    ]
+    ],
+    "description": "From back cover: Bringing Chicago circa 1893 to vivid life, Erik Larson's spell-binding bestseller intertwines the true tale of two men - the brilliant architect behind the legendary 1893 World's Fair, striving to secure America's place in the world; and the cunning serial killer who used the fair to lure his victims to their death."
   },
   "Les Misérables::Victor Hugo": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12721865-M.jpg",
@@ -276,7 +301,8 @@
       "Readers",
       "Fiction, historical",
       "France, fiction"
-    ]
+    ],
+    "description": "In this story of the trials of the peasant Jean Valjean--a man unjustly imprisoned, baffled by destiny, and hounded by his nemesis, the magnificently realized, ambiguously malevolent police detective Javert--Hugo achieves the sort of rare imaginative resonance that allows a work of art to transcend its genre."
   },
   "Don Quixote::Miguel de Cervantes": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14428305-M.jpg",
@@ -287,7 +313,8 @@
       "Knights and knighthood",
       "Social life and customs",
       "Fiction"
-    ]
+    ],
+    "description": "*Don Quijote de la Mancha* es una novela escrita por el español Miguel de Cervantes Saavedra. Publicada su primera parte con el título de *El ingenioso hidalgo don Quijote de la Mancha* a comienzos de 1605, es la obra más destacada de la literatura española y una de las principales de la literatura universal."
   },
   "Terms of Endearment::Larry McMurtry": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10232518-M.jpg",
@@ -298,7 +325,8 @@
       "Mothers and daughters",
       "Cancer",
       "Fiction in English"
-    ]
+    ],
+    "description": "Aurora is the kind of woman who makes the whole world orbit around her, including a string of devoted suitors. Widowed and overprotective of her daughter, Aurora adapts at her own pace until life sends two enormous challenges her way: Emma’s hasty marriage and subsequent battle with cancer."
   },
   "Henry V::Dan Jones": {
     "coverUrl": "https://covers.openlibrary.org/b/id/7420215-M.jpg",
@@ -309,7 +337,8 @@
       "History",
       "Sources",
       "Stage history"
-    ]
+    ],
+    "description": "Introducing this edition, Gary Taylor shows how Shakespeare shaped his historical material, examines controversial critical interpretations, discusses the play's fluctuating fortunes in performance, and analyses the range and variety of Shakespeare's characterization. The first Folio text is radically rethought, making original use of the First Quarto (1600)."
   },
   "Salvage the Bones::Jesmyn Ward": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6906262-M.jpg",
@@ -320,7 +349,8 @@
       "Motherless families",
       "African American families",
       "African American children"
-    ]
+    ],
+    "description": "They heard it on the radio. A hurricane is coming, threatening the town of Bois Sauvage, Mississippi. Esch's hard-drinking father can feel it in his bones. Esch and her brothers are trying to help prepare, but there are other worries too. Skeetah is watching his prized pit bull, helpless as her new litter dies one by one. Randall, when not preoccupied with basketball, is busy looking after the youngest, Junior. And Esch, fifteen and motherless among men, has just realized that she's pregnant."
   },
   "Martyr!::Kaveh Akbar": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14562207-M.jpg",
@@ -329,7 +359,8 @@
       "American literature",
       "nyt:hardcover-fiction=2024-02-11",
       "New York Times bestseller"
-    ]
+    ],
+    "description": "God may give the toughest battles to the strongest warriors, but not always."
   },
   "Seabiscuit::Laura Hillenbrand": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6792427-M.jpg",
@@ -340,7 +371,8 @@
       "Seabiscuit (Race horse)",
       "Biography",
       "Open Library Staff Picks"
-    ]
+    ],
+    "description": "Retraces the journey of Seabiscuit, a horse with crooked legs and a pathetic tail that made racing history in 1938, thanks to the efforts of a trainer, owner, and jockey who transformed a bottom-level racehorse into a legend."
   },
   "The Wide Wide Sea::Hampton Sides": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14663913-M.jpg",
@@ -349,12 +381,14 @@
       "Oceania, history",
       "nyt:combined-print-and-e-book-nonfiction=2024-04-28",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "A Wilder Shore::Camille Peri": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14810204-M.jpg",
     "firstPublished": 2024,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "Sackett's Land::Louis L'Amour": {
     "coverUrl": "https://covers.openlibrary.org/b/id/468191-M.jpg",
@@ -365,7 +399,8 @@
       "Western stories",
       "Fiction, westerns",
       "Sackett family (fictitious characters), fiction"
-    ]
+    ],
+    "description": "After discovering six gold Roman coins buried in the mud of the Devil's Dyke, Barnabas Sackett enthusiastically invests in goods that he will offer for trade in America. But Sackett has a powerful enemy: Rupert Genester, nephew of an earl, wants him dead. A battlefield promise made to Sackett's father threatens Genester's inheritance. So on the eve of his departure for America, Sackett is attacked and thrown into the hold of a pirate ship."
   },
   "Little Women::Louisa May Alcott": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8775559-M.jpg",
@@ -376,7 +411,8 @@
       "Soeurs",
       "Sisters",
       "Young women"
-    ]
+    ],
+    "description": "Louisa May Alcotts classic novel, set during the Civil War, has always captivated even the most reluctant readers. Little girls, especially, love following the adventures of the four March sisters--Meg, Beth, Amy, and most of all, the tomboy Jo--as they experience the joys and disappointments, tragedies and triumphs, of growing up. This simpler version captures all the charm and warmth of the original."
   },
   "To the Far Blue Mountains::Louis L'Amour": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6605305-M.jpg",
@@ -385,12 +421,14 @@
       "Sackett family (Fictitious characters)",
       "Frontier and pioneer life",
       "Fiction"
-    ]
+    ],
+    "description": null
   },
   "Vienna::Richard Cockett": {
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9780300266535-M.jpg",
     "firstPublished": 2023,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "Knife::Salman Rushdie": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14457812-M.jpg",
@@ -398,7 +436,8 @@
     "subjects": [
       "nyt:combined-print-and-e-book-nonfiction=2024-05-05",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "Brideshead Revisited::Evelyn Waugh": {
     "coverUrl": "https://covers.openlibrary.org/b/id/2560441-M.jpg",
@@ -409,18 +448,12 @@
       "Family chronicles",
       "Fiction",
       "Friendship"
-    ]
+    ],
+    "description": "The most nostalgic and reflective of Evelyn Waugh's novels, *Brideshead Revisited* looks back to the golden age before the Second World War. It tells the story of Charles Ryder's infatuation with the Marchmains and the rapidly-disappearing world of privilege they inhabit. Enchanted first by Sebastian at Oxford, then by his doomed Catholic family, in particular his remote sister, Julia, Charles comes finally to recognize only his spiritual and social distance from them."
   },
   "Lights On::Anika Harris": {
-    "coverUrl": "https://covers.openlibrary.org/b/id/165032-M.jpg",
-    "firstPublished": 1990,
-    "subjects": [
-      "Social aspects of Football",
-      "Permian High School (Odessa, Tex.)",
-      "Social aspects",
-      "Football",
-      "nyt:sports=2014-08-10"
-    ]
+    "coverUrl": "https://annakaharris.com/wp-content/uploads/2024/10/lights-on-cover.svg",
+    "description": "Return once again to the timeless account of the Permian Panthers of Odessa--the winningest high-school football team in Texas history. Odessa is not known to be a town big on dreams, but the Panthers help keep the hopes and dreams of this small, dusty town going. Socially and racially divided, its fragile economy follows the treacherous boom-bust path of the oil business. In bad times, the unemployment rate barrels out of control; in good times, its murder rate skyrockets."
   },
   "The Perks of Being a Wallflower::Stephen Chbosky": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14315052-M.jpg",
@@ -431,7 +464,8 @@
       "Epistolary fiction",
       "Bildungsromans",
       "Diary novels"
-    ]
+    ],
+    "description": "The Perks of Being a Wallflower is a young adult coming-of-age epistolary novel by American writer Stephen Chbosky, which was first published on February 1, 1999, by Pocket Books. Set in the early 1990s, the novel follows Charlie, an introverted observing teenager, through his freshman year of high school in a Pittsburgh suburb."
   },
   "Blood and Thunder::Hampton Sides": {
     "coverUrl": "https://covers.openlibrary.org/b/id/744812-M.jpg",
@@ -442,14 +476,16 @@
       "Military History",
       "Navajo Indians",
       "Wars"
-    ]
+    ],
+    "description": "Praise for Blood and Thunder\"Kit Carson's role in the conquest of the Navajo during and after the Civil War remains one of the most dramatic and significant episodes in the history of the American West.  Hampton Sides portrays Carson in the larger context of the conquest of the entire West, including his frequent and often lethal encounters with hostile Native Americans."
   },
   "The Bright Sword::Lev Grossman": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14642761-M.jpg",
     "firstPublished": 2024,
     "subjects": [
       "American literature"
-    ]
+    ],
+    "description": null
   },
   "Team of Rivals::Doris Kearns Goodwin": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9286949-M.jpg",
@@ -460,7 +496,8 @@
       "assassination of Abraham Lincoln",
       "secretary of war",
       "1864 presidential election"
-    ]
+    ],
+    "description": "Team of Rivals: The Political Genius of Abraham Lincoln is a 2005 book by Pulitzer Prize-winning American historian Doris Kearns Goodwin, published by Simon & Schuster. The book is a biographical portrait of U.S. President Abraham Lincoln and some of the men who served with him in his cabinet from 1861 to 1865. Three of his Cabinet members had previously run against Lincoln in the 1860 election: Attorney General Edward Bates, Secretary of the Treasury Salmon P."
   },
   "American Pastoral::Philip Roth": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9322643-M.jpg",
@@ -471,7 +508,8 @@
       "Marines",
       "Jewish Americans",
       "History"
-    ]
+    ],
+    "description": "American Pastoral is a Philip Roth novel published in 1997 concerning Seymour \"Swede\" Levov, a successful Jewish American businessman and former high school star athlete from Newark, New Jersey. Levov's happy and conventional upper middle class life is ruined by the domestic social and political turmoil of the 1960s during the presidency of Lyndon B."
   },
   "The Heart Is a Lonely Hunter::Carson McCullers": {
     "coverUrl": "https://covers.openlibrary.org/b/id/394799-M.jpg",
@@ -482,7 +520,8 @@
       "Georgia, fiction",
       "Fiction",
       "Teenage girls"
-    ]
+    ],
+    "description": "Set in 1930s Georgia, the novel centers around a deaf and mute man, John Singer. Singer has been devastated by the loss of his dear friend, Antonapoulos, who was committed to an asylum for bad behavior"
   },
   "Erasure::Percival Everett": {
     "coverUrl": "https://covers.openlibrary.org/b/id/848473-M.jpg",
@@ -493,14 +532,16 @@
       "Fiction",
       "Authorship",
       "African American men"
-    ]
+    ],
+    "description": "Thelonius \"Monk\" Ellison is an erudite, accomplished but seldom-read author who insists on writing obscure literary papers rather than the so-called \"ghetto prose\" that would make him a commercial success. He finally succumbs to temptation after seeing the Oberlin-educated author of We's Lives in da Ghetto during her appearance on a talk show, firing back with a parody called My Pafology, which he submits to his startled agent under the gangsta pseudonym of Stagg R. Leigh."
   },
   "The Last Human Job::Allison Pugh": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14665695-M.jpg",
     "firstPublished": 2024,
     "subjects": [
       "Economics"
-    ]
+    ],
+    "description": null
   },
   "The Devil's Hand::Jack Carr": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10860333-M.jpg",
@@ -511,7 +552,8 @@
       "Fiction, war & military",
       "Terrorism, fiction",
       "Fiction, thrillers, general"
-    ]
+    ],
+    "description": "\"It's been twenty years since 9/11. Two decades since the United States was attacked on home soil and embarked on twenty years of war. The enemy has been patient, learning, and adapting. And the enemy is ready to strike again.  A new president offers hope to a country weary of conflict. He's a young, popular, self-made visionary...but he's also a man with a secret."
   },
   "The Hobbit::J.R.R. Tolkien": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14627509-M.jpg",
@@ -522,7 +564,8 @@
       "Battle of Five Armies",
       "invisibility",
       "thrushes"
-    ]
+    ],
+    "description": "The Hobbit is a tale of high adventure, undertaken by a company of dwarves in search of dragon-guarded gold. A reluctant partner in this perilous quest is Bilbo Baggins, a comfort-loving unambitious hobbit, who surprises even himself by his resourcefulness and skill as a burglar.\r\n\r\nEncounters with trolls, goblins, dwarves, elves, and giant spiders, conversations with the dragon, Smaug, and a rather unwilling presence at the Battle of Five Armies are just some of the adventures that befall Bilbo…"
   },
   "East of Eden::John Steinbeck": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11386937-M.jpg",
@@ -533,7 +576,8 @@
       "domestic fiction",
       "depravity",
       "beneficence"
-    ]
+    ],
+    "description": "Steinbeck considered East of Eden to be his masterpiece. In his journal, Journal of a Novel (often read as a companion to the novel) he notes that “this is the book I have always wanted and have worked and prayed to be able to write Set primarily in the Salinas Valley in the early twentieth century, the novel traces three generations of two families – the Trasks and the Hamiltons – as they grapple with the ever-present forces of good and evil."
   },
   "Prepared::Mike Glover": {
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0521083923-M.jpg",
@@ -543,7 +587,8 @@
       "Great Britain. Army",
       "History",
       "Great britain, army"
-    ]
+    ],
+    "description": null
   },
   "In the Blood::Jack Carr": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12735651-M.jpg",
@@ -554,7 +599,8 @@
       "nonfiction",
       "business & economics",
       "entrepreneurship"
-    ]
+    ],
+    "description": "Bad Blood: Secrets and Lies in a Silicon Valley Startup is a nonfiction book by journalist John Carreyrou, released May 21, 2018. It covers the rise and fall of Theranos, the multibillion-dollar biotech startup headed by Elizabeth Holmes. The book received critical acclaim, winning the 2018 Financial Times and McKinsey Business Book of the Year Award."
   },
   "The Bourne Supremacy::Robert Ludlum": {
     "coverUrl": "https://covers.openlibrary.org/b/id/499498-M.jpg",
@@ -565,14 +611,16 @@
       "Fiction, action & adventure",
       "Terrorists, fiction",
       "Carlos, the jackal, fiction"
-    ]
+    ],
+    "description": null
   },
   "Scary Smart::Mo Gawdat": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14564986-M.jpg",
     "firstPublished": 2021,
     "subjects": [
       "Science"
-    ]
+    ],
+    "description": null
   },
   "The Amazing Adventures of Kavalier & Clay::Michael Chabon": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12745205-M.jpg",
@@ -583,7 +631,8 @@
       "Artists",
       "Artists in fiction",
       "Authorship"
-    ]
+    ],
+    "description": "The novel begins in 1939 with the arrival of 19-year-old Josef \"Joe\" Kavalier as a refugee in New York City, where he comes to live with his 17-year-old cousin Sammy Klayman. Joe escaped from Prague with the help of his teacher Kornblum by hiding in a coffin along with the inanimate Golem of Prague, leaving the rest of his family, including his younger brother Thomas, behind."
   },
   "Catch-22::Joseph Heller": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6468653-M.jpg",
@@ -594,7 +643,8 @@
       "War stories",
       "Fiction",
       "Drama"
-    ]
+    ],
+    "description": "*Catch-22* is like no other novel. It has its own rationale, its own extraordinary character. It moves back and forth from hilarity to horror. It is outrageously funny and strangely affecting. It is totally original. Set in the closing months of World War II in an American bomber squadron off Italy, *Catch-22* is the story of a bombardier named Yossarian, who is frantic and furious because thousands of people he hasn't even met keep trying to kill him."
   },
   "Song of the Dodo::David Quammen": {
     "coverUrl": "https://covers.openlibrary.org/b/id/1019514-M.jpg",
@@ -605,7 +655,8 @@
       "Endangered species",
       "Ecology",
       "Écologie des îles"
-    ]
+    ],
+    "description": "David Quammen's book, The Song of the Dodo, is a brilliant, stirring work, breathtaking in its scope, far-reaching in its message -- a crucial book in precarious times, which radically alters the way in which we understand the natural world and our place in that world. It's also a book full of entertainment and wonders.\r\n\r\nIn The Song of the Dodo, we follow Quammen's keen intellect through the ideas, theories, and experiments of prominent naturalists of the last two centuries."
   },
   "SPQR: A History of Ancient Rome::Mary Beard": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10382021-M.jpg",
@@ -614,7 +665,8 @@
       "nyt:paperback-nonfiction=2016-09-25",
       "New York Times bestseller",
       "Rome, history"
-    ]
+    ],
+    "description": null
   },
   "The Templars::Dan Jones": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10698956-M.jpg",
@@ -622,7 +674,8 @@
     "subjects": [
       "Templars",
       "Military religious orders"
-    ]
+    ],
+    "description": null
   },
   "Project Hail Mary::Andy Weir": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11200092-M.jpg",
@@ -633,7 +686,8 @@
       "sci-fi",
       "hard sci-fi",
       "nyt:hardcover-fiction=2021-05-23"
-    ]
+    ],
+    "description": "Ryland Grace is the sole survivor on a desperate, last-chance mission–and if he fails, humanity and the earth itself will perish. Except that right now, he doesn’t know that. He can’t even remember his own name, let alone the nature of his assignment or how to complete it. All he knows is that he’s been asleep for a very, very long time."
   },
   "The Art Thief::Michael Finkel": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13460657-M.jpg",
@@ -643,12 +697,14 @@
       "Art thefts -- Europe -- History -- 20th century",
       "compulsion",
       "criminal investigation"
-    ]
+    ],
+    "description": "The story of a French couple who stole $2 billion in art from seven countries over eight years to stock their private museum."
   },
   "The Heart in Winter::Kevin Barry": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14642679-M.jpg",
     "firstPublished": 2024,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "Four Lost Cities::Annalee Newitz": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10279529-M.jpg",
@@ -659,7 +715,8 @@
       "Catal mound (turkey)",
       "Pompeii (extinct city)",
       "Angkor (extinct city)"
-    ]
+    ],
+    "description": "\"A quest to explore some of the most spectacular ancient cities in human history--and figure out why people abandoned them. In Four Lost Cities, acclaimed science journalist Annalee Newitz takes readers on an entertaining and mind-bending adventure into the deep history of urban life."
   },
   "The Last Kind Words Saloon::Larry McMurtry": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10234601-M.jpg",
@@ -670,7 +727,8 @@
       "Historical fiction",
       "Fiction, westerns",
       "Fiction, historical"
-    ]
+    ],
+    "description": "A stunning new novel from the bestselling author of Lonesome Dove. The triumphant return of Larry McMurtry with this ballad in prose: his heartfelt tribute to a bygone era of the American West. Larry McMurtry has done more than any other living writer to shape our literary imagination of the American West. With The Last Kind Words Saloon, he returns to the vivid and unsparing portrait of the nineteenth-century and cowboy lifestyle made so memorable in his classic Lonesome Dove."
   },
   "Just Kids::Patti Smith": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6671097-M.jpg",
@@ -681,7 +739,8 @@
       "Women rock musicians",
       "Photographers",
       "Musicians"
-    ]
+    ],
+    "description": "In this memoir, singer-songwriter Patti Smith shares tales of New York City : the denizens of Max's Kansas City, the Hotel Chelsea, Scribner's, Brentano's and Strand bookstores and her new life in Brooklyn with a young man named Robert Mapplethorpe--the man who changed her life with his love, friendship, and genius."
   },
   "How Music Works::David Byrne": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8867987-M.jpg",
@@ -692,7 +751,8 @@
       "Music, psychological aspects",
       "Musicians, biography",
       "Music, social aspects"
-    ]
+    ],
+    "description": "The Rock-and-Roll Hall of Fame inductee and co-founder of Talking Heads presents a celebration of music that offers insight into the roles of time, place, and recording technology, discussing how evolutionary patterns of adaptations and responses to cultural and physical contexts have influenced music expression throughout history and culminated in the 20th century's transformative practices."
   },
   "World Within a Song::Jeff Tweedy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14538958-M.jpg",
@@ -700,7 +760,8 @@
     "subjects": [
       "nyt:combined-print-and-e-book-nonfiction=2023-11-26",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "Set the Boy Free::Johnny Marr": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8846018-M.jpg",
@@ -711,7 +772,8 @@
       "Biography",
       "Guitarists",
       "Rock musicians, great britain"
-    ]
+    ],
+    "description": "\"The memoirs of the legendary guitarist and cofounder of seminal British band The Smiths recalls his childhood in working-class Manchester, his early collaborations with Stephen Morrissey, the ideological differences that triggered his departure and his influential solo career,\"--NoveList.\n\nJohnny Marr was born in 1960s Manchester to Irish emigrant parents and knew from an early age that he would be a musician."
   },
   "The Jazz Men::Larry Tye": {
     "coverUrl": "https://covers.openlibrary.org/b/id/1063312-M.jpg",
@@ -722,7 +784,8 @@
       "Jazz musicians",
       "Percussionists",
       "Jazz"
-    ]
+    ],
+    "description": null
   },
   "For Whom the Bell Tolls::Ernest Hemingway": {
     "coverUrl": "https://covers.openlibrary.org/b/id/2560810-M.jpg",
@@ -733,7 +796,8 @@
       "History",
       "Spanish Civil War",
       "Americans"
-    ]
+    ],
+    "description": "High in the pine forests of the Spanish Sierra, a guerrilla band prepares to blow up a vital bridge. Robert Jordan, a young American volunteer, has been sent to handle the dynamiting. There, in the mountains, he finds the dangers and the intense comradeship of war. And there he discovers Maria, a young woman who has escaped from Franco's rebels."
   },
   "Walden::Henry David Thoreau": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11248037-M.jpg",
@@ -744,7 +808,8 @@
       "American Authors",
       "Social life and customs",
       "Solitude"
-    ]
+    ],
+    "description": "Walden first published in 1854 as Walden; or, Life in the Woods) is a book by American transcendentalist writer Henry David Thoreau. The text is a reflection upon the author's simple living in natural surroundings."
   },
   "Demian::Hermann Hesse": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12569297-M.jpg",
@@ -755,7 +820,8 @@
       "Bildungsromans",
       "Fiction",
       "German fiction"
-    ]
+    ],
+    "description": "A young man awakens to selfhood and to a world of possibilities beyond the conventions of his upbringing in Nobel Prize winner Hermann Hesse’s beloved novel Demian. Emil Sinclair is a quiet boy drawn into a forbidden yet seductive realm of petty crime and defiance. His guide is his precocious, mysterious classmate Max Demian, who provokes in Emil a search for self-discovery and spiritual fulfillment."
   },
   "The Song of the Cell::Siddhartha Mukherjee": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12982914-M.jpg",
@@ -766,7 +832,8 @@
       "Cytology",
       "immunology",
       "Research"
-    ]
+    ],
+    "description": "A history of the cell, and the development of a multiplicity of subsequent cell sciences, biological and medical, with an emphasis on the human."
   },
   "Master Slave Husband Wife::Ilyon Woo": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13151997-M.jpg",
@@ -774,7 +841,8 @@
     "subjects": [
       "nyt:combined-print-and-e-book-nonfiction=2023-02-05",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "How to Live::Sarah Bakewell": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8490284-M.jpg",
@@ -785,7 +853,8 @@
       "Biography",
       "Montaigne, michel de, 1533-1592",
       "Authors, biography"
-    ]
+    ],
+    "description": "How to get on well with people, how to deal with violence, how to adjust to losing someone you love--such questions arise in most people's lives. They are all versions of a bigger question: how do you live? How do you do the good or honourable thing, while flourishing and feeling happy?\r\n\r\nThis question obsessed Renaissance writers, none more than Michel Eyquem de Montaigne (1533-92), perhaps the first truly modern individual."
   },
   "The Conquest of Happiness::Bertrand Russell": {
     "coverUrl": "https://covers.openlibrary.org/b/id/7310879-M.jpg",
@@ -794,12 +863,14 @@
       "Happiness",
       "Glück",
       "Philosophy, british"
-    ]
+    ],
+    "description": null
   },
   "Hands of Time::Rebecca Struthers": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13911778-M.jpg",
     "firstPublished": 2023,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "Jane Eyre::Charlotte Brontë": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8235363-M.jpg",
@@ -810,7 +881,8 @@
       "Historical\"",
       "Man-woman relationships, fiction",
       "Charity schools, fiction"
-    ]
+    ],
+    "description": "The novel is set somewhere in the north of England. Jane's childhood at Gateshead Hall, where she is emotionally and physically abused by her aunt and cousins; her education at Lowood School, where she acquires friends and role models but also suffers privations and oppression; her time as the governess of Thornfield Hall, where she falls in love with her Byronic employer, Edward Rochester; her time with the Rivers family, during which her earnest but cold clergyman cousin, St John Rivers, propo…"
   },
   "Burn Book::Kara Swisher": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14805245-M.jpg",
@@ -819,7 +891,8 @@
       "Economic history",
       "nyt:combined-print-and-e-book-nonfiction=2024-03-17",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "Longitude::Dava Sobel": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13654-M.jpg",
@@ -830,7 +903,8 @@
       "Kendall timekeepers",
       "Lunar distance method",
       "Lunar tables"
-    ]
+    ],
+    "description": "The dramatic human story of an epic scientific quest and of one man's forty-year obsession to find a solution to the thorniest scientific dilemma of the day--\"the longitude problem.\"\r\n\r\nAnyone alive in the eighteenth century would have known that \"the longitude problem\" was the thorniest scientific dilemma of the day-and had been for centuries."
   },
   "The Wars of the Roses::Dan Jones": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12197962-M.jpg",
@@ -841,7 +915,8 @@
       "House of Plantagenet",
       "Wars of the Roses (Great Britain : 1455-1485.)",
       "Great britain, history, wars of the roses, 1455-1485"
-    ]
+    ],
+    "description": "The crown of England changed hands five times over the course of the fifteenth century, as two branches of the Plantagenet dynasty fought to the death for the right to rule. Celebrated historian Dan Jones describes how the longest-reigning British royal family tore itself apart until it was finally replaced by the Tudors."
   },
   "American Gun::Chris Kyle": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8063824-M.jpg",
@@ -852,7 +927,8 @@
       "United States",
       "United States. Army",
       "History"
-    ]
+    ],
+    "description": "In this book, the author, deadliest sniper in U.S. history tracks down and shoots the ten most important American firearms, from a flintlock rifle to a Colt revolver to the latest high-tech weapon he used as a Navy SEAL. He uses these guns as a window on United States history, making the sweeping argument that the American story has been tied to and shaped by the gun."
   },
   "Hatchet::Gary Paulsen": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11240448-M.jpg",
@@ -863,7 +939,8 @@
       "survival",
       "Canada, fiction",
       "Divorce, fiction"
-    ]
+    ],
+    "description": "Brian Robison, a teenage boy struggling through his parents divorce, is flying up north to stay with his dad for the summer. However, his plane crashes and he is forced to survive the Canadian wilderness. Now living in a world completely opposite of his own, he is now able to discover himself in this forsaken and misunderstood beautiful world.\r\n\r\nThe story is continued in \"The River\" \"Brian's Winter\" \"Brian's Return\" and \"The Hunt\""
   },
   "The Song of Achilles::Madeline Miller": {
     "coverUrl": "https://covers.openlibrary.org/b/id/7098465-M.jpg",
@@ -874,7 +951,8 @@
       "Male friendship",
       "Fiction",
       "Gay love"
-    ]
+    ],
+    "description": "This is the story of the seige of Troy from the perspective of Achilles best-friend Patroclus.  Although Patroclus is outcast from his home for disappointing his father he manages to be the only mortal who can keep up with the half-God Archilles.  Even though many will know the facts behind the story the telling is fresh and engaging."
   },
   "Wuthering Heights::Emily Brontë": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12818862-M.jpg",
@@ -885,14 +963,16 @@
       "genre:gothic",
       "British and irish fiction (fictional works by one author)",
       "Children's fiction"
-    ]
+    ],
+    "description": "Wuthering Heights is an 1847 novel by Emily Brontë, initially published under the pseudonym Ellis Bell. It concerns two families of the landed gentry living on the West Yorkshire moors, the Earnshaws and the Lintons, and their turbulent relationships with Earnshaw's adopted son, Heathcliff. The novel was influenced by Romanticism and Gothic fiction."
   },
   "The Musical Human::Michael Spitzer": {
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9781526602787-M.jpg",
     "firstPublished": 2021,
     "subjects": [
       "Music, history and criticism"
-    ]
+    ],
+    "description": null
   },
   "Age of Revolutions::Fareed Zakaria": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14612541-M.jpg",
@@ -900,7 +980,8 @@
     "subjects": [
       "nyt:combined-print-and-e-book-nonfiction=2024-04-14",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "The Rise and Fall of the Dinosaurs::Steve Brusatte": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14615391-M.jpg",
@@ -911,7 +992,8 @@
       "New York Times bestseller",
       "New York Times reviewed",
       "Paleontology"
-    ]
+    ],
+    "description": "A sweeping narrative scientific history that tells the epic story of the dinosaurs, examining their origins, their habitats, their extinction, and their living legacy. Print run 75,000."
   },
   "The Soul of an Octopus::Sy Montgomery": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10665428-M.jpg",
@@ -922,7 +1004,8 @@
       "Behavior",
       "Consciousness",
       "NATURE / Animals / Marine Life"
-    ]
+    ],
+    "description": "This awe striking, almost alien trip, draws us into the otherworldly watery realm of cephalopods --- except they aren't alien.  Octopuses (not octopi, as the author informs) may arguably be as intelligent, as highly curious, and absolutely more dexterous than human beings.  Sy Montgomery introduces us to these creatures with their fascinating and individual personalities."
   },
   "Circe::Madeline Miller": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8739376-M.jpg",
@@ -933,7 +1016,8 @@
       "Historical Fiction",
       "Retellings",
       "Gods"
-    ]
+    ],
+    "description": "In the house of Helios, god of the sun and mightiest of the Titans, a daughter is born. But Circe is a strange child--not powerful, like her father, nor viciously alluring like her mother. Turning to the world of mortals for companionship, she discovers that she does possess power--the power of witchcraft, which can transform rivals into monsters and menace the gods themselves.\r\n\r\nThreatened, Zeus banishes her to a deserted island, where she hones her occult craft, tames wild beasts and crosses …"
   },
   "The Hunger Games::Suzanne Collins": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12646537-M.jpg",
@@ -944,7 +1028,8 @@
       "oppression",
       "effects of war",
       "self-sacrifice"
-    ]
+    ],
+    "description": "The Hunger Games is a 2008 dystopian novel by the American writer Suzanne Collins. It is written in the perspective of 16-year-old Katniss Everdeen, who lives in the future, post-apocalyptic nation of Panem in North America. The Capitol, a highly advanced metropolis, exercises political control over the rest of the nation."
   },
   "Trials of Life::David Attenborough": {
     "coverUrl": "https://covers.openlibrary.org/b/id/704-M.jpg",
@@ -955,12 +1040,14 @@
       "Natural History",
       "Natural History [MESH]",
       "Zoology"
-    ]
+    ],
+    "description": null
   },
   "Arabs: A 3,000-Year History::Tim Mackintosh-Smith": {
     "coverUrl": "https://covers.openlibrary.org/b/isbn/9798457668270-M.jpg",
     "firstPublished": 2021,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "The Anxious Generation::Jonathan Haidt": {
     "coverUrl": "https://covers.openlibrary.org/b/id/15104803-M.jpg",
@@ -969,7 +1056,8 @@
       "Sociology",
       "nyt:combined-print-and-e-book-nonfiction=2024-04-14",
       "New York Times bestseller"
-    ]
+    ],
+    "description": "After more than a decade of stability or improvement, the mental health of adolescents plunged in the early 2010s. Rates of depression, anxiety, self-harm, and suicide rose sharply, more than doubling on many measures. Why?\r\n\r\nIn The Anxious Generation, social psychologist Jonathan Haidt (pronounced \"height\") lays out the facts about the epidemic of teen mental illness that hit many countries at the same time."
   },
   "Lonesome Dove::Larry McMurtry": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8376548-M.jpg",
@@ -980,7 +1068,8 @@
       "cowboys",
       "Man-woman relationships",
       "Western Fiction"
-    ]
+    ],
+    "description": "Lonesome Dove, by Larry McMurtry, the author of Terms of Endearment, is his long-awaited masterpiece, the major noel at last of the American West as it really was.\r\n\r\nA love story, an adventure, an American epic, Lonesome Dove embraces all the West--legend and fact, heroes and outlaws, whores and ladies, Indians and settlers--in a novel that recreates the Central American experience, the most enduring of our national myths.\r\n\r\nSet in the late nineteenth century."
   },
   "Suttree::Cormac McCarthy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9296908-M.jpg",
@@ -991,7 +1080,8 @@
       "Fishers",
       "East tennessee in fiction",
       "Fishers in fiction"
-    ]
+    ],
+    "description": "By the author of Blood Meridian and All the Pretty Horses, Suttree is the story of Cornelius Suttree, who has forsaken a life of privilege with his prominent family to live in a dilapidated houseboat on the Tennessee River near Knoxville. Remaining on the margins of the outcast community there--a brilliantly imagined collection of eccentrics, criminals, and squatters--he rises above the physical and human squalor with detachment, humor, and dignity."
   },
   "The Last Picture Show::Larry McMurtry": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10234502-M.jpg",
@@ -1002,7 +1092,8 @@
       "Fiction",
       "Large type books",
       "Texas, fiction"
-    ]
+    ],
+    "description": null
   },
   "Streets of Laredo::Larry McMurtry": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6609659-M.jpg",
@@ -1013,7 +1104,8 @@
       "Western stories",
       "Outlaws in fiction",
       "Robbers and outlaws"
-    ]
+    ],
+    "description": "Pits legendary Texas Ranger Woodrow Call against his deadliest adversary ever."
   },
   "Dead Man's Walk::Larry McMurtry": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6601672-M.jpg",
@@ -1024,7 +1116,8 @@
       "Fiction",
       "Texas Rangers",
       "Augustus McCrae (Fictitious character)"
-    ]
+    ],
+    "description": "Here at last is the eagerly awaited story of the early days of Gus McCrae and Woodrow Call, the heroes of Larry McMurtry's Pulitzer Prize-winning novel, Lonesome Dove.\n\nIn Streets of Laredo, McMurtry brought the story ahead, giving us Call in his old age; now, in Dead Man's Walk, he takes the reader back, to the days when Gus and Call - two of the most beloved figures in American fiction - were young Texas Rangers, first experiencing the wild frontier that will form their characters."
   },
   "Comanche Moon::Larry McMurtry": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10232640-M.jpg",
@@ -1035,7 +1128,8 @@
       "Comanche Indians",
       "Woodrow Call (Fictitious character)",
       "Western"
-    ]
+    ],
+    "description": "Two Texas Rangers fight Indians and bandits while trying to sort affairs with their women. One is Gus McCrae, a hard-drinking womanizer jilted by his love, the other is sober Woodrow Call, father of a boy by a prostitute."
   },
   "American Prometheus::Kai Bird and Martin J. Sherwin": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6460516-M.jpg",
@@ -1046,7 +1140,8 @@
       "atomic bomb",
       "nuclear physics",
       "biography"
-    ]
+    ],
+    "description": "Biography of American physicist Robert J. Oppenheimer. Winner of the 2006 Pulitzer Prize for Biography or Autobiography."
   },
   "Your Brain on Art::Ivy Ross and Susan Magsamen": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13250380-M.jpg",
@@ -1054,7 +1149,8 @@
     "subjects": [
       "nyt:hardcover-nonfiction=2023-04-09",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "Out of Africa::Isak Dinesen": {
     "coverUrl": "https://covers.openlibrary.org/b/id/4212788-M.jpg",
@@ -1065,7 +1161,8 @@
       "Mœurs et coutumes",
       "Biographies",
       "Intellectual life"
-    ]
+    ],
+    "description": "The author relates her experience in Kenya, describing not only her own youth but also the country's traditions and people."
   },
   "Green Hills of Africa::Ernest Hemingway": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9289818-M.jpg",
@@ -1076,7 +1173,8 @@
       "American Authors",
       "Fiction",
       "Big game hunting"
-    ]
+    ],
+    "description": "A 1930s African jungle safari as recorded in the journal of Ernest Hemingway describes the glory of the landscape while bringing to life the story of a land under threat of human incursion."
   },
   "Kim::Rudyard Kipling": {
     "coverUrl": "https://covers.openlibrary.org/b/id/1053011-M.jpg",
@@ -1087,7 +1185,8 @@
       "Lamas",
       "Irish in fiction",
       "Orphans"
-    ]
+    ],
+    "description": "Kim is Rudyard Kipling's story of an orphan born in colonial India and torn between love for his native India and the demands of Imperial loyalty to his Irish-English heritage and to the British Secret Service. Long recognized as Kipling's finest work, Kim was a key factor in his winning the Nobel Prize for Literature in 1907."
   },
   "The Terminal List::Jack Carr": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9211494-M.jpg",
@@ -1098,14 +1197,16 @@
       "Fiction, mystery & detective, general",
       "Fiction, suspense",
       "Serial murders, fiction"
-    ]
+    ],
+    "description": null
   },
   "True Believer::Jack Carr": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9245694-M.jpg",
     "firstPublished": 2019,
     "subjects": [
       "American literature"
-    ]
+    ],
+    "description": "When a string of horrific terrorist attacks plagues the Western world during the holiday season, the broader markets fall into a tailspin. The attacks are being coordinated by a shadowy former Iraqi commando who has disappeared into Europe’s underground."
   },
   "Savage Son::Jack Carr": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9423931-M.jpg",
@@ -1115,7 +1216,8 @@
       "Fiction, thrillers, general",
       "nyt:combined-print-and-e-book-fiction=2020-05-03",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "The Gun::C.J. Chivers": {
     "coverUrl": "https://covers.openlibrary.org/b/id/109575-M.jpg",
@@ -1126,7 +1228,8 @@
       "Comic books, strips",
       "Fiction",
       "Fiction in English"
-    ]
+    ],
+    "description": "Bond may have a license to kill, but “Pistols” Scaramanga has a talent for it. He’s a KGB-trained assassin who’s left a trail of dead British Secret Service agents in his wake. His weapon of choice? A gold-plated Colt .45.\r\n\r\nIn the aftermath of his brainwashing by the Soviets, Bond is given one last chance to win back M’s trust: terminate Scaramanga before he strikes MI6 again."
   },
   "The Teeth of the Tiger::Tom Clancy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/259070-M.jpg",
@@ -1137,7 +1240,8 @@
       "Terrorism in fiction",
       "Children of presidents",
       "Fathers and sons in fiction"
-    ]
+    ],
+    "description": "A man named Mohammed sits in a cafe in Vienna, about to propose a deal to a Colombian. Mohammed has a strong network of agents and sympathizers throughout Europe and the Middle East, and the Colombian has an equally strong drug network throughout America."
   },
   "The Hero with a Thousand Faces::Joseph Campbell": {
     "coverUrl": "https://covers.openlibrary.org/b/id/443668-M.jpg",
@@ -1148,7 +1252,8 @@
       "Mythologie",
       "Helden (personen)",
       "Psychanalyse"
-    ]
+    ],
+    "description": "Originally written by Campbell in the '40s-- in his pre-Bill Moyers days -- and famous as George Lucas' inspiration for \"Star Wars,\" this book will likewise inspire any writer or reader in its well considered assertion that while all stories have already been told, this is *not* a bad thing, since the *retelling* is still necessary."
   },
   "Chain-Gang All-Stars::Nana Kwame Adjei-Brenyah": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13334374-M.jpg",
@@ -1159,7 +1264,8 @@
       "Fiction, satire",
       "Fiction, dystopian",
       "Ferro-Grumley Award for LGBTQ Fiction Finalist"
-    ]
+    ],
+    "description": "She felt their eyes, all those executioners…\r\n\r\nLoretta Thurwar and Hamara “Hurricane Staxxx” Stacker are the stars of the Chain-Gang All-Stars, the cornerstone of CAPE, or Criminal Action Penal Entertainment, a highly popular, highly controversial profit-raising program in America’s increasingly dominant private prison industry."
   },
   "Sing, Unburied, Sing::Jesmyn Ward": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8205752-M.jpg",
@@ -1170,7 +1276,8 @@
       "FICTION / Literary",
       "African American families",
       "FICTION / Coming of Age"
-    ]
+    ],
+    "description": "**A SEARING AND PROFOUND SOUTHERN ODYSSEY BY NATIONAL BOOK AWARD WINNER JESMYN WARD**\r\n\r\nIn Jesmyn Ward's first novel since her National Book Award-winning *Salvage the Bones*, this singular American writer brings the archetypal road novel into rural twenty-first-century America."
   },
   "Educated::Tara Westover": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8314077-M.jpg",
@@ -1181,7 +1288,8 @@
       "Family",
       "Anecdotes",
       "Victims of family violence"
-    ]
+    ],
+    "description": "*Educated* is a 2018 memoir by the American author Tara Westover. Westover recounts overcoming her survivalist Mormon family in order to go to college, and emphasizes the importance of education in enlarging her world. She details her journey from her isolated life in the mountains of Idaho to completing a PhD program in history at Cambridge University. She started college at the age of 17 having had no formal education."
   },
   "Let Us Descend::Jesmyn Ward": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13856487-M.jpg",
@@ -1189,7 +1297,8 @@
     "subjects": [
       "nyt:combined-print-and-e-book-fiction=2023-11-12",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "Notes of a Native Son::James Baldwin": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6545174-M.jpg",
@@ -1200,7 +1309,8 @@
       "Social conditions",
       "Civil rights",
       "Afro-Americans"
-    ]
+    ],
+    "description": "Since its original publication in 1955, this first nonfiction collection of essays by James Baldwin remains an American classic. His impassioned essays on life in Harlem, the protest novel, movies, and African Americans abroad are as powerful today as when they were first written.\r\n \r\n“A straight-from-the-shoulder writer, writing about the troubled problems of this troubled earth with an illuminating intensity.” —Langston Hughes, The New York Times Book Review\r\n \r\n“Written with bitter clarity an…"
   },
   "If Beale Street Could Talk::James Baldwin": {
     "coverUrl": "https://covers.openlibrary.org/b/id/167371-M.jpg",
@@ -1211,7 +1321,8 @@
       "Prisons",
       "Injustice",
       "Love stories"
-    ]
+    ],
+    "description": "Like the blues -- sweet, sad and full of truth --  this masterly work of fiction rocks us with  powerful emotions. In it are anger and pain, but above  all, love -- affirmative love of a woman for her  man, the sustaining love of a black family. Fonny, a  talented young artist, finds himself unjustly  arrested and locked in New York's infamous tombs. But  his girlfriend, Tish, is determined to free him,  and to have his baby, in this starkly realisitic  tale..."
   },
   "Nexus::Yuval Noah Harari": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14812834-M.jpg",
@@ -1222,7 +1333,8 @@
       "Nonfiction",
       "History",
       "Science"
-    ]
+    ],
+    "description": "From the author of Sapiens comes the groundbreaking story of how information networks have made, and unmade, our world.\r\n\r\nFor the last 100,000 years, we Sapiens have accumulated enormous power. But despite all our discoveries, inventions, and conquests, we now find ourselves in an existential crisis. The world is on the verge of ecological collapse. Misinformation abounds. And we are rushing headlong into the age of AI—a new information network that threatens to annihilate us."
   },
   "Fahrenheit 451::Ray Bradbury": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12993656-M.jpg",
@@ -1233,7 +1345,8 @@
       "Long Now Manual for Civilization",
       "Terrorismo estatal",
       "Censura"
-    ]
+    ],
+    "description": "Fahrenheit 451 is a 1953 dystopian novel by American writer Ray Bradbury. Often regarded as one of his best works, the novel presents a future American society where books are outlawed and \"firemen\" burn any that are found. The book's tagline explains the title as \"'the temperature at which book paper catches fire, and burns\": the autoignition temperature of paper."
   },
   "Go Tell It on the Mountain::James Baldwin": {
     "coverUrl": "https://covers.openlibrary.org/b/id/97426-M.jpg",
@@ -1244,7 +1357,8 @@
       "Fiction, general",
       "African American families",
       "Racism"
-    ]
+    ],
+    "description": "In one of the greatest American classics, Baldwin chronicles a fourteen-year-old boy's discovery of the terms of his identity. Baldwin's rendering of his protagonist's spiritual, sexual, and moral struggle of self-invention opened new possibilities in the American language and in the way Americans understand themselves.\r\n\r\nWith lyrical precision, psychological directness, resonating symbolic power, and a rage that is at once unrelenting and compassionate, Baldwin tells the story of the stepson o…"
   },
   "Of Mice and Men::John Steinbeck": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14319003-M.jpg",
@@ -1255,7 +1369,8 @@
       "classics",
       "Labor Trilogy",
       "psychological fiction"
-    ]
+    ],
+    "description": "The second book in John Steinbeck’s labor trilogy, Of Mice and Men is a touching tale of two migrant laborers in search of work and eventual liberation from their social circumstances. Fiercely devoted to one another, George and Lennie plan to save up to finance their dream of someday owning a small piece of land."
   },
   "The Scarlet Letter::Nathaniel Hawthorne": {
     "coverUrl": "https://covers.openlibrary.org/b/id/5654516-M.jpg",
@@ -1266,7 +1381,8 @@
       "Puritans in fiction",
       "History",
       "Adultery in fiction"
-    ]
+    ],
+    "description": "A stark and allegorical tale of adultery, guilt, and social repression in Puritan New England, The Scarlet Letter is a foundational work of American literature. Nathaniel Hawthorne's exploration of the dichotomy between the public and private self, internal passion and external convention, gives us the unforgettable Hester Prynne, who discovers strength in the face of ostracism and emerges as a heroine ahead of her time."
   },
   "Big Sur::Jack Kerouac": {
     "coverUrl": "https://covers.openlibrary.org/b/id/96412-M.jpg",
@@ -1277,7 +1393,8 @@
       "Fiction",
       "Fiction in English",
       "Beats (Persons)"
-    ]
+    ],
+    "description": "*Big Sur* is a novel written by *Jack Kerouac*, that was published in 1962. The books perspective is told from Kerouac's alter ego *Jack Dulouz*. The novel describes Kerouac's frustration that he has with his fame of being a writer, and how he goes to his friends cabin on Big Sur to get away from the madness of every day existence. The novel also describes Kerouac's mental state of being, and his struggles with alcohol."
   },
   "The Cider House Rules::John Irving": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12369293-M.jpg",
@@ -1288,7 +1405,8 @@
       "Maine, fiction",
       "Fiction",
       "Physicians"
-    ]
+    ],
+    "description": "Set in rural Maine in the first half of this century, it tells the story of Dr. Wilbur Larch--obstetrician and director of the orphanage in the town of St. Clouds. It is also the story of his favorite orphan, Homer, who is never adopted."
   },
   "A Prayer for Owen Meany::John Irving": {
     "coverUrl": "https://covers.openlibrary.org/b/id/5414972-M.jpg",
@@ -1299,7 +1417,8 @@
       "Fiction",
       "Vietnam War, 1961-1975",
       "Belief and doubt"
-    ]
+    ],
+    "description": "\"I am doomed to remember a boy with a wrecked voice - not because of his voice, or because he was the smallest person I ever knew, or even because he was the instrument of my mother's death, but because he is the reason I believe in God; I am a Christian because of Owen Meany.\" So begins John Irving's new novel.\r\n\r\nIn the summer of 1953, two eleven-year-old boys - best friends - are playing ina Little League baseball game in Gravesend , New Hampshire; one of the boys hits a foul ball that kills …"
   },
   "The Last of the Mohicans::James Fenimore Cooper": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8236937-M.jpg",
@@ -1310,7 +1429,8 @@
       "Fiction",
       "Frontier and pioneer life",
       "Historia"
-    ]
+    ],
+    "description": "The classic tale of Hawkeye—Natty Bumppo—the frontier scout who turned his back on \"civilization,\" and his friendship with a Mohican warrior as they escort two sisters through the dangerous wilderness of Indian country in frontier America."
   },
   "Never Let Me Go::Kazuo Ishiguro": {
     "coverUrl": "https://covers.openlibrary.org/b/id/1047334-M.jpg",
@@ -1321,7 +1441,8 @@
       "Cloning",
       "Donation of organs, tissues",
       "Women"
-    ]
+    ],
+    "description": "Ishiguro explores what it means to have a soul and how art distinguishes man from other life forms. But above all, *Never Let Me Go* is a study of friendship and the bonds we form which make or break while we come of age."
   },
   "American Buffalo::Steven Rinella": {
     "coverUrl": "https://covers.openlibrary.org/b/id/2412097-M.jpg",
@@ -1332,7 +1453,8 @@
       "Nature",
       "Nonfiction",
       "Rinella, Steven"
-    ]
+    ],
+    "description": "A hunt for the American buffalo--an adventurous, fascinating examination of an animal that has haunted the American imagination.In 2005, Steven Rinella won a lottery permit to hunt for a wild buffalo, or American bison, in the Alaskan wilderness."
   },
   "The Long Hunters::Steven Rinella": {
     "coverUrl": "https://covers.openlibrary.org/b/id/1443198-M.jpg",
@@ -1343,7 +1465,8 @@
       "United States French and Indian War, 1755-1763",
       "Iroquois Indians",
       "Fiction"
-    ]
+    ],
+    "description": null
   },
   "Meat Eater::Steven Rinella": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12755283-M.jpg",
@@ -1354,7 +1477,8 @@
       "American Hunting stories",
       "History",
       "Biography"
-    ]
+    ],
+    "description": null
   },
   "Seven Brief Lessons on Physics::Carlo Rovelli": {
     "coverUrl": "https://covers.openlibrary.org/b/id/7398110-M.jpg",
@@ -1365,7 +1489,8 @@
       "nyt:e-book-nonfiction=2016-03-20",
       "New York Times bestseller",
       "Popular works"
-    ]
+    ],
+    "description": "An introduction to modern physics by a founder of the loop quantum gravity theory shares seven succinct lessons on topics ranging from general relativity and quantum mechanics to elementary particles and black holes."
   },
   "Helgoland::Carlo Rovelli": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11140844-M.jpg",
@@ -1374,7 +1499,8 @@
       "New York Times reviewed",
       "Physics",
       "Quantum Mechanics"
-    ]
+    ],
+    "description": "In June 1925, twenty-three-year-old Werner Heisenberg, suffering from hay fever, had retreated to the treeless, wind-battered island of Helgoland in the North Sea in order to think. Walking all night, by dawn he had wrestled with an idea that would transform the whole of science and our very conception of the world.\r\n\r\nIn Helgoland Carlo Rovelli tells the story of the birth of quantum physics and its bright young founders who were to become some of the most famous Nobel winners in science."
   },
   "A Wizard of Earthsea::Ursula K. Le Guin": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13617691-M.jpg",
@@ -1385,7 +1511,8 @@
       "Magic in fiction",
       "Fantasy",
       "Wizards"
-    ]
+    ],
+    "description": "The first novel of Ursula K. Le Guin's must-read Earthsea Cycle. \"The magic of Earthsea is primal; the lessons of Earthsea remain as potent, as wise, and as necessary as anyone could dream.\" (Neil Gaiman)\r\n\r\nGed was the greatest sorcerer in Earthsea, but in his youth he was the reckless Sparrowhawk."
   },
   "The Lathe of Heaven::Ursula K. Le Guin": {
     "coverUrl": "https://covers.openlibrary.org/b/id/26458-M.jpg",
@@ -1396,7 +1523,8 @@
       "Fiction in English",
       "Science fiction",
       "Dystopian fiction"
-    ]
+    ],
+    "description": "“The Lathe of Heaven” ; 1971 ( Ursula Le Guin received the 1973 Locus Award for this story)\r\nGeorge Orr has a gift – he is an effective dreamer:  his dreams become reality when he wakes up. He is aware of his past and present, two or more sets of memories, although the people around him are only aware of the current reality. \r\nThis science fiction story is set in Portland, Oregon, in/around the late 1990s - early 2000s."
   },
   "The Pioneers::David McCullough": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10077347-M.jpg",
@@ -1407,7 +1535,8 @@
       "Frontier and pioneer life, ohio",
       "nyt:paperback-nonfiction=2020-05-24",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "The Message::Ta-Nehisi Coates": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14750902-M.jpg",
@@ -1418,7 +1547,8 @@
       "Biography",
       "Journalists",
       "Social conditions"
-    ]
+    ],
+    "description": null
   },
   "James::Percival Everett": {
     "coverUrl": "https://covers.openlibrary.org/b/id/15094964-M.jpg",
@@ -1429,12 +1559,14 @@
       "New York Times bestseller",
       "Finn, huckleberry (fictitious character), fiction",
       "Enslaved persons, fiction"
-    ]
+    ],
+    "description": "**A brilliant reimagining of Adventures of Huckleberry Finn—both harrowing and satirical—told from the enslaved Jim's point of view**\r\n\r\nWhen Jim overhears that he is about to be sold to a man in New Orleans, separated from his wife and daughter forever, he runs away until he can formulate a plan. Meanwhile, Huck has faked his own death to escape his violent father."
   },
   "You Dreamed of Empires::Álvaro Enrigue": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14609258-M.jpg",
     "firstPublished": 2023,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "Unbroken::Laura Hillenbrand": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6668103-M.jpg",
@@ -1445,7 +1577,8 @@
       "Prisoners of war",
       "Campaigns",
       "American Aerial operations"
-    ]
+    ],
+    "description": "On a May afternoon in 1943, an Army Air Forces bomber crashed into the Pacific Ocean and disappeared, leaving only a spray of debris and a slick of oil, gasoline, and blood.  Then, on the ocean surface, a face appeared.  It was that of a young lieutenant, the plane’s bombardier, who was struggling to a life raft and pulling himself aboard.  So began one of the most extraordinary odysseys of the Second World War.\r\n\r\nThe lieutenant’s name was Louis Zamperini."
   },
   "Patriot Games::Tom Clancy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/258363-M.jpg",
@@ -1456,7 +1589,8 @@
       "Sr. Ryan, Jack (Fictitious character)",
       "Large type books",
       "Fiction, thrillers, espionage"
-    ]
+    ],
+    "description": "Patriot Games is a thriller novel, written by Tom Clancy and published in July 1987. Without Remorse, released six years later, is an indirect prequel, and it is chronologically the first book featuring Jack Ryan, the main character in most of Clancy's novels. The novel focuses on Ryan being the target of Irish terrorist group Ulster Liberation Army for thwarting their kidnapping attempt on the Prince and Princess of Wales in London."
   },
   "The Splendid and the Vile::Erik Larson": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9293917-M.jpg",
@@ -1467,7 +1601,8 @@
       "World war, 1939-1945, great britain",
       "World war, 1939-1945, campaigns",
       "World war, 1939-1945, social aspects"
-    ]
+    ],
+    "description": null
   },
   "The Buried Giant::Kazuo Ishiguro": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12602978-M.jpg",
@@ -1478,7 +1613,8 @@
       "Knights",
       "Giants",
       "Fiction"
-    ]
+    ],
+    "description": "The Buried Giant begins as a couple set off across a troubled land of mist and rain in the hope of finding a son they have not seen in years."
   },
   "Atlas of the Heart::Brené Brown": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11945339-M.jpg",
@@ -1489,7 +1625,8 @@
       "Self-actualization (Psychology)",
       "Language and emotions",
       "Experience"
-    ]
+    ],
+    "description": "In Atlas of the Heart, we explore eighty-seven of the emotions and experiences that define what it means to be human and walk through a new framework for cultivating meaningful connection. This is for the mapmakers and travelers in all of us. Buy the Book Guides, passages, and podcasts Article The Practice of Story Stewardship"
   },
   "Their Eyes Were Watching God::Zora Neale Hurston": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12752055-M.jpg",
@@ -1500,7 +1637,8 @@
       "Psychology",
       "Self-realization",
       "Florida, fiction"
-    ]
+    ],
+    "description": "Their Eyes Were Watching God (1937) is a classic Harlem Renaissance novel by American writer Zora Neale Hurston. The novel follows Janie Crawford as she recounts the story of her life as she journeys from a naive teenager to a woman in control of her destiny."
   },
   "Cities of the Plain::Cormac McCarthy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9158767-M.jpg",
@@ -1511,7 +1649,8 @@
       "Histoires d'amour",
       "Ranch life",
       "Fiction"
-    ]
+    ],
+    "description": "A Texas cowboy falls in love with a Mexican prostitute, only to discover he has a rival, her pimp. The pimp refuses to let her go because he will lose money and the stage is set for a violent confrontation."
   },
   "Mozart: The Reign of Love::Jan Swafford": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11310831-M.jpg",
@@ -1519,7 +1658,8 @@
     "subjects": [
       "Composers",
       "Biography"
-    ]
+    ],
+    "description": null
   },
   "Man's Search for Meaning::Viktor Frankl": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8516506-M.jpg",
@@ -1530,7 +1670,8 @@
       "meaning of life",
       "freedom of choice",
       "kapo"
-    ]
+    ],
+    "description": "Psychiatrist Viktor Frankl's memoir has riveted generations of readers with its descriptions of life in Nazi death camps and its lessons for spiritual survival. Based on his own experience and the stories of his patients, Frankl argues that we cannot avoid suffering but we can choose how to cope with it, find meaning in it, and move forward with renewed purpose."
   },
   "No Country for Old Men::Cormac McCarthy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9296899-M.jpg",
@@ -1541,18 +1682,20 @@
       "Sheriffs",
       "Treasure-trove",
       "Treasure troves"
-    ]
+    ],
+    "description": "In his blistering new novel, Cormac McCarthy returns to the Texas-Mexico border, setting of his famed Border Trilogy. The time is our own, when rustlers have given way to drug-runners and small towns have become free-fire zones. One day, a good old boy named Llewellyn Moss finds a pickup truck surrounded by a bodyguard of dead men. A load of heroin and two million dollars in cash are still in the back."
   },
   "Meditations::Marcus Aurelius": {
     "coverUrl": "https://covers.openlibrary.org/b/id/211529-M.jpg",
     "firstPublished": 1626,
     "subjects": [
-      "Early works to 1800",
       "Philosophy",
-      "Stoics",
-      "Classic Literature",
-      "Fiction"
-    ]
+      "Nonfiction",
+      "Classics",
+      "Self-Help",
+      "Ethics"
+    ],
+    "description": "Meditations is a collection of personal reflections and notes by the Roman Emperor Marcus Aurelius (reigned 161 to 180 AD), offering a profound look into the philosophy of Stoicism. It was never intended for publication, making it a raw and intimate self-help manual for the emperor during his campaigns and rule."
   },
   "The Road::Cormac McCarthy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/198120-M.jpg",
@@ -1563,7 +1706,8 @@
       "Adventure",
       "post-apocalyptic fiction",
       "extinction event"
-    ]
+    ],
+    "description": "Cormac McCarthy's tenth novel, The Road, is his most harrowing yet deeply personal work. Some unnamed catastrophe has scourged the world to a burnt-out cinder, inhabited by the last remnants of mankind and a very few surviving dogs and fungi. The sky is perpetually shrouded by dust and toxic particulates; the seasons are merely varied intensities of cold and dampness."
   },
   "How to Win Friends and Influence People::Dale Carnegie": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13314878-M.jpg",
@@ -1574,7 +1718,8 @@
       "Psychologie applique e.",
       "Applied Psychology",
       "Succe  s."
-    ]
+    ],
+    "description": "Available for the first time ever in trade paperback, Dale Carnegie's enduring classic, the inspirational personal development guide that shows how to achieve lifelong success. One of the top-selling books of all time, \"How to Win Friends & Influence People\" has sold more than 15 million copies in all its editions."
   },
   "The Sound and the Fury::William Faulkner": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8292212-M.jpg",
@@ -1585,7 +1730,8 @@
       "Brothers and sisters",
       "Aristocracy (Social class)",
       "Burial"
-    ]
+    ],
+    "description": "In many ways this was an experimental novel, using several differing narrative styles. Divided into four parts, the author relates the same episodes from four different viewpoints, using a different style for each. The story concerns various members of a Southern family, once wealthy landowners but now struggling to maintain their reputation."
   },
   "Enchantment::Katherine May": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6644514-M.jpg",
@@ -1596,7 +1742,8 @@
       "Magic",
       "Rings",
       "Friendship"
-    ]
+    ],
+    "description": "E. Nesbit's classic story of how Gerald, Cathy and Jimmy find an enchanted garden and awake a princess from a hundred-year sleep, only to have her immediately made invisible by a magic ring. Her rescue is difficult, funny and sometimes frightening."
   },
   "A Room with a View::E.M. Forster": {
     "coverUrl": "https://covers.openlibrary.org/b/id/1748132-M.jpg",
@@ -1607,14 +1754,16 @@
       "Young women",
       "British in fiction",
       "England in fiction"
-    ]
+    ],
+    "description": "Lucy has her rigid, middle-class life mapped out for her, until she visits Florence with her uptight cousin Charlotte, and finds her neatly ordered existence thrown off balance. Her eyes are opened by the unconventional characters she meets at the Pension Bertolini: flamboyant romantic novelist Eleanor Lavish, the Cockney Signora, curious Mr Emerson and, most of all, his passionate son George.\r\nLucy finds herself torn between the intensity of life in Italy and the repressed morals of Edwardian E…"
   },
   "Reimagining Design::Kevin Bethune": {
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0262368463-M.jpg",
     "firstPublished": 2022,
     "subjects": [
       "Economics"
-    ]
+    ],
+    "description": null
   },
   "Moby-Dick::Herman Melville": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10544254-M.jpg",
@@ -1625,7 +1774,8 @@
       "Whaling",
       "Science Fiction & Fantasy",
       "Whales"
-    ]
+    ],
+    "description": "\"Command the murderous chalices! Drink ye harpooners! Drink and swear, ye men that man the deathful whaleboat's bow -- Death to Moby Dick!\" So Captain Ahab binds his crew to fulfil his obsession -- the destruction of the great white whale. Under his lordly but maniacal command the Pequod's commercial mission is perverted to one of vengeance."
   },
   "Miles: The Autobiography::Miles Davis": {
     "coverUrl": "https://covers.openlibrary.org/b/id/4088048-M.jpg",
@@ -1634,12 +1784,14 @@
       "Biography",
       "Jazz musicians",
       "Autobiografie"
-    ]
+    ],
+    "description": null
   },
   "Sorry, Sorry, Sorry::Marjorie Ingall and Susan McCarthy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13136855-M.jpg",
     "firstPublished": 2023,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "Guitar Zero::Gary Marcus": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8270077-M.jpg",
@@ -1649,7 +1801,8 @@
       "Music",
       "Musical ability",
       "Music, psychological aspects"
-    ]
+    ],
+    "description": "On the eve of his 40th birthday, Gary Marcus, a renowned scientist with no discernible musical talent, learns to play the guitar and investigates how anyone -- of any age -- can become musical. Do you have to be born musical to become musical? Do you have to start by the age of six? Using the tools of his day job as a cognitive psychologist, Gary Marcus becomes his own guinea pig as he takes up the guitar."
   },
   "Human Compatible::Stuart Russell": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11264186-M.jpg",
@@ -1660,7 +1813,8 @@
       "Social aspects",
       "Accidents",
       "Artificial intelligence"
-    ]
+    ],
+    "description": "\"In the popular imagination, superhuman artificial intelligence is an approaching tidal wave that threatens not just jobs and human relationships, but civilization itself. Conflict between humans and machines is seen as inevitable and its outcome all too predictable. In this groundbreaking book, distinguished AI researcher Stuart Russell argues that this scenario can be avoided, but only if we rethink AI from the ground up."
   },
   "Native Son::Richard Wright": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10830375-M.jpg",
@@ -1671,7 +1825,8 @@
       "American fiction (fictional works by one author)",
       "Bildungsromans",
       "Blacks"
-    ]
+    ],
+    "description": "Native Son (1940) is a novel written by the American author Richard Wright. It tells the story of 20-year-old Bigger Thomas, a black youth living in utter poverty in a poor area on Chicago's South Side in the 1930s."
   },
   "The Fire Next Time::James Baldwin": {
     "coverUrl": "https://covers.openlibrary.org/b/id/2980395-M.jpg",
@@ -1682,7 +1837,8 @@
       "African Americans",
       "Afro-Americans",
       "Muslims"
-    ]
+    ],
+    "description": "**From Amazon.com:**\r\n\r\nA national bestseller when it first appeared in 1963, *The Fire Next Time* galvanized the nation and gave passionate voice to the emerging civil rights movement. At once a powerful evocation of James Baldwin's early life in Harlem and a disturbing examination of the consequences of racial injustice, the book is an intensely personal and provocative document."
   },
   "Dracula::Bram Stoker": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12216503-M.jpg",
@@ -1693,7 +1849,8 @@
       "Horror",
       "Horror stories",
       "Horror tales"
-    ]
+    ],
+    "description": "Na história, um casal e seus amigos são atormentados por Conde Drácula, uma entidade sobrenatural e hematófoga que, presa em uma maldição contagiosa, pretende se mudar de seu recluso castelo na Transilvânia para a efervescente Londres do século XIX. Com a ajuda do professor Van Helsing, o grupo de amigos pretende enfrentar o morto-vivo, mesmo com todos os perigos que a ofensiva trará."
   },
   "Make It New: A History of Silicon Valley Design::Barry Katz": {
     "coverUrl": "https://covers.openlibrary.org/b/isbn/0262029634-M.jpg",
@@ -1703,7 +1860,8 @@
       "History",
       "Design, united states",
       "Social aspects"
-    ]
+    ],
+    "description": null
   },
   "Starry Messenger::Neil deGrasse Tyson": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12554618-M.jpg",
@@ -1714,7 +1872,8 @@
       "Science, popular works",
       "Science and civilization",
       "Cosmology"
-    ]
+    ],
+    "description": null
   },
   "His Truth Is Marching On::Jon Meacham": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10376895-M.jpg",
@@ -1725,7 +1884,8 @@
       "New York Times reviewed",
       "United states, congress, house, biography",
       "Civil rights workers"
-    ]
+    ],
+    "description": null
   },
   "Frankenstein::Mary Shelley": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12356249-M.jpg",
@@ -1736,7 +1896,8 @@
       "Fiction",
       "Victor Frankenstein (Fictitious character)",
       "Scientists"
-    ]
+    ],
+    "description": "*Frankenstein; or, The Modern Prometheus* is an 1818 novel written by English author Mary Shelley. Frankenstein tells the story of Victor Frankenstein, a young scientist who creates a sapient creature in an unorthodox scientific experiment. Shelley started writing the story when she was 18, and the first edition was published anonymously in London on 1 January 1818, when she was 20. Her name first appeared in the second edition, which was published in Paris in 1821."
   },
   "Cat's Cradle::Kurt Vonnegut": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12709654-M.jpg",
@@ -1747,7 +1908,8 @@
       "American Fantasy fiction",
       "Classic Literature",
       "Humor (Fiction)"
-    ]
+    ],
+    "description": "Cat's Cradle is Kurt Vonnegut's satirical commentary on modern man and his madness. An apocalyptic tale of this planet's ultimate fate, it features a midget as the protagonist, a complete, original theology created by a calypso singer, and a vision of the future that is at once blackly fatalistic and hilariously funny. A book that left an indelible mark on an entire generation of readers, Cat's Cradle is one of the twentieth century's most important works -- and Vonnegut at his very best."
   },
   "The Happiness Project::Gretchen Rubin": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6297223-M.jpg",
@@ -1758,7 +1920,8 @@
       "New York Times bestseller",
       "Nonfiction",
       "Self-actualization (Psychology)"
-    ]
+    ],
+    "description": "Gretchen Rubin had an epiphany one rainy afternoon in the unlikeliest of places: a city bus. \"The days are long, but the years are short,\" she realized. \"Time is passing, and I'm not focusing enough on the things that really matter.\" In that moment, she decided to dedicate a year to her happiness project.In this lively and compelling account of that year, Rubin carves out her place alongside the authors of bestselling memoirs such as Julie and Julia, The Year of Living Biblically, and Eat, Pray,…"
   },
   "Rebooting AI::Gary Marcus and Ernest Davis": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10239298-M.jpg",
@@ -1768,7 +1931,8 @@
       "Artificial intelligence",
       "Q335 .m368 2019",
       "006.3"
-    ]
+    ],
+    "description": null
   },
   "Exhalation::Ted Chiang": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8793546-M.jpg",
@@ -1779,7 +1943,8 @@
       "nyt:hardcover-fiction=2019-05-26",
       "New York Times bestseller",
       "American Short stories"
-    ]
+    ],
+    "description": "NATIONAL BESTSELLER • ONE OF THE NEW YORK TIMES BEST BOOKS OF THE YEAR • Nine stunningly original, provocative, and poignant stories—two published for the very first time—all from the mind of the incomparable author of Stories of Your Life and Others\r\n\r\nTackling some of humanity’s oldest questions along with new quandaries only he could imagine, these stories will change the way you think, feel, and see the world."
   },
   "The Grapes of Wrath::John Steinbeck": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12715902-M.jpg",
@@ -1790,7 +1955,8 @@
       "Labor camps in literature",
       "Classic Literature",
       "Open Library Staff Picks"
-    ]
+    ],
+    "description": "Steinbeck’s classic novel of the Great Depression is as vivid now as ever. The story focuses on a family of Oklahoma sharecroppers, farmers who work another man’s land for a share of the crops. Driven from their home by drought and poverty they take to the road in a battered old truck and make their way to California to look for work. When they arrive they find hundreds of others like them being forced to work for breadline wages."
   },
   "Siddhartha::Hermann Hesse": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6562535-M.jpg",
@@ -1801,7 +1967,8 @@
       "Buddha and Buddhism",
       "Buddhism",
       "Buddhist Philosophy"
-    ]
+    ],
+    "description": "Hermann Hesse wrote Siddhartha after he traveled to India in the 1910s. It tells the story of a young boy who travels the country in a quest for spiritual enlightenment in the time of Guatama Buddha. It is a compact, lyrical work, which reads like an allegory about the finding of wisdom."
   },
   "Happy-Go-Lucky::David Sedaris": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12786525-M.jpg",
@@ -1812,7 +1979,8 @@
       "American wit and humor",
       "FAMILY & RELATIONSHIPS",
       "General"
-    ]
+    ],
+    "description": null
   },
   "Theft by Finding::David Sedaris": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8407298-M.jpg",
@@ -1823,7 +1991,8 @@
       "Humor, form, essays",
       "American Humorists",
       "Biography"
-    ]
+    ],
+    "description": "For forty years, David Sedaris has kept a diary in which he records everything that captures his attention-overheard comments, salacious gossip, soap opera plot twists, secrets confided by total strangers. These observations are the source code for his finest work, and through them he has honed his cunning, surprising sentences.\r\n\r\nNow, Sedaris shares his private writings with the world."
   },
   "Let's Explore Diabetes with Owls::David Sedaris": {
     "coverUrl": "https://covers.openlibrary.org/b/id/7367491-M.jpg",
@@ -1834,7 +2003,8 @@
       "American wit and humor",
       "United States",
       "American humorists"
-    ]
+    ],
+    "description": "From the unique perspective of David Sedaris comes a new book of essays taking his listeners on a bizarre and stimulating world tour. From the perils of French dentistry to the eating habits of the Australian kookaburra, from the squat-style toilets of Beijing to the particular wilderness of a North Carolina Costco, we learn about the absurdity and delight of a curious traveler's experiences."
   },
   "The World According to Garp::John Irving": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13080378-M.jpg",
@@ -1845,7 +2015,8 @@
       "Authors, fiction",
       "Fiction, humorous, general",
       "Fiction, coming of age"
-    ]
+    ],
+    "description": null
   },
   "Creativity, Inc.::Ed Catmull": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13124793-M.jpg",
@@ -1856,7 +2027,8 @@
       "work",
       "creativity",
       "Pixar Animation"
-    ]
+    ],
+    "description": "Creativity, Inc. is a book for managers who want to lead their employees to new heights, a manual for anyone who strives for originality, and the first-ever, all-access trip into the nerve center of Pixar Animation—into the meetings, postmortems, and “Braintrust” sessions where some of the most successful films in history are made."
   },
   "The Bonfire of the Vanities::Tom Wolfe": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10548223-M.jpg",
@@ -1867,7 +2039,8 @@
       "City and town life",
       "Stockbrokers",
       "Bankers"
-    ]
+    ],
+    "description": "The Bonfire of the Vanities is a 1987 satirical novel by Tom Wolfe. The story is a drama about ambition, racism, social class, politics, and greed in 1980s New York City, and centers on three main characters: WASP bond trader Sherman McCoy, Jewish assistant district attorney Larry Kramer, and British expatriate journalist Peter Fallow.\r\n\r\nSee also:\r\n\r\n - [The Bonfire of the Vanities: 1/2](https://openlibrary.org/works/OL1925368W)\r\n - [The Bonfire of the Vanities: 2/2](https://openlibrary.org/wor…"
   },
   "Possibilities::Herbie Hancock": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11294794-M.jpg",
@@ -1878,7 +2051,8 @@
       "Jazz musicians, biography",
       "Musicians, united states",
       "BIOGRAPHY & AUTOBIOGRAPHY / Composers & Musicians"
-    ]
+    ],
+    "description": "The long-awaited memoir by one of the most influential jazz musicians and composers of our time."
   },
   "Homegoing::Yaa Gyasi": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8081171-M.jpg",
@@ -1889,7 +2063,8 @@
       "saga",
       "literary fiction",
       "historical fiction"
-    ]
+    ],
+    "description": "Homegoing is the debut historical fiction novel by Ghanaian-American author Yaa Gyasi, published in 2016. Each chapter in the novel follows a different descendant of an Asante woman named Maame, starting with her two daughters, who are half-sisters, separated by circumstance: Effia marries James Collins, the British governor in charge of Cape Coast Castle, while her half-sister Esi is held captive in the dungeons below."
   },
   "I Know Why the Caged Bird Sings::Maya Angelou": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9367075-M.jpg",
@@ -1900,7 +2075,8 @@
       "Entertainers",
       "Intellectual life",
       "African American families"
-    ]
+    ],
+    "description": "She was born Marguerite, but her brother Bailey nicknamed her Maya (\"mine\"). As little children they were sent to live with their grandmother in Stamps, Arkansas. Their early world revolved around this remarkable woman and the Store she ran for the black community. White people were more than strangers - they were from another planet. And yet, even unseen they ruled. \r\n\r\nThe Store was a microcosm of life: its orderly pattern was a comfort, even among the meanest frustrations."
   },
   "Rubyfruit Jungle::Rita Mae Brown": {
     "coverUrl": "https://covers.openlibrary.org/b/id/1019736-M.jpg",
@@ -1911,7 +2087,8 @@
       "Fiction in English",
       "Sexuality",
       "Fiction, lesbian"
-    ]
+    ],
+    "description": "Born a bastard, Molly Bolt is adopted by a dirt-poor Southern couple who want something better for their daughter. Molly plays doctor with the boys, beats up Leroy the tub and loses her virginity to her girlfriend in sixth grade. As she grows to realize she's different, Molly decides not to apologize for that. In no time she mesmerizes the head cheerleader of Ft. Lauderdale High and captivates a gorgeous bourbon-guzzling heiress. But the world is not tolerant."
   },
   "Jazz::Toni Morrison": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9317239-M.jpg",
@@ -1922,7 +2099,8 @@
       "Psychological fiction",
       "Funeral rites and ceremonies",
       "Vida social y costumbres"
-    ]
+    ],
+    "description": "It is winter, barely three days into 1926, seven years after Armistice; we are in the scintillating City, around Lenox Avenue, \"when all the wars are over and there will never be another one... At last, at last, everything's ahead... Here comes the new. Look out. There goes the sad stuff. The bad stuff."
   },
   "12 Rules for Life::Jordan Peterson": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8131760-M.jpg",
@@ -1933,7 +2111,8 @@
       "PHILOSOPHY / Social",
       "PSYCHOLOGY / Applied Psychology",
       "SELF-HELP / Personal Growth"
-    ]
+    ],
+    "description": "Duplicate of https://openlibrary.org/books/OL27241047M/12_Rules_For_Life_Paperback"
   },
   "Breath::James Nestor": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10096454-M.jpg",
@@ -1944,7 +2123,8 @@
       "nyt:combined-print-and-e-book-nonfiction=2020-06-14",
       "New York Times bestseller",
       "Yoga"
-    ]
+    ],
+    "description": "There is nothing more essential to our health and wellbeing than breathing: take air in, let it out, repeat 25,000 times a day. Yet, as a species, humans have lost the ability to breathe correctly, with grave consequences."
   },
   "The Fourth Turning Is Here::Neil Howe": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14375051-M.jpg",
@@ -1952,7 +2132,8 @@
     "subjects": [
       "nyt:combined-print-and-e-book-nonfiction=2023-08-06",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "Orlando::Virginia Woolf": {
     "coverUrl": "https://covers.openlibrary.org/b/id/3240273-M.jpg",
@@ -1963,7 +2144,8 @@
       "Fiction",
       "England in fiction",
       "Transsexuals"
-    ]
+    ],
+    "description": "In her most exuberant, most fanciful novel, Woolf has created a character liberated from the restraints of time and sex. Born in the Elizabethan Age to wealth and position, Orlando is a young nobleman at the beginning of the story-and a modern woman three centuries later."
   },
   "The Bell Jar::Sylvia Plath": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8477115-M.jpg",
@@ -1974,12 +2156,14 @@
       "Classics",
       "Literature",
       "Psychology"
-    ]
+    ],
+    "description": "The Bell Jar is the only novel written by American poet Sylvia Plath. It is an intensely realistic and emotional record of a successful and talented young woman's descent into madness."
   },
   "Not Nice::Dr. Aziz Gazipura": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12364378-M.jpg",
     "firstPublished": 2017,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "Crime and Punishment::Fyodor Dostoevsky": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9411873-M.jpg",
@@ -1990,17 +2174,20 @@
       "Novela psicológica",
       "Fiction",
       "Translations into Yiddish"
-    ]
+    ],
+    "description": "From [wikipedia][1]:\r\n\r\nCrime and Punishment (Russian: Преступлéние и наказáние, tr. Prestupleniye i nakazaniye; IPA: [prʲɪstʊˈplʲenʲə ɪ nəkɐˈzanʲə]) is a novel by the Russian author Fyodor Dostoyevsky. It was first published in the literary journal The Russian Messenger in twelve monthly installments during 1866.[1] It was later published in a single volume. It is the second of Dostoyevsky's full-length novels following his return from ten years of exile in Siberia."
   },
   "The Art of Being Right::Arthur Schopenhauer": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13769873-M.jpg",
     "firstPublished": 2015,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "End Times::Peter Turchin": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13790624-M.jpg",
     "firstPublished": 2023,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "The Brothers Karamazov::Fyodor Dostoevsky": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8272336-M.jpg",
@@ -2011,7 +2198,8 @@
       "Literature: Classics",
       "Classics",
       "Literary"
-    ]
+    ],
+    "description": "The Brothers Karamazov, Dostoevsky’s crowning achievement, is a tale of patricide and family rivalry that embodies the moral and spiritual dissolution of an entire society (Russia in the 1870s). It created a national furor comparable only to the excitement stirred by the publication, in 1866, of Crime and Punishment. To Dostoevsky, The Brothers Karamazov captured the quintessence of Russian character in all its exaltation, compassion, and profligacy."
   },
   "The Art of Gathering::Priya Parker": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10286212-M.jpg",
@@ -2022,7 +2210,8 @@
       "Social interaction",
       "Social networks",
       "Sociology"
-    ]
+    ],
+    "description": "\"A bold new approach to how we gather that will transform the ways we spend our time together--at work, at home, in our communities, and beyond. In The art of gathering, Priya Parker argues that the gatherings in our lives are lackluster and unproductive--which they don't have to be. We rely too much on routine and the conventions of gatherings when we should focus on distinctiveness and the people involved."
   },
   "Outlive::Peter Attia": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13191259-M.jpg",
@@ -2030,7 +2219,8 @@
     "subjects": [
       "nyt:combined-print-and-e-book-nonfiction=2023-04-16",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "Elon Musk::Walter Isaacson": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14420016-M.jpg",
@@ -2039,7 +2229,8 @@
       "Economic history",
       "nyt:combined-print-and-e-book-nonfiction=2023-10-01",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "The Hitchhiker's Guide to the Galaxy::Douglas Adams": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12986869-M.jpg",
@@ -2050,7 +2241,8 @@
       "Humorous fiction",
       "Imaginary voyages",
       "wit and humour"
-    ]
+    ],
+    "description": "The Hitchhiker's Guide to the Galaxy is the first of six books in the Hitchhiker's Guide to the Galaxy comedy science fiction \"hexalogy\" by Douglas Adams. The novel is an adaptation of the first four parts of Adams's radio series of the same name. The novel was first published in London on 12 October 1979."
   },
   "Vanderbilt::Anderson Cooper": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11730014-M.jpg",
@@ -2061,7 +2253,8 @@
       "Vanderbilt family",
       "Vanderbilt, cornelius, 1794-1877",
       "Vanderbilt, gloria, 1924-2019"
-    ]
+    ],
+    "description": null
   },
   "The Bomber Mafia::Malcolm Gladwell": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10716338-M.jpg",
@@ -2072,7 +2265,8 @@
       "New York Times reviewed",
       "Aeronautics, military",
       "World war, 1939-1945, aerial operations"
-    ]
+    ],
+    "description": "\"Malcolm Gladwell weaves together the stories of a Dutch genius and his homemade computer, a band of brothers in central Alabama, a British psychopath, and pyromaniacal chemists at Harvard to examine one of the greatest moral challenges in modern American history. Most military thinkers in the years leading up to World War II saw the airplane as an afterthought. But a small band of idealistic strategists had a different view."
   },
   "The Extraordinary Life of an Ordinary Man::Paul Newman": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12986663-M.jpg",
@@ -2080,7 +2274,8 @@
     "subjects": [
       "nyt:combined-print-and-e-book-nonfiction=2022-11-06",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "The Bluest Eye::Toni Morrison": {
     "coverUrl": "https://covers.openlibrary.org/b/id/15152696-M.jpg",
@@ -2091,11 +2286,13 @@
       "flashback",
       "White Anglo-Saxon Protestants",
       "inferiority complex"
-    ]
+    ],
+    "description": "Each night Pecola prayed for blue eyes.\r\n\r\nIn her eleven years, no one had ever noticed Pecola. But with blue eyes, she thought, everything would be different. She would be so pretty that her parents would stop fighting. Her father would stop drinking. Her brother would stop running away. If only she could be beautiful. If only people would look at her.\r\n\r\nWhen someone finally did, it was her father, drunk. He raped her. Soon she would bear his child..."
   },
   "Why Buddhism Is True::Robert Wright": {
     "coverUrl": "https://covers.openlibrary.org/b/isbn/1982111607-M.jpg",
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "The Alchemist::Paulo Coelho": {
     "coverUrl": "https://covers.openlibrary.org/b/id/7414780-M.jpg",
@@ -2106,7 +2303,8 @@
       "Fiction",
       "Portuguese Fiction",
       "Self-realization"
-    ]
+    ],
+    "description": "The Alchemist details the journey of a young Andalusian shepherd boy named Santiago. Santiago, believing a recurring dream to be prophetic, decides to travel to the pyramids of Egypt to find treasure. On the way, he encounters love, danger, opportunity and disaster."
   },
   "Norse Mythology::Neil Gaiman": {
     "coverUrl": "https://covers.openlibrary.org/b/id/7898682-M.jpg",
@@ -2117,7 +2315,8 @@
       "FICTION / Fairy Tales, Folk Tales, Legends & Mythology",
       "Mythology, norse",
       "Fiction"
-    ]
+    ],
+    "description": "Neil Gaiman has long been inspired by ancient mythology in creating the fantastical realms of his fiction. Now he turns his attention back to the source, presenting a bravura rendition of the great northern tales.\r\n\r\nIn Norse Mythology, Gaiman stays true to the myths in envisioning the major Norse pantheon: Odin, the highest of the high, wise, daring, and cunning; Thor, Odin’s son, incredibly strong yet not the wisest of gods; and Loki―son of a giant―blood brother to Odin and a trickster and uns…"
   },
   "The Tattooist of Auschwitz::Heather Morris": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8572962-M.jpg",
@@ -2128,7 +2327,8 @@
       "World war, 1939-1945, fiction",
       "Jews, fiction",
       "Fiction, historical, general"
-    ]
+    ],
+    "description": "This beautiful, illuminating tale of hope and courage is based on interviews that were conducted with Holocaust survivor and Auschwitz-Birkenau tattooist Ludwig (Lale) Sokolov - an unforgettable love story in the midst of atrocity.\r\n\r\nIn April 1942, Lale Sokolov, a Slovakian Jew, is forcibly transported to the concentration camps at Auschwitz-Birkenau."
   },
   "Think Again::Adam Grant": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10470266-M.jpg",
@@ -2139,7 +2339,8 @@
       "Critical thinking",
       "Questioning",
       "Knowledge, theory of"
-    ]
+    ],
+    "description": "Think Again is a book about the benefit of doubt, and about how we can get better at embracing the unknown and the joy of being wrong. Evidence has shown that creative geniuses are not attached to one identity, but constantly willing to rethink their stances and that leaders who admit they don't know something and seek critical feedback lead more productive and innovative teams.\r\n\r\nNew evidence shows us that as a mindset and a skilllset, rethinking can be taught and Grant explains how to develop…"
   },
   "Finding the Mother Tree::Suzanne Simard": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10525226-M.jpg",
@@ -2150,14 +2351,16 @@
       "New York Times reviewed",
       "Forest conservation",
       "Conservationists"
-    ]
+    ],
+    "description": null
   },
   "Think Faster, Talk Smarter::Matt Abrahams": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14590000-M.jpg",
     "firstPublished": 2023,
     "subjects": [
       "Success in business"
-    ]
+    ],
+    "description": null
   },
   "The Fountainhead::Ayn Rand": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6767765-M.jpg",
@@ -2168,7 +2371,8 @@
       "Individualism",
       "Man-woman relationships",
       "Psychology"
-    ]
+    ],
+    "description": "The Fountainhead is a 1943 novel by Ayn Rand. It was Rand's first major literary success and brought her fame and financial success. More than 6.5 million copies of the book have been sold worldwide."
   },
   "Dune::Brian Herbert": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11481354-M.jpg",
@@ -2179,14 +2383,16 @@
       "Fiction, science fiction, general",
       "Dune (imaginary place), fiction",
       "New York Times reviewed"
-    ]
+    ],
+    "description": "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the \"spice\" melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for...\r\n\r\nWhen House Atreides is betrayed, the destruction of Paul's family will set the boy on a journey toward a destiny greater than he could ever have imagined."
   },
   "Build::Tony Fadell": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12742378-M.jpg",
     "firstPublished": 2022,
     "subjects": [
       "Economics"
-    ]
+    ],
+    "description": null
   },
   "Four Thousand Weeks::Oliver Burkeman": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11990973-M.jpg",
@@ -2197,7 +2403,8 @@
       "Economics",
       "Time management",
       "Happiness"
-    ]
+    ],
+    "description": "The average human lifespan is absurdly, outrageously, insultingly brief: if you live to 80, you have about four thousand weeks on earth. How should we use them best?\r\n\r\nOf course, nobody needs telling that there isn't enough time. We're obsessed by our lengthening to-do lists, our overfilled inboxes, the struggle against distraction, and the sense that our attention spans are shrivelling."
   },
   "The Black Count::Tom Reiss": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10419957-M.jpg",
@@ -2208,7 +2415,8 @@
       "Military History",
       "France",
       "France. Armée"
-    ]
+    ],
+    "description": null
   },
   "The Power of Regret::Daniel H. Pink": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12198642-M.jpg",
@@ -2216,14 +2424,16 @@
     "subjects": [
       "nyt:combined-print-and-e-book-nonfiction=2022-02-20",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "The Intentional Father::Jon Tyson": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13846652-M.jpg",
     "firstPublished": 2021,
     "subjects": [
       "Theology, practical"
-    ]
+    ],
+    "description": null
   },
   "Lifespan::David Sinclair": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8780421-M.jpg",
@@ -2233,12 +2443,14 @@
       "nyt:combined-print-and-e-book-nonfiction=2019-09-29",
       "New York Times bestseller",
       "Longevity"
-    ]
+    ],
+    "description": null
   },
   "Emotion by Design::Greg Hoffman": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14677333-M.jpg",
     "firstPublished": 2022,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "The Changing World Order::Ray Dalio": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10452559-M.jpg",
@@ -2249,12 +2461,14 @@
       "Economic development",
       "History",
       "Economic policy"
-    ]
+    ],
+    "description": null
   },
   "Arabian Nights::Anonymous": {
     "coverUrl": "https://covers.openlibrary.org/b/id/1046897-M.jpg",
     "firstPublished": 1973,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "How to Do Nothing::Jenny Odell": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8750439-M.jpg",
@@ -2265,7 +2479,8 @@
       "Reflection (Philosophy)",
       "Attention",
       "Philosophy"
-    ]
+    ],
+    "description": "Nothing is harder to do these days than nothing. But in a world where our value is determined by our 24/7 data productivity . . . doing nothing may be our most important form of resistance.\r\n\r\nSo argues artist and critic Jenny Odell in this field guide to doing nothing (at least as capitalism defines it). Odell sees our attention as the most precious—and overdrawn—resource we have."
   },
   "Dune::Frank Herbert": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11481354-M.jpg",
@@ -2276,7 +2491,8 @@
       "Fiction, science fiction, general",
       "Dune (imaginary place), fiction",
       "New York Times reviewed"
-    ]
+    ],
+    "description": "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the \"spice\" melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for...\r\n\r\nWhen House Atreides is betrayed, the destruction of Paul's family will set the boy on a journey toward a destiny greater than he could ever have imagined."
   },
   "The 1619 Project::Nikole Hannah-Jones": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10864102-M.jpg",
@@ -2287,12 +2503,14 @@
       "New York Times bestseller",
       "Slavery",
       "History"
-    ]
+    ],
+    "description": "\"The animating idea of The 1619 Project is that our national narrative is more accurately told if we begin not on July 4, 1776, but in late August of 1619, when a ship arrived in Jamestown bearing a cargo of twenty to thirty enslaved people from Africa. Their arrival inaugurated a barbaric and unprecedented system of chattel slavery that would last for the next 250 years. This is sometimes referred to as the country's original sin, but it is more than that: It is the country's very origin."
   },
   "Life Is Hard::Kieran Setiya": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12986612-M.jpg",
     "firstPublished": 2022,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "All the Pretty Horses::Cormac McCarthy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9296904-M.jpg",
@@ -2303,7 +2521,8 @@
       "Horsemen and horsewomen",
       "Prisoners",
       "Cowboys"
-    ]
+    ],
+    "description": "All the Pretty Horses is a novel by American author Cormac McCarthy published by Alfred A. Knopf in 1992.\r\n Its romanticism (in contrast to the bleakness of McCarthy's earlier work) brought the writer much public attention. It was a bestseller, and it won both the U.S. National Book Award and the National Book Critics Circle Award."
   },
   "Dune Messiah::Frank Herbert": {
     "coverUrl": "https://covers.openlibrary.org/b/id/2421405-M.jpg",
@@ -2314,7 +2533,8 @@
       "Fiction",
       "Imaginary places",
       "Science Fiction"
-    ]
+    ],
+    "description": "**Book Two in the Magnificent Dune Chronicles—the Bestselling Science Fiction Adventure of All Time**\r\n\r\nDune Messiah continues the story of Paul Atreides, better known—and feared—as the man christened Muad’Dib. As Emperor of the known universe, he possesses more power than a single man was ever meant to wield."
   },
   "The Tiger::John Vaillant": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8218954-M.jpg",
@@ -2325,7 +2545,8 @@
       "New York Times reviewed",
       "Voyages",
       "Chasse"
-    ]
+    ],
+    "description": null
   },
   "Seven Games::Oliver Roeder": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14617699-M.jpg",
@@ -2336,7 +2557,8 @@
       "Card games",
       "Word games",
       "GAMES & ACTIVITIES / Board Games"
-    ]
+    ],
+    "description": null
   },
   "The Wealth of Nations::Adam Smith": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12816911-M.jpg",
@@ -2347,7 +2569,8 @@
       "Finance",
       "Business",
       "Open Library Staff Picks"
-    ]
+    ],
+    "description": "Adam Smith's The Wealth of Nations was recognized as a landmark of human thought upon its publication in 1776. As the first scientific argument for the principles of political economy, it is the point of departure for all subsequent economic thought. Smith's theories of capital accumulation, growth, and secular change, among others, continue to be influential in modern economics."
   },
   "The Satanic Verses::Salman Rushdie": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8312209-M.jpg",
@@ -2358,7 +2581,8 @@
       "Didactic fiction",
       "literary fiction",
       "families"
-    ]
+    ],
+    "description": "The Satanic Verses is Salman Rushdie's fourth novel, first published September 26, 1988 and inspired in part by the life of the Islamic prophet Muhammad. As with his previous books, Rushdie used magical realism and relied on contemporary events and people to create his characters. The title refers to the satanic verses, a group of Quranic verses that refer to three pagan Meccan goddesses: Allāt, Uzza, and Manāt."
   },
   "A Beginner's Guide to the End::BJ Miller": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8753721-M.jpg",
@@ -2369,12 +2593,14 @@
       "Grief",
       "Consolation",
       "Planning"
-    ]
+    ],
+    "description": "\"The first ever practical, compassionate, and comprehensive guide to dying--and living fully until you do. \"There is nothing wrong with you for dying,\" palliative care doctor BJ Miller and Shoshana Berger write in A Beginner's Guide to the End."
   },
   "The Passenger::Cormac McCarthy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13072232-M.jpg",
     "firstPublished": 2022,
-    "subjects": []
+    "subjects": [],
+    "description": null
   },
   "Stella Maris::Cormac McCarthy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/13011479-M.jpg",
@@ -2382,7 +2608,8 @@
     "subjects": [
       "nyt:combined-print-and-e-book-fiction=2022-12-25",
       "New York Times bestseller"
-    ]
+    ],
+    "description": null
   },
   "The Crossing::Cormac McCarthy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/6999576-M.jpg",
@@ -2393,7 +2620,8 @@
       "Fiction",
       "Boys",
       "Ficción"
-    ]
+    ],
+    "description": "Following All the Pretty Horses in Cormac McCarthy's Border Trilogy is a novel whose force of language is matched only by its breadth of experience and depth of thought. In the bootheel of New Mexico hard on the frontier, Billy and Boyd Parham are just boys in the years before the Second World War, but on the cusp of unimaginable events."
   },
   "Blood Meridian::Cormac McCarthy": {
     "coverUrl": "https://covers.openlibrary.org/b/id/419991-M.jpg",
@@ -2404,7 +2632,8 @@
       "Outlaws",
       "Teenage boys",
       "Indians of North America"
-    ]
+    ],
+    "description": "An epic novel of the violence and depravity that attended America's westward expansion, Blood Meridian brilliantly subverts the conventions of the Western novel and the mythology of the \"wild west.\" Based on historical events that took place on the Texas-Mexico border in the 1850s, it traces the fortunes of the Kid, a fourteen-year-old Tennesseean who stumbles into the nightmarish world where Indians are being murdered and the market for their scalps is thriving."
   },
   "Run::Ann Patchett": {
     "coverUrl": "https://covers.openlibrary.org/b/id/4942059-M.jpg",
@@ -2415,7 +2644,8 @@
       "Literature",
       "Family relationships",
       "Adopted children"
-    ]
+    ],
+    "description": "Since their mother's death, Tip and Teddy Doyle have been raised by their loving, possessive, and ambitious father. As the former mayor of Boston, Bernard Doyle wants to see his sons in politics, a dream the boys have never shared. But when an argument in a blinding New England snowstorm inadvertently causes an accident that involves a stranger and her child, all Bernard Doyle cares about is his ability to keep his children—all his children—safe."
   },
   "The Sun Also Rises::Ernest Hemingway": {
     "coverUrl": "https://covers.openlibrary.org/b/id/78741-M.jpg",
@@ -2426,7 +2656,8 @@
       "Americans",
       "History",
       "Brett Ashley (Fictitious character)"
-    ]
+    ],
+    "description": "Hemingway's profile of the Lost Generation captures life among the expatriates on Paris' Left Bank during the 1920s, the brutality of bullfighting in Spain, and the moral and spiritual dissolution of a generation."
   },
   "The Old Man and the Sea::Ernest Hemingway": {
     "coverUrl": "https://covers.openlibrary.org/b/id/463307-M.jpg",
@@ -2437,7 +2668,8 @@
       "Fishers",
       "Fiction",
       "Ameriška književnost"
-    ]
+    ],
+    "description": "Set in the Gulf Stream off the coast of Havana, Hemingway's magnificent fable is the tale of an old man, a young boy and a giant fish. This story of heroic endeavour won Hemingway the Nobel Prize for Literature. It stands as a unique and timeless vision of the beauty and grief of man's challenge to the elements."
   },
   "Beloved::Toni Morrison": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8261367-M.jpg",
@@ -2448,7 +2680,8 @@
       "History",
       "19th century",
       "Fiction"
-    ]
+    ],
+    "description": "Toni Morrison--author of Song of Solomon and Tar Baby--is a writer of remarkable powers: her novels, brilliantly acclaimed for their passion, their dazzling language and their lyric and emotional force, combine the unassailable truths of experience and emotion with the vision of legend and imagination."
   },
   "The Second Mountain::David Brooks": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8782644-M.jpg",
@@ -2459,7 +2692,8 @@
       "Conduct of life",
       "Relationism",
       "nyt:combined-print-and-e-book-nonfiction=2019-05-05"
-    ]
+    ],
+    "description": "David Brooks is one of the nation’s leading writers and commentators. He is an op-ed columnist for *The New York Times*, a writer for *The Atlantic*, and appears regularly on *PBS Newshour*. He is the bestselling author of *The Second Mountain, The Road to Character, The Social Animal, Bobos in Paradise*, and *On Paradise Drive*.\r\n\r\n**#1 NEW YORK TIMES BESTSELLER • Everybody tells you to live for a cause larger than yourself, but how exactly do you do it? The author of *The Road to Character* ex…"
   },
   "Foundation::Isaac Asimov": {
     "coverUrl": "https://covers.openlibrary.org/b/id/14612610-M.jpg",
@@ -2470,7 +2704,8 @@
       "Life on other planets",
       "Fiction",
       "Science Fiction"
-    ]
+    ],
+    "description": "One of the great masterworks of science fiction, the Foundation novels of Isaac Asimov are unsurpassed for their unique blend of nonstop action, daring ideas, and extensive world-building. \r\n\r\nThe story of our future begins with the history of Foundation and its greatest psychohistorian: Hari Seldon.  For twelve thousand years the Galactic Empire has ruled supreme. Now it is dying."
   },
   "Animal Farm::George Orwell": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11261770-M.jpg",
@@ -2481,7 +2716,8 @@
       "classic",
       "animal drama",
       "Fiction, political"
-    ]
+    ],
+    "description": "Animal Farm is a brilliant political satire and a powerful and affecting story of revolutions and idealism, power and corruption. 'All animals are equal. But some animals are more equal than others.' Mr Jones of Manor Farm is so lazy and drunken that one day he forgets to feed his livestock. The ensuing rebellion under the leadership of the pigs Napoleon and Snowball leads to the animals taking over the farm."
   },
   "Brave New World::Aldous Huxley": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8231823-M.jpg",
@@ -2492,7 +2728,8 @@
       "Moral and ethical aspects of Science",
       "Fiction",
       "Science and state"
-    ]
+    ],
+    "description": "Originally published in 1932, this outstanding work of literature is more crucial and relevant today than ever before. Cloning, feel-good drugs, antiaging programs, and total social control through politics, programming, and media -- has Aldous Huxley accurately predicted our future? With a storyteller's genius, he weaves these ethical controversies in a compelling narrative that dawns in the year 632 AF (After Ford, the deity)."
   },
   "The Code Breaker::Walter Isaacson": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10675496-M.jpg",
@@ -2503,7 +2740,8 @@
       "New York Times reviewed",
       "Immunogenetics",
       "Women scientists, biography"
-    ]
+    ],
+    "description": "A scientific biography of Jennifer Doudna, a founder and co-developer of the CRISPR gene-editing mechanism, and an examination of what happened after CRISPR hit the marketplace."
   },
   "The Premonition::Michael Lewis": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10706277-M.jpg",
@@ -2513,7 +2751,8 @@
       "viral infections",
       "public health",
       "the health bureaucracy"
-    ]
+    ],
+    "description": "How three groups — a California public health official, an incidental virologist, and a presidential pandemic task force — came together to deal with viral infections, including COVID, and the American public-health system, including the Center for Disease Control."
   },
   "Humankind::Rutger Bregman": {
     "coverUrl": "https://covers.openlibrary.org/b/id/9410738-M.jpg",
@@ -2524,7 +2763,8 @@
       "Humanity",
       "Human behavior",
       "nyt:hardcover-nonfiction=2020-06-21"
-    ]
+    ],
+    "description": "Der Historiker Rutger Bregman setzt sich in seinem Buch mit dem Wesen des Menschen auseinander. Anders als in der westlichen Denktradition angenommen ist der Mensch nicht böse, sondern, so Bregman, im Gegenteil: von Grund auf gut. Und geht man von dieser Prämisse aus, ist es möglich, die Welt und den Menschen in ihr komplett neu und grundoptimistisch zu denken. In seinem mitreißend geschriebenen, überzeugenden Buch präsentiert Bregman Ideen für die Verbesserung der Welt."
   },
   "The Call of the Wild::Jack London": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12393037-M.jpg",
@@ -2535,7 +2775,8 @@
       "Lobos",
       "Descubrimiento de oro",
       "Crítica e interpretación"
-    ]
+    ],
+    "description": "As Buck, a mixed breed dog, is taken away from his home, instead of facing a feast for breakfast and the comforts of home, he faces the hardships of being a sled dog. Soon he lands in the wrong hands, being forced to keep going when it is too rough for him and the other dogs in his pack. He also fights the urges to run free with his ancestors, the wolves who live around where he is pulling the sled."
   },
   "In Defense of Food::Michael Pollan": {
     "coverUrl": "https://covers.openlibrary.org/b/id/2960867-M.jpg",
@@ -2546,7 +2787,8 @@
       "Food habits",
       "New York Times bestseller",
       "Food"
-    ]
+    ],
+    "description": "What to eat, what not to eat, and how to think about health: a manifesto for our times\"Eat food. Not too much. Mostly plants.\" These simple words go to the heart of Michael Pollan's In Defense of Food, the well-considered answers he provides to the que"
   },
   "Heart of Darkness::Joseph Conrad": {
     "coverUrl": "https://covers.openlibrary.org/b/id/12307847-M.jpg",
@@ -2557,7 +2799,8 @@
       "Degeneration",
       "Literature",
       "Description and travel"
-    ]
+    ],
+    "description": "Heart of Darkness (1899) is a novella by Polish-English novelist Joseph Conrad, about a voyage up the Congo River into the Congo Free State, in the heart of Africa, by the story's narrator Charles Marlow. Marlow tells his story to friends aboard a boat anchored on the River Thames. Joseph Conrad is one of the greatest English writers, and Heart of Darkness is considered his best.  His readers are brought to face our psychological selves to answer, ‘Who is the true savage?’."
   },
   "A Place of My Own::Michael Pollan": {
     "coverUrl": "https://covers.openlibrary.org/b/id/417552-M.jpg",
@@ -2568,7 +2811,8 @@
       "Space and time",
       "Design and construction",
       "Biography & Autobiography"
-    ]
+    ],
+    "description": "At a turning point in his life, writer Michael Pollan found himself dreaming of a small wood-frame hut in the woods near his house - a place to work, but also a \"shelter for daydreams.\" Ordinarily more at home among words than things, the author was seized by the idea of building the place himself, with his own two unhandy hands.\n\nA Place of My Own recounts his two-and-a-half-year journey of discovery in an absorbing narrative that deftly weaves the day-to-day work of design and building - from …"
   },
   "How to Change Your Mind::Michael Pollan": {
     "coverUrl": "https://covers.openlibrary.org/b/id/8805168-M.jpg",
@@ -2579,21 +2823,24 @@
       "Therapeutic use",
       "Biography",
       "Psychotherapy patients"
-    ]
+    ],
+    "description": "When Michael Pollan set out to research how LSD and psilocybin (the active ingredient in magic mushrooms) are being used to provide relief to people suffering from difficult-to-treat conditions such as depression, addiction and anxiety, he did not intend to write what is undoubtedly his most personal book."
   },
   "The Practice of Groundedness::Brad Stulberg": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10961899-M.jpg",
     "firstPublished": 2021,
     "subjects": [
       "Psychology"
-    ]
+    ],
+    "description": null
   },
   "The Long Game::Dorie Clark": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11998647-M.jpg",
     "firstPublished": 2021,
     "subjects": [
       "Economics"
-    ]
+    ],
+    "description": null
   },
   "The Dawn of Everything::David Graeber and David Wengrow": {
     "coverUrl": "https://covers.openlibrary.org/b/id/11359192-M.jpg",
@@ -2604,7 +2851,8 @@
       "New York Times bestseller",
       "Civilization",
       "Philosophy"
-    ]
+    ],
+    "description": "The renowned activist and public intellectual David Graeber teams up with the professor of comparative archaeology David Wengrow to deliver a trailblazing account of human history, challenging our most fundamental assumptions about social evolution—from the development of agriculture and cities to the emergence of \"the state,\" political violence, and social inequality—and revealing new possibilities for human emancipation\r\n\r\nFor generations, our remote ancestors have been cast as primitive and c…"
   },
   "How to Avoid a Climate Disaster::Bill Gates": {
     "coverUrl": "https://covers.openlibrary.org/b/id/10656063-M.jpg",
@@ -2615,13 +2863,15 @@
       "New York Times reviewed",
       "Global warming",
       "Greenhouse gases"
-    ]
+    ],
+    "description": "\"Bill Gates shares what he's learned in more than a decade of studying climate change and investing in innovations to address the problems, and sets out a vision for how the world can build the tools it needs to get to zero greenhouse gas emissions. Bill Gates explains why he cares so deeply about climate change and what makes him optimistic that the world can avoid the most dire effects of the climate crisis."
   },
   "Epic Measures::Jeremy Smith": {
-    "coverUrl": "https://covers.openlibrary.org/b/isbn/9780062237521-M.jpg",
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/0062237500-M.jpg",
     "firstPublished": 2015,
     "subjects": [
       "World health"
-    ]
+    ],
+    "description": "Medical doctor and economist Christopher Murray began the Global Burden of Disease studies to gain a truer understanding of how we live and how we die. Murray argues that the ideal existence isn't simply the longest but the one lived well and with the least illness. Until we can accurately measure how people live and die, we cannot understand what makes us sick or do much to improve it. In Epic Measures, journalist Jeremy N. Smith offers an intimate look at Murray and his groundbreaking work."
   }
 }

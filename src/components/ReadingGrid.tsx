@@ -139,6 +139,9 @@ export default function ReadingGrid({ booksByYear, years }: Props) {
                 {modal.book.author && (
                   <p className="content-modal-author">{modal.book.author}</p>
                 )}
+                {modal.meta.description && (
+                  <p className="content-modal-description">{modal.meta.description}</p>
+                )}
                 {modal.meta.subjects && modal.meta.subjects.length > 0 && (
                   <div className="content-modal-tags">
                     {modal.meta.subjects.map(s => (

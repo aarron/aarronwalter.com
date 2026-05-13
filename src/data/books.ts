@@ -5,11 +5,13 @@ export interface Book {
   favorite: boolean
   /** Optional manual cover image URL — used instead of Open Library lookup */
   coverUrl?: string
+  /** Optional manual description — overrides anything fetched from Open Library */
+  description?: string
 }
 
 export const books: Book[] = [
   // ── 2026 ────────────────────────────────────────────────
-  { title: 'Play It Loud', author: 'Brad Tolinski and Alan di Perna', year: 2026, favorite: false },
+  { title: 'Play It Loud', author: 'Brad Tolinski and Alan di Perna', year: 2026, favorite: false, coverUrl:'https://m.media-amazon.com/images/I/61nvxOUIoqL._SY522_.jpg' },
   { title: 'The Name of This Band Is R.E.M.', author: 'Peter Ames Carlin', year: 2026, favorite: true },
   { title: 'The Old Guard', author: 'Greg Rucka', year: 2026, favorite: true },
   { title: 'Clapton: The Autobiography', author: 'Eric Clapton', year: 2026, favorite: false },
@@ -25,16 +27,16 @@ export const books: Book[] = [
   { title: 'Journal of a Solitude', author: 'May Sarton', year: 2026, favorite: false },
   { title: 'Between Two Fires', author: 'Christopher Buehlman', year: 2026, favorite: false },
   { title: 'The Orchard Keeper', author: 'Cormac McCarthy', year: 2026, favorite: false },
-  { title: 'Life', author: 'Keith Richards', year: 2026, favorite: false },
+  { title: 'Life', author: 'Keith Richards', year: 2026, favorite: false, coverUrl:'https://m.media-amazon.com/images/I/41ouXOF7piL._SY445_SX342_FMwebp_.jpg' },
   { title: '1177 B.C.: The Year Civilization Collapsed', author: 'Eric Cline', year: 2026, favorite: false },
   { title: 'This Is Your Mind on Plants', author: 'Michael Pollan', year: 2026, favorite: true },
-  { title: 'Hamnet', author: 'Maggie O\'Farrell', year: 2026, favorite: true },
+  { title: 'Hamnet', author: 'Maggie O\'Farrell', year: 2026, favorite: true, coverUrl:'https://m.media-amazon.com/images/I/61vz5iN9YSL._SY522_.jpg' },
   { title: 'Zen and the Art of Motorcycle Maintenance', author: 'Robert M. Pirsig', year: 2026, favorite: true },
   { title: 'Buckeye', author: 'Patrick Ryan', year: 2026, favorite: true },
 
   // ── 2025 ────────────────────────────────────────────────
-  { title: 'Pride and Prejudice', author: 'Jane Austen', year: 2025, favorite: false },
-  { title: 'Hamlet', author: 'Gareth Hinds', year: 2025, favorite: false },
+  { title: 'Pride and Prejudice', author: 'Jane Austen', year: 2025, favorite: false, coverUrl:'https://m.media-amazon.com/images/I/41K1F3Thx4L._SY445_SX342_QL70_FMwebp_.jpg' },
+  { title: 'Hamlet', author: 'Gareth Hinds', year: 2025, favorite: false, coverUrl:'https://images-na.ssl-images-amazon.com/images/I/81gF9ixubYL._AC_UL600_SR600,600_.jpg' },
   { title: 'The Demon of Unrest', author: 'Erik Larson', year: 2025, favorite: true },
   { title: 'The Right Stuff', author: 'Tom Wolfe', year: 2025, favorite: false },
   { title: 'The Devil in the White City', author: 'Erik Larson', year: 2025, favorite: false },
@@ -53,7 +55,7 @@ export const books: Book[] = [
   { title: 'Vienna', author: 'Richard Cockett', year: 2025, favorite: false },
   { title: 'Knife', author: 'Salman Rushdie', year: 2025, favorite: true },
   { title: 'Brideshead Revisited', author: 'Evelyn Waugh', year: 2025, favorite: true },
-  { title: 'Lights On', author: 'Anika Harris', year: 2025, favorite: true },
+  { title: 'Lights On', author: 'Anika Harris', year: 2025, favorite: true, coverUrl: 'https://annakaharris.com/wp-content/uploads/2024/10/lights-on-cover.svg' },
   { title: 'The Perks of Being a Wallflower', author: 'Stephen Chbosky', year: 2025, favorite: true },
   { title: 'Blood and Thunder', author: 'Hampton Sides', year: 2025, favorite: true },
   { title: 'The Bright Sword', author: 'Lev Grossman', year: 2025, favorite: false },

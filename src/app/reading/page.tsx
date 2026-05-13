@@ -28,8 +28,8 @@ export default function ReadingPage() {
         const key = coverKey(b.title, b.author)
         const cached = covers[key]
         const meta: BookMeta = cached
-          ? { found: true, coverUrl: b.coverUrl ?? cached.coverUrl, firstPublished: cached.firstPublished, subjects: cached.subjects }
-          : { found: false, coverUrl: b.coverUrl ?? null }
+          ? { found: true, coverUrl: b.coverUrl ?? cached.coverUrl, firstPublished: cached.firstPublished, subjects: cached.subjects, description: b.description ?? cached.description ?? null }
+          : { found: false, coverUrl: b.coverUrl ?? null, description: b.description ?? null }
         return { ...b, meta }
       })
     return acc
