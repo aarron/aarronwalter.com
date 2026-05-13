@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import FooterWave from '@/components/FooterWave'
 import ReadingGrid from '@/components/ReadingGrid'
+import TopoCanvas from '@/components/TopoCanvas'
 import { books, years } from '@/data/books'
 import type { BookMeta } from '@/components/BookCard'
 import coversJson from '@/data/book-covers.json'
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 }
 
 // Type the JSON so TypeScript is happy
-const covers = coversJson as Record<string, { coverUrl: string | null; firstPublished?: number; subjects?: string[] }>
+const covers = coversJson as Record<string, { coverUrl: string | null; firstPublished?: number; subjects?: string[]; description?: string | null }>
 
 function coverKey(title: string, author: string) {
   return `${title}::${author}`
@@ -39,6 +40,7 @@ export default function ReadingPage() {
     <>
       <article>
         <header className="reading-header">
+          <TopoCanvas className="reading-topo-canvas" />
           <h1 className="reading-header-title">Reading</h1>
           <hr className="reading-header-rule" />
           <p className="reading-header-intro">
