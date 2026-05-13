@@ -28,9 +28,9 @@ export const books: Book[] = [
   { title: 'Life', author: 'Keith Richards', year: 2026, favorite: false },
   { title: '1177 B.C.: The Year Civilization Collapsed', author: 'Eric Cline', year: 2026, favorite: false },
   { title: 'This Is Your Mind on Plants', author: 'Michael Pollan', year: 2026, favorite: true },
-  { title: 'Hamnet', author: 'Maggie O\'Farrell', year: 2026, favorite: false },
-  { title: 'Zen and the Art of Motorcycle Maintenance', author: 'Robert M. Pirsig', year: 2026, favorite: false },
-  { title: 'Buckeye', author: 'Patrick Ryan', year: 2026, favorite: false },
+  { title: 'Hamnet', author: 'Maggie O\'Farrell', year: 2026, favorite: true },
+  { title: 'Zen and the Art of Motorcycle Maintenance', author: 'Robert M. Pirsig', year: 2026, favorite: true },
+  { title: 'Buckeye', author: 'Patrick Ryan', year: 2026, favorite: true },
 
   // ── 2025 ────────────────────────────────────────────────
   { title: 'Pride and Prejudice', author: 'Jane Austen', year: 2025, favorite: false },

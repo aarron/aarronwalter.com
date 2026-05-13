@@ -862,7 +862,8 @@ body {
 
 .reading-header {
   background: #F3E7D6;
-  padding: clamp(7rem, 14vw, 11rem) clamp(1.5rem, 5vw, 4.5rem) clamp(3rem, 6vw, 5rem);
+  padding: clamp(9rem, 18vw, 14rem) clamp(1.5rem, 5vw, 4.5rem) clamp(1.25rem, 2.5vw, 2rem);
+  text-align: left;
 }
 
 .reading-header-title {
@@ -1579,7 +1580,7 @@ body {
 ═══════════════════════════════════════════════════════ */
 
 .reading-page-content {
-  padding: clamp(3rem, 5vw, 4.5rem) clamp(1.5rem, 5vw, 4.5rem) clamp(4rem, 8vw, 7rem);
+  padding: clamp(1.25rem, 2.5vw, 2rem) clamp(1.5rem, 5vw, 4.5rem) clamp(4rem, 8vw, 7rem);
 }
 
 /* ── Year filter nav ── */
@@ -1638,9 +1639,9 @@ body {
 }
 
 .reading-year-heading {
-  font-family: 'Lineca', sans-serif;
-  font-size: clamp(5rem, 14vw, 10rem);
-  font-weight: 400;
+  font-family: 'Lineca', sans-serif !important;
+  font-size: clamp(5rem, 14vw, 10rem) !important;
+  font-weight: 400 !important;
   letter-spacing: -0.04em;
   line-height: 0.88;
   color: rgba(44, 42, 42, 0.07);
