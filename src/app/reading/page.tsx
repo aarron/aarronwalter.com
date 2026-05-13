@@ -19,12 +19,7 @@ export default function ReadingPage() {
     <>
       <article>
         <header className="portfolio-header">
-          <a href="/" className="portfolio-back t-label">← My work</a>
-          <p className="t-label portfolio-eyebrow">A life in books</p>
           <h1 className="portfolio-title">Reading</h1>
-          <p className="portfolio-roles">
-            Books I&rsquo;ve loved, organized by year
-          </p>
         </header>
 
         <div className="reading-page-content">

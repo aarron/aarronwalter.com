@@ -1583,6 +1583,19 @@ body {
   border-color: #FF4725;
 }
 
+/* Favorites button — slightly distinct from year pills */
+.reading-fav-btn {
+  border-style: solid;
+}
+
+/* Divider between favorites and year filters */
+.reading-filter-divider {
+  color: rgba(44, 42, 42, 0.18);
+  font-size: 0.75rem;
+  user-select: none;
+  padding: 0 0.125rem;
+}
+
 /* ── Year section ── */
 
 .reading-year-section {
@@ -1663,22 +1676,23 @@ body {
   line-height: 1;
 }
 
-/* Favorite star badge */
-.book-fav-star {
+/* Favorite badge — pill in the top-right of the cover */
+.book-fav-badge {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  font-size: 0.625rem;
-  color: #FF4725;
-  background: rgba(243, 231, 214, 0.92);
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
+  top: 6px;
+  right: 6px;
+  background: #FF4725;
+  color: #F3E7D6;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.45rem;
+  border-radius: 2rem;
+  line-height: 1.4;
   pointer-events: none;
+  white-space: nowrap;
 }
 
 .book-card-title {
@@ -1996,6 +2010,53 @@ body {
 }
 
 .content-modal-link:hover { opacity: 0.7; }
+
+/* ── Buy links (Reading modal) ── */
+
+.content-modal-buy-links {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(44, 42, 42, 0.1);
+}
+
+.content-modal-buy-label {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.5625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(44, 42, 42, 0.38);
+  margin-bottom: 0.625rem;
+}
+
+.content-modal-buy-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.content-modal-buy-btn {
+  display: inline-flex;
+  align-items: center;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #2C2A2A;
+  background: rgba(44, 42, 42, 0.06);
+  border: 1px solid rgba(44, 42, 42, 0.12);
+  border-radius: 2rem;
+  padding: 0.4rem 0.875rem;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.content-modal-buy-btn:hover {
+  background: #FF4725;
+  border-color: #FF4725;
+  color: #F3E7D6;
+}
 
 /* ── Tracklist ── */
 
