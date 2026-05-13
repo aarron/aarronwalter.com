@@ -3,6 +3,8 @@ export interface Book {
   author: string
   year: number
   favorite: boolean
+  /** Optional manual cover image URL — used instead of Open Library lookup */
+  coverUrl?: string
 }
 
 export const books: Book[] = [

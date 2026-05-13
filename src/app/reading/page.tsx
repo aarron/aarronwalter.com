@@ -18,8 +18,13 @@ export default function ReadingPage() {
   return (
     <>
       <article>
-        <header className="portfolio-header">
-          <h1 className="portfolio-title">Reading</h1>
+        <header className="reading-header">
+          <h1 className="reading-header-title">Reading</h1>
+          <hr className="reading-header-rule" />
+          <p className="reading-header-intro">
+            Some books explain the world. Some just let you leave it for a while.
+            Not every book here will be worth your time. But each one was worth mine.
+          </p>
         </header>
 
         <div className="reading-page-content">

@@ -858,6 +858,41 @@ body {
   }
 }
 
+/* ─── Reading page header (light / cream) ────────────── */
+
+.reading-header {
+  background: #F3E7D6;
+  padding: clamp(7rem, 14vw, 11rem) clamp(1.5rem, 5vw, 4.5rem) clamp(3rem, 6vw, 5rem);
+}
+
+.reading-header-title {
+  font-family: 'Lineca', sans-serif;
+  font-size: clamp(4rem, 12vw, 10rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.9;
+  color: #2C2A2A;
+  margin: 0;
+}
+
+.reading-header-rule {
+  width: clamp(60px, 10vw, 120px);
+  height: 2px;
+  background: #FF4725;
+  border: none;
+  margin: clamp(1.5rem, 3vw, 2.5rem) 0;
+}
+
+.reading-header-intro {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: clamp(0.9375rem, 1.5vw, 1.125rem);
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(44, 42, 42, 0.6);
+  max-width: 48ch;
+  margin: 0;
+}
+
 /* ─── Portfolio Pages ────────────────────────────────── */
 
 .portfolio-header {
