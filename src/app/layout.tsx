@@ -26,6 +26,10 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/xui7gpv.css" />
       </head>
       <body>
+        <a href="/" aria-label="Aarron Walter" className="site-logo">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/alt-aw-logo.png" alt="Aarron Walter" width={400} height={400} />
+        </a>
         <HamburgerMenu />
         <div id="page-content">
           {children}

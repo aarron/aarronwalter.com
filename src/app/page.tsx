@@ -97,16 +97,7 @@ export default async function Home() {
       <HeroWaves className="hero-waves" />
 
       <section className="hero">
-        <a href="/" aria-label="Aarron Walter" className="hero-logo">
-          <Image
-            src="/alt-aw-logo.png"
-            alt="Aarron Walter"
-            width={400}
-            height={400}
-            priority
-            style={{ width: '100%', height: 'auto' }}
-          />
-        </a>
+
 
         <div className="hero-content">
           <h1 className="t-display hero-name" aria-label="Aarron Walter">

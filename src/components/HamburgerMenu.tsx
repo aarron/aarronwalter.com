@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { label: 'Reading', href: '/reading' },
   { label: 'Listening', href: '/listening' },
   { label: 'About', href: '/about' },
-  { label: 'Contact', href: 'https://www.aarronwalter.com/contact' },
+  { label: 'Contact', href: '/contact' },
 ]
 
 export default function HamburgerMenu() {
