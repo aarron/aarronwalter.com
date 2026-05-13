@@ -5,8 +5,10 @@ import { createPortal } from 'react-dom'
 import BookCard, { type BookMeta } from './BookCard'
 import type { Book } from '@/data/books'
 
+type BookWithMeta = Book & { meta: BookMeta }
+
 interface Props {
-  booksByYear: Record<number, Book[]>
+  booksByYear: Record<number, BookWithMeta[]>
   years: number[]
 }
 
@@ -40,7 +42,6 @@ export default function ReadingGrid({ booksByYear, years }: Props) {
 
   const visibleYears = activeYear ? [activeYear] : years
 
-  // Build buy links (no API key needed — both sites support plain search URLs)
   function indieboundUrl(book: Book) {
     return `https://www.indiebound.org/search/book?keys=${encodeURIComponent(`${book.title} ${book.author ?? ''}`)}`
   }
@@ -90,6 +91,7 @@ export default function ReadingGrid({ booksByYear, years }: Props) {
                 <BookCard
                   key={`${year}-${i}`}
                   book={book}
+                  meta={book.meta}
                   onOpen={handleOpen}
                 />
               ))}
@@ -111,7 +113,6 @@ export default function ReadingGrid({ booksByYear, years }: Props) {
             <button className="content-modal-close" onClick={() => setModal(null)} aria-label="Close">×</button>
             <div className="content-modal-inner">
 
-              {/* Cover */}
               <div className="content-modal-cover-wrap">
                 {modal.meta.coverUrl ? (
                   // eslint-disable-next-line @next/next/no-img-element
@@ -130,7 +131,6 @@ export default function ReadingGrid({ booksByYear, years }: Props) {
                 )}
               </div>
 
-              {/* Details */}
               <div className="content-modal-details">
                 {modal.meta.firstPublished && (
                   <p className="content-modal-eyebrow">First published {modal.meta.firstPublished}</p>
@@ -147,24 +147,13 @@ export default function ReadingGrid({ booksByYear, years }: Props) {
                   </div>
                 )}
 
-                {/* Buy links */}
                 <div className="content-modal-buy-links">
                   <p className="content-modal-buy-label">Find this book</p>
                   <div className="content-modal-buy-row">
-                    <a
-                      href={indieboundUrl(modal.book)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="content-modal-buy-btn"
-                    >
+                    <a href={indieboundUrl(modal.book)} target="_blank" rel="noopener noreferrer" className="content-modal-buy-btn">
                       Print — IndieBound
                     </a>
-                    <a
-                      href={libroUrl(modal.book)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="content-modal-buy-btn"
-                    >
+                    <a href={libroUrl(modal.book)} target="_blank" rel="noopener noreferrer" className="content-modal-buy-btn">
                       Audio — Libro.fm
                     </a>
                   </div>

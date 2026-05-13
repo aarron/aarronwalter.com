@@ -2,16 +2,36 @@ import type { Metadata } from 'next'
 import FooterWave from '@/components/FooterWave'
 import ReadingGrid from '@/components/ReadingGrid'
 import { books, years } from '@/data/books'
+import type { BookMeta } from '@/components/BookCard'
+import coversJson from '@/data/book-covers.json'
 
 export const metadata: Metadata = {
   title: 'Reading — Aarron Walter',
   description: 'Books Aarron Walter has read, organized by year.',
 }
 
+// Type the JSON so TypeScript is happy
+const covers = coversJson as Record<string, { coverUrl: string | null; firstPublished?: number; subjects?: string[] }>
+
+function coverKey(title: string, author: string) {
+  return `${title}::${author}`
+}
+
 export default function ReadingPage() {
   const allYears = years()
-  const booksByYear = allYears.reduce<Record<number, typeof books>>((acc, y) => {
-    acc[y] = books.filter(b => b.year === y)
+
+  // Merge pre-fetched cover data with each book
+  const booksByYear = allYears.reduce<Record<number, Array<{ title: string; author: string; year: number; favorite: boolean; coverUrl?: string; meta: BookMeta }>>>((acc, y) => {
+    acc[y] = books
+      .filter(b => b.year === y)
+      .map(b => {
+        const key = coverKey(b.title, b.author)
+        const cached = covers[key]
+        const meta: BookMeta = cached
+          ? { found: true, coverUrl: b.coverUrl ?? cached.coverUrl, firstPublished: cached.firstPublished, subjects: cached.subjects }
+          : { found: false, coverUrl: b.coverUrl ?? null }
+        return { ...b, meta }
+      })
     return acc
   }, {})
 

@@ -866,9 +866,9 @@ body {
 }
 
 .reading-header-title {
-  font-family: 'Lineca', sans-serif;
-  font-size: clamp(4rem, 12vw, 10rem);
-  font-weight: 400;
+  font-family: 'Lineca', sans-serif !important;
+  font-size: clamp(4rem, 12vw, 10rem) !important;
+  font-weight: 400 !important;
   letter-spacing: -0.03em;
   line-height: 0.9;
   color: #2C2A2A;
