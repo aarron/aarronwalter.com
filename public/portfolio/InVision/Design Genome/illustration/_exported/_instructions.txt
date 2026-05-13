@@ -1,0 +1,22 @@
+INSTRUCTIONS
+Export Design Genome illustrations from Illustrator for Wordpress
+
+File requirements:
+** Horiztonal **
+- SVG should be 1000px wide by 500px tall
+
+In Illustrator:
+** Step 1: Export from Illustrator **
+- hide the layers you do not want to show, separating into top layer and bottom layer
+- "Save As", and select "SVG"
+- In the "SVG Options" dialog window, fine "Advanced Options. For "CSS Properties", select "Style Attributes"
+- Click "SVG Code..." button
+- Copy the SVG Code
+
+** Step 2: Optimize the SVG for web **
+- Go to svgomg.com. 
+- Select "Paste markup" from navigation (hamburger menu)
+- Paste the code you just copied
+- Select "Markup" (as opposed to "Image") in top nav
+- Click the download button (bottom right corner) and save the file in Dropbox (this folder)
+- Copy and paste the code from these files into the corresponding field in Wordpress
