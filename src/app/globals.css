@@ -1340,6 +1340,7 @@ body {
 
 .about-illustration-blend {
   mix-blend-mode: multiply;
+  clip-path: inset(6px 0px);
 }
 
 .about-illustration {

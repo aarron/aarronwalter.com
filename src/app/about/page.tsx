@@ -16,11 +16,17 @@ const INTERVIEWS = [
   { outlet: 'This Is Product Management',title: 'Getting Out of the Office is Product Management',  href: 'http://www.thisisproductmanagement.com/episodes/getting-out-of-the-office-is-product-management' },
   { outlet: 'The Big Web Show',          title: 'With Jeffrey Zeldman',                             href: 'http://5by5.tv/bigwebshow/143' },
   { outlet: 'User Defenders Podcast',    title: 'Looking Down the Road',                            href: 'http://userdefenders.com/podcast/027-looking-down-the-road-with-aarron-walter/' },
+  { outlet: 'Designer News Podcast',     title: '',                                                 href: 'https://www.designernews.co/podcast/44040' },
+  { outlet: 'The UX and Growth Podcast', title: 'Building UX Team Design Education',                href: 'http://www.uxandgrowth.com/building-ux-team-design-education-aarron-walter' },
   { outlet: 'Ways We Work',             title: 'Design Leadership and Creative Inputs',             href: 'http://wayswework.io/interviews/aarron-walter-vice-president-of-design-education-at-invision-on-the-challenges-of-design-leadership-and-the-importance-of-creative-inputs' },
+  { outlet: 'Medium',                    title: 'Advice for Designers',                             href: 'https://medium.com/ways-we-work/advice-for-designers-a-conversation-with-aarron-walter-c4812f90ea6e#.u6em0ei6d' },
+  { outlet: 'nGen Works',               title: 'The MailChimp Story',                              href: 'http://ngenworks.com/business/the-mailchimp-story/' },
+  { outlet: 'The UX Intern',             title: '',                                                 href: 'http://theuxintern.com/' },
   { outlet: '.net Magazine',             title: 'Designing Emotion',                                href: 'http://www.netmagazine.com/interviews/aarron-walter-designing-emotion' },
   { outlet: 'The Web Ahead',             title: '',                                                 href: 'http://5by5.tv/webahead/10' },
   { outlet: 'The East Wing',             title: '',                                                 href: 'http://theeastwing.net/episodes/30' },
   { outlet: 'Lullabot',                  title: 'Creative Process Episode 4',                       href: 'http://www.lullabot.com/blog/podcasts/creative-process-episode-4-interview-aarron-walter' },
+  { outlet: 'The Iowa Idea Podcast',     title: '',                                                 href: 'https://www.theiowaidea.com/2020/06/29/23-aarron-walter/' },
 ]
 
 export default function AboutPage() {
