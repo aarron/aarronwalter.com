@@ -151,9 +151,9 @@ export default function SonarCanvas({ className }: { className?: string }) {
 
         // Per-tier alpha and dot-size ranges
         const [minA, maxA, minD, maxD] =
-          tier === 'heavy'  ? [0.32, 0.58, 1.9, 2.7] :
-          tier === 'medium' ? [0.12, 0.26, 1.1, 1.7] :
-                              [0.03, 0.09, 0.45, 0.80]
+          tier === 'heavy'  ? [0.38, 0.62, 2.0, 2.8] :
+          tier === 'medium' ? [0.20, 0.38, 1.3, 1.9] :
+                              [0.10, 0.22, 0.8, 1.2]
 
         const alpha = minA + focus * (maxA - minA)
         const dotR  = minD + Math.sin(lNorm * Math.PI) * (maxD - minD)
