@@ -1,33 +1,26 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import FooterWave from '@/components/FooterWave'
+import ClientLogoGrid from '@/components/ClientLogoGrid'
 
 export const metadata: Metadata = {
   title: 'About — Aarron Walter',
   description: 'Designer, author, and co-founder of Design Better. Two decades shaping how the tech industry thinks about design.',
 }
 
-const CLIENTS = [
-  'Google', 'The White House', 'LinkedIn', 'Goldman Sachs', 'USAA', 'Intuit',
-  'US Department of State', 'Wells Fargo', "Lloyd's Bank", 'Peloton', 'Atlassian',
-  'WHO', 'CDC', 'W3C', "L'Oréal Paris", 'State Farm', 'The Home Depot',
-  'VMware', 'Booz Allen Hamilton', 'Crate and Barrel', 'FirstMark Capital',
-  'Capital One', 'IBM', 'Zendesk', 'AT&T',
-]
-
 const INTERVIEWS = [
-  { outlet: 'Fast Company', title: '"Fail Fast" In Software Design Is A Myth' },
-  { outlet: 'Design Matters', title: 'With Debbie Millman' },
-  { outlet: 'TechCrunch', title: 'The Most Overlooked Aspect Of UX Design' },
-  { outlet: 'Inside Intercom', title: '' },
-  { outlet: 'This Is Product Management', title: '' },
-  { outlet: 'The Big Web Show', title: 'With Jeffrey Zeldman' },
-  { outlet: 'User Defenders Podcast', title: '' },
-  { outlet: 'Ways We Work', title: '' },
-  { outlet: '.net Magazine', title: '' },
-  { outlet: 'The Web Ahead', title: '' },
-  { outlet: 'The East Wing', title: '' },
-  { outlet: 'Lullabot', title: '' },
+  { outlet: 'Fast Company',              title: '"Fail Fast" In Software Design Is A Myth',         href: 'https://www.fastcodesign.com/90136012/fail-fast-in-software-design-is-a-myth' },
+  { outlet: 'Design Matters',            title: 'With Debbie Millman',                              href: 'http://observermedia.designobserver.com/audio/ben-chestnut-and-aarron-walter/37883/' },
+  { outlet: 'TechCrunch',               title: 'The Most Overlooked Aspect Of UX Design',           href: 'http://techcrunch.com/2015/11/22/the-most-overlooked-aspect-of-ux-design-could-be-the-most-important/' },
+  { outlet: 'Inside Intercom',           title: 'InVision\'s Aarron Walter on Design Culture',      href: 'https://blog.intercom.com/invisions-aarron-walter-on-design-culture/' },
+  { outlet: 'This Is Product Management',title: 'Getting Out of the Office is Product Management',  href: 'http://www.thisisproductmanagement.com/episodes/getting-out-of-the-office-is-product-management' },
+  { outlet: 'The Big Web Show',          title: 'With Jeffrey Zeldman',                             href: 'http://5by5.tv/bigwebshow/143' },
+  { outlet: 'User Defenders Podcast',    title: 'Looking Down the Road',                            href: 'http://userdefenders.com/podcast/027-looking-down-the-road-with-aarron-walter/' },
+  { outlet: 'Ways We Work',             title: 'Design Leadership and Creative Inputs',             href: 'http://wayswework.io/interviews/aarron-walter-vice-president-of-design-education-at-invision-on-the-challenges-of-design-leadership-and-the-importance-of-creative-inputs' },
+  { outlet: '.net Magazine',             title: 'Designing Emotion',                                href: 'http://www.netmagazine.com/interviews/aarron-walter-designing-emotion' },
+  { outlet: 'The Web Ahead',             title: '',                                                 href: 'http://5by5.tv/webahead/10' },
+  { outlet: 'The East Wing',             title: '',                                                 href: 'http://theeastwing.net/episodes/30' },
+  { outlet: 'Lullabot',                  title: 'Creative Process Episode 4',                       href: 'http://www.lullabot.com/blog/podcasts/creative-process-episode-4-interview-aarron-walter' },
 ]
 
 export default function AboutPage() {
@@ -35,38 +28,34 @@ export default function AboutPage() {
     <>
       <article className="page-article about-article">
 
-        {/* Illustration — bleeds 10% off the right edge, white removed via multiply */}
-        <div className="about-illustration-wrap" aria-hidden="true">
-          <Image
-            src="/Aarron.jpg"
-            alt=""
-            width={2000}
-            height={1842}
-            className="about-illustration"
-            priority
-          />
+        <div className="about-illustration-wrap">
+          <div className="about-illustration-blend" aria-hidden="true">
+            <Image
+              src="/Aarron.jpg"
+              alt=""
+              width={2000}
+              height={1842}
+              className="about-illustration"
+              priority
+            />
+          </div>
+          <p className="about-illustration-credit">Illustration by Jason Chatfield</p>
         </div>
-
 
         <header className="page-header">
           <h1 className="page-header-title">About</h1>
           <hr className="page-header-rule" />
-          <p className="page-header-intro">
-            Designer, author, and co-founder of Design Better.
-            Two decades shaping how the tech industry thinks about design.
-          </p>
         </header>
 
         <div className="page-content about-content">
 
-          <p className="portfolio-lead">
+          <p className="about-lead">
             I&rsquo;ve spent twenty years influencing how the tech industry thinks about design —
             from building the UX practice at Mailchimp to advising the White House, WHO, and
             hundreds of companies worldwide.
           </p>
 
           <section className="portfolio-section">
-            <h2 className="portfolio-section-title">Background</h2>
             <div className="about-bio">
               <p>
                 Most recently I served as Director of Product and Design on the prevent epidemics team
@@ -122,20 +111,18 @@ export default function AboutPage() {
 
           <section className="portfolio-section">
             <h2 className="portfolio-section-title">Organizations I&rsquo;ve Helped</h2>
-            <ul className="about-clients">
-              {CLIENTS.map(c => (
-                <li key={c} className="about-client">{c}</li>
-              ))}
-            </ul>
+            <ClientLogoGrid />
           </section>
 
           <section className="portfolio-section">
             <h2 className="portfolio-section-title">Select Interviews</h2>
             <ul className="portfolio-list">
-              {INTERVIEWS.map(({ outlet, title }) => (
+              {INTERVIEWS.map(({ outlet, title, href }) => (
                 <li key={outlet}>
-                  <strong>{outlet}</strong>
-                  {title && <span style={{ color: 'rgba(44,42,42,0.55)' }}> — {title}</span>}
+                  <a href={href} target="_blank" rel="noopener noreferrer" className="about-interview-link">
+                    <strong>{outlet}</strong>
+                    {title && <span className="about-interview-title"> — {title}</span>}
+                  </a>
                 </li>
               ))}
             </ul>

@@ -1336,13 +1336,26 @@ body {
   right: -10%;
   width: 58%;
   pointer-events: none;
-  mix-blend-mode: multiply;   /* blends the whole wrap — white → transparent on cream */
+}
+
+.about-illustration-blend {
+  mix-blend-mode: multiply;
 }
 
 .about-illustration {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.about-illustration-credit {
+  text-align: center;
+  font-size: 0.65rem;
+  font-style: italic;
+  color: rgba(44, 42, 42, 0.38);
+  margin-top: 0.5rem;
+  letter-spacing: 0.03em;
+  pointer-events: none;
 }
 
 .about-content {
@@ -1359,22 +1372,66 @@ body {
   max-width: 68ch;
 }
 
+.about-lead {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  line-height: 1.55;
+  color: rgba(44, 42, 42, 0.88);
+  max-width: 58ch;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+}
+
 .about-clients {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 2.5rem 1.5rem;
+  align-items: center;
 }
 
-.about-client {
+.about-client-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+}
+
+.about-client-svg {
+  width: 100%;
+  max-width: 56px;
+  height: auto;
+  fill: rgba(44, 42, 42, 0.55);
+  transition: fill 0.2s;
+}
+
+.about-client-logo:hover .about-client-svg {
+  fill: rgba(44, 42, 42, 0.85);
+}
+
+.about-client-fallback {
   font-family: "aktiv-grotesk", sans-serif;
-  font-size: 0.875rem;
-  color: rgba(44, 42, 42, 0.65);
-  padding: 0.35rem 0.75rem;
-  border: 1px solid rgba(44, 42, 42, 0.12);
-  border-radius: 2rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(44, 42, 42, 0.4);
+  text-align: center;
+}
+
+.about-interview-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.about-interview-link:hover strong {
+  text-decoration: underline;
+}
+
+.about-interview-title {
+  color: rgba(44, 42, 42, 0.55);
 }
 
 .about-cta {
