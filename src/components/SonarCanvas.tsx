@@ -46,6 +46,7 @@ export default function SonarCanvas({ className }: { className?: string }) {
     const t0     = performance.now()
     let lastMs   = performance.now()
     let rings: Dot[][] = []
+    let ringTiers: Array<'heavy' | 'medium' | 'light'> = []
     let blobs: Blob[]  = []
     let W = 0, H = 0, CX = 0, CY = 0
 
@@ -76,6 +77,33 @@ export default function SonarCanvas({ className }: { className?: string }) {
         }
         rings.push(dots)
       }
+
+      // Assign tiers: ~10% heavy, ~20% medium, rest light
+      // Heavy rings must have ≥3 gap between them
+      const nHeavy  = Math.round(RINGS * 0.10)   // ≈4
+      const nMedium = Math.round(RINGS * 0.20)   // ≈8
+      const shuffled = Array.from({ length: RINGS }, (_, i) => i)
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+      }
+      const heavySet  = new Set<number>()
+      const mediumSet = new Set<number>()
+      for (const idx of shuffled) {
+        if (heavySet.size < nHeavy) {
+          const tooClose = [...heavySet].some(h => Math.abs(h - idx) < 3)
+          if (!tooClose) { heavySet.add(idx); continue }
+        }
+      }
+      for (const idx of shuffled) {
+        if (mediumSet.size >= nMedium) break
+        if (heavySet.has(idx)) continue
+        const nextToHeavy = [...heavySet].some(h => Math.abs(h - idx) < 2)
+        if (!nextToHeavy) mediumSet.add(idx)
+      }
+      ringTiers = Array.from({ length: RINGS }, (_, i) =>
+        heavySet.has(i) ? 'heavy' : mediumSet.has(i) ? 'medium' : 'light'
+      )
 
       blobs = Array.from({ length: BLOB_COUNT }, () => ({
         x:         w * (0.25 + Math.random() * 0.5),
@@ -116,13 +144,19 @@ export default function SonarCanvas({ className }: { className?: string }) {
         if (!dots.length) continue
 
         const lNorm = ri / (RINGS - 1)
+        const tier  = ringTiers[ri]
 
-        // Opacity: low at innermost, peaks around 40% out, tapers at edges
-        const focus = 1 - Math.abs(lNorm - 0.38) * 1.6
-        const alpha = Math.max(0.06, focus * 0.48)
+        // Position within visible band (peaks ~40% out, fades at edges)
+        const focus = Math.max(0, 1 - Math.abs(lNorm - 0.38) * 1.6)
 
-        // Dot size: small inner rings, grows toward mid-outer, tapers at edge
-        const dotR = 0.7 + Math.sin(lNorm * Math.PI) * 1.8
+        // Per-tier alpha and dot-size ranges
+        const [minA, maxA, minD, maxD] =
+          tier === 'heavy'  ? [0.32, 0.58, 1.9, 2.7] :
+          tier === 'medium' ? [0.12, 0.26, 1.1, 1.7] :
+                              [0.03, 0.09, 0.45, 0.80]
+
+        const alpha = minA + focus * (maxA - minA)
+        const dotR  = minD + Math.sin(lNorm * Math.PI) * (maxD - minD)
 
         ctx!.beginPath()
 
