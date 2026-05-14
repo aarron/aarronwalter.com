@@ -55,6 +55,8 @@ export default function AboutPage() {
 
         <div className="page-content about-content">
 
+          <div className="about-intro">
+
           <p className="about-lead">
             I&rsquo;ve spent the better part of two decades at the intersection of design and technology,
             trying to make products that feel genuinely human.
@@ -90,6 +92,8 @@ export default function AboutPage() {
               </p>
             </div>
           </section>
+
+          </div>{/* end .about-intro */}
 
           <section className="portfolio-section">
             <h2 className="portfolio-section-title">Organizations I&rsquo;ve Helped</h2>
