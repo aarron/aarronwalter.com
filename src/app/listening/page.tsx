@@ -3,17 +3,45 @@ import FooterWave from '@/components/FooterWave'
 import ListeningGrid from '@/components/ListeningGrid'
 import SonarCanvas from '@/components/SonarCanvas'
 import { records } from '@/data/records'
+import type { RecordMeta } from '@/components/RecordCard'
+import coversJson from '@/data/record-covers.json'
 
 export const metadata: Metadata = {
   title: 'Listening — Aarron Walter',
   description: "Aarron Walter's vinyl record collection.",
 }
 
+const covers = coversJson as Record<string, {
+  cover: string | null
+  thumb: string | null
+  genres?: string[]
+  styles?: string[]
+  country?: string | null
+  tracklist?: { position: string; title: string; duration: string }[]
+}>
+
 // Sort: 5-star first, then by artist
-const sorted = [...records].sort((a, b) => {
-  if (b.rating !== a.rating) return b.rating - a.rating
-  return a.artist.localeCompare(b.artist)
-})
+const sorted = [...records]
+  .sort((a, b) => {
+    if (b.rating !== a.rating) return b.rating - a.rating
+    return a.artist.localeCompare(b.artist)
+  })
+  .map(r => {
+    const cached = r.releaseId ? covers[String(r.releaseId)] : undefined
+    const meta: RecordMeta = cached
+      ? {
+          found:      true,
+          cover:      cached.cover,
+          thumb:      cached.thumb,
+          genres:     cached.genres,
+          styles:     cached.styles,
+          country:    cached.country ?? undefined,
+          tracklist:  cached.tracklist,
+          discogsUrl: r.releaseId ? `https://www.discogs.com/release/${r.releaseId}` : undefined,
+        }
+      : { found: false }
+    return { record: r, meta }
+  })
 
 export default function ListeningPage() {
   return (

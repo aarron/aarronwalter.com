@@ -5,18 +5,23 @@ import { createPortal } from 'react-dom'
 import RecordCard, { type RecordMeta } from './RecordCard'
 import type { VinylRecord } from '@/data/records'
 
+interface RecordWithMeta {
+  record: VinylRecord
+  meta:   RecordMeta
+}
+
 interface Props {
-  records: VinylRecord[]
+  records: RecordWithMeta[]
 }
 
 interface ModalState {
   record: VinylRecord
-  meta: RecordMeta
+  meta:   RecordMeta
 }
 
 export default function ListeningGrid({ records }: Props) {
-  const [modal, setModal] = useState<ModalState | null>(null)
-  const [search, setSearch] = useState('')
+  const [modal,   setModal]   = useState<ModalState | null>(null)
+  const [search,  setSearch]  = useState('')
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => { setMounted(true) }, [])
@@ -37,7 +42,7 @@ export default function ListeningGrid({ records }: Props) {
   }, [])
 
   const filtered = search.trim()
-    ? records.filter(r =>
+    ? records.filter(({ record: r }) =>
         r.artist.toLowerCase().includes(search.toLowerCase()) ||
         r.title.toLowerCase().includes(search.toLowerCase())
       )
@@ -59,10 +64,11 @@ export default function ListeningGrid({ records }: Props) {
 
       {/* ── Grid ── */}
       <div className="book-grid record-grid">
-        {filtered.map((record, i) => (
+        {filtered.map(({ record, meta }, i) => (
           <RecordCard
             key={record.releaseId ?? i}
             record={record}
+            meta={meta}
             onOpen={handleOpen}
           />
         ))}
@@ -80,10 +86,10 @@ export default function ListeningGrid({ records }: Props) {
             <button className="content-modal-close" onClick={() => setModal(null)} aria-label="Close">×</button>
             <div className="content-modal-inner">
               <div className="content-modal-cover-wrap">
-                {modal.meta.cover ? (
+                {(modal.meta.cover ?? modal.meta.thumb) ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
-                    src={modal.meta.cover}
+                    src={(modal.meta.cover ?? modal.meta.thumb)!}
                     alt={modal.record.title}
                     className="content-modal-cover"
                   />

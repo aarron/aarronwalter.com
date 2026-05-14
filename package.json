@@ -8,7 +8,8 @@
     "preview": "next build && next start",
     "start": "next start",
     "lint": "eslint",
-    "fetch-covers": "node --experimental-strip-types scripts/fetch-book-covers.ts"
+    "fetch-covers": "node --experimental-strip-types scripts/fetch-book-covers.ts",
+    "fetch-record-covers": "node --experimental-strip-types scripts/fetch-record-covers.ts"
   },
   "dependencies": {
     "next": "16.2.6",
