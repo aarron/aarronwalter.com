@@ -56,7 +56,7 @@ export default function ReadingPage() {
         </div>
       </article>
 
-      <footer className="site-footer">
+      <footer className="site-footer site-footer--light">
         <div className="footer-wave-wrap" aria-hidden="true"><FooterWave /></div>
         <div className="footer-inner">
           <span className="t-caption">© {new Date().getFullYear()} Aarron Walter</span>

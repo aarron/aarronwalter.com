@@ -1252,6 +1252,19 @@ body {
   color: rgba(243, 231, 214, 0.4);
 }
 
+.site-footer--light {
+  background: #F3E7D6;
+  color: rgba(44, 42, 42, 0.55);
+}
+
+.site-footer--light .footer-links a {
+  color: rgba(44, 42, 42, 0.55);
+}
+
+.site-footer--light .footer-links a:hover {
+  color: #FF4725;
+}
+
 .footer-wave-wrap {
   height: 80px;
   position: relative;
