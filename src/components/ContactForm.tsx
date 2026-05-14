@@ -92,8 +92,8 @@ export default function ContactForm() {
         <label className="contact-label">What brings you here?</label>
         <div className="contact-type-grid">
           {[
-            { value: 'guest',    label: 'Podcast Guest Pitch',  sub: 'Suggest someone for Design Better' },
-            { value: 'speaking', label: 'Speaking Engagement',  sub: 'Invite Aarron to your event' },
+            { value: 'guest',    label: 'Podcast Guest Pitch',  sub: 'Pitch a guest for my podcast' },
+            { value: 'speaking', label: 'Speaking Engagement',  sub: 'Invite me to your event' },
             { value: 'general',  label: 'General Inquiry',      sub: 'Anything else' },
           ].map(({ value, label, sub }) => (
             <button
@@ -180,14 +180,13 @@ export default function ContactForm() {
                 <option value="">Select…</option>
                 <option value="in-person">In-person</option>
                 <option value="virtual">Virtual</option>
-                <option value="hybrid">Hybrid</option>
               </select>
             </div>
             <div className="contact-field">
               <label className="contact-label" htmlFor="event_budget">
                 Budget range <span className="contact-optional">(optional)</span>
               </label>
-              <input id="event_budget" name="event_budget" type="text" className="contact-input" placeholder="e.g. $5k–$10k" />
+              <input id="event_budget" name="event_budget" type="text" className="contact-input" />
             </div>
           </div>
           <div className="contact-field">
@@ -198,7 +197,7 @@ export default function ContactForm() {
               className="contact-textarea"
               rows={4}
               required
-              placeholder="Audience, theme, what you're hoping Aarron will bring to it…"
+              placeholder="Audience, theme, what you're hoping I'll bring to it…"
             />
           </div>
         </div>
