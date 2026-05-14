@@ -51,7 +51,7 @@ export default function ClientLogoGrid() {
   return (
     <ul className="about-clients">
       {CLIENTS.map(({ name, ...entry }) => (
-        <li key={name} className="about-client-logo" title={name}>
+        <li key={name} className="about-client-logo" data-logo={name} title={name}>
           {entry.kind === 'icon' ? (
             <svg
               role="img"

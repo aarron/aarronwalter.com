@@ -1435,6 +1435,14 @@ body {
   opacity: 1;
 }
 
+/* ── Per-logo size overrides ───────────────────────────── */
+[data-logo="Lloyd's Bank"] .about-client-img     { max-height: 18px; opacity: 0.45; }
+[data-logo="The White House"] .about-client-img  { max-width: 95px; }
+[data-logo="US Dept. of State"] .about-client-img { max-height: 52px; max-width: 52px; }
+[data-logo="Goldman Sachs"] .about-client-svg    { width: 54px; height: 54px; }
+[data-logo="VMware"] .about-client-svg           { width: 54px; height: 54px; }
+[data-logo="Intuit"] .about-client-svg           { width: 54px; height: 54px; }
+
 .about-client-fallback {
   font-family: "aktiv-grotesk", sans-serif;
   font-size: 0.72rem;
