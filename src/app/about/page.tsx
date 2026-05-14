@@ -125,7 +125,7 @@ export default function AboutPage() {
       </div>
 
       <footer className="site-footer">
-        <div className="footer-wave-wrap" aria-hidden="true"><FooterWave /></div>
+        <div className="footer-wave-wrap" aria-hidden="true"><FooterWave color="rgba(243, 231, 214, 0.35)" /></div>
         <div className="footer-inner">
           <span className="t-caption">© {new Date().getFullYear()} <strong className="footer-name">Aarron Walter</strong></span>
           <nav className="footer-links">
