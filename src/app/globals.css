@@ -1343,15 +1343,19 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  filter: url(#ink-warp);
-  animation: about-breathe 11s ease-in-out infinite;
-  transform-origin: center bottom;
+  mix-blend-mode: multiply;   /* white background becomes transparent */
 }
 
-@keyframes about-breathe {
-  0%, 100% { transform: translateY(0)   scale(1); }
-  35%       { transform: translateY(-7px) scale(1.005); }
-  70%       { transform: translateY(-3px) scale(1.002); }
+.about-ink-canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: clamp(420px, 85vh, 860px);
+  z-index: 2;
+  pointer-events: none;
+  mix-blend-mode: multiply;
 }
 
 .about-content {
