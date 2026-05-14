@@ -4,25 +4,19 @@ import FooterWave from '@/components/FooterWave'
 
 export const metadata: Metadata = {
   title: 'Contact — Aarron Walter',
-  description: 'Get in touch with Aarron Walter for speaking, guest pitches, or general inquiries.',
+  description: 'Get in touch with Aarron Walter.',
 }
 
 export default function ContactPage() {
   return (
     <>
-      <article>
-        <header className="portfolio-header">
-          <a href="/" className="portfolio-back t-label">← My work</a>
-          <p className="t-label portfolio-eyebrow">Get in Touch</p>
-          <h1 className="portfolio-title">Contact</h1>
-          <p className="portfolio-roles">Speaking &nbsp;·&nbsp; Guest Pitches &nbsp;·&nbsp; General Inquiries</p>
+      <article className="page-article">
+        <header className="page-header">
+          <h1 className="page-header-title">Contact</h1>
+          <hr className="page-header-rule" />
         </header>
 
-        <div className="portfolio-content">
-          <p className="portfolio-lead">
-            Choose what brings you here and I&rsquo;ll make sure you&rsquo;re telling me
-            what I need to know.
-          </p>
+        <div className="page-content">
           <ContactForm />
         </div>
       </article>
