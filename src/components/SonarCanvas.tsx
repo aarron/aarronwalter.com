@@ -4,9 +4,10 @@ import { useEffect, useRef } from 'react'
 
 // ─────────────────────────────────────────────────────────────
 //  SonarCanvas — concentric dot rings radiating from a source
-//  just below the canvas bottom. A slow traveling wave pulses
-//  outward through the rings. Invisible blobs drift through
-//  the field, displacing nearby dots as they pass.
+//  just below the canvas bottom. A sound-like pulse sweeps
+//  outward through the rings, brightening and enlarging each
+//  ring as it passes. Invisible blobs drift through the field,
+//  displacing nearby dots as they pass.
 //
 //  Source sits at (w/2, h * 1.08) so only the upper arc of
 //  each ring is visible — the same semicircular sweep seen in
@@ -15,9 +16,8 @@ import { useEffect, useRef } from 'react'
 
 const RINGS       = 38
 const DOT_SPACING = 11     // target px between adjacent dots along arc
-const PULSE_AMP   = 5      // traveling wave radial amplitude (px)
-const PULSE_SPEED = 0.45   // wave angular speed (rad/s)
-const RADIAL_FREQ = 0.014  // wave spatial frequency (rad/px of radius)
+const PULSE_SPEED = 0.9    // wave angular speed (rad/s)
+const RADIAL_FREQ = 0.016  // wave spatial frequency (rad/px of radius)
 const BLOB_COUNT  = 3
 
 interface Dot {
@@ -46,7 +46,6 @@ export default function SonarCanvas({ className }: { className?: string }) {
     const t0     = performance.now()
     let lastMs   = performance.now()
     let rings: Dot[][] = []
-    let ringTiers: Array<'heavy' | 'medium' | 'light'> = []
     let blobs: Blob[]  = []
     let W = 0, H = 0, CX = 0, CY = 0
 
@@ -58,7 +57,6 @@ export default function SonarCanvas({ className }: { className?: string }) {
 
       const rMin = h * 0.08
       const rMax = h * 1.52
-      const margin = PULSE_AMP + 4
 
       rings = []
       for (let i = 0; i < RINGS; i++) {
@@ -70,40 +68,13 @@ export default function SonarCanvas({ className }: { className?: string }) {
         for (let a = 0; a < Math.PI * 2; a += step) {
           const px = CX + r * Math.cos(a)
           const py = CY + r * Math.sin(a)
-          if (px >= -margin && px <= w + margin &&
-              py >= -margin && py <= h + margin) {
+          if (px >= -4 && px <= w + 4 &&
+              py >= -4 && py <= h + 4) {
             dots.push({ angle: a, r, nr: (Math.random() - 0.5) * 3.5 })
           }
         }
         rings.push(dots)
       }
-
-      // Assign tiers: ~10% heavy, ~20% medium, rest light
-      // Heavy rings must have ≥3 gap between them
-      const nHeavy  = Math.round(RINGS * 0.10)   // ≈4
-      const nMedium = Math.round(RINGS * 0.20)   // ≈8
-      const shuffled = Array.from({ length: RINGS }, (_, i) => i)
-      for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
-      }
-      const heavySet  = new Set<number>()
-      const mediumSet = new Set<number>()
-      for (const idx of shuffled) {
-        if (heavySet.size < nHeavy) {
-          const tooClose = [...heavySet].some(h => Math.abs(h - idx) < 3)
-          if (!tooClose) { heavySet.add(idx); continue }
-        }
-      }
-      for (const idx of shuffled) {
-        if (mediumSet.size >= nMedium) break
-        if (heavySet.has(idx)) continue
-        const nextToHeavy = [...heavySet].some(h => Math.abs(h - idx) < 2)
-        if (!nextToHeavy) mediumSet.add(idx)
-      }
-      ringTiers = Array.from({ length: RINGS }, (_, i) =>
-        heavySet.has(i) ? 'heavy' : mediumSet.has(i) ? 'medium' : 'light'
-      )
 
       blobs = Array.from({ length: BLOB_COUNT }, () => ({
         x:         w * (0.25 + Math.random() * 0.5),
@@ -143,27 +114,20 @@ export default function SonarCanvas({ className }: { className?: string }) {
         const dots = rings[ri]
         if (!dots.length) continue
 
-        const lNorm = ri / (RINGS - 1)
-        const tier  = ringTiers[ri]
+        // Traveling wave: sin moves outward with time.
+        // All dots in a ring share the same r, so wave is per-ring.
+        const ringR = dots[0].r
+        const wave  = Math.sin(t * PULSE_SPEED - ringR * RADIAL_FREQ)
+        const boost = (wave + 1) * 0.5   // 0 → 1, crests at 1
 
-        // Position within visible band (peaks ~40% out, fades at edges)
-        const focus = Math.max(0, 1 - Math.abs(lNorm - 0.38) * 1.6)
-
-        // Per-tier alpha and dot-size ranges
-        const [minA, maxA, minD, maxD] =
-          tier === 'heavy'  ? [0.26, 0.46, 1.8, 2.4] :
-          tier === 'medium' ? [0.18, 0.32, 1.2, 1.7] :
-                              [0.13, 0.24, 0.8, 1.2]
-
-        const alpha = minA + focus * (maxA - minA)
-        const dotR  = minD + Math.sin(lNorm * Math.PI) * (maxD - minD)
+        // Uniform base; pulse lifts opacity and size as it passes
+        const alpha = 0.16 + boost * 0.22   // 0.16 … 0.38
+        const dotR  = 0.9  + boost * 0.85   // 0.9  … 1.75
 
         ctx!.beginPath()
 
         for (const dot of dots) {
-          // Outward traveling wave
-          const pulse = PULSE_AMP * Math.sin(t * PULSE_SPEED - dot.r * RADIAL_FREQ)
-          const r = dot.r + dot.nr + pulse
+          const r = dot.r + dot.nr
 
           let px = CX + r * Math.cos(dot.angle)
           let py = CY + r * Math.sin(dot.angle)
