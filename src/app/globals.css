@@ -1288,6 +1288,15 @@ body {
   gap: 1rem;
 }
 
+.footer-name {
+  font-weight: 700;
+  color: #85D2FF;   /* default: dark footer */
+}
+
+.site-footer--light .footer-name {
+  color: #FF4725;
+}
+
 .footer-logo {
   width: clamp(48px, 6vw, 72px);
   opacity: 0.5;

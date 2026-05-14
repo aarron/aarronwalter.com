@@ -215,7 +215,7 @@ export default function MailchimpPage() {
           <FooterWave />
         </div>
         <div className="footer-inner">
-        <span className="t-caption">© {new Date().getFullYear()} Aarron Walter</span>
+        <span className="t-caption">© {new Date().getFullYear()} <strong className="footer-name">Aarron Walter</strong></span>
         <nav className="footer-links">
           <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer">Design Better</a>
           <a href="https://linkedin.com/in/aarronwalter" target="_blank" rel="noopener noreferrer">LinkedIn</a>
