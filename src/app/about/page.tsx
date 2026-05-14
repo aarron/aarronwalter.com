@@ -56,16 +56,13 @@ export default function AboutPage() {
         <div className="page-content about-content">
 
           <p className="about-lead">
-            I&rsquo;ve spent twenty years influencing how the tech industry thinks about design —
-            from building the UX practice at Mailchimp to advising the White House, WHO, and
-            hundreds of companies worldwide.
+            I&rsquo;ve spent the better part of two decades at the intersection of design and technology,
+            trying to make products that feel genuinely human.
           </p>
 
           <section className="portfolio-section">
             <div className="about-bio">
               <p>
-                I&rsquo;ve spent the better part of two decades at the intersection of design and technology,
-                trying to make products that feel genuinely human.
                 These days, that passion lives most visibly in Design Better, a media company I co-founded
                 with a community of nearly 250,000 designers and technology professionals worldwide, with
                 subscribers on design teams at most of the Fortune 500. Talking with brilliant people about
