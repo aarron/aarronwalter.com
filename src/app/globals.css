@@ -890,7 +890,7 @@ body {
   background: transparent;
   position: relative;
   z-index: 1;           /* paints the header stacking context above canvas */
-  padding: clamp(12rem, 18vw, 16rem) clamp(1.5rem, 5vw, 4.5rem) clamp(1.25rem, 2.5vw, 2rem);
+  padding: clamp(16rem, 24vw, 20rem) clamp(1.5rem, 5vw, 4.5rem) clamp(1.25rem, 2.5vw, 2rem);
   text-align: left;
 }
 
@@ -1520,10 +1520,6 @@ body {
 /* ═══════════════════════════════════════════════════════
    CONTACT PAGE
 ═══════════════════════════════════════════════════════ */
-
-.contact-page-header {
-  padding-top: clamp(16rem, 24vw, 20rem);
-}
 
 .contact-flock-canvas {
   position: absolute;
