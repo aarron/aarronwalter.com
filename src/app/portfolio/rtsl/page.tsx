@@ -9,12 +9,13 @@ export const metadata: Metadata = {
 export default function RTSLPage() {
   return (
     <>
-      <article>
+      <article className="page-article">
         {/* ── Header ── */}
         <header className="portfolio-header">
           <a href="/" className="portfolio-back t-label">← My work</a>
           <p className="t-label portfolio-eyebrow">2020–2022</p>
           <h1 className="portfolio-title">Resolve to Save Lives</h1>
+          <hr className="page-header-rule" />
           <p className="portfolio-roles">
             Director of Product &amp; Design &nbsp;·&nbsp; US COVID Response
           </p>
@@ -30,6 +31,8 @@ export default function RTSLPage() {
             Leading an 8-person cross-disciplinary team, I helped build products and strategy that
             supported life-saving pandemic response decisions across multiple countries.
           </p>
+
+          <img src="/portfolio/Resolve%20to%20Save%20Lives/product-overview.png" alt="Product overview" className="case-study-image" />
 
           {/* Stats */}
           <div className="portfolio-stats">
@@ -97,6 +100,11 @@ export default function RTSLPage() {
               <div className="case-study-body">
                 <p>Starting in April 2020 with a design sprint to explore how technology could support pandemic response, our team's central thesis was that "boxing in the virus through contact tracing" would be the most effective strategy. We moved fast — using Google Sheets for data storage and Node.js to reduce server-side development — building under the kind of high-stakes conditions where leaders were using our dashboards to decide whether to shut down cities and countries.</p>
                 <p>The Africa CDC dashboard tracked COVID cases, tests, deaths, and key outbreak indicators defined by epidemiologists. It was used directly by Africa CDC leaders and the African Union to shape continent-wide COVID response.</p>
+                <div className="case-study-image-grid">
+                  <img src="/portfolio/Resolve%20to%20Save%20Lives/zebra/DHIS2%20dashboard.png" alt="DHIS2 dashboard" />
+                  <img src="/portfolio/Resolve%20to%20Save%20Lives/zebra/Epi%20Tracker%20-%20Risk%20Defined.png" alt="Epi Tracker risk defined screen" />
+                  <img src="/portfolio/Resolve%20to%20Save%20Lives/zebra/IM%20Team%20Builder%20Modal.png" alt="IM Team Builder modal" />
+                </div>
               </div>
             </div>
           </section>
@@ -108,6 +116,7 @@ export default function RTSLPage() {
             <blockquote className="testimonial">
               <p className="testimonial-quote">"Aarron brought structured thinking to problem solving, was a great team leader and collaborator — a rare combination of someone who is skillful at work and wise in life too."</p>
               <cite className="testimonial-attribution">
+                <img src="/portfolio/Resolve%20to%20Save%20Lives/rahul-mullick.jpg" alt="Rahul Mullick" className="testimonial-avatar" />
                 Rahul Mullick
                 <span className="testimonial-role">Senior Vice President of Technology, Resolve to Save Lives</span>
               </cite>
@@ -116,6 +125,7 @@ export default function RTSLPage() {
             <blockquote className="testimonial">
               <p className="testimonial-quote">"Aarron brought a calm, empathic style. He managed to direct the team and rally partners to achieve excellent design and product outcomes."</p>
               <cite className="testimonial-attribution">
+                <img src="/portfolio/Resolve%20to%20Save%20Lives/daniel-burka.jpg" alt="Daniel Burka" className="testimonial-avatar" />
                 Daniel Burka
                 <span className="testimonial-role">Director of Product and Design, Resolve to Save Lives</span>
               </cite>

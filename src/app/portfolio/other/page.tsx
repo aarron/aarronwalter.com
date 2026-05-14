@@ -16,12 +16,13 @@ export default function OtherPage() {
 
   return (
     <>
-      <article>
+      <article className="page-article">
         {/* ── Header ── */}
         <header className="portfolio-header">
           <a href="/" className="portfolio-back t-label">← My work</a>
           <p className="t-label portfolio-eyebrow">Ongoing</p>
           <h1 className="portfolio-title">Consulting &amp; Publishing</h1>
+          <hr className="page-header-rule" />
           <p className="portfolio-roles">
             Author &nbsp;·&nbsp; Speaker &nbsp;·&nbsp; Advisor &nbsp;·&nbsp; Podcast Co-host
           </p>
@@ -59,6 +60,7 @@ export default function OtherPage() {
                 <blockquote className="testimonial">
                   <p className="testimonial-quote">"Aarron helped remind us how important it is to reflect on how design affects our lives and emotions."</p>
                   <cite className="testimonial-attribution">
+                    <img src="/portfolio/Other/toke.jpg" alt="Toke Nygaard" className="testimonial-avatar" />
                     Toke Nygaard
                     <span className="testimonial-role">Chief Creative Officer, Zendesk</span>
                   </cite>
@@ -67,6 +69,7 @@ export default function OtherPage() {
                 <blockquote className="testimonial">
                   <p className="testimonial-quote">"His balance of storytelling sparked thoughtful discussion and introduced frameworks for inclusive design that teams could implement."</p>
                   <cite className="testimonial-attribution">
+                    <img src="/portfolio/Other/evan-english.jpg" alt="Evan English" className="testimonial-avatar" />
                     Evan English
                     <span className="testimonial-role">VP, American Express</span>
                   </cite>
@@ -75,6 +78,7 @@ export default function OtherPage() {
                 <blockquote className="testimonial">
                   <p className="testimonial-quote">"Aarron transforms complex design concepts into simple, memorable stories."</p>
                   <cite className="testimonial-attribution">
+                    <img src="/portfolio/Other/zeldman.jpg" alt="Jeffrey Zeldman" className="testimonial-avatar" />
                     Jeffrey Zeldman
                     <span className="testimonial-role">Co-founder, An Event Apart</span>
                   </cite>
@@ -83,6 +87,7 @@ export default function OtherPage() {
                 <blockquote className="testimonial">
                   <p className="testimonial-quote">"Employees raved about his humility, kindness, and focus on humanity."</p>
                   <cite className="testimonial-attribution">
+                    <img src="/portfolio/Other/kara-defrias.jpg" alt="Kara DeFrias" className="testimonial-avatar" />
                     Kara DeFrias
                     <span className="testimonial-role">Intuit</span>
                   </cite>
@@ -91,6 +96,7 @@ export default function OtherPage() {
                 <blockquote className="testimonial">
                   <p className="testimonial-quote">"Made the case for design as a contribution of all roles."</p>
                   <cite className="testimonial-attribution">
+                    <img src="/portfolio/Other/steve-turbek.jpg" alt="Steve Turbeck" className="testimonial-avatar" />
                     Steve Turbeck
                     <span className="testimonial-role">Goldman Sachs</span>
                   </cite>
@@ -121,6 +127,7 @@ export default function OtherPage() {
               </div>
               <div className="case-study-body">
                 <p>Regular keynote speaker at design and technology conferences worldwide. I've spoken in Japan, New Zealand, Australia, Germany, France, Spain, Portugal, Sweden, Norway, Iceland, Poland, the UK, Israel, Peru, Canada, and across the United States.</p>
+                <img src="/portfolio/Other/speaking-map.png" alt="Speaking locations world map" className="case-study-image" />
               </div>
             </div>
           </section>
@@ -139,6 +146,8 @@ export default function OtherPage() {
               </div>
               <div className="case-study-body">
                 <p>Case studies and psychologically grounded principles for designing products that connect with people on a human level. The second edition addresses new challenges for modern web professionals while carrying optimism about what design can accomplish.</p>
+
+                <img src="/portfolio/Other/designing-for-emotion.png" alt="Designing for Emotion book cover" className="case-study-image" style={{maxWidth: '280px'}} />
 
                 <blockquote className="testimonial" style={{ marginTop: '1.5rem' }}>
                   <p className="testimonial-quote">"Emotion becomes an unfair advantage for your business."</p>
@@ -165,37 +174,6 @@ export default function OtherPage() {
                   <li><em>Principles of Product Design</em> — best practices from world-class design teams</li>
                   <li><em>Design Leadership Handbook</em> — tactical approaches for design leaders (Design Better)</li>
                 </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Podcasts */}
-          <section className="portfolio-section">
-            <h2 className="portfolio-section-title">Podcasts</h2>
-
-            <div className="case-study">
-              <h3 className="case-study-title">Design Better</h3>
-              <div className="case-study-meta">
-                <div className="case-study-meta-item">
-                  <span className="case-study-meta-label">Downloads</span>
-                  <span className="case-study-meta-value">4 million+</span>
-                </div>
-                <div className="case-study-meta-item">
-                  <span className="case-study-meta-label">Recognition</span>
-                  <span className="case-study-meta-value">Award-winning · Webby-nominated</span>
-                </div>
-              </div>
-              <div className="case-study-body">
-                <p>Co-hosted podcast exploring the creative process, design, and technology through conversations with some of the most interesting people working today. Guests include John Cleese, Seth Godin, Debbie Millman, and Jason Mayden.</p>
-                <p style={{ marginTop: '1rem', fontStyle: 'italic', color: 'rgba(0,0,0,0.5)', fontSize: '0.875rem' }}>"Sharp, to the point, full of valuable information." — Vanity Fair</p>
-                <p style={{ fontStyle: 'italic', color: 'rgba(0,0,0,0.5)', fontSize: '0.875rem' }}>"Subscribe to flex your boss muscle." — Architectural Digest</p>
-              </div>
-            </div>
-
-            <div className="case-study">
-              <h3 className="case-study-title">Reconsidering</h3>
-              <div className="case-study-body">
-                <p>Co-hosted with Bob Baxley and Meredith Black. Explores career, relationships, and values during life's major transitions. Guests include Dan Pink, Oliver Burkeman, Tina Roth Eisenberg, and Katherine May.</p>
               </div>
             </div>
           </section>

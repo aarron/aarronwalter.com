@@ -9,12 +9,13 @@ export const metadata: Metadata = {
 export default function InVisionPage() {
   return (
     <>
-      <article>
+      <article className="page-article">
         {/* ── Header ── */}
         <header className="portfolio-header">
           <a href="/" className="portfolio-back t-label">← My work</a>
           <p className="t-label portfolio-eyebrow">2016–2020</p>
           <h1 className="portfolio-title">InVision</h1>
+          <hr className="page-header-rule" />
           <p className="portfolio-roles">
             VP of Design Education &nbsp;·&nbsp; VP of Content
           </p>
@@ -124,6 +125,7 @@ export default function InVisionPage() {
             <blockquote className="testimonial">
               <p className="testimonial-quote">"Personally, Aarron has been one of my most trusted mentors, and his guidance and feedback have been critical to the growth of my career over the past six years. He has a practical, honest leadership style that opens doors for the best creativity from his team members."</p>
               <cite className="testimonial-attribution">
+                <img src="/portfolio/Other/eli-woolery.jpg" alt="Eli Woolery" className="testimonial-avatar" />
                 Eli Woolery
                 <span className="testimonial-role">Senior Director of Design Education, InVision</span>
               </cite>
@@ -132,6 +134,7 @@ export default function InVisionPage() {
             <blockquote className="testimonial">
               <p className="testimonial-quote">"The most important thing to know about Aarron Walter is that if he's in your corner, you're psyched. The work will be great. The team will be lit-up and cared for. When Aarron's in the room, so is inspiration."</p>
               <cite className="testimonial-attribution">
+                <img src="/portfolio/Other/susan-kaplow.jpg" alt="Susan Kaplow" className="testimonial-avatar" />
                 Susan Kaplow
                 <span className="testimonial-role">VP of Content, InVision</span>
               </cite>

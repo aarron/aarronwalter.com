@@ -9,12 +9,13 @@ export const metadata: Metadata = {
 export default function MailchimpPage() {
   return (
     <>
-      <article>
+      <article className="page-article">
         {/* ── Header ── */}
         <header className="portfolio-header">
           <a href="/" className="portfolio-back t-label">← My work</a>
           <p className="t-label portfolio-eyebrow">2008–2016</p>
           <h1 className="portfolio-title">Mailchimp</h1>
+          <hr className="page-header-rule" />
           <p className="portfolio-roles">
             Director of UX &nbsp;·&nbsp; GM of New Products &nbsp;·&nbsp; VP of R&amp;D
           </p>
@@ -105,6 +106,12 @@ export default function MailchimpPage() {
               </div>
               <div className="case-study-body">
                 <p>The user research team conducted a study creating detailed persona documents — PR Manager, Receptionist, Developer, Studio Consultant. We turned the findings into large-format posters displayed near the espresso machine at headquarters: a constant reminder that customers drive every design decision.</p>
+                <div className="case-study-image-grid">
+                  <img src="/portfolio/Mailchimp/Personas/pr-manager-final.jpg" alt="PR Manager persona" />
+                  <img src="/portfolio/Mailchimp/Personas/receptionist-final.jpg" alt="Receptionist persona" />
+                  <img src="/portfolio/Mailchimp/Personas/developer-final.jpg" alt="Developer persona" />
+                  <img src="/portfolio/Mailchimp/Personas/studio-consultant-final.jpg" alt="Studio Consultant persona" />
+                </div>
               </div>
             </div>
 
@@ -139,6 +146,11 @@ export default function MailchimpPage() {
               </div>
               <div className="case-study-body">
                 <p>As mobile devices became ubiquitous, we rethought Mailchimp from top to bottom. Extensive user research on changing work patterns and device/location collaboration informed a full redesign of the web app, marketing site, and new mobile apps. The initiative won multiple awards and set a new bar for the SaaS category.</p>
+                <div className="case-study-image-grid">
+                  <img src="/portfolio/Mailchimp/MC%20Redesign/homepage.png" alt="Mailchimp redesign homepage" />
+                  <img src="/portfolio/Mailchimp/MC%20Redesign/campaigns.jpeg" alt="Mailchimp campaigns screen" />
+                  <img src="/portfolio/Mailchimp/MC%20Redesign/neapolitan.jpeg" alt="Mailchimp neapolitan design" />
+                </div>
               </div>
             </div>
 
@@ -146,6 +158,7 @@ export default function MailchimpPage() {
               <h3 className="case-study-title">High Five — Emotional Design Moment</h3>
               <div className="case-study-body">
                 <p>We recognized the emotional journey of sending an email campaign: anxiety leading up to it, then joy when it reaches thousands of inboxes. So we designed a celebration moment — a high five — that acknowledged the accomplishment. Tens of thousands of customers shared the experience on social media. The feature was cited in design publications and conferences worldwide as a defining example of emotional design in software.</p>
+                <img src="/portfolio/Mailchimp/high-five/high-five.jpeg" alt="Mailchimp High Five feature" className="case-study-image" />
               </div>
             </div>
 
@@ -153,6 +166,10 @@ export default function MailchimpPage() {
               <h3 className="case-study-title">Voice &amp; Tone Guide</h3>
               <div className="case-study-body">
                 <p>As Mailchimp grew, maintaining a unified writing voice across teams and platforms became critical. We published one of the first voice and tone guides in the software industry — presenting a standard brand voice alongside tone variations for different emotional contexts. It inspired design teams at dozens of companies and was regularly cited at conferences and in publications for years after.</p>
+                <div className="case-study-image-grid">
+                  <img src="/portfolio/Mailchimp/voiceandtone/voice-tone1.png" alt="Voice and Tone guide page 1" />
+                  <img src="/portfolio/Mailchimp/voiceandtone/voice-tone2.png" alt="Voice and Tone guide page 2" />
+                </div>
               </div>
             </div>
           </section>
@@ -164,6 +181,7 @@ export default function MailchimpPage() {
             <blockquote className="testimonial">
               <p className="testimonial-quote">"Aarron was an exceptional people manager and leader for our product team. Everyone relied on Aarron to be our signal in a sea of noise — for every day he brought a wellspring of perspective and insight to our projects. His particular skill I remember most was his ability to align a team around a singular 'north star' to help motivate and inspire. Aarron is quite simply one of the most brilliant, empathetic people I've ever had the pleasure of working with."</p>
               <cite className="testimonial-attribution">
+                <img src="/portfolio/Mailchimp/todd-dominey.jpg" alt="Todd Dominey" className="testimonial-avatar" />
                 Todd Dominey
                 <span className="testimonial-role">Senior Director of Design, Mailchimp</span>
               </cite>
@@ -172,6 +190,7 @@ export default function MailchimpPage() {
             <blockquote className="testimonial">
               <p className="testimonial-quote">"From a front row seat, I've seen how Aarron's love of teaching and storytelling gains organizational support for projects and ideas large and small. He has a rare combination of solid research chops, killer design skills, and a gift for communication. There's no better UX pro out there."</p>
               <cite className="testimonial-attribution">
+                <img src="/portfolio/Mailchimp/gregg-bernstein.jpg" alt="Gregg Bernstein" className="testimonial-avatar" />
                 Gregg Bernstein
                 <span className="testimonial-role">Research Manager, Mailchimp</span>
               </cite>
