@@ -52,18 +52,18 @@ export default function ReadingGrid({ booksByYear, years }: Props) {
   return (
     <>
       {/* ── Filters ── */}
-      <div className="reading-year-nav">
+      <div className="page-filter-nav">
         <button
-          className={`reading-year-btn reading-fav-btn${favOnly ? ' is-active' : ''}`}
+          className={`page-filter-btn page-fav-btn${favOnly ? ' is-active' : ''}`}
           onClick={() => { setFavOnly(v => !v); setActiveYear(null) }}
         >
           ★ Favorites
         </button>
 
-        <span className="reading-filter-divider" aria-hidden>|</span>
+        <span className="page-filter-divider" aria-hidden>|</span>
 
         <button
-          className={`reading-year-btn${activeYear === null ? ' is-active' : ''}`}
+          className={`page-filter-btn${activeYear === null ? ' is-active' : ''}`}
           onClick={() => setActiveYear(null)}
         >
           All years
@@ -71,7 +71,7 @@ export default function ReadingGrid({ booksByYear, years }: Props) {
         {years.map(y => (
           <button
             key={y}
-            className={`reading-year-btn${activeYear === y ? ' is-active' : ''}`}
+            className={`page-filter-btn${activeYear === y ? ' is-active' : ''}`}
             onClick={() => setActiveYear(activeYear === y ? null : y)}
           >
             {y}
@@ -84,8 +84,8 @@ export default function ReadingGrid({ booksByYear, years }: Props) {
         const booksInYear = booksByYear[year].filter(b => favOnly ? b.favorite : true)
         if (booksInYear.length === 0) return null
         return (
-          <section key={year} className="reading-year-section">
-            <h2 className="reading-year-heading">{year}</h2>
+          <section key={year} className="page-section">
+            <h2 className="page-section-heading">{year}</h2>
             <div className="book-grid">
               {booksInYear.map((book, i) => (
                 <BookCard

@@ -38,20 +38,20 @@ export default function ReadingPage() {
 
   return (
     <>
-      <article className="reading-article">
+      <article className="page-article">
         {/* Canvas is article-level so it can extend below the header into the content */}
-        <TopoCanvas className="reading-topo-canvas" />
+        <TopoCanvas className="page-hero-canvas" />
 
-        <header className="reading-header">
-          <h1 className="reading-header-title">Reading</h1>
-          <hr className="reading-header-rule" />
-          <p className="reading-header-intro">
+        <header className="page-header">
+          <h1 className="page-header-title">Reading</h1>
+          <hr className="page-header-rule" />
+          <p className="page-header-intro">
             Some books explain the world. Some just let you leave it for a while.
             Not every book here will be worth your time. But each one was worth mine.
           </p>
         </header>
 
-        <div className="reading-page-content">
+        <div className="page-content">
           <ReadingGrid booksByYear={booksByYear} years={allYears} />
         </div>
       </article>

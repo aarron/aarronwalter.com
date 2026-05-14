@@ -861,14 +861,14 @@ body {
 
 /* ─── Reading page — article wrapper ────────────────── */
 
-.reading-article {
+.page-article {
   position: relative;   /* containing block for the topo canvas */
 }
 
 /* ── Topographic visualization canvas ─────────────────
    Anchored to the article top, tall enough to extend well
    below the header into the book-grid section.           */
-.reading-topo-canvas {
+.page-hero-canvas {
   position: absolute;
   top: 0;
   left: 0;
@@ -881,7 +881,7 @@ body {
 
 /* ─── Reading page header ────────────────────────────── */
 
-.reading-header {
+.page-header {
   /* transparent — body cream (#F3E7D6) shows through; canvas lines visible */
   background: transparent;
   position: relative;
@@ -890,7 +890,7 @@ body {
   text-align: left;
 }
 
-.reading-header-title {
+.page-header-title {
   font-family: 'Lineca', sans-serif !important;
   font-size: clamp(4rem, 12vw, 10rem) !important;
   font-weight: 400 !important;
@@ -900,7 +900,7 @@ body {
   margin: 0;
 }
 
-.reading-header-rule {
+.page-header-rule {
   width: clamp(60px, 10vw, 120px);
   height: 2px;
   background: #FF4725;
@@ -908,7 +908,7 @@ body {
   margin: clamp(1.5rem, 3vw, 2.5rem) 0;
 }
 
-.reading-header-intro {
+.page-header-intro {
   font-family: "aktiv-grotesk", sans-serif;
   font-size: clamp(0.9375rem, 1.5vw, 1.125rem);
   font-weight: 400;
@@ -1616,7 +1616,7 @@ body {
    READING & LISTENING PAGES
 ═══════════════════════════════════════════════════════ */
 
-.reading-page-content {
+.page-content {
   position: relative;
   z-index: 1;   /* sits above the topo canvas (z-index: 0) */
   padding: clamp(1.25rem, 2.5vw, 2rem) clamp(1.5rem, 5vw, 4.5rem) clamp(4rem, 8vw, 7rem);
@@ -1624,7 +1624,7 @@ body {
 
 /* ── Year filter nav ── */
 
-.reading-year-nav {
+.page-filter-nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1632,7 +1632,7 @@ body {
   margin-bottom: clamp(3rem, 6vw, 5rem);
 }
 
-.reading-year-btn {
+.page-filter-btn {
   font-family: "aktiv-grotesk", sans-serif;
   font-size: 0.6875rem;
   font-weight: 700;
@@ -1647,24 +1647,24 @@ body {
   transition: border-color 0.15s, color 0.15s, background 0.15s;
 }
 
-.reading-year-btn:hover {
+.page-filter-btn:hover {
   color: #FF4725;
   border-color: rgba(255, 71, 37, 0.3);
 }
 
-.reading-year-btn.is-active {
+.page-filter-btn.is-active {
   color: #F3E7D6;
   background: #FF4725;
   border-color: #FF4725;
 }
 
 /* Favorites button — slightly distinct from year pills */
-.reading-fav-btn {
+.page-fav-btn {
   border-style: solid;
 }
 
 /* Divider between favorites and year filters */
-.reading-filter-divider {
+.page-filter-divider {
   color: rgba(44, 42, 42, 0.18);
   font-size: 0.75rem;
   user-select: none;
@@ -1673,11 +1673,11 @@ body {
 
 /* ── Year section ── */
 
-.reading-year-section {
+.page-section {
   margin-bottom: clamp(4rem, 8vw, 7rem);
 }
 
-.reading-year-heading {
+.page-section-heading {
   font-family: 'Lineca', sans-serif !important;
   font-size: clamp(5rem, 14vw, 10rem) !important;
   font-weight: 400 !important;

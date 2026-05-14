@@ -46,7 +46,7 @@ export default function ListeningGrid({ records }: Props) {
   return (
     <>
       {/* ── Search bar ── */}
-      <div className="reading-year-nav">
+      <div className="page-filter-nav">
         <input
           type="search"
           className="record-search"

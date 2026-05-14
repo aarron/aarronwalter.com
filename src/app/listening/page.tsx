@@ -18,19 +18,19 @@ const sorted = [...records].sort((a, b) => {
 export default function ListeningPage() {
   return (
     <>
-      <article className="reading-article">
-        <TopoCanvas className="reading-topo-canvas" />
+      <article className="page-article">
+        <TopoCanvas className="page-hero-canvas" />
 
-        <header className="reading-header">
-          <h1 className="reading-header-title">Listening</h1>
-          <hr className="reading-header-rule" />
-          <p className="reading-header-intro">
+        <header className="page-header">
+          <h1 className="page-header-title">Listening</h1>
+          <hr className="page-header-rule" />
+          <p className="page-header-intro">
             Records I return to again and again. Some for the music, some for the feeling,
             some because they changed how I hear everything else.
           </p>
         </header>
 
-        <div className="reading-page-content">
+        <div className="page-content">
           <ListeningGrid records={sorted} />
         </div>
       </article>
