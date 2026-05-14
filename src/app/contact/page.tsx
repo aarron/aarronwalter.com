@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import ContactForm from '@/components/ContactForm'
 import FooterWave from '@/components/FooterWave'
+import FlockCanvas from '@/components/FlockCanvas'
 
 export const metadata: Metadata = {
   title: 'Contact — Aarron Walter',
@@ -11,6 +12,7 @@ export default function ContactPage() {
   return (
     <>
       <article className="page-article">
+        <FlockCanvas className="contact-flock-canvas" />
         <header className="page-header">
           <h1 className="page-header-title">Contact</h1>
           <hr className="page-header-rule" />
