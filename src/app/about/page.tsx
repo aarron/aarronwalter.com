@@ -37,6 +37,36 @@ export default function AboutPage() {
 
         {/* Illustration — bleeds 10% off the right edge */}
         <div className="about-illustration-wrap" aria-hidden="true">
+          {/* SVG filter: slow feTurbulence displacement gives living-ink feel */}
+          <svg width="0" height="0" style={{ position: 'absolute' }}>
+            <defs>
+              <filter id="ink-warp" x="-5%" y="-5%" width="110%" height="110%">
+                <feTurbulence
+                  type="fractalNoise"
+                  baseFrequency="0.012 0.008"
+                  numOctaves="4"
+                  seed="7"
+                  result="noise"
+                >
+                  <animate
+                    attributeName="baseFrequency"
+                    values="0.012 0.008;0.016 0.011;0.010 0.006;0.014 0.010;0.012 0.008"
+                    dur="18s"
+                    calcMode="spline"
+                    keySplines="0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1;0.45 0 0.55 1"
+                    repeatCount="indefinite"
+                  />
+                </feTurbulence>
+                <feDisplacementMap
+                  in="SourceGraphic"
+                  in2="noise"
+                  scale="6"
+                  xChannelSelector="R"
+                  yChannelSelector="G"
+                />
+              </filter>
+            </defs>
+          </svg>
           <Image
             src="/Aarron.jpg"
             alt=""

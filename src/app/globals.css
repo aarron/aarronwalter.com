@@ -1327,43 +1327,31 @@ body {
 /* About page — illustration bleeds 10% off the right edge */
 
 .about-article {
-  overflow-x: hidden;   /* clips the bleed without affecting vertical scroll */
+  overflow-x: hidden;
 }
 
 .about-illustration-wrap {
   position: absolute;
   top: 0;
-  right: -10%;          /* 10% of article width bleeds off the right */
+  right: -10%;
   width: 58%;
   z-index: 0;
   pointer-events: none;
-}
-
-/* Left mist — keeps heading text legible */
-.about-illustration-wrap::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, #F3E7D6 5%, rgba(243,231,214,0.7) 30%, transparent 65%);
-  z-index: 1;
-}
-
-/* Bottom mist — dissolves into page content */
-.about-illustration-wrap::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 35%;
-  background: linear-gradient(to bottom, transparent, #F3E7D6);
-  z-index: 1;
 }
 
 .about-illustration {
   display: block;
   width: 100%;
   height: auto;
+  filter: url(#ink-warp);
+  animation: about-breathe 11s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes about-breathe {
+  0%, 100% { transform: translateY(0)   scale(1); }
+  35%       { transform: translateY(-7px) scale(1.005); }
+  70%       { transform: translateY(-3px) scale(1.002); }
 }
 
 .about-content {
