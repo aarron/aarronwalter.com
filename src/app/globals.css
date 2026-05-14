@@ -1401,30 +1401,32 @@ body {
 }
 
 .about-client-svg {
-  width: 100%;
-  max-width: 56px;
-  height: auto;
-  fill: rgba(44, 42, 42, 0.55);
+  display: block;
+  width: auto;
+  height: 28px;
+  max-width: 100px;
+  fill: rgba(44, 42, 42, 0.52);
   transition: fill 0.2s;
 }
 
 .about-client-logo:hover .about-client-svg {
-  fill: rgba(44, 42, 42, 0.85);
+  fill: rgba(44, 42, 42, 0.82);
 }
 
 .about-client-img {
-  max-width: 120px;
-  max-height: 36px;
+  display: block;
   width: auto;
-  height: auto;
+  height: 28px;
+  max-width: 100px;
   object-fit: contain;
-  filter: grayscale(1) brightness(0.15);
-  opacity: 0.55;
+  /* strip color, push to near-black, match SVG opacity */
+  filter: grayscale(1) brightness(0);
+  opacity: 0.52;
   transition: opacity 0.2s;
 }
 
 .about-client-logo:hover .about-client-img {
-  opacity: 0.8;
+  opacity: 0.82;
 }
 
 .about-client-fallback {

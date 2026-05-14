@@ -86,36 +86,6 @@ export default function AboutPage() {
           </section>
 
           <section className="portfolio-section">
-            <h2 className="portfolio-section-title">What People Say</h2>
-
-            <blockquote className="testimonial">
-              <p className="testimonial-quote">
-                &ldquo;Aarron is unique and always delivers more than promised. He is a uniquely talented
-                designer, creative director, lecturer, and manager. He&rsquo;s a born educator. As responsible
-                and mature as he is spontaneous and delightful. As witty as he is thoughtful. A true
-                one-of-a-kind talent.&rdquo;
-              </p>
-              <cite className="testimonial-attribution">
-                Jeffrey Zeldman
-                <span className="testimonial-role">Co-founder, An Event Apart · Automattic</span>
-              </cite>
-            </blockquote>
-
-            <blockquote className="testimonial">
-              <p className="testimonial-quote">
-                &ldquo;Aarron&rsquo;s contributions to the practice of user experience are numerous, from the
-                books, articles, and presentations he&rsquo;s authored to the best-in-class products he&rsquo;s
-                imagined and developed. He has a rare combination of solid research chops, killer design
-                skills, and a gift for communication. There&rsquo;s no better UX pro out there.&rdquo;
-              </p>
-              <cite className="testimonial-attribution">
-                Gregg Bernstein
-                <span className="testimonial-role">User Research Leader</span>
-              </cite>
-            </blockquote>
-          </section>
-
-          <section className="portfolio-section">
             <h2 className="portfolio-section-title">Organizations I&rsquo;ve Helped</h2>
             <ClientLogoGrid />
           </section>
