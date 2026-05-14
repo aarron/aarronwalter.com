@@ -64,23 +64,32 @@ export default function AboutPage() {
           <section className="portfolio-section">
             <div className="about-bio">
               <p>
-                Most recently I served as Director of Product and Design on the prevent epidemics team
-                at Resolve to Save Lives, where my team created tools to help fight COVID-19 in the US,
-                Africa, and India. Formerly, I was VP of Content at InVision, drawing upon twenty years
-                of experience running product teams and teaching design to help companies enact design
-                best practices.
+                I&rsquo;ve spent the better part of two decades at the intersection of design and technology,
+                trying to make products that feel genuinely human.
+                These days, that passion lives most visibly in Design Better, a media company I co-founded
+                with a community of nearly 250,000 designers and technology professionals worldwide, with
+                subscribers on design teams at most of the Fortune 500. Talking with brilliant people about
+                how great work gets made is something I&rsquo;d do for free. Don&rsquo;t tell my co-founder.
               </p>
               <p>
-                I founded the UX practice at Mailchimp and helped grow the product from a few thousand
-                users to more than 15 million. My design guidance has helped the White House, the US
-                Department of State, and many Fortune 500 companies, startups, and venture capital firms.
+                I built the UX practice at Mailchimp from the ground up, back when the team was small enough
+                that everyone knew everyone. By the time I left, more than 15 million people were using
+                something my team helped shape — which still feels a little surreal. I went on to lead
+                research at InVision, studying how design teams at places like Netflix, Spotify, and Google
+                actually do their best work, and what gets in the way.
               </p>
               <p>
-                I am a regular keynote speaker and have spoken at more than a hundred conferences, events,
-                and companies on five continents. I co-host the Webby-nominated Design Better podcast and
-                Reconsidering, a podcast exploring how to live a more satisfying life. My work has been
-                featured in Fast Company, TechCrunch, Vanity Fair, Architectural Digest, and many other
-                publications.
+                When COVID-19 hit, I joined former CDC Director Dr. Tom Frieden at Resolve to Save Lives.
+                My team built tools to support epidemic response efforts at the WHO, Africa CDC, and public
+                health departments across the U.S. It was the most meaningful work I&rsquo;ve ever done,
+                and rather stressful.
+              </p>
+              <p>
+                I&rsquo;m also the author of <em>Designing for Emotion</em> and have advised the White House,
+                the U.S. Department of State, and hundreds of companies, from early-stage startups to Fortune
+                500s, on how to build better products and stronger design cultures. I&rsquo;ve spoken at over
+                a hundred conferences on five continents, which means I have a lot of opinions about airport
+                lounges.
               </p>
             </div>
           </section>
