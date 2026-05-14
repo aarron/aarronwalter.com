@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react'
 
 const INK: [number, number, number] = [44, 42, 42]
 
-const COUNT     = 350
+const COUNT     = 700
 const MAX_SPEED = 3.8
 const MIN_SPEED = 1.6
 

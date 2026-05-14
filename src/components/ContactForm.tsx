@@ -8,7 +8,7 @@ type ContactType = 'general' | 'guest' | 'speaking' | ''
 const MIN_HUMAN_MS = 1800
 
 export default function ContactForm() {
-  const [type, setType]           = useState<ContactType>('')
+  const [type, setType]           = useState<ContactType>('general')
   const [submitted, setSubmitted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
   const [error, setError]         = useState('')
@@ -92,9 +92,9 @@ export default function ContactForm() {
         <label className="contact-label">What brings you here?</label>
         <div className="contact-type-grid">
           {[
+            { value: 'general',  label: 'General Inquiry',      sub: 'Anything else' },
             { value: 'guest',    label: 'Podcast Guest Pitch',  sub: 'Pitch a guest for my podcast' },
             { value: 'speaking', label: 'Speaking Engagement',  sub: 'Invite me to your event' },
-            { value: 'general',  label: 'General Inquiry',      sub: 'Anything else' },
           ].map(({ value, label, sub }) => (
             <button
               key={value}
