@@ -4,16 +4,30 @@ import { useEffect, useRef } from 'react'
 
 const INK: [number, number, number] = [44, 42, 42]
 
-const COUNT      = 110
-const MAX_SPEED  = 1.8
-const MIN_SPEED  = 0.9   // birds always move with purpose
-const NEIGHBOR_R = 120   // wide awareness so the flock stays coherent
-const SEP_R      = 32    // personal space
+const COUNT     = 350
+const MAX_SPEED = 3.8
+const MIN_SPEED = 1.6
 
-// Weights — high alignment is the key to the bird-flock feel
-const W_SEP   = 0.20
-const W_ALIGN = 0.14   // strong: the group quickly matches direction
-const W_COH   = 0.0018
+// Topological neighbors (Ballerini 2008): each boid responds to its K
+// nearest regardless of distance — this keeps the flock coherent across
+// density changes and lets direction changes ripple like a murmuration wave
+const K_NEIGHBORS = 7
+
+// Separation uses metric distance — only very close boids trigger avoidance
+const SEP_R  = 24
+const SEP_R2 = SEP_R * SEP_R
+
+// Steering weights
+// Alignment: steer toward average velocity of K nearest (velocity matching)
+// Cohesion: steer toward center of mass of K nearest
+// Separation: repel from metric-close neighbors
+const W_ALIGN = 0.050
+const W_COH   = 0.0004
+const W_SEP   = 0.050
+
+// Soft boundary: boids turn away when this close to any edge
+const MARGIN     = 90
+const TURN_FORCE = 0.07
 
 interface Boid {
   x: number; y: number; z: number
@@ -42,13 +56,16 @@ export default function FlockCanvas({ className }: { className?: string }) {
     let boids: Boid[] = []
     let ready = false
 
-    // Slowly-wandering flock direction — all boids are nudged toward this,
-    // giving the whole mass a purposeful, curving flight path
-    let wanderAngle = -0.4   // start heading slightly left and up
-    let wanderRate  = 0.0003 // how fast the angle drifts
+    // Pre-allocated neighbor buffers — zero GC pressure during animation
+    const d2buf = new Float32Array(COUNT)
+    const vxbuf = new Float32Array(COUNT)
+    const vybuf = new Float32Array(COUNT)
+    const xbuf  = new Float32Array(COUNT)
+    const ybuf  = new Float32Array(COUNT)
+    const kidx  = new Int32Array(K_NEIGHBORS)
 
     function resize() {
-      const dpr  = Math.min(window.devicePixelRatio || 1, 2)
+      const dpr = Math.min(window.devicePixelRatio || 1, 2)
       W = canvas!.offsetWidth
       H = canvas!.offsetHeight
       canvas!.width  = W * dpr
@@ -56,22 +73,22 @@ export default function FlockCanvas({ className }: { className?: string }) {
       ctx!.setTransform(dpr, 0, 0, dpr, 0, 0)
 
       if (!ready && W > 0 && H > 0) {
-        // Seed the whole flock in a loose cluster so cohesion holds from frame 1
-        const cx = W * 0.72
-        const cy = H * 0.30
-        const spread = Math.min(W, H) * 0.22
+        // Seed one tight cluster — all boids given nearly identical velocity
+        // so flocking rules kick in immediately rather than from a scatter
+        const cx     = W * 0.65
+        const cy     = H * 0.30
+        const spread = Math.min(W, H) * 0.32
+        const baseAngle = -0.35   // heading: left + slightly up
 
         boids = Array.from({ length: COUNT }, () => {
-          // Give each boid a similar initial velocity (same rough direction)
-          // so they form one flock immediately rather than scattering
-          const baseAngle = wanderAngle + (Math.random() - 0.5) * 0.8
-          const speed     = MIN_SPEED + Math.random() * (MAX_SPEED - MIN_SPEED) * 0.5
+          const angle = baseAngle + (Math.random() - 0.5) * 0.4
+          const speed = MIN_SPEED + Math.random() * (MAX_SPEED - MIN_SPEED) * 0.35
           return {
-            x: cx + (Math.random() - 0.5) * spread,
-            y: cy + (Math.random() - 0.5) * spread * 0.6,
-            z: Math.random(),
-            vx: Math.cos(baseAngle) * speed,
-            vy: Math.sin(baseAngle) * speed,
+            x:  cx + (Math.random() - 0.5) * spread,
+            y:  cy + (Math.random() - 0.5) * spread * 0.45,
+            z:  Math.random(),
+            vx: Math.cos(angle) * speed,
+            vy: Math.sin(angle) * speed,
             vz: (Math.random() - 0.5) * 0.0008,
           }
         })
@@ -82,91 +99,117 @@ export default function FlockCanvas({ className }: { className?: string }) {
     function tick() {
       raf = requestAnimationFrame(tick)
       if (!ready) return
-
       ctx!.clearRect(0, 0, W, H)
 
-      // Drift the wander angle — occasionally nudge the rate for variety
-      wanderRate += (Math.random() - 0.5) * 0.000004
-      wanderRate  = Math.max(-0.0006, Math.min(0.0006, wanderRate))
-      wanderAngle += wanderRate
+      for (let i = 0; i < COUNT; i++) {
+        const b = boids[i]
+        let sx = 0, sy = 0   // separation accumulator (metric)
+        let nCount = 0
 
-      const wanderX = Math.cos(wanderAngle)
-      const wanderY = Math.sin(wanderAngle)
-
-      // ── Flocking physics ────────────────────────────────
-      for (const b of boids) {
-        let sx = 0, sy = 0
-        let ax = 0, ay = 0
-        let cx = 0, cy = 0
-        let n = 0
-
-        for (const o of boids) {
-          if (o === b) continue
+        // ── Build neighbor data ──────────────────────────────
+        for (let j = 0; j < COUNT; j++) {
+          if (i === j) continue
+          const o  = boids[j]
           const dx = o.x - b.x
           const dy = o.y - b.y
-          const d  = Math.hypot(dx, dy)
+          const d2 = dx * dx + dy * dy
 
-          if (d < SEP_R && d > 0) {
+          // Separation: metric radius only
+          if (d2 < SEP_R2 && d2 > 0) {
+            const d = Math.sqrt(d2)
             const f = (SEP_R - d) / SEP_R
             sx -= (dx / d) * f
             sy -= (dy / d) * f
           }
-          if (d < NEIGHBOR_R) {
-            ax += o.vx; ay += o.vy
-            cx += o.x;  cy += o.y
-            n++
+
+          d2buf[nCount] = d2
+          vxbuf[nCount] = o.vx
+          vybuf[nCount] = o.vy
+          xbuf[nCount]  = o.x
+          ybuf[nCount]  = o.y
+          nCount++
+        }
+
+        // ── Find K nearest (partial insertion sort, zero allocs) ──
+        const K = Math.min(K_NEIGHBORS, nCount)
+        for (let k = 0; k < K; k++) kidx[k] = k
+
+        // Sort initial K by d² ascending
+        for (let a = 1; a < K; a++) {
+          const key = kidx[a]; const keyD = d2buf[key]
+          let p = a - 1
+          while (p >= 0 && d2buf[kidx[p]] > keyD) { kidx[p + 1] = kidx[p]; p-- }
+          kidx[p + 1] = key
+        }
+
+        // Scan rest — replace max if a closer boid is found
+        for (let j = K; j < nCount; j++) {
+          const dj = d2buf[j]
+          if (dj < d2buf[kidx[K - 1]]) {
+            kidx[K - 1] = j
+            let k = K - 1
+            while (k > 0 && d2buf[kidx[k]] < d2buf[kidx[k - 1]]) {
+              const tmp = kidx[k]; kidx[k] = kidx[k - 1]; kidx[k - 1] = tmp; k--
+            }
           }
         }
 
-        if (n > 0) {
-          ax /= n; ay /= n
-          cx = cx / n - b.x
-          cy = cy / n - b.y
-          b.vx += sx * W_SEP + ax * W_ALIGN + cx * W_COH
-          b.vy += sy * W_SEP + ay * W_ALIGN + cy * W_COH
+        // ── Alignment + cohesion from K nearest ──────────────
+        let ax = 0, ay = 0, cx2 = 0, cy2 = 0
+        for (let k = 0; k < K; k++) {
+          const ki = kidx[k]
+          ax  += vxbuf[ki]; ay  += vybuf[ki]
+          cx2 += xbuf[ki];  cy2 += ybuf[ki]
         }
+        ax /= K; ay /= K
+        cx2 = cx2 / K - b.x   // vector toward center of mass
+        cy2 = cy2 / K - b.y
 
-        // Gentle global wander force — keeps the whole flock drifting together
-        b.vx += wanderX * 0.012
-        b.vy += wanderY * 0.012
+        // Steering: alignment = velocity matching (Reynolds), cohesion toward COM
+        b.vx += (ax - b.vx) * W_ALIGN + cx2 * W_COH + sx * W_SEP
+        b.vy += (ay - b.vy) * W_ALIGN + cy2 * W_COH + sy * W_SEP
+
+        // ── Soft boundary: turn away from edges ──────────────
+        if (b.x < MARGIN)       b.vx += TURN_FORCE * (1 - b.x / MARGIN)
+        if (b.x > W - MARGIN)   b.vx -= TURN_FORCE * (1 - (W - b.x) / MARGIN)
+        if (b.y < MARGIN)       b.vy += TURN_FORCE * (1 - b.y / MARGIN)
+        if (b.y > H - MARGIN)   b.vy -= TURN_FORCE * (1 - (H - b.y) / MARGIN)
 
         clampSpeed(b)
 
-        // Depth: oscillate very slowly so depth feels stable, not floaty
-        b.vz += (Math.random() - 0.5) * 0.000035
-        b.vz  = Math.max(-0.0012, Math.min(0.0012, b.vz))
+        // Depth: very slow oscillation so z feels stable, not floaty
+        b.vz += (Math.random() - 0.5) * 0.00003
+        b.vz  = Math.max(-0.0010, Math.min(0.0010, b.vz))
         b.z   = Math.max(0, Math.min(1, b.z + b.vz))
         if (b.z <= 0 || b.z >= 1) b.vz *= -0.5
 
         b.x += b.vx
         b.y += b.vy
 
-        // Wrap so the flock loops continuously across the canvas
-        if (b.x >  W + 20) b.x = -20
-        if (b.x < -20)     b.x =  W + 20
-        if (b.y >  H + 20) b.y = -20
-        if (b.y < -20)     b.y =  H + 20
+        // Safety wrap (for boids that escape past soft boundary)
+        if (b.x >  W + 40) b.x = -40
+        if (b.x < -40)     b.x =  W + 40
+        if (b.y >  H + 40) b.y = -40
+        if (b.y < -40)     b.y =  H + 40
       }
 
-      // ── Draw ────────────────────────────────────────────
+      // ── Draw ────────────────────────────────────────────────
       for (const b of boids) {
-        // Radius: 1 px (far) → 4.5 px (near)
-        const r = lerp(1.0, 4.5, b.z)
+        const r      = lerp(0.7, 3.0, b.z)
+        const depthA = lerp(0.05, 0.72, b.z)
 
-        // Alpha: almost invisible in background, solid in foreground
-        const depthA = lerp(0.06, 0.80, b.z)
-
-        // Left fade: dissolve toward the heading text
+        // Fade toward left (where heading text lives)
         const leftFade = Math.min(1, b.x / (W * 0.42))
-
-        // Bottom fade: dissolve into the form below
+        // Fade toward bottom (behind the contact form)
         const botFade  = Math.max(0, 1 - Math.max(0, b.y - H * 0.45) / (H * 0.50))
 
         const alpha = depthA * leftFade * botFade
         if (alpha < 0.02) continue
 
+        // Draw as elongated ellipse pointing in direction of travel
+        const angle = Math.atan2(b.vy, b.vx)
         ctx!.beginPath()
-        ctx!.arc(b.x, b.y, r, 0, Math.PI * 2)
+        ctx!.ellipse(b.x, b.y, r * 2.5, r * 0.55, angle, 0, Math.PI * 2)
         ctx!.fillStyle = `rgba(${INK[0]},${INK[1]},${INK[2]},${alpha.toFixed(3)})`
         ctx!.fill()
       }
