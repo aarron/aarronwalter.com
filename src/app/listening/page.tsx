@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import FooterWave from '@/components/FooterWave'
 import ListeningGrid from '@/components/ListeningGrid'
+import TopoCanvas from '@/components/TopoCanvas'
 import { records } from '@/data/records'
 
 export const metadata: Metadata = {
@@ -17,13 +18,15 @@ const sorted = [...records].sort((a, b) => {
 export default function ListeningPage() {
   return (
     <>
-      <article>
-        <header className="portfolio-header">
-          <a href="/" className="portfolio-back t-label">← My work</a>
-          <p className="t-label portfolio-eyebrow">The stacks</p>
-          <h1 className="portfolio-title">Listening</h1>
-          <p className="portfolio-roles">
-            Records I return to again and again
+      <article className="reading-article">
+        <TopoCanvas className="reading-topo-canvas" />
+
+        <header className="reading-header">
+          <h1 className="reading-header-title">Listening</h1>
+          <hr className="reading-header-rule" />
+          <p className="reading-header-intro">
+            Records I return to again and again. Some for the music, some for the feeling,
+            some because they changed how I hear everything else.
           </p>
         </header>
 
