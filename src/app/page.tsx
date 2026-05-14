@@ -136,8 +136,8 @@ export default async function Home() {
           <ol className="work-list">
             {[
               { index: '01', company: 'Mailchimp', role: 'Director of UX · GM of New Products · VP of R&D', years: '2008–2016', href: '/portfolio/mailchimp' },
-              { index: '02', company: 'InVision', role: 'VP of Design Education & Content', years: '2016–2020', href: '/portfolio/invision' },
-              { index: '03', company: 'Resolve to Save Lives', role: 'Director of Product, US COVID Response', years: '2020–2022', href: '/portfolio/rtsl' },
+              { index: '02', company: 'Resolve to Save Lives', role: 'Director of Product, US COVID Response', years: '2020–2022', href: '/portfolio/rtsl' },
+              { index: '03', company: 'InVision', role: 'VP of Design Education & Content', years: '2016–2020', href: '/portfolio/invision' },
               { index: '04', company: 'Consulting & Publishing', role: 'Author · Speaker · Advisor', years: 'Ongoing', href: '/portfolio/other' },
             ].map((item) => (
               <li key={item.company} className="work-item">
