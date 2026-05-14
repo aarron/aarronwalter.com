@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import FooterWave from '@/components/FooterWave'
-import InkCanvas from '@/components/InkCanvas'
 
 export const metadata: Metadata = {
   title: 'About — Aarron Walter',
@@ -48,8 +47,6 @@ export default function AboutPage() {
           />
         </div>
 
-        {/* Ink bleeding canvas — tendrils spread from the illustration */}
-        <InkCanvas className="about-ink-canvas" />
 
         <header className="page-header">
           <h1 className="page-header-title">About</h1>

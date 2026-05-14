@@ -1335,27 +1335,14 @@ body {
   top: 0;
   right: -10%;
   width: 58%;
-  z-index: 0;
   pointer-events: none;
+  mix-blend-mode: multiply;   /* blends the whole wrap — white → transparent on cream */
 }
 
 .about-illustration {
   display: block;
   width: 100%;
   height: auto;
-  mix-blend-mode: multiply;   /* white background becomes transparent */
-}
-
-.about-ink-canvas {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: clamp(420px, 85vh, 860px);
-  z-index: 2;
-  pointer-events: none;
-  mix-blend-mode: multiply;
 }
 
 .about-content {
