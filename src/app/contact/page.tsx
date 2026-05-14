@@ -13,7 +13,7 @@ export default function ContactPage() {
     <>
       <article className="page-article">
         <FlockCanvas className="contact-flock-canvas" />
-        <header className="page-header">
+        <header className="page-header contact-page-header">
           <h1 className="page-header-title">Contact</h1>
           <hr className="page-header-rule" />
         </header>
