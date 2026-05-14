@@ -53,8 +53,7 @@ export default function ListeningPage() {
           <h1 className="page-header-title">Listening</h1>
           <hr className="page-header-rule" />
           <p className="page-header-intro">
-            Records I return to again and again. Some for the music, some for the feeling,
-            some because they changed how I hear everything else.
+            Music is the heart of my studio. Vinyl is how I love to listen. Keep them spinning — here's what's in rotation.
           </p>
         </header>
 
