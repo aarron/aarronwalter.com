@@ -12,13 +12,9 @@ export default function MailchimpPage() {
       <article className="page-article">
         {/* ── Header ── */}
         <header className="portfolio-header">
-          <a href="/" className="portfolio-back t-label">← My work</a>
           <p className="t-label portfolio-eyebrow">2008–2016</p>
           <h1 className="portfolio-title">Mailchimp</h1>
           <hr className="page-header-rule" />
-          <p className="portfolio-roles">
-            Director of UX &nbsp;·&nbsp; GM of New Products &nbsp;·&nbsp; VP of R&amp;D
-          </p>
         </header>
 
         {/* ── Content ── */}

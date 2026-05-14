@@ -957,7 +957,7 @@ body {
 .portfolio-title {
   font-family: 'Lineca', sans-serif;
   font-size: clamp(4rem, 12vw, 10rem);
-  font-weight: 900;
+  font-weight: 400;
   letter-spacing: -0.03em;
   line-height: 0.88;
   color: #2C2A2A;

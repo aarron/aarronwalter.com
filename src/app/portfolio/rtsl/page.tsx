@@ -12,13 +12,9 @@ export default function RTSLPage() {
       <article className="page-article">
         {/* ── Header ── */}
         <header className="portfolio-header">
-          <a href="/" className="portfolio-back t-label">← My work</a>
           <p className="t-label portfolio-eyebrow">2020–2022</p>
           <h1 className="portfolio-title">Resolve to Save Lives</h1>
           <hr className="page-header-rule" />
-          <p className="portfolio-roles">
-            Director of Product &amp; Design &nbsp;·&nbsp; US COVID Response
-          </p>
         </header>
 
         {/* ── Content ── */}

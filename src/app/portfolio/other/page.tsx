@@ -19,13 +19,9 @@ export default function OtherPage() {
       <article className="page-article">
         {/* ── Header ── */}
         <header className="portfolio-header">
-          <a href="/" className="portfolio-back t-label">← My work</a>
           <p className="t-label portfolio-eyebrow">Ongoing</p>
           <h1 className="portfolio-title">Consulting &amp; Publishing</h1>
           <hr className="page-header-rule" />
-          <p className="portfolio-roles">
-            Author &nbsp;·&nbsp; Speaker &nbsp;·&nbsp; Advisor &nbsp;·&nbsp; Podcast Co-host
-          </p>
         </header>
 
         {/* ── Content ── */}

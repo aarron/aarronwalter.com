@@ -12,13 +12,9 @@ export default function InVisionPage() {
       <article className="page-article">
         {/* ── Header ── */}
         <header className="portfolio-header">
-          <a href="/" className="portfolio-back t-label">← My work</a>
           <p className="t-label portfolio-eyebrow">2016–2020</p>
           <h1 className="portfolio-title">InVision</h1>
           <hr className="page-header-rule" />
-          <p className="portfolio-roles">
-            VP of Design Education &nbsp;·&nbsp; VP of Content
-          </p>
         </header>
 
         {/* ── Content ── */}
