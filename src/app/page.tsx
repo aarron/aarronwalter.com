@@ -267,7 +267,7 @@ export default async function Home() {
       {/* ── Footer ───────────────────────────────────── */}
       <footer className="site-footer">
         <div className="footer-wave-wrap" aria-hidden="true">
-          <FooterWave />
+          <FooterWave color="rgba(243, 231, 214, 0.35)" />
         </div>
         <div className="footer-inner">
         <span className="t-caption">© {new Date().getFullYear()} Aarron Walter</span>

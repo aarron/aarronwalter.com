@@ -363,7 +363,7 @@ body {
 .db-section {
   background-color: #2C2A2A;
   color: #F3E7D6;
-  padding: clamp(2rem, 4vw, 3.5rem) clamp(1.5rem, 5vw, 4.5rem) clamp(4rem, 8vw, 7rem);
+  padding: clamp(4rem, 8vw, 7rem) clamp(1.5rem, 5vw, 4.5rem) clamp(4rem, 8vw, 7rem);
 }
 
 .db-columns {
@@ -472,7 +472,7 @@ body {
   display: flex;
   gap: clamp(1.25rem, 3vw, 2rem);
   align-items: flex-start;
-  background: #FF4725;
+  background: rgba(243, 231, 214, 0.07);
   border: none;
   border-radius: 4px;
   padding: clamp(1.25rem, 2.5vw, 1.75rem);

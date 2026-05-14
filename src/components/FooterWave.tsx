@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 
-export default function FooterWave() {
+export default function FooterWave({ color = 'rgba(44, 42, 42, 0.18)' }: { color?: string }) {
   const ref = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -53,7 +53,7 @@ export default function FooterWave() {
         s === 0 ? ctx!.moveTo(x, y) : ctx!.lineTo(x, y)
       }
 
-      ctx!.strokeStyle = 'rgba(44, 42, 42, 0.18)'
+      ctx!.strokeStyle = color
       ctx!.lineWidth   = 1.1
       ctx!.lineJoin    = 'round'
       ctx!.lineCap     = 'round'
