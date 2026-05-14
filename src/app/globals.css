@@ -859,33 +859,35 @@ body {
   }
 }
 
-/* ─── Reading page header (light / cream) ────────────── */
+/* ─── Reading page — article wrapper ────────────────── */
 
-.reading-header {
-  background: #F3E7D6;
-  position: relative;                      /* contains the absolute topo canvas */
-  padding: clamp(9rem, 18vw, 14rem) clamp(1.5rem, 5vw, 4.5rem) clamp(1.25rem, 2.5vw, 2rem);
-  text-align: left;
-  overflow: hidden;                        /* clips canvas to header bounds */
+.reading-article {
+  position: relative;   /* containing block for the topo canvas */
 }
 
-/* ── Topographic visualization canvas ── */
+/* ── Topographic visualization canvas ─────────────────
+   Anchored to the article top, tall enough to extend well
+   below the header into the book-grid section.           */
 .reading-topo-canvas {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
+  height: clamp(700px, 95vh, 1200px);
   display: block;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Text content floats above the canvas */
-.reading-header-title,
-.reading-header-rule,
-.reading-header-intro {
+/* ─── Reading page header ────────────────────────────── */
+
+.reading-header {
+  /* transparent — body cream (#F3E7D6) shows through; canvas lines visible */
+  background: transparent;
   position: relative;
-  z-index: 1;
+  z-index: 1;           /* paints the header stacking context above canvas */
+  padding: clamp(9rem, 18vw, 14rem) clamp(1.5rem, 5vw, 4.5rem) clamp(1.25rem, 2.5vw, 2rem);
+  text-align: left;
 }
 
 .reading-header-title {
@@ -1602,6 +1604,8 @@ body {
 ═══════════════════════════════════════════════════════ */
 
 .reading-page-content {
+  position: relative;
+  z-index: 1;   /* sits above the topo canvas (z-index: 0) */
   padding: clamp(1.25rem, 2.5vw, 2rem) clamp(1.5rem, 5vw, 4.5rem) clamp(4rem, 8vw, 7rem);
 }
 

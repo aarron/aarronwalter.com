@@ -38,9 +38,11 @@ export default function ReadingPage() {
 
   return (
     <>
-      <article>
+      <article className="reading-article">
+        {/* Canvas is article-level so it can extend below the header into the content */}
+        <TopoCanvas className="reading-topo-canvas" />
+
         <header className="reading-header">
-          <TopoCanvas className="reading-topo-canvas" />
           <h1 className="reading-header-title">Reading</h1>
           <hr className="reading-header-rule" />
           <p className="reading-header-intro">
