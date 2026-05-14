@@ -1703,6 +1703,7 @@ body {
   overflow: hidden;
   background: rgba(44, 42, 42, 0.055);
   border-radius: 2px;
+  border: 2px solid #C5CAC0;
   width: 100%;
 }
 

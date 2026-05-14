@@ -108,10 +108,11 @@ export default function FooterWave() {
         let fyd = 0   // y displacement (normalised, multiplied by amp below)
 
         if (fActive) {
-          const u = (xn - fCenter) / fSigma
-          const g = Math.exp(-u * u * 0.5)    // Gaussian envelope, 1 at centre
-          fxd = fXAmp * g * u * w             // S-curve: sign flips at u=0
-          fyd = fYAmp * g                     // oval puff peaks at fold centre
+          const u    = (xn - fCenter) / fSigma
+          const g    = Math.exp(-u * u * 0.5)           // Gaussian, 1 at centre
+          const taper = Math.sin(xn * Math.PI)           // 0 at both edges, 1 at centre
+          fxd = fXAmp * g * u * w * taper               // S-curve, pinned to edges
+          fyd = fYAmp * g * taper                        // oval puff, also tapered
         }
 
         const x = xn * w + fxd
