@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import FooterWave from '@/components/FooterWave'
 import ClientLogoGrid from '@/components/ClientLogoGrid'
+import WaveTransition from '@/components/WaveTransition'
 
 export const metadata: Metadata = {
   title: 'About — Aarron Walter',
@@ -100,24 +101,30 @@ export default function AboutPage() {
             <ClientLogoGrid />
           </section>
 
-          <section className="portfolio-section">
-            <h2 className="portfolio-section-title">Select Interviews</h2>
-            <ul className="portfolio-list">
-              {INTERVIEWS.map(({ outlet, title, href }) => (
-                <li key={outlet}>
-                  <a href={href} target="_blank" rel="noopener noreferrer" className="about-interview-link">
-                    <strong>{outlet}</strong>
-                    {title && <span className="about-interview-title"> — {title}</span>}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </section>
-
         </div>
       </article>
 
-      <footer className="site-footer site-footer--light">
+      <div className="wave-bridge" aria-hidden="true">
+        <WaveTransition />
+      </div>
+
+      <div className="about-dark">
+        <section className="portfolio-section">
+          <h2 className="portfolio-section-title">Select Interviews</h2>
+          <ul className="portfolio-list">
+            {INTERVIEWS.map(({ outlet, title, href }) => (
+              <li key={outlet}>
+                <a href={href} target="_blank" rel="noopener noreferrer" className="about-interview-link">
+                  <strong>{outlet}</strong>
+                  {title && <span className="about-interview-title"> — {title}</span>}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
+
+      <footer className="site-footer">
         <div className="footer-wave-wrap" aria-hidden="true"><FooterWave /></div>
         <div className="footer-inner">
           <span className="t-caption">© {new Date().getFullYear()} <strong className="footer-name">Aarron Walter</strong></span>

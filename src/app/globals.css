@@ -231,6 +231,10 @@ body {
 #page-content {
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: left center;
+  /* Cream background prevents the CSS transform (triggered by nav-open) from
+     creating a white stacking context that breaks mix-blend-mode: multiply
+     on the illustration */
+  background-color: #F3E7D6;
 }
 
 #page-content.nav-open {
@@ -1466,6 +1470,29 @@ body {
 
 .about-interview-title {
   color: rgba(44, 42, 42, 0.55);
+}
+
+/* ── About dark section (Select Interviews) ──────────── */
+.about-dark {
+  background-color: #2C2A2A;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 4.5rem) clamp(4rem, 8vw, 7rem);
+}
+
+.about-dark .portfolio-section-title {
+  color: rgba(243, 231, 214, 0.38);
+  border-bottom-color: rgba(243, 231, 214, 0.1);
+}
+
+.about-dark .portfolio-list li {
+  color: rgba(243, 231, 214, 0.75);
+}
+
+.about-dark .portfolio-list li::before {
+  color: #FF4725;
+}
+
+.about-dark .about-interview-title {
+  color: rgba(243, 231, 214, 0.45);
 }
 
 .about-cta {
