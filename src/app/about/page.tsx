@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import FooterWave from '@/components/FooterWave'
 import ClientLogoGrid from '@/components/ClientLogoGrid'
-import WaveTransition from '@/components/WaveTransition'
+import MountainTransition from '@/components/MountainTransition'
 
 export const metadata: Metadata = {
   title: 'About — Aarron Walter',
@@ -105,7 +105,7 @@ export default function AboutPage() {
       </article>
 
       <div className="wave-bridge" aria-hidden="true">
-        <WaveTransition />
+        <MountainTransition />
       </div>
 
       <div className="about-dark">
