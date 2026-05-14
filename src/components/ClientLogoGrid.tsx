@@ -24,7 +24,7 @@ const CLIENTS: LogoEntry[] = [
   { name: 'Goldman Sachs',          kind: 'icon', path: siGoldmansachs.path },
   { name: 'USAA',                   kind: 'img',  src: '/logos/usaa.svg' },
   { name: 'Intuit',                 kind: 'icon', path: siIntuit.path },
-  { name: 'US Dept. of State',      kind: 'text' },
+  { name: 'US Dept. of State',      kind: 'img',  src: '/logos/state-dept.svg' },
   { name: 'Wells Fargo',            kind: 'icon', path: siWellsfargo.path },
   { name: "Lloyd's Bank",           kind: 'img',  src: '/logos/lloyds.svg' },
   { name: 'Peloton',                kind: 'icon', path: siPeloton.path },

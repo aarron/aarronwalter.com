@@ -1039,9 +1039,15 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.875rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.875rem clamp(2rem, 5vw, 4rem);
+}
+
+@media (max-width: 560px) {
+  .portfolio-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 .portfolio-list li {
@@ -1360,7 +1366,6 @@ body {
 }
 
 .about-content {
-  max-width: 860px;
 }
 
 .about-bio {
