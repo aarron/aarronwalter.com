@@ -1332,7 +1332,7 @@ body {
 
 .about-illustration-wrap {
   position: absolute;
-  top: 0;
+  top: 6rem;
   right: -10%;
   width: 58%;
   pointer-events: none;

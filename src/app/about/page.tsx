@@ -128,14 +128,6 @@ export default function AboutPage() {
             </ul>
           </section>
 
-          <section className="portfolio-section">
-            <h2 className="portfolio-section-title">Get in Touch</h2>
-            <p style={{ marginBottom: '1.5rem', color: 'rgba(44,42,42,0.7)', lineHeight: 1.7 }}>
-              I&rsquo;m available for speaking engagements at conferences and corporate events.
-            </p>
-            <a href="/contact" className="about-cta">Contact Aarron →</a>
-          </section>
-
         </div>
       </article>
 
