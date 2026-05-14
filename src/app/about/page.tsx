@@ -33,33 +33,30 @@ const INTERVIEWS = [
 export default function AboutPage() {
   return (
     <>
-      <article>
-        {/* ── Header ── */}
-        <header className="portfolio-header about-header">
-          <a href="/" className="portfolio-back t-label">← My work</a>
-          <div className="about-header-inner">
-            <div className="about-header-text">
-              <p className="t-label portfolio-eyebrow">About</p>
-              <h1 className="portfolio-title">Aarron<br />Walter</h1>
-              <p className="about-tagline t-subhead">
-                Designer &nbsp;·&nbsp; Author &nbsp;·&nbsp; Co-founder of Design Better
-              </p>
-            </div>
-            <div className="about-illustration-wrap">
-              <Image
-                src="/aarron-illustration.png"
-                alt="Illustrated portrait of Aarron Walter"
-                width={480}
-                height={520}
-                className="about-illustration"
-                priority
-              />
-            </div>
-          </div>
+      <article className="page-article about-article">
+
+        {/* Illustration — bleeds 10% off the right edge */}
+        <div className="about-illustration-wrap" aria-hidden="true">
+          <Image
+            src="/Aarron.jpg"
+            alt=""
+            width={2000}
+            height={1842}
+            className="about-illustration"
+            priority
+          />
+        </div>
+
+        <header className="page-header">
+          <h1 className="page-header-title">About</h1>
+          <hr className="page-header-rule" />
+          <p className="page-header-intro">
+            Designer, author, and co-founder of Design Better.
+            Two decades shaping how the tech industry thinks about design.
+          </p>
         </header>
 
-        {/* ── Content ── */}
-        <div className="portfolio-content about-content">
+        <div className="page-content about-content">
 
           <p className="portfolio-lead">
             I&rsquo;ve spent twenty years influencing how the tech industry thinks about design —
@@ -154,7 +151,6 @@ export default function AboutPage() {
         </div>
       </article>
 
-      {/* ── Footer ── */}
       <footer className="site-footer site-footer--light">
         <div className="footer-wave-wrap" aria-hidden="true"><FooterWave /></div>
         <div className="footer-inner">

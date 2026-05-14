@@ -1324,52 +1324,46 @@ body {
    ABOUT PAGE
 ═══════════════════════════════════════════════════════ */
 
-.about-header {
-  position: relative;
-  overflow: hidden;
-}
+/* About page — illustration bleeds 10% off the right edge */
 
-.about-header-inner {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: flex-end;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-.about-header-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.about-tagline {
-  color: rgba(243, 231, 214, 0.55);
-  max-width: 36ch;
+.about-article {
+  overflow-x: hidden;   /* clips the bleed without affecting vertical scroll */
 }
 
 .about-illustration-wrap {
-  flex-shrink: 0;
-  width: clamp(180px, 28vw, 380px);
-  margin-bottom: -3rem;
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: -10%;          /* 10% of article width bleeds off the right */
+  width: 58%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Left mist — keeps heading text legible */
+.about-illustration-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #F3E7D6 5%, rgba(243,231,214,0.7) 30%, transparent 65%);
+  z-index: 1;
+}
+
+/* Bottom mist — dissolves into page content */
+.about-illustration-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35%;
+  background: linear-gradient(to bottom, transparent, #F3E7D6);
+  z-index: 1;
 }
 
 .about-illustration {
   display: block;
   width: 100%;
   height: auto;
-}
-
-@media (max-width: 680px) {
-  .about-header-inner {
-    grid-template-columns: 1fr;
-  }
-  .about-illustration-wrap {
-    width: clamp(140px, 50vw, 240px);
-    margin-bottom: -2rem;
-  }
 }
 
 .about-content {
