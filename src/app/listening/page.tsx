@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import FooterWave from '@/components/FooterWave'
 import ListeningGrid from '@/components/ListeningGrid'
-import TopoCanvas from '@/components/TopoCanvas'
+import SonarCanvas from '@/components/SonarCanvas'
 import { records } from '@/data/records'
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default function ListeningPage() {
   return (
     <>
       <article className="page-article">
-        <TopoCanvas className="page-hero-canvas" />
+        <SonarCanvas className="page-hero-canvas" />
 
         <header className="page-header">
           <h1 className="page-header-title">Listening</h1>
