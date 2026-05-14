@@ -19,10 +19,19 @@ interface ModalState {
   meta:   RecordMeta
 }
 
+// Genres worth showing as filter pills (in display order)
+const GENRE_ORDER = ['Rock', 'Funk / Soul', 'Jazz', 'Pop', 'Blues', 'Electronic', 'Folk, World, & Country', 'Reggae', 'Hip Hop']
+
 export default function ListeningGrid({ records }: Props) {
   const [modal,   setModal]   = useState<ModalState | null>(null)
   const [search,  setSearch]  = useState('')
+  const [genre,   setGenre]   = useState<string | null>(null)
   const [mounted, setMounted] = useState(false)
+
+  // Only show genre pills that have at least one record
+  const availableGenres = GENRE_ORDER.filter(g =>
+    records.some(({ meta }) => meta.genres?.includes(g))
+  )
 
   useEffect(() => { setMounted(true) }, [])
 
@@ -41,17 +50,31 @@ export default function ListeningGrid({ records }: Props) {
     setModal({ record, meta })
   }, [])
 
-  const filtered = search.trim()
-    ? records.filter(({ record: r }) =>
-        r.artist.toLowerCase().includes(search.toLowerCase()) ||
-        r.title.toLowerCase().includes(search.toLowerCase())
-      )
-    : records
+  const filtered = records.filter(({ record: r, meta }) => {
+    const matchesSearch = !search.trim() ||
+      r.artist.toLowerCase().includes(search.toLowerCase()) ||
+      r.title.toLowerCase().includes(search.toLowerCase())
+    const matchesGenre = !genre || meta.genres?.includes(genre)
+    return matchesSearch && matchesGenre
+  })
 
   return (
     <>
-      {/* ── Search bar ── */}
+      {/* ── Filters ── */}
       <div className="page-filter-nav">
+        <div className="page-filter-btns">
+          <button
+            className={`page-filter-btn${!genre ? ' is-active' : ''}`}
+            onClick={() => setGenre(null)}
+          >All</button>
+          {availableGenres.map(g => (
+            <button
+              key={g}
+              className={`page-filter-btn${genre === g ? ' is-active' : ''}`}
+              onClick={() => setGenre(g)}
+            >{g}</button>
+          ))}
+        </div>
         <input
           type="search"
           className="record-search"

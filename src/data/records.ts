@@ -259,7 +259,6 @@ export const records: VinylRecord[] = [
   { artist: 'Stevie Wonder', title: 'Music Of My Mind', label: 'Tamla', format: 'LP, Album, Sup', rating: 5, released: 1972, releaseId: 638885 },
   { artist: 'Stevie Wonder', title: 'Talking Book', label: 'Tamla', format: 'LP, Album, Hol', rating: 5, released: 1972, releaseId: 174477 },
   { artist: 'Stevie Wonder', title: 'Songs In The Key Of Life', label: 'Tamla', format: '2xLP + 7\", EP + Album, Gat', rating: 5, released: 1976, releaseId: 2102311 },
-  { artist: 'Stevie Wonder', title: 'Songs In The Key Of Life', label: 'Tamla', format: '2xLP + 7\", EP + Album, Gat', rating: 5, released: 1976, releaseId: 2102311 },
   { artist: 'Marvin Gaye', title: 'In The Groove', label: 'Tamla', format: 'LP, Album', rating: 3, released: 1968, releaseId: 2062855 },
   { artist: 'Marvin Gaye', title: 'What\'s Going On', label: 'Tamla', format: 'LP, Album, Gat', rating: 4, released: 1971, releaseId: 1559040 },
   { artist: 'Stevie Wonder', title: 'Tribute To Uncle Ray', label: 'Tamla', format: 'LP, Album, Mono, RP', rating: 3, released: 1963, releaseId: 2154267 },

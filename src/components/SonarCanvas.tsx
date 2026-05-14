@@ -117,12 +117,12 @@ export default function SonarCanvas({ className }: { className?: string }) {
 
         const lNorm = ri / (RINGS - 1)
 
-        // Opacity peaks in the middle rings, tapers at both extremes
-        const focus = 1 - Math.abs(lNorm - 0.35) * 2.0
-        const alpha = Math.max(0.035, focus * 0.26)
+        // Opacity: low at innermost, peaks around 40% out, tapers at edges
+        const focus = 1 - Math.abs(lNorm - 0.38) * 1.6
+        const alpha = Math.max(0.06, focus * 0.48)
 
-        // Dot radius grows slightly with ring index
-        const dotR  = 0.9 + lNorm * 0.7
+        // Dot size: small inner rings, grows toward mid-outer, tapers at edge
+        const dotR = 0.7 + Math.sin(lNorm * Math.PI) * 1.8
 
         ctx!.beginPath()
 
