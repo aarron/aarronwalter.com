@@ -1828,6 +1828,9 @@ body {
   overflow: hidden;
   background: rgba(44, 42, 42, 0.055);
   border-radius: 2px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #C5CAC0;
   width: 100%;
 }
 
