@@ -10,10 +10,6 @@ export default function NotFound() {
       <div className="not-found-content">
         <p className="not-found-label">Error</p>
         <h1 className="not-found-title">404</h1>
-        <p className="not-found-message">
-          This page flew the coop.
-        </p>
-
         <div className="not-found-actions">
           <a href="/" className="not-found-home">
             Go home
