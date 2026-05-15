@@ -3,7 +3,11 @@ import './globals.css'
 import HamburgerMenu from '@/components/HamburgerMenu'
 
 export const metadata: Metadata = {
-  title: 'Aarron Walter',
+  metadataBase: new URL('https://aarronwalter.com'),
+  title: {
+    default: 'Aarron Walter',
+    template: '%s — Aarron Walter',
+  },
   description:
     'Co-founder of Design Better. Two decades shaping how the tech industry thinks about design — from Mailchimp to the White House.',
   openGraph: {
@@ -11,6 +15,28 @@ export const metadata: Metadata = {
     description:
       'Designer, co-founder of Design Better, and two-decade voice in how the tech industry thinks about design.',
     siteName: 'Aarron Walter',
+    url: 'https://aarronwalter.com',
+    type: 'website',
+    images: [
+      {
+        url: '/Aarron.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Aarron Walter',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    creator: '@aarron',
+    site: '@aarron',
+    title: 'Aarron Walter',
+    description:
+      'Designer, co-founder of Design Better, and two-decade voice in how the tech industry thinks about design.',
+    images: ['/Aarron.jpg'],
+  },
+  alternates: {
+    canonical: 'https://aarronwalter.com',
   },
 }
 

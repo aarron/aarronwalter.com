@@ -2,8 +2,15 @@ import type { Metadata } from 'next'
 import FooterWave from '@/components/FooterWave'
 
 export const metadata: Metadata = {
-  title: 'InVision — Aarron Walter',
-  description: 'VP of Design Education & Content at InVision (2016–2020).',
+  title: 'InVision',
+  description: 'VP of Design Education & Content at InVision (2016–2020). Aarron Walter built Design Better, a podcast and publication reaching millions of designers worldwide.',
+  openGraph: {
+    title: 'InVision — Aarron Walter',
+    description: 'VP of Design Education & Content at InVision (2016–2020). Built Design Better — a podcast and publication reaching millions of designers worldwide.',
+    url: 'https://aarronwalter.com/portfolio/invision',
+    images: [{ url: '/Aarron.jpg', alt: 'Aarron Walter' }],
+  },
+  alternates: { canonical: 'https://aarronwalter.com/portfolio/invision' },
 }
 
 export default function InVisionPage() {

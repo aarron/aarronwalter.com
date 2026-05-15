@@ -5,8 +5,15 @@ import ClientLogoGrid from '@/components/ClientLogoGrid'
 import MountainTransition from '@/components/MountainTransition'
 
 export const metadata: Metadata = {
-  title: 'About — Aarron Walter',
+  title: 'About',
   description: 'Designer, author, and co-founder of Design Better. Two decades shaping how the tech industry thinks about design.',
+  openGraph: {
+    title: 'About — Aarron Walter',
+    description: 'Designer, author, and co-founder of Design Better. Two decades shaping how the tech industry thinks about design.',
+    url: 'https://aarronwalter.com/about',
+    images: [{ url: '/Aarron.jpg', alt: 'Aarron Walter' }],
+  },
+  alternates: { canonical: 'https://aarronwalter.com/about' },
 }
 
 const INTERVIEWS = [

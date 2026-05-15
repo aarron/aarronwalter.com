@@ -2,8 +2,15 @@ import type { Metadata } from 'next'
 import FooterWave from '@/components/FooterWave'
 
 export const metadata: Metadata = {
-  title: 'Resolve to Save Lives — Aarron Walter',
-  description: 'Director of Product & Design, US COVID Response at Resolve to Save Lives (2020–2022).',
+  title: 'Resolve to Save Lives',
+  description: 'Director of Product & Design for the US COVID Response at Resolve to Save Lives (2020–2022). Aarron Walter led design for public health tools used across the country.',
+  openGraph: {
+    title: 'Resolve to Save Lives — Aarron Walter',
+    description: 'Director of Product & Design for the US COVID Response at Resolve to Save Lives (2020–2022). Led design for public health tools used across the country.',
+    url: 'https://aarronwalter.com/portfolio/rtsl',
+    images: [{ url: '/Aarron.jpg', alt: 'Aarron Walter' }],
+  },
+  alternates: { canonical: 'https://aarronwalter.com/portfolio/rtsl' },
 }
 
 export default function RTSLPage() {

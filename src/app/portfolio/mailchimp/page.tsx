@@ -2,8 +2,15 @@ import type { Metadata } from 'next'
 import FooterWave from '@/components/FooterWave'
 
 export const metadata: Metadata = {
-  title: 'Mailchimp — Aarron Walter',
-  description: 'Director of UX, GM of New Products, VP of R&D at Mailchimp (2008–2016).',
+  title: 'Mailchimp',
+  description: 'As Mailchimp’s fourth employee, Aarron Walter helped grow a scrappy email tool into a $12B SaaS platform — leading UX, product, and R&D from 2008 to 2016.',
+  openGraph: {
+    title: 'Mailchimp — Aarron Walter',
+    description: 'As Mailchimp’s fourth employee, Aarron Walter helped grow a scrappy email tool into a $12B SaaS platform — leading UX, product, and R&D from 2008 to 2016.',
+    url: 'https://aarronwalter.com/portfolio/mailchimp',
+    images: [{ url: '/Aarron.jpg', alt: 'Aarron Walter' }],
+  },
+  alternates: { canonical: 'https://aarronwalter.com/portfolio/mailchimp' },
 }
 
 export default function MailchimpPage() {
