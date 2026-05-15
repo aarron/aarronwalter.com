@@ -1244,6 +1244,458 @@ body {
   }
 }
 
+/* ─────────────────────────────────────────────────────────────
+   pf-* Magazine Layout Component System
+   Reusable treatments for portfolio case study pages.
+   Variables:
+     --pf-pad   horizontal page gutter (matches site rhythm)
+     --pf-gap   gap between split columns
+     --pf-dark  dark section background
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  --pf-pad: clamp(1.5rem, 5vw, 4.5rem);
+  --pf-gap: clamp(2rem, 4vw, 4rem);
+  --pf-dark: #1a1917;
+  --pf-accent: #FF4725;
+  --pf-cream: #F3E7D6;
+}
+
+/* ── Brand hero: logo + lead paragraph ── */
+.pf-brand-hero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: var(--pf-gap);
+  padding: clamp(3rem, 6vw, 5rem) var(--pf-pad) clamp(2.5rem, 5vw, 4rem);
+  border-bottom: 1px solid rgba(44, 42, 42, 0.09);
+}
+
+.pf-brand-logo {
+  width: clamp(64px, 10vw, 120px);
+  height: auto;
+  flex-shrink: 0;
+  mix-blend-mode: multiply;
+}
+
+.pf-brand-lead {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  line-height: 1.55;
+  color: #2C2A2A;
+  font-weight: 400;
+  max-width: 62ch;
+}
+
+@media (max-width: 600px) {
+  .pf-brand-hero {
+    grid-template-columns: 1fr;
+  }
+  .pf-brand-logo {
+    width: clamp(56px, 18vw, 80px);
+  }
+}
+
+/* ── Stats (already global .portfolio-stats, re-exported) ── */
+
+/* ── Section with text left / visual right ── */
+.pf-split {
+  display: grid;
+  grid-template-columns: 54fr 46fr;
+  align-items: start;
+  gap: 0;
+  border-top: 1px solid rgba(44, 42, 42, 0.09);
+}
+
+.pf-split__text {
+  padding: clamp(2.5rem, 5vw, 4.5rem) var(--pf-gap) clamp(2.5rem, 5vw, 4.5rem) var(--pf-pad);
+}
+
+.pf-split__visual {
+  align-self: stretch;
+  overflow: hidden;
+  background: #e8ddd0;
+}
+
+.pf-split__visual img,
+.pf-split__visual video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Flip: visual left / text right */
+.pf-split--flip {
+  grid-template-columns: 46fr 54fr;
+}
+
+.pf-split--flip .pf-split__visual {
+  order: -1;
+}
+
+.pf-split--flip .pf-split__text {
+  padding-left: var(--pf-gap);
+  padding-right: var(--pf-pad);
+}
+
+@media (max-width: 780px) {
+  .pf-split,
+  .pf-split--flip {
+    grid-template-columns: 1fr;
+  }
+  .pf-split--flip .pf-split__visual {
+    order: 0;
+  }
+  .pf-split__visual {
+    aspect-ratio: 16 / 9;
+    height: auto;
+  }
+  .pf-split__visual img,
+  .pf-split__visual video {
+    height: 100%;
+  }
+}
+
+/* ── Full-bleed media (edge to edge) ── */
+.pf-full-bleed {
+  display: block;
+  overflow: hidden;
+  background: #e8ddd0;
+  margin: clamp(1.5rem, 3vw, 2.5rem) clamp(1rem, 8vw, 7rem);
+}
+
+.pf-full-bleed img,
+.pf-full-bleed video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pf-full-bleed--tall img,
+.pf-full-bleed--tall video {
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+/* ── Image grid (2-up, 3-up, 4-up) ── */
+.pf-grid {
+  display: grid;
+  gap: 2px;
+  background: #2C2A2A;
+  margin: clamp(1.5rem, 3vw, 2.5rem) clamp(1rem, 8vw, 7rem);
+}
+
+.pf-grid--2 { grid-template-columns: repeat(2, 1fr); }
+.pf-grid--3 { grid-template-columns: repeat(3, 1fr); }
+.pf-grid--4 { grid-template-columns: repeat(4, 1fr); }
+
+.pf-grid img,
+.pf-grid video {
+  width: 100%;
+  display: block;
+}
+
+/* Portrait variant — for 3:4 posters, headshots, tall compositions */
+.pf-grid--portrait img,
+.pf-grid--portrait video {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+/* Screen variant — for UI screenshots, 16:9 captures */
+.pf-grid--screen img,
+.pf-grid--screen video {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* Photo variant — for 3:2 photography */
+.pf-grid--photo img,
+.pf-grid--photo video {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .pf-grid--3,
+  .pf-grid--4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .pf-grid--2,
+  .pf-grid--3,
+  .pf-grid--4 { grid-template-columns: 1fr; }
+}
+
+/* ── Horizontal scrollable strip ── */
+.pf-strip {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  background: #2C2A2A;
+  scrollbar-width: none;
+  margin: clamp(1.5rem, 3vw, 2.5rem) clamp(1rem, 8vw, 7rem);
+}
+
+.pf-strip::-webkit-scrollbar { display: none; }
+
+.pf-strip img {
+  height: clamp(180px, 28vw, 320px);
+  width: auto;
+  flex-shrink: 0;
+  display: block;
+  object-fit: cover;
+}
+
+/* ── Dark section wrapper ── */
+.pf-dark-section {
+  background: var(--pf-dark);
+  color: var(--pf-cream);
+}
+
+/* ── Section padding wrapper (standard) ── */
+.pf-section {
+  padding: clamp(2.5rem, 5vw, 4.5rem) var(--pf-pad);
+  border-top: 1px solid rgba(44, 42, 42, 0.09);
+}
+
+.pf-dark-section .pf-section {
+  border-top-color: rgba(243, 231, 214, 0.1);
+}
+
+/* ── Section label + heading ── */
+.pf-label {
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(44, 42, 42, 0.4);
+  margin-bottom: 0.5rem;
+}
+
+.pf-dark-section .pf-label {
+  color: rgba(243, 231, 214, 0.38);
+}
+
+.pf-heading {
+  font-family: Lineca, sans-serif;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.0;
+  color: #2C2A2A;
+  margin-bottom: clamp(1.25rem, 2vw, 2rem);
+}
+
+.pf-dark-section .pf-heading {
+  color: var(--pf-cream);
+}
+
+/* ── Pull quote ── */
+.pf-pull-quote {
+  position: relative;
+  padding: clamp(2rem, 4vw, 3.5rem) var(--pf-pad);
+  border-top: 1px solid rgba(44, 42, 42, 0.09);
+  border-bottom: 1px solid rgba(44, 42, 42, 0.09);
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(1rem, 2vw, 1.75rem);
+  align-items: start;
+}
+
+.pf-pull-quote__mark {
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: 0.7;
+  color: var(--pf-accent);
+  font-family: Georgia, serif;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.pf-pull-quote__text {
+  font-size: clamp(1.125rem, 2.2vw, 1.625rem);
+  line-height: 1.45;
+  font-weight: 400;
+  color: #2C2A2A;
+  margin: 0;
+}
+
+.pf-pull-quote__cite {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.8125rem;
+  color: rgba(44, 42, 42, 0.5);
+  font-style: normal;
+}
+
+.pf-dark-section .pf-pull-quote {
+  border-top-color: rgba(243, 231, 214, 0.1);
+  border-bottom-color: rgba(243, 231, 214, 0.1);
+}
+
+.pf-dark-section .pf-pull-quote__text {
+  color: var(--pf-cream);
+}
+
+.pf-dark-section .pf-pull-quote__cite {
+  color: rgba(243, 231, 214, 0.4);
+}
+
+/* ── Two-column text layout ── */
+.pf-two-col {
+  column-count: 2;
+  column-gap: clamp(2rem, 4vw, 4rem);
+}
+
+@media (max-width: 600px) {
+  .pf-two-col { column-count: 1; }
+}
+
+/* ── Awards grid (typographic, dark bg) ── */
+.pf-awards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0;
+}
+
+.pf-award-item {
+  padding: clamp(1rem, 2vw, 1.5rem) clamp(1rem, 2vw, 1.75rem);
+  border-bottom: 1px solid rgba(243, 231, 214, 0.1);
+  border-right: 1px solid rgba(243, 231, 214, 0.1);
+}
+
+.pf-award-year {
+  font-size: 0.5625rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--pf-accent);
+  margin-bottom: 0.25rem;
+}
+
+.pf-award-name {
+  font-size: clamp(0.8125rem, 1.2vw, 0.9375rem);
+  color: var(--pf-cream);
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+/* ── Testimonial block in dark section ── */
+.pf-testimonial {
+  padding: clamp(1.75rem, 3vw, 2.75rem) 0;
+  border-bottom: 1px solid rgba(243, 231, 214, 0.1);
+}
+
+.pf-testimonial:first-child {
+  border-top: 1px solid rgba(243, 231, 214, 0.1);
+}
+
+.pf-testimonial__quote {
+  font-size: clamp(0.9375rem, 1.6vw, 1.125rem);
+  line-height: 1.6;
+  color: var(--pf-cream);
+  font-style: italic;
+  margin-bottom: 0.875rem;
+}
+
+.pf-testimonial__attr {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.pf-testimonial__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.pf-testimonial__name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--pf-cream);
+}
+
+.pf-testimonial__role {
+  font-size: 0.75rem;
+  color: rgba(243, 231, 214, 0.45);
+  margin-left: 0.25rem;
+}
+
+/* ── Inline body text for pf sections ── */
+.pf-body {
+  font-size: clamp(0.9375rem, 1.4vw, 1.0625rem);
+  line-height: 1.7;
+  color: #2C2A2A;
+  max-width: 66ch;
+}
+
+.pf-body + .pf-body {
+  margin-top: 1.25rem;
+}
+
+.pf-dark-section .pf-body {
+  color: rgba(243, 231, 214, 0.8);
+}
+
+/* ── Meta items (label + value pairs) ── */
+.pf-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 2vw, 1.5rem) clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.pf-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.pf-meta-label {
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(44, 42, 42, 0.38);
+}
+
+.pf-meta-value {
+  font-size: 0.875rem;
+  color: #2C2A2A;
+  font-weight: 500;
+}
+
+/* ── Video container ── */
+.pf-video {
+  display: block;
+  background: #1a1917;
+  margin: clamp(1.5rem, 3vw, 2.5rem) clamp(1rem, 8vw, 7rem);
+  overflow: hidden;
+}
+
+.pf-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Caption below media ── */
+.pf-caption {
+  font-size: 0.6875rem;
+  color: rgba(44, 42, 42, 0.4);
+  padding: 0.375rem clamp(1rem, 8vw, 7rem) 0;
+  letter-spacing: 0.02em;
+}
+
+.pf-dark-section .pf-caption {
+  color: rgba(243, 231, 214, 0.3);
+  background: var(--pf-dark);
+}
+
 /* Portfolio prev/next nav */
 
 .portfolio-nav {
