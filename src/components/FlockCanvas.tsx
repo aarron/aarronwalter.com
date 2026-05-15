@@ -42,7 +42,13 @@ function clampSpeed(b: Boid) {
   if (s < MIN_SPEED && s > 0) { b.vx = b.vx / s * MIN_SPEED; b.vy = b.vy / s * MIN_SPEED }
 }
 
-export default function FlockCanvas({ className }: { className?: string }) {
+export default function FlockCanvas({
+  className,
+  centerSpawn = false,
+}: {
+  className?: string
+  centerSpawn?: boolean
+}) {
   const ref = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -75,17 +81,24 @@ export default function FlockCanvas({ className }: { className?: string }) {
       if (!ready && W > 0 && H > 0) {
         // Seed one tight cluster — all boids given nearly identical velocity
         // so flocking rules kick in immediately rather than from a scatter
-        const cx     = W * 0.65
-        const cy     = H * 0.30
-        const spread = Math.min(W, H) * 0.32
-        const baseAngle = -0.35   // heading: left + slightly up
+        const cx     = centerSpawn ? W * 0.50 : W * 0.65
+        const cy     = centerSpawn ? H * 0.50 : H * 0.30
+        const spread = centerSpawn
+          ? Math.min(W, H) * 0.06   // very tight — erupt from a single point
+          : Math.min(W, H) * 0.32
 
         boids = Array.from({ length: COUNT }, () => {
-          const angle = baseAngle + (Math.random() - 0.5) * 0.4
+          // Center mode: each boid gets a fully random outward angle so the
+          // flock erupts radially; otherwise use the classic left-heading angle
+          const baseAngle = centerSpawn
+            ? Math.random() * Math.PI * 2
+            : -0.35
+          const angleSpread = centerSpawn ? 0 : 0.4
+          const angle = baseAngle + (Math.random() - 0.5) * angleSpread
           const speed = MIN_SPEED + Math.random() * (MAX_SPEED - MIN_SPEED) * 0.35
           return {
             x:  cx + (Math.random() - 0.5) * spread,
-            y:  cy + (Math.random() - 0.5) * spread * 0.45,
+            y:  cy + (Math.random() - 0.5) * spread,
             z:  Math.random(),
             vx: Math.cos(angle) * speed,
             vy: Math.sin(angle) * speed,
@@ -198,12 +211,17 @@ export default function FlockCanvas({ className }: { className?: string }) {
         const r      = lerp(0.7, 3.0, b.z)
         const depthA = lerp(0.05, 0.72, b.z)
 
-        // Fade toward left (where heading text lives)
-        const leftFade = Math.min(1, b.x / (W * 0.42))
-        // Fade toward bottom (behind the contact form)
-        const botFade  = Math.max(0, 1 - Math.max(0, b.y - H * 0.45) / (H * 0.50))
-
-        const alpha = depthA * leftFade * botFade
+        let alpha: number
+        if (centerSpawn) {
+          // Full-canvas mode: only depth-based opacity, no directional fades
+          alpha = depthA
+        } else {
+          // Fade toward left (where heading text lives)
+          const leftFade = Math.min(1, b.x / (W * 0.42))
+          // Fade toward bottom (behind the contact form)
+          const botFade  = Math.max(0, 1 - Math.max(0, b.y - H * 0.45) / (H * 0.50))
+          alpha = depthA * leftFade * botFade
+        }
         if (alpha < 0.02) continue
 
         // Draw as elongated ellipse pointing in direction of travel

@@ -2811,3 +2811,108 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+
+/* ═══════════════════════════════════════════════════════
+   404 NOT FOUND PAGE
+═══════════════════════════════════════════════════════ */
+
+.not-found-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--cream, #f0ebe3);
+}
+
+.not-found-flock {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.not-found-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.not-found-label {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(44, 42, 42, 0.4);
+  margin-bottom: 0.5rem;
+}
+
+.not-found-title {
+  font-family: Lineca, sans-serif;
+  font-size: clamp(7rem, 22vw, 16rem);
+  font-weight: 700;
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+  color: #2C2A2A;
+  margin: 0;
+}
+
+.not-found-message {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: rgba(44, 42, 42, 0.55);
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+
+.not-found-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.not-found-home {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #f0ebe3;
+  background: #2C2A2A;
+  padding: 0.65rem 1.5rem;
+  border-radius: 2px;
+  transition: opacity 0.15s;
+}
+
+.not-found-home:hover {
+  opacity: 0.78;
+}
+
+.not-found-report {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: rgba(44, 42, 42, 0.55);
+  border-bottom: 1px solid rgba(44, 42, 42, 0.2);
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.not-found-report:hover {
+  color: #2C2A2A;
+  border-color: #2C2A2A;
+}
