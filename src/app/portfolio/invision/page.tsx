@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import FooterWave from '@/components/FooterWave'
+import OdometerValue from '@/components/OdometerValue'
 
 export const metadata: Metadata = {
   title: 'InVision',
@@ -39,27 +40,27 @@ export default function InVisionPage() {
           {/* Stats */}
           <div className="portfolio-stats">
             <div className="portfolio-stat">
-              <div className="portfolio-stat-value">11</div>
+              <div className="portfolio-stat-value"><OdometerValue value="11" /></div>
               <div className="portfolio-stat-label">Books published</div>
             </div>
             <div className="portfolio-stat">
-              <div className="portfolio-stat-value">400K+</div>
+              <div className="portfolio-stat-value"><OdometerValue value="400K+" /></div>
               <div className="portfolio-stat-label">Book downloads</div>
             </div>
             <div className="portfolio-stat">
-              <div className="portfolio-stat-value">$3M+</div>
+              <div className="portfolio-stat-value"><OdometerValue value="$3M+" /></div>
               <div className="portfolio-stat-label">Annual recurring revenue</div>
             </div>
             <div className="portfolio-stat">
-              <div className="portfolio-stat-value">2.5M+</div>
+              <div className="portfolio-stat-value"><OdometerValue value="2.5M+" /></div>
               <div className="portfolio-stat-label">Podcast downloads</div>
             </div>
             <div className="portfolio-stat">
-              <div className="portfolio-stat-value">150K</div>
+              <div className="portfolio-stat-value"><OdometerValue value="150K" /></div>
               <div className="portfolio-stat-label">Email subscribers</div>
             </div>
             <div className="portfolio-stat">
-              <div className="portfolio-stat-value">600%</div>
+              <div className="portfolio-stat-value"><OdometerValue value="600%" /></div>
               <div className="portfolio-stat-label">First-year subscriber growth</div>
             </div>
           </div>

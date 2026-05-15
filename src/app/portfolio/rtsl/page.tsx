@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import FooterWave from '@/components/FooterWave'
+import OdometerValue from '@/components/OdometerValue'
 
 export const metadata: Metadata = {
   title: 'Resolve to Save Lives',
@@ -40,19 +41,19 @@ export default function RTSLPage() {
           {/* Stats */}
           <div className="portfolio-stats">
             <div className="portfolio-stat">
-              <div className="portfolio-stat-value">8</div>
+              <div className="portfolio-stat-value"><OdometerValue value="8" /></div>
               <div className="portfolio-stat-label">Person team led</div>
             </div>
             <div className="portfolio-stat">
-              <div className="portfolio-stat-value">$2M</div>
+              <div className="portfolio-stat-value"><OdometerValue value="$2M" /></div>
               <div className="portfolio-stat-label">Budget managed</div>
             </div>
             <div className="portfolio-stat">
-              <div className="portfolio-stat-value">$75M</div>
+              <div className="portfolio-stat-value"><OdometerValue value="$75M" /></div>
               <div className="portfolio-stat-label">Digital public service project co-led</div>
             </div>
             <div className="portfolio-stat">
-              <div className="portfolio-stat-value">4</div>
+              <div className="portfolio-stat-value"><OdometerValue value="4" /></div>
               <div className="portfolio-stat-label">Products built and deployed</div>
             </div>
           </div>

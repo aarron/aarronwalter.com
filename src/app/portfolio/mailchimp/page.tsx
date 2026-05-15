@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import FooterWave from '@/components/FooterWave'
+import OdometerValue from '@/components/OdometerValue'
 
 export const metadata: Metadata = {
   title: 'Mailchimp',
@@ -43,19 +44,19 @@ export default function MailchimpPage() {
         {/* ── Stats ── */}
         <div className="portfolio-stats">
           <div className="portfolio-stat">
-            <div className="portfolio-stat-value">15M</div>
+            <div className="portfolio-stat-value"><OdometerValue value="15M" /></div>
             <div className="portfolio-stat-label">Customers at exit</div>
           </div>
           <div className="portfolio-stat">
-            <div className="portfolio-stat-value">$750M+</div>
+            <div className="portfolio-stat-value"><OdometerValue value="$750M+" /></div>
             <div className="portfolio-stat-label">Annual recurring revenue</div>
           </div>
           <div className="portfolio-stat">
-            <div className="portfolio-stat-value">$12B</div>
+            <div className="portfolio-stat-value"><OdometerValue value="$12B" /></div>
             <div className="portfolio-stat-label">Intuit acquisition</div>
           </div>
           <div className="portfolio-stat">
-            <div className="portfolio-stat-value">16</div>
+            <div className="portfolio-stat-value"><OdometerValue value="16" /></div>
             <div className="portfolio-stat-label">Largest team managed</div>
           </div>
         </div>
