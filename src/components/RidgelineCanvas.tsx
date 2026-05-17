@@ -12,9 +12,12 @@ const INK_B   = 48
 // ─── Data constants ───────────────────────────────────────────────────────────
 // PSR B1919+21 (CP 1919) — 80 pulse periods × 300 time samples
 // Observed at 318 MHz, Arecibo Observatory, 1970
-const ROWS     = PULSAR_DATA.length        // 80
-const COLS     = PULSAR_DATA[0].length     // 300
-const DATA_MAX = 74.31                     // max value in dataset
+const ROWS = PULSAR_DATA.length        // 80
+const COLS = PULSAR_DATA[0].length     // 300
+// Typical strong pulse peaks are ~15–20 units. We scale so a value of 15
+// = 3.5 line-spacings — the right proportions for the Joy Division look.
+// DATA_MAX (74.31) is one extreme outlier; using it would make everything else invisible.
+const AMP_REF = 15
 
 // ─── Component ────────────────────────────────────────────────────────────────
 export default function RidgelineCanvas({ className }: { className?: string }) {
@@ -56,13 +59,13 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
       grad.addColorStop(1.00, `rgba(${INK_R},${INK_G},${INK_B},0.260)`)
 
       // ── Layout ────────────────────────────────────────────────────────────────
-      const padTop  = H * 0.04
-      const padBot  = H * 0.04
+      const padTop  = H * 0.03
+      const padBot  = H * 0.03
       const spacing = (H - padTop - padBot) / (ROWS - 1)
 
-      // Scale so the absolute max value occupies ~3 line-spacings of height.
-      // This reproduces the original stacked-ridgeline proportions.
-      const ampScale = (spacing * 3.0) / DATA_MAX
+      // Scale so a typical strong peak (AMP_REF = 15) = 3.5 line-spacings tall.
+      // Using DATA_MAX (74.31) as the divisor crushed most peaks below 1px.
+      const ampScale = (spacing * 3.5) / AMP_REF
 
       ctx!.strokeStyle = grad
       ctx!.lineJoin    = 'round'
@@ -92,19 +95,16 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
         ctx!.lineWidth = 0.45 + 0.60 * (1 - stackMid)
 
         // ── Sample the real pulsar data ────────────────────────────────────────
+        // No x-envelope here — the real data is naturally flat (noise ~0) at
+        // both edges of the time window, so the signal shape does its own work.
+        // An amplitude envelope was flattening the actual pulse peaks to <1px.
         const pts: { x: number; y: number }[] = []
         for (let s = 0; s < COLS; s++) {
           const nx        = s / (COLS - 1)
           const x         = nx * W
-          // Clip negative values to baseline — noise floor sits near zero,
-          // negative excursions are instrument noise not real signal
+          // Clip negatives: instrument noise can go slightly below zero, not real signal
           const intensity = Math.max(0, data[s])
-          // x-envelope: flat at left edge (header side), opens up rightward.
-          // Doubles down on the gradient so lines physically shrink as they
-          // approach the left margin, not just dim.
-          const thr = 0.14
-          const env = nx <= thr ? 0 : Math.pow((nx - thr) / (1 - thr), 1.4)
-          const y   = baseY - intensity * ampScale * env * totalMod
+          const y         = baseY - intensity * ampScale * totalMod
           pts.push({ x, y })
         }
 
