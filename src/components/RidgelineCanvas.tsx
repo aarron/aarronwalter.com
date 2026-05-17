@@ -154,8 +154,8 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
         ctx!.fillStyle = BG_FILL
         ctx!.fill()
 
-        // Stroke — faint at back, bold at front
-        const alpha = 0.06 + 0.64 * front
+        // Stroke — less faint at back, bold at front
+        const alpha = 0.18 + 0.52 * front
         ctx!.beginPath()
         ctx!.moveTo(pts[0].sx, pts[0].sy)
         for (let s = 1; s <= SAMPLES; s++) ctx!.lineTo(pts[s].sx, pts[s].sy)
