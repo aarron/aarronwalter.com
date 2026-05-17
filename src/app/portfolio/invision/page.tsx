@@ -146,6 +146,13 @@ export default function InVisionPage() {
               over $3M ARR across ebook, PDF, and audiobook formats.
             </p>
           </div>
+          <StatBlock
+            stats={[
+              { value: '11',       label: 'Books published' },
+              { value: '400,000+', label: 'Downloads' },
+              { value: '$3M+',     label: 'Revenue ARR' },
+            ]}
+          />
           <PortfolioPanel className="ds-panel--compact" items={[
             { src: '/portfolio/invision/design-better-library/business-thinking.webp',         alt: 'Business Thinking for Designers' },
             { src: '/portfolio/invision/design-better-library/designops-handbook.webp',          alt: 'DesignOps Handbook' },
@@ -159,14 +166,6 @@ export default function InVisionPage() {
             { src: '/portfolio/invision/design-better-library/design-engineering-handbook.webp', alt: 'Design Engineering Handbook' },
           ]} />
         </div>
-
-        <StatBlock
-          stats={[
-            { value: '11',       label: 'Books published' },
-            { value: '400,000+', label: 'Downloads' },
-            { value: '$3M+',     label: 'Revenue ARR' },
-          ]}
-        />
 
         {/* ────────────────────────────────────────────────
             SECTION 3: Interviews
