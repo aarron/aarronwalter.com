@@ -368,7 +368,7 @@ body {
 
 .nav-link {
   font-family: 'Lineca', sans-serif;
-  font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+  font-size: clamp(1.25rem, 2.5vw, 1.625rem);
   font-weight: 400;
   letter-spacing: -0.03em;
   line-height: 1;
