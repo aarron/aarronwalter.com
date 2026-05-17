@@ -3532,18 +3532,32 @@ body {
   z-index: 1;
 }
 
-/* Data attribution caption — shown in the hero area below the canvas */
+/* Data attribution tag — pinned flush to the right edge of the browser */
 .viz-credit {
   position: absolute;
-  bottom: 0.75rem;
-  right: 1rem;
-  font-size: 0.5625rem;
-  letter-spacing: 0.08em;
+  bottom: 2rem;
+  right: 0;
+  background: #2C2A2A;
+  color: rgba(243, 231, 214, 0.65);
+  font-size: 0.5rem;
+  letter-spacing: 0.10em;
   text-transform: uppercase;
-  color: rgba(44, 42, 42, 0.30);
-  pointer-events: none;
+  padding: 0.3rem 0.625rem 0.3rem 0.75rem;
+  border-radius: 3px 0 0 3px;
   z-index: 2;
   white-space: nowrap;
+  line-height: 1;
+}
+
+.viz-credit a {
+  color: rgba(243, 231, 214, 0.85);
+  text-decoration: none;
+}
+
+.viz-credit a:hover {
+  color: #F3E7D6;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* InVision hero — Ap geomagnetic index (solar storms, 1990–2019) */
