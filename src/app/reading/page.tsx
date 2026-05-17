@@ -41,6 +41,7 @@ export default function ReadingPage() {
       <article className="page-article">
         {/* Canvas is article-level so it can extend below the header into the content */}
         <TopoCanvas className="page-hero-canvas" />
+        <span className="viz-credit" style={{ bottom: 'auto', top: 'calc(clamp(700px, 95vh, 1200px) - 3.5rem)' }}>Data source: <a href="https://www.ncei.noaa.gov/products/etopo-global-relief-model" target="_blank" rel="noopener noreferrer">ETOPO1 Global Relief</a> · NOAA NCEI · Iceland 63–67°N</span>
 
         <header className="page-header">
           <h1 className="page-header-title">Reading</h1>
