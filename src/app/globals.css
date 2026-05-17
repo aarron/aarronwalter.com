@@ -3470,16 +3470,16 @@ body {
 /* Header: flock lives in the top-right behind the title */
 .colophon-hero {
   position: relative;
-  min-height: 280px;
-  overflow: visible; /* canvas bleeds below into content */
+  min-height: 520px;
+  overflow: visible;
 }
 
 .colophon-flock {
   position: absolute;
   top: 0;
   right: 0;
-  width: 65%;
-  height: 115%;
+  width: 68%;
+  height: 100%;
   pointer-events: none;
   z-index: 0;
 }

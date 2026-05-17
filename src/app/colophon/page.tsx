@@ -57,11 +57,13 @@ export default function ColophonPage() {
             <p className="pf-label">Aesthetic</p>
             <h2 className="pf-heading">Design Influences</h2>
             <p className="pf-body">
-              The visual language of the site draws from a few places. The topographic contour
-              lines that animate through the header and background were inspired in part by album
-              cover art &mdash; particularly Joy Division&rsquo;s <em><a href="https://boingboing.net/2023/05/16/the-origins-of-the-legendary-album-cover-for-joy-divisions-unknown-pleasures.html" target="_blank">Unknown Pleasures</a></em>,
-              with its iconic stacked radio-wave pulses, and work associated with Broken Bells,
-              whose covers combine precise graphic geometry with something organic underneath.
+              The visual language of the site draws from a few places. The stacked ridgeline plot
+              in this header is not synthetic &mdash; it&rsquo;s actual radio emission data from{' '}
+              <strong>PSR B1919+21</strong>, the first radio pulsar ever discovered, recorded at
+              318&thinsp;MHz by Harold Craft at Arecibo Observatory in 1970. Peter Saville used the
+              same dataset for Joy Division&rsquo;s{' '}
+              <em><a href="https://boingboing.net/2023/05/16/the-origins-of-the-legendary-album-cover-for-joy-divisions-unknown-pleasures.html" target="_blank">Unknown Pleasures</a></em>{' '}
+              cover. The subtle animation reflects the pulsar&rsquo;s actual 1.3373-second period.
             </p>
             <p className="pf-body" style={{ marginTop: '1rem' }}>
               The weathered landscape of <a href="https://en.wikipedia.org/wiki/Tatooine" target="_blank">Tatooine</a> inspired the color palette here
@@ -151,7 +153,7 @@ export default function ColophonPage() {
               { term: 'Contact form', def: 'Resend — email delivery via verified domain' },
               { term: 'Now Listening',def: 'Discogs API' },
               { term: 'Now Reading',  def: 'Open Library Covers API' },
-              { term: 'Animations',   def: 'Canvas 2D — marching squares (topo), ridgeline noise (colophon), sinusoidal waves' },
+              { term: 'Animations',   def: 'Canvas 2D — marching squares (topo), PSR B1919+21 pulsar data (colophon), sinusoidal waves' },
               { term: 'Source',       def: 'github.com/aarron/aarronwalter.com' },
             ].map(({ term, def }) => (
               <div key={term} className="colophon-stack-row">

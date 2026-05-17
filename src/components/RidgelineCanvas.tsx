@@ -1,52 +1,20 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import { PULSAR_DATA } from '@/lib/pulsar-data'
 
-// ─── Colors ───────────────────────────────────────────────────────────────────
-const BG_FILL = '#F3E7D6'
+// ─── Colors — match the rest of the site palette ──────────────────────────────
+const BG_FILL = '#F3E7D6'   // cream background
 const INK_R   = 70
 const INK_G   = 58
 const INK_B   = 48
 
-const LINES   = 55
-const SAMPLES = 280
-
-// ─── Seeded LCG — stable profiles across resize ───────────────────────────────
-function lcg(seed: number) {
-  let s = (seed ^ 0xdeadbeef) >>> 0
-  return (): number => {
-    s = (Math.imul(s, 1664525) + 1013904223) >>> 0
-    return s / 0x100000000
-  }
-}
-
-const LINE_SEED: number[] = Array.from({ length: LINES }, (_, i) => {
-  const r = lcg(i * 4919 + 98317)
-  return r() * Math.PI * 6
-})
-
-// ─── Ridged fractal noise — Joy Division / CP 1919 aesthetic ─────────────────
-//
-//  Uses 1 − |sin(x)| per octave so peaks are sharp spikes (not smooth humps).
-//  Slow per-octave drift creates the "radio signal from a distant star" feel.
-//
-function ridgeH(nx: number, lineIdx: number, t: number): number {
-  const seed = LINE_SEED[lineIdx]
-  const x    = nx * 5.5 + seed
-
-  let h = 0, amp = 0.60, freq = 1.0
-  for (let oct = 0; oct < 5; oct++) {
-    const drift = t * (0.006 + oct * 0.004)
-    const v     = Math.sin(x * freq * 3.1 + drift + seed * oct * 0.27)
-    h   += amp * (1.0 - Math.abs(v))
-    amp  *= 0.52
-    freq *= 2.04
-  }
-
-  // Slow amplitude pulse — subtle "signal received" effect across the stack
-  const signal = 1.0 + 0.10 * Math.sin(t * 0.38 + lineIdx * 0.21)
-  return Math.max(0, h - 0.52) * signal
-}
+// ─── Data constants ───────────────────────────────────────────────────────────
+// PSR B1919+21 (CP 1919) — 80 pulse periods × 300 time samples
+// Observed at 318 MHz, Arecibo Observatory, 1970
+const ROWS     = PULSAR_DATA.length        // 80
+const COLS     = PULSAR_DATA[0].length     // 300
+const DATA_MAX = 74.31                     // max value in dataset
 
 // ─── Component ────────────────────────────────────────────────────────────────
 export default function RidgelineCanvas({ className }: { className?: string }) {
@@ -73,68 +41,87 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
     function draw(now: number) {
       const W = canvas!.offsetWidth
       const H = canvas!.offsetHeight
-      const t = (now - t0) * 0.001
+      const t = (now - t0) * 0.001   // seconds elapsed
 
       ctx!.clearRect(0, 0, W, H)
 
-      // Left → right gradient: invisible at left (near header text) → solid at right.
-      // This mirrors HeroWaves' technique — one gradient shared across all line strokes.
+      // ── Gradient: ghost on the left (toward header text), solid on the right ──
+      // Matches the pattern used in HeroWaves — one gradient shared by all strokes.
       const grad = ctx!.createLinearGradient(0, 0, W, 0)
       grad.addColorStop(0.00, `rgba(${INK_R},${INK_G},${INK_B},0.000)`)
-      grad.addColorStop(0.10, `rgba(${INK_R},${INK_G},${INK_B},0.010)`)
-      grad.addColorStop(0.28, `rgba(${INK_R},${INK_G},${INK_B},0.080)`)
-      grad.addColorStop(0.52, `rgba(${INK_R},${INK_G},${INK_B},0.175)`)
-      grad.addColorStop(0.78, `rgba(${INK_R},${INK_G},${INK_B},0.230)`)
-      grad.addColorStop(1.00, `rgba(${INK_R},${INK_G},${INK_B},0.255)`)
+      grad.addColorStop(0.08, `rgba(${INK_R},${INK_G},${INK_B},0.018)`)
+      grad.addColorStop(0.25, `rgba(${INK_R},${INK_G},${INK_B},0.090)`)
+      grad.addColorStop(0.50, `rgba(${INK_R},${INK_G},${INK_B},0.185)`)
+      grad.addColorStop(0.78, `rgba(${INK_R},${INK_G},${INK_B},0.235)`)
+      grad.addColorStop(1.00, `rgba(${INK_R},${INK_G},${INK_B},0.260)`)
 
+      // ── Layout ────────────────────────────────────────────────────────────────
       const padTop  = H * 0.04
       const padBot  = H * 0.04
-      const spacing = (H - padTop - padBot) / (LINES - 1)
-      const maxAmp  = H * 0.10   // maximum peak height as fraction of canvas height
+      const spacing = (H - padTop - padBot) / (ROWS - 1)
 
-      ctx!.strokeStyle = grad   // set once; all lines share the horizontal fade
+      // Scale so the absolute max value occupies ~3 line-spacings of height.
+      // This reproduces the original stacked-ridgeline proportions.
+      const ampScale = (spacing * 3.0) / DATA_MAX
+
+      ctx!.strokeStyle = grad
       ctx!.lineJoin    = 'round'
 
-      // Top → bottom: each line's cream fill occludes everything drawn above it,
-      // creating the Joy Division stacked-ridgeline depth illusion.
-      for (let i = 0; i < LINES; i++) {
-        const baseY    = padTop + i * spacing
-        const lineNorm = i / (LINES - 1)   // 0 = top row, 1 = bottom row
+      // ── Draw back → front (row 0 at top, row 79 at bottom) ───────────────────
+      // Each row's cream fill occludes everything drawn above it, creating the
+      // Joy Division stacked-ridgeline depth illusion with real pulsar data.
+      for (let row = 0; row < ROWS; row++) {
+        const baseY    = padTop + row * spacing
+        const rowNorm  = row / (ROWS - 1)     // 0 = top, 1 = bottom
+        const data     = PULSAR_DATA[row]
 
-        // Slow per-line amplitude breath — each row breathes independently
-        const ampMod = 0.72 + 0.28 * Math.sin(i * 1.08 + t * 0.14)
+        // ── Subtle animation ───────────────────────────────────────────────────
+        // A slow traveling brightness wave moves through the stack at roughly
+        // the pulsar's actual period (1.3373 s) — like receiving the signal live.
+        // The wave is kept very gentle so it doesn't distort the data shape.
+        const pulsarPhase = (t / 1.3373) * Math.PI * 2
+        const waveMod     = 1.0 + 0.06 * Math.sin(pulsarPhase - row * 0.10)
+
+        // Slow per-line amplitude breath — independent for each row
+        const breathMod   = 1.0 + 0.04 * Math.sin(t * 0.31 + row * 0.47)
+
+        const totalMod = waveMod * breathMod
 
         // Line weight: slightly fuller toward mid-stack, thinner at edges
-        const stackMid = Math.abs(lineNorm - 0.5)
-        ctx!.lineWidth = 0.45 + 0.65 * (1 - stackMid)
+        const stackMid = Math.abs(rowNorm - 0.5)
+        ctx!.lineWidth = 0.45 + 0.60 * (1 - stackMid)
 
-        // Sample ridge profile
+        // ── Sample the real pulsar data ────────────────────────────────────────
         const pts: { x: number; y: number }[] = []
-        for (let s = 0; s <= SAMPLES; s++) {
-          const nx  = s / SAMPLES
-          // x-envelope: flat at left edge, ramps up to full amplitude rightward.
-          // This complements the gradient — lines are both dimmer AND shorter on the left.
-          const thr = 0.18
-          const env = nx <= thr ? 0 : Math.pow((nx - thr) / (1 - thr), 1.6)
-          const h   = ridgeH(nx, i, t) * maxAmp * env * ampMod
-          pts.push({ x: nx * W, y: baseY - h })
+        for (let s = 0; s < COLS; s++) {
+          const nx        = s / (COLS - 1)
+          const x         = nx * W
+          // Clip negative values to baseline — noise floor sits near zero,
+          // negative excursions are instrument noise not real signal
+          const intensity = Math.max(0, data[s])
+          // x-envelope: flat at left edge (header side), opens up rightward.
+          // Doubles down on the gradient so lines physically shrink as they
+          // approach the left margin, not just dim.
+          const thr = 0.14
+          const env = nx <= thr ? 0 : Math.pow((nx - thr) / (1 - thr), 1.4)
+          const y   = baseY - intensity * ampScale * env * totalMod
+          pts.push({ x, y })
         }
 
-        // Cream occlusion fill — same background color as the page.
-        // Each line erases everything above it within its silhouette.
+        // Cream occlusion fill — erases lines drawn above within this row's silhouette
         ctx!.beginPath()
         ctx!.moveTo(pts[0].x, pts[0].y)
-        for (let s = 1; s <= SAMPLES; s++) ctx!.lineTo(pts[s].x, pts[s].y)
-        ctx!.lineTo(pts[SAMPLES].x, H + 10)
-        ctx!.lineTo(pts[0].x,       H + 10)
+        for (let s = 1; s < COLS; s++) ctx!.lineTo(pts[s].x, pts[s].y)
+        ctx!.lineTo(pts[COLS - 1].x, H + 10)
+        ctx!.lineTo(pts[0].x,        H + 10)
         ctx!.closePath()
         ctx!.fillStyle = BG_FILL
         ctx!.fill()
 
-        // Ridge stroke
+        // Ridge stroke — inherits the horizontal gradient set above
         ctx!.beginPath()
         ctx!.moveTo(pts[0].x, pts[0].y)
-        for (let s = 1; s <= SAMPLES; s++) ctx!.lineTo(pts[s].x, pts[s].y)
+        for (let s = 1; s < COLS; s++) ctx!.lineTo(pts[s].x, pts[s].y)
         ctx!.stroke()
       }
 
