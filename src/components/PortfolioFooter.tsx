@@ -1,5 +1,8 @@
 import FooterWave from './FooterWave'
 
+const BUG_URL =
+  'https://github.com/aarron/aarronwalter.com/issues/new?labels=bug&title=%5BBug%5D+'
+
 /**
  * PortfolioFooter — site footer with animated wave and copyright/links.
  * Shared across all portfolio pages.
@@ -20,6 +23,9 @@ export default function PortfolioFooter() {
           </a>
           <a href="https://linkedin.com/in/aarronwalter" target="_blank" rel="noopener noreferrer">
             LinkedIn
+          </a>
+          <a href={BUG_URL} target="_blank" rel="noopener noreferrer">
+            File a bug
           </a>
         </nav>
       </div>

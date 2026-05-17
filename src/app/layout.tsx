@@ -3,6 +3,7 @@ import Image from 'next/image'
 import './globals.css'
 import HamburgerMenu from '@/components/HamburgerMenu'
 import { LightboxProvider } from '@/components/Lightbox'
+import { Analytics } from '@vercel/analytics/next'
 
 const OG_DEFAULT = '/api/og?title=Aarron+Walter&description=Co-founder+of+Design+Better.+Two+decades+shaping+how+the+tech+industry+thinks+about+design.'
 
@@ -63,6 +64,7 @@ export default function RootLayout({
             </div>
           </main>
         </LightboxProvider>
+        <Analytics />
       </body>
     </html>
   )

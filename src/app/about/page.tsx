@@ -162,6 +162,7 @@ export default function AboutPage() {
           <nav className="footer-links">
             <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer">Design Better</a>
             <a href="https://linkedin.com/in/aarronwalter" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/aarron/aarronwalter.com/issues/new?labels=bug&title=%5BBug%5D+" target="_blank" rel="noopener noreferrer">File a bug</a>
           </nav>
         </div>
       </footer>
