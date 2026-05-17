@@ -36,6 +36,7 @@ export default function InVisionPage() {
             ampRef={0.45}
             animate="breath"
           />
+          <span className="viz-credit">Planetary Ap index · GFZ Potsdam · 1990–2019</span>
           <PageHeader eyebrow="2016–2020" title="InVision" />
         </div>
 

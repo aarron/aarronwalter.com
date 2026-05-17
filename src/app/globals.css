@@ -187,7 +187,8 @@ body {
   .footer-wave-wrap,
   .wave-bridge,
   .about-illustration-blend canvas,
-  .not-found-flock {
+  .not-found-flock,
+  .page-hero-canvas {
     display: none;
   }
 }
@@ -3529,6 +3530,20 @@ body {
 .mailchimp-hero .portfolio-header {
   position: relative;
   z-index: 1;
+}
+
+/* Data attribution caption — shown in the hero area below the canvas */
+.viz-credit {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 1rem;
+  font-size: 0.5625rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(44, 42, 42, 0.30);
+  pointer-events: none;
+  z-index: 2;
+  white-space: nowrap;
 }
 
 /* InVision hero — Ap geomagnetic index (solar storms, 1990–2019) */

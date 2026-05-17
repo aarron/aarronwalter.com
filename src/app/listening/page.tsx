@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import FooterWave from '@/components/FooterWave'
 import ListeningGrid from '@/components/ListeningGrid'
-import SonarCanvas from '@/components/SonarCanvas'
+import RidgelineCanvas from '@/components/RidgelineCanvas'
+import { GW150914_DATA } from '@/lib/gw150914'
 import { records } from '@/data/records'
 import type { RecordMeta } from '@/components/RecordCard'
 import coversJson from '@/data/record-covers.json'
@@ -47,7 +48,12 @@ export default function ListeningPage() {
   return (
     <>
       <article className="page-article">
-        <SonarCanvas className="page-hero-canvas" />
+        <RidgelineCanvas
+          className="page-hero-canvas"
+          data={GW150914_DATA}
+          ampRef={0.48}
+          animate="breath"
+        />
 
         <header className="page-header">
           <h1 className="page-header-title">Listening</h1>

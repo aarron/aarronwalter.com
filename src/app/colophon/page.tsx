@@ -66,7 +66,7 @@ export default function ColophonPage() {
               </strong>
               , the first radio pulsar ever discovered, recorded at
               318&thinsp;MHz by{' '}
-              <a href="https://www.researchgate.net/publication/34852084_Pulsar_timing_and_pulsar_timing_arrays" target="_blank" rel="noopener noreferrer">Harold Craft</a>{' '}
+              <a href="https://ui.adsabs.harvard.edu/abs/1970PhDT........13C" target="_blank" rel="noopener noreferrer">Harold Craft</a>{' '}
               at{' '}
               <a href="https://en.wikipedia.org/wiki/Arecibo_Observatory" target="_blank" rel="noopener noreferrer">Arecibo Observatory</a>{' '}
               in 1970.{' '}
@@ -99,7 +99,7 @@ export default function ColophonPage() {
             <p className="pf-body">
               Display headings are set in{' '}
               <strong style={{ fontFamily: 'Lineca, sans-serif', fontWeight: 400, fontSize: '1.1em', letterSpacing: '-0.02em' }}>
-                <a href="https://f37foundry.com/font-files/f37-lineca" target="_blank" rel="noopener noreferrer">F37 Lineca</a>
+                <a href="https://f37foundry.com/fonts/f37-lineca" target="_blank" rel="noopener noreferrer">F37 Lineca</a>
               </strong>{' '}
               by <a href="https://f37foundry.com/" target="_blank" rel="noopener noreferrer">F37 Foundry</a> &mdash; a contemporary serif with an optical elegance that holds up
               at both large and small sizes. Its slightly negative sidebearing at display scale
@@ -133,7 +133,7 @@ export default function ColophonPage() {
             <h2 className="pf-heading">Sound Setup</h2>
             <p className="pf-body">
               Music matters to me, and dialing in the right listening experience is half the fun. After plenty of tinkering, here&rsquo;s the setup that keeps me happy in the studio: a{' '}
-              <a href="https://en.wikipedia.org/wiki/Thorens_TD-125" target="_blank" rel="noopener noreferrer">Thorens TD125 Mk&thinsp;II</a>{' '}
+              <a href="https://en.wikipedia.org/wiki/Thorens" target="_blank" rel="noopener noreferrer">Thorens TD125 Mk&thinsp;II</a>{' '}
               turntable, a{' '}
               <a href="https://www.mcintoshlabs.com/products/integrated-amplifiers/MA5100" target="_blank" rel="noopener noreferrer">McIntosh MA5100</a>{' '}
               integrated amp, and a pair of{' '}
@@ -230,11 +230,25 @@ export default function ColophonPage() {
             <div className="colophon-stack-row">
               <dt className="colophon-stack-term">Animations</dt>
               <dd className="colophon-stack-def">
-                Canvas 2D — marching squares (topo),{' '}
+                Canvas 2D — real terrain from{' '}
+                <a href="https://www.ncei.noaa.gov/products/etopo-global-relief-model" target="_blank" rel="noopener noreferrer">ETOPO1</a>{' '}
+                (reading),{' '}
                 <a href="https://en.wikipedia.org/wiki/PSR_B1919%2B21" target="_blank" rel="noopener noreferrer">PSR B1919+21</a>{' '}
-                pulsar data (colophon),{' '}
+                pulsar (colophon), LIGO{' '}
+                <a href="https://gwosc.org/events/GW150914/" target="_blank" rel="noopener noreferrer">GW150914</a>{' '}
+                (listening), 2004 Sumatra{' '}
+                <a href="https://www.iris.edu/hq/" target="_blank" rel="noopener noreferrer">IRIS/USGS</a>{' '}
+                seismogram (Mailchimp), geomagnetic{' '}
+                <a href="https://kp.gfz-potsdam.de/" target="_blank" rel="noopener noreferrer">Ap index</a>{' '}
+                (InVision),{' '}
+                <a href="https://gml.noaa.gov/ccgg/trends/" target="_blank" rel="noopener noreferrer">Mauna Loa CO₂</a>{' '}
+                (RTSL), SILSO{' '}
+                <a href="https://www.sidc.be/SILSO/datafiles" target="_blank" rel="noopener noreferrer">sunspot</a>{' '}
+                (books),{' '}
+                <a href="https://psl.noaa.gov/enso/mei/" target="_blank" rel="noopener noreferrer">ENSO MEI</a>{' '}
+                (consulting),{' '}
                 <a href="https://tidesandcurrents.noaa.gov/" target="_blank" rel="noopener noreferrer">NOAA tide gauge</a>{' '}
-                data (footer), sinusoidal waves
+                (footer)
               </dd>
             </div>
             <div className="colophon-stack-row">

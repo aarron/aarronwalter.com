@@ -74,6 +74,7 @@ export default function BooksPage() {
             ampRef={0.50}
             animate="breath"
           />
+          <span className="viz-credit">Daily sunspot number · SILSO Royal Observatory · 1950–2009</span>
           <PageHeader title="My Books" />
         </div>
 
@@ -88,10 +89,10 @@ export default function BooksPage() {
             Designing for Emotion
         ──────────────────────────────────────────────── */}
         <CaseStudySection
-          label="A Book Apart · 2011, 2nd Ed. 2020"
+          label="A Book Apart · 2011, 2nd Ed. 2020, Design Better 2025"
           heading="Designing for Emotion"
           meta={[
-            { label: 'Publisher', value: 'A Book Apart' },
+            { label: 'Publisher', value: 'A Book Apart, Design Better' },
             { label: 'Edition',   value: 'Second edition' },
           ]}
           panel={
@@ -101,7 +102,7 @@ export default function BooksPage() {
           }
         >
           <p className="pf-body">
-            My first book, Designing for Emotion, makes the case that emotion isn&rsquo;t a
+            Designing for Emotion makes the case that emotion isn&rsquo;t a
             finishing layer on a product &mdash; it&rsquo;s the thing that decides whether people
             trust it, return to it, or tell their friends about it. Drawing from psychology,
             storytelling, and interface design, I lay out how personality, surprise, and small

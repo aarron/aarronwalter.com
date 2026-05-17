@@ -1,49 +1,11 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-
-// ─────────────────────────────────────────────────────────────
-//  Terrain: three clearly separated topographic forms
-//
-//  Form 1 — Northern range  (canvas top, cy ≈ 0.10–0.30)
-//  Form 2 — Southern range  (canvas lower half, cy ≈ 0.58–0.80)
-//  Form 3 — Eastern ridge   (extends off right edge, bridges the gap)
-//
-//  Valley sits between the two main forms (cy ≈ 0.32–0.56) and is
-//  naturally empty because the hills don't reach there.
-// ─────────────────────────────────────────────────────────────
-
-interface Hill {
-  cx: number   // base centre x  (0–1, can exceed canvas edge)
-  cy: number   // base centre y  (0–1)
-  amp: number  // peak amplitude
-  sx: number   // gaussian half-width in local X
-  sy: number   // gaussian half-width in local Y
-  ang: number  // tilt angle (radians)
-  p: number    // phase offset for independent drift timing
-}
-
-const HILLS: Hill[] = [
-  // ── Form 1: Northern range ────────────────────────────────
-  { cx: 0.80, cy: 0.14, amp: 1.00, sx: 0.18, sy: 0.13, ang:  0.20, p: 0.00 },
-  { cx: 0.94, cy: 0.21, amp: 0.82, sx: 0.15, sy: 0.17, ang: -0.30, p: 2.10 },
-  { cx: 0.69, cy: 0.27, amp: 0.74, sx: 0.16, sy: 0.12, ang:  0.55, p: 4.20 },
-  { cx: 1.01, cy: 0.08, amp: 0.60, sx: 0.13, sy: 0.11, ang: -0.45, p: 1.50 },
-
-  // ── Form 2: Southern range ────────────────────────────────
-  { cx: 0.75, cy: 0.64, amp: 0.92, sx: 0.19, sy: 0.16, ang:  0.75, p: 3.50 },
-  { cx: 0.91, cy: 0.75, amp: 0.80, sx: 0.17, sy: 0.20, ang: -0.55, p: 0.80 },
-  { cx: 0.62, cy: 0.80, amp: 0.66, sx: 0.16, sy: 0.13, ang:  1.10, p: 5.00 },
-  { cx: 0.87, cy: 0.58, amp: 0.56, sx: 0.15, sy: 0.12, ang: -0.15, p: 2.70 },
-
-  // ── Form 3: Eastern ridge (off right edge, bridges the gap) ──
-  { cx: 1.06, cy: 0.42, amp: 0.70, sx: 0.13, sy: 0.30, ang:  0.05, p: 1.80 },
-  { cx: 1.07, cy: 0.90, amp: 0.50, sx: 0.12, sy: 0.14, ang:  0.25, p: 3.30 },
-]
+import { ICELAND_ELEVATION } from '@/lib/iceland-elevation'
 
 // Grid & contour settings
 const GW     = 88   // columns
-const GH     = 72   // rows  (slightly less than square — canvas is wide)
+const GH     = 72   // rows
 const LEVELS = 26   // contour levels
 
 // ─────────────────────────────────────────────────────────────
@@ -79,35 +41,51 @@ export default function TopoCanvas({ className }: { className?: string }) {
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
+    // Iceland elevation data: 72 rows × 90 cols, normalized [-1, 1]
+    const SRC_ROWS = ICELAND_ELEVATION.length       // 72
+    const SRC_COLS = ICELAND_ELEVATION[0].length    // 90
+
     let raf: number
     const t0   = performance.now()
     const grid = new Float32Array((GW + 1) * (GH + 1))
     let frame  = 0
 
+    // ── Bilinear sample from the elevation grid ────────────
+    // nx, ny in [0, 1]. panX slowly shifts the viewport east/west.
+    function sampleElev(nx: number, ny: number, panX: number): number {
+      const sx = ((nx + panX) % 1 + 1) % 1   // wrap horizontally
+      const sy = Math.max(0, Math.min(1, ny))
+
+      const fx = sx * (SRC_COLS - 1)
+      const fy = sy * (SRC_ROWS - 1)
+      const x0 = Math.floor(fx), x1 = Math.min(x0 + 1, SRC_COLS - 1)
+      const y0 = Math.floor(fy), y1 = Math.min(y0 + 1, SRC_ROWS - 1)
+      const tx = fx - x0, ty = fy - y0
+
+      const v00 = ICELAND_ELEVATION[y0][x0]
+      const v10 = ICELAND_ELEVATION[y0][x1]
+      const v01 = ICELAND_ELEVATION[y1][x0]
+      const v11 = ICELAND_ELEVATION[y1][x1]
+
+      return v00 * (1-tx)*(1-ty) + v10 * tx*(1-ty)
+           + v01 * (1-tx)*ty    + v11 * tx*ty
+    }
+
     // ─────────────────────────────────────────────────────────
-    //  Height field
-    //  Movement is very slow — geological, not liquid.
-    //  Drift is tiny (±0.012) so forms stay recognisable.
+    //  Height field at (nx, ny) with time t
+    //  Real Iceland topography + very slow drift + organic noise
     // ─────────────────────────────────────────────────────────
     function heightAt(nx: number, ny: number, t: number): number {
-      let h = 0
-      for (const hill of HILLS) {
-        const cx  = hill.cx + 0.012 * Math.sin(t * 0.05 + hill.p)
-        const cy  = hill.cy + 0.009 * Math.cos(t * 0.038 + hill.p * 1.3)
-        const amp = hill.amp * (0.98 + 0.02 * Math.sin(t * 0.07 + hill.p * 0.8))
-        const dx  = nx - cx
-        const dy  = ny - cy
-        const c   = Math.cos(hill.ang)
-        const s   = Math.sin(hill.ang)
-        const lx  = dx * c + dy * s
-        const ly  = -dx * s + dy * c
-        h += amp * Math.exp(
-          -(lx * lx / (hill.sx * hill.sx) + ly * ly / (hill.sy * hill.sy)) * 0.5
-        )
-      }
-      // Very gentle noise — organic texture, not turbulence
-      h += 0.038 * Math.sin(nx * 7.1 + t * 0.08) * Math.sin(ny * 5.3 + t * 0.06)
-      h += 0.022 * Math.sin(nx * 12.8 + t * 0.11 + 1.5) * Math.cos(ny * 8.2 + t * 0.07)
+      // Glacial-speed pan — one full traverse in ~4 minutes
+      const panX = (t * 0.0014) % 1
+
+      let h = sampleElev(nx, ny, panX)
+
+      // Add organic micro-noise — gives contours a living, breathing quality
+      h += 0.022 * Math.sin(nx * 8.3 + t * 0.09) * Math.sin(ny * 6.1 + t * 0.07)
+         + 0.012 * Math.sin(nx * 14.5 + t * 0.13 + 1.7) * Math.cos(ny * 9.8 + t * 0.08)
+         + 0.018 * Math.sin(t * 0.24 + nx * 5.2 + ny * 4.1)
+
       return h
     }
 
@@ -137,7 +115,7 @@ export default function TopoCanvas({ className }: { className?: string }) {
     }
 
     function draw(now: number) {
-      // ~30 fps — plenty for very slow animation
+      // ~30 fps — plenty for slow geological animation
       frame++
       if (frame % 2 !== 0) { raf = requestAnimationFrame(draw); return }
 
@@ -202,7 +180,6 @@ export default function TopoCanvas({ className }: { className?: string }) {
       }
 
       // ── Mist: left fade (toward the heading) ────────────
-      // Covers roughly the left 50%, becoming fully cream at the left edge.
       const mistL = ctx!.createLinearGradient(0, 0, w * 0.52, 0)
       mistL.addColorStop(0,    '#F3E7D6')
       mistL.addColorStop(0.25, 'rgba(243,231,214,0.96)')
@@ -213,7 +190,6 @@ export default function TopoCanvas({ className }: { className?: string }) {
       ctx!.fillRect(0, 0, w * 0.52, h)
 
       // ── Mist: bottom fade (into the book grid below) ────
-      // Begins around 58% canvas height, fully opaque by 90%.
       const fadeStart = h * 0.58
       const fadeEnd   = h
       const mistB = ctx!.createLinearGradient(0, fadeStart, 0, fadeEnd)

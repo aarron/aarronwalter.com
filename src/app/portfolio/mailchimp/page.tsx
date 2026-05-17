@@ -38,6 +38,7 @@ export default function MailchimpPage() {
             ampRef={0.32}
             animate="breath"
           />
+          <span className="viz-credit">2004 Sumatra M9.1 · IRIS/USGS · IU.ANMO.00.BHZ</span>
           <PageHeader eyebrow="2008–2016" title="Mailchimp" />
         </div>
 

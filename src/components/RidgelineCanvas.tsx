@@ -90,11 +90,13 @@ export default function RidgelineCanvas({
 
         // Pulsar mode: brightness wave at the pulsar's actual 1.3373 s period
         const pulsarMod = animate === 'pulsar'
-          ? 1.0 + 0.06 * Math.sin((t / 1.3373) * Math.PI * 2 - row * 0.10)
+          ? 1.0 + 0.10 * Math.sin((t / 1.3373) * Math.PI * 2 - row * 0.15)
           : 1.0
 
-        // Both modes: slow independent per-row amplitude breath
-        const breathMod = 1.0 + 0.04 * Math.sin(t * 0.31 + row * 0.47)
+        // Both modes: per-row amplitude breath — each row has its own period offset
+        // so waves cascade visibly down the stack rather than pulsing in sync
+        const breathMod = 1.0 + 0.14 * Math.sin(t * 0.52 + row * 0.61)
+          + 0.05 * Math.sin(t * 0.19 + row * 0.23)
 
         const totalMod = pulsarMod * breathMod
 
