@@ -72,10 +72,16 @@ export default function FooterWave({ color }: { color?: string }) {
       const maxStart  = TSUNAMI_METADATA.totalReadings - WINDOW
       const startBase = Math.floor(progress * maxStart)
 
+      // Tsunami peaks reach up to ±4.6 normalized units (Crescent City).
+      // Derive ampH per-line from available headroom so the clip ceiling
+      // exactly fills the space — guaranteed no overflow at any canvas size.
+      const CLIP_MAX = 4.5
+
       for (let i = 0; i < 3; i++) {
-        const { data, center, halfRange, arrivalIndex } = STATIONS[i]
-        const cy    = LINE_CY[i] * h
-        const ampH  = h * 0.14   // max amplitude in px within normal tidal range
+        const { data, center, halfRange } = STATIONS[i]
+        const cy      = LINE_CY[i] * h
+        const maxRoom = Math.min(cy, h - cy) * 0.88   // 88% of nearest edge
+        const ampH    = maxRoom / CLIP_MAX
 
         ctx!.beginPath()
         ctx!.lineJoin    = 'round'
@@ -88,11 +94,8 @@ export default function FooterWave({ color }: { color?: string }) {
           const raw = data[idx] ?? 0
 
           // Normalize: ±1 = normal tidal swing. Tsunami peaks exceed ±1 naturally.
-          const norm = (raw - center) / halfRange
-
-          // Soft-clip extreme spikes so they don't blow out the canvas,
-          // but still register visually as chaotic high-amplitude bursts.
-          const clipped = Math.sign(norm) * Math.min(Math.abs(norm), 4.0)
+          const norm    = (raw - center) / halfRange
+          const clipped = Math.sign(norm) * Math.min(Math.abs(norm), CLIP_MAX)
 
           const x = (s / (WINDOW - 1)) * w
           const y = cy - clipped * ampH
