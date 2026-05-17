@@ -10,6 +10,8 @@ import CaseStudySection from '@/components/CaseStudySection'
 import TestimonialPair from '@/components/TestimonialPair'
 import PortfolioNav from '@/components/PortfolioNav'
 import PortfolioFooter from '@/components/PortfolioFooter'
+import RidgelineCanvas from '@/components/RidgelineCanvas'
+import { SEISMIC_DATA } from '@/lib/seismic-data'
 
 export const metadata: Metadata = {
   title: 'Mailchimp',
@@ -28,8 +30,16 @@ export default function MailchimpPage() {
     <>
       <article className="page-article">
 
-        {/* ── Header ── */}
-        <PageHeader eyebrow="2008–2016" title="Mailchimp" />
+        {/* ── Header with seismic ridgeline ── */}
+        <div className="mailchimp-hero">
+          <RidgelineCanvas
+            className="mailchimp-seismic"
+            data={SEISMIC_DATA}
+            ampRef={0.32}
+            animate="breath"
+          />
+          <PageHeader eyebrow="2008–2016" title="Mailchimp" />
+        </div>
 
         {/* ── Brand Hero: Lead ── */}
         <div className="pf-brand-hero">

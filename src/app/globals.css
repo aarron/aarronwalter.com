@@ -2243,6 +2243,22 @@ body {
   max-width: 66ch;
 }
 
+/* ── Inline prose links — signal red, underline on hover ─────────────────── */
+/* Scoped to content regions; UI links (nav, footer, cards) have their own rules */
+.page-article a:not([class]),
+.colophon-stack-def a:not([class]) {
+  color: #FF4725;
+  text-decoration: none;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.15s;
+}
+
+.page-article a:not([class]):hover,
+.colophon-stack-def a:not([class]):hover {
+  text-decoration: underline;
+}
+
 .pf-text-link {
   font-family: "aktiv-grotesk", sans-serif;
   font-size: 0.875rem;
@@ -3489,6 +3505,32 @@ body {
   z-index: 1;
 }
 
+/* ── Mailchimp hero — seismic ridgeline ──────────────────────────────────── */
+/* The seismic data (2004 Sumatra M9.1) has a completely different visual
+   character from the pulsar: ~25 flat rows then an explosive P/S-wave burst
+   followed by large-amplitude surface waves. Width is wider than the colophon
+   flock and height is shorter so it stays within the hero section. */
+.mailchimp-hero {
+  position: relative;
+  min-height: 520px;
+  overflow: visible;
+}
+
+.mailchimp-seismic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78%;
+  height: 180%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.mailchimp-hero .portfolio-header {
+  position: relative;
+  z-index: 1;
+}
+
 /* Type specimen */
 .colophon-specimen {
   display: flex;
@@ -3582,7 +3624,8 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .colophon-flock { display: none; }
+  .colophon-flock  { display: none; }
+  .mailchimp-seismic { display: none; }
 }
 
 /* ═══════════════════════════════════════════════════════
