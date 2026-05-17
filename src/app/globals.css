@@ -1060,10 +1060,11 @@ body {
   letter-spacing: -0.03em;
   line-height: 0.88;
   color: #2C2A2A;
-  /* Optical correction: Lineca at display size has a negative left sidebearing
-     so the ink visually overhangs the bounding box. translateX shifts the
-     rendering without affecting layout, so long titles don't re-wrap. */
-  transform: translateX(14px);
+  /* Optical correction: Lineca has a positive left sidebearing at display size,
+     so the ink starts slightly right of the element edge. translateX(-14px)
+     shifts the rendering left to align ink with the eyebrow and rule above,
+     without affecting layout so long titles don't re-wrap. */
+  transform: translateX(-14px);
   margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
 }
 

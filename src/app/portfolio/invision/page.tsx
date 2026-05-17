@@ -132,21 +132,7 @@ export default function InVisionPage() {
           <div className="pf-stacked-case__text">
             <p className="pf-label">Case Study · 2017–2020</p>
             <h2 className="pf-heading">The Design Better Library</h2>
-            <div className="pf-meta">
-              <div className="pf-meta-item">
-                <span className="pf-meta-label">Books published</span>
-                <span className="pf-meta-value">11</span>
-              </div>
-              <div className="pf-meta-item">
-                <span className="pf-meta-label">Downloads</span>
-                <span className="pf-meta-value">400,000+</span>
-              </div>
-              <div className="pf-meta-item">
-                <span className="pf-meta-label">Revenue</span>
-                <span className="pf-meta-value">$3M+ ARR</span>
-              </div>
-            </div>
-            <p className="pf-body">
+              <p className="pf-body">
               Working alongside experts from design teams at Airbnb, Pinterest, Shopify, Dropbox,
               the New York Times, and others, we produced eleven books offering practical,
               real-world guidance on the most pressing topics in software design. Each title came
@@ -161,7 +147,7 @@ export default function InVisionPage() {
             </p>
           </div>
           <PortfolioPanel className="ds-panel--compact" items={[
-            { src: '/portfolio/invision/design-better-library/business-thinking.webp',          alt: 'Business Thinking for Designers' },
+            { src: '/portfolio/invision/design-better-library/business-thinking.webp',         alt: 'Business Thinking for Designers' },
             { src: '/portfolio/invision/design-better-library/designops-handbook.webp',          alt: 'DesignOps Handbook' },
             { src: '/portfolio/invision/design-better-library/design-systems-handbook.webp',     alt: 'Design Systems Handbook' },
             { src: '/portfolio/invision/design-better-library/design-leadership-handbook.webp',  alt: 'Design Leadership Handbook' },
@@ -173,6 +159,14 @@ export default function InVisionPage() {
             { src: '/portfolio/invision/design-better-library/design-engineering-handbook.webp', alt: 'Design Engineering Handbook' },
           ]} />
         </div>
+
+        <StatBlock
+          stats={[
+            { value: '11',       label: 'Books published' },
+            { value: '400,000+', label: 'Downloads' },
+            { value: '$3M+',     label: 'Revenue ARR' },
+          ]}
+        />
 
         {/* ────────────────────────────────────────────────
             SECTION 3: Interviews
