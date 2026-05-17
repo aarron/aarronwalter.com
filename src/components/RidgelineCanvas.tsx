@@ -9,30 +9,29 @@ const INK_R   = 44
 const INK_G   = 42
 const INK_B   = 42
 
-const LINES   = 80          // dense stacking like the reference
-const SAMPLES = 400         // samples per ridge
+const LINES   = 88          // dense stacking
+const SAMPLES = 480         // points per ridgeline
 
-// ─── Perspective plane — corners as fraction of canvas (W, H) ─────────────────
+// ─── Perspective plane corners (as fraction of canvas W, H) ──────────────────
 //
-//  Back-left ──────────────── Back-right
-//      BL                          BR
-//       \    (recedes upper-right)   \
-//        \                            \
-//        FL ────────────────────────── FR
-//  Front-left                    Front-right
+//  depthFrac = 0 → front / near / bottom of canvas
+//  depthFrac = 1 → back  / far  / upper-right of canvas
 //
-//  depthFrac = 0 → front (near, bottom of canvas)
-//  depthFrac = 1 → back  (far,  top-right of canvas)
+//        BL ─────────────────────── BR
+//       /                              \
+//      /   (recedes to upper-right)     \
+//    FL ─────────────────────────────── FR
 //
-const FL = { x: 0.00, y: 0.94 }   // front-left  — near bottom-left
-const FR = { x: 0.74, y: 1.02 }   // front-right — near bottom (can sit below canvas)
-const BL = { x: 0.27, y: 0.01 }   // back-left   — near top-centre
-const BR = { x: 1.05, y: 0.14 }   // back-right  — can run off-canvas right edge
+const FL = { x: 0.00, y: 0.90 }   // front-left
+const FR = { x: 0.74, y: 1.00 }   // front-right  (sits at canvas bottom edge)
+const BL = { x: 0.26, y: 0.01 }   // back-left
+const BR = { x: 1.04, y: 0.13 }   // back-right   (can run off canvas right)
 
-// Maximum mountain height at the front, as a fraction of canvas height
-const FRONT_AMP = 0.17
+// Max mountain amplitude at the front as a fraction of canvas height
+const FRONT_AMP = 0.58
 
-// ─── Seeded PRNG (LCG) ───────────────────────────────────────────────────────
+// ─── Per-line phase seeds ─────────────────────────────────────────────────────
+// Deterministic seeded PRNG so profiles are stable across resizes
 
 function lcg(seed: number) {
   let s = (seed ^ 0xdeadbeef) >>> 0
@@ -42,60 +41,53 @@ function lcg(seed: number) {
   }
 }
 
-// ─── Mountain peak descriptors ────────────────────────────────────────────────
-
-interface Peak {
-  nx:    number   // centre position 0–1
-  σ:     number   // Gaussian width
-  h:     number   // base height 0–1
-  phase: number   // breathing phase
-  speed: number   // breathing speed rad/s
-}
-
-const PEAKS_PER_LINE = 16  // mix of broad masses + sharp spikes
-
-// Profiles are deterministic (seeded by line index), never change on resize
-const PROFILES: Peak[][] = Array.from({ length: LINES }, (_, li) => {
-  const rand = lcg(li * 7013 + 31337)
-  return Array.from({ length: PEAKS_PER_LINE }, (_, pi) => {
-    // Center-biased x distribution (Box-Muller)
-    const u1 = Math.max(1e-6, rand())
-    const u2 = rand()
-    const gauss = Math.sqrt(-2 * Math.log(u1)) * Math.cos(2 * Math.PI * u2)
-    const nx = Math.max(0.01, Math.min(0.99, 0.45 + gauss * 0.27))
-
-    // First half = narrow spikes, second half = broad mountain masses
-    const isSpike = pi < PEAKS_PER_LINE / 2
-    return {
-      nx,
-      σ:     isSpike ? 0.007 + rand() * 0.013 : 0.026 + rand() * 0.044,
-      h:     0.15 + rand() * 0.85,
-      phase: rand() * Math.PI * 2,
-      speed: 0.10 + rand() * 0.50,   // rad/s — each peak breathes at its own rate
-    }
-  })
+const LINE_SEED: number[] = Array.from({ length: LINES }, (_, i) => {
+  const r = lcg(i * 4919 + 98317)
+  return r() * Math.PI * 6
 })
 
-// ─── Mountain profile height at nx ───────────────────────────────────────────
+// ─── Ridged fractal noise — the key to jagged mountain peaks ─────────────────
+//
+//  Uses 6 octaves of  (1 − |sin|)  stacked at doubling frequencies.
+//  (1 − |sin|) peaks sharply at 0, π, 2π … and touches 0 at ±π/2.
+//  Higher octaves add fine jagged detail on top of the base ridges.
+//
+//  Each octave drifts at its own slow rate → "live data feed" feel where
+//  individual peaks rise and fall independently over ~30–120 s cycles.
+//
+function mountainH(nx: number, lineIdx: number, t: number): number {
+  const seed = LINE_SEED[lineIdx]
+  // Base x: enough cycles across the line to show multiple peaks
+  const x = nx * 5.5 + seed
 
-const BREATH_SWING = 0.22   // ±22 % height variation — subtle live-data feel
+  let h    = 0
+  let amp  = 0.60
+  let freq = 1.0
 
-function profileH(nx: number, peaks: Peak[], t: number): number {
-  let h = 0
-  for (const p of peaks) {
-    const d = nx - p.nx
-    const g = Math.exp(-(d * d) / (2 * p.σ * p.σ))
-    const amp = Math.max(0, p.h * (1 + BREATH_SWING * Math.sin(t * p.speed + p.phase)))
-    h += amp * g
+  for (let oct = 0; oct < 6; oct++) {
+    // Drift speed: low octaves drift very slowly, high octaves slightly faster
+    const drift = t * (0.006 + oct * 0.007)
+    const v = Math.sin(x * freq * 3.1 + drift + seed * oct * 0.27)
+
+    // Ridged: 1 - |v| creates sharp upward peaks (inverted absolute value)
+    h   += amp * (1.0 - Math.abs(v))
+    amp  *= 0.52
+    freq *= 2.04
   }
-  return h
+
+  // x-envelope: mountains concentrated in centre, flat at both edges
+  // (mimics the CP 1919 signal shape — active region flanked by silence)
+  const d   = Math.abs(nx - 0.44) / 0.44
+  const env = Math.max(0, 1.0 - d * d * d)  // cubic falloff
+
+  // Clip baseline so flat regions are truly flat (zero height)
+  const thresh = 0.52
+  return Math.max(0, h - thresh) * env
 }
 
 // ─── Perspective helpers ──────────────────────────────────────────────────────
 
-/** Screen position of a point on the flat ground plane. */
 function groundPt(nx: number, df: number, W: number, H: number) {
-  // Bilinear interpolation across the four corners
   const lx = FL.x + df * (BL.x - FL.x)
   const ly = FL.y + df * (BL.y - FL.y)
   const rx = FR.x + df * (BR.x - FR.x)
@@ -106,9 +98,9 @@ function groundPt(nx: number, df: number, W: number, H: number) {
   }
 }
 
-/** Height scale: perspective foreshortening — back lines are visually much shorter. */
+// Perspective height compression: front lines full size, back lines tiny
 function hScale(df: number): number {
-  return 1 - df * 0.82
+  return 1 - df * 0.84
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -142,43 +134,37 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
 
       ctx!.clearRect(0, 0, W, H)
 
-      // Draw back → front so each ridge's cream fill occludes the ones behind it
+      // Draw back → front so each ridge's cream fill masks the ones behind it
       for (let i = 0; i < LINES; i++) {
-        // i = 0 is drawn first (back/far), i = LINES-1 last (front/near)
-        const df       = 1 - i / (LINES - 1)   // depthFrac: 1=back, 0=front
-        const hs       = hScale(df)
-        const front    = 1 - df                 // 0=back, 1=front
+        const df    = 1 - i / (LINES - 1)   // 1 = back/far, 0 = front/near
+        const hs    = hScale(df)
+        const front = 1 - df                 // 0 = back, 1 = front
 
-        // Pre-compute screen points for this ridgeline
         const pts: { sx: number; sy: number }[] = []
         for (let s = 0; s <= SAMPLES; s++) {
           const nx = s / SAMPLES
-          const mH = profileH(nx, PROFILES[i], t) * maxAmp * hs
+          const mH = mountainH(nx, i, t) * maxAmp * hs
           const g  = groundPt(nx, df, W, H)
           pts.push({ sx: g.sx, sy: g.sy - mH })
         }
 
-        // ── Cream fill — everything below the ridge, masking lines behind it ──
+        // ── Cream fill — occludes ridgelines drawn behind this one ────────────
         ctx!.beginPath()
         ctx!.moveTo(pts[0].sx, pts[0].sy)
-        for (let s = 1; s <= SAMPLES; s++) {
-          ctx!.lineTo(pts[s].sx, pts[s].sy)
-        }
+        for (let s = 1; s <= SAMPLES; s++) ctx!.lineTo(pts[s].sx, pts[s].sy)
         ctx!.lineTo(pts[SAMPLES].sx, H + 10)
         ctx!.lineTo(pts[0].sx,       H + 10)
         ctx!.closePath()
         ctx!.fillStyle = BG_FILL
         ctx!.fill()
 
-        // ── Stroke — the ridgeline itself ─────────────────────────────────────
-        const alpha = 0.08 + 0.62 * front
+        // ── Stroke — the ridgeline ─────────────────────────────────────────────
+        const alpha = 0.07 + 0.63 * front
         ctx!.beginPath()
         ctx!.moveTo(pts[0].sx, pts[0].sy)
-        for (let s = 1; s <= SAMPLES; s++) {
-          ctx!.lineTo(pts[s].sx, pts[s].sy)
-        }
+        for (let s = 1; s <= SAMPLES; s++) ctx!.lineTo(pts[s].sx, pts[s].sy)
         ctx!.strokeStyle = `rgba(${INK_R},${INK_G},${INK_B},${alpha.toFixed(3)})`
-        ctx!.lineWidth   = 0.4 + front * 0.9
+        ctx!.lineWidth   = 0.35 + front * 1.0
         ctx!.lineJoin    = 'round'
         ctx!.stroke()
       }
@@ -191,10 +177,7 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
     ro.observe(canvas)
     raf = requestAnimationFrame(draw)
 
-    return () => {
-      cancelAnimationFrame(raf)
-      ro.disconnect()
-    }
+    return () => { cancelAnimationFrame(raf); ro.disconnect() }
   }, [])
 
   return <canvas ref={canvasRef} className={className} aria-hidden="true" />
