@@ -18,6 +18,7 @@ const PERSON_JSON_LD = {
     'Designer, author, and co-founder of Design Better. Two decades shaping how the tech industry thinks about design — from Mailchimp to the White House.',
   sameAs: [
     'https://www.linkedin.com/in/aarron/',
+    'https://www.instagram.com/aarronwalter/',
     'https://twitter.com/aarron',
     'https://medium.com/@aarron',
     'https://designbetterpodcast.com',
@@ -149,7 +150,9 @@ export default async function Home() {
           <div className="hero-links">
             <a href="https://www.linkedin.com/in/aarron/" target="_blank" rel="noopener noreferrer" className="hero-link">LinkedIn</a>
             <span className="hero-link-sep" aria-hidden="true">·</span>
-            <a href="https://twitter.com/aarron" target="_blank" rel="noopener noreferrer" className="hero-link">Twitter</a>
+            <a href="https://www.instagram.com/aarronwalter/" target="_blank" rel="noopener noreferrer" className="hero-link">Instagram</a>
+            <span className="hero-link-sep" aria-hidden="true">·</span>
+            <a href="https://twitter.com/aarron" target="_blank" rel="noopener noreferrer" className="hero-link">@aarron</a>
             <span className="hero-link-sep" aria-hidden="true">·</span>
             <a href="https://medium.com/@aarron" target="_blank" rel="noopener noreferrer" className="hero-link">Medium</a>
             <span className="hero-link-sep" aria-hidden="true">·</span>
