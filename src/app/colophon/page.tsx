@@ -38,7 +38,7 @@ export default function ColophonPage() {
         <div className="pf-stacked-case">
           <div className="pf-stacked-case__text" style={{ maxWidth: '68ch' }}>
             <p className="pf-label">Process</p>
-            <h2 className="pf-heading">My droid collaborator</h2>
+            <h2 className="pf-heading">My Collaborator</h2>
             <p className="pf-body">
               I designed and built this site working with Claude Code, Anthropic&rsquo;s agentic
               coding tool as an experiment and learning process. Designing a personal website is, in my
