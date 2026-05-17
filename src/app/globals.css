@@ -3482,7 +3482,8 @@ body {
   height: 120%;
   pointer-events: none;
   z-index: 0;
-  /* No mask — back lines fade naturally via low alpha; front lines land at hero bottom */
+  transform: rotate(-20deg);
+  transform-origin: top right;
 }
 
 .colophon-hero .portfolio-header {
