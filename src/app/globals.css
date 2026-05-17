@@ -3494,7 +3494,8 @@ body {
   gap: 2rem;
   margin-top: clamp(2rem, 4vw, 3.5rem);
   padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.5rem, 3vw, 2.5rem);
-  border: 1px solid rgba(44, 42, 42, 0.09);
+  background: #2C2A2A;
+  border: 1px solid #2C2A2A;
   border-radius: 6px;
 }
 
@@ -3510,14 +3511,14 @@ body {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   letter-spacing: -0.03em;
   line-height: 1;
-  color: #2C2A2A;
+  color: #F3E7D6;
 }
 
 .colophon-specimen-body {
   font-family: 'aktiv-grotesk', sans-serif;
   font-weight: 400;
   font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-  color: #2C2A2A;
+  color: #F3E7D6;
   letter-spacing: 0;
 }
 
@@ -3526,7 +3527,7 @@ body {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(44, 42, 42, 0.4);
+  color: rgba(243, 231, 214, 0.5);
 }
 
 /* Inline code */
