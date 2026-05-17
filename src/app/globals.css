@@ -321,10 +321,7 @@ body {
 
 .nav-backdrop {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: clamp(240px, 40vw, 360px);
-  bottom: 0;
+  inset: 0;
   background: rgba(44, 42, 42, 0.25);
   z-index: 150;
   opacity: 0;
@@ -2495,6 +2492,17 @@ body {
   pointer-events: none;
 }
 
+@media (max-width: 480px) {
+  .about-illustration-wrap {
+    top: 1.5rem;
+    right: -5%;
+    width: 54%;
+  }
+  .about-illustration-credit {
+    display: none;
+  }
+}
+
 .about-illustration-blend {
   mix-blend-mode: multiply;
   clip-path: inset(6px 0px);
@@ -3558,6 +3566,15 @@ body {
   color: #FF4725;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+@media (max-width: 540px) {
+  .viz-credit {
+    white-space: normal;
+    max-width: min(88vw, 340px);
+    text-align: right;
+    line-height: 1.4;
+  }
 }
 
 /* InVision hero — Ap geomagnetic index (solar storms, 1990–2019) */
