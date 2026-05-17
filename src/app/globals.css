@@ -1060,6 +1060,10 @@ body {
   letter-spacing: -0.03em;
   line-height: 0.88;
   color: #2C2A2A;
+  /* Optical correction: Lineca at display size has a negative left sidebearing
+     so the ink visually overhangs the bounding box. Nudge the element right
+     to align the ink with the rule and eyebrow above it. */
+  margin-left: 0.09em;
   margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
 }
 
