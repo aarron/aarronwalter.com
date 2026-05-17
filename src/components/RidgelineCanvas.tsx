@@ -2,78 +2,84 @@
 
 import { useEffect, useRef } from 'react'
 
-// ─── Visual constants ──────────────────────────────────────────────────────────
+// ─── Visual constants ────────────────────────────────────────────────────────
 
-const BG_FILL  = '#F3E7D6'   // cream — masks lines behind each ridge
-const INK_R    = 44
-const INK_G    = 42
-const INK_B    = 42
+const BG_FILL = '#F3E7D6'
+const INK_R   = 44
+const INK_G   = 42
+const INK_B   = 42
 
-const LINES    = 46           // number of ridgelines
-const SAMPLES  = 260          // x-samples per line — smooth but fast
+const LINES      = 52           // number of ridgelines
+const SAMPLES    = 340          // x-samples per line
+const ROTATE_DEG = -17          // counter-clockwise tilt (degrees)
 
-// Noise amplitude as fraction of available height per line slot
-const BASE_AMP = 0.55
+// Mountain shape
+const PEAKS_PER_LINE   = 10     // Gaussian peaks composing each ridge
+const BASE_AMP         = 2.0    // amplitude multiplier (× slot height × depth)
 
-// Spike parameters
-const MAX_SPIKES       = 7
-const SPIKE_RISE_MS    = 160   // fast snap up
-const SPIKE_HOLD_MS    = 120   // brief plateau
-const SPIKE_DECAY_MS   = 700   // graceful fade
-const SPIKE_TOTAL_MS   = SPIKE_RISE_MS + SPIKE_HOLD_MS + SPIKE_DECAY_MS
-const SPAWN_INTERVAL_MIN = 600
-const SPAWN_INTERVAL_MAX = 2200
+// Each peak breathes independently — "live data feed" feel
+const BREATH_MIN  = 0.10        // rad/s (slow)
+const BREATH_MAX  = 0.45        // rad/s (faster)
+const BREATH_SWING = 0.28       // ± fraction of peak height
 
-interface Spike {
-  nx:   number   // normalized x position 0–1
-  maxH: number   // peak height in px (at front line)
-  σ:    number   // horizontal spread in normalized units
-  born: number   // timestamp ms
-}
+// ─── Seeded LCG pseudo-random ────────────────────────────────────────────────
 
-// ─── Smooth layered noise ──────────────────────────────────────────────────────
-// Returns value in roughly –1…1
-
-function noiseAt(nx: number, lineIdx: number, t: number): number {
-  const x = nx * Math.PI * 2
-  const l = lineIdx / LINES
-  return (
-    0.48 * Math.sin(x * 2.3  + t * 0.22 + l * 1.9) *
-           Math.sin(x * 0.7  - t * 0.14 + l * 0.8) +
-    0.28 * Math.sin(x * 4.1  + t * 0.38 + l * 2.5 + 1.3) +
-    0.16 * Math.sin(x * 1.05 - t * 0.19 + l * 1.1 + 2.7) +
-    0.08 * Math.sin(x * 7.6  + t * 0.55 + l * 0.6 + 0.4)
-  )
-}
-
-// ─── Spike envelope: rise → hold → decay ──────────────────────────────────────
-
-function spikeEnvelope(age: number): number {
-  if (age < 0) return 0
-  if (age < SPIKE_RISE_MS) {
-    return age / SPIKE_RISE_MS                             // linear snap up
+function lcg(seed: number) {
+  let s = (seed ^ 0xdeadbeef) >>> 0
+  return (): number => {
+    s = (Math.imul(s, 1664525) + 1013904223) >>> 0
+    return s / 0x100000000
   }
-  if (age < SPIKE_RISE_MS + SPIKE_HOLD_MS) {
-    return 1                                               // plateau
-  }
-  const decay = age - SPIKE_RISE_MS - SPIKE_HOLD_MS
-  return 1 - decay / SPIKE_DECAY_MS                       // linear decay
 }
 
-function spikeContrib(nx: number, depthFrac: number, spikes: Spike[], now: number): number {
-  let total = 0
-  for (const s of spikes) {
-    const age = now - s.born
-    if (age < 0 || age > SPIKE_TOTAL_MS) continue
-    const env  = spikeEnvelope(age)
-    const dist = nx - s.nx
-    const gaus = Math.exp(-(dist * dist) / (2 * s.σ * s.σ))
-    total += s.maxH * env * gaus * (0.25 + 0.75 * depthFrac)
-  }
-  return total
+// ─── Mountain peak descriptors (generated once, deterministic) ───────────────
+
+interface Peak {
+  nx:    number   // centre position 0–1
+  σ:     number   // Gaussian half-width
+  h:     number   // base height 0–1
+  phase: number   // breathing phase offset
+  speed: number   // breathing speed (rad/s)
 }
 
-// ─── Component ────────────────────────────────────────────────────────────────
+// Profiles are computed at module load so they never change between renders.
+// Using seeded LCG keeps them deterministic — no jitter on resize/remount.
+const PROFILES: Peak[][] = Array.from({ length: LINES }, (_, li) => {
+  const rand = lcg(li * 6271 + 999983)
+
+  // Weight the centre of the canvas more heavily (bell-curve x-distribution)
+  return Array.from({ length: PEAKS_PER_LINE }, () => {
+    // Box-Muller for a center-biased x position
+    const u1 = Math.max(1e-6, rand())
+    const u2 = rand()
+    const normal = Math.sqrt(-2 * Math.log(u1)) * Math.cos(2 * Math.PI * u2)
+    const nx = Math.max(0.02, Math.min(0.98, 0.5 + normal * 0.22))
+
+    return {
+      nx,
+      σ:     0.016 + rand() * 0.042,     // narrow → sharp mountain peaks
+      h:     0.20  + rand() * 0.80,      // height diversity
+      phase: rand() * Math.PI * 2,
+      speed: BREATH_MIN + rand() * (BREATH_MAX - BREATH_MIN),
+    }
+  })
+})
+
+// ─── Evaluate mountain profile height at a given x position ─────────────────
+
+function profileH(nx: number, peaks: Peak[], t: number): number {
+  let h = 0
+  for (const p of peaks) {
+    const d = nx - p.nx
+    const g = Math.exp(-(d * d) / (2 * p.σ * p.σ))
+    // Each peak independently rises and falls — the live-data effect
+    const breath = 1 + BREATH_SWING * Math.sin(t * p.speed + p.phase)
+    h += Math.max(0, p.h * breath) * g
+  }
+  return h   // sum of weighted Gaussians; typically 0–2+
+}
+
+// ─── Component ───────────────────────────────────────────────────────────────
 
 export default function RidgelineCanvas({ className }: { className?: string }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -84,14 +90,10 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
-    // Bail immediately if user prefers reduced motion
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
     let raf: number
-    const spikes: Spike[] = []
-    let lastSpawn  = 0
-    let nextDelay  = SPAWN_INTERVAL_MIN
-    const t0       = performance.now()
+    const t0 = performance.now()
 
     function resize() {
       const dpr = Math.min(window.devicePixelRatio ?? 1, 2)
@@ -105,74 +107,66 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
       const h = canvas!.offsetHeight
       const t = (now - t0) * 0.001
 
-      // ── Prune dead spikes ───────────────────────────────────────────────────
-      for (let i = spikes.length - 1; i >= 0; i--) {
-        if (now - spikes[i].born > SPIKE_TOTAL_MS) spikes.splice(i, 1)
-      }
-
-      // ── Spawn new spike ─────────────────────────────────────────────────────
-      if (now - lastSpawn > nextDelay && spikes.length < MAX_SPIKES) {
-        lastSpawn  = now
-        nextDelay  = SPAWN_INTERVAL_MIN + Math.random() * (SPAWN_INTERVAL_MAX - SPAWN_INTERVAL_MIN)
-        const slotH = h / LINES
-        spikes.push({
-          nx:   0.05 + Math.random() * 0.90,
-          maxH: slotH * (1.8 + Math.random() * 3.5),   // 2–5× a line slot
-          σ:    0.018 + Math.random() * 0.040,
-          born: now,
-        })
-      }
-
       ctx!.clearRect(0, 0, w, h)
 
-      // ── Draw ridgelines back → front ────────────────────────────────────────
-      const slotH = h / LINES
+      // ── Rotate the whole composition CCW around canvas centre ──────────────
+      const rad = (ROTATE_DEG * Math.PI) / 180
+      ctx!.save()
+      ctx!.translate(w / 2, h / 2)
+      ctx!.rotate(rad)
+      ctx!.translate(-w / 2, -h / 2)
+
+      // Extend the draw rectangle so rotated edges fill the canvas fully
+      const pad = Math.ceil(Math.max(w, h) * 0.35)
+      const dw  = w + pad * 2
+      const dh  = h + pad * 2
+      const ox  = -pad
+      const oy  = -pad
+
+      const slotH = dh / LINES
 
       for (let i = 0; i < LINES; i++) {
-        const depthFrac = i / (LINES - 1)           // 0 = back, 1 = front
-        const baseY     = slotH * (i + 0.5)         // vertical centre of this slot
+        const depthFrac = i / (LINES - 1)          // 0 = back, 1 = front
+        const baseY     = oy + slotH * (i + 0.5)
 
-        // Amplitude: front lines larger — depth cue
-        const amp = slotH * BASE_AMP * (0.2 + 0.8 * depthFrac)
+        // Front ridges are taller — strong depth cue
+        const ampPx = slotH * BASE_AMP * (0.12 + 0.88 * depthFrac)
 
-        // Pre-compute y positions
         const ys = new Float32Array(SAMPLES + 1)
         for (let s = 0; s <= SAMPLES; s++) {
           const nx = s / SAMPLES
-          const n  = noiseAt(nx, i, t)
-          // Push noise upward only (positive peaks), flatten troughs slightly
-          const noiseH = n > 0 ? n * amp * 1.6 : n * amp * 0.35
-          const spike  = spikeContrib(nx, depthFrac, spikes, now)
-          ys[s] = baseY - noiseH - spike
+          ys[s] = baseY - profileH(nx, PROFILES[i], t) * ampPx
         }
 
-        // ── Filled mask — cream below the ridgeline ─────────────────────────
+        const x0 = ox
+        const x1 = ox + dw
+
+        // ── Cream fill — masks ridgelines behind, creating 3-D depth ─────────
         ctx!.beginPath()
-        ctx!.moveTo(0, ys[0])
+        ctx!.moveTo(x0, ys[0])
         for (let s = 1; s <= SAMPLES; s++) {
-          ctx!.lineTo((s / SAMPLES) * w, ys[s])
+          ctx!.lineTo(x0 + (s / SAMPLES) * dw, ys[s])
         }
-        // Close down to below the canvas so the fill fully masks
-        ctx!.lineTo(w, h + 2)
-        ctx!.lineTo(0, h + 2)
+        ctx!.lineTo(x1, oy + dh + 4)
+        ctx!.lineTo(x0, oy + dh + 4)
         ctx!.closePath()
         ctx!.fillStyle = BG_FILL
         ctx!.fill()
 
-        // ── Stroke — the ridgeline itself ───────────────────────────────────
-        // Opacity: back lines subtler, front lines bolder
-        const alpha = 0.18 + 0.52 * depthFrac
+        // ── Stroke — the ridgeline itself ─────────────────────────────────────
+        const alpha = 0.14 + 0.56 * depthFrac
         ctx!.beginPath()
-        ctx!.moveTo(0, ys[0])
+        ctx!.moveTo(x0, ys[0])
         for (let s = 1; s <= SAMPLES; s++) {
-          ctx!.lineTo((s / SAMPLES) * w, ys[s])
+          ctx!.lineTo(x0 + (s / SAMPLES) * dw, ys[s])
         }
         ctx!.strokeStyle = `rgba(${INK_R},${INK_G},${INK_B},${alpha.toFixed(3)})`
-        ctx!.lineWidth   = 0.6 + depthFrac * 0.6
+        ctx!.lineWidth   = 0.5 + depthFrac * 0.9
         ctx!.lineJoin    = 'round'
         ctx!.stroke()
       }
 
+      ctx!.restore()
       raf = requestAnimationFrame(draw)
     }
 
