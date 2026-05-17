@@ -16,23 +16,23 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://aarronwalter.com/about' },
 }
 
-const INTERVIEWS = [
+const INTERVIEWS: { outlet: string; title: string; href?: string }[] = [
   { outlet: 'Fast Company',              title: '"Fail Fast" In Software Design Is A Myth',         href: 'https://www.fastcompany.com/90136012/fail-fast-in-software-design-is-a-myth' },
-  { outlet: 'Design Matters',            title: 'With Debbie Millman',                              href: 'http://observermedia.designobserver.com/audio/ben-chestnut-and-aarron-walter/37883/' },
+  { outlet: 'Design Matters',            title: 'With Debbie Millman'                                                                                                                },  // 404
   { outlet: 'TechCrunch',               title: 'The Most Overlooked Aspect Of UX Design',           href: 'http://techcrunch.com/2015/11/22/the-most-overlooked-aspect-of-ux-design-could-be-the-most-important/' },
   { outlet: 'Inside Intercom',           title: 'InVision\'s Aarron Walter on Design Culture',      href: 'https://blog.intercom.com/invisions-aarron-walter-on-design-culture/' },
-  { outlet: 'This Is Product Management',title: 'Getting Out of the Office is Product Management',  href: 'http://www.thisisproductmanagement.com/episodes/getting-out-of-the-office-is-product-management' },
+  { outlet: 'This Is Product Management',title: 'Getting Out of the Office is Product Management'                                                                                   },  // 404
   { outlet: 'The Big Web Show',          title: 'With Jeffrey Zeldman',                             href: 'http://5by5.tv/bigwebshow/143' },
   { outlet: 'User Defenders Podcast',    title: 'Looking Down the Road',                            href: 'http://userdefenders.com/podcast/027-looking-down-the-road-with-aarron-walter/' },
-  { outlet: 'Designer News Podcast',     title: '',                                                 href: 'https://www.designernews.co/podcast/44040' },
+  { outlet: 'Designer News Podcast',     title: ''                                                                                                                                  },  // site down
   { outlet: 'The UX and Growth Podcast', title: 'Building UX Team Design Education',                href: 'http://www.uxandgrowth.com/building-ux-team-design-education-aarron-walter' },
-  { outlet: 'Ways We Work',             title: 'Design Leadership and Creative Inputs',             href: 'http://wayswework.io/interviews/aarron-walter-vice-president-of-design-education-at-invision-on-the-challenges-of-design-leadership-and-the-importance-of-creative-inputs' },
+  { outlet: 'Ways We Work',             title: 'Design Leadership and Creative Inputs'                                                                                              },  // site down
   { outlet: 'Medium',                    title: 'Advice for Designers',                             href: 'https://medium.com/ways-we-work/advice-for-designers-a-conversation-with-aarron-walter-c4812f90ea6e#.u6em0ei6d' },
   { outlet: 'nGen Works',               title: 'The MailChimp Story',                              href: 'http://ngenworks.com/business/the-mailchimp-story/' },
   { outlet: 'The UX Intern',             title: '',                                                 href: 'http://theuxintern.com/' },
   { outlet: '.net Magazine',             title: 'Designing Emotion',                                href: 'http://www.netmagazine.com/interviews/aarron-walter-designing-emotion' },
-  { outlet: 'The Web Ahead',             title: '',                                                 href: 'http://5by5.tv/webahead/10' },
-  { outlet: 'The East Wing',             title: '',                                                 href: 'http://theeastwing.net/episodes/30' },
+  { outlet: 'The Web Ahead',             title: ''                                                                                                                                  },  // 404
+  { outlet: 'The East Wing',             title: ''                                                                                                                                  },  // 404
   { outlet: 'Lullabot',                  title: 'Creative Process Episode 4',                       href: 'http://www.lullabot.com/blog/podcasts/creative-process-episode-4-interview-aarron-walter' },
   { outlet: 'The Iowa Idea Podcast',     title: '',                                                 href: 'https://www.theiowaidea.com/2020/06/29/23-aarron-walter/' },
 ]
@@ -121,10 +121,17 @@ export default function AboutPage() {
           <ul className="portfolio-list">
             {INTERVIEWS.map(({ outlet, title, href }) => (
               <li key={outlet}>
-                <a href={href} target="_blank" rel="noopener noreferrer" className="about-interview-link">
-                  <strong>{outlet}</strong>
-                  {title && <span className="about-interview-title"> — {title}</span>}
-                </a>
+                {href ? (
+                  <a href={href} target="_blank" rel="noopener noreferrer" className="about-interview-link">
+                    <strong>{outlet}</strong>
+                    {title && <span className="about-interview-title"> — {title}</span>}
+                  </a>
+                ) : (
+                  <span className="about-interview-link about-interview-link--dead">
+                    <strong>{outlet}</strong>
+                    {title && <span className="about-interview-title"> — {title}</span>}
+                  </span>
+                )}
               </li>
             ))}
           </ul>

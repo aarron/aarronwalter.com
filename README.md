@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# aarronwalter.com
 
-## Getting Started
+Personal portfolio and professional site for [Aarron Walter](https://aarronwalter.com) — designer, co-founder of Design Better, and author of *Designing for Emotion*.
 
-First, run the development server:
+Built with **Next.js 16 App Router**, deployed on **Vercel**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## Tech stack
+
+| Layer | Choice |
+|---|---|
+| Framework | Next.js 16.2 (App Router, TypeScript) |
+| Styling | Tailwind CSS v4 + custom design system in `globals.css` |
+| Fonts | F37 Lineca (display) via local files · Aktiv Grotesk via Adobe Fonts |
+| Images | `next/image` with AVIF/WebP auto-format |
+| Deployment | Vercel |
+
+## Project structure
+
+```
+src/
+  app/                      # Next.js App Router pages
+    page.tsx                # Home
+    about/
+    contact/
+    listening/
+    reading/
+    portfolio/
+      mailchimp/
+      invision/
+      rtsl/
+      other/                # Consulting + Speaking
+      books/
+    api/
+      book/                 # Now-reading book API route
+      record/               # Now-listening record API route
+    layout.tsx              # Root layout (logo, nav, lightbox provider)
+    globals.css             # All site CSS (design tokens, components, pages)
+  components/               # Shared React components
+public/
+  portfolio/                # All portfolio images and videos (lowercase paths)
+    mailchimp/
+    invision/
+    Other/                  # Testimonial avatars, book covers
+    rtsl/
+  fonts/                    # F37 Lineca OTF files
+  favicon_io/               # Source favicon assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Getting started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+```bash
+npm run build   # production build
+npm run lint    # ESLint
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Push to `master` → Vercel picks it up automatically.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To deploy manually:
 
-## Deploy on Vercel
+```bash
+vercel --prod
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The site is aliased at `aarronwalter-com.vercel.app`. The custom domain `aarronwalter.com` points here via:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **A record** `@` → `216.150.1.1`
+- **CNAME** `www` → `cname.vercel-dns.com`
+
+## Key design decisions
+
+- **CSS custom properties** — `--pf-pad: clamp(1.5rem, 8vw, 7rem)` is the universal horizontal gutter used by the hero, logo, and all portfolio sections to keep everything optically aligned.
+- **Lineca optical correction** — `.portfolio-title` uses `transform: translateX(14px)` to compensate for the display font's negative left sidebearing at large sizes without affecting layout or line-wrapping.
+- **Asset paths are all lowercase** — Vercel runs Linux (case-sensitive). All files under `public/portfolio/` use lowercase folder and filenames to match the paths in code. macOS hides case mismatches locally.
+- **Canvas animations** — `FooterWave` (3 overlapping sine waves), `HeroWaves`, `FlockCanvas`, `TopoCanvas`, and others are `'use client'` components driven by `requestAnimationFrame`.
+- **Lightbox** — `LightboxProvider` wraps the page content in `layout.tsx`; individual images opt in via `LightboxImage`.
+- **`_archive/`** — gitignored local folder for unused assets that should stay off the deploy but remain accessible on disk.
+
+## Content notes
+
+- Portfolio pages are static, prerendered at build time.
+- Interview links on the About page use `href?: string` — omitting `href` renders the entry as plain unlinked text (used for URLs confirmed dead).

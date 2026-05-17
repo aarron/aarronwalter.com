@@ -536,7 +536,7 @@ body {
   font-weight: 500;
   letter-spacing: -0.03em;
   line-height: 1;
-  color: rgba(255, 71, 37, 0.62);
+  color: #FF4725;
   display: block;
   margin-top: 0.25rem;
 }
@@ -2547,6 +2547,11 @@ body {
 
 .about-interview-link:hover strong {
   text-decoration: underline;
+}
+
+.about-interview-link--dead {
+  opacity: 0.4;
+  cursor: default;
 }
 
 .about-interview-title {
