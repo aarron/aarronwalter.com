@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import PageHeader from '@/components/PageHeader'
-import FlockCanvas from '@/components/FlockCanvas'
+import RidgelineCanvas from '@/components/RidgelineCanvas'
 import PortfolioFooter from '@/components/PortfolioFooter'
 import { ogImage } from '@/lib/og'
 
@@ -23,7 +23,7 @@ export default function ColophonPage() {
 
         {/* ── Header with flock in top right ── */}
         <div className="colophon-hero">
-          <FlockCanvas className="colophon-flock" />
+          <RidgelineCanvas className="colophon-flock" />
           <PageHeader title="Colophon" />
         </div>
 
@@ -163,7 +163,7 @@ export default function ColophonPage() {
               { term: 'Contact form', def: 'Resend — email delivery via verified domain' },
               { term: 'Now Listening',def: 'Discogs API' },
               { term: 'Now Reading',  def: 'Open Library Covers API' },
-              { term: 'Animations',   def: 'Canvas 2D — marching squares (topo), Boids (flock), sinusoidal waves' },
+              { term: 'Animations',   def: 'Canvas 2D — marching squares (topo), ridgeline noise (colophon), sinusoidal waves' },
               { term: 'Source',       def: 'github.com/aarron/aarronwalter.com' },
             ].map(({ term, def }) => (
               <div key={term} className="colophon-stack-row">
