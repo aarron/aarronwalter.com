@@ -107,6 +107,6 @@ export default function FooterWave({ color }: { color?: string }) {
   }, [isDark])
 
   return (
-    <canvas ref={ref} style={{ display: 'block', width: '100%', height: '100%' }} />
+    <canvas ref={ref} style={{ display: 'block', width: '100%', height: '100%' }} aria-hidden="true" />
   )
 }

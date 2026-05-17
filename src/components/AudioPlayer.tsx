@@ -103,7 +103,16 @@ export default function AudioPlayer({ episode }: { episode: Episode }) {
               {playing ? <PauseIcon /> : <PlayIcon />}
             </button>
 
-            <div className="progress-track" ref={barRef} onClick={seek} role="progressbar">
+            <div
+              className="progress-track"
+              ref={barRef}
+              onClick={seek}
+              role="progressbar"
+              aria-label="Playback progress"
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-valuenow={Math.round(progress)}
+            >
               <div className="progress-fill" style={{ width: `${progress}%` }} />
               <div className="progress-thumb" style={{ left: `${progress}%` }} />
             </div>

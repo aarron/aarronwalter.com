@@ -67,7 +67,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form ref={formRef} className="contact-form" onSubmit={handleSubmit} noValidate>
+    <form ref={formRef} className="contact-form" onSubmit={handleSubmit} noValidate aria-label="Contact form">
 
       {/* Honeypot — hidden from real users, invisible bait for bots */}
       <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: 0, height: 0, overflow: 'hidden' }}>

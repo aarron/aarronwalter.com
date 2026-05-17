@@ -158,6 +158,40 @@ body {
   z-index: 0;
 }
 
+/* Skip link — visually hidden until focused by keyboard */
+.skip-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.6rem 1.1rem;
+  background: #2C2A2A;
+  color: #F3E7D6;
+  font-family: 'aktiv-grotesk', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 4px;
+  text-decoration: none;
+  transform: translateY(-200%);
+  transition: transform 0.15s ease;
+}
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 2px solid #FF4725;
+  outline-offset: 2px;
+}
+
+/* Reduced motion — hide all decorative canvas animations */
+@media (prefers-reduced-motion: reduce) {
+  .hero-waves,
+  .footer-wave-wrap,
+  .wave-bridge,
+  .about-illustration-blend canvas,
+  .not-found-flock {
+    display: none;
+  }
+}
+
 /* Site logo — fixed to viewport, ribbon-attached to top edge */
 .site-logo {
   position: fixed;

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 
@@ -23,13 +23,24 @@ const TOP_LINKS = [
 export default function HamburgerMenu() {
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
+  const firstLinkRef = useRef<HTMLAnchorElement>(null)
+  const btnRef       = useRef<HTMLButtonElement>(null)
 
   const close = () => setOpen(false)
+
+  // Focus first nav link when drawer opens; restore to button on close
+  useEffect(() => {
+    if (open) {
+      requestAnimationFrame(() => firstLinkRef.current?.focus())
+    }
+  }, [open])
 
   // Close on Escape
   useEffect(() => {
     if (!open) return
-    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') close() }
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') { close(); btnRef.current?.focus() }
+    }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
   }, [open])
@@ -50,10 +61,12 @@ export default function HamburgerMenu() {
   return (
     <>
       <button
+        ref={btnRef}
         className={`hamburger-btn${open ? ' is-open' : ''}`}
         onClick={() => setOpen(v => !v)}
         aria-label={open ? 'Close menu' : 'Open menu'}
         aria-expanded={open}
+        aria-controls="nav-drawer"
       >
         <span className="hamburger-bar" />
         <span className="hamburger-bar" />
@@ -69,6 +82,7 @@ export default function HamburgerMenu() {
 
       {/* Drawer */}
       <nav
+        id="nav-drawer"
         className={`nav-drawer${open ? ' is-open' : ''}`}
         aria-label="Site navigation"
         aria-hidden={!open}
@@ -78,6 +92,7 @@ export default function HamburgerMenu() {
           {/* Home */}
           <li>
             <a
+              ref={firstLinkRef}
               href="/"
               className={`nav-link${pathname === '/' ? ' nav-link--active' : ''}`}
               onClick={close}

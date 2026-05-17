@@ -124,6 +124,7 @@ export default function WaveTransition() {
     <canvas
       ref={canvasRef}
       style={{ display: 'block', width: '100%', height: '100%' }}
+      aria-hidden="true"
     />
   )
 }

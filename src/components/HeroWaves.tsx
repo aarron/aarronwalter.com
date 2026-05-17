@@ -186,5 +186,5 @@ export default function HeroWaves({ className }: Props) {
     }
   }, [])
 
-  return <canvas ref={canvasRef} className={className} />
+  return <canvas ref={canvasRef} className={className} aria-hidden="true" />
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { ogImage } from '@/lib/og'
 import PageHeader from '@/components/PageHeader'
 import CaseStudySection from '@/components/CaseStudySection'
 import BookFrame from '@/components/BookFrame'
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     title: 'My Books — Aarron Walter',
     description: 'Author of Designing for Emotion and co-author of Principles of Product Design and Design Leadership Handbook.',
     url: 'https://aarronwalter.com/portfolio/books',
-    images: [{ url: '/api/og?title=My+Books&description=Author+of+Designing+for+Emotion+and+co-author+of+Principles+of+Product+Design+and+Design+Leadership+Handbook.', width: 1200, height: 630, alt: 'My Books — Aarron Walter' }],
+    images: ogImage('My Books', 'Author of Designing for Emotion and co-author of Principles of Product Design and Design Leadership Handbook.'),
   },
   alternates: { canonical: 'https://aarronwalter.com/portfolio/books' },
 }
@@ -68,10 +69,7 @@ export default function BooksPage() {
         {/* ── Lead ── */}
         <div className="pf-brand-hero">
           <p className="pf-brand-lead">
-            Writing has been a thread running through my entire career &mdash; a way to work
-            through ideas, share what I&rsquo;ve learned, and contribute something lasting to
-            the design community. My books focus on the human side of design: how emotion,
-            leadership, and craft combine to create products that genuinely connect with people.
+            Writing has been a thread running through my entire career — a way to work through ideas, share what I've learned, and contribute something lasting to the design community. My books all circle the same territory: how emotion, leadership, and craft combine to make products that genuinely connect with people.
           </p>
         </div>
 

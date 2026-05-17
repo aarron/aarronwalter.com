@@ -68,6 +68,8 @@ export function LightboxProvider({ children }: { children: ReactNode }) {
   const [pan,     setPan]     = useState({ x: 0, y: 0 })
 
   const lbImgRef      = useRef<HTMLImageElement>(null)
+  const closeRef      = useRef<HTMLButtonElement>(null)
+  const triggerRef    = useRef<HTMLElement | null>(null)
   const startXformRef = useRef('')
   const dragging      = useRef(false)
   const dragStart     = useRef({ mx: 0, my: 0, px: 0, py: 0 })
@@ -89,17 +91,21 @@ export function LightboxProvider({ children }: { children: ReactNode }) {
     if (i === -1) return
     const rect = items.current[i].el.getBoundingClientRect()
     startXformRef.current = getStartTransform(rect, items.current[i].el)
+    triggerRef.current = document.activeElement as HTMLElement
     setIdx(i)
     setZoom(1)
     setPan({ x: 0, y: 0 })
     setOpen(true)
     setPhase('enter')
     requestAnimationFrame(() =>
-      requestAnimationFrame(() => setPhase('idle'))
+      requestAnimationFrame(() => {
+        setPhase('idle')
+        closeRef.current?.focus()
+      })
     )
   }, [])
 
-  /* close — FLIP back to thumbnail */
+  /* close — FLIP back to thumbnail, restore focus to trigger */
   const doClose = useCallback(() => {
     setZoom(1)
     setPan({ x: 0, y: 0 })
@@ -109,7 +115,11 @@ export function LightboxProvider({ children }: { children: ReactNode }) {
       startXformRef.current = getStartTransform(rect, item.el)
     }
     setPhase('exit')
-    setTimeout(() => { setOpen(false); setPhase('idle') }, 360)
+    setTimeout(() => {
+      setOpen(false)
+      setPhase('idle')
+      triggerRef.current?.focus()
+    }, 360)
   }, [idx])
 
   /* navigate prev / next */
@@ -168,7 +178,7 @@ export function LightboxProvider({ children }: { children: ReactNode }) {
       aria-label="Image viewer"
     >
       {/* Close */}
-      <button className="lb-close" onClick={doClose} aria-label="Close">
+      <button ref={closeRef} className="lb-close" onClick={doClose} aria-label="Close image viewer">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
           stroke="currentColor" strokeWidth="1.75" strokeLinecap="round">
           <line x1="1" y1="1" x2="17" y2="17" />

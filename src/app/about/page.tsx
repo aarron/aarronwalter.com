@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { ogImage } from '@/lib/og'
 import Image from 'next/image'
 import FooterWave from '@/components/FooterWave'
 import ClientLogoGrid from '@/components/ClientLogoGrid'
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     title: 'About — Aarron Walter',
     description: 'Designer, author, and co-founder of Design Better. Two decades shaping how the tech industry thinks about design.',
     url: 'https://aarronwalter.com/about',
-    images: [{ url: '/api/og?title=About&description=Designer%2C+author%2C+and+co-founder+of+Design+Better.+Two+decades+shaping+how+the+tech+industry+thinks+about+design.', width: 1200, height: 630, alt: 'About — Aarron Walter' }],
+    images: ogImage('About', 'Designer, author, and co-founder of Design Better. Two decades shaping how the tech industry thinks about design.'),
   },
   alternates: { canonical: 'https://aarronwalter.com/about' },
 }

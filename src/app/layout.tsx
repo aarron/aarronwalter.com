@@ -49,14 +49,19 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/xui7gpv.css" />
       </head>
       <body>
-        <a href="/" aria-label="Aarron Walter" className="site-logo">
-          <Image src="/aarron-walter-logo.png" alt="Aarron Walter" width={891} height={891} priority />
+        {/* Skip link — first focusable element on every page */}
+        <a href="#main-content" className="skip-link">Skip to main content</a>
+
+        <a href="/" aria-label="Aarron Walter — home" className="site-logo">
+          <Image src="/aarron-walter-logo.png" alt="" width={891} height={891} priority />
         </a>
         <HamburgerMenu />
         <LightboxProvider>
-          <div id="page-content">
-            {children}
-          </div>
+          <main id="page-content">
+            <div id="main-content">
+              {children}
+            </div>
+          </main>
         </LightboxProvider>
       </body>
     </html>

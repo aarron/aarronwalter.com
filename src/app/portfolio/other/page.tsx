@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { ogImage } from '@/lib/og'
 import PageHeader from '@/components/PageHeader'
 import StatBlock from '@/components/StatBlock'
 import CaseStudySection from '@/components/CaseStudySection'
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Consulting — Aarron Walter',
     description: 'Speaker, advisor, and consultant. Advised Google, IBM, the White House, WHO, and hundreds of companies on design strategy and product thinking.',
     url: 'https://aarronwalter.com/portfolio/other',
-    images: [{ url: '/api/og?title=Consulting&description=Speaker%2C+advisor%2C+and+strategist.+Clients+include+Google%2C+IBM%2C+the+White+House%2C+WHO%2C+and+hundreds+more.', width: 1200, height: 630, alt: 'Consulting — Aarron Walter' }],
+    images: ogImage('Consulting', 'Speaker, advisor, and strategist. Clients include Google, IBM, the White House, WHO, and hundreds more.'),
   },
   alternates: { canonical: 'https://aarronwalter.com/portfolio/other' },
 }

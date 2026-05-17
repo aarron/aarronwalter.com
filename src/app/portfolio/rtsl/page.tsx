@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { ogImage } from '@/lib/og'
 import PageHeader from '@/components/PageHeader'
 import StatBlock from '@/components/StatBlock'
 import CaseStudySection from '@/components/CaseStudySection'
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     title: 'Resolve to Save Lives — Aarron Walter',
     description: 'Director of Product & Design for the US COVID Response at Resolve to Save Lives (2020–2022). Led design for public health tools used across the country.',
     url: 'https://aarronwalter.com/portfolio/rtsl',
-    images: [{ url: '/api/og?title=Resolve+to+Save+Lives&description=Director+of+Product+%26+Design+for+the+US+COVID+Response.+Built+public+health+tools+for+WHO%2C+Africa+CDC%2C+and+more.', width: 1200, height: 630, alt: 'Resolve to Save Lives — Aarron Walter' }],
+    images: ogImage('Resolve to Save Lives', 'Director of Product & Design for the US COVID Response. Built public health tools for WHO, Africa CDC, and more.'),
   },
   alternates: { canonical: 'https://aarronwalter.com/portfolio/rtsl' },
 }
