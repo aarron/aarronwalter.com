@@ -5,6 +5,8 @@ export async function GET(req: NextRequest) {
   const releaseId = searchParams.get('releaseId')
 
   if (!releaseId) return NextResponse.json({ found: false }, { status: 400 })
+  // Validate integer to prevent path injection into the Discogs URL
+  if (!/^\d+$/.test(releaseId)) return NextResponse.json({ found: false }, { status: 400 })
 
   const token = process.env.DISCOGS_TOKEN
   const headers: Record<string, string> = {
