@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export interface TestimonialItem {
   quote: string
   name: string
@@ -21,7 +23,13 @@ export default function TestimonialPair({ testimonials }: TestimonialPairProps) 
       <div className="quote-pair__col">
         <p className="pf-testimonial__quote">&ldquo;{first.quote}&rdquo;</p>
         <div className="pf-testimonial__attr">
-          <img src={first.avatar} alt={first.name} className="pf-testimonial__avatar" />
+          <Image
+            src={first.avatar}
+            alt={first.name}
+            width={56}
+            height={56}
+            className="pf-testimonial__avatar"
+          />
           <span>
             <span className="pf-testimonial__name">{first.name}</span>
             <span className="pf-testimonial__role">{first.role}</span>
@@ -31,7 +39,13 @@ export default function TestimonialPair({ testimonials }: TestimonialPairProps) 
       <div className="quote-pair__col quote-pair__col--divided">
         <p className="pf-testimonial__quote">&ldquo;{second.quote}&rdquo;</p>
         <div className="pf-testimonial__attr">
-          <img src={second.avatar} alt={second.name} className="pf-testimonial__avatar" />
+          <Image
+            src={second.avatar}
+            alt={second.name}
+            width={56}
+            height={56}
+            className="pf-testimonial__avatar"
+          />
           <span>
             <span className="pf-testimonial__name">{second.name}</span>
             <span className="pf-testimonial__role">{second.role}</span>

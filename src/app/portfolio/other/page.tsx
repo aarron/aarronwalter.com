@@ -63,7 +63,7 @@ export default function OtherPage() {
         <TestimonialPair
           testimonials={[
             {
-              quote: 'Aarron is well versed with his work in designing for emotion. In such turbulent times, Aarron helped remind us how important it is to take a moment to reflect on how design effects our lives in how we feel and at work, to design for all the complexities of human emotion.',
+              quote: 'Aarron is well versed in his work in designing for emotion. In such turbulent times, Aarron helped remind us how important it is to take a moment to reflect on how design affects our lives in how we feel and at work, to design for all the complexities of human emotion.',
               name: 'Toke Nygaard',
               role: 'Chief Creative Officer, Zendesk',
               avatar: '/portfolio/Other/toke.jpg',

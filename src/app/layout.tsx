@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import './globals.css'
 import HamburgerMenu from '@/components/HamburgerMenu'
 import { LightboxProvider } from '@/components/Lightbox'
@@ -54,8 +55,7 @@ export default function RootLayout({
       </head>
       <body>
         <a href="/" aria-label="Aarron Walter" className="site-logo">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/alt-aw-logo.png" alt="Aarron Walter" width={400} height={400} />
+          <Image src="/alt-aw-logo.png" alt="Aarron Walter" width={891} height={891} priority />
         </a>
         <HamburgerMenu />
         <LightboxProvider>
