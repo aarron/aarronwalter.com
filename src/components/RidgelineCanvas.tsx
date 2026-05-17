@@ -18,9 +18,9 @@ const SAMPLES = 420
 //  depthFrac = 1 → back  / far  (upper-left, tightly compressed)
 //
 const FL = { x: 0.04, y: 0.76 }
-const FR = { x: 1.00, y: 0.97 }
-const BL = { x: -0.24, y: 0.02 }
-const BR = { x: 0.64, y: -0.01 }
+const FR = { x: 1.02, y: 0.97 }
+const BL = { x: 0.00, y: 0.03 }
+const BR = { x: 0.88, y: -0.01 }
 
 // Max mountain height at the front, as a fraction of canvas HEIGHT.
 // The "flat parallel lines" effect on back ridges comes entirely from
@@ -68,9 +68,10 @@ function mountainH(nx: number, lineIdx: number, t: number): number {
     freq *= 2.04
   }
 
-  // Dome envelope — active across ~70% of line width, clear flat space on both edges.
-  // Falls to 0 at the edges; peaks in the centre.
-  const d   = Math.abs(nx - 0.47) / 0.34
+  // Dome envelope — active across the full line width; the parallelogram clip
+  // handles the visible boundary. Envelope extends to the edges so lines fill
+  // all the way to the clipped left/right walls.
+  const d   = Math.abs(nx - 0.50) / 0.52
   const env = Math.max(0, 1.0 - d * d * d)    // cubic falloff
 
   // Radio signal: slow amplitude wave traveling through the ridgelines
@@ -130,6 +131,30 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
 
       ctx!.clearRect(0, 0, W, H)
 
+      // ── Parallelogram clip: enforce left, right, bottom; top is open ──────────
+      // The four ground corners define a parallelogram. We build a clip region
+      // that extends far UPWARD from BL and BR (so peaks above the top edge are
+      // not clipped), but terminates exactly at FL-FR (left/right ground edges)
+      // and the bottom of the canvas.
+      ctx!.save()
+      {
+        const flS = { x: FL.x * W, y: FL.y * H }
+        const frS = { x: FR.x * W, y: FR.y * H }
+        const blS = { x: BL.x * W, y: BL.y * H }
+        const brS = { x: BR.x * W, y: BR.y * H }
+        // Far-above extensions of the back-left and back-right corners
+        const S = 80
+        const lExt = { x: blS.x - (flS.x - blS.x) * S, y: blS.y - (flS.y - blS.y) * S }
+        const rExt = { x: brS.x - (frS.x - brS.x) * S, y: brS.y - (frS.y - brS.y) * S }
+        ctx!.beginPath()
+        ctx!.moveTo(lExt.x, lExt.y)       // far above BL
+        ctx!.lineTo(rExt.x, rExt.y)       // far above BR
+        ctx!.lineTo(frS.x,  H + 20)       // right edge → bottom
+        ctx!.lineTo(flS.x,  H + 20)       // bottom → left edge
+        ctx!.closePath()
+        ctx!.clip()
+      }
+
       // Back → front: i=0 drawn first (back/far), i=LINES-1 drawn last (front/near)
       for (let i = 0; i < LINES; i++) {
         const df    = 1 - i / (LINES - 1)   // 1 = back, 0 = front
@@ -164,6 +189,8 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
         ctx!.lineJoin    = 'round'
         ctx!.stroke()
       }
+
+      ctx!.restore()   // end parallelogram clip
 
       raf = requestAnimationFrame(draw)
     }
