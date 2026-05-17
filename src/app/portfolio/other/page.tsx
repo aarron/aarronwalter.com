@@ -42,7 +42,7 @@ export default function OtherPage() {
             ampRef={0.65}
             animate="breath"
           />
-          <span className="viz-credit"><a href="https://psl.noaa.gov/enso/mei/" target="_blank" rel="noopener noreferrer">ENSO MEI v2</a> · NOAA PSL · 1979–2024</span>
+          <span className="viz-credit">Data source: <a href="https://psl.noaa.gov/enso/mei/" target="_blank" rel="noopener noreferrer">ENSO MEI v2</a> · NOAA PSL · 1979–2024</span>
           <PageHeader eyebrow="2008–Present" title="Consulting" />
         </div>
 

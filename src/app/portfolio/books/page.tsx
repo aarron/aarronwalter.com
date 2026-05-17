@@ -74,7 +74,7 @@ export default function BooksPage() {
             ampRef={0.50}
             animate="breath"
           />
-          <span className="viz-credit"><a href="https://www.sidc.be/SILSO/datafiles" target="_blank" rel="noopener noreferrer">Daily sunspot number</a> · SILSO Royal Observatory · 1950–2009</span>
+          <span className="viz-credit">Data source: <a href="https://www.sidc.be/SILSO/datafiles" target="_blank" rel="noopener noreferrer">Daily sunspot number</a> · SILSO Royal Observatory · 1950–2009</span>
           <PageHeader title="My Books" />
         </div>
 
@@ -123,7 +123,7 @@ export default function BooksPage() {
             className="pf-text-link"
             style={{ marginTop: '1.25rem', display: 'inline-block' }}
           >
-            No available on Design Better →
+            Now available on Design Better →
           </a>
         </CaseStudySection>
 

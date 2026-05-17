@@ -38,7 +38,7 @@ export default function MailchimpPage() {
             ampRef={0.32}
             animate="breath"
           />
-          <span className="viz-credit"><a href="https://ds.iris.edu/wilber3/find_event/5747228" target="_blank" rel="noopener noreferrer">2004 Sumatra M9.1</a> · IRIS/USGS · IU.ANMO.00.BHZ</span>
+          <span className="viz-credit">Data source: <a href="https://ds.iris.edu/wilber3/find_event/5747228" target="_blank" rel="noopener noreferrer">2004 Sumatra M9.1</a> · IRIS/USGS · IU.ANMO.00.BHZ</span>
           <PageHeader eyebrow="2008–2016" title="Mailchimp" />
         </div>
 

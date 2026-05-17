@@ -3537,12 +3537,12 @@ body {
   position: absolute;
   bottom: 2rem;
   right: 0;
-  background: #2C2A2A;
-  color: rgba(243, 231, 214, 0.65);
+  background: #1a1818;
+  color: rgba(243, 231, 214, 0.80);
   font-size: 0.5rem;
   letter-spacing: 0.10em;
   text-transform: uppercase;
-  padding: 0.3rem 0.625rem 0.3rem 0.75rem;
+  padding: 0.45rem 0.75rem 0.45rem 0.875rem;
   border-radius: 3px 0 0 3px;
   z-index: 2;
   white-space: nowrap;
@@ -3550,12 +3550,12 @@ body {
 }
 
 .viz-credit a {
-  color: rgba(243, 231, 214, 0.85);
+  color: #F3E7D6;
   text-decoration: none;
 }
 
 .viz-credit a:hover {
-  color: #F3E7D6;
+  color: #FF4725;
   text-decoration: underline;
   text-underline-offset: 2px;
 }

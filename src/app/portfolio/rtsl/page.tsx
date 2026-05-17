@@ -36,7 +36,7 @@ export default function RTSLPage() {
             ampRef={0.10}
             animate="breath"
           />
-          <span className="viz-credit"><a href="https://gml.noaa.gov/ccgg/trends/" target="_blank" rel="noopener noreferrer">Mauna Loa CO₂</a> · NOAA GML · 1960–2019</span>
+          <span className="viz-credit">Data source: <a href="https://gml.noaa.gov/ccgg/trends/" target="_blank" rel="noopener noreferrer">Mauna Loa CO₂</a> · NOAA GML · 1960–2019</span>
           <PageHeader eyebrow="2020–2022" title="Resolve to Save Lives" />
         </div>
 
