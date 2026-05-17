@@ -13,14 +13,14 @@ const SAMPLES = 420
 
 // ─── Perspective plane ────────────────────────────────────────────────────────
 //
-//  Horizontal stacked lines. Plane recedes to the upper-right.
-//  depthFrac = 0 → front / near (lower-left)
-//  depthFrac = 1 → back  / far  (upper-right, tightly compressed)
+//  Horizontal stacked lines. Plane recedes to the upper-LEFT.
+//  depthFrac = 0 → front / near (lower-right)
+//  depthFrac = 1 → back  / far  (upper-left, tightly compressed)
 //
-const FL = { x: 0.00, y: 0.88 }
-const FR = { x: 0.76, y: 0.97 }
-const BL = { x: 0.30, y: 0.02 }
-const BR = { x: 1.06, y: 0.14 }
+const FL = { x: 0.24, y: 0.97 }
+const FR = { x: 1.00, y: 0.88 }
+const BL = { x: -0.06, y: 0.14 }
+const BR = { x: 0.70, y: 0.02 }
 
 // Max mountain height at the front, as a fraction of canvas HEIGHT.
 // The "flat parallel lines" effect on back ridges comes entirely from
@@ -68,9 +68,9 @@ function mountainH(nx: number, lineIdx: number, t: number): number {
     freq *= 2.04
   }
 
-  // Wide dome envelope — active across ~90% of line width.
+  // Dome envelope — active across ~70% of line width, clear flat space on both edges.
   // Falls to 0 at the edges; peaks in the centre.
-  const d   = Math.abs(nx - 0.47) / 0.45
+  const d   = Math.abs(nx - 0.47) / 0.34
   const env = Math.max(0, 1.0 - d * d * d)    // cubic falloff
 
   const thresh = 0.52

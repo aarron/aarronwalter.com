@@ -3478,8 +3478,8 @@ body {
   z-index: 0;
   opacity: 1;
   /* Solid through hero, dissolves into the page content below */
-  -webkit-mask-image: linear-gradient(to bottom, black 42%, transparent 82%);
-  mask-image: linear-gradient(to bottom, black 42%, transparent 82%);
+  -webkit-mask-image: linear-gradient(to bottom, black 52%, transparent 88%);
+  mask-image: linear-gradient(to bottom, black 52%, transparent 88%);
 }
 
 .colophon-hero .portfolio-header {
