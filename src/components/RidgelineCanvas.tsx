@@ -14,13 +14,13 @@ const SAMPLES = 420
 // ─── Perspective plane ────────────────────────────────────────────────────────
 //
 //  Horizontal stacked lines. Plane recedes to the upper-LEFT.
-//  depthFrac = 0 → front / near (lower-right)
+//  depthFrac = 0 → front / near (lower-right, "\" tilt — left high, right low)
 //  depthFrac = 1 → back  / far  (upper-left, tightly compressed)
 //
-const FL = { x: 0.24, y: 0.97 }
-const FR = { x: 1.00, y: 0.88 }
-const BL = { x: -0.06, y: 0.14 }
-const BR = { x: 0.70, y: 0.02 }
+const FL = { x: 0.05, y: 0.84 }
+const FR = { x: 1.00, y: 0.96 }
+const BL = { x: -0.18, y: 0.04 }
+const BR = { x: 0.64, y: 0.00 }
 
 // Max mountain height at the front, as a fraction of canvas HEIGHT.
 // The "flat parallel lines" effect on back ridges comes entirely from
