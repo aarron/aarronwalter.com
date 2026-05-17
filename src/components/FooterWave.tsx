@@ -1,32 +1,42 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import {
+  TSUNAMI_CRESCENT_CITY,
+  TSUNAMI_KAWAIHAE,
+  TSUNAMI_SAN_FRANCISCO,
+  TSUNAMI_METADATA,
+} from '@/lib/tsunami-data'
 
-interface LineConfig {
-  cy: number
-  amp: number
-  speed: number
-  phase: number
-  strokeStyle: string
-  lineWidth: number
-}
+// ── Station baselines (pre-tsunami quiet period) ───────────────────────────────
+// normalize(v) = (v - center) / halfRange → ±1 = typical tidal swing
+const STATIONS = [
+  { data: TSUNAMI_KAWAIHAE,       ...TSUNAMI_METADATA.stations.kawaihae },
+  { data: TSUNAMI_SAN_FRANCISCO,  ...TSUNAMI_METADATA.stations.sanFrancisco },
+  { data: TSUNAMI_CRESCENT_CITY,  ...TSUNAMI_METADATA.stations.crescentCity },
+] as const
 
-// Dark-background palette (cream/paper tones)
-const DARK_BG_LINES: LineConfig[] = [
-  { cy: 0.42, amp: 0.38, speed: 1.00, phase: 0.0, strokeStyle: 'rgba(243, 231, 214, 0.35)', lineWidth: 1.2 },
-  { cy: 0.52, amp: 0.30, speed: 0.73, phase: 2.1, strokeStyle: 'rgba(243, 231, 214, 0.20)', lineWidth: 1.5 },
-  { cy: 0.60, amp: 0.42, speed: 1.28, phase: 4.7, strokeStyle: 'rgba(243, 231, 214, 0.12)', lineWidth: 1.0 },
+// ── Layout ─────────────────────────────────────────────────────────────────────
+const LINE_CY         = [0.38, 0.52, 0.63]    // vertical center per line (fraction of H)
+const LINE_WIDTHS     = [1.0, 1.5, 1.2]
+const WINDOW          = 90                      // data points visible at once (~9 h of data)
+const CYCLE_SECS      = 96                      // seconds per full 24-h playback loop
+
+// Dark-background palette (cream tones on dark footer)
+const DARK_STROKES  = [
+  'rgba(243, 231, 214, 0.22)',
+  'rgba(243, 231, 214, 0.35)',
+  'rgba(243, 231, 214, 0.15)',
 ]
 
-// Light-background palette (ink tones)
-const LIGHT_BG_LINES: LineConfig[] = [
-  { cy: 0.42, amp: 0.38, speed: 1.00, phase: 0.0, strokeStyle: 'rgba(44, 42, 42, 0.20)', lineWidth: 1.2 },
-  { cy: 0.52, amp: 0.30, speed: 0.73, phase: 2.1, strokeStyle: 'rgba(44, 42, 42, 0.13)', lineWidth: 1.5 },
-  { cy: 0.60, amp: 0.42, speed: 1.28, phase: 4.7, strokeStyle: 'rgba(44, 42, 42, 0.09)', lineWidth: 1.0 },
+// Light-background palette (ink tones on cream footer)
+const LIGHT_STROKES = [
+  'rgba(44, 42, 42, 0.13)',
+  'rgba(44, 42, 42, 0.20)',
+  'rgba(44, 42, 42, 0.09)',
 ]
 
 export default function FooterWave({ color }: { color?: string }) {
-  // color prop: when provided the footer sits on a dark background → use cream lines
   const isDark = Boolean(color)
   const ref = useRef<HTMLCanvasElement>(null)
 
@@ -36,7 +46,7 @@ export default function FooterWave({ color }: { color?: string }) {
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
-    const lines = isDark ? DARK_BG_LINES : LIGHT_BG_LINES
+    const strokes = isDark ? DARK_STROKES : LIGHT_STROKES
 
     let raf: number
     const t0 = performance.now()
@@ -48,48 +58,47 @@ export default function FooterWave({ color }: { color?: string }) {
       ctx!.setTransform(dpr, 0, 0, dpr, 0, 0)
     }
 
-    function drawLine(line: LineConfig, t: number, w: number, h: number) {
-      const { cy, amp, speed, phase, strokeStyle, lineWidth } = line
-      const steps = 360
-      const T = t * speed + phase
-
-      ctx!.beginPath()
-
-      for (let s = 0; s <= steps; s++) {
-        const xn = s / steps
-
-        const envelope = 0.60 + 0.40 * Math.sin(xn * 2.3 - T * 0.18 + phase * 0.4)
-
-        const disp = (
-          Math.sin(xn *  6.8 + T * 0.58) * 0.48 +
-          Math.sin(xn *  2.1 + T * 0.29) * 0.28 +
-          Math.sin(xn * 11.3 + T * 0.91) * 0.14 +
-          Math.sin(xn *  4.5 + T * 0.22) * 0.22 +
-          Math.sin(xn *  0.9 - T * 0.11) * 0.12
-        ) * envelope
-
-        const x = xn * w
-        const y = cy * h + disp * amp * h
-
-        s === 0 ? ctx!.moveTo(x, y) : ctx!.lineTo(x, y)
-      }
-
-      ctx!.strokeStyle = strokeStyle
-      ctx!.lineWidth   = lineWidth
-      ctx!.lineJoin    = 'round'
-      ctx!.lineCap     = 'round'
-      ctx!.stroke()
-    }
-
     function draw(now: number) {
       const w = canvas!.offsetWidth
       const h = canvas!.offsetHeight
-      const t = (now - t0) * 0.00042
+      const t = (now - t0) / 1000   // real seconds elapsed
 
       ctx!.clearRect(0, 0, w, h)
 
-      for (const line of lines) {
-        drawLine(line, t, w, h)
+      // Sliding window: advances through 240 data points over CYCLE_SECS, then loops.
+      // At the end of each cycle the smooth pre-tsunami waves seamlessly replace
+      // the chaotic post-tsunami signal — a natural reset.
+      const progress  = (t % CYCLE_SECS) / CYCLE_SECS
+      const maxStart  = TSUNAMI_METADATA.totalReadings - WINDOW
+      const startBase = Math.floor(progress * maxStart)
+
+      for (let i = 0; i < 3; i++) {
+        const { data, center, halfRange, arrivalIndex } = STATIONS[i]
+        const cy    = LINE_CY[i] * h
+        const ampH  = h * 0.14   // max amplitude in px within normal tidal range
+
+        ctx!.beginPath()
+        ctx!.lineJoin    = 'round'
+        ctx!.lineCap     = 'round'
+        ctx!.lineWidth   = LINE_WIDTHS[i]
+        ctx!.strokeStyle = strokes[i]
+
+        for (let s = 0; s < WINDOW; s++) {
+          const idx = startBase + s
+          const raw = data[idx] ?? 0
+
+          // Normalize: ±1 = normal tidal swing. Tsunami peaks exceed ±1 naturally.
+          const norm = (raw - center) / halfRange
+
+          // Soft-clip extreme spikes so they don't blow out the canvas,
+          // but still register visually as chaotic high-amplitude bursts.
+          const clipped = Math.sign(norm) * Math.min(Math.abs(norm), 4.0)
+
+          const x = (s / (WINDOW - 1)) * w
+          const y = cy - clipped * ampH
+          s === 0 ? ctx!.moveTo(x, y) : ctx!.lineTo(x, y)
+        }
+        ctx!.stroke()
       }
 
       raf = requestAnimationFrame(draw)
@@ -100,10 +109,7 @@ export default function FooterWave({ color }: { color?: string }) {
     ro.observe(canvas)
     raf = requestAnimationFrame(draw)
 
-    return () => {
-      cancelAnimationFrame(raf)
-      ro.disconnect()
-    }
+    return () => { cancelAnimationFrame(raf); ro.disconnect() }
   }, [isDark])
 
   return (
