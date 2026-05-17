@@ -49,8 +49,8 @@ const nextConfig: NextConfig = {
               "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://use.typekit.net",
               // Fonts: self + Adobe Fonts CDN
               "font-src 'self' https://use.typekit.net https://p.typekit.net",
-              // Images: self + podcast artwork CDN + Open Library book covers + Discogs
-              "img-src 'self' data: blob: https://megaphone.imgix.net https://covers.openlibrary.org https://img.discogs.com https://i.discogs.com",
+              // Images: self + podcast artwork + Open Library covers (redirect via archive.org) + Discogs + Amazon CDN
+              "img-src 'self' data: blob: https://megaphone.imgix.net https://covers.openlibrary.org https://archive.org https://*.archive.org https://*.us.archive.org https://img.discogs.com https://i.discogs.com https://m.media-amazon.com https://images-na.ssl-images-amazon.com",
               // API calls: self + Discogs + OpenLibrary (contact form now hits /api/contact internally)
               "connect-src 'self' https://api.discogs.com https://openlibrary.org",
               // Podcast player embed (if any iframes)
