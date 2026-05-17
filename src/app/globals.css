@@ -452,7 +452,7 @@ body {
 .db-section {
   background-color: #2C2A2A;
   color: #F3E7D6;
-  padding: clamp(4rem, 8vw, 7rem) clamp(1.5rem, 5vw, 4.5rem) clamp(4rem, 8vw, 7rem);
+  padding: clamp(4rem, 8vw, 7rem) var(--pf-pad) clamp(4rem, 8vw, 7rem);
 }
 
 .db-columns {
@@ -857,7 +857,7 @@ body {
 /* ─── Work Section (homepage) ───────────────────────── */
 
 .work-section {
-  padding: clamp(4rem, 8vw, 7rem) clamp(1.5rem, 5vw, 4.5rem);
+  padding: clamp(4rem, 8vw, 7rem) var(--pf-pad);
   background: transparent; /* canvas bleeds through from hero-work-wrap */
   position: relative;
   z-index: 1;

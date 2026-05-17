@@ -55,7 +55,7 @@ export default function RootLayout({
       </head>
       <body>
         <a href="/" aria-label="Aarron Walter" className="site-logo">
-          <Image src="/alt-aw-logo.png" alt="Aarron Walter" width={891} height={891} priority />
+          <Image src="/aarron-walter-logo.png" alt="Aarron Walter" width={891} height={891} priority />
         </a>
         <HamburgerMenu />
         <LightboxProvider>
