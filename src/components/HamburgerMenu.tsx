@@ -18,6 +18,7 @@ const TOP_LINKS = [
   { label: 'Listening', href: '/listening' },
   { label: 'About',     href: '/about' },
   { label: 'Contact',   href: '/contact' },
+  { label: 'Colophon',  href: '/colophon' },
 ]
 
 export default function HamburgerMenu() {

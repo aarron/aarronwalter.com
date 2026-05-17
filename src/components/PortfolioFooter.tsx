@@ -24,6 +24,7 @@ export default function PortfolioFooter() {
           <a href="https://linkedin.com/in/aarronwalter" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
+          <a href="/colophon">Colophon</a>
           <a href={BUG_URL} target="_blank" rel="noopener noreferrer">
             File a bug
           </a>

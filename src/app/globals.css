@@ -3458,6 +3458,127 @@ body {
 
 
 /* ═══════════════════════════════════════════════════════
+   COLOPHON PAGE
+═══════════════════════════════════════════════════════ */
+
+/* Header: flock lives in the top-right behind the title */
+.colophon-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.colophon-flock {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.colophon-hero .portfolio-header {
+  position: relative;
+  z-index: 1;
+}
+
+/* Type specimen */
+.colophon-specimen {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: clamp(2rem, 4vw, 3.5rem);
+  padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid rgba(44, 42, 42, 0.09);
+  border-radius: 6px;
+}
+
+.colophon-specimen-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.colophon-specimen-display {
+  font-family: 'Lineca', sans-serif;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: #2C2A2A;
+}
+
+.colophon-specimen-body {
+  font-family: 'aktiv-grotesk', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  color: #2C2A2A;
+  letter-spacing: 0;
+}
+
+.colophon-specimen-label {
+  font-family: 'aktiv-grotesk', sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(44, 42, 42, 0.4);
+}
+
+/* Inline code */
+.colophon-code {
+  font-family: ui-monospace, 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.88em;
+  background: rgba(44, 42, 42, 0.06);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  color: #2C2A2A;
+}
+
+/* Tech stack definition list */
+.colophon-stack {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid rgba(44, 42, 42, 0.09);
+}
+
+.colophon-stack-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1rem;
+  padding: 0.875rem 0;
+  border-bottom: 1px solid rgba(44, 42, 42, 0.09);
+}
+
+@media (max-width: 540px) {
+  .colophon-stack-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
+
+.colophon-stack-term {
+  font-family: 'aktiv-grotesk', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(44, 42, 42, 0.5);
+  padding-top: 0.1em;
+}
+
+.colophon-stack-def {
+  font-family: 'aktiv-grotesk', sans-serif;
+  font-size: 0.9375rem;
+  color: #2C2A2A;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .colophon-flock { display: none; }
+}
+
+/* ═══════════════════════════════════════════════════════
    404 NOT FOUND PAGE
 ═══════════════════════════════════════════════════════ */
 
