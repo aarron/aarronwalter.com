@@ -30,7 +30,7 @@ export default function ColophonPage() {
         {/* ── Lead ── */}
         <div className="pf-brand-hero">
           <p className="pf-brand-lead">
-            For the curious — and for my own memory — here's how this site came to be.
+            For the curious, and for my own memory, here's how this site came to be.
           </p>
         </div>
 
@@ -95,13 +95,24 @@ export default function ColophonPage() {
           {/* Type specimen */}
           <div className="colophon-specimen">
             <div className="colophon-specimen-row">
-              <span className="colophon-specimen-display">The quick brown fox jumps over the lazy dog</span>
+              <span className="colophon-specimen-display">Jedi knights vex Sith lords by quickly zapping the forgotten Wampa.</span>
               <span className="colophon-specimen-label">F37 Lineca — Display</span>
             </div>
             <div className="colophon-specimen-row">
-              <span className="colophon-specimen-body">The quick brown fox jumps over the lazy dog</span>
+              <span className="colophon-specimen-body">Joy quivers as love tears us apart; bleak fog hazes my dim, wrecked exit now.</span>
               <span className="colophon-specimen-label">Aktiv Grotesk — Body</span>
             </div>
+          </div>
+        </div>
+        
+        {/* ── Claude Code ── */}
+        <div className="pf-stacked-case">
+          <div className="pf-stacked-case__text" style={{ maxWidth: '68ch' }}>
+            <p className="pf-label">Audio Nerdery</p>
+            <h2 className="pf-heading">Sound Setup</h2>
+            <p className="pf-body">
+              Music matters to me, and dialing in the right listening experience is half the fun. After plenty of tinkering, here's the setup that keeps me happy in the studio: a Thorens TD125 Mk II turntable, a McIntosh MA5100 integrated amp, and a pair of Klipsch Heresy IV speakers. Warm sound, beautiful objects. My kids will fight over this gear when I die.
+            </p>
           </div>
         </div>
 

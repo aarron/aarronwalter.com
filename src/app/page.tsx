@@ -216,6 +216,16 @@ export default async function Home() {
               Design Better explores the intersection of design, technology, and the creative
               process through conversations with inspiring guests across many creative fields.
             </p>
+            
+            <div className="db-follow-links">
+              <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer" className="db-follow-link">Substack</a>
+              <span className="db-follow-sep" aria-hidden="true">·</span>
+              <a href="https://www.youtube.com/@designbetterpod" target="_blank" rel="noopener noreferrer" className="db-follow-link">YouTube</a>
+              <span className="db-follow-sep" aria-hidden="true">·</span>
+              <a href="https://designbetter.careers/" target="_blank" rel="noopener noreferrer" className="db-follow-link">Careers</a>
+              <span className="db-follow-sep" aria-hidden="true">·</span>
+              <a href="https://designbetter.team/" target="_blank" rel="noopener noreferrer" className="db-follow-link">For Teams</a>
+            </div>
 
             <div className="db-subscribe">
               <a href="https://open.spotify.com/show/59RliaMdeDAkEgp9nj1Mkj" target="_blank" rel="noopener noreferrer" className="db-subscribe-btn">
@@ -232,6 +242,19 @@ export default async function Home() {
               </a>
             </div>
 
+
+            {episode ? (
+              <AudioPlayer episode={episode} />
+            ) : (
+              <p className="t-caption" style={{ color: 'rgba(243,231,214,0.4)' }}>
+                Episode unavailable.{' '}
+                <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer" style={{ color: '#FF4725' }}>
+                  designbetterpodcast.com
+                </a>
+              </p>
+            )}
+
+            
             <dl className="db-stats">
               <div className="db-stat">
                 <dt className="db-stat-label">Subscribers</dt>
@@ -250,27 +273,6 @@ export default async function Home() {
                 <dd className="db-stat-value">311,528</dd>
               </div>
             </dl>
-
-            {episode ? (
-              <AudioPlayer episode={episode} />
-            ) : (
-              <p className="t-caption" style={{ color: 'rgba(243,231,214,0.4)' }}>
-                Episode unavailable.{' '}
-                <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer" style={{ color: '#FF4725' }}>
-                  designbetterpodcast.com
-                </a>
-              </p>
-            )}
-
-            <div className="db-follow-links">
-              <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer" className="db-follow-link">Substack</a>
-              <span className="db-follow-sep" aria-hidden="true">·</span>
-              <a href="https://www.youtube.com/@designbetterpod" target="_blank" rel="noopener noreferrer" className="db-follow-link">YouTube</a>
-              <span className="db-follow-sep" aria-hidden="true">·</span>
-              <a href="https://designbetter.careers/" target="_blank" rel="noopener noreferrer" className="db-follow-link">Careers</a>
-              <span className="db-follow-sep" aria-hidden="true">·</span>
-              <a href="https://designbetter.team/" target="_blank" rel="noopener noreferrer" className="db-follow-link">For Teams</a>
-            </div>
           </div>
 
           {/* Right — featured guests */}
