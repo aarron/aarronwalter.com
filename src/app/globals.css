@@ -3464,22 +3464,22 @@ body {
 /* Header: flock lives in the top-right behind the title */
 .colophon-hero {
   position: relative;
-  min-height: 340px;
-  overflow: visible; /* canvas extends below into content */
+  min-height: 300px;
+  overflow: visible; /* canvas bleeds below into content */
 }
 
 .colophon-flock {
   position: absolute;
   top: 0;
   right: 0;
-  width: 76%;
-  height: 160%;           /* extends well below the header */
+  width: 80%;
+  height: 220%;           /* extends well below the hero section */
   pointer-events: none;
   z-index: 0;
   opacity: 1;
-  /* Fade the front lines to mist — they slip behind the page below */
-  -webkit-mask-image: linear-gradient(to bottom, black 38%, transparent 76%);
-  mask-image: linear-gradient(to bottom, black 38%, transparent 76%);
+  /* Mist fade: solid in the hero, dissolves as it extends below */
+  -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 68%);
+  mask-image: linear-gradient(to bottom, black 30%, transparent 68%);
 }
 
 .colophon-hero .portfolio-header {
