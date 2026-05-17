@@ -1475,6 +1475,7 @@ body {
   padding: clamp(3rem, 6vw, 5rem) var(--pf-pad) clamp(2.5rem, 5vw, 4rem);
   position: relative;
   z-index: 1;
+  background: transparent;
 }
 
 .pf-brand-logo {
@@ -1549,6 +1550,7 @@ body {
   padding: clamp(2.5rem, 5vw, 4.5rem) var(--pf-pad) clamp(3rem, 6vw, 5rem);
   position: relative;
   z-index: 1;
+  background: transparent;
 }
 
 .pf-stacked-case__text {
@@ -3476,14 +3478,11 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 62%;
-  height: 165%;
+  width: 60%;
+  height: 120%;
   pointer-events: none;
   z-index: 0;
-  opacity: 1;
-  /* Solid through hero, dissolves before body content */
-  -webkit-mask-image: linear-gradient(to bottom, black 48%, transparent 82%);
-  mask-image: linear-gradient(to bottom, black 48%, transparent 82%);
+  /* No mask — back lines fade naturally via low alpha; front lines land at hero bottom */
 }
 
 .colophon-hero .portfolio-header {

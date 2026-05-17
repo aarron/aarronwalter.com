@@ -14,13 +14,13 @@ const SAMPLES = 420
 // ─── Perspective plane ────────────────────────────────────────────────────────
 //
 //  Horizontal stacked lines. Plane recedes to the upper-LEFT.
-//  depthFrac = 0 → front / near (lower-right, "\" tilt — left high, right low)
+//  depthFrac = 0 → front / near (lower-right, steeper "\" tilt)
 //  depthFrac = 1 → back  / far  (upper-left, tightly compressed)
 //
-const FL = { x: 0.05, y: 0.84 }
-const FR = { x: 1.00, y: 0.96 }
-const BL = { x: -0.18, y: 0.04 }
-const BR = { x: 0.64, y: 0.00 }
+const FL = { x: 0.04, y: 0.76 }
+const FR = { x: 1.00, y: 0.97 }
+const BL = { x: -0.24, y: 0.02 }
+const BR = { x: 0.64, y: -0.01 }
 
 // Max mountain height at the front, as a fraction of canvas HEIGHT.
 // The "flat parallel lines" effect on back ridges comes entirely from
@@ -61,7 +61,7 @@ function mountainH(nx: number, lineIdx: number, t: number): number {
   let freq = 1.0
 
   for (let oct = 0; oct < 6; oct++) {
-    const drift = t * (0.003 + oct * 0.004)   // very slow per-octave drift
+    const drift = t * (0.008 + oct * 0.005)   // slow per-octave drift
     const v     = Math.sin(x * freq * 3.1 + drift + seed * oct * 0.27)
     h   += amp * (1.0 - Math.abs(v))           // ridged: sharp upward spikes
     amp  *= 0.52
@@ -73,8 +73,11 @@ function mountainH(nx: number, lineIdx: number, t: number): number {
   const d   = Math.abs(nx - 0.47) / 0.34
   const env = Math.max(0, 1.0 - d * d * d)    // cubic falloff
 
+  // Radio signal: slow amplitude wave traveling through the ridgelines
+  const signal = 1.0 + 0.12 * Math.sin(t * 0.38 + lineIdx * 0.21)
+
   const thresh = 0.52
-  return Math.max(0, h - thresh) * env
+  return Math.max(0, h - thresh) * env * signal
 }
 
 // ─── Perspective helpers ──────────────────────────────────────────────────────
