@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: 'Mailchimp — Aarron Walter',
     description: "As Mailchimp's fourth employee, Aarron Walter helped grow a scrappy email tool into a $12B SaaS platform — leading UX, product, and R&D from 2008 to 2016.",
     url: 'https://aarronwalter.com/portfolio/mailchimp',
-    images: [{ url: '/Aarron.jpg', alt: 'Aarron Walter' }],
+    images: [{ url: '/api/og?title=Mailchimp&description=Director+of+UX+%E2%80%94+GM+of+New+Products+%E2%80%94+VP+of+R%26D.+Helped+grow+a+scrappy+email+tool+into+a+%2412B+platform.', width: 1200, height: 630, alt: 'Mailchimp — Aarron Walter' }],
   },
   alternates: { canonical: 'https://aarronwalter.com/portfolio/mailchimp' },
 }

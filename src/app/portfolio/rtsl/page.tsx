@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Resolve to Save Lives — Aarron Walter',
     description: 'Director of Product & Design for the US COVID Response at Resolve to Save Lives (2020–2022). Led design for public health tools used across the country.',
     url: 'https://aarronwalter.com/portfolio/rtsl',
-    images: [{ url: '/Aarron.jpg', alt: 'Aarron Walter' }],
+    images: [{ url: '/api/og?title=Resolve+to+Save+Lives&description=Director+of+Product+%26+Design+for+the+US+COVID+Response.+Built+public+health+tools+for+WHO%2C+Africa+CDC%2C+and+more.', width: 1200, height: 630, alt: 'Resolve to Save Lives — Aarron Walter' }],
   },
   alternates: { canonical: 'https://aarronwalter.com/portfolio/rtsl' },
 }

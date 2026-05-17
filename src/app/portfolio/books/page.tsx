@@ -5,6 +5,7 @@ import BookFrame from '@/components/BookFrame'
 import TestimonialPair from '@/components/TestimonialPair'
 import PortfolioNav from '@/components/PortfolioNav'
 import PortfolioFooter from '@/components/PortfolioFooter'
+import JsonLd from '@/components/JsonLd'
 
 export const metadata: Metadata = {
   title: 'My Books',
@@ -13,14 +14,52 @@ export const metadata: Metadata = {
     title: 'My Books — Aarron Walter',
     description: 'Author of Designing for Emotion and co-author of Principles of Product Design and Design Leadership Handbook.',
     url: 'https://aarronwalter.com/portfolio/books',
-    images: [{ url: '/Aarron.jpg', alt: 'Aarron Walter' }],
+    images: [{ url: '/api/og?title=My+Books&description=Author+of+Designing+for+Emotion+and+co-author+of+Principles+of+Product+Design+and+Design+Leadership+Handbook.', width: 1200, height: 630, alt: 'My Books — Aarron Walter' }],
   },
   alternates: { canonical: 'https://aarronwalter.com/portfolio/books' },
+}
+
+const BOOKS_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Book',
+      name: 'Designing for Emotion',
+      author: { '@type': 'Person', name: 'Aarron Walter', url: 'https://aarronwalter.com' },
+      publisher: { '@type': 'Organization', name: 'A Book Apart' },
+      datePublished: '2011',
+      url: 'https://designbetterpodcast.com/p/designing-for-emotion',
+      description: 'How emotion, personality, and surprise can turn a useful product into one people love.',
+    },
+    {
+      '@type': 'Book',
+      name: 'Principles of Product Design',
+      author: { '@type': 'Person', name: 'Aarron Walter', url: 'https://aarronwalter.com' },
+      publisher: { '@type': 'Organization', name: 'Design Better' },
+      datePublished: '2018',
+      url: 'https://designbetterpodcast.com/p/principles-of-product-design',
+      description: 'Distills the practices that show up again and again at the design teams doing the best work.',
+    },
+    {
+      '@type': 'Book',
+      name: 'Design Leadership Handbook',
+      author: [
+        { '@type': 'Person', name: 'Aarron Walter', url: 'https://aarronwalter.com' },
+        { '@type': 'Person', name: 'Eli Woolery' },
+      ],
+      publisher: { '@type': 'Organization', name: 'Design Better' },
+      datePublished: '2019',
+      url: 'https://designbetterpodcast.com/p/design-leadership-handbook',
+      description: 'A guide for designers stepping into their first leadership role.',
+    },
+  ],
 }
 
 export default function BooksPage() {
   return (
     <>
+      <JsonLd data={BOOKS_JSON_LD} />
+
       <article className="page-article">
 
         {/* ── Header ── */}

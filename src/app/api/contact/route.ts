@@ -1,7 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+// Lazily instantiated so the build doesn't fail when RESEND_API_KEY is absent
+function getResend() {
+  if (!process.env.RESEND_API_KEY) throw new Error('RESEND_API_KEY is not set')
+  return new Resend(process.env.RESEND_API_KEY)
+}
 
 // Max field lengths — reject absurdly large payloads before processing
 const LIMITS: Record<string, number> = {
@@ -74,6 +78,25 @@ ${data.event_budget ? `<strong>Budget:</strong> ${esc(data.event_budget)}<br>` :
   `.trim()
 }
 
+function confirmationEmail(name: string, type: string): string {
+  const typeNote =
+    type === 'guest'    ? `<p>I'll take a look at your guest pitch and get back to you if it's a good fit for Design Better.</p>` :
+    type === 'speaking' ? `<p>I'll review the details of your event and be in touch about availability.</p>` :
+                          `<p>I'll get back to you soon.</p>`
+
+  return `
+<p>Hi ${esc(name)},</p>
+<p>Thanks for reaching out — your message landed safely.</p>
+${typeNote}
+<p>— Aarron</p>
+<hr style="border:none;border-top:1px solid #e5e5e5;margin:24px 0">
+<p style="font-size:12px;color:#999">
+  <a href="https://aarronwalter.com" style="color:#999">aarronwalter.com</a> ·
+  <a href="https://designbetterpodcast.com" style="color:#999">Design Better</a>
+</p>
+  `.trim()
+}
+
 function esc(s: string = ''): string {
   return s
     .replace(/&/g, '&amp;')
@@ -126,12 +149,23 @@ export async function POST(req: NextRequest) {
                                `Contact form: ${name}`
 
   try {
+    const resend = getResend()
+
+    // Send notification to Aarron
     await resend.emails.send({
-      from:     'Aarron Walter <contact@thecuriositydepartment.com>',
-      to:       'aarronwalter@gmail.com',
-      replyTo:  email,
+      from:    'Aarron Walter <contact@thecuriositydepartment.com>',
+      to:      'aarronwalter@gmail.com',
+      replyTo: email,
       subject,
-      html:     formatEmail(data),
+      html:    formatEmail(data),
+    })
+
+    // Send confirmation to the submitter
+    await resend.emails.send({
+      from:    'Aarron Walter <contact@thecuriositydepartment.com>',
+      to:      email,
+      subject: 'Got your message',
+      html:    confirmationEmail(name, data.type as string),
     })
 
     return NextResponse.json({ ok: true })

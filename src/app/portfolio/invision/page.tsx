@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'InVision — Aarron Walter',
     description: 'VP of Design Education & Content at InVision (2016–2020). Built Design Better — a podcast and publication reaching millions of designers worldwide.',
     url: 'https://aarronwalter.com/portfolio/invision',
-    images: [{ url: '/Aarron.jpg', alt: 'Aarron Walter' }],
+    images: [{ url: '/api/og?title=InVision&description=VP+of+Design+Education+%26+Content.+Built+Design+Better+%E2%80%94+a+podcast+and+publication+reaching+millions+of+designers.', width: 1200, height: 630, alt: 'InVision — Aarron Walter' }],
   },
   alternates: { canonical: 'https://aarronwalter.com/portfolio/invision' },
 }

@@ -5,6 +5,37 @@ import GuestCard from '@/components/GuestCard'
 import HeroWaves from '@/components/HeroWaves'
 import WaveTransition from '@/components/WaveTransition'
 import FooterWave from '@/components/FooterWave'
+import JsonLd from '@/components/JsonLd'
+
+const PERSON_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Aarron Walter',
+  url: 'https://aarronwalter.com',
+  image: 'https://aarronwalter.com/Aarron.jpg',
+  jobTitle: 'Co-founder, Design Better',
+  description:
+    'Designer, author, and co-founder of Design Better. Two decades shaping how the tech industry thinks about design — from Mailchimp to the White House.',
+  sameAs: [
+    'https://www.linkedin.com/in/aarron/',
+    'https://twitter.com/aarron',
+    'https://medium.com/@aarron',
+    'https://designbetterpodcast.com',
+  ],
+  knowsAbout: [
+    'UX Design',
+    'Product Design',
+    'Design Leadership',
+    'Design Systems',
+    'User Research',
+    'Design Strategy',
+  ],
+  author: [
+    { '@type': 'Book', name: 'Designing for Emotion', publisher: 'A Book Apart' },
+    { '@type': 'Book', name: 'Principles of Product Design', publisher: 'Design Better' },
+    { '@type': 'Book', name: 'Design Leadership Handbook', publisher: 'Design Better' },
+  ],
+}
 
 function SpotifyIcon() {
   return (
@@ -92,6 +123,8 @@ export default async function Home() {
 
   return (
     <>
+      <JsonLd data={PERSON_JSON_LD} />
+
       {/* ── Hero + Work (shared canvas) ──────────────── */}
       <div className="hero-work-wrap">
       <HeroWaves className="hero-waves" />

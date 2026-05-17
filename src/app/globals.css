@@ -1106,10 +1106,11 @@ body {
 }
 
 /* When StatBlock sits inside a pf-stacked-case, the parent's padding already
-   provides the gutter — cancel the stats' own margin so it spans full width. */
+   provides the gutter — reset the stats' own side margin so it aligns with the
+   text and image content rather than extending to the container edge. */
 .pf-stacked-case .portfolio-stats {
-  margin-left: calc(-1 * var(--pf-pad));
-  margin-right: calc(-1 * var(--pf-pad));
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .portfolio-stat {

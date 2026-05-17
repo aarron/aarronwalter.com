@@ -4,6 +4,8 @@ import './globals.css'
 import HamburgerMenu from '@/components/HamburgerMenu'
 import { LightboxProvider } from '@/components/Lightbox'
 
+const OG_DEFAULT = '/api/og?title=Aarron+Walter&description=Co-founder+of+Design+Better.+Two+decades+shaping+how+the+tech+industry+thinks+about+design.'
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://aarronwalter.com'),
   title: {
@@ -19,14 +21,7 @@ export const metadata: Metadata = {
     siteName: 'Aarron Walter',
     url: 'https://aarronwalter.com',
     type: 'website',
-    images: [
-      {
-        url: '/Aarron.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Aarron Walter',
-      },
-    ],
+    images: [{ url: OG_DEFAULT, width: 1200, height: 630, alt: 'Aarron Walter' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -35,7 +30,7 @@ export const metadata: Metadata = {
     title: 'Aarron Walter',
     description:
       'Designer, co-founder of Design Better, and two-decade voice in how the tech industry thinks about design.',
-    images: ['/Aarron.jpg'],
+    images: [OG_DEFAULT],
   },
   alternates: {
     canonical: 'https://aarronwalter.com',

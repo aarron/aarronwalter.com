@@ -3,6 +3,7 @@ import Image from 'next/image'
 import FooterWave from '@/components/FooterWave'
 import ClientLogoGrid from '@/components/ClientLogoGrid'
 import MountainTransition from '@/components/MountainTransition'
+import JsonLd from '@/components/JsonLd'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     title: 'About — Aarron Walter',
     description: 'Designer, author, and co-founder of Design Better. Two decades shaping how the tech industry thinks about design.',
     url: 'https://aarronwalter.com/about',
-    images: [{ url: '/Aarron.jpg', alt: 'Aarron Walter' }],
+    images: [{ url: '/api/og?title=About&description=Designer%2C+author%2C+and+co-founder+of+Design+Better.+Two+decades+shaping+how+the+tech+industry+thinks+about+design.', width: 1200, height: 630, alt: 'About — Aarron Walter' }],
   },
   alternates: { canonical: 'https://aarronwalter.com/about' },
 }
@@ -40,6 +41,21 @@ const INTERVIEWS: { outlet: string; title: string; href?: string }[] = [
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={{
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: 'Aarron Walter',
+        url: 'https://aarronwalter.com',
+        image: 'https://aarronwalter.com/Aarron.jpg',
+        jobTitle: 'Co-founder, Design Better',
+        description: 'Designer, author, and co-founder of Design Better. Two decades shaping how the tech industry thinks about design.',
+        sameAs: [
+          'https://www.linkedin.com/in/aarron/',
+          'https://twitter.com/aarron',
+          'https://designbetterpodcast.com',
+        ],
+      }} />
+
       <article className="page-article about-article">
 
         <div className="about-illustration-wrap">

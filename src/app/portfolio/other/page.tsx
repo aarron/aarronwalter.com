@@ -9,6 +9,13 @@ import PortfolioFooter from '@/components/PortfolioFooter'
 export const metadata: Metadata = {
   title: 'Consulting',
   description: 'Speaker, advisor, and consultant — Aarron Walter has advised Google, IBM, the White House, WHO, and hundreds of companies on design strategy and product thinking.',
+  openGraph: {
+    title: 'Consulting — Aarron Walter',
+    description: 'Speaker, advisor, and consultant. Advised Google, IBM, the White House, WHO, and hundreds of companies on design strategy and product thinking.',
+    url: 'https://aarronwalter.com/portfolio/other',
+    images: [{ url: '/api/og?title=Consulting&description=Speaker%2C+advisor%2C+and+strategist.+Clients+include+Google%2C+IBM%2C+the+White+House%2C+WHO%2C+and+hundreds+more.', width: 1200, height: 630, alt: 'Consulting — Aarron Walter' }],
+  },
+  alternates: { canonical: 'https://aarronwalter.com/portfolio/other' },
 }
 
 export default function OtherPage() {
