@@ -51,8 +51,8 @@ const nextConfig: NextConfig = {
               "font-src 'self' https://use.typekit.net https://p.typekit.net",
               // Images: self + podcast artwork CDN + Open Library book covers + Discogs
               "img-src 'self' data: blob: https://megaphone.imgix.net https://covers.openlibrary.org https://img.discogs.com https://i.discogs.com",
-              // API calls: self + Formspree (contact form) + Discogs + OpenLibrary
-              "connect-src 'self' https://formspree.io https://api.discogs.com https://openlibrary.org",
+              // API calls: self + Discogs + OpenLibrary (contact form now hits /api/contact internally)
+              "connect-src 'self' https://api.discogs.com https://openlibrary.org",
               // Podcast player embed (if any iframes)
               "frame-src 'self'",
               // Media: self + podcast CDN
