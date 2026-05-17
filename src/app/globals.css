@@ -3478,12 +3478,10 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 60%;
-  height: 120%;
+  width: 65%;
+  height: 115%;
   pointer-events: none;
   z-index: 0;
-  transform: rotate(-20deg);
-  transform-origin: top right;
 }
 
 .colophon-hero .portfolio-header {
