@@ -24,7 +24,7 @@ export default function BooksPage() {
       <article className="page-article">
 
         {/* ── Header ── */}
-        <PageHeader eyebrow="Author" title="My Books" />
+        <PageHeader title="My Books" />
 
         {/* ── Lead ── */}
         <div className="pf-brand-hero">

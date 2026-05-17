@@ -1,5 +1,5 @@
 interface PageHeaderProps {
-  eyebrow: string
+  eyebrow?: string
   title: string
   /** Optional image rendered directly below the red rule */
   logo?: React.ReactNode
@@ -12,7 +12,7 @@ interface PageHeaderProps {
 export default function PageHeader({ eyebrow, title, logo }: PageHeaderProps) {
   return (
     <header className="portfolio-header">
-      <p className="t-label portfolio-eyebrow">{eyebrow}</p>
+      {eyebrow && <p className="t-label portfolio-eyebrow">{eyebrow}</p>}
       <h1 className="portfolio-title">{title}</h1>
       <hr className="page-header-rule" />
       {logo && <div className="portfolio-header-logo">{logo}</div>}
