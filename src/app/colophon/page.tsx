@@ -24,7 +24,7 @@ export default function ColophonPage() {
         {/* ── Header with flock in top right ── */}
         <div className="colophon-hero">
           <RidgelineCanvas className="colophon-flock" />
-          <span className="viz-credit">Data source: <a href="https://gist.github.com/borgar/31c1e476b8e92a11d7e9" target="_blank" rel="noopener noreferrer">PSR B1919+21 pulsar</a> · Harold Craft, Cornell · 1970</span>
+          <span className="viz-credit" style={{ bottom: 'auto', top: 'calc(clamp(16rem, 24vw, 20rem) + clamp(4rem, 12vw, 10rem) * 0.88 + clamp(1.5rem, 3vw, 2.5rem))' }}>Data source: <a href="https://gist.github.com/borgar/31c1e476b8e92a11d7e9" target="_blank" rel="noopener noreferrer">PSR B1919+21 pulsar</a> · Harold Craft, Cornell · 1970</span>
           <PageHeader title="Colophon" />
         </div>
 

@@ -534,7 +534,7 @@ body {
 
 .db-logo-img {
   display: block;
-  width: clamp(160px, 22vw, 300px);
+  width: clamp(130px, 17vw, 240px);
   height: auto;
   align-self: flex-start;
 }

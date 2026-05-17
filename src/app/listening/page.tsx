@@ -54,7 +54,7 @@ export default function ListeningPage() {
           ampRef={0.48}
           animate="breath"
         />
-        <span className="viz-credit" style={{ bottom: 'auto', top: 'clamp(420px, 46vh, 580px)' }}>Data source: <a href="https://gwosc.org/events/GW150914/" target="_blank" rel="noopener noreferrer">GW150914 strain</a> · LIGO GWOSC · Sept 14, 2015</span>
+        <span className="viz-credit" style={{ bottom: 'auto', top: 'calc(clamp(16rem, 24vw, 20rem) + clamp(4rem, 12vw, 10rem) * 0.9 + clamp(1.5rem, 3vw, 2.5rem))' }}>Data source: <a href="https://gwosc.org/events/GW150914/" target="_blank" rel="noopener noreferrer">GW150914 strain</a> · LIGO GWOSC · Sept 14, 2015</span>
 
         <header className="page-header">
           <h1 className="page-header-title">Listening</h1>
