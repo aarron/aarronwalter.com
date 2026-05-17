@@ -127,7 +127,7 @@ export async function POST(req: NextRequest) {
 
   try {
     await resend.emails.send({
-      from:     'Aarron Walter <onboarding@resend.dev>',
+      from:     'Aarron Walter <contact@thecuriositydepartment.com>',
       to:       'aarronwalter@gmail.com',
       replyTo:  email,
       subject,
