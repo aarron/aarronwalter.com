@@ -2,50 +2,32 @@
 
 import { useEffect, useRef } from 'react'
 
-interface Line {
-  /** Vertical centre as fraction of canvas height */
+interface LineConfig {
   cy: number
-  /** Amplitude as fraction of canvas height */
   amp: number
-  /** Overall time speed multiplier */
   speed: number
-  /** Phase offset so lines start de-synced */
   phase: number
   strokeStyle: string
   lineWidth: number
 }
 
-const LINES: Line[] = [
-  {
-    cy: 0.42,
-    amp: 0.38,
-    speed: 1.0,
-    phase: 0,
-    strokeStyle: 'rgba(44, 42, 42, 0.20)',
-    lineWidth: 1.2,
-  },
-  {
-    cy: 0.52,
-    amp: 0.30,
-    speed: 0.73,
-    phase: 2.1,
-    strokeStyle: 'rgba(44, 42, 42, 0.13)',
-    lineWidth: 1.5,
-  },
-  {
-    cy: 0.60,
-    amp: 0.42,
-    speed: 1.28,
-    phase: 4.7,
-    strokeStyle: 'rgba(44, 42, 42, 0.09)',
-    lineWidth: 1.0,
-  },
+// Dark-background palette (cream/paper tones)
+const DARK_BG_LINES: LineConfig[] = [
+  { cy: 0.42, amp: 0.38, speed: 1.00, phase: 0.0, strokeStyle: 'rgba(243, 231, 214, 0.35)', lineWidth: 1.2 },
+  { cy: 0.52, amp: 0.30, speed: 0.73, phase: 2.1, strokeStyle: 'rgba(243, 231, 214, 0.20)', lineWidth: 1.5 },
+  { cy: 0.60, amp: 0.42, speed: 1.28, phase: 4.7, strokeStyle: 'rgba(243, 231, 214, 0.12)', lineWidth: 1.0 },
+]
+
+// Light-background palette (ink tones)
+const LIGHT_BG_LINES: LineConfig[] = [
+  { cy: 0.42, amp: 0.38, speed: 1.00, phase: 0.0, strokeStyle: 'rgba(44, 42, 42, 0.20)', lineWidth: 1.2 },
+  { cy: 0.52, amp: 0.30, speed: 0.73, phase: 2.1, strokeStyle: 'rgba(44, 42, 42, 0.13)', lineWidth: 1.5 },
+  { cy: 0.60, amp: 0.42, speed: 1.28, phase: 4.7, strokeStyle: 'rgba(44, 42, 42, 0.09)', lineWidth: 1.0 },
 ]
 
 export default function FooterWave({ color }: { color?: string }) {
-  // `color` prop is accepted for API compatibility but the multi-line
-  // version uses its own palette; pass it through if you want a single override.
-  void color
+  // color prop: when provided the footer sits on a dark background → use cream lines
+  const isDark = Boolean(color)
   const ref = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -53,6 +35,8 @@ export default function FooterWave({ color }: { color?: string }) {
     if (!canvas) return
     const ctx = canvas.getContext('2d')
     if (!ctx) return
+
+    const lines = isDark ? DARK_BG_LINES : LIGHT_BG_LINES
 
     let raf: number
     const t0 = performance.now()
@@ -64,7 +48,7 @@ export default function FooterWave({ color }: { color?: string }) {
       ctx!.setTransform(dpr, 0, 0, dpr, 0, 0)
     }
 
-    function drawLine(line: Line, t: number, w: number, h: number) {
+    function drawLine(line: LineConfig, t: number, w: number, h: number) {
       const { cy, amp, speed, phase, strokeStyle, lineWidth } = line
       const steps = 360
       const T = t * speed + phase
@@ -74,7 +58,6 @@ export default function FooterWave({ color }: { color?: string }) {
       for (let s = 0; s <= steps; s++) {
         const xn = s / steps
 
-        // Breathing envelope — different per line due to speed & phase
         const envelope = 0.60 + 0.40 * Math.sin(xn * 2.3 - T * 0.18 + phase * 0.4)
 
         const disp = (
@@ -82,7 +65,7 @@ export default function FooterWave({ color }: { color?: string }) {
           Math.sin(xn *  2.1 + T * 0.29) * 0.28 +
           Math.sin(xn * 11.3 + T * 0.91) * 0.14 +
           Math.sin(xn *  4.5 + T * 0.22) * 0.22 +
-          Math.sin(xn *  0.9 - T * 0.11) * 0.12   // slow roll
+          Math.sin(xn *  0.9 - T * 0.11) * 0.12
         ) * envelope
 
         const x = xn * w
@@ -105,7 +88,7 @@ export default function FooterWave({ color }: { color?: string }) {
 
       ctx!.clearRect(0, 0, w, h)
 
-      for (const line of LINES) {
+      for (const line of lines) {
         drawLine(line, t, w, h)
       }
 
@@ -121,7 +104,7 @@ export default function FooterWave({ color }: { color?: string }) {
       cancelAnimationFrame(raf)
       ro.disconnect()
     }
-  }, [])
+  }, [isDark])
 
   return (
     <canvas ref={ref} style={{ display: 'block', width: '100%', height: '100%' }} />
