@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# local archives — unused assets kept offline, never deployed
+_archive/
+
 # legacy archive (node_modules inside)
 _legacy/node_modules
 
@@ -42,3 +45,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.env*.local

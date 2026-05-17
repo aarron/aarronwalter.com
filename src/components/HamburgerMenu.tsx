@@ -1,23 +1,35 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
+import Image from 'next/image'
 
-const NAV_LINKS = [
-  { label: 'Home', href: '/' },
-  { label: 'Portfolio', href: '/#work' },
-  { label: 'Reading', href: '/reading' },
+const PORTFOLIO_LINKS = [
+  { label: 'Mailchimp',              href: '/portfolio/mailchimp' },
+  { label: 'InVision',               href: '/portfolio/invision' },
+  { label: 'Resolve to Save Lives',  href: '/portfolio/rtsl' },
+  { label: 'Consulting',             href: '/portfolio/other' },
+  { label: 'My Books',               href: '/portfolio/books' },
+]
+
+const TOP_LINKS = [
+  { label: 'Home',      href: '/' },
+  { label: 'Reading',   href: '/reading' },
   { label: 'Listening', href: '/listening' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'About',     href: '/about' },
+  { label: 'Contact',   href: '/contact' },
 ]
 
 export default function HamburgerMenu() {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
+
+  const close = () => setOpen(false)
 
   // Close on Escape
   useEffect(() => {
     if (!open) return
-    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') close() }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
   }, [open])
@@ -32,6 +44,8 @@ export default function HamburgerMenu() {
       document.body.style.overflow = ''
     }
   }, [open])
+
+  const isPortfolioActive = pathname.startsWith('/portfolio/')
 
   return (
     <>
@@ -49,7 +63,7 @@ export default function HamburgerMenu() {
       {/* Backdrop */}
       <div
         className={`nav-backdrop${open ? ' is-visible' : ''}`}
-        onClick={() => setOpen(false)}
+        onClick={close}
         aria-hidden
       />
 
@@ -60,18 +74,70 @@ export default function HamburgerMenu() {
         aria-hidden={!open}
       >
         <ul className="nav-list">
-          {NAV_LINKS.map(({ label, href }) => (
-            <li key={label}>
+
+          {/* Home */}
+          <li>
+            <a
+              href="/"
+              className={`nav-link${pathname === '/' ? ' nav-link--active' : ''}`}
+              onClick={close}
+            >
+              Home
+            </a>
+          </li>
+
+          {/* Portfolio section */}
+          <li className="nav-portfolio-section">
+            <span className={`nav-section-label${isPortfolioActive ? ' nav-section-label--active' : ''}`}>
+              Portfolio
+            </span>
+            <ul className="nav-sublist">
+              {PORTFOLIO_LINKS.map(({ label, href }) => (
+                <li key={href}>
+                  <a
+                    href={href}
+                    className={`nav-sublink${pathname === href ? ' nav-sublink--active' : ''}`}
+                    onClick={close}
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </li>
+
+          {/* Reading, Listening, About, Contact */}
+          {TOP_LINKS.filter(l => l.label !== 'Home').map(({ label, href }) => (
+            <li key={href}>
               <a
                 href={href}
-                className="nav-link"
-                onClick={() => setOpen(false)}
+                className={`nav-link${pathname === href ? ' nav-link--active' : ''}`}
+                onClick={close}
               >
                 {label}
               </a>
             </li>
           ))}
+
         </ul>
+
+        {/* Footer — hairline + Design Better logo */}
+        <div className="nav-footer">
+          <a
+            href="https://designbetterpodcast.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-db-logo"
+            aria-label="Design Better Podcast"
+          >
+            <Image
+              src="/db-logos/DesignBetterWhite.svg"
+              alt="Design Better"
+              width={200}
+              height={54}
+            />
+          </a>
+        </div>
       </nav>
     </>
   )

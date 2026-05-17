@@ -114,15 +114,13 @@ export default async function Home() {
           </p>
 
           <div className="hero-links">
-            <a href="https://www.aarronwalter.com/s/aarron-walter-resume.pdf" target="_blank" rel="noopener noreferrer" className="hero-link">Resume</a>
-            <span className="hero-link-sep" aria-hidden="true">·</span>
             <a href="https://www.linkedin.com/in/aarron/" target="_blank" rel="noopener noreferrer" className="hero-link">LinkedIn</a>
             <span className="hero-link-sep" aria-hidden="true">·</span>
             <a href="https://twitter.com/aarron" target="_blank" rel="noopener noreferrer" className="hero-link">Twitter</a>
             <span className="hero-link-sep" aria-hidden="true">·</span>
             <a href="https://medium.com/@aarron" target="_blank" rel="noopener noreferrer" className="hero-link">Medium</a>
             <span className="hero-link-sep" aria-hidden="true">·</span>
-            <a href="https://www.aarronwalter.com/contact" target="_blank" rel="noopener noreferrer" className="hero-link">Email</a>
+            <a href="/contact" className="hero-link">Email</a>
           </div>
         </div>
       </section>
@@ -138,7 +136,8 @@ export default async function Home() {
               { index: '01', company: 'Mailchimp', role: 'Director of UX · GM of New Products · VP of R&D', years: '2008–2016', href: '/portfolio/mailchimp' },
               { index: '02', company: 'Resolve to Save Lives', role: 'Director of Product, US COVID Response', years: '2020–2022', href: '/portfolio/rtsl' },
               { index: '03', company: 'InVision', role: 'VP of Design Education & Content', years: '2016–2020', href: '/portfolio/invision' },
-              { index: '04', company: 'Consulting & Publishing', role: 'Author · Speaker · Advisor', years: 'Ongoing', href: '/portfolio/other' },
+              { index: '04', company: 'Consulting', role: 'Speaker · Advisor · Strategist', years: 'Ongoing', href: '/portfolio/other' },
+              { index: '05', company: 'My Books', role: 'Designing for Emotion · Principles of Product Design', years: 'Author', href: '/portfolio/books' },
             ].map((item) => (
               <li key={item.company} className="work-item">
                 <a href={item.href} className="work-link">
@@ -228,7 +227,7 @@ export default async function Home() {
             )}
 
             <div className="db-follow-links">
-              <a href="http://designbetterpodcast.com" target="_blank" rel="noopener noreferrer" className="db-follow-link">Substack</a>
+              <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer" className="db-follow-link">Substack</a>
               <span className="db-follow-sep" aria-hidden="true">·</span>
               <a href="https://www.youtube.com/@designbetterpod" target="_blank" rel="noopener noreferrer" className="db-follow-link">YouTube</a>
               <span className="db-follow-sep" aria-hidden="true">·</span>

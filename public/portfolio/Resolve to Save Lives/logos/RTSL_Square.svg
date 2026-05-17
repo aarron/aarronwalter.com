@@ -1,9 +1,0 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_3_294)">
-<path d="M0 29C0 27.3431 1.34315 26 3 26V26C4.65685 26 6 27.3431 6 29V29C6 30.6569 4.65685 32 3 32V32C1.34315 32 0 30.6569 0 29V29Z" fill="#382986"/>
-<rect y="13" width="19" height="6" rx="3" fill="#F3775B"/>
-<rect width="32" height="6" rx="3" fill="#F3775B"/>
-<rect x="19" y="13" width="19" height="6" rx="3" transform="rotate(90 19 13)" fill="#F3775B"/>
-<rect x="32" width="32" height="6" rx="3" transform="rotate(90 32 0)" fill="#F3775B"/>
-</g>
-</svg>

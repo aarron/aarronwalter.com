@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 }
 
 const INTERVIEWS = [
-  { outlet: 'Fast Company',              title: '"Fail Fast" In Software Design Is A Myth',         href: 'https://www.fastcodesign.com/90136012/fail-fast-in-software-design-is-a-myth' },
+  { outlet: 'Fast Company',              title: '"Fail Fast" In Software Design Is A Myth',         href: 'https://www.fastcompany.com/90136012/fail-fast-in-software-design-is-a-myth' },
   { outlet: 'Design Matters',            title: 'With Debbie Millman',                              href: 'http://observermedia.designobserver.com/audio/ben-chestnut-and-aarron-walter/37883/' },
   { outlet: 'TechCrunch',               title: 'The Most Overlooked Aspect Of UX Design',           href: 'http://techcrunch.com/2015/11/22/the-most-overlooked-aspect-of-ux-design-could-be-the-most-important/' },
   { outlet: 'Inside Intercom',           title: 'InVision\'s Aarron Walter on Design Culture',      href: 'https://blog.intercom.com/invisions-aarron-walter-on-design-culture/' },

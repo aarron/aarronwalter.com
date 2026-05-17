@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import HamburgerMenu from '@/components/HamburgerMenu'
+import { LightboxProvider } from '@/components/Lightbox'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://aarronwalter.com'),
@@ -57,9 +58,11 @@ export default function RootLayout({
           <img src="/alt-aw-logo.png" alt="Aarron Walter" width={400} height={400} />
         </a>
         <HamburgerMenu />
-        <div id="page-content">
-          {children}
-        </div>
+        <LightboxProvider>
+          <div id="page-content">
+            {children}
+          </div>
+        </LightboxProvider>
       </body>
     </html>
   )

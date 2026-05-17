@@ -1,6 +1,12 @@
 import type { Metadata } from 'next'
-import FooterWave from '@/components/FooterWave'
-import OdometerValue from '@/components/OdometerValue'
+import PageHeader from '@/components/PageHeader'
+import StatBlock from '@/components/StatBlock'
+import CaseStudySection from '@/components/CaseStudySection'
+import BrowserFrame from '@/components/BrowserFrame'
+import BrowserFrameGrid from '@/components/BrowserFrameGrid'
+import TestimonialPair from '@/components/TestimonialPair'
+import PortfolioNav from '@/components/PortfolioNav'
+import PortfolioFooter from '@/components/PortfolioFooter'
 
 export const metadata: Metadata = {
   title: 'Resolve to Save Lives',
@@ -18,152 +24,200 @@ export default function RTSLPage() {
   return (
     <>
       <article className="page-article">
+
         {/* ── Header ── */}
-        <header className="portfolio-header">
-          <p className="t-label portfolio-eyebrow">2020–2022</p>
-          <h1 className="portfolio-title">Resolve to Save Lives</h1>
-          <hr className="page-header-rule" />
-        </header>
+        <PageHeader eyebrow="2020–2022" title="Resolve to Save Lives" />
 
-        {/* ── Content ── */}
-        <div className="portfolio-content">
-
-          {/* Overview */}
-          <p className="portfolio-lead">
+        {/* ── Brand Hero ── */}
+        <div className="pf-brand-hero">
+          <p className="pf-brand-lead">
             In April 2020, at the onset of the COVID-19 pandemic, I joined Resolve to Save Lives —
             a non-profit founded by Dr. Tom Frieden, former CDC Director under President Obama.
-            Leading an 8-person cross-disciplinary team, I helped build products and strategy that
-            supported life-saving pandemic response decisions across multiple countries.
+            Leading an 8-person cross-disciplinary team, I built products and strategy that
+            supported pandemic response decisions across multiple countries.
           </p>
-
-          <img src="/portfolio/Resolve%20to%20Save%20Lives/product-overview.png" alt="Product overview" className="case-study-image" />
-
-          {/* Stats */}
-          <div className="portfolio-stats">
-            <div className="portfolio-stat">
-              <div className="portfolio-stat-value"><OdometerValue value="8" /></div>
-              <div className="portfolio-stat-label">Person team led</div>
-            </div>
-            <div className="portfolio-stat">
-              <div className="portfolio-stat-value"><OdometerValue value="$2M" /></div>
-              <div className="portfolio-stat-label">Budget managed</div>
-            </div>
-            <div className="portfolio-stat">
-              <div className="portfolio-stat-value"><OdometerValue value="$75M" /></div>
-              <div className="portfolio-stat-label">Digital public service project co-led</div>
-            </div>
-            <div className="portfolio-stat">
-              <div className="portfolio-stat-value"><OdometerValue value="4" /></div>
-              <div className="portfolio-stat-label">Products built and deployed</div>
-            </div>
-          </div>
-
-          {/* Product Impact */}
-          <section className="portfolio-section">
-            <h2 className="portfolio-section-title">Product Impact</h2>
-            <ul className="portfolio-list">
-              <li>Co-created COVID hotspot dashboard with Africa CDC, used by country leaders and the African Union to shape pandemic response decisions</li>
-              <li>Co-created a COVID dashboard with Franklin County, OH Department of Public Health</li>
-              <li>Co-led fundraising for a $75 million digital public service project</li>
-              <li>Supported creation of a digital transformation strategy for Africa CDC</li>
-              <li>Served as temporary advisor to WHO on the creation of digital smart vaccine credentials</li>
-              <li>Supported CDC's use of technology in pandemic response</li>
-              <li>Built four products deployed across public health jurisdictions in multiple states</li>
-            </ul>
-          </section>
-
-          {/* Team */}
-          <section className="portfolio-section">
-            <h2 className="portfolio-section-title">Team &amp; Operations</h2>
-            <ul className="portfolio-list">
-              <li>Recruited and hired SVP of Technology to unify efforts across initiatives</li>
-              <li>Recruited and hired Chief Digital Advisor for Africa CDC as part of a secondment agreement</li>
-              <li>Inherited leadership of the team during a difficult period and brought stability and direction</li>
-              <li>Managed reporting to donors and navigated complex relationships with external partners</li>
-              <li>Worked across cultures and time zones with epidemiologists, scientists, government officials, and large NGOs including WHO, CDC, and Africa CDC</li>
-              <li>Facilitated an executive leadership retreat</li>
-            </ul>
-          </section>
-
-          {/* Case Study */}
-          <section className="portfolio-section">
-            <h2 className="portfolio-section-title">Case Study</h2>
-
-            <div className="case-study">
-              <h3 className="case-study-title">Africa CDC COVID Hotspot Dashboard</h3>
-              <div className="case-study-meta">
-                <div className="case-study-meta-item">
-                  <span className="case-study-meta-label">Partners</span>
-                  <span className="case-study-meta-value">Africa CDC &amp; African Union</span>
-                </div>
-                <div className="case-study-meta-item">
-                  <span className="case-study-meta-label">Live at</span>
-                  <span className="case-study-meta-value">africacdccovid.org</span>
-                </div>
-              </div>
-              <div className="case-study-body">
-                <p>Starting in April 2020 with a design sprint to explore how technology could support pandemic response, our team's central thesis was that "boxing in the virus through contact tracing" would be the most effective strategy. We moved fast — using Google Sheets for data storage and Node.js to reduce server-side development — building under the kind of high-stakes conditions where leaders were using our dashboards to decide whether to shut down cities and countries.</p>
-                <p>The Africa CDC dashboard tracked COVID cases, tests, deaths, and key outbreak indicators defined by epidemiologists. It was used directly by Africa CDC leaders and the African Union to shape continent-wide COVID response.</p>
-                <div className="case-study-image-grid">
-                  <img src="/portfolio/Resolve%20to%20Save%20Lives/zebra/DHIS2%20dashboard.png" alt="DHIS2 dashboard" />
-                  <img src="/portfolio/Resolve%20to%20Save%20Lives/zebra/Epi%20Tracker%20-%20Risk%20Defined.png" alt="Epi Tracker risk defined screen" />
-                  <img src="/portfolio/Resolve%20to%20Save%20Lives/zebra/IM%20Team%20Builder%20Modal.png" alt="IM Team Builder modal" />
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Testimonials */}
-          <section className="portfolio-section">
-            <h2 className="portfolio-section-title">Testimonials</h2>
-
-            <blockquote className="testimonial">
-              <p className="testimonial-quote">"Aarron brought structured thinking to problem solving, was a great team leader and collaborator — a rare combination of someone who is skillful at work and wise in life too."</p>
-              <cite className="testimonial-attribution">
-                <img src="/portfolio/Resolve%20to%20Save%20Lives/rahul-mullick.jpg" alt="Rahul Mullick" className="testimonial-avatar" />
-                Rahul Mullick
-                <span className="testimonial-role">Senior Vice President of Technology, Resolve to Save Lives</span>
-              </cite>
-            </blockquote>
-
-            <blockquote className="testimonial">
-              <p className="testimonial-quote">"Aarron brought a calm, empathic style. He managed to direct the team and rally partners to achieve excellent design and product outcomes."</p>
-              <cite className="testimonial-attribution">
-                <img src="/portfolio/Resolve%20to%20Save%20Lives/daniel-burka.jpg" alt="Daniel Burka" className="testimonial-avatar" />
-                Daniel Burka
-                <span className="testimonial-role">Director of Product and Design, Resolve to Save Lives</span>
-              </cite>
-            </blockquote>
-          </section>
-
+          <p className="pf-brand-lead" style={{ marginTop: '1rem' }}>
+            The work was deeply technical and required tight collaboration with doctors,
+            epidemiologists, and public health experts who&rsquo;d spent careers in fields I was
+            learning from scratch. There were moments when I felt out of my depth &mdash; but I
+            pressed forward through bureaucracy, setbacks, and the constant stress of a pandemic.
+            This was literally life or death work.
+          </p>
         </div>
+
+        {/* ── Stats ── */}
+        <StatBlock
+          heading="By the numbers"
+          stats={[
+            { value: '8',    label: 'Person team led' },
+            { value: '$2M',  label: 'Budget managed' },
+            { value: '$75M', label: 'Digital public service project co-led' },
+            { value: '6',    label: 'Products built and deployed' },
+          ]}
+        />
+
+        {/* ────────────────────────────────────────────────
+            SECTION 1: Africa CDC COVID Hotspot Dashboard
+        ──────────────────────────────────────────────── */}
+        <div className="pf-stacked-case">
+          <div className="pf-stacked-case__text">
+            <p className="pf-label">Case Study · 2020–2021</p>
+            <h2 className="pf-heading">Africa CDC COVID Hotspot Dashboard</h2>
+            <div className="pf-meta">
+              <div className="pf-meta-item">
+                <span className="pf-meta-label">Partners</span>
+                <span className="pf-meta-value">Africa CDC &amp; African Union</span>
+              </div>
+              <div className="pf-meta-item">
+                <span className="pf-meta-label">My role</span>
+                <span className="pf-meta-value">Director of Product</span>
+              </div>
+            </div>
+            <p className="pf-body">
+              Starting in April 2020 with a design sprint to explore how technology could support
+              pandemic response, our team&rsquo;s central thesis was that &ldquo;boxing in the
+              virus through contact tracing&rdquo; would be the most effective strategy. We moved
+              fast &mdash; using Google Sheets for data storage and Node.js to reduce server-side
+              development &mdash; building under the kind of high-stakes conditions where leaders
+              were using our dashboards to decide whether to shut down cities and countries.
+            </p>
+            <p className="pf-body" style={{ marginTop: '1rem' }}>
+              The Africa CDC dashboard tracked COVID cases, tests, deaths, and key outbreak
+              indicators defined by epidemiologists. It was used directly by Africa CDC leaders
+              and the African Union to shape continent-wide COVID response.
+            </p>
+          </div>
+          <BrowserFrame>
+            <div style={{ height: '720px', overflowY: 'auto' }}>
+              <img
+                src="/portfolio/rtsl/africa-cdc/africacdchotspotdb.png"
+                alt="Africa CDC COVID Hotspot Dashboard"
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              />
+            </div>
+          </BrowserFrame>
+        </div>
+
+        {/* ────────────────────────────────────────────────
+            SECTION 2: WHO Vaccine Credentials
+        ──────────────────────────────────────────────── */}
+        <CaseStudySection
+          label="Case Study · 2021"
+          heading="WHO Vaccine Credentials"
+          meta={[
+            { label: 'Partner', value: 'World Health Organization' },
+            { label: 'My role', value: 'Temporary Advisor' },
+          ]}
+          panel={
+            <BrowserFrame>
+              <img
+                src="/portfolio/rtsl/product-overview-2.png"
+                alt="WHO Vaccine Credentials overview"
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              />
+            </BrowserFrame>
+          }
+        >
+          <p className="pf-body">
+            I served as a temporary advisor to the World Health Organization on the creation of
+            digital smart vaccine credentials &mdash; a global standard for verifiable proof of
+            vaccination during the COVID-19 pandemic. Working with WHO technical teams, I helped
+            shape the product strategy and design approach for a credential system that needed to
+            work across vastly different technological contexts, from high-resource settings to
+            low-connectivity environments.
+          </p>
+          <p className="pf-body" style={{ marginTop: '1rem' }}>
+            The initiative aimed to establish interoperable standards that governments and health
+            authorities worldwide could adopt, ensuring that vaccine records could be trusted and
+            verified across borders.
+          </p>
+        </CaseStudySection>
+
+        {/* ── Testimonials ── */}
+        <TestimonialPair
+          testimonials={[
+            {
+              quote: 'Aarron brought structured thinking to problem solving, was a great team leader and collaborator — a rare combination of someone who is skillful at work and wise in life too.',
+              name: 'Rahul Mullick',
+              role: 'Senior Vice President of Technology, Resolve to Save Lives',
+              avatar: '/portfolio/rtsl/rahul-mullick.jpg',
+            },
+            {
+              quote: 'Aarron brought a calm, empathic style. He managed to direct the team and rally partners to achieve excellent design and product outcomes.',
+              name: 'Daniel Burka',
+              role: 'Director of Product and Design, Resolve to Save Lives',
+              avatar: '/portfolio/rtsl/daniel-burka.jpg',
+            },
+          ]}
+        />
+
+        {/* ────────────────────────────────────────────────
+            SECTION 3: ZEBRA
+        ──────────────────────────────────────────────── */}
+        <div className="pf-stacked-case">
+          <div className="pf-stacked-case__text">
+            <p className="pf-label">Case Study · 2021–2022</p>
+            <h2 className="pf-heading">ZEBRA</h2>
+            <div className="pf-meta">
+              <div className="pf-meta-item">
+                <span className="pf-meta-label">Partner</span>
+                <span className="pf-meta-value">Zambia National Public Health Institute</span>
+              </div>
+              <div className="pf-meta-item">
+                <span className="pf-meta-label">My role</span>
+                <span className="pf-meta-value">Design Lead</span>
+              </div>
+            </div>
+            <p className="pf-body">
+              We designed an emergency response platform for the Zambia National Public Health
+              Institute (ZNPHI) in partnership with Resolve to Save Lives, to help the
+              country&rsquo;s public health teams coordinate during disease outbreaks and other
+              health emergencies. Gloria Nunez led the project and I led the design, working
+              alongside stakeholders from WHO, Africa CDC, US CDC, and ZNPHI leadership through
+              a week-long design sprint that shaped the direction of everything that followed.
+            </p>
+            <p className="pf-body" style={{ marginTop: '1rem' }}>
+              Called ZEBRA &mdash; the Zambia Emergency Bridge to Response Application &mdash;
+              the platform gives incident managers a single place to register events, build
+              response teams, run risk assessments, and track activities across Zambia&rsquo;s
+              116 health districts. We designed for the conditions where it actually has to work:
+              low bandwidth, varied devices, and a chain of users that stretches from
+              community-based volunteers in remote villages to national leadership in Lusaka.
+              The system connects to Zambia&rsquo;s existing surveillance infrastructure so
+              frontline staff and decision-makers work from the same picture during a crisis.
+              We built ZEBRA on DHIS2 &mdash; an open-source, web-based health management
+              information platform widely used across Africa and the developing world.
+            </p>
+          </div>
+          <BrowserFrameGrid className="browser-frame-masonry">
+            <BrowserFrame>
+              <img src="/portfolio/rtsl/zebra/dashboard-modal.png" alt="Dashboard modal" />
+            </BrowserFrame>
+            <BrowserFrame>
+              <img src="/portfolio/rtsl/zebra/incident-action-plan-with-data.png" alt="Incident Action Plan with data" />
+            </BrowserFrame>
+            <BrowserFrame>
+              <img src="/portfolio/rtsl/zebra/incident-action-plan-edit-2.png" alt="Incident Action Plan edit" />
+            </BrowserFrame>
+            <BrowserFrame>
+              <img src="/portfolio/rtsl/zebra/im-team-builder-modal.png" alt="IM Team Builder modal" />
+            </BrowserFrame>
+            <BrowserFrame>
+              <img src="/portfolio/rtsl/zebra/epi-tracker-risk-unknown.png" alt="Epi Tracker — risk unknown" />
+            </BrowserFrame>
+          </BrowserFrameGrid>
+        </div>
+
       </article>
 
       {/* ── Prev / Next ── */}
-      <nav className="portfolio-nav" aria-label="Portfolio navigation">
-        <a href="/portfolio/invision" className="portfolio-nav-link">
-          <span className="portfolio-nav-dir">← Previous</span>
-          <span className="portfolio-nav-title">InVision</span>
-        </a>
-        <a href="/portfolio/other" className="portfolio-nav-link is-next">
-          <span className="portfolio-nav-dir">Next →</span>
-          <span className="portfolio-nav-title">Consulting &amp; Publishing</span>
-        </a>
-      </nav>
+      <PortfolioNav
+        prev={{ href: '/portfolio/invision', label: 'InVision' }}
+        next={{ href: '/portfolio/other', label: 'Consulting' }}
+      />
 
       {/* ── Footer ── */}
-      <footer className="site-footer site-footer--light">
-        <div className="footer-wave-wrap" aria-hidden="true">
-          <FooterWave />
-        </div>
-        <div className="footer-inner">
-        <span className="t-caption">© {new Date().getFullYear()} <strong className="footer-name">Aarron Walter</strong></span>
-        <nav className="footer-links">
-          <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer">Design Better</a>
-          <a href="https://linkedin.com/in/aarronwalter" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </nav>
-        </div>
-      </footer>
+      <PortfolioFooter />
     </>
   )
 }
