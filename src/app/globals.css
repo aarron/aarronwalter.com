@@ -3472,14 +3472,14 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 78%;
-  height: 210%;
+  width: 90%;
+  height: 240%;
   pointer-events: none;
   z-index: 0;
   opacity: 1;
   /* Solid through hero, dissolves into the page content below */
-  -webkit-mask-image: linear-gradient(to bottom, black 36%, transparent 72%);
-  mask-image: linear-gradient(to bottom, black 36%, transparent 72%);
+  -webkit-mask-image: linear-gradient(to bottom, black 42%, transparent 82%);
+  mask-image: linear-gradient(to bottom, black 42%, transparent 82%);
 }
 
 .colophon-hero .portfolio-header {

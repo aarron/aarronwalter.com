@@ -30,8 +30,7 @@ export default function ColophonPage() {
         {/* ── Lead ── */}
         <div className="pf-brand-hero">
           <p className="pf-brand-lead">
-            A colophon is a note at the end of a book describing how it was made &mdash; the paper,
-            the typefaces, the press. This is mine for the site.
+            For the curious — and for my own memory — here's how this site came to be.
           </p>
         </div>
 
@@ -39,21 +38,15 @@ export default function ColophonPage() {
         <div className="pf-stacked-case">
           <div className="pf-stacked-case__text" style={{ maxWidth: '68ch' }}>
             <p className="pf-label">Process</p>
-            <h2 className="pf-heading">Built with Claude Code</h2>
+            <h2 className="pf-heading">My droid collaborator</h2>
             <p className="pf-body">
               I designed and built this site working with Claude Code, Anthropic&rsquo;s agentic
-              coding tool. It was an amazing process. Designing a personal website is, in my
+              coding tool as an experiment and learning process. Designing a personal website is, in my
               experience, one of the hardest of projects &mdash; the combination of blank-canvas
               freedom, deep personal investment, and the gap between ideas and execution tends to
               make them stall. Claude Code narrowed that gap in a way I hadn&rsquo;t experienced
               before. I could stay focused on the creative decisions rather than getting lost in
-              implementation details. That&rsquo;s new for me.
-            </p>
-            <p className="pf-body" style={{ marginTop: '1rem' }}>
-              The workflow was close to pair programming: I&rsquo;d describe what I wanted, Claude
-              would propose and implement it, and I&rsquo;d refine. Having an AI collaborator that
-              could hold the full context of the codebase while I stayed in the design headspace
-              changed how the work felt. Fewer interruptions. More flow.
+              implementation details. That&rsquo;s new for me and magical.
             </p>
           </div>
         </div>
@@ -66,17 +59,13 @@ export default function ColophonPage() {
             <p className="pf-body">
               The visual language of the site draws from a few places. The topographic contour
               lines that animate through the header and background were inspired in part by album
-              cover art &mdash; particularly Joy Division&rsquo;s <em>Unknown Pleasures</em>,
+              cover art &mdash; particularly Joy Division&rsquo;s <em><a href="https://boingboing.net/2023/05/16/the-origins-of-the-legendary-album-cover-for-joy-divisions-unknown-pleasures.html" target="_blank">Unknown Pleasures</a></em>,
               with its iconic stacked radio-wave pulses, and work associated with Broken Bells,
-              whose covers combine precise graphic geometry with something organic underneath. I
-              wanted that same tension: structured, but alive.
+              whose covers combine precise graphic geometry with something organic underneath.
             </p>
             <p className="pf-body" style={{ marginTop: '1rem' }}>
-              The warm cream palette and deep ink tones are a deliberate reaction against the
-              cold grays that dominate so many portfolio sites. The signal red accent was chosen
-              for its energy and its contrast &mdash; it appears sparingly, which is what keeps it
-              working. The overall effect I was after was something that felt more like print than
-              software.
+              The weathered landscape of <a href="https://en.wikipedia.org/wiki/Tatooine" target="_blank">Tatooine</a> inspired the color palette here
+              of warm cream, deep ink tones, cold grays, signal red. As a child of the 1970s and 80s, it feels like a second home to me. 
             </p>
           </div>
         </div>
@@ -91,25 +80,24 @@ export default function ColophonPage() {
               <strong style={{ fontFamily: 'Lineca, sans-serif', fontWeight: 400, fontSize: '1.1em', letterSpacing: '-0.02em' }}>
                 F37 Lineca
               </strong>{' '}
-              by F37 Foundry &mdash; a contemporary serif with an optical elegance that holds up
+              by <a href="https://f37foundry.com/" target="_blank">F37 Foundry</a> &mdash; a contemporary serif with an optical elegance that holds up
               at both large and small sizes. Its slightly negative sidebearing at display scale
               gives the headings their tight, confident stance.
             </p>
             <p className="pf-body" style={{ marginTop: '1rem' }}>
-              Body copy, labels, and UI text are set in Aktiv Grotesk by Dalton Maag, served via
-              Adobe Fonts. It pairs well with Lineca without competing &mdash; clean, neutral,
-              legible at any weight.
+              Body copy, labels, and UI text are set in <a href="https://fonts.adobe.com/fonts/aktiv-grotesk" target="_blank">Aktiv Grotesk by Dalton Maag</a>, served via
+              Adobe Fonts. It pairs well with Lineca without competing.
             </p>
           </div>
 
           {/* Type specimen */}
           <div className="colophon-specimen">
             <div className="colophon-specimen-row">
-              <span className="colophon-specimen-display">Aa Bb Cc</span>
+              <span className="colophon-specimen-display">The quick brown fox jumps over the lazy dog</span>
               <span className="colophon-specimen-label">F37 Lineca — Display</span>
             </div>
             <div className="colophon-specimen-row">
-              <span className="colophon-specimen-body">Aa Bb Cc Dd Ee Ff</span>
+              <span className="colophon-specimen-body">The quick brown fox jumps over the lazy dog</span>
               <span className="colophon-specimen-label">Aktiv Grotesk — Body</span>
             </div>
           </div>

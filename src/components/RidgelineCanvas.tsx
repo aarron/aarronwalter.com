@@ -8,29 +8,26 @@ const INK_R   = 70
 const INK_G   = 58
 const INK_B   = 48
 
-const LINES   = 80
-const SAMPLES = 400
+const LINES   = 90
+const SAMPLES = 420
 
 // ─── Perspective plane ────────────────────────────────────────────────────────
 //
-//  Horizontal stacked lines, plane recedes to the upper-right.
-//  depthFrac = 0 → front / near / lower-left
-//  depthFrac = 1 → back  / far  / upper-right
+//  Horizontal stacked lines. Plane recedes to the upper-right.
+//  depthFrac = 0 → front / near (lower-left)
+//  depthFrac = 1 → back  / far  (upper-right, tightly compressed)
 //
-//   BL ─────────────────────────── BR  (back edge, upper-right)
-//    \                               \
-//     \                               \
-//     FL ─────────────────────────── FR  (front edge, lower)
-//
-const FL = { x: 0.00, y: 0.86 }
-const FR = { x: 0.72, y: 0.96 }
-const BL = { x: 0.25, y: 0.02 }
-const BR = { x: 1.04, y: 0.13 }
+const FL = { x: 0.00, y: 0.88 }
+const FR = { x: 0.76, y: 0.97 }
+const BL = { x: 0.30, y: 0.02 }
+const BR = { x: 1.06, y: 0.14 }
 
-// Max mountain height (front line) as fraction of canvas height
-const FRONT_AMP = 0.42
+// Max mountain height at the front, as a fraction of canvas HEIGHT.
+// The "flat parallel lines" effect on back ridges comes entirely from
+// depth compression (hScale), NOT from an x-axis envelope cutoff.
+const FRONT_AMP = 0.54
 
-// ─── Seeded LCG — stable across resize ───────────────────────────────────────
+// ─── Seeded LCG — stable profiles across resize ───────────────────────────────
 
 function lcg(seed: number) {
   let s = (seed ^ 0xdeadbeef) >>> 0
@@ -47,13 +44,13 @@ const LINE_SEED: number[] = Array.from({ length: LINES }, (_, i) => {
 
 // ─── Mountain profile — ridged fractal noise ──────────────────────────────────
 //
-//  (1 − |sin|) creates sharp upward spikes at multiples of π.
-//  Six octaves of doubling frequency give fractal jagged detail.
-//  Animation: each octave drifts at its own very slow rate so individual
-//  peaks rise and fall independently — subtle live-signal feel.
+//  Key insight from the reference: the "flat parallel lines" visual
+//  comes from DEPTH COMPRESSION of far-back lines, not from cutting off
+//  the x-axis. Front lines have mountains across most of their width.
+//  Back lines look flat because hScale reduces their amplitude to ~12%.
 //
-//  x-envelope: mountains concentrated in the LEFT portion of each line
-//  (roughly nx 0–0.58), flat on the right — matching the mockup.
+//  Wide dome-shaped x-envelope mirrors the reference's mountain mass:
+//  active across roughly 90% of each line, peaked in the centre.
 //
 function mountainH(nx: number, lineIdx: number, t: number): number {
   const seed = LINE_SEED[lineIdx]
@@ -64,16 +61,17 @@ function mountainH(nx: number, lineIdx: number, t: number): number {
   let freq = 1.0
 
   for (let oct = 0; oct < 6; oct++) {
-    const drift = t * (0.003 + oct * 0.004)   // very slow drift
+    const drift = t * (0.003 + oct * 0.004)   // very slow per-octave drift
     const v     = Math.sin(x * freq * 3.1 + drift + seed * oct * 0.27)
     h   += amp * (1.0 - Math.abs(v))           // ridged: sharp upward spikes
     amp  *= 0.52
     freq *= 2.04
   }
 
-  // Left-biased x-envelope — peaks at nx ≈ 0.28, zero beyond 0.60
-  const d   = Math.abs(nx - 0.28) / 0.30
-  const env = nx > 0.60 ? 0 : Math.max(0, 1 - d * d)
+  // Wide dome envelope — active across ~90% of line width.
+  // Falls to 0 at the edges; peaks in the centre.
+  const d   = Math.abs(nx - 0.47) / 0.45
+  const env = Math.max(0, 1.0 - d * d * d)    // cubic falloff
 
   const thresh = 0.52
   return Math.max(0, h - thresh) * env
@@ -92,9 +90,10 @@ function groundPt(nx: number, df: number, W: number, H: number) {
   }
 }
 
-// Front lines: full height. Back lines: perspective-compressed to near-flat.
+// Aggressive depth compression — back lines at only 12% of front amplitude,
+// making them appear as flat parallel lines (the reference's right-side effect).
 function hScale(df: number): number {
-  return 1 - df * 0.84
+  return 1 - df * 0.88
 }
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -128,7 +127,7 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
 
       ctx!.clearRect(0, 0, W, H)
 
-      // Draw back → front: i=0 is the back/far line, i=LINES-1 is front/near
+      // Back → front: i=0 drawn first (back/far), i=LINES-1 drawn last (front/near)
       for (let i = 0; i < LINES; i++) {
         const df    = 1 - i / (LINES - 1)   // 1 = back, 0 = front
         const hs    = hScale(df)
@@ -142,7 +141,7 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
           pts.push({ sx: g.sx, sy: g.sy - mH })
         }
 
-        // ── Cream fill — closes downward, masks ridgelines drawn behind ────────
+        // Cream fill below the ridge — occludes ridgelines drawn behind it
         ctx!.beginPath()
         ctx!.moveTo(pts[0].sx, pts[0].sy)
         for (let s = 1; s <= SAMPLES; s++) ctx!.lineTo(pts[s].sx, pts[s].sy)
@@ -152,13 +151,13 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
         ctx!.fillStyle = BG_FILL
         ctx!.fill()
 
-        // ── Stroke ────────────────────────────────────────────────────────────
+        // Stroke — faint at back, bold at front
         const alpha = 0.06 + 0.64 * front
         ctx!.beginPath()
         ctx!.moveTo(pts[0].sx, pts[0].sy)
         for (let s = 1; s <= SAMPLES; s++) ctx!.lineTo(pts[s].sx, pts[s].sy)
         ctx!.strokeStyle = `rgba(${INK_R},${INK_G},${INK_B},${alpha.toFixed(3)})`
-        ctx!.lineWidth   = 0.35 + front * 1.05
+        ctx!.lineWidth   = 0.35 + front * 1.1
         ctx!.lineJoin    = 'round'
         ctx!.stroke()
       }
