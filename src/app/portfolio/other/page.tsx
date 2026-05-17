@@ -6,6 +6,8 @@ import CaseStudySection from '@/components/CaseStudySection'
 import TestimonialPair from '@/components/TestimonialPair'
 import PortfolioNav from '@/components/PortfolioNav'
 import PortfolioFooter from '@/components/PortfolioFooter'
+import RidgelineCanvas from '@/components/RidgelineCanvas'
+import { ENSO_DATA } from '@/lib/natural-data'
 
 export const metadata: Metadata = {
   title: 'Consulting',
@@ -32,7 +34,16 @@ export default function OtherPage() {
       <article className="page-article">
 
         {/* ── Header ── */}
-        <PageHeader eyebrow="2008–Present" title="Consulting" />
+        {/* ── Header with ENSO MEI v2 (El Niño/La Niña, 1979–2024) ── */}
+        <div className="other-hero">
+          <RidgelineCanvas
+            className="other-enso"
+            data={ENSO_DATA}
+            ampRef={0.65}
+            animate="breath"
+          />
+          <PageHeader eyebrow="2008–Present" title="Consulting" />
+        </div>
 
         {/* ── Brand Hero ── */}
         <div className="pf-brand-hero">

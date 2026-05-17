@@ -7,6 +7,8 @@ import TestimonialPair from '@/components/TestimonialPair'
 import PortfolioNav from '@/components/PortfolioNav'
 import PortfolioFooter from '@/components/PortfolioFooter'
 import JsonLd from '@/components/JsonLd'
+import RidgelineCanvas from '@/components/RidgelineCanvas'
+import { SUNSPOT_DATA } from '@/lib/natural-data'
 
 export const metadata: Metadata = {
   title: 'My Books',
@@ -64,7 +66,16 @@ export default function BooksPage() {
       <article className="page-article">
 
         {/* ── Header ── */}
-        <PageHeader title="My Books" />
+        {/* ── Header with daily sunspot number (1950–2009, 11-year solar cycle) ── */}
+        <div className="books-hero">
+          <RidgelineCanvas
+            className="books-sunspot"
+            data={SUNSPOT_DATA}
+            ampRef={0.50}
+            animate="breath"
+          />
+          <PageHeader title="My Books" />
+        </div>
 
         {/* ── Lead ── */}
         <div className="pf-brand-hero">

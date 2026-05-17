@@ -3521,12 +3521,100 @@ body {
   top: 0;
   right: 0;
   width: 78%;
-  height: 180%;
+  height: 120%;
   pointer-events: none;
   z-index: 0;
 }
 
 .mailchimp-hero .portfolio-header {
+  position: relative;
+  z-index: 1;
+}
+
+/* InVision hero — Ap geomagnetic index (solar storms, 1990–2019) */
+.invision-hero {
+  position: relative;
+  min-height: 520px;
+  overflow: visible;
+}
+
+.invision-aurora {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78%;
+  height: 120%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.invision-hero .portfolio-header {
+  position: relative;
+  z-index: 1;
+}
+
+/* RTSL hero — Mauna Loa CO₂ seasonal cycle (1960–2019) */
+.rtsl-hero {
+  position: relative;
+  min-height: 520px;
+  overflow: visible;
+}
+
+.rtsl-co2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78%;
+  height: 120%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.rtsl-hero .portfolio-header {
+  position: relative;
+  z-index: 1;
+}
+
+/* Books hero — daily sunspot number (1950–2009, 11-year solar cycle) */
+.books-hero {
+  position: relative;
+  min-height: 520px;
+  overflow: visible;
+}
+
+.books-sunspot {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78%;
+  height: 120%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.books-hero .portfolio-header {
+  position: relative;
+  z-index: 1;
+}
+
+/* Consulting/Other hero — ENSO MEI v2 (El Niño / La Niña, 1979–2024) */
+.other-hero {
+  position: relative;
+  min-height: 520px;
+  overflow: visible;
+}
+
+.other-enso {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78%;
+  height: 120%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.other-hero .portfolio-header {
   position: relative;
   z-index: 1;
 }
@@ -3626,6 +3714,10 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .colophon-flock  { display: none; }
   .mailchimp-seismic { display: none; }
+  .invision-aurora { display: none; }
+  .rtsl-co2 { display: none; }
+  .books-sunspot { display: none; }
+  .other-enso { display: none; }
 }
 
 /* ═══════════════════════════════════════════════════════

@@ -8,6 +8,8 @@ import BrowserFrameGrid from '@/components/BrowserFrameGrid'
 import TestimonialPair from '@/components/TestimonialPair'
 import PortfolioNav from '@/components/PortfolioNav'
 import PortfolioFooter from '@/components/PortfolioFooter'
+import RidgelineCanvas from '@/components/RidgelineCanvas'
+import { CO2_DATA } from '@/lib/natural-data'
 
 export const metadata: Metadata = {
   title: 'Resolve to Save Lives',
@@ -26,8 +28,16 @@ export default function RTSLPage() {
     <>
       <article className="page-article">
 
-        {/* ── Header ── */}
-        <PageHeader eyebrow="2020–2022" title="Resolve to Save Lives" />
+        {/* ── Header with Mauna Loa CO₂ seasonal cycle (1960–2019) ── */}
+        <div className="rtsl-hero">
+          <RidgelineCanvas
+            className="rtsl-co2"
+            data={CO2_DATA}
+            ampRef={0.10}
+            animate="breath"
+          />
+          <PageHeader eyebrow="2020–2022" title="Resolve to Save Lives" />
+        </div>
 
         {/* ── Brand Hero ── */}
         <div className="pf-brand-hero">

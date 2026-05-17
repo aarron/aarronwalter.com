@@ -18,6 +18,7 @@ export default function PortfolioFooter() {
           © {new Date().getFullYear()} <strong className="footer-name">Aarron Walter</strong>
         </span>
         <nav className="footer-links">
+          <a href="#top">↑ Back to top</a>
           <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer">
             Design Better
           </a>

@@ -8,6 +8,8 @@ import BrowserFrameGrid from '@/components/BrowserFrameGrid'
 import TestimonialPair from '@/components/TestimonialPair'
 import PortfolioNav from '@/components/PortfolioNav'
 import PortfolioFooter from '@/components/PortfolioFooter'
+import RidgelineCanvas from '@/components/RidgelineCanvas'
+import { AP_DATA } from '@/lib/natural-data'
 
 export const metadata: Metadata = {
   title: 'InVision',
@@ -26,8 +28,16 @@ export default function InVisionPage() {
     <>
       <article className="page-article">
 
-        {/* ── Header ── */}
-        <PageHeader eyebrow="2016–2020" title="InVision" />
+        {/* ── Header with geomagnetic Ap index (solar storms, 1990–2019) ── */}
+        <div className="invision-hero">
+          <RidgelineCanvas
+            className="invision-aurora"
+            data={AP_DATA}
+            ampRef={0.45}
+            animate="breath"
+          />
+          <PageHeader eyebrow="2016–2020" title="InVision" />
+        </div>
 
         {/* ── Brand Hero ── */}
         <div className="pf-brand-hero">
