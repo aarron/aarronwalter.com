@@ -3464,7 +3464,7 @@ body {
 /* Header: flock lives in the top-right behind the title */
 .colophon-hero {
   position: relative;
-  min-height: 300px;
+  min-height: 280px;
   overflow: visible; /* canvas bleeds below into content */
 }
 
@@ -3472,14 +3472,14 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 80%;
-  height: 220%;           /* extends well below the hero section */
+  width: 78%;
+  height: 210%;
   pointer-events: none;
   z-index: 0;
   opacity: 1;
-  /* Mist fade: solid in the hero, dissolves as it extends below */
-  -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 68%);
-  mask-image: linear-gradient(to bottom, black 30%, transparent 68%);
+  /* Solid through hero, dissolves into the page content below */
+  -webkit-mask-image: linear-gradient(to bottom, black 36%, transparent 72%);
+  mask-image: linear-gradient(to bottom, black 36%, transparent 72%);
 }
 
 .colophon-hero .portfolio-header {

@@ -2,38 +2,35 @@
 
 import { useEffect, useRef } from 'react'
 
-// ─── Colors — match HeroWaves on the home page ────────────────────────────────
-const BG_FILL = '#F3E7D6'   // cream — page background, used as depth mask
+// ─── Colors — match HeroWaves (home page) ─────────────────────────────────────
+const BG_FILL = '#F3E7D6'
 const INK_R   = 70
 const INK_G   = 58
-const INK_B   = 48          // rgba(70, 58, 48) — same warm ink as HeroWaves
+const INK_B   = 48
 
 const LINES   = 80
-const SAMPLES = 480
+const SAMPLES = 400
 
-// ─── Perspective plane — -90° rotation from original ─────────────────────────
+// ─── Perspective plane ────────────────────────────────────────────────────────
 //
-//  Lines are now VERTICAL (ny = 0 → top, ny = 1 → bottom of canvas).
-//  Depth goes LEFT (back/far) → RIGHT (front/near).
+//  Horizontal stacked lines, plane recedes to the upper-right.
+//  depthFrac = 0 → front / near / lower-left
+//  depthFrac = 1 → back  / far  / upper-right
 //
-//   TB ──────── TF    (top edge)
-//    |           |
-//    |  ←peaks  |    mountains extend LEFT from each vertical ridge
-//    |           |
-//   BB ──────── BF    (bottom edge)
+//   BL ─────────────────────────── BR  (back edge, upper-right)
+//    \                               \
+//     \                               \
+//     FL ─────────────────────────── FR  (front edge, lower)
 //
-//  df = 0 → front (right side, near viewer, tall)
-//  df = 1 → back  (left side, far, perspective-compressed)
-//
-const TF = { x: 0.97, y: 0.01 }   // front-top
-const BF = { x: 0.97, y: 0.99 }   // front-bottom
-const TB = { x: 0.03, y: 0.28 }   // back-top  (vertically compressed by perspective)
-const BB = { x: 0.03, y: 0.72 }   // back-bottom
+const FL = { x: 0.00, y: 0.86 }
+const FR = { x: 0.72, y: 0.96 }
+const BL = { x: 0.25, y: 0.02 }
+const BR = { x: 1.04, y: 0.13 }
 
-// Max leftward mountain extension (front line) as a fraction of canvas WIDTH
-const FRONT_AMP = 0.44
+// Max mountain height (front line) as fraction of canvas height
+const FRONT_AMP = 0.42
 
-// ─── Seeded LCG — stable profiles across resize ───────────────────────────────
+// ─── Seeded LCG — stable across resize ───────────────────────────────────────
 
 function lcg(seed: number) {
   let s = (seed ^ 0xdeadbeef) >>> 0
@@ -48,53 +45,54 @@ const LINE_SEED: number[] = Array.from({ length: LINES }, (_, i) => {
   return r() * Math.PI * 6
 })
 
-// ─── Ridged fractal noise — sharp mountain peaks ──────────────────────────────
+// ─── Mountain profile — ridged fractal noise ──────────────────────────────────
 //
-//  (1 − |sin|) creates upward spikes at multiples of π.
-//  Six stacked octaves give jagged fractal detail.
-//  Each octave drifts at its own slow rate → live data-feed feel.
-//  ny  = normalised vertical position (0 = top, 1 = bottom of this line).
+//  (1 − |sin|) creates sharp upward spikes at multiples of π.
+//  Six octaves of doubling frequency give fractal jagged detail.
+//  Animation: each octave drifts at its own very slow rate so individual
+//  peaks rise and fall independently — subtle live-signal feel.
 //
-function mountainH(ny: number, lineIdx: number, t: number): number {
+//  x-envelope: mountains concentrated in the LEFT portion of each line
+//  (roughly nx 0–0.58), flat on the right — matching the mockup.
+//
+function mountainH(nx: number, lineIdx: number, t: number): number {
   const seed = LINE_SEED[lineIdx]
-  const y    = ny * 5.5 + seed
+  const x    = nx * 5.5 + seed
 
   let h    = 0
   let amp  = 0.60
   let freq = 1.0
 
   for (let oct = 0; oct < 6; oct++) {
-    const drift = t * (0.006 + oct * 0.007)
-    const v     = Math.sin(y * freq * 3.1 + drift + seed * oct * 0.27)
-    h   += amp * (1.0 - Math.abs(v))   // ridged: sharp upward spikes
+    const drift = t * (0.003 + oct * 0.004)   // very slow drift
+    const v     = Math.sin(x * freq * 3.1 + drift + seed * oct * 0.27)
+    h   += amp * (1.0 - Math.abs(v))           // ridged: sharp upward spikes
     amp  *= 0.52
     freq *= 2.04
   }
 
-  // Vertical envelope: peaks concentrated in the centre of each line,
-  // flat at the very top and bottom — matching the CP 1919 signal shape.
-  const d   = Math.abs(ny - 0.48) / 0.40
-  const env = Math.max(0, 1.0 - d * d * d)
+  // Left-biased x-envelope — peaks at nx ≈ 0.28, zero beyond 0.60
+  const d   = Math.abs(nx - 0.28) / 0.30
+  const env = nx > 0.60 ? 0 : Math.max(0, 1 - d * d)
 
   const thresh = 0.52
   return Math.max(0, h - thresh) * env
 }
 
-// ─── Perspective projection ───────────────────────────────────────────────────
+// ─── Perspective helpers ──────────────────────────────────────────────────────
 
-function groundPt(ny: number, df: number, W: number, H: number) {
-  // Bilinear interpolation across the four corners of the 3-D plane
-  const topX = TF.x + df * (TB.x - TF.x)
-  const topY = TF.y + df * (TB.y - TF.y)
-  const botX = BF.x + df * (BB.x - BF.x)
-  const botY = BF.y + df * (BB.y - BF.y)
+function groundPt(nx: number, df: number, W: number, H: number) {
+  const lx = FL.x + df * (BL.x - FL.x)
+  const ly = FL.y + df * (BL.y - FL.y)
+  const rx = FR.x + df * (BR.x - FR.x)
+  const ry = FR.y + df * (BR.y - FR.y)
   return {
-    sx: (topX + ny * (botX - topX)) * W,
-    sy: (topY + ny * (botY - topY)) * H,
+    sx: (lx + nx * (rx - lx)) * W,
+    sy: (ly + nx * (ry - ly)) * H,
   }
 }
 
-// Perspective foreshortening: front lines tall & dramatic, back lines tiny
+// Front lines: full height. Back lines: perspective-compressed to near-flat.
 function hScale(df: number): number {
   return 1 - df * 0.84
 }
@@ -126,45 +124,41 @@ export default function RidgelineCanvas({ className }: { className?: string }) {
       const W = canvas!.offsetWidth
       const H = canvas!.offsetHeight
       const t = (now - t0) * 0.001
-
-      // Max leftward extension in px (scales with canvas width)
-      const maxAmp = W * FRONT_AMP
+      const maxAmp = H * FRONT_AMP
 
       ctx!.clearRect(0, 0, W, H)
 
-      // Draw back (leftmost) → front (rightmost)
-      // Each front ridge's cream fill, closed to x = –10, occludes back ridges.
+      // Draw back → front: i=0 is the back/far line, i=LINES-1 is front/near
       for (let i = 0; i < LINES; i++) {
-        const df    = 1 - i / (LINES - 1)   // 1 = back/left, 0 = front/right
+        const df    = 1 - i / (LINES - 1)   // 1 = back, 0 = front
         const hs    = hScale(df)
         const front = 1 - df                 // 0 = back, 1 = front
 
         const pts: { sx: number; sy: number }[] = []
         for (let s = 0; s <= SAMPLES; s++) {
-          const ny = s / SAMPLES
-          const mH = mountainH(ny, i, t) * maxAmp * hs
-          const g  = groundPt(ny, df, W, H)
-          // Mountains extend LEFT (negative x offset from the vertical baseline)
-          pts.push({ sx: g.sx - mH, sy: g.sy })
+          const nx = s / SAMPLES
+          const mH = mountainH(nx, i, t) * maxAmp * hs
+          const g  = groundPt(nx, df, W, H)
+          pts.push({ sx: g.sx, sy: g.sy - mH })
         }
 
-        // ── Cream fill — closes leftward, masking ridgelines drawn behind ──────
+        // ── Cream fill — closes downward, masks ridgelines drawn behind ────────
         ctx!.beginPath()
         ctx!.moveTo(pts[0].sx, pts[0].sy)
         for (let s = 1; s <= SAMPLES; s++) ctx!.lineTo(pts[s].sx, pts[s].sy)
-        ctx!.lineTo(-10, pts[SAMPLES].sy)  // left edge at bottom
-        ctx!.lineTo(-10, pts[0].sy)         // up the left edge
+        ctx!.lineTo(pts[SAMPLES].sx, H + 10)
+        ctx!.lineTo(pts[0].sx,       H + 10)
         ctx!.closePath()
         ctx!.fillStyle = BG_FILL
         ctx!.fill()
 
-        // ── Stroke — the ridgeline itself ──────────────────────────────────────
+        // ── Stroke ────────────────────────────────────────────────────────────
         const alpha = 0.06 + 0.64 * front
         ctx!.beginPath()
         ctx!.moveTo(pts[0].sx, pts[0].sy)
         for (let s = 1; s <= SAMPLES; s++) ctx!.lineTo(pts[s].sx, pts[s].sy)
         ctx!.strokeStyle = `rgba(${INK_R},${INK_G},${INK_B},${alpha.toFixed(3)})`
-        ctx!.lineWidth   = 0.35 + front * 1.0
+        ctx!.lineWidth   = 0.35 + front * 1.05
         ctx!.lineJoin    = 'round'
         ctx!.stroke()
       }
