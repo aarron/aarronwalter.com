@@ -66,8 +66,8 @@ export default function ColophonPage() {
               cover. The subtle animation reflects the pulsar&rsquo;s actual 1.3373-second period.
             </p>
             <p className="pf-body" style={{ marginTop: '1rem' }}>
-              The weathered landscape of <a href="https://en.wikipedia.org/wiki/Tatooine" target="_blank">Tatooine</a> inspired the color palette here
-              of warm cream, deep ink tones, cold grays, signal red. As a child of the 1970s and 80s, it feels like a second home to me. 
+              The weathered landscapes of <a href="https://en.wikipedia.org/wiki/Tatooine" target="_blank">Tatooine</a> and Arakis inspired the color palette here
+              of warm cream, deep ink tones, cold grays, spice red. As a child of the 1970s and 80s, these places feel like a second home to me. The sounds of Hans Zimmer, Tangerine Dream, Boards of Canada, and Carbon Based Lifeforms were playing while I designed this site. No doubt this music influenced things.
             </p>
           </div>
         </div>
