@@ -55,7 +55,7 @@ const nextConfig: NextConfig = {
           // Force HTTPS for 1 year (only active once served over HTTPS / on Vercel)
           {
             key: 'Strict-Transport-Security',
-            value: 'max-age=31536000; includeSubDomains; preload',
+            value: 'max-age=31536000',
           },
           // Content Security Policy
           {
