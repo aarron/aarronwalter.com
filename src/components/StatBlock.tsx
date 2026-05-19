@@ -18,12 +18,12 @@ export default function StatBlock({ heading, stats }: StatBlockProps) {
   return (
     <>
       {heading && (
-        <p
+        <h2
           className="pf-awards-block__heading"
           style={{ margin: `clamp(1.5rem, 3vw, 2.5rem) var(--pf-pad) clamp(0.75rem, 1.5vw, 1rem)` }}
         >
           {heading}
-        </p>
+        </h2>
       )}
       <div className="portfolio-stats">
         {stats.map((stat) => (

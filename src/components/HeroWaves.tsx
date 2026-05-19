@@ -15,8 +15,16 @@ export default function HeroWaves({ className }: Props) {
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
     let raf: number
     const t0 = performance.now()
+
+    // ── Cached dimensions (updated in resize, read in draw — avoids layout reflow) ──
+    let cW = 0
+    let cH = 0
+    // ── Cached gradient (recreated on resize, not every frame) ──────────────────
+    let cachedGrad: CanvasGradient | null = null
 
     // ── Spike state ─────────────────────────────────────
     let spikeAmp    = 0
@@ -36,7 +44,7 @@ export default function HeroWaves({ className }: Props) {
       const my   = e.clientY - rect.top
 
       // Keep mNormY valid even when mouse is slightly outside canvas
-      mNormY = Math.max(0, Math.min(1, my / canvas!.offsetHeight))
+      mNormY = Math.max(0, Math.min(1, my / cH || canvas!.offsetHeight))
 
       if (lastMx >= 0) {
         const dt      = Math.max(e.timeStamp - lastMt, 1)
@@ -50,11 +58,26 @@ export default function HeroWaves({ className }: Props) {
     }
     window.addEventListener('mousemove', onMouseMove)
 
+    function buildGradient() {
+      const g = ctx!.createLinearGradient(0, 0, cW, 0)
+      g.addColorStop(0.00, 'rgba(70, 58, 48, 0.000)')
+      g.addColorStop(0.10, 'rgba(70, 58, 48, 0.008)')
+      g.addColorStop(0.22, 'rgba(70, 58, 48, 0.055)')
+      g.addColorStop(0.40, 'rgba(70, 58, 48, 0.115)')
+      g.addColorStop(0.65, 'rgba(70, 58, 48, 0.165)')
+      g.addColorStop(0.85, 'rgba(70, 58, 48, 0.200)')
+      g.addColorStop(1.00, 'rgba(70, 58, 48, 0.225)')
+      return g
+    }
+
     function resize() {
       const dpr       = Math.min(window.devicePixelRatio || 1, 2)
       canvas!.width   = canvas!.offsetWidth  * dpr
       canvas!.height  = canvas!.offsetHeight * dpr
       ctx!.setTransform(dpr, 0, 0, dpr, 0, 0)
+      cW = canvas!.offsetWidth
+      cH = canvas!.offsetHeight
+      cachedGrad = buildGradient()
     }
 
     // Smooth multi-harmonic base wave — slow & organic
@@ -83,8 +106,9 @@ export default function HeroWaves({ className }: Props) {
     }
 
     function draw(now: number) {
-      const w  = canvas!.offsetWidth
-      const h  = canvas!.offsetHeight
+      const w  = cW
+      const h  = cH
+      if (!w || !h || !cachedGrad) return
       const t  = (now - t0) * 0.00048   // slow time
       const ts = (now - t0) / 1000       // real seconds
 
@@ -103,26 +127,19 @@ export default function HeroWaves({ className }: Props) {
         nextSpikeAt = ts   + 3.5 + Math.random() * 9
       }
 
-      // Horizontal gradient: invisible on the left (text), opens up rightward
-      const grad = ctx!.createLinearGradient(0, 0, w, 0)
-      grad.addColorStop(0.00, 'rgba(70, 58, 48, 0.000)')
-      grad.addColorStop(0.10, 'rgba(70, 58, 48, 0.008)')
-      grad.addColorStop(0.22, 'rgba(70, 58, 48, 0.055)')
-      grad.addColorStop(0.40, 'rgba(70, 58, 48, 0.115)')
-      grad.addColorStop(0.65, 'rgba(70, 58, 48, 0.165)')
-      grad.addColorStop(0.85, 'rgba(70, 58, 48, 0.200)')
-      grad.addColorStop(1.00, 'rgba(70, 58, 48, 0.225)')
-
       // Scale line count to canvas height (~1 line / 16px) so density stays
-      // consistent whether the canvas covers just the hero or hero + work
-      const numLines = Math.min(Math.round(h / 16), 130)
+      // consistent whether the canvas covers just the hero or hero + work.
+      // Mobile cap is lower — visual quality is identical at smaller sizes.
+      const isMobile = w < 768
+      const numLines = Math.min(Math.round(h / 16), isMobile ? 60 : 130)
       const padTop   = h * 0.04
       const padBot   = h * 0.04
       const spacing  = (h - padTop - padBot) / (numLines - 1)
       const maxAmp   = h * 0.11
-      const steps    = 220
+      // Fewer steps on narrow screens — imperceptible at < 768px, big perf win
+      const steps    = isMobile ? 100 : 220
 
-      ctx!.strokeStyle = grad
+      ctx!.strokeStyle = cachedGrad
       ctx!.lineJoin    = 'round'
 
       for (let i = 0; i < numLines; i++) {

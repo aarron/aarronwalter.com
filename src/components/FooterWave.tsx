@@ -48,19 +48,27 @@ export default function FooterWave({ color }: { color?: string }) {
 
     const strokes = isDark ? DARK_STROKES : LIGHT_STROKES
 
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
     let raf: number
     const t0 = performance.now()
+
+    let cW = 0
+    let cH = 0
 
     function resize() {
       const dpr      = Math.min(window.devicePixelRatio || 1, 2)
       canvas!.width  = canvas!.offsetWidth  * dpr
       canvas!.height = canvas!.offsetHeight * dpr
       ctx!.setTransform(dpr, 0, 0, dpr, 0, 0)
+      cW = canvas!.offsetWidth
+      cH = canvas!.offsetHeight
     }
 
     function draw(now: number) {
-      const w = canvas!.offsetWidth
-      const h = canvas!.offsetHeight
+      const w = cW
+      const h = cH
+      if (!w || !h) return
       const t = (now - t0) / 1000   // real seconds elapsed
 
       ctx!.clearRect(0, 0, w, h)

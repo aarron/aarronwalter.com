@@ -38,26 +38,36 @@ export default function WaveTransition() {
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
     let raf: number
     const t0 = performance.now()
+
+    // Cached dimensions — updated in resize, read in draw
+    let cW = 0
+    let cH = 0
 
     function resize() {
       const dpr      = Math.min(window.devicePixelRatio || 1, 2)
       canvas!.width  = canvas!.offsetWidth  * dpr
       canvas!.height = canvas!.offsetHeight * dpr
       ctx!.setTransform(dpr, 0, 0, dpr, 0, 0)
+      cW = canvas!.offsetWidth
+      cH = canvas!.offsetHeight
     }
 
     function draw(now: number) {
-      const w = canvas!.offsetWidth
-      const h = canvas!.offsetHeight
+      const w = cW
+      const h = cH
+      if (!w || !h) return
       const t = (now - t0) * 0.00048  // same slow drift as hero
 
       ctx!.clearRect(0, 0, w, h)
 
-      // Number of stacked ribbons — more = smoother gradient
-      const numRibbons = 48
-      const steps      = 240
+      // Fewer ribbons + steps on mobile — gradient is just as smooth at smaller widths
+      const isMobile  = w < 768
+      const numRibbons = isMobile ? 28 : 48
+      const steps      = isMobile ? 110 : 240
       // Max vertical displacement of each wave crest.
       // Bigger in the middle of the stack for drama, smaller near top/bottom edges.
       const globalMaxAmp = h * 0.22

@@ -5,7 +5,7 @@ import HamburgerMenu from '@/components/HamburgerMenu'
 import { LightboxProvider } from '@/components/Lightbox'
 import { Analytics } from '@vercel/analytics/next'
 
-const OG_DEFAULT = '/api/og?title=Aarron+Walter&description=Co-founder+of+Design+Better.+Two+decades+shaping+how+the+tech+industry+thinks+about+design.'
+const OG_DEFAULT = '/api/og?title=Aarron+Walter&description=Designer%2C+writer%2C+and+co-founder+of+Design+Better.+Excited+about+what%27s+next.'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://aarronwalter.com'),
@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     template: '%s — Aarron Walter',
   },
   description:
-    'Co-founder of Design Better. Two decades shaping how the tech industry thinks about design — from Mailchimp to the White House.',
+    'Designer, writer, and co-founder of Design Better. Excited about what\'s next.',
   openGraph: {
     title: 'Aarron Walter',
     description:
-      'Designer, co-founder of Design Better, and two-decade voice in how the tech industry thinks about design.',
+      'Designer, writer, and co-founder of Design Better. Excited about what\'s next.',
     siteName: 'Aarron Walter',
     url: 'https://aarronwalter.com',
     type: 'website',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     site: '@aarron',
     title: 'Aarron Walter',
     description:
-      'Designer, co-founder of Design Better, and two-decade voice in how the tech industry thinks about design.',
+      'Designer, writer, and co-founder of Design Better. Excited about what\'s next.',
     images: [OG_DEFAULT],
   },
   alternates: {
@@ -58,10 +58,8 @@ export default function RootLayout({
         </a>
         <HamburgerMenu />
         <LightboxProvider>
-          <main id="page-content">
-            <div id="main-content">
-              {children}
-            </div>
+          <main id="main-content" tabIndex={-1}>
+            {children}
           </main>
         </LightboxProvider>
         <Analytics />

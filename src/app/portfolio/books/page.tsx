@@ -97,7 +97,9 @@ export default function BooksPage() {
           ]}
           panel={
             <div style={{ marginTop: 'clamp(2rem, 3.5vw, 3rem)' }}>
-              <BookFrame src="/portfolio/Other/designing-for-emotion.png" alt="Designing for Emotion — book cover" />
+              <a href="https://designbetterpodcast.com/p/designing-for-emotion" target="_blank" rel="noopener noreferrer" className="book-cover-link">
+                <BookFrame src="/portfolio/other/designing-for-emotion.png" alt="Designing for Emotion — book cover" />
+              </a>
             </div>
           }
         >
@@ -133,13 +135,13 @@ export default function BooksPage() {
               quote: 'Emotion becomes an unfair advantage for your business.',
               name: 'Jake Knapp',
               role: 'Author of Sprint',
-              avatar: '/portfolio/Other/designing-for-emotion.png',
+              avatar: '/portfolio/other/jake-knapp.jpg',
             },
             {
               quote: 'Goes beyond just functional to what is truly delightful.',
               name: 'Julie Zhuo',
               role: 'Author of The Making of a Manager',
-              avatar: '/portfolio/Other/designing-for-emotion2.jpg',
+              avatar: '/portfolio/other/julie-zhuo.jpg',
             },
           ]}
         />
@@ -156,7 +158,9 @@ export default function BooksPage() {
           ]}
           panel={
             <div style={{ marginTop: 'clamp(2rem, 3.5vw, 3rem)' }}>
-              <BookFrame src="/portfolio/Other/principles-of-product-design.png" alt="Principles of Product Design — book cover" />
+              <a href="https://designbetterpodcast.com/p/principles-of-product-design" target="_blank" rel="noopener noreferrer" className="book-cover-link">
+                <BookFrame src="/portfolio/other/principles-of-product-design.png" alt="Principles of Product Design — book cover" />
+              </a>
             </div>
           }
         >
@@ -196,7 +200,9 @@ export default function BooksPage() {
           ]}
           panel={
             <div style={{ marginTop: 'clamp(2rem, 3.5vw, 3rem)' }}>
-              <BookFrame src="/portfolio/Other/Design-Leadership-Handbook.png" alt="Design Leadership Handbook — book cover" />
+              <a href="https://designbetterpodcast.com/p/design-leadership-handbook" target="_blank" rel="noopener noreferrer" className="book-cover-link">
+                <BookFrame src="/portfolio/other/design-leadership-handbook.png" alt="Design Leadership Handbook — book cover" />
+              </a>
             </div>
           }
         >

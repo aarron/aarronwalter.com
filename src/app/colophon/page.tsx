@@ -134,9 +134,9 @@ export default function ColophonPage() {
             <h2 className="pf-heading">Sound Setup</h2>
             <p className="pf-body">
               Music matters to me, and dialing in the right listening experience is half the fun. After plenty of tinkering, here&rsquo;s the setup that keeps me happy in the studio: a{' '}
-              <a href="https://en.wikipedia.org/wiki/Thorens" target="_blank" rel="noopener noreferrer">Thorens TD125 Mk&thinsp;II</a>{' '}
+              <a href="https://www.ebay.com/sch/i.html?_nkw=Thorens+TD+125&_sacat=0&_from=R40&_trksid=p2334524.m570.l1313&gad_source=1&loc=9011071&mktype=&poi=&cmpgn=18791967498&geo_id=&network=g&mkscid=102&gad_campaignid=18791967498&mkcid=2&MT_ID=&adpos=&matchtype=&abcId=&keyword=&mkrid=711-153677-346401-4&crlp=651134117503_&sitelnk=&rlsatarget=dsa-1680301660446&gclid=CjwKCAjw8arQBhB9EiwAfIKdQokAFX5fEgsYzKc3FD3UhF82kU6VumLrAuFBPpQc98bJiutJlDJ5URoCTAsQAvD_BwE&_odkw=mcintosh+ma+5100+power+amplifier&norover=1&adgroupid=145577979280&gbraid=0AAAAAD_QDh9XebIfNgxgxeSa7Uck7pqhr&device=c" target="_blank" rel="noopener noreferrer">Thorens TD125 Mk&thinsp;II</a>{' '}
               turntable, a{' '}
-              <a href="https://www.mcintoshlabs.com/products/integrated-amplifiers/MA5100" target="_blank" rel="noopener noreferrer">McIntosh MA5100</a>{' '}
+              <a href="https://www.ebay.com/sch/i.html?_nkw=mcintosh+ma+5100+power+amplifier&norover=1&mkevt=1&mkrid=711-153677-346401-4&mkcid=2&mkscid=102&keyword=&crlp=651134117503_&MT_ID=&geo_id=&rlsatarget=dsa-1680301660446&adpos=&device=c&mktype=&loc=9011071&poi=&abcId=&cmpgn=18791967498&sitelnk=&adgroupid=145577979280&network=g&matchtype=&gad_source=1&gad_campaignid=18791967498&gbraid=0AAAAAD_QDh9XebIfNgxgxeSa7Uck7pqhr&gclid=CjwKCAjw8arQBhB9EiwAfIKdQokAFX5fEgsYzKc3FD3UhF82kU6VumLrAuFBPpQc98bJiutJlDJ5URoCTAsQAvD_BwE" target="_blank" rel="noopener noreferrer">McIntosh MA5100</a>{' '}
               integrated amp, and a pair of{' '}
               <a href="https://www.klipsch.com/products/heresy-iv-floorstanding-speaker" target="_blank" rel="noopener noreferrer">Klipsch Heresy IV</a>{' '}
               speakers. Warm sound, beautiful objects. My kids will fight over this gear when I die.

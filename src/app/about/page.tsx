@@ -59,19 +59,19 @@ export default function AboutPage() {
 
       <article className="page-article about-article">
 
-        <div className="about-illustration-wrap">
-          <div className="about-illustration-blend" aria-hidden="true">
+        <figure className="about-illustration-wrap">
+          <div className="about-illustration-blend">
             <Image
               src="/Aarron.jpg"
-              alt=""
+              alt="Illustration of Aarron Walter"
               width={2000}
               height={1842}
               className="about-illustration"
               priority
             />
           </div>
-          <p className="about-illustration-credit">Illustration by Jason Chatfield</p>
-        </div>
+          <figcaption className="about-illustration-credit">Illustration by Jason Chatfield</figcaption>
+        </figure>
 
         <header className="page-header">
           <h1 className="page-header-title">About</h1>

@@ -21,7 +21,7 @@ export default function TestimonialPair({ testimonials }: TestimonialPairProps) 
   return (
     <div className="quote-pair">
       <div className="quote-pair__col">
-        <p className="pf-testimonial__quote">&ldquo;{first.quote}&rdquo;</p>
+        <blockquote className="pf-testimonial__quote">&ldquo;{first.quote}&rdquo;</blockquote>
         <div className="pf-testimonial__attr">
           <Image
             src={first.avatar}
@@ -37,7 +37,7 @@ export default function TestimonialPair({ testimonials }: TestimonialPairProps) 
         </div>
       </div>
       <div className="quote-pair__col quote-pair__col--divided">
-        <p className="pf-testimonial__quote">&ldquo;{second.quote}&rdquo;</p>
+        <blockquote className="pf-testimonial__quote">&ldquo;{second.quote}&rdquo;</blockquote>
         <div className="pf-testimonial__attr">
           <Image
             src={second.avatar}

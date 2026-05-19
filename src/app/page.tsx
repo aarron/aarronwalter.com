@@ -147,17 +147,17 @@ export default async function Home() {
             to advising the White House, WHO, and hundreds of companies worldwide.
           </p>
 
-          <div className="hero-links">
-            <a href="https://www.linkedin.com/in/aarron/" target="_blank" rel="noopener noreferrer" className="hero-link">LinkedIn</a>
-            <span className="hero-link-sep" aria-hidden="true">·</span>
-            <a href="https://www.instagram.com/aarronwalter/" target="_blank" rel="noopener noreferrer" className="hero-link">Instagram</a>
-            <span className="hero-link-sep" aria-hidden="true">·</span>
-            <a href="https://twitter.com/aarron" target="_blank" rel="noopener noreferrer" className="hero-link">@aarron</a>
-            <span className="hero-link-sep" aria-hidden="true">·</span>
-            <a href="https://medium.com/@aarron" target="_blank" rel="noopener noreferrer" className="hero-link">Medium</a>
-            <span className="hero-link-sep" aria-hidden="true">·</span>
-            <a href="/contact" className="hero-link">Email</a>
-          </div>
+          <ul className="hero-links">
+            <li style={{display:'contents'}}><a href="https://www.linkedin.com/in/aarron/" target="_blank" rel="noopener noreferrer" className="hero-link">LinkedIn</a></li>
+            <li style={{display:'contents'}}><span className="hero-link-sep" aria-hidden="true">·</span></li>
+            <li style={{display:'contents'}}><a href="https://www.instagram.com/aarronwalter/" target="_blank" rel="noopener noreferrer" className="hero-link">Instagram</a></li>
+            <li style={{display:'contents'}}><span className="hero-link-sep" aria-hidden="true">·</span></li>
+            <li style={{display:'contents'}}><a href="https://twitter.com/aarron" target="_blank" rel="noopener noreferrer" className="hero-link">@aarron</a></li>
+            <li style={{display:'contents'}}><span className="hero-link-sep" aria-hidden="true">·</span></li>
+            <li style={{display:'contents'}}><a href="https://medium.com/@aarron" target="_blank" rel="noopener noreferrer" className="hero-link">Medium</a></li>
+            <li style={{display:'contents'}}><span className="hero-link-sep" aria-hidden="true">·</span></li>
+            <li style={{display:'contents'}}><a href="/contact" className="hero-link">Email</a></li>
+          </ul>
         </div>
       </section>
 
@@ -217,30 +217,30 @@ export default async function Home() {
               process through conversations with inspiring guests across many creative fields.
             </p>
             
-            <div className="db-follow-links">
-              <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer" className="db-follow-link">Substack</a>
-              <span className="db-follow-sep" aria-hidden="true">·</span>
-              <a href="https://www.youtube.com/@designbetterpod" target="_blank" rel="noopener noreferrer" className="db-follow-link">YouTube</a>
-              <span className="db-follow-sep" aria-hidden="true">·</span>
-              <a href="https://designbetter.careers/" target="_blank" rel="noopener noreferrer" className="db-follow-link">Careers</a>
-              <span className="db-follow-sep" aria-hidden="true">·</span>
-              <a href="https://designbetter.team/" target="_blank" rel="noopener noreferrer" className="db-follow-link">For Teams</a>
-            </div>
+            <ul className="db-follow-links">
+              <li style={{display:'contents'}}><a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer" className="db-follow-link">Substack</a></li>
+              <li style={{display:'contents'}}><span className="db-follow-sep" aria-hidden="true">·</span></li>
+              <li style={{display:'contents'}}><a href="https://www.youtube.com/@designbetterpod" target="_blank" rel="noopener noreferrer" className="db-follow-link">YouTube</a></li>
+              <li style={{display:'contents'}}><span className="db-follow-sep" aria-hidden="true">·</span></li>
+              <li style={{display:'contents'}}><a href="https://designbetter.careers/" target="_blank" rel="noopener noreferrer" className="db-follow-link">Careers</a></li>
+              <li style={{display:'contents'}}><span className="db-follow-sep" aria-hidden="true">·</span></li>
+              <li style={{display:'contents'}}><a href="https://designbetter.team/" target="_blank" rel="noopener noreferrer" className="db-follow-link">For Teams</a></li>
+            </ul>
 
-            <div className="db-subscribe">
-              <a href="https://open.spotify.com/show/59RliaMdeDAkEgp9nj1Mkj" target="_blank" rel="noopener noreferrer" className="db-subscribe-btn">
+            <ul className="db-subscribe">
+              <li style={{display:'contents'}}><a href="https://open.spotify.com/show/59RliaMdeDAkEgp9nj1Mkj" target="_blank" rel="noopener noreferrer" className="db-subscribe-btn">
                 <SpotifyIcon />
                 Spotify
-              </a>
-              <a href="https://podcasts.apple.com/us/podcast/design-better/id1266839739" target="_blank" rel="noopener noreferrer" className="db-subscribe-btn">
+              </a></li>
+              <li style={{display:'contents'}}><a href="https://podcasts.apple.com/us/podcast/design-better/id1266839739" target="_blank" rel="noopener noreferrer" className="db-subscribe-btn">
                 <ApplePodcastsIcon />
                 Apple
-              </a>
-              <a href="https://overcast.fm/itunes1266839739" target="_blank" rel="noopener noreferrer" className="db-subscribe-btn">
+              </a></li>
+              <li style={{display:'contents'}}><a href="https://overcast.fm/itunes1266839739" target="_blank" rel="noopener noreferrer" className="db-subscribe-btn">
                 <OvercastIcon />
                 Overcast
-              </a>
-            </div>
+              </a></li>
+            </ul>
 
 
             {episode ? (

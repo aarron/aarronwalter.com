@@ -81,8 +81,8 @@ export default function MailchimpPage() {
             showed. A scrappy underdog became the leader of its category, and the practices we
             worked out together quietly shaped how software design is done today.
           </p>
-          <p className="pf-awards-block__heading">Awards &amp; Recognition</p>
-          <div className="pf-awards">
+          <h3 className="pf-awards-block__heading">Awards &amp; Recognition</h3>
+          <dl className="pf-awards">
             {[
               { year: '2011', name: '.Net Mag Redesign of the Year' },
               { year: '2013', name: '.Net Mag Redesign of the Year' },
@@ -94,11 +94,11 @@ export default function MailchimpPage() {
               { year: '2017', name: 'Cannes Grand Prix Lion' },
             ].map((a) => (
               <div key={a.name + a.year} className="pf-award-item">
-                <div className="pf-award-year">{a.year}</div>
-                <div className="pf-award-name">{a.name}</div>
+                <dt className="pf-award-year">{a.year}</dt>
+                <dd className="pf-award-name">{a.name}</dd>
               </div>
             ))}
-          </div>
+          </dl>
         </div>
 
         {/* ── Testimonials ── */}
@@ -129,9 +129,9 @@ export default function MailchimpPage() {
           panel={
             <PortfolioPanel items={[
               { src: '/portfolio/mailchimp/redesign/design-system/baseline.png', alt: 'Mailchimp design system — baseline grid' },
-              { src: '/portfolio/mailchimp/redesign/design-system/icons.png', alt: 'Design system icons' },
-              { src: '/portfolio/mailchimp/redesign/design-system/forms.png', alt: 'Design system forms' },
-              { src: '/portfolio/mailchimp/redesign/design-system/menus.png', alt: 'Design system menus' },
+              { src: '/portfolio/mailchimp/redesign/design-system/icons.png', alt: 'Mailchimp design system — icon set' },
+              { src: '/portfolio/mailchimp/redesign/design-system/forms.png', alt: 'Mailchimp design system — form components' },
+              { src: '/portfolio/mailchimp/redesign/design-system/menus.png', alt: 'Mailchimp design system — navigation menus' },
             ]} />
           }
         >
@@ -209,16 +209,16 @@ export default function MailchimpPage() {
         <div className="pf-panel-wrap">
           <BrowserFrameGrid>
             <BrowserFrame>
-              <img src="/portfolio/mailchimp/gemini/gemini-inbox.png" alt="Gemini inbox view" />
+              <img src="/portfolio/mailchimp/gemini/gemini-inbox.png" alt="Gemini — unified multi-account inbox" />
             </BrowserFrame>
             <BrowserFrame>
-              <img src="/portfolio/mailchimp/gemini/gemini-message-view.png" alt="Gemini message view" />
+              <img src="/portfolio/mailchimp/gemini/gemini-message-view.png" alt="Gemini — email message thread view" />
             </BrowserFrame>
             <BrowserFrame>
-              <img src="/portfolio/mailchimp/gemini/gemini-tagging.png" alt="Gemini tagging" />
+              <img src="/portfolio/mailchimp/gemini/gemini-tagging.png" alt="Gemini — message tagging interface" />
             </BrowserFrame>
             <BrowserFrame>
-              <img src="/portfolio/mailchimp/gemini/gemini-filters.png" alt="Gemini search" />
+              <img src="/portfolio/mailchimp/gemini/gemini-filters.png" alt="Gemini — conversation filters panel" />
             </BrowserFrame>
           </BrowserFrameGrid>
         </div>
@@ -311,7 +311,7 @@ export default function MailchimpPage() {
               <img src="/portfolio/mailchimp/voice-and-tone/voice-tone3.png" alt="Voice and Tone guide — tone examples" />
             </BrowserFrame>
             <BrowserFrame>
-              <img src="/portfolio/mailchimp/voice-and-tone/voice-tone1.png" alt="Voice and Tone guide" />
+              <img src="/portfolio/mailchimp/voice-and-tone/voice-tone1.png" alt="Voice and Tone guide — brand voice overview" />
             </BrowserFrame>
             <BrowserFrame>
               <img src="/portfolio/mailchimp/voice-and-tone/voice-tone2.png" alt="Voice and Tone guide — emotional tone mapping" />

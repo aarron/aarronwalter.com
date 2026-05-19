@@ -1154,6 +1154,31 @@ body {
   border-left: 1px solid rgba(44, 42, 42, 0.14);
 }
 
+@media (max-width: 580px) {
+  /* Lock to exactly 2 columns so nth-child row math is reliable */
+  .portfolio-stat {
+    flex: 0 0 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+  }
+
+  /* Second row and beyond: add top border */
+  .portfolio-stat:nth-child(n+3) {
+    border-top: 1px solid rgba(44, 42, 42, 0.14);
+  }
+
+  /* First cell of each new row (items 3, 5, 7…): remove inherited left border */
+  .portfolio-stat:nth-child(2n+1) {
+    border-left: none;
+  }
+
+  /* Lone last cell (odd-count groups): span both columns */
+  .portfolio-stat:last-child:nth-child(odd) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
 .portfolio-stat-value {
   font-family: 'Lineca', sans-serif;
   font-size: clamp(1.375rem, 2.5vw, 1.875rem);
@@ -1594,6 +1619,11 @@ body {
   .browser-frame-masonry {
     columns: 1;
   }
+
+  .browser-frame-masonry .browser-frame__content {
+    height: auto;
+    overflow-y: visible;
+  }
 }
 
 .browser-frame {
@@ -1666,6 +1696,11 @@ body {
   }
 
   .ds-split--flip .ds-split__text {
+    padding: clamp(2.5rem, 5vw, 4.5rem) var(--pf-pad) clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .ds-split--panel-first .ds-split__panel {
+    order: -1;
     padding: clamp(2.5rem, 5vw, 4.5rem) var(--pf-pad) clamp(1rem, 2vw, 1.5rem);
   }
 }
@@ -2122,6 +2157,7 @@ body {
   color: rgba(44, 42, 42, 0.65);
   line-height: 1.4;
   font-weight: 400;
+  margin: 0;
 }
 
 /* ── Testimonial block in dark section ── */
@@ -2139,7 +2175,8 @@ body {
   line-height: 1.6;
   color: var(--pf-cream);
   font-style: italic;
-  margin-bottom: 0.875rem;
+  margin: 0 0 0.875rem;
+  padding: 0;
 }
 
 .pf-testimonial__attr {
@@ -2343,6 +2380,21 @@ body {
   align-self: flex-start;
 }
 
+.book-cover-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.book-cover-link:hover .book-frame img {
+  box-shadow: 0 12px 40px rgba(44, 42, 42, 0.22), 0 4px 12px rgba(44, 42, 42, 0.12);
+  transform: translateY(-2px);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.book-cover-link .book-frame img {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
 .book-frame img {
   display: block;
   width: clamp(180px, 22vw, 300px);
@@ -2467,11 +2519,25 @@ body {
   font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
+  white-space: nowrap;
   transition: color 0.15s;
 }
 
 .footer-links a:hover {
   color: #FF4725;
+}
+
+@media (max-width: 580px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+  }
 }
 
 /* ═══════════════════════════════════════════════════════
@@ -2490,13 +2556,15 @@ body {
   right: -10%;
   width: 58%;
   pointer-events: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 480px) {
   .about-illustration-wrap {
-    top: 1.5rem;
-    right: -5%;
-    width: 54%;
+    top: 7rem;
+    right: -15%;
+    width: 66%;
   }
   .about-illustration-credit {
     display: none;
@@ -2777,6 +2845,14 @@ body {
   line-height: 1.6;
 }
 
+/* Reset browser fieldset defaults when used as a .contact-field */
+.contact-field--fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
 .contact-type-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2906,15 +2982,21 @@ body {
   margin-bottom: clamp(3rem, 6vw, 5rem);
 }
 
+/* Feed page: stack RSS pill above filter row */
+.page-filter-nav--stacked {
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
 .page-filter-btn {
   font-family: "aktiv-grotesk", sans-serif;
   font-size: 0.6875rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: rgba(44, 42, 42, 0.38);
+  color: rgba(44, 42, 42, 0.58);
   background: none;
-  border: 1px solid rgba(44, 42, 42, 0.12);
+  border: 1px solid rgba(44, 42, 42, 0.25);
   border-radius: 2rem;
   padding: 0.375rem 0.875rem;
   cursor: pointer;
@@ -2923,7 +3005,7 @@ body {
 
 .page-filter-btn:hover {
   color: #FF4725;
-  border-color: rgba(255, 71, 37, 0.3);
+  border-color: rgba(255, 71, 37, 0.5);
 }
 
 .page-filter-btn.is-active {
@@ -2943,6 +3025,30 @@ body {
 /* Favorites button — slightly distinct from year pills */
 .page-fav-btn {
   border-style: solid;
+}
+
+/* RSS subscribe pill on Feed page */
+.feed-rss-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  color: rgba(44, 42, 42, 0.58);
+  border: 1px solid rgba(44, 42, 42, 0.25);
+  border-radius: 2rem;
+  padding: 0.375rem 0.875rem;
+  transition: border-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.feed-rss-btn:hover {
+  color: #FF4725;
+  border-color: rgba(255, 71, 37, 0.5);
 }
 
 /* Divider between favorites and year filters */
@@ -3568,12 +3674,9 @@ body {
   text-underline-offset: 2px;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
   .viz-credit {
-    white-space: normal;
-    max-width: min(88vw, 340px);
-    text-align: right;
-    line-height: 1.4;
+    display: none;
   }
 }
 
@@ -4007,4 +4110,218 @@ body {
   letter-spacing: 0.08em;
   color: rgba(255, 255, 255, 0.3);
   margin: 0;
+}
+
+/* ─── Notes Feed ─────────────────────────────────────── */
+
+.notes-feed {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.25rem, 2.5vw, 1.75rem);
+  max-width: 860px;
+}
+
+.notes-empty {
+  font-family: "aktiv-grotesk", sans-serif;
+  color: rgba(44, 42, 42, 0.4);
+  font-size: 0.9375rem;
+}
+
+/* ── Base card ─────────────────────────────────────────────────────────────── */
+.note-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-2px);
+}
+
+/* All cards: image flush-left, no gap, full-height stretch */
+.note-card__inner {
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+  min-height: 120px;
+}
+
+.note-card__body {
+  flex: 1;
+  min-width: 0;
+  padding: clamp(0.9rem, 2.5vw, 1.25rem);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Shared typography ── */
+.note-card__type {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.45rem;
+}
+
+.note-card__title {
+  font-family: 'Lineca', sans-serif;
+  font-size: clamp(1rem, 2.2vw, 1.3rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.45rem;
+}
+
+.note-card__excerpt {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  margin: 0 0 auto;
+  padding-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: calc(1.55em * 3 + 0.75rem);
+}
+
+.note-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.note-card__date {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+}
+
+.note-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.15s;
+}
+
+/* ── All cards: white base + left accent border per type ── */
+.note-card--post,
+.note-card--brief,
+.note-card--roundup,
+.note-card--podcast,
+.note-card--video {
+  background: #ffffff;
+  border: 1px solid rgba(44, 42, 42, 0.08);
+  box-shadow: 0 2px 6px rgba(44, 42, 42, 0.06), 0 1px 2px rgba(44, 42, 42, 0.04);
+}
+
+.note-card--post:hover,
+.note-card--brief:hover,
+.note-card--roundup:hover,
+.note-card--podcast:hover,
+.note-card--video:hover {
+  box-shadow: 0 8px 24px rgba(44, 42, 42, 0.12), 0 2px 4px rgba(44, 42, 42, 0.06);
+}
+
+/* Shared text colors for all white cards */
+.note-card--post .note-card__title,
+.note-card--brief .note-card__title,
+.note-card--roundup .note-card__title,
+.note-card--podcast .note-card__title,
+.note-card--video .note-card__title {
+  color: #2C2A2A;
+}
+
+.note-card--post .note-card__excerpt,
+.note-card--brief .note-card__excerpt,
+.note-card--roundup .note-card__excerpt,
+.note-card--podcast .note-card__excerpt,
+.note-card--video .note-card__excerpt {
+  color: rgba(44, 42, 42, 0.62);
+}
+
+.note-card--post .note-card__date,
+.note-card--brief .note-card__date,
+.note-card--roundup .note-card__date,
+.note-card--podcast .note-card__date,
+.note-card--video .note-card__date {
+  color: rgba(44, 42, 42, 0.38);
+}
+
+.note-card--post .note-card__cta,
+.note-card--brief .note-card__cta,
+.note-card--roundup .note-card__cta,
+.note-card--podcast .note-card__cta,
+.note-card--video .note-card__cta {
+  color: rgba(44, 42, 42, 0.38);
+}
+
+/* ── Left accent borders — per-type color cue ── */
+/* Post: neutral editorial */
+.note-card--post { border-left: 3px solid rgba(44, 42, 42, 0.25); }
+.note-card--post .note-card__type { color: rgba(44, 42, 42, 0.42); }
+.note-card--post:hover .note-card__cta { color: #2C2A2A; }
+
+/* Brief: teal-green newsletter */
+.note-card--brief { border-left: 3px solid #3D8C6E; }
+.note-card--brief .note-card__type { color: #3D8C6E; }
+.note-card--brief:hover .note-card__cta { color: #3D8C6E; }
+
+/* Roundup: brand red */
+.note-card--roundup { border-left: 3px solid #FF4725; }
+.note-card--roundup .note-card__type { color: #FF4725; }
+.note-card--roundup:hover .note-card__cta { color: #FF4725; }
+
+/* Podcast: warm indigo/audio */
+.note-card--podcast { border-left: 3px solid #7B6CF6; }
+.note-card--podcast .note-card__type { color: #7B6CF6; }
+.note-card--podcast:hover .note-card__cta { color: #7B6CF6; }
+
+/* Video: YouTube-adjacent red */
+.note-card--video { border-left: 3px solid #E8413A; }
+.note-card--video .note-card__type { color: #E8413A; }
+.note-card--video:hover .note-card__cta { color: #E8413A; }
+
+/* ── Thumbnails — all flush to top/left/bottom ── */
+.note-card__thumb {
+  flex-shrink: 0;
+  overflow: hidden;
+  line-height: 0;
+  align-self: stretch;
+}
+
+/* All thumbs: same width regardless of media type */
+.note-card__thumb--post,
+.note-card__thumb--brief,
+.note-card__thumb--roundup,
+.note-card__thumb--podcast,
+.note-card__thumb--video {
+  width: clamp(160px, 24vw, 240px);
+}
+
+.note-card__thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .note-card__thumb {
+    display: none;
+  }
 }

@@ -59,9 +59,10 @@ export default function OtherPage() {
         <CaseStudySection
           label="Consulting · 2008–Present"
           heading="Clients"
+          className="ds-split--panel-first"
           panel={
             <img
-              src="/portfolio/Other/consulting-logos.png"
+              src="/portfolio/other/consulting-logos.png"
               alt="Consulting clients including Google, IBM, LinkedIn, Atlassian, and more"
               className="consulting-logos"
             />
@@ -86,13 +87,13 @@ export default function OtherPage() {
               quote: 'Aarron is well versed in his work in designing for emotion. In such turbulent times, Aarron helped remind us how important it is to take a moment to reflect on how design affects our lives in how we feel and at work, to design for all the complexities of human emotion.',
               name: 'Toke Nygaard',
               role: 'Chief Creative Officer, Zendesk',
-              avatar: '/portfolio/Other/toke.jpg',
+              avatar: '/portfolio/other/toke.jpg',
             },
             {
               quote: 'Aarron\'s balance of storytelling and illustrative examples sparked thought provoking discussion and inspired our teams. Most importantly, he introduced concepts and frameworks for inclusive design that can easily be put into practice.',
               name: 'Evan English',
               role: 'VP Product Design & Research, American Express',
-              avatar: '/portfolio/Other/evan-english.jpg',
+              avatar: '/portfolio/other/evan-english.jpg',
             },
           ]}
         />
@@ -103,13 +104,13 @@ export default function OtherPage() {
               quote: 'Aarron Walter is a superb speaker, author, designer, and creative leader. Aarron has the gift of transforming complex design concepts into simple, compelling stories that are memorable, entertaining, and warmly relatable.',
               name: 'Jeffrey Zeldman',
               role: 'Co-founder, An Event Apart',
-              avatar: '/portfolio/Other/zeldman.jpg',
+              avatar: '/portfolio/other/zeldman.jpg',
             },
             {
               quote: 'Aarron role models all the characteristics that make for a great designer and leader: humility, kindness, ridiculous smarts, and a focus on humanity.',
               name: 'Kara DeFrias',
               role: 'Intuit QuickBooks',
-              avatar: '/portfolio/Other/kara-defrias.jpg',
+              avatar: '/portfolio/other/kara-defrias.jpg',
             },
           ]}
         />
@@ -120,13 +121,13 @@ export default function OtherPage() {
               quote: 'Our audiences love Aarron! A true industry thought leader and experienced public speaker, Aarron was incredibly engaging and informative.',
               name: 'Rachel Wan',
               role: 'Growth Tribe',
-              avatar: '/portfolio/Other/rachael-wan.jpg',
+              avatar: '/portfolio/other/rachael-wan.jpg',
             },
             {
               quote: 'Aarron gave a fantastic talk at Goldman Sachs. He was able to make the case for design being an endeavor that all roles contribute to.',
               name: 'Steve Turbeck',
               role: 'Goldman Sachs',
-              avatar: '/portfolio/Other/steve-turbek.jpg',
+              avatar: '/portfolio/other/steve-turbek.jpg',
             },
           ]}
         />

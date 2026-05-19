@@ -2,6 +2,7 @@ import { ImageResponse } from 'next/og'
 import { NextRequest } from 'next/server'
 import { readFileSync } from 'fs'
 import { join } from 'path'
+import { PULSAR_DATA } from '@/lib/pulsar-data'
 
 export const runtime = 'nodejs'
 
@@ -12,118 +13,61 @@ const linecaMedium  = readFileSync(join(process.cwd(), 'public/fonts/lineca-medi
 const logoB64 = readFileSync(join(process.cwd(), 'public/aarron-walter-logo.png')).toString('base64')
 const logoSrc = `data:image/png;base64,${logoB64}`
 
-// ─── Topo generation (same algorithm as TopoCanvas, static at t = 0) ─────────
+// ─── Ridgeline generation (PSR B1919+21 pulsar, static snapshot) ─────────────
 
-interface Hill { cx: number; cy: number; amp: number; sx: number; sy: number; ang: number; p: number }
+const BG_FILL = '#F3E7D6'
+const INK     = 'rgb(70,58,48)'
 
-const HILLS: Hill[] = [
-  // Northern range
-  { cx: 0.80, cy: 0.14, amp: 1.00, sx: 0.18, sy: 0.13, ang:  0.20, p: 0.00 },
-  { cx: 0.94, cy: 0.21, amp: 0.82, sx: 0.15, sy: 0.17, ang: -0.30, p: 2.10 },
-  { cx: 0.69, cy: 0.27, amp: 0.74, sx: 0.16, sy: 0.12, ang:  0.55, p: 4.20 },
-  { cx: 1.01, cy: 0.08, amp: 0.60, sx: 0.13, sy: 0.11, ang: -0.45, p: 1.50 },
-  // Southern range
-  { cx: 0.75, cy: 0.64, amp: 0.92, sx: 0.19, sy: 0.16, ang:  0.75, p: 3.50 },
-  { cx: 0.91, cy: 0.75, amp: 0.80, sx: 0.17, sy: 0.20, ang: -0.55, p: 0.80 },
-  { cx: 0.62, cy: 0.80, amp: 0.66, sx: 0.16, sy: 0.13, ang:  1.10, p: 5.00 },
-  { cx: 0.87, cy: 0.58, amp: 0.56, sx: 0.15, sy: 0.12, ang: -0.15, p: 2.70 },
-  // Eastern ridge
-  { cx: 1.06, cy: 0.42, amp: 0.70, sx: 0.13, sy: 0.30, ang:  0.05, p: 1.80 },
-  { cx: 1.07, cy: 0.90, amp: 0.50, sx: 0.12, sy: 0.14, ang:  0.25, p: 3.30 },
-]
+function buildRidgeSvg(W: number, H: number): string {
+  const data    = PULSAR_DATA
+  const ROWS    = data.length       // 80
+  const STEP    = 2                 // sample every 2nd column → ~150 pts/row
+  const AMP_REF = 15
 
-const GW     = 88
-const GH     = 72
-const LEVELS = 26
+  const padTop  = H * 0.03
+  const padBot  = H * 0.03
+  const spacing = (H - padTop - padBot) / (ROWS - 1)
+  const ampScale = (spacing * 3.5) / AMP_REF
 
-// Marching-squares edge table
-const MS: Array<Array<[number, number]>> = [
-  [], [[3,2]], [[2,1]], [[3,1]], [[0,1]], [[0,1],[2,3]], [[0,2]], [[0,3]],
-  [[0,3]], [[0,2]], [[0,3],[1,2]], [[0,1]], [[1,3]], [[1,2]], [[2,3]], [],
-]
+  const parts: string[] = [
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">`,
+    `<defs>`,
+    `<linearGradient id="g" x1="0" y1="0" x2="${W}" y2="0" gradientUnits="userSpaceOnUse">`,
+    `<stop offset="0%"   stop-color="${INK}" stop-opacity="0"/>`,
+    `<stop offset="8%"   stop-color="${INK}" stop-opacity="0.018"/>`,
+    `<stop offset="25%"  stop-color="${INK}" stop-opacity="0.090"/>`,
+    `<stop offset="50%"  stop-color="${INK}" stop-opacity="0.185"/>`,
+    `<stop offset="78%"  stop-color="${INK}" stop-opacity="0.235"/>`,
+    `<stop offset="100%" stop-color="${INK}" stop-opacity="0.260"/>`,
+    `</linearGradient>`,
+    `</defs>`,
+  ]
 
-function heightAt(nx: number, ny: number): number {
-  let h = 0
-  for (const hill of HILLS) {
-    const cx  = hill.cx + 0.012 * Math.sin(hill.p)
-    const cy  = hill.cy + 0.009 * Math.cos(hill.p * 1.3)
-    const amp = hill.amp * (0.98 + 0.02 * Math.sin(hill.p * 0.8))
-    const dx  = nx - cx
-    const dy  = ny - cy
-    const c   = Math.cos(hill.ang)
-    const s   = Math.sin(hill.ang)
-    const lx  = dx * c + dy * s
-    const ly  = -dx * s + dy * c
-    h += amp * Math.exp(-(lx * lx / (hill.sx * hill.sx) + ly * ly / (hill.sy * hill.sy)) * 0.5)
-  }
-  h += 0.038 * Math.sin(nx * 7.1) * Math.sin(ny * 5.3)
-  h += 0.022 * Math.sin(nx * 12.8 + 1.5) * Math.cos(ny * 8.2)
-  return h
-}
+  for (let row = 0; row < ROWS; row++) {
+    const baseY   = padTop + row * spacing
+    const rowNorm = row / (ROWS - 1)
+    const rowData = data[row]
+    const COLS    = rowData.length
 
-function edgePt(
-  edge: number, gx: number, gy: number,
-  tl: number, tr: number, br: number, bl: number,
-  level: number,
-): [number, number] {
-  let t: number
-  switch (edge) {
-    case 0: t = Math.max(0, Math.min(1, (level - tl) / (tr - tl + 1e-9))); return [(gx + t) / GW, gy / GH]
-    case 1: t = Math.max(0, Math.min(1, (level - tr) / (br - tr + 1e-9))); return [(gx + 1) / GW, (gy + t) / GH]
-    case 2: t = Math.max(0, Math.min(1, (level - bl) / (br - bl + 1e-9))); return [(gx + t) / GW, (gy + 1) / GH]
-    case 3: t = Math.max(0, Math.min(1, (level - tl) / (bl - tl + 1e-9))); return [gx / GW, (gy + t) / GH]
-    default: return [0, 0]
-  }
-}
+    const stackMid = Math.abs(rowNorm - 0.5)
+    const lw = (0.45 + 0.60 * (1 - stackMid)).toFixed(2)
 
-/** Generate the topo contour lines as an SVG data URI (1200×630). */
-function buildTopoSvg(W: number, H: number): string {
-  const grid = new Float32Array((GW + 1) * (GH + 1))
-  let minH = Infinity, maxH = -Infinity
+    const xs: number[] = []
+    const ys: number[] = []
+    const indices = Array.from({ length: Math.ceil(COLS / STEP) }, (_, i) => i * STEP)
+    if (indices[indices.length - 1] !== COLS - 1) indices.push(COLS - 1)
 
-  for (let gy = 0; gy <= GH; gy++) {
-    for (let gx = 0; gx <= GW; gx++) {
-      const v = heightAt(gx / GW, gy / GH)
-      grid[gy * (GW + 1) + gx] = v
-      if (v < minH) minH = v
-      if (v > maxH) maxH = v
-    }
-  }
-
-  const step = (maxH - minH) / (LEVELS + 1)
-  const parts: string[] = [`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">`]
-
-  for (let li = 0; li < LEVELS; li++) {
-    const level   = minH + step * (li + 1)
-    const lNorm   = li / (LEVELS - 1)
-    const isIndex = li % 5 === 0
-    const midArc  = 1 - Math.abs(lNorm - 0.5) * 1.8
-    const alpha   = Math.max(0.03, midArc * (isIndex ? 0.48 : 0.20))
-    const lw      = isIndex ? 1.4 : 0.65
-
-    const segs: string[] = []
-
-    for (let gy = 0; gy < GH; gy++) {
-      for (let gx = 0; gx < GW; gx++) {
-        const base = gy * (GW + 1) + gx
-        const tl   = grid[base]
-        const tr   = grid[base + 1]
-        const bl   = grid[base + (GW + 1)]
-        const br   = grid[base + (GW + 2)]
-        const code = (tl > level ? 8 : 0) | (tr > level ? 4 : 0) | (br > level ? 2 : 0) | (bl > level ? 1 : 0)
-
-        for (const [e1, e2] of MS[code]) {
-          const [nx1, ny1] = edgePt(e1, gx, gy, tl, tr, br, bl, level)
-          const [nx2, ny2] = edgePt(e2, gx, gy, tl, tr, br, bl, level)
-          segs.push(`M${(nx1 * W).toFixed(1)} ${(ny1 * H).toFixed(1)}L${(nx2 * W).toFixed(1)} ${(ny2 * H).toFixed(1)}`)
-        }
-      }
+    for (const s of indices) {
+      xs.push((s / (COLS - 1)) * W)
+      ys.push(baseY - Math.max(0, rowData[s]) * ampScale)
     }
 
-    if (segs.length > 0) {
-      const color = `rgba(70,58,48,${alpha.toFixed(3)})`
-      parts.push(`<path d="${segs.join('')}" stroke="${color}" stroke-width="${lw}" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`)
-    }
+    const n      = xs.length
+    const ridge  = xs.map((x, i) => `${x.toFixed(1)},${ys[i].toFixed(1)}`).join(' ')
+    const close  = `${xs[n-1].toFixed(1)},${(H+10).toFixed(1)} ${xs[0].toFixed(1)},${(H+10).toFixed(1)}`
+
+    parts.push(`<polygon points="${ridge} ${close}" fill="${BG_FILL}" stroke="none"/>`)
+    parts.push(`<polyline points="${ridge}" fill="none" stroke="url(#g)" stroke-width="${lw}" stroke-linejoin="round" stroke-linecap="round"/>`)
   }
 
   parts.push('</svg>')
@@ -131,7 +75,7 @@ function buildTopoSvg(W: number, H: number): string {
 }
 
 // Build once at module load — same result every request
-const topoSrc = buildTopoSvg(1200, 630)
+const ridgeSrc = buildRidgeSvg(1200, 630)
 
 // ─── Route handler ────────────────────────────────────────────────────────────
 
@@ -149,7 +93,7 @@ export function GET(req: NextRequest) {
     (
       <div
         style={{
-          background: '#F3E7D6',
+          background: BG_FILL,
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -157,9 +101,9 @@ export function GET(req: NextRequest) {
           overflow: 'hidden',
         }}
       >
-        {/* ── Topo lines ── */}
+        {/* ── Pulsar ridgeline ── */}
         <img
-          src={topoSrc}
+          src={ridgeSrc}
           style={{
             position: 'absolute',
             top: 0,

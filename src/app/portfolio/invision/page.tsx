@@ -111,10 +111,10 @@ export default function InVisionPage() {
               <img src="/portfolio/invision/design-better/business-impact-article.webp" alt="Business impact of design article" />
             </BrowserFrame>
             <BrowserFrame>
-              <img src="/portfolio/invision/design-better/conversations.webp" alt="Design Better conversations" />
+              <img src="/portfolio/invision/design-better/conversations.webp" alt="Design Better — podcast episode conversations page" />
             </BrowserFrame>
             <BrowserFrame>
-              <img src="/portfolio/invision/design-better/podcast.webp" alt="Design Better podcast" />
+              <img src="/portfolio/invision/design-better/podcast.webp" alt="Design Better podcast landing page" />
             </BrowserFrame>
           </BrowserFrameGrid>
         </div>
@@ -126,13 +126,13 @@ export default function InVisionPage() {
               quote: 'The most important thing to know about Aarron Walter is that if he\'s in your corner, you\'re psyched. The work will be great. The team will be lit-up and cared for. When Aarron\'s in the room, so is inspiration.',
               name: 'Susan Kaplow',
               role: 'VP of Content, InVision',
-              avatar: '/portfolio/Other/susan-kaplow.jpg',
+              avatar: '/portfolio/other/susan-kaplow.jpg',
             },
             {
               quote: 'Personally, Aarron has been one of my most trusted mentors, and his guidance and feedback have been critical to the growth of my career over the past six years. He has a practical, honest leadership style that opens doors for the best creativity from his team members.',
               name: 'Eli Woolery',
               role: 'Senior Director of Design Education, InVision',
-              avatar: '/portfolio/Other/eli-woolery.jpg',
+              avatar: '/portfolio/other/eli-woolery.jpg',
             },
           ]}
         />

@@ -121,9 +121,6 @@ export default function ListeningGrid({ records }: Props) {
                     {modal.record.artist.replace(/^(The |A )/, '').charAt(0)}
                   </div>
                 )}
-                {modal.record.rating === 5 && (
-                  <div className="content-modal-badge">★ Five Stars</div>
-                )}
               </div>
               <div className="content-modal-details">
                 <p className="content-modal-eyebrow">

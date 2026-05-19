@@ -40,7 +40,7 @@ export async function getLatestEpisode(): Promise<Episode | null> {
 
   try {
     const res = await fetch('https://feeds.megaphone.fm/designbetter', {
-      cache: 'no-store',
+      next: { revalidate: 3600 },   // ISR: cache 1 h, revalidate in background
       signal: controller.signal,
     })
 

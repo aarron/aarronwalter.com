@@ -52,35 +52,45 @@ export default function RidgelineCanvas({
     let raf: number
     const t0 = performance.now()
 
+    let cW = 0
+    let cH = 0
+    let cachedGrad: CanvasGradient | null = null
+
+    function buildGradient() {
+      const g = ctx!.createLinearGradient(0, 0, cW, 0)
+      g.addColorStop(0.00, `rgba(${INK_R},${INK_G},${INK_B},0.000)`)
+      g.addColorStop(0.08, `rgba(${INK_R},${INK_G},${INK_B},0.018)`)
+      g.addColorStop(0.25, `rgba(${INK_R},${INK_G},${INK_B},0.090)`)
+      g.addColorStop(0.50, `rgba(${INK_R},${INK_G},${INK_B},0.185)`)
+      g.addColorStop(0.78, `rgba(${INK_R},${INK_G},${INK_B},0.235)`)
+      g.addColorStop(1.00, `rgba(${INK_R},${INK_G},${INK_B},0.260)`)
+      return g
+    }
+
     function resize() {
       const dpr = Math.min(window.devicePixelRatio ?? 1, 2)
       canvas!.width  = canvas!.offsetWidth  * dpr
       canvas!.height = canvas!.offsetHeight * dpr
       ctx!.setTransform(dpr, 0, 0, dpr, 0, 0)
+      cW = canvas!.offsetWidth
+      cH = canvas!.offsetHeight
+      cachedGrad = buildGradient()
     }
 
     function draw(now: number) {
-      const W = canvas!.offsetWidth
-      const H = canvas!.offsetHeight
+      const W = cW
+      const H = cH
+      if (!W || !H || !cachedGrad) return
       const t = (now - t0) * 0.001
 
       ctx!.clearRect(0, 0, W, H)
-
-      // Horizontal gradient: transparent on the left (toward header text), solid on the right
-      const grad = ctx!.createLinearGradient(0, 0, W, 0)
-      grad.addColorStop(0.00, `rgba(${INK_R},${INK_G},${INK_B},0.000)`)
-      grad.addColorStop(0.08, `rgba(${INK_R},${INK_G},${INK_B},0.018)`)
-      grad.addColorStop(0.25, `rgba(${INK_R},${INK_G},${INK_B},0.090)`)
-      grad.addColorStop(0.50, `rgba(${INK_R},${INK_G},${INK_B},0.185)`)
-      grad.addColorStop(0.78, `rgba(${INK_R},${INK_G},${INK_B},0.235)`)
-      grad.addColorStop(1.00, `rgba(${INK_R},${INK_G},${INK_B},0.260)`)
 
       const padTop  = H * 0.03
       const padBot  = H * 0.03
       const spacing = (H - padTop - padBot) / (ROWS - 1)
       const ampScale = (spacing * 3.5) / AMP_REF
 
-      ctx!.strokeStyle = grad
+      ctx!.strokeStyle = cachedGrad
       ctx!.lineJoin    = 'round'
 
       for (let row = 0; row < ROWS; row++) {

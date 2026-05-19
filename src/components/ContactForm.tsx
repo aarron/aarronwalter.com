@@ -88,8 +88,8 @@ export default function ContactForm() {
       </div>
 
       {/* ── Contact type selector ── */}
-      <div className="contact-field">
-        <label className="contact-label">What brings you here?</label>
+      <fieldset className="contact-field contact-field--fieldset">
+        <legend className="contact-label">What brings you here?</legend>
         <div className="contact-type-grid">
           {[
             { value: 'general',  label: 'General Inquiry',      sub: 'Anything else' },
@@ -108,7 +108,7 @@ export default function ContactForm() {
           ))}
         </div>
         <input type="hidden" name="type" value={type} />
-      </div>
+      </fieldset>
 
       {/* ── Guest pitch fields ── */}
       {type === 'guest' && (
