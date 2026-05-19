@@ -43,22 +43,28 @@ export default function ColophonPage() {
             <p className="pf-body">
               I designed and built this site working with{' '}
               <a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer">Claude Code</a>,{' '}
-              <a href="https://www.anthropic.com" target="_blank" rel="noopener noreferrer">Anthropic</a>&rsquo;s agentic
-              coding tool as an experiment and learning process. Designing a personal website is, in my
-              experience, one of the hardest of projects &mdash; the combination of blank-canvas
-              freedom, deep personal investment, and the gap between ideas and execution tends to
-              make them stall. Claude Code narrowed that gap in a way I hadn&rsquo;t experienced
-              before. I could stay focused on the creative decisions rather than getting lost in
-              implementation details. That&rsquo;s new for me and magical.
+              <a href="https://www.anthropic.com" target="_blank" rel="noopener noreferrer">Anthropic</a>&rsquo;s
+              agentic coding tool, as an experiment and a learning process. Designing a personal website is, in my
+              experience, one of the hardest projects. The mix of blank-canvas freedom, deep personal investment,
+              and the gap between ideas and execution tends to make them stall. Claude Code narrowed that gap in a
+              way I hadn&rsquo;t experienced before. I could stay focused on creative decisions rather than getting
+              lost in implementation details. That&rsquo;s new for me, and a little magical.
             </p>
             <p className="pf-body">
-              Because the AI-assisted workflow is new to us, I feel compelled to shed some light on the specifics of my collaboration. As with any design project, I brought to the table my ideas about the concept, color palette,
-              typography, information hierarchy, and the whole user experience. This is what I shared with Claude Code, who in turn opened my eyes to ways I could expand my ideas using technical solutions out of my reach. I spent
-              years teaching design, front-end and server-side development, I have built countless websites and apps on my own and with collaborators in the past. This felt like old times where I sat next to an engineer
-              who helped bring my ideas to life and contributed her own as well. By working with AI to create this site, I never once felt like I was abdicating my creativity. Quite the opposite. I felt like I was more in touch with it.
+              Because AI-assisted workflows are new to most of us, it feels worth describing how the collaboration
+              actually went. As with any design project, I brought my own ideas about concept, color palette,
+              typography, information hierarchy, and the overall user experience. I shared those with Claude Code,
+              who in turn opened my eyes to ways I could extend them using technical solutions I wouldn&rsquo;t
+              have reached on my own. I&rsquo;ve spent years teaching design, front-end, and server-side
+              development, and I&rsquo;ve built plenty of sites and apps, solo and with collaborators. This felt
+              like old times sitting next to an engineer who helped bring my ideas to life and contributed her own.
+              I never once felt like I was abdicating creativity. Quite the opposite. I felt more in touch with it.
             </p>
             <p className="pf-body">
-              I was at times in the code making my own tweaks, but I can't hold a candle to what Claude can do in this domain. I never created a Figma file to figure out layout. I designed in the browser, which to me feels like a more true experience given the medium. I've always felt designing a picture of a website then turning it into the real thing was a silly way to do things. It tied my hands. I don't think I will ever do that again.  
+              I was occasionally in the code making my own tweaks, but I can&rsquo;t hold a candle to what Claude
+              can do there. I never opened a Figma file to figure out layout. I designed in the browser, which
+              feels truer to the medium. Designing a picture of a website and then turning it into the real thing
+              has always struck me as a silly way to do things. It tied my hands. I don&rsquo;t think I&rsquo;ll go back.
             </p>
           </div>
         </div>
