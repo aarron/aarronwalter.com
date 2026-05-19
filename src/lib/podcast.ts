@@ -16,6 +16,17 @@ function firstMatch(text: string, pattern: RegExp): string {
   return extractCDATA(text.match(pattern)?.[1] ?? '')
 }
 
+/**
+ * Podcast tracking proxies (pdst.fm, chrt.fm, Spotify prefix, etc.) embed
+ * the real CDN URL inside the path. Extract traffic.megaphone.fm directly
+ * so the browser's audio request doesn't hit a 7-hop redirect chain where
+ * intermediate domains would be blocked by CSP media-src.
+ */
+function resolveAudioUrl(raw: string): string {
+  const match = raw.match(/(https?:\/\/traffic\.megaphone\.fm\/[^?"&\s]+)/i)
+  return match ? match[1] : raw
+}
+
 function parseEpisode(xml: string): Episode | null {
   const itemMatch = xml.match(/<item>([\s\S]*?)<\/item>/)
   if (!itemMatch) return null
@@ -23,7 +34,8 @@ function parseEpisode(xml: string): Episode | null {
 
   const title = firstMatch(item, /<title>([\s\S]*?)<\/title>/)
   const link = firstMatch(item, /<link>([\s\S]*?)<\/link>/)
-  const audioUrl = item.match(/enclosure url="([^"]+)"/)?.[1] ?? ''
+  const rawAudioUrl = item.match(/enclosure url="([^"]+)"/)?.[1] ?? ''
+  const audioUrl = resolveAudioUrl(rawAudioUrl)
   const imageUrl = item.match(/<itunes:image href="([^"]+)"/)?.[1] ?? ''
   const duration = firstMatch(item, /<itunes:duration>([\s\S]*?)<\/itunes:duration>/)
   const pubDate = firstMatch(item, /<pubDate>([\s\S]*?)<\/pubDate>/)
