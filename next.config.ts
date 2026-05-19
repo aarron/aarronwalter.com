@@ -75,8 +75,9 @@ const nextConfig: NextConfig = {
               "connect-src 'self' https://api.discogs.com https://openlibrary.org https://designbetterpodcast.com",
               // Podcast player embed (if any iframes)
               "frame-src 'self'",
-              // Media: self + podcast CDN
-              "media-src 'self' https://megaphone.imgix.net",
+              // Media: self + podcast audio CDN
+              // pdst.fm = tracking proxy entry point; traffic.megaphone.fm = actual audio CDN
+              "media-src 'self' https://pdst.fm https://traffic.megaphone.fm https://megaphone.imgix.net",
             ].join('; '),
           },
         ],
