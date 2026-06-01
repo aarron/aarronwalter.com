@@ -75,9 +75,9 @@ const nextConfig: NextConfig = {
               "connect-src 'self' https://api.discogs.com https://openlibrary.org https://designbetterpodcast.com",
               // Podcast player embed (if any iframes)
               "frame-src 'self'",
-              // Media: self + all Megaphone CDN subdomains
+              // Media: self + all Megaphone CDN subdomains + Vercel Blob (portfolio videos)
               // traffic.megaphone.fm redirects to dcs-spotify.megaphone.fm (dynamic ad insertion)
-              "media-src 'self' https://*.megaphone.fm",
+              "media-src 'self' https://*.megaphone.fm https://*.public.blob.vercel-storage.com",
             ].join('; '),
           },
         ],
