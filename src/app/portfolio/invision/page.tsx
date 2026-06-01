@@ -236,6 +236,7 @@ export default function InVisionPage() {
             />
             <video
               src="https://uvaqsta1kpufxwnn.public.blob.vercel-storage.com/portfolio/invision/john-maeda-design-thinking.mp4"
+              poster="/portfolio/invision/interviews/john-maeda-design-thinking.jpg"
               controls
               playsInline
               aria-label="John Maeda — Design Thinking"
