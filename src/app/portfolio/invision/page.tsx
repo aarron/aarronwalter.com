@@ -195,7 +195,7 @@ export default function InVisionPage() {
           </div>
           <div className="browser-frame-grid">
             <video
-              src="/portfolio/invision/interviews/john-maeda-trust-in-design.mp4"
+              src="https://uvaqsta1kpufxwnn.public.blob.vercel-storage.com/portfolio/invision/john-maeda-trust-in-design.mp4"
               poster="/portfolio/invision/interviews/john-maeda-trust-in-design.jpg"
               controls
               playsInline
@@ -203,7 +203,7 @@ export default function InVisionPage() {
               style={{ width: '100%', display: 'block', borderRadius: '6px' }}
             />
             <video
-              src="/portfolio/invision/interviews/katie-dill-design-critiques.mp4"
+              src="https://uvaqsta1kpufxwnn.public.blob.vercel-storage.com/portfolio/invision/katie-dill-design-critiques.mp4"
               poster="/portfolio/invision/interviews/katie-dill-design-critiques.jpg"
               controls
               playsInline
@@ -211,7 +211,7 @@ export default function InVisionPage() {
               style={{ width: '100%', display: 'block', borderRadius: '6px' }}
             />
             <video
-              src="/portfolio/invision/interviews/lori-kaplan-apple-hig-story.mp4"
+              src="https://uvaqsta1kpufxwnn.public.blob.vercel-storage.com/portfolio/invision/lori-kaplan-apple-hig-story.mp4"
               poster="/portfolio/invision/interviews/lori-kaplan-apple-hig-story.jpg"
               controls
               playsInline
@@ -219,7 +219,7 @@ export default function InVisionPage() {
               style={{ width: '100%', display: 'block', borderRadius: '6px' }}
             />
             <video
-              src="/portfolio/invision/interviews/design-sprints-at-google.mp4"
+              src="https://uvaqsta1kpufxwnn.public.blob.vercel-storage.com/portfolio/invision/design-sprints-at-google.mp4"
               poster="/portfolio/invision/interviews/design-sprints-at-google.jpg"
               controls
               playsInline
@@ -227,7 +227,7 @@ export default function InVisionPage() {
               style={{ width: '100%', display: 'block', borderRadius: '6px' }}
             />
             <video
-              src="/portfolio/invision/interviews/twitter-horizons.mp4"
+              src="https://uvaqsta1kpufxwnn.public.blob.vercel-storage.com/portfolio/invision/twitter-horizons.mp4"
               poster="/portfolio/invision/interviews/twitter-horizons.jpg"
               controls
               playsInline
@@ -235,7 +235,7 @@ export default function InVisionPage() {
               style={{ width: '100%', display: 'block', borderRadius: '6px' }}
             />
             <video
-              src="/portfolio/invision/interviews/john-maeda-design-thinking.mp4"
+              src="https://uvaqsta1kpufxwnn.public.blob.vercel-storage.com/portfolio/invision/john-maeda-design-thinking.mp4"
               controls
               playsInline
               aria-label="John Maeda — Design Thinking"
