@@ -11,6 +11,9 @@ export interface Book {
 
 export const books: Book[] = [
   // ── 2026 ────────────────────────────────────────────────
+  { title: 'The Three-Body Problem', author: 'Cixin Liu', year: 2026, favorite: false, coverUrl:'https://covers.openlibrary.org/b/isbn/9780765382030-M.jpg' },
+  { title: 'The Dark Forest', author: 'Cixin Liu', year: 2026, favorite: false },
+  { title: '1984: The Graphic Novel', author: 'George Orwell and Fido Nesti', year: 2026, favorite: false },
   { title: 'Play It Loud', author: 'Brad Tolinski and Alan di Perna', year: 2026, favorite: false, coverUrl:'https://m.media-amazon.com/images/I/61nvxOUIoqL._SY522_.jpg' },
   { title: 'The Name of This Band Is R.E.M.', author: 'Peter Ames Carlin', year: 2026, favorite: true },
   { title: 'The Old Guard', author: 'Greg Rucka', year: 2026, favorite: true },

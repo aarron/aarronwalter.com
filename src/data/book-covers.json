@@ -2873,5 +2873,36 @@
       "World health"
     ],
     "description": "Medical doctor and economist Christopher Murray began the Global Burden of Disease studies to gain a truer understanding of how we live and how we die. Murray argues that the ideal existence isn't simply the longest but the one lived well and with the least illness. Until we can accurately measure how people live and die, we cannot understand what makes us sick or do much to improve it. In Epic Measures, journalist Jeremy N. Smith offers an intimate look at Murray and his groundbreaking work."
+  },
+  "The Three-Body Problem::Cixin Liu": {
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/9798897226108-M.jpg",
+    "firstPublished": 2016,
+    "subjects": [
+      "Fiction, general"
+    ],
+    "description": null
+  },
+  "The Dark Forest::Cixin Liu": {
+    "coverUrl": "https://covers.openlibrary.org/b/id/10526598-M.jpg",
+    "firstPublished": 2008,
+    "subjects": [
+      "Chinese Science fiction",
+      "Fiction",
+      "Science Fiction",
+      "Fiction, science fiction, general",
+      "Human-alien encounters"
+    ],
+    "description": "Soon to be a Netflix Original Series!\r\n\r\n\"Wildly imaginative.\" —President Barack Obama on The Three-Body Problem trilogy\r\n\r\nThis near-future trilogy is the first chance for English-speaking readers to experience this multiple-award-winning phenomenon from Cixin Liu, China's most beloved science fiction author.\r\n\r\nIn The Dark Forest, Earth is reeling from the revelation of a coming alien invasion-in just four centuries' time."
+  },
+  "1984: The Graphic Novel::George Orwell and Fido Nesti": {
+    "coverUrl": "https://covers.openlibrary.org/b/id/10502178-M.jpg",
+    "firstPublished": 1984,
+    "subjects": [
+      "Totalitarianism",
+      "Comic books, strips",
+      "Dystopias",
+      "Fiction"
+    ],
+    "description": "One of the most influential books of the twentieth century gets the graphic treatment in this first-ever adaptation of George Orwell's 1984."
   }
 }
