@@ -396,12 +396,12 @@ body {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(243, 231, 214, 0.4);
+  color: rgba(243, 231, 214, 0.55);
   line-height: 1;
 }
 
 .nav-section-label--active {
-  color: rgba(255, 71, 37, 0.6);
+  color: #FF4725;
 }
 
 .nav-sublist {
@@ -544,7 +544,7 @@ body {
   color: rgba(243, 231, 214, 0.72);
 }
 
-/* ── DB Stats — Vignelli: one rule, open space ── */
+/* ── DB Stats ── */
 
 .db-stats {
   display: flex;
@@ -552,14 +552,19 @@ body {
   gap: 0;
   margin: 0;
   width: 100%;
+  border-top: 1px solid rgba(243, 231, 214, 0.12);
+  border-bottom: 1px solid rgba(243, 231, 214, 0.12);
 }
 
 .db-stat {
   flex: 1 0 110px;
-  border-left: 1px solid rgba(243, 231, 214, 0.18);
   padding: clamp(0.625rem, 1vw, 0.875rem) clamp(0.75rem, 1.5vw, 1.25rem) clamp(0.625rem, 1vw, 0.875rem) clamp(0.75rem, 1.5vw, 1.25rem);
   display: flex;
   flex-direction: column-reverse;
+}
+
+.db-stat + .db-stat {
+  border-left: 1px solid rgba(243, 231, 214, 0.12);
 }
 
 .db-stat-value {
@@ -575,11 +580,11 @@ body {
 
 .db-stat-label {
   font-family: "aktiv-grotesk", sans-serif;
-  font-size: 0.5625rem;
+  font-size: 0.6875rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: rgba(243, 231, 214, 0.38);
+  color: rgba(243, 231, 214, 0.55);
   display: block;
 }
 
@@ -770,7 +775,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: rgba(243, 231, 214, 0.45);
+  color: rgba(243, 231, 214, 0.62);
   text-decoration: none;
   transition: color 0.15s;
 }
@@ -1193,11 +1198,11 @@ body {
 
 .portfolio-stat-label {
   font-family: "aktiv-grotesk", sans-serif;
-  font-size: 0.5625rem;
+  font-size: 0.6875rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: rgba(44, 42, 42, 0.45);
+  color: rgba(44, 42, 42, 0.70);
   line-height: 1.4;
   display: block;
 }
@@ -1986,16 +1991,16 @@ body {
 
 /* ── Section label + heading ── */
 .pf-label {
-  font-size: 0.5625rem;
+  font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(44, 42, 42, 0.4);
+  color: rgba(44, 42, 42, 0.70);
   margin-bottom: 0.5rem;
 }
 
 .pf-dark-section .pf-label {
-  color: rgba(243, 231, 214, 0.38);
+  color: rgba(243, 231, 214, 0.55);
 }
 
 .pf-heading {
@@ -2089,11 +2094,11 @@ body {
 
 .pf-awards-block__heading {
   font-family: "aktiv-grotesk", sans-serif;
-  font-size: 0.5625rem;
+  font-size: 0.6875rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: rgba(44, 42, 42, 0.45);
+  color: rgba(44, 42, 42, 0.70);
   margin: clamp(1.5rem, 3vw, 2.5rem) 0 clamp(0.75rem, 1.5vw, 1rem);
 }
 
@@ -2144,7 +2149,7 @@ body {
 }
 
 .pf-award-year {
-  font-size: 0.5625rem;
+  font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -2331,11 +2336,11 @@ body {
 }
 
 .pf-meta-label {
-  font-size: 0.5rem;
+  font-size: 0.6875rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(44, 42, 42, 0.38);
+  color: rgba(44, 42, 42, 0.70);
 }
 
 .pf-meta-value {
@@ -3149,7 +3154,7 @@ body {
   background: #FF4725;
   color: #F3E7D6;
   font-family: "aktiv-grotesk", sans-serif;
-  font-size: 0.5rem;
+  font-size: 0.625rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -3653,7 +3658,7 @@ body {
   right: 0;
   background: #1a1818;
   color: rgba(243, 231, 214, 0.80);
-  font-size: 0.5rem;
+  font-size: 0.625rem;
   letter-spacing: 0.10em;
   text-transform: uppercase;
   padding: 0.45rem 0.75rem 0.45rem 0.875rem;
@@ -4163,7 +4168,7 @@ body {
   align-items: center;
   gap: 0.35rem;
   font-family: "aktiv-grotesk", sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;

@@ -113,6 +113,10 @@ export default function ContactForm() {
       {/* ── Guest pitch fields ── */}
       {type === 'guest' && (
         <div className="contact-conditional">
+          <p className="contact-hint">
+            We receive a lot of pitches. The ones that cut through lead with a clear, specific story
+            angle — not a résumé. What would this guest say that no one else could? Keep it brief.
+          </p>
           <div className="contact-row contact-row-2">
             <div className="contact-field">
               <label className="contact-label" htmlFor="guest_name">Guest&rsquo;s name</label>
@@ -146,7 +150,7 @@ export default function ContactForm() {
             </label>
             <p className="contact-hint">
               Design Better explores the creative process at the intersection of design and technology.
-              Help me understand why this guest belongs in that conversation.
+              What specific story or idea would this guest bring to that conversation?
             </p>
             <textarea
               id="guest_fit"

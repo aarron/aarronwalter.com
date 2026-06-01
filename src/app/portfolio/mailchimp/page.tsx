@@ -74,7 +74,7 @@ export default function MailchimpPage() {
         {/* ── Awards & Recognition ── */}
         <div className="pf-awards-block">
           <p className="pf-awards-block__intro">
-            Our years at Mailchimp were a rare kind of moment. We shipped one of the first design
+            The years I spent at Mailchimp were magical, challenging, formative and unlike any other work experience I&rsquo;ve had. We experienced hyper-growth and creative freedom simultaneously. That&rsquo;s rare. We shipped one of the first design
             systems, wrote a voice and tone guide that became a reference for the whole industry,
             and pioneered emotional design in software when most teams were still optimizing for
             clicks. The talent across design, research, and engineering was extraordinary — and it

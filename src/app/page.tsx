@@ -282,7 +282,7 @@ export default async function Home() {
                 Selected episodes
               </span>
               <a
-                href="https://designbetterpodcast.com"
+                href="https://designbetterpodcast.com/podcast"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="t-label"
