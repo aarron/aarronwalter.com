@@ -190,7 +190,7 @@ export default function MailchimpPage() {
           panel={
             <BrowserFrame>
               <video
-                src="/portfolio/mailchimp/gemini/gemini-video.mp4"
+                src="https://uvaqsta1kpufxwnn.public.blob.vercel-storage.com/portfolio/mailchimp/gemini-video.mp4"
                 autoPlay muted loop playsInline
                 aria-label="Gemini app demo"
               />
@@ -269,10 +269,10 @@ export default function MailchimpPage() {
           panel={
             <BrowserFrameGrid layout="stack">
               <BrowserFrame>
-                <video src="/portfolio/mailchimp/high-five/high5.mov" autoPlay muted loop playsInline aria-label="High Five moment screen recording" />
+                <video src="https://uvaqsta1kpufxwnn.public.blob.vercel-storage.com/portfolio/mailchimp/high5.mp4" autoPlay muted loop playsInline aria-label="High Five moment screen recording" />
               </BrowserFrame>
               <BrowserFrame>
-                <video src="/portfolio/mailchimp/high-five/high5tweets.mov" autoPlay muted loop playsInline aria-label="Customer tweets about the High Five moment" />
+                <video src="https://uvaqsta1kpufxwnn.public.blob.vercel-storage.com/portfolio/mailchimp/high5tweets.mp4" autoPlay muted loop playsInline aria-label="Customer tweets about the High Five moment" />
               </BrowserFrame>
             </BrowserFrameGrid>
           }
