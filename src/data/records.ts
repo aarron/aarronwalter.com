@@ -293,4 +293,17 @@ export const records: VinylRecord[] = [
   { artist: 'Boards Of Canada', title: 'Music Has The Right To Children', label: 'Warp Records', format: '2xLP, Album, RE, RP', rating: 4, released: 2013, releaseId: 5006908 },
   { artist: 'Radiohead', title: 'In Rainbows', label: 'XL Recordings', format: 'LP, Album, 180', rating: 0, released: 2007, releaseId: 1174296 },
   { artist: 'Radiohead', title: 'Amnesiac', label: 'XL Recordings', format: '2x12\", Album, RE, 180', rating: 0, released: 2016, releaseId: 8712137 },
+
+  // ── Added Aug 2026 ──────────────────────────────────────
+  { artist: 'Kenny Burrell', title: 'Kenny Burrell', label: 'Blue Note', format: 'LP, Album, Mono', rating: 4, released: 1956, releaseId: 3377796 },
+  { artist: 'Grant Green', title: 'Solid', label: 'Blue Note', format: 'LP, Album, Stereo', rating: 4, released: 1979, releaseId: 1179757 },
+  { artist: 'Tears For Fears', title: 'The Seeds Of Love', label: 'Fontana', format: 'LP, Album, Stereo', rating: 4, released: 1989, releaseId: 1800734 },
+  { artist: 'Herb Alpert & Hugh Masekela', title: 'Main Event Live', label: 'A&M Records', format: 'LP, Album', rating: 4, released: 1978, releaseId: 13094495 },
+  { artist: 'Kamasi Washington', title: 'The Epic', label: 'Brainfeeder', format: '3xLP, Box Set, Album', rating: 4, released: 2015, releaseId: 7383499 },
+  { artist: 'Wayne Shorter', title: 'Juju', label: 'Blue Note', format: 'LP, Album, Stereo', rating: 4, released: 1965, releaseId: 516995 },
+  { artist: 'Nina Simone', title: 'Little Girl Blue', label: 'Bethlehem Records', format: 'LP, Album, Mono', rating: 4, released: 1959, releaseId: 18845746 },
+  { artist: 'Wes Montgomery', title: 'Road Song', label: 'A&M Records', format: 'LP, Album', rating: 4, released: 1968, releaseId: 15801473 },
+  { artist: 'Wes Montgomery', title: 'Down Here On The Ground', label: 'A&M Records', format: 'LP, Album, Stereo', rating: 4, released: 1968, releaseId: 2096091 },
+  { artist: 'Wes Montgomery', title: 'A Day In The Life', label: 'A&M Records', format: 'LP, Album, Stereo', rating: 4, released: 1967, releaseId: 8540922 },
+  { artist: 'Kamasi Washington', title: 'Fearless Movement', label: 'Young', format: '2xLP, Album, Stereo', rating: 4, released: 2024, releaseId: 30582370 },
 ]

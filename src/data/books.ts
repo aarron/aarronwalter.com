@@ -36,6 +36,10 @@ export const books: Book[] = [
   { title: 'Hamnet', author: 'Maggie O\'Farrell', year: 2026, favorite: true, coverUrl:'https://m.media-amazon.com/images/I/61vz5iN9YSL._SY522_.jpg' },
   { title: 'Zen and the Art of Motorcycle Maintenance', author: 'Robert M. Pirsig', year: 2026, favorite: true },
   { title: 'Buckeye', author: 'Patrick Ryan', year: 2026, favorite: true },
+  { title: 'Regime Change', author: 'Maggie Haberman and Jonathan Swan', year: 2026, favorite: false },
+  { title: 'The Marriage Portrait', author: 'Maggie O\'Farrell', year: 2026, favorite: false, coverUrl: 'https://covers.openlibrary.org/b/id/12941223-M.jpg' },
+  { title: 'The History of Jazz', author: 'Ted Gioia', year: 2026, favorite: false },
+  { title: 'Saxophone Colossus', author: 'Aidan Levy', year: 2026, favorite: false },
 
   // ── 2025 ────────────────────────────────────────────────
   { title: 'Pride and Prejudice', author: 'Jane Austen', year: 2025, favorite: false, coverUrl:'https://m.media-amazon.com/images/I/41K1F3Thx4L._SY445_SX342_QL70_FMwebp_.jpg' },

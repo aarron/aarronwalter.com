@@ -2904,5 +2904,41 @@
       "Fiction"
     ],
     "description": "One of the most influential books of the twentieth century gets the graphic treatment in this first-ever adaptation of George Orwell's 1984."
+  },
+  "Regime Change::Maggie Haberman and Jonathan Swan": {
+    "coverUrl": "https://covers.openlibrary.org/b/id/15232516-M.jpg",
+    "firstPublished": 2026,
+    "subjects": [],
+    "description": "“Regime Change is exceptional. It transcends its genre. . . . the book is packed with news that will stay news. . . . This is reporting of consequence.”\\\r\n\\\r\n—David Remnick, The New Yorker\\\r\n\\\r\n\\\r\n\\\r\n“A flabbergasting feat of political reporting.”\\\r\n\\\r\n—Tina Brown\\\r\n\\\r\n“Riveting and richly textured. . . . What the authors add is the vivid detail that makes these events feel actual."
+  },
+  "The Marriage Portrait::Maggie O'Farrell": {
+    "coverUrl": "https://covers.openlibrary.org/b/isbn/1637998465-M.jpg",
+    "firstPublished": 2023,
+    "subjects": [
+      "Fiction, historical, general"
+    ],
+    "description": null
+  },
+  "The History of Jazz::Ted Gioia": {
+    "coverUrl": "https://covers.openlibrary.org/b/id/6282100-M.jpg",
+    "firstPublished": 1997,
+    "subjects": [
+      "Jazz",
+      "History and criticism",
+      "Music",
+      "Nonfiction",
+      "Jazz -- History and criticism"
+    ],
+    "description": "Tells the story of jazz as it has never been told before, in a book that brilliantly portrays the legendary jazz players, the breakthrough styles, and the world in which jazz evolved."
+  },
+  "Saxophone Colossus::Aidan Levy": {
+    "coverUrl": "https://covers.openlibrary.org/b/id/13441060-M.jpg",
+    "firstPublished": 2022,
+    "subjects": [
+      "biography",
+      "jazz",
+      "jazz musicians"
+    ],
+    "description": "The life and work of American jazz saxophonist Sonny Rollins."
   }
 }
