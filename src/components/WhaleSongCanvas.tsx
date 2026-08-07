@@ -65,7 +65,7 @@ export default function WhaleSongCanvas({
     let raf = 0
     let start = 0
 
-    function resize() {
+    const resize = () => {
       const rect = canvas.getBoundingClientRect()
       canvas.width = Math.max(1, Math.round(rect.width * dpr))
       canvas.height = Math.max(1, Math.round(rect.height * dpr))
@@ -79,7 +79,7 @@ export default function WhaleSongCanvas({
     const SPAN = 1.6
     const SPEED = 26 // device-independent px/sec drift
 
-    function draw(now: number) {
+    const draw = (now: number) => {
       if (!start) start = now
       const elapsed = (now - start) / 1000
       const W = canvas.width
