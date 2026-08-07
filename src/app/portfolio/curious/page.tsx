@@ -225,15 +225,6 @@ export default function CuriousPage() {
           </dl>
         </div>
 
-        {/* ── Visit ── */}
-        <div className="pf-brand-hero" style={{ textAlign: 'center' }}>
-          <p className="pf-brand-lead">
-            Curious is live at{' '}
-            <a href="https://imcurious.io" target="_blank" rel="noopener noreferrer">imcurious.io</a>{' '}
-            &mdash; a 7-day free trial on every plan, no credit card to start.
-          </p>
-        </div>
-
       </article>
 
       {/* ── Prev / Next ── */}
