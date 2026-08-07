@@ -199,12 +199,6 @@ export default function CuriousPage() {
             Built end to end — the stack
         ──────────────────────────────────────────────── */}
         <div className="pf-awards-block">
-          <p className="pf-awards-block__intro">
-            I&rsquo;ve spent two decades leading design and product teams. Building Curious alone
-            &mdash; design, frontend, backend, AI, billing, infrastructure &mdash; was a way to
-            close the distance between the whiteboard and the thing that actually ships, and to
-            stay honest about how software really gets made in the age of AI.
-          </p>
           <h3 className="pf-awards-block__heading">Built with</h3>
           <dl className="pf-awards">
             {[
