@@ -2,10 +2,10 @@ import type { Metadata } from 'next'
 import { ogImage } from '@/lib/og'
 import PageHeader from '@/components/PageHeader'
 import CaseStudySection from '@/components/CaseStudySection'
+import WhaleSongCanvas from '@/components/WhaleSongCanvas'
 import BrowserFrame from '@/components/BrowserFrame'
 import PortfolioNav from '@/components/PortfolioNav'
 import PortfolioFooter from '@/components/PortfolioFooter'
-import RidgelineCanvas from '@/components/RidgelineCanvas'
 
 export const metadata: Metadata = {
   title: 'Curious',
@@ -28,13 +28,10 @@ export default function CuriousPage() {
     <>
       <article className="page-article curious-article">
 
-        {/* ── Header with PSR B1919+21 — the first radio pulsar ever discovered ── */}
+        {/* ── Header with a real humpback whale song spectrogram ── */}
         <div className="curious-hero">
-          <RidgelineCanvas
-            className="curious-pulsar"
-            animate="breath"
-          />
-          <span className="viz-credit">Data source: <a href="https://en.wikipedia.org/wiki/PSR_B1919%2B21" target="_blank" rel="noopener noreferrer">PSR B1919+21</a> · first radio pulsar · Arecibo, 1967</span>
+          <WhaleSongCanvas className="curious-whale" />
+          <span className="viz-credit">Data source: <a href="https://www.pmel.noaa.gov/acoustics/whales/sounds/sounds_whales_hump.html" target="_blank" rel="noopener noreferrer">Humpback whale song</a> · NOAA PMEL · Alaska</span>
           <PageHeader eyebrow="Designed &amp; built solo" title="Curious" />
         </div>
 

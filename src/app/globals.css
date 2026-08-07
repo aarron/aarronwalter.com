@@ -3773,14 +3773,14 @@ body {
   z-index: 1;
 }
 
-/* Curious hero — PSR B1919+21, the first radio pulsar (Arecibo, 1967) */
+/* Curious hero — real humpback whale song spectrogram (NOAA PMEL) */
 .curious-hero {
   position: relative;
   min-height: 520px;
   overflow: visible;
 }
 
-.curious-pulsar {
+.curious-whale {
   position: absolute;
   top: 0;
   right: 0;
@@ -3919,7 +3919,7 @@ body {
   .rtsl-co2 { display: none; }
   .books-sunspot { display: none; }
   .other-enso { display: none; }
-  .curious-pulsar { display: none; }
+  .curious-whale { display: none; }
 }
 
 /* ═══════════════════════════════════════════════════════
