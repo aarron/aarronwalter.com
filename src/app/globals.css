@@ -3795,6 +3795,31 @@ body {
   z-index: 1;
 }
 
+/* Curious — keep the product screenshots at a comfortable size.
+   The app UIs are tall/portrait, so left unbounded they overwhelm the copy. */
+.curious-hero-shot {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.curious-article .ds-split__panel .browser-frame {
+  max-width: 460px;
+  margin-inline: auto;
+}
+
+/* Cap very tall screens to a uniform height; scroll rather than crop
+   so nothing in the shot is lost. */
+.curious-article .ds-split__panel .browser-frame__content {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+@media (max-width: 780px) {
+  .curious-article .ds-split__panel .browser-frame {
+    max-width: 420px;
+  }
+}
+
 /* Type specimen */
 .colophon-specimen {
   display: flex;

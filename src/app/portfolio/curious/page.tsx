@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { ogImage } from '@/lib/og'
 import PageHeader from '@/components/PageHeader'
-import StatBlock from '@/components/StatBlock'
 import CaseStudySection from '@/components/CaseStudySection'
 import BrowserFrame from '@/components/BrowserFrame'
 import PortfolioNav from '@/components/PortfolioNav'
@@ -27,7 +26,7 @@ export const metadata: Metadata = {
 export default function CuriousPage() {
   return (
     <>
-      <article className="page-article">
+      <article className="page-article curious-article">
 
         {/* ── Header with PSR B1919+21 — the first radio pulsar ever discovered ── */}
         <div className="curious-hero">
@@ -57,24 +56,15 @@ export default function CuriousPage() {
           </p>
         </div>
 
-        {/* ── Full-bleed: live interview mode ── */}
-        <div className="pf-full-bleed">
-          <img
-            src="/portfolio/curious/live-interview.png"
-            alt="Curious running a live interview — the prep doc, question queue, live signals, and team chat"
-          />
+        {/* ── Product showcase: live interview mode ── */}
+        <div className="pf-panel-wrap curious-hero-shot">
+          <BrowserFrame>
+            <img
+              src="/portfolio/curious/live-interview.png"
+              alt="Curious running a live interview — the prep doc, question queue, live signals, and team chat"
+            />
+          </BrowserFrame>
         </div>
-
-        {/* ── Stats: an honest read on a solo build ── */}
-        <StatBlock
-          heading="By the numbers"
-          stats={[
-            { value: '1',   label: 'Designer & engineer (me)' },
-            { value: '4',   label: 'AI models orchestrated' },
-            { value: '10+', label: 'Services wired together' },
-            { value: '3',   label: 'Stripe-metered plans' },
-          ]}
-        />
 
         {/* ────────────────────────────────────────────────
             FEATURE 1: The dossier
