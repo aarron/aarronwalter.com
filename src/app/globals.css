@@ -2654,7 +2654,10 @@ body {
 }
 
 .about-illustration-credit {
+  /* The figure bleeds ~10vw off the right (≈17% of its own width), so centre
+     the caption within the on-screen portion rather than the full figure. */
   text-align: center;
+  padding-right: 17%;
   font-size: 0.65rem;
   font-style: italic;
   color: rgb(from var(--ink) r g b / 0.6);
@@ -2676,7 +2679,10 @@ body {
 }
 
 .about-intro {
-  max-width: 36rem;
+  /* Cap the lead so it never runs under the illustration (which sits at ~52%
+     of the viewport). The percentage keeps it clear through the mid-width range
+     where a fixed 36rem would collide. */
+  max-width: min(36rem, 46%);
 }
 
 .about-lead {
@@ -4533,11 +4539,27 @@ body {
    against, so they disappear. Give the illustration a light backing (so
    multiply still works) and invert the monochrome logos to show light-on-dark. */
 :root[data-palette="midnight"] .about-illustration-wrap {
-  /* Soft light glow behind the portrait so multiply keys the white, with the
-     edges dissolving into the dark page instead of a hard panel. */
-  background: radial-gradient(ellipse 72% 78% at 54% 44%,
-    #ECEAE3 0%, #ECEAE3 48%, rgba(236, 234, 227, 0.55) 66%, rgba(236, 234, 227, 0) 86%);
+  /* Soft light glow behind the portrait so multiply keys the white. A smaller
+     solid core with a longer, gentler falloff dissolves the rectangular image
+     edges into the dark page rather than reading as a bright panel. */
+  background: radial-gradient(ellipse 64% 70% at 56% 42%,
+    #E7E5DE 0%, #E7E5DE 30%, rgba(231, 229, 222, 0.5) 56%, rgba(231, 229, 222, 0.14) 74%, rgba(231, 229, 222, 0) 88%);
   isolation: isolate;
+}
+
+/* Shift the baked-in orange watercolour toward the palette's heading blue.
+   The portrait is greyscale, so hue-rotate only recolours the wash; saturate
+   softens it toward the lighter #85D2FF. */
+:root[data-palette="midnight"] .about-illustration {
+  filter: hue-rotate(193deg) saturate(0.62) brightness(1.1);
+}
+
+/* Feather the image's rectangular edges so it melts into the page. */
+:root[data-palette="midnight"] .about-illustration-blend {
+  -webkit-mask-image: radial-gradient(ellipse 72% 80% at 56% 44%,
+    #000 0%, #000 52%, rgba(0, 0, 0, 0.55) 72%, rgba(0, 0, 0, 0) 92%);
+  mask-image: radial-gradient(ellipse 72% 80% at 56% 44%,
+    #000 0%, #000 52%, rgba(0, 0, 0, 0.55) 72%, rgba(0, 0, 0, 0) 92%);
 }
 :root[data-palette="midnight"] .about-client-img {
   mix-blend-mode: normal;
