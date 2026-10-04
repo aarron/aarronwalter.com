@@ -4544,7 +4544,6 @@ body {
      edges into the dark page rather than reading as a bright panel. */
   background: radial-gradient(ellipse 64% 70% at 56% 42%,
     #E7E5DE 0%, #E7E5DE 30%, rgba(231, 229, 222, 0.5) 56%, rgba(231, 229, 222, 0.14) 74%, rgba(231, 229, 222, 0) 88%);
-  isolation: isolate;
 }
 
 /* Shift the baked-in orange watercolour toward the palette's heading blue.
@@ -4552,14 +4551,6 @@ body {
    softens it toward the lighter #85D2FF. */
 :root[data-palette="midnight"] .about-illustration {
   filter: hue-rotate(193deg) saturate(0.62) brightness(1.1);
-}
-
-/* Feather the image's rectangular edges so it melts into the page. */
-:root[data-palette="midnight"] .about-illustration-blend {
-  -webkit-mask-image: radial-gradient(ellipse 72% 80% at 56% 44%,
-    #000 0%, #000 52%, rgba(0, 0, 0, 0.55) 72%, rgba(0, 0, 0, 0) 92%);
-  mask-image: radial-gradient(ellipse 72% 80% at 56% 44%,
-    #000 0%, #000 52%, rgba(0, 0, 0, 0.55) 72%, rgba(0, 0, 0, 0) 92%);
 }
 :root[data-palette="midnight"] .about-client-img {
   mix-blend-mode: normal;
