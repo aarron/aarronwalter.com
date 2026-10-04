@@ -1,20 +1,10 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-
-// #F3E7D6 → #2C2A2A
-const CREAM: [number, number, number] = [243, 231, 214]
-const DARK:  [number, number, number] = [44,  42,  42]
+import { getVizColors, usePaletteVersion } from '@/lib/viz-colors'
 
 function lerp(a: number, b: number, t: number) {
   return a + (b - a) * t
-}
-
-function lerpColor(t: number): string {
-  const r = Math.round(lerp(CREAM[0], DARK[0], t))
-  const g = Math.round(lerp(CREAM[1], DARK[1], t))
-  const b = Math.round(lerp(CREAM[2], DARK[2], t))
-  return `rgb(${r},${g},${b})`
 }
 
 // Triangle wave — produces angular V-peaks, unlike sine's rounded curves
@@ -37,12 +27,20 @@ function mountain(xn: number, phase: number, t: number): number {
 
 export default function MountainTransition() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+  const pv = usePaletteVersion()
 
   useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
     const ctx = canvas.getContext('2d')
     if (!ctx) return
+
+    // Blends from the page background (top) into the .about-dark band (var(--ink)).
+    const viz = getVizColors()
+    const CREAM = viz.paperRGB
+    const DARK = viz.inkRGB
+    const lerpColor = (t: number) =>
+      `rgb(${Math.round(lerp(CREAM[0], DARK[0], t))},${Math.round(lerp(CREAM[1], DARK[1], t))},${Math.round(lerp(CREAM[2], DARK[2], t))})`
 
     let raf: number
     const t0 = performance.now()
@@ -114,7 +112,7 @@ export default function MountainTransition() {
       cancelAnimationFrame(raf)
       ro.disconnect()
     }
-  }, [])
+  }, [pv])
 
   return (
     <canvas

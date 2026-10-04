@@ -8,8 +8,7 @@ import BrowserFrameGrid from '@/components/BrowserFrameGrid'
 import TestimonialPair from '@/components/TestimonialPair'
 import PortfolioNav from '@/components/PortfolioNav'
 import PortfolioFooter from '@/components/PortfolioFooter'
-import RidgelineCanvas from '@/components/RidgelineCanvas'
-import { CO2_DATA } from '@/lib/natural-data'
+import GenomeCanvas from '@/components/GenomeCanvas'
 
 export const metadata: Metadata = {
   title: 'Resolve to Save Lives',
@@ -28,15 +27,10 @@ export default function RTSLPage() {
     <>
       <article className="page-article">
 
-        {/* ── Header with Mauna Loa CO₂ seasonal cycle (1960–2019) ── */}
+        {/* ── Header with the SARS-CoV-2 genome drawn as a turtle-walk filament ── */}
         <div className="rtsl-hero">
-          <RidgelineCanvas
-            className="rtsl-co2"
-            data={CO2_DATA}
-            ampRef={0.10}
-            animate="breath"
-          />
-          <span className="viz-credit">Data source: <a href="https://gml.noaa.gov/ccgg/trends/" target="_blank" rel="noopener noreferrer">Mauna Loa CO₂</a> · NOAA GML · 1960–2019</span>
+          <GenomeCanvas className="rtsl-co2" />
+          <span className="viz-credit">Genome: <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2" target="_blank" rel="noopener noreferrer">SARS-CoV-2</a> · NCBI RefSeq NC_045512.2 · Wuhan-Hu-1</span>
           <PageHeader eyebrow="2020–2022" title="Resolve to Save Lives" />
         </div>
 

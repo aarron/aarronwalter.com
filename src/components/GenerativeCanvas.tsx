@@ -3,7 +3,7 @@
 import { useEffect, useRef } from 'react'
 
 const PALETTE = [
-  [255, 71, 37],   // Signal
+  [43, 87, 224],   // Signal
   [133, 210, 255], // Sky
   [224, 235, 1],   // Volt
   [197, 202, 192], // Fog

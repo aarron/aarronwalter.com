@@ -15,7 +15,7 @@ const logoSrc = `data:image/png;base64,${logoB64}`
 
 // ─── Ridgeline generation (PSR B1919+21 pulsar, static snapshot) ─────────────
 
-const BG_FILL = '#F3E7D6'
+const BG_FILL = '#EAE8E1'
 const INK     = 'rgb(70,58,48)'
 
 function buildRidgeSvg(W: number, H: number): string {
@@ -122,7 +122,7 @@ export function GET(req: NextRequest) {
             width: '65%',
             height: '100%',
             background:
-              'linear-gradient(to right, #F3E7D6 0%, #F3E7D6 45%, rgba(243,231,214,0.92) 65%, rgba(243,231,214,0.55) 85%, rgba(243,231,214,0) 100%)',
+              'linear-gradient(to right, #EAE8E1 0%, #EAE8E1 45%, rgba(234, 232, 225,0.92) 65%, rgba(234, 232, 225,0.55) 85%, rgba(234, 232, 225,0) 100%)',
           }}
         />
 
@@ -150,7 +150,7 @@ export function GET(req: NextRequest) {
               style={{
                 fontFamily: 'Lineca',
                 fontWeight: 400,
-                color: '#2C2A2A',
+                color: '#242831',
                 fontSize: titleSize,
                 letterSpacing: '-0.03em',
                 lineHeight: 0.92,
@@ -163,7 +163,7 @@ export function GET(req: NextRequest) {
                 style={{
                   fontFamily: 'Lineca',
                   fontWeight: 400,
-                  color: 'rgba(44, 42, 42, 0.52)',
+                  color: 'rgba(36, 40, 49, 0.52)',
                   fontSize: 22,
                   lineHeight: 1.45,
                   maxWidth: 620,
@@ -180,7 +180,7 @@ export function GET(req: NextRequest) {
               style={{
                 width: 28,
                 height: 2,
-                background: '#FF4725',
+                background: '#2B57E0',
                 borderRadius: 1,
               }}
             />
@@ -188,7 +188,7 @@ export function GET(req: NextRequest) {
               style={{
                 fontFamily: 'Lineca',
                 fontWeight: 400,
-                color: 'rgba(44, 42, 42, 0.38)',
+                color: 'rgba(36, 40, 49, 0.38)',
                 fontSize: 17,
                 letterSpacing: '0.04em',
               }}

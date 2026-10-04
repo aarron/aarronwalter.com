@@ -83,7 +83,7 @@ const { verts: VERTS, faces: FACES } = buildMesh(2)
 // ─── Face color assignment ────────────────────────────────────────────────────
 
 // The four palette colors: warm orange-red, hot pink, dark plum, sky blue
-const PALETTE = ['#FF4725', '#DD015A', '#760149', '#85D2FF'] as const
+const PALETTE = ['#2B57E0', '#DD015A', '#760149', '#85D2FF'] as const
 
 /** Deterministic pseudo-random [0, 1) from a seed */
 function rng(seed: number) {
@@ -223,7 +223,7 @@ export default function GeoSphere() {
         ctx.fill()
 
         // Thin edge lines give the hand-drawn / screen-print feel
-        ctx.strokeStyle = 'rgba(15,5,10,0.09)'
+        ctx.strokeStyle = 'rgba(20, 22, 28,0.09)'
         ctx.lineWidth = 0.55
         ctx.stroke()
       }

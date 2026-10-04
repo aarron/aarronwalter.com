@@ -44,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-palette="midnight">
       <head>
         {/* Aktiv Grotesk via Adobe Fonts */}
         <link rel="stylesheet" href="https://use.typekit.net/xui7gpv.css" />
@@ -54,7 +54,7 @@ export default function RootLayout({
         <a href="#main-content" className="skip-link">Skip to main content</a>
 
         <a href="/" aria-label="Aarron Walter — home" className="site-logo">
-          <Image src="/aarron-walter-logo.png" alt="" width={891} height={891} priority />
+          <Image src="/aarron-walter-logo-inverted.png" alt="" width={891} height={891} priority />
         </a>
         <HamburgerMenu />
         <LightboxProvider>

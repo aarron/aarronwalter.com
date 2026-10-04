@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { getLatestEpisode } from '@/lib/podcast'
+import { getDesignBetterStats } from '@/lib/db-stats'
 import AudioPlayer from '@/components/AudioPlayer'
 import GuestCard from '@/components/GuestCard'
 import HeroWaves from '@/components/HeroWaves'
@@ -21,7 +22,7 @@ const PERSON_JSON_LD = {
     'https://www.instagram.com/aarronwalter/',
     'https://twitter.com/aarron',
     'https://medium.com/@aarron',
-    'https://designbetterpodcast.com',
+    'https://designbetter.com',
   ],
   knowsAbout: [
     'UX Design',
@@ -120,7 +121,12 @@ const FEATURED_GUESTS = [
 ]
 
 export default async function Home() {
-  const episode = await getLatestEpisode()
+  const [episode, dbStats] = await Promise.all([
+    getLatestEpisode(),
+    getDesignBetterStats(),
+  ])
+  // Live Substack subscriber count; falls back to the last-known figure.
+  const subscribers = (dbStats.subscribers ?? 234546).toLocaleString('en-US')
 
   return (
     <>
@@ -165,7 +171,7 @@ export default async function Home() {
       <section className="work-section">
         <div className="work-inner">
           <div className="work-header">
-            <span className="t-label" style={{ color: 'rgba(44,42,42,0.4)' }}>My Work</span>
+            <span className="t-label" style={{ color: 'rgb(from var(--ink) r g b / 0.6)' }}>My Work</span>
           </div>
           <ol className="work-list">
             {[
@@ -218,7 +224,7 @@ export default async function Home() {
             </p>
             
             <ul className="db-follow-links">
-              <li style={{display:'contents'}}><a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer" className="db-follow-link">Substack</a></li>
+              <li style={{display:'contents'}}><a href="https://designbetter.com" target="_blank" rel="noopener noreferrer" className="db-follow-link">Substack</a></li>
               <li style={{display:'contents'}}><span className="db-follow-sep" aria-hidden="true">·</span></li>
               <li style={{display:'contents'}}><a href="https://www.youtube.com/@designbetterpod" target="_blank" rel="noopener noreferrer" className="db-follow-link">YouTube</a></li>
               <li style={{display:'contents'}}><span className="db-follow-sep" aria-hidden="true">·</span></li>
@@ -246,10 +252,10 @@ export default async function Home() {
             {episode ? (
               <AudioPlayer episode={episode} />
             ) : (
-              <p className="t-caption" style={{ color: 'rgba(243,231,214,0.4)' }}>
+              <p className="t-caption" style={{ color: 'rgb(from var(--band-fg) r g b / 0.62)' }}>
                 Episode unavailable.{' '}
-                <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer" style={{ color: '#FF4725' }}>
-                  designbetterpodcast.com
+                <a href="https://designbetter.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--signal)' }}>
+                  designbetter.com
                 </a>
               </p>
             )}
@@ -258,7 +264,7 @@ export default async function Home() {
             <dl className="db-stats">
               <div className="db-stat">
                 <dt className="db-stat-label">Subscribers</dt>
-                <dd className="db-stat-value">234,546</dd>
+                <dd className="db-stat-value">{subscribers}</dd>
               </div>
               <div className="db-stat">
                 <dt className="db-stat-label">Episodes</dt>
@@ -278,15 +284,15 @@ export default async function Home() {
           {/* Right — featured guests */}
           <div className="db-right">
             <div className="guests-header">
-              <span className="t-label" style={{ color: 'rgba(243,231,214,0.45)' }}>
+              <span className="t-label" style={{ color: 'rgb(from var(--band-fg) r g b / 0.62)' }}>
                 Selected episodes
               </span>
               <a
-                href="https://designbetterpodcast.com/podcast"
+                href="https://designbetter.com/listen"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="t-label"
-                style={{ color: '#FF4725', textDecoration: 'none' }}
+                style={{ color: 'var(--signal)', textDecoration: 'none' }}
               >
                 All episodes →
               </a>
@@ -304,12 +310,12 @@ export default async function Home() {
       {/* ── Footer ───────────────────────────────────── */}
       <footer className="site-footer">
         <div className="footer-wave-wrap" aria-hidden="true">
-          <FooterWave color="rgba(243, 231, 214, 0.35)" />
+          <FooterWave />
         </div>
         <div className="footer-inner">
         <span className="t-caption">© {new Date().getFullYear()} <strong className="footer-name">Aarron Walter</strong></span>
         <nav className="footer-links">
-          <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer">Design Better</a>
+          <a href="https://designbetter.com" target="_blank" rel="noopener noreferrer">Design Better</a>
           <a href="https://linkedin.com/in/aarronwalter" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="/colophon">Colophon</a>
           <a href="https://github.com/aarron/aarronwalter.com/issues/new?labels=bug&title=%5BBug%5D+" target="_blank" rel="noopener noreferrer">File a bug</a>

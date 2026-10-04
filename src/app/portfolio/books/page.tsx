@@ -31,7 +31,7 @@ const BOOKS_JSON_LD = {
       author: { '@type': 'Person', name: 'Aarron Walter', url: 'https://aarronwalter.com' },
       publisher: { '@type': 'Organization', name: 'A Book Apart' },
       datePublished: '2011',
-      url: 'https://designbetterpodcast.com/p/designing-for-emotion',
+      url: 'https://designbetter.com/books/designing-for-emotion',
       description: 'How emotion, personality, and surprise can turn a useful product into one people love.',
     },
     {
@@ -40,7 +40,7 @@ const BOOKS_JSON_LD = {
       author: { '@type': 'Person', name: 'Aarron Walter', url: 'https://aarronwalter.com' },
       publisher: { '@type': 'Organization', name: 'Design Better' },
       datePublished: '2018',
-      url: 'https://designbetterpodcast.com/p/principles-of-product-design',
+      url: 'https://designbetter.com/books/principles-of-product-design',
       description: 'Distills the practices that show up again and again at the design teams doing the best work.',
     },
     {
@@ -52,7 +52,7 @@ const BOOKS_JSON_LD = {
       ],
       publisher: { '@type': 'Organization', name: 'Design Better' },
       datePublished: '2019',
-      url: 'https://designbetterpodcast.com/p/design-leadership-handbook',
+      url: 'https://designbetter.com/books/design-leadership-handbook',
       description: 'A guide for designers stepping into their first leadership role.',
     },
   ],
@@ -97,7 +97,7 @@ export default function BooksPage() {
           ]}
           panel={
             <div style={{ marginTop: 'clamp(2rem, 3.5vw, 3rem)' }}>
-              <a href="https://designbetterpodcast.com/p/designing-for-emotion" target="_blank" rel="noopener noreferrer" className="book-cover-link">
+              <a href="https://designbetter.com/books/designing-for-emotion" target="_blank" rel="noopener noreferrer" className="book-cover-link">
                 <BookFrame src="/portfolio/other/designing-for-emotion.png" alt="Designing for Emotion — book cover" />
               </a>
             </div>
@@ -119,7 +119,7 @@ export default function BooksPage() {
             people.
           </p>
           <a
-            href="https://designbetterpodcast.com/p/designing-for-emotion"
+            href="https://designbetter.com/books/designing-for-emotion"
             target="_blank"
             rel="noopener noreferrer"
             className="pf-text-link"
@@ -158,7 +158,7 @@ export default function BooksPage() {
           ]}
           panel={
             <div style={{ marginTop: 'clamp(2rem, 3.5vw, 3rem)' }}>
-              <a href="https://designbetterpodcast.com/p/principles-of-product-design" target="_blank" rel="noopener noreferrer" className="book-cover-link">
+              <a href="https://designbetter.com/books/principles-of-product-design" target="_blank" rel="noopener noreferrer" className="book-cover-link">
                 <BookFrame src="/portfolio/other/principles-of-product-design.png" alt="Principles of Product Design — book cover" />
               </a>
             </div>
@@ -177,7 +177,7 @@ export default function BooksPage() {
             400,000 times alongside the other ten titles in the series.
           </p>
           <a
-            href="https://designbetterpodcast.com/p/principles-of-product-design"
+            href="https://designbetter.com/books/principles-of-product-design"
             target="_blank"
             rel="noopener noreferrer"
             className="pf-text-link"
@@ -200,7 +200,7 @@ export default function BooksPage() {
           ]}
           panel={
             <div style={{ marginTop: 'clamp(2rem, 3.5vw, 3rem)' }}>
-              <a href="https://designbetterpodcast.com/p/design-leadership-handbook" target="_blank" rel="noopener noreferrer" className="book-cover-link">
+              <a href="https://designbetter.com/books/design-leadership-handbook" target="_blank" rel="noopener noreferrer" className="book-cover-link">
                 <BookFrame src="/portfolio/other/design-leadership-handbook.png" alt="Design Leadership Handbook — book cover" />
               </a>
             </div>
@@ -221,7 +221,7 @@ export default function BooksPage() {
             at universities and used inside design organizations around the world.
           </p>
           <a
-            href="https://designbetterpodcast.com/p/design-leadership-handbook"
+            href="https://designbetter.com/books/design-leadership-handbook"
             target="_blank"
             rel="noopener noreferrer"
             className="pf-text-link"

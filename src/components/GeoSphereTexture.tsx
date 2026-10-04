@@ -152,7 +152,7 @@ export default function GeoSphereTexture() {
 
       ctx.save()
       ctx.globalAlpha = sp.opacity
-      ctx.strokeStyle = '#2C2A2A'
+      ctx.strokeStyle = '#242831'
       ctx.lineWidth = sp.lw
       ctx.lineCap = 'round'
       ctx.lineJoin = 'round'

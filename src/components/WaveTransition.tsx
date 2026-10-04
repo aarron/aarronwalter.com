@@ -1,20 +1,10 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-
-// #F3E7D6 → #2C2A2A
-const CREAM: [number, number, number] = [243, 231, 214]
-const DARK:  [number, number, number] = [44,  42,  42]
+import { getVizColors, usePaletteVersion } from '@/lib/viz-colors'
 
 function lerp(a: number, b: number, t: number) {
   return a + (b - a) * t
-}
-
-function lerpColor(t: number): string {
-  const r = Math.round(lerp(CREAM[0], DARK[0], t))
-  const g = Math.round(lerp(CREAM[1], DARK[1], t))
-  const b = Math.round(lerp(CREAM[2], DARK[2], t))
-  return `rgb(${r},${g},${b})`
 }
 
 // Same harmonic blend as the hero waves for visual continuity
@@ -31,6 +21,7 @@ function wave(xn: number, phase: number, t: number): number {
 
 export default function WaveTransition() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+  const pv = usePaletteVersion()
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -39,6 +30,20 @@ export default function WaveTransition() {
     if (!ctx) return
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
+    // Top blends from the page background; bottom meets the Design Better
+    // section, which is now the themed dark band (--band-bg).
+    const CREAM = getVizColors().paperRGB
+    const probe = document.createElement('span')
+    probe.style.color = 'var(--band-bg)'
+    document.body.appendChild(probe)
+    const m = getComputedStyle(probe).color.match(/\d+/g)
+    document.body.removeChild(probe)
+    const DARK: [number, number, number] = m
+      ? [Number(m[0]), Number(m[1]), Number(m[2])]
+      : [44, 42, 42]
+    const lerpColor = (t: number) =>
+      `rgb(${Math.round(lerp(CREAM[0], DARK[0], t))},${Math.round(lerp(CREAM[1], DARK[1], t))},${Math.round(lerp(CREAM[2], DARK[2], t))})`
 
     let raf: number
     const t0 = performance.now()
@@ -128,7 +133,7 @@ export default function WaveTransition() {
       cancelAnimationFrame(raf)
       ro.disconnect()
     }
-  }, [])
+  }, [pv])
 
   return (
     <canvas

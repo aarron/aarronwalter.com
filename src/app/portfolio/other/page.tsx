@@ -6,8 +6,7 @@ import CaseStudySection from '@/components/CaseStudySection'
 import TestimonialPair from '@/components/TestimonialPair'
 import PortfolioNav from '@/components/PortfolioNav'
 import PortfolioFooter from '@/components/PortfolioFooter'
-import RidgelineCanvas from '@/components/RidgelineCanvas'
-import { ENSO_DATA } from '@/lib/natural-data'
+import ConstellationCanvas from '@/components/ConstellationCanvas'
 
 export const metadata: Metadata = {
   title: 'Consulting',
@@ -34,15 +33,10 @@ export default function OtherPage() {
       <article className="page-article">
 
         {/* ── Header ── */}
-        {/* ── Header with ENSO MEI v2 (El Niño/La Niña, 1979–2024) ── */}
+        {/* ── Header with a real star field + IAU constellation figures ── */}
         <div className="other-hero">
-          <RidgelineCanvas
-            className="other-enso"
-            data={ENSO_DATA}
-            ampRef={0.65}
-            animate="breath"
-          />
-          <span className="viz-credit">Data source: <a href="https://psl.noaa.gov/enso/mei/" target="_blank" rel="noopener noreferrer">ENSO MEI v2</a> · NOAA PSL · 1979–2024</span>
+          <ConstellationCanvas className="other-enso" />
+          <span className="viz-credit">Star data: <a href="https://github.com/ofrohn/d3-celestial" target="_blank" rel="noopener noreferrer">Yale Bright Star / Hipparcos</a> · 3,200 stars to mag 5.6</span>
           <PageHeader eyebrow="2008–Present" title="Consulting" />
         </div>
 

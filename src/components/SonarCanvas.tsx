@@ -150,27 +150,27 @@ export default function SonarCanvas({ className }: { className?: string }) {
           ctx!.arc(px, py, dotR, 0, Math.PI * 2)
         }
 
-        ctx!.fillStyle = `rgba(44, 42, 42, ${alpha.toFixed(3)})`
+        ctx!.fillStyle = `rgba(36, 40, 49, ${alpha.toFixed(3)})`
         ctx!.fill()
       }
 
       // ── Left mist — dissolves toward the page heading ─────
       const mistL = ctx!.createLinearGradient(0, 0, W * 0.52, 0)
-      mistL.addColorStop(0,    '#F3E7D6')
-      mistL.addColorStop(0.25, 'rgba(243,231,214,0.96)')
-      mistL.addColorStop(0.55, 'rgba(243,231,214,0.65)')
-      mistL.addColorStop(0.82, 'rgba(243,231,214,0.18)')
-      mistL.addColorStop(1,    'rgba(243,231,214,0)')
+      mistL.addColorStop(0,    '#EAE8E1')
+      mistL.addColorStop(0.25, 'rgba(234, 232, 225,0.96)')
+      mistL.addColorStop(0.55, 'rgba(234, 232, 225,0.65)')
+      mistL.addColorStop(0.82, 'rgba(234, 232, 225,0.18)')
+      mistL.addColorStop(1,    'rgba(234, 232, 225,0)')
       ctx!.fillStyle = mistL
       ctx!.fillRect(0, 0, W * 0.52, H)
 
       // ── Bottom mist — dissolves into page content ─────────
       const fadeStart = H * 0.58
       const mistB = ctx!.createLinearGradient(0, fadeStart, 0, H)
-      mistB.addColorStop(0,    'rgba(243,231,214,0)')
-      mistB.addColorStop(0.35, 'rgba(243,231,214,0.55)')
-      mistB.addColorStop(0.70, 'rgba(243,231,214,0.90)')
-      mistB.addColorStop(1,    '#F3E7D6')
+      mistB.addColorStop(0,    'rgba(234, 232, 225,0)')
+      mistB.addColorStop(0.35, 'rgba(234, 232, 225,0.55)')
+      mistB.addColorStop(0.70, 'rgba(234, 232, 225,0.90)')
+      mistB.addColorStop(1,    '#EAE8E1')
       ctx!.fillStyle = mistB
       ctx!.fillRect(0, fadeStart, W, H - fadeStart)
 

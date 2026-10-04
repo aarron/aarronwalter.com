@@ -19,7 +19,7 @@ export default function PortfolioFooter() {
         </span>
         <nav className="footer-links">
           <a href="#top">↑ Back to top</a>
-          <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://designbetter.com" target="_blank" rel="noopener noreferrer">
             Design Better
           </a>
           <a href="https://linkedin.com/in/aarronwalter" target="_blank" rel="noopener noreferrer">

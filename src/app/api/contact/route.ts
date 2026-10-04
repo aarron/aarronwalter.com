@@ -92,7 +92,7 @@ ${typeNote}
 <hr style="border:none;border-top:1px solid #e5e5e5;margin:24px 0">
 <p style="font-size:12px;color:#999">
   <a href="https://aarronwalter.com" style="color:#999">aarronwalter.com</a> ·
-  <a href="https://designbetterpodcast.com" style="color:#999">Design Better</a>
+  <a href="https://designbetter.com" style="color:#999">Design Better</a>
 </p>
   `.trim()
 }

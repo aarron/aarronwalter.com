@@ -2,12 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import { PULSAR_DATA } from '@/lib/pulsar-data'
-
-// ─── Colors ───────────────────────────────────────────────────────────────────
-const BG_FILL = '#F3E7D6'
-const INK_R   = 70
-const INK_G   = 58
-const INK_B   = 48
+import { getVizColors, usePaletteVersion } from '@/lib/viz-colors'
 
 interface Props {
   className?: string
@@ -35,6 +30,7 @@ export default function RidgelineCanvas({
   animate = 'pulsar',
 }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+  const pv = usePaletteVersion()
 
   useEffect(() => {
     const data   = propData ?? PULSAR_DATA
@@ -49,6 +45,12 @@ export default function RidgelineCanvas({
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
+    // Palette-driven colors (re-read whenever the palette changes via pv dep)
+    const viz = getVizColors()
+    const BG_FILL = viz.paper
+    const [INK_R, INK_G, INK_B] = viz.inkRGB
+    const [ACC_R, ACC_G, ACC_B] = viz.accentRGB
+
     let raf: number
     const t0 = performance.now()
 
@@ -57,13 +59,15 @@ export default function RidgelineCanvas({
     let cachedGrad: CanvasGradient | null = null
 
     function buildGradient() {
+      // Ink on the left, easing toward the palette accent on the right so the
+      // ridgelines pick up the signal color.
       const g = ctx!.createLinearGradient(0, 0, cW, 0)
       g.addColorStop(0.00, `rgba(${INK_R},${INK_G},${INK_B},0.000)`)
       g.addColorStop(0.08, `rgba(${INK_R},${INK_G},${INK_B},0.018)`)
       g.addColorStop(0.25, `rgba(${INK_R},${INK_G},${INK_B},0.090)`)
-      g.addColorStop(0.50, `rgba(${INK_R},${INK_G},${INK_B},0.185)`)
-      g.addColorStop(0.78, `rgba(${INK_R},${INK_G},${INK_B},0.235)`)
-      g.addColorStop(1.00, `rgba(${INK_R},${INK_G},${INK_B},0.260)`)
+      g.addColorStop(0.50, `rgba(${Math.round((INK_R+ACC_R)/2)},${Math.round((INK_G+ACC_G)/2)},${Math.round((INK_B+ACC_B)/2)},0.185)`)
+      g.addColorStop(0.78, `rgba(${ACC_R},${ACC_G},${ACC_B},0.230)`)
+      g.addColorStop(1.00, `rgba(${ACC_R},${ACC_G},${ACC_B},0.300)`)
       return g
     }
 
@@ -148,7 +152,7 @@ export default function RidgelineCanvas({
     raf = requestAnimationFrame(draw)
 
     return () => { cancelAnimationFrame(raf); ro.disconnect() }
-  }, [propData, propAmpRef, animate])
+  }, [propData, propAmpRef, animate, pv])
 
   return <canvas ref={canvasRef} className={className} aria-hidden="true" />
 }

@@ -141,7 +141,7 @@ export default function HamburgerMenu() {
         {/* Footer — hairline + Design Better logo */}
         <div className="nav-footer">
           <a
-            href="https://designbetterpodcast.com"
+            href="https://designbetter.com"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-db-logo"

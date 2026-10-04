@@ -1,8 +1,8 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import { getVizColors, usePaletteVersion } from '@/lib/viz-colors'
 
-const INK: [number, number, number] = [44, 42, 42]
 
 const COUNT     = 875
 const MAX_SPEED = 3.8
@@ -50,12 +50,15 @@ export default function FlockCanvas({
   centerSpawn?: boolean
 }) {
   const ref = useRef<HTMLCanvasElement>(null)
+  const pv = usePaletteVersion()
 
   useEffect(() => {
     const canvas = ref.current
     if (!canvas) return
     const ctx = canvas.getContext('2d')
     if (!ctx) return
+
+    const INK = getVizColors().inkRGB
 
     let raf: number
     let W = 0, H = 0
@@ -79,26 +82,30 @@ export default function FlockCanvas({
       ctx!.setTransform(dpr, 0, 0, dpr, 0, 0)
 
       if (!ready && W > 0 && H > 0) {
-        // Seed one tight cluster — all boids given nearly identical velocity
-        // so flocking rules kick in immediately rather than from a scatter
-        const cx     = centerSpawn ? W * 0.50 : W * 0.65
-        const cy     = centerSpawn ? H * 0.50 : H * 0.30
-        const spread = centerSpawn
-          ? Math.min(W, H) * 0.06   // very tight — erupt from a single point
-          : Math.min(W, H) * 0.32
-
         boids = Array.from({ length: COUNT }, () => {
-          // Center mode: each boid gets a fully random outward angle so the
-          // flock erupts radially; otherwise use the classic left-heading angle
-          const baseAngle = centerSpawn
-            ? Math.random() * Math.PI * 2
-            : -0.35
-          const angleSpread = centerSpawn ? 0 : 0.4
-          const angle = baseAngle + (Math.random() - 0.5) * angleSpread
-          const speed = MIN_SPEED + Math.random() * (MAX_SPEED - MIN_SPEED) * 0.35
+          if (centerSpawn) {
+            // 404 page: erupt radially from a tight point at centre.
+            const spread = Math.min(W, H) * 0.06
+            const angle  = Math.random() * Math.PI * 2
+            const speed  = MIN_SPEED + Math.random() * (MAX_SPEED - MIN_SPEED) * 0.35
+            return {
+              x:  W * 0.5 + (Math.random() - 0.5) * spread,
+              y:  H * 0.5 + (Math.random() - 0.5) * spread,
+              z:  Math.random(),
+              vx: Math.cos(angle) * speed,
+              vy: Math.sin(angle) * speed,
+              vz: (Math.random() - 0.5) * 0.0008,
+            }
+          }
+          // Contact page: scatter across the whole canvas, already in flight and
+          // loosely heading the same way, so it reads as a natural flock already
+          // aloft rather than erupting from a concentrated box. Flocking then
+          // gathers it into drifting murmuration clusters.
+          const angle = -0.35 + (Math.random() - 0.5) * 0.5
+          const speed = MIN_SPEED + Math.random() * (MAX_SPEED - MIN_SPEED)
           return {
-            x:  cx + (Math.random() - 0.5) * spread,
-            y:  cy + (Math.random() - 0.5) * spread,
+            x:  Math.random() * W,
+            y:  Math.random() * H,
             z:  Math.random(),
             vx: Math.cos(angle) * speed,
             vy: Math.sin(angle) * speed,
@@ -239,7 +246,7 @@ export default function FlockCanvas({
     raf = requestAnimationFrame(tick)
 
     return () => { cancelAnimationFrame(raf); ro.disconnect() }
-  }, [])
+  }, [pv])
 
   return <canvas ref={ref} className={className} aria-hidden="true" />
 }

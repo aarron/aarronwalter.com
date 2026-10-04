@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import { getVizColors, usePaletteVersion } from '@/lib/viz-colors'
 import {
   TSUNAMI_CRESCENT_CITY,
   TSUNAMI_KAWAIHAE,
@@ -22,23 +23,23 @@ const LINE_WIDTHS     = [1.0, 1.5, 1.2]
 const WINDOW          = 90                      // data points visible at once (~9 h of data)
 const CYCLE_SECS      = 96                      // seconds per full 24-h playback loop
 
-// Dark-background palette (cream tones on dark footer)
-const DARK_STROKES  = [
-  'rgba(243, 231, 214, 0.22)',
-  'rgba(243, 231, 214, 0.35)',
-  'rgba(243, 231, 214, 0.15)',
-]
+const relLum = (rgb: readonly [number, number, number]) => {
+  const f = (c: number) => {
+    c /= 255
+    return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4)
+  }
+  return 0.2126 * f(rgb[0]) + 0.7152 * f(rgb[1]) + 0.0722 * f(rgb[2])
+}
 
-// Light-background palette (ink tones on cream footer)
-const LIGHT_STROKES = [
-  'rgba(44, 42, 42, 0.13)',
-  'rgba(44, 42, 42, 0.20)',
-  'rgba(44, 42, 42, 0.09)',
-]
+const parseRGB = (str: string, fb: [number, number, number]): [number, number, number] => {
+  const m = str.match(/[\d.]+/g)
+  if (m && m.length >= 3 && (m.length < 4 || Number(m[3]) > 0)) return [Number(m[0]), Number(m[1]), Number(m[2])]
+  return fb
+}
 
-export default function FooterWave({ color }: { color?: string }) {
-  const isDark = Boolean(color)
+export default function FooterWave() {
   const ref = useRef<HTMLCanvasElement>(null)
+  const pv = usePaletteVersion()
 
   useEffect(() => {
     const canvas = ref.current
@@ -46,7 +47,24 @@ export default function FooterWave({ color }: { color?: string }) {
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
-    const strokes = isDark ? DARK_STROKES : LIGHT_STROKES
+    // Palette-aware strokes: read the footer's *actual* background and stroke
+    // with whichever palette colour contrasts most, at an alpha matched to the
+    // background's darkness. Works on both light and dark footers, every palette
+    // (in Midnight a "--light" footer is still near-black, so the old prop-based
+    // light/dark guess drew invisible lines).
+    const viz = getVizColors()
+    let bg: [number, number, number] = [...viz.paperRGB]
+    const footerEl = canvas.closest('.site-footer')
+    if (footerEl) bg = parseRGB(getComputedStyle(footerEl).backgroundColor, bg)
+    const bgLum = relLum(bg)
+    const lineRGB =
+      Math.abs(relLum(viz.paperRGB) - bgLum) >= Math.abs(relLum(viz.inkRGB) - bgLum)
+        ? viz.paperRGB
+        : viz.inkRGB
+    const bgDark = bgLum < 0.35
+    const alphas = bgDark ? [0.30, 0.45, 0.22] : [0.13, 0.20, 0.09]
+    const [r, g, b] = lineRGB
+    const strokes = alphas.map((a) => `rgba(${r}, ${g}, ${b}, ${a})`)
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
 
@@ -121,7 +139,7 @@ export default function FooterWave({ color }: { color?: string }) {
     raf = requestAnimationFrame(draw)
 
     return () => { cancelAnimationFrame(raf); ro.disconnect() }
-  }, [isDark])
+  }, [pv])
 
   return (
     <canvas ref={ref} style={{ display: 'block', width: '100%', height: '100%' }} aria-hidden="true" />

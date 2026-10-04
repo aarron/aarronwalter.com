@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import FooterWave from '@/components/FooterWave'
 import ListeningGrid from '@/components/ListeningGrid'
-import RidgelineCanvas from '@/components/RidgelineCanvas'
-import { GW150914_DATA } from '@/lib/gw150914'
+import GrooveCanvas from '@/components/GrooveCanvas'
 import { records } from '@/data/records'
 import type { RecordMeta } from '@/components/RecordCard'
 import coversJson from '@/data/record-covers.json'
@@ -48,13 +47,8 @@ export default function ListeningPage() {
   return (
     <>
       <article className="page-article">
-        <RidgelineCanvas
-          className="page-hero-canvas"
-          data={GW150914_DATA}
-          ampRef={0.48}
-          animate="breath"
-        />
-        <span className="viz-credit" style={{ bottom: 'auto', top: 'calc(clamp(16rem, 24vw, 20rem) + clamp(4rem, 12vw, 10rem) * 0.9 + clamp(1.5rem, 3vw, 2.5rem))' }}>Data source: <a href="https://gwosc.org/events/GW150914/" target="_blank" rel="noopener noreferrer">GW150914 strain</a> · LIGO GWOSC · Sept 14, 2015</span>
+        <GrooveCanvas className="page-hero-canvas" />
+        <span className="viz-credit" style={{ bottom: 'auto', top: 'calc(clamp(16rem, 24vw, 20rem) + clamp(4rem, 12vw, 10rem) * 0.9 + clamp(1.5rem, 3vw, 2.5rem))' }}>Data source: <a href="https://archive.org/details/TheSoundsOfEarth" target="_blank" rel="noopener noreferrer">Voyager Golden Record</a> · NASA · “The Sounds of Earth,” 1977</span>
 
         <header className="page-header">
           <h1 className="page-header-title">Listening</h1>
@@ -74,7 +68,7 @@ export default function ListeningPage() {
         <div className="footer-inner">
           <span className="t-caption">© {new Date().getFullYear()} <strong className="footer-name">Aarron Walter</strong></span>
           <nav className="footer-links">
-            <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer">Design Better</a>
+            <a href="https://designbetter.com" target="_blank" rel="noopener noreferrer">Design Better</a>
             <a href="https://linkedin.com/in/aarronwalter" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </nav>
         </div>

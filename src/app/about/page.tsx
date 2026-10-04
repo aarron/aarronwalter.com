@@ -53,7 +53,7 @@ export default function AboutPage() {
         sameAs: [
           'https://www.linkedin.com/in/aarron/',
           'https://twitter.com/aarron',
-          'https://designbetterpodcast.com',
+          'https://designbetter.com',
         ],
       }} />
 
@@ -156,11 +156,11 @@ export default function AboutPage() {
       </div>
 
       <footer className="site-footer">
-        <div className="footer-wave-wrap" aria-hidden="true"><FooterWave color="rgba(243, 231, 214, 0.35)" /></div>
+        <div className="footer-wave-wrap" aria-hidden="true"><FooterWave /></div>
         <div className="footer-inner">
           <span className="t-caption">© {new Date().getFullYear()} <strong className="footer-name">Aarron Walter</strong></span>
           <nav className="footer-links">
-            <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer">Design Better</a>
+            <a href="https://designbetter.com" target="_blank" rel="noopener noreferrer">Design Better</a>
             <a href="https://linkedin.com/in/aarronwalter" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="/colophon">Colophon</a>
             <a href="https://github.com/aarron/aarronwalter.com/issues/new?labels=bug&title=%5BBug%5D+" target="_blank" rel="noopener noreferrer">File a bug</a>

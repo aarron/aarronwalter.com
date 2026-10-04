@@ -61,7 +61,7 @@ export default async function NotesPage() {
         <div className="footer-inner">
           <span className="t-caption">© {new Date().getFullYear()} <strong className="footer-name">Aarron Walter</strong></span>
           <nav className="footer-links">
-            <a href="https://designbetterpodcast.com" target="_blank" rel="noopener noreferrer">Design Better</a>
+            <a href="https://designbetter.com" target="_blank" rel="noopener noreferrer">Design Better</a>
             <a href="https://linkedin.com/in/aarronwalter" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </nav>
         </div>

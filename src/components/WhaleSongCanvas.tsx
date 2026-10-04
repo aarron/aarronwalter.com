@@ -2,10 +2,11 @@
 
 import { useEffect, useRef } from 'react'
 import { WHALE_SONG_CONTOUR, type ContourPoint } from '@/lib/whale-song'
+import { getVizColors, usePaletteVersion } from '@/lib/viz-colors'
 
 interface Props {
   className?: string
-  /** Ink color (charcoal to match the site). */
+  /** Ink color; defaults to the current palette's viz-ink. */
   color?: [number, number, number]
   /** Peak opacity of the drawn contour. */
   opacity?: number
@@ -20,10 +21,11 @@ interface Props {
  */
 export default function WhaleSongCanvas({
   className,
-  color = [44, 42, 42],
+  color,
   opacity = 0.6,
 }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+  const pv = usePaletteVersion()
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -31,7 +33,7 @@ export default function WhaleSongCanvas({
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
-    const [cr, cg, cb] = color
+    const [cr, cg, cb] = color ?? getVizColors().inkRGB
     const inkRGB = `${cr}, ${cg}, ${cb}`
 
     // Precompute per-phrase average strength (drives width + opacity).
@@ -111,7 +113,7 @@ export default function WhaleSongCanvas({
       cancelAnimationFrame(raf)
       ro.disconnect()
     }
-  }, [color, opacity])
+  }, [color, opacity, pv])
 
   return <canvas ref={canvasRef} className={className} aria-hidden="true" />
 }

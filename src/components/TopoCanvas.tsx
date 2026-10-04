@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import { ICELAND_ELEVATION } from '@/lib/iceland-elevation'
+import { getVizColors, usePaletteVersion } from '@/lib/viz-colors'
 
 // Grid & contour settings
 const GW     = 88   // columns
@@ -34,12 +35,19 @@ const MS: Array<Array<[number, number]>> = [
 
 export default function TopoCanvas({ className }: { className?: string }) {
   const ref = useRef<HTMLCanvasElement>(null)
+  const pv = usePaletteVersion()
 
   useEffect(() => {
     const canvas = ref.current
     if (!canvas) return
     const ctx = canvas.getContext('2d')
     if (!ctx) return
+
+    const viz = getVizColors()
+    const [IR, IG, IB] = viz.inkRGB
+    const [AR, AG, AB] = viz.accentRGB
+    const [PR, PG, PB] = viz.paperRGB
+    const PAPER = viz.paper
 
     // Iceland elevation data: 72 rows × 90 cols, normalized [-1, 1]
     const SRC_ROWS = ICELAND_ELEVATION.length       // 72
@@ -148,7 +156,12 @@ export default function TopoCanvas({ className }: { className?: string }) {
         const midArc  = 1 - Math.abs(lNorm - 0.5) * 1.8
         const alpha   = Math.max(0.03, midArc * (isIndex ? 0.48 : 0.20))
 
-        ctx!.strokeStyle = `rgba(70, 58, 48, ${alpha.toFixed(3)})`
+        // Ink → accent gradient across elevation, matching the DNA ribbon:
+        // low contours read as ink, high ridgelines tint toward the accent.
+        const cr = Math.round(IR + (AR - IR) * lNorm)
+        const cg = Math.round(IG + (AG - IG) * lNorm)
+        const cb = Math.round(IB + (AB - IB) * lNorm)
+        ctx!.strokeStyle = `rgba(${cr}, ${cg}, ${cb}, ${alpha.toFixed(3)})`
         ctx!.lineWidth   = isIndex ? 1.4 : 0.65
         ctx!.lineJoin    = 'round'
         ctx!.lineCap     = 'round'
@@ -181,11 +194,11 @@ export default function TopoCanvas({ className }: { className?: string }) {
 
       // ── Mist: left fade (toward the heading) ────────────
       const mistL = ctx!.createLinearGradient(0, 0, w * 0.52, 0)
-      mistL.addColorStop(0,    '#F3E7D6')
-      mistL.addColorStop(0.25, 'rgba(243,231,214,0.96)')
-      mistL.addColorStop(0.55, 'rgba(243,231,214,0.65)')
-      mistL.addColorStop(0.82, 'rgba(243,231,214,0.18)')
-      mistL.addColorStop(1,    'rgba(243,231,214,0)')
+      mistL.addColorStop(0,    PAPER)
+      mistL.addColorStop(0.25, `rgba(${PR}, ${PG}, ${PB},0.96)`)
+      mistL.addColorStop(0.55, `rgba(${PR}, ${PG}, ${PB},0.65)`)
+      mistL.addColorStop(0.82, `rgba(${PR}, ${PG}, ${PB},0.18)`)
+      mistL.addColorStop(1,    `rgba(${PR}, ${PG}, ${PB},0)`)
       ctx!.fillStyle = mistL
       ctx!.fillRect(0, 0, w * 0.52, h)
 
@@ -193,10 +206,10 @@ export default function TopoCanvas({ className }: { className?: string }) {
       const fadeStart = h * 0.58
       const fadeEnd   = h
       const mistB = ctx!.createLinearGradient(0, fadeStart, 0, fadeEnd)
-      mistB.addColorStop(0,    'rgba(243,231,214,0)')
-      mistB.addColorStop(0.35, 'rgba(243,231,214,0.55)')
-      mistB.addColorStop(0.70, 'rgba(243,231,214,0.90)')
-      mistB.addColorStop(1,    '#F3E7D6')
+      mistB.addColorStop(0,    `rgba(${PR}, ${PG}, ${PB},0)`)
+      mistB.addColorStop(0.35, `rgba(${PR}, ${PG}, ${PB},0.55)`)
+      mistB.addColorStop(0.70, `rgba(${PR}, ${PG}, ${PB},0.90)`)
+      mistB.addColorStop(1,    PAPER)
       ctx!.fillStyle = mistB
       ctx!.fillRect(0, fadeStart, w, fadeEnd - fadeStart)
 
@@ -212,7 +225,7 @@ export default function TopoCanvas({ className }: { className?: string }) {
       cancelAnimationFrame(raf)
       ro.disconnect()
     }
-  }, [])
+  }, [pv])
 
   return <canvas ref={ref} className={className} aria-hidden="true" />
 }

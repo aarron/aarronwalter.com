@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import { getVizColors, usePaletteVersion } from '@/lib/viz-colors'
 
 interface Props {
   className?: string
@@ -8,6 +9,7 @@ interface Props {
 
 export default function HeroWaves({ className }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
+  const pv = usePaletteVersion()
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -16,6 +18,10 @@ export default function HeroWaves({ className }: Props) {
     if (!ctx) return
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
+    const viz = getVizColors()
+    const [INK_R, INK_G, INK_B] = viz.inkRGB
+    const [ACC_R, ACC_G, ACC_B] = viz.accentRGB
 
     let raf: number
     const t0 = performance.now()
@@ -60,13 +66,18 @@ export default function HeroWaves({ className }: Props) {
 
     function buildGradient() {
       const g = ctx!.createLinearGradient(0, 0, cW, 0)
-      g.addColorStop(0.00, 'rgba(70, 58, 48, 0.000)')
-      g.addColorStop(0.10, 'rgba(70, 58, 48, 0.008)')
-      g.addColorStop(0.22, 'rgba(70, 58, 48, 0.055)')
-      g.addColorStop(0.40, 'rgba(70, 58, 48, 0.115)')
-      g.addColorStop(0.65, 'rgba(70, 58, 48, 0.165)')
-      g.addColorStop(0.85, 'rgba(70, 58, 48, 0.200)')
-      g.addColorStop(1.00, 'rgba(70, 58, 48, 0.225)')
+      const mix = (f: number) => [
+        Math.round(INK_R + (ACC_R - INK_R) * f),
+        Math.round(INK_G + (ACC_G - INK_G) * f),
+        Math.round(INK_B + (ACC_B - INK_B) * f),
+      ]
+      g.addColorStop(0.00, `rgba(${INK_R}, ${INK_G}, ${INK_B}, 0.000)`)
+      g.addColorStop(0.10, `rgba(${INK_R}, ${INK_G}, ${INK_B}, 0.008)`)
+      g.addColorStop(0.22, `rgba(${INK_R}, ${INK_G}, ${INK_B}, 0.055)`)
+      g.addColorStop(0.40, `rgba(${mix(0.35).join(', ')}, 0.115)`)
+      g.addColorStop(0.65, `rgba(${mix(0.7).join(', ')}, 0.165)`)
+      g.addColorStop(0.85, `rgba(${ACC_R}, ${ACC_G}, ${ACC_B}, 0.205)`)
+      g.addColorStop(1.00, `rgba(${ACC_R}, ${ACC_G}, ${ACC_B}, 0.235)`)
       return g
     }
 
@@ -201,7 +212,7 @@ export default function HeroWaves({ className }: Props) {
       ro.disconnect()
       window.removeEventListener('mousemove', onMouseMove)
     }
-  }, [])
+  }, [pv])
 
   return <canvas ref={canvasRef} className={className} aria-hidden="true" />
 }

@@ -9,7 +9,7 @@ import { useEffect, useRef } from 'react'
 //  the cream page and the illustration beneath.
 // ─────────────────────────────────────────────────────────────────────────
 
-const INK         = 'rgb(20, 10, 4)'    // warm India-ink black
+const INK         = 'rgb(22, 25, 31)'    // warm India-ink black
 const MAX_ACTIVE  = 14
 const SPAWN_EVERY = 110                  // frames between new tendrils
 
