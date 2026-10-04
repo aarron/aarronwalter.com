@@ -70,7 +70,7 @@ export default function AboutPage() {
               priority
             />
           </div>
-          <figcaption className="about-illustration-credit">Illustration by Jason Chatfield</figcaption>
+          <figcaption className="about-illustration-credit">Illustration by <a href="https://www.newyorkcartoons.com/?utm_campaign=profile_chips" target="_blank" rel="noopener noreferrer" className="credit-link">Jason Chatfield</a></figcaption>
         </figure>
 
         <header className="page-header">

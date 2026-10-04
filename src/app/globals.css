@@ -2671,6 +2671,21 @@ body {
   pointer-events: none;
 }
 
+/* Re-enable clicks on the artist link (the caption disables pointer events). */
+.credit-link {
+  pointer-events: auto;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgb(from var(--ink) r g b / 0.35);
+  text-underline-offset: 0.18em;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+.credit-link:hover {
+  color: var(--heading);
+  text-decoration-color: var(--heading);
+}
+
 .about-content {
 }
 
