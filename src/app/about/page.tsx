@@ -62,7 +62,7 @@ export default function AboutPage() {
         <figure className="about-illustration-wrap">
           <div className="about-illustration-blend">
             <Image
-              src="/Aarron.jpg"
+              src="/Aarron-2.jpg"
               alt="Illustration of Aarron Walter"
               width={2000}
               height={1842}

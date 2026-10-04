@@ -4539,15 +4539,9 @@ body {
 }
 
 /* ─── Dark palette: About-page artwork ─────────────────────────────────
-   The illustration shows on its own background (no gradient blend). The logos
-   below are inverted to read light-on-dark. */
-
-/* Shift the baked-in orange watercolour toward the palette's heading blue.
-   The portrait is greyscale, so hue-rotate only recolours the wash; saturate
-   softens it toward the lighter #85D2FF. */
-:root[data-palette="midnight"] .about-illustration {
-  filter: hue-rotate(193deg) saturate(0.62) brightness(1.1);
-}
+   The illustration (Aarron-2.jpg) is drawn on a dark background with a blue
+   wash, so it blends into the page as-is — no filter or gradient blend. The
+   logos below are inverted to read light-on-dark. */
 :root[data-palette="midnight"] .about-client-img {
   mix-blend-mode: normal;
   filter: grayscale(1) invert(1) brightness(1.1);
