@@ -1017,8 +1017,12 @@ body {
   margin-left: clamp(0.5rem, 1.5vw, 1.5rem);
 }
 
+.work-link:hover .work-index {
+  color: var(--heading);
+}
+
 .work-link:hover .work-arrow {
-  color: var(--signal);
+  color: var(--heading);
   transform: translateX(5px);
 }
 

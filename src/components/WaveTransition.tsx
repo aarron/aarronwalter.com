@@ -52,7 +52,7 @@ export default function WaveTransition() {
     const LIFT_TARGET = getVizColors().inkRGB
     const contrast =
       (Math.abs(CREAM[0] - DARK[0]) + Math.abs(CREAM[1] - DARK[1]) + Math.abs(CREAM[2] - DARK[2])) / 3
-    const liftAmt = Math.max(0, Math.min(1, 1 - contrast / 120)) * 0.42
+    const liftAmt = Math.max(0, Math.min(1, 1 - contrast / 120)) * 0.24
 
     const lerpColor = (t: number) => {
       const lift = Math.sin(t * Math.PI) * liftAmt // 0 at edges, peak mid-stack
