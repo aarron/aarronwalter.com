@@ -148,7 +148,7 @@ export default async function Home() {
           <hr className="hero-rule" />
 
           <p className="t-body hero-intro">
-            I&rsquo;m the co-founder of Design Better and have spent two decades influencing how
+            I&rsquo;m the co-founder of <a href="https://designbetter.com" target="_blank" rel="noopener noreferrer" className="hero-intro-link">Design Better</a> and have spent two decades influencing how
             the tech industry thinks about design&mdash;from building the UX practice at Mailchimp
             to advising the White House, WHO, and hundreds of companies worldwide.
           </p>

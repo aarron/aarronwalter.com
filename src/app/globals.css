@@ -269,6 +269,20 @@ body {
   max-width: 54ch;
 }
 
+.hero-intro-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgb(from var(--ink) r g b / 0.4);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+
+.hero-intro-link:hover {
+  color: var(--heading);
+  text-decoration-color: var(--heading);
+}
+
 /* ─── Hero Links ─────────────────────────────────────── */
 
 .hero-links {
