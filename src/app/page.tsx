@@ -229,8 +229,6 @@ export default async function Home() {
               <li style={{display:'contents'}}><a href="https://www.youtube.com/@designbetterpod" target="_blank" rel="noopener noreferrer" className="db-follow-link">YouTube</a></li>
               <li style={{display:'contents'}}><span className="db-follow-sep" aria-hidden="true">·</span></li>
               <li style={{display:'contents'}}><a href="https://designbetter.careers/" target="_blank" rel="noopener noreferrer" className="db-follow-link">Careers</a></li>
-              <li style={{display:'contents'}}><span className="db-follow-sep" aria-hidden="true">·</span></li>
-              <li style={{display:'contents'}}><a href="https://designbetter.team/" target="_blank" rel="noopener noreferrer" className="db-follow-link">For Teams</a></li>
             </ul>
 
             <ul className="db-subscribe">
