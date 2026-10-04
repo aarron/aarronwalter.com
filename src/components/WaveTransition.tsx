@@ -42,8 +42,26 @@ export default function WaveTransition() {
     const DARK: [number, number, number] = m
       ? [Number(m[0]), Number(m[1]), Number(m[2])]
       : [44, 42, 42]
-    const lerpColor = (t: number) =>
-      `rgb(${Math.round(lerp(CREAM[0], DARK[0], t))},${Math.round(lerp(CREAM[1], DARK[1], t))},${Math.round(lerp(CREAM[2], DARK[2], t))})`
+
+    // When the page background and the Design Better band are both dark (e.g.
+    // Midnight), CREAM→DARK spans almost no tonal range and the wave crests
+    // vanish. Detect that low contrast and lift the mid-stack ribbons toward the
+    // contrasting ink colour so the silhouette reads — most in the middle, none
+    // at the edges, so the top still blends into the page and the bottom into
+    // the band. In light palettes the contrast is high, so the lift is ~0.
+    const LIFT_TARGET = getVizColors().inkRGB
+    const contrast =
+      (Math.abs(CREAM[0] - DARK[0]) + Math.abs(CREAM[1] - DARK[1]) + Math.abs(CREAM[2] - DARK[2])) / 3
+    const liftAmt = Math.max(0, Math.min(1, 1 - contrast / 120)) * 0.42
+
+    const lerpColor = (t: number) => {
+      const lift = Math.sin(t * Math.PI) * liftAmt // 0 at edges, peak mid-stack
+      const ch = (i: number) => {
+        const base = lerp(CREAM[i], DARK[i], t)
+        return Math.round(base + (LIFT_TARGET[i] - base) * lift)
+      }
+      return `rgb(${ch(0)},${ch(1)},${ch(2)})`
+    }
 
     let raf: number
     const t0 = performance.now()
