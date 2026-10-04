@@ -2643,7 +2643,6 @@ body {
 }
 
 .about-illustration-blend {
-  mix-blend-mode: multiply;
   clip-path: inset(6px 0px);
 }
 
@@ -4533,18 +4532,9 @@ body {
   .palette-chip__label { display: none; }
 }
 
-/* ─── Dark palette: fix multiply-blended artwork on the About page ──────
-   The illustration and image-logos use mix-blend-mode: multiply, which keys
-   out white against a LIGHT page. On the dark palette there's no light to key
-   against, so they disappear. Give the illustration a light backing (so
-   multiply still works) and invert the monochrome logos to show light-on-dark. */
-:root[data-palette="midnight"] .about-illustration-wrap {
-  /* Soft light glow behind the portrait so multiply keys the white. A smaller
-     solid core with a longer, gentler falloff dissolves the rectangular image
-     edges into the dark page rather than reading as a bright panel. */
-  background: radial-gradient(ellipse 64% 70% at 56% 42%,
-    #E7E5DE 0%, #E7E5DE 30%, rgba(231, 229, 222, 0.5) 56%, rgba(231, 229, 222, 0.14) 74%, rgba(231, 229, 222, 0) 88%);
-}
+/* ─── Dark palette: About-page artwork ─────────────────────────────────
+   The illustration shows on its own background (no gradient blend). The logos
+   below are inverted to read light-on-dark. */
 
 /* Shift the baked-in orange watercolour toward the palette's heading blue.
    The portrait is greyscale, so hue-rotate only recolours the wash; saturate
