@@ -523,6 +523,9 @@ body {
   height: clamp(200px, 24vw, 360px);
   overflow: hidden;
   display: block;
+  /* Transition the backdrop from the page into the Design Better band so the
+     two sections meet without a tonal seam. */
+  background: linear-gradient(to bottom, transparent 0%, transparent 52%, var(--band-bg) 100%);
 }
 
 .wave-bridge canvas {
@@ -531,6 +534,9 @@ body {
   width: 100%;
   height: 100%;
   display: block;
+  /* Dissolve the waves into the section below instead of a hard clip. */
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 60%, transparent 96%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 60%, transparent 96%);
 }
 
 /* ─── Design Better Section ──────────────────────────── */
