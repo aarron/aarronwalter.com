@@ -43,25 +43,19 @@ export default function WaveTransition() {
       ? [Number(m[0]), Number(m[1]), Number(m[2])]
       : [44, 42, 42]
 
+    // A filled cream→dark silhouette only works when the two ends differ a lot.
     // When the page background and the Design Better band are both dark (e.g.
-    // Midnight), CREAM→DARK spans almost no tonal range and the wave crests
-    // vanish. Detect that low contrast and lift the mid-stack ribbons toward the
-    // contrasting ink colour so the silhouette reads — most in the middle, none
-    // at the edges, so the top still blends into the page and the bottom into
-    // the band. In light palettes the contrast is high, so the lift is ~0.
-    const LIFT_TARGET = getVizColors().inkRGB
+    // Midnight) the fill collapses into one near-black mass — and lightening it
+    // just paints a solid grey block that reads as an object stopping the page.
+    // So on low-contrast (dark) palettes we skip the fills and draw the ridges
+    // as faint strokes: atmospheric ridgelines with the page flowing through.
+    const LIGHT = getVizColors().inkRGB
     const contrast =
       (Math.abs(CREAM[0] - DARK[0]) + Math.abs(CREAM[1] - DARK[1]) + Math.abs(CREAM[2] - DARK[2])) / 3
-    const liftAmt = Math.max(0, Math.min(1, 1 - contrast / 120)) * 0.24
+    const lowContrast = contrast < 36
 
-    const lerpColor = (t: number) => {
-      const lift = Math.sin(t * Math.PI) * liftAmt // 0 at edges, peak mid-stack
-      const ch = (i: number) => {
-        const base = lerp(CREAM[i], DARK[i], t)
-        return Math.round(base + (LIFT_TARGET[i] - base) * lift)
-      }
-      return `rgb(${ch(0)},${ch(1)},${ch(2)})`
-    }
+    const lerpColor = (t: number) =>
+      `rgb(${Math.round(lerp(CREAM[0], DARK[0], t))},${Math.round(lerp(CREAM[1], DARK[1], t))},${Math.round(lerp(CREAM[2], DARK[2], t))})`
 
     let raf: number
     const t0 = performance.now()
@@ -130,13 +124,25 @@ export default function WaveTransition() {
           s === 0 ? ctx!.moveTo(x, y) : ctx!.lineTo(x, y)
         }
 
-        // Close the shape down to the very bottom of the canvas
-        ctx!.lineTo(w, h + 2)
-        ctx!.lineTo(0, h + 2)
-        ctx!.closePath()
-
-        ctx!.fillStyle = lerpColor(tNorm)
-        ctx!.fill()
+        if (lowContrast) {
+          // Atmospheric ridgeline: a faint stroke along the crest, densest in
+          // the middle of the stack and dissolving into the sections above and
+          // below. No fill — the page background flows straight through.
+          const bell = Math.sin(tNorm * Math.PI)
+          const a = 0.025 + 0.12 * bell
+          ctx!.strokeStyle = `rgba(${LIGHT[0]},${LIGHT[1]},${LIGHT[2]},${a.toFixed(3)})`
+          ctx!.lineWidth = 0.8
+          ctx!.lineJoin = 'round'
+          ctx!.lineCap = 'round'
+          ctx!.stroke()
+        } else {
+          // Light palette: filled stacked silhouette (cream → dark band).
+          ctx!.lineTo(w, h + 2)
+          ctx!.lineTo(0, h + 2)
+          ctx!.closePath()
+          ctx!.fillStyle = lerpColor(tNorm)
+          ctx!.fill()
+        }
       }
 
       raf = requestAnimationFrame(draw)
