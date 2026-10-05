@@ -92,12 +92,9 @@ export default function ColophonPage() {
               cover. The subtle animation reflects the pulsar&rsquo;s actual 1.3373-second period.
             </p>
             <p className="pf-body" style={{ marginTop: '1rem' }}>
-              The weathered landscapes of{' '}
-              <a href="https://en.wikipedia.org/wiki/Tatooine" target="_blank" rel="noopener noreferrer">Tatooine</a>{' '}
-              and{' '}
-              <a href="https://en.wikipedia.org/wiki/Arrakis" target="_blank" rel="noopener noreferrer">Arrakis</a>{' '}
-              inspired the color palette here
-              of warm cream, deep ink tones, cold grays, spice red. As a child of the 1970s and 80s, these places feel like a second home to me. The sounds of{' '}
+              {/* Retired after the Midnight palette change — no longer describes the colors. Kept hidden for reference:
+              The weathered landscapes of <a href="https://en.wikipedia.org/wiki/Tatooine" target="_blank" rel="noopener noreferrer">Tatooine</a> and <a href="https://en.wikipedia.org/wiki/Arrakis" target="_blank" rel="noopener noreferrer">Arrakis</a> inspired the color palette here of warm cream, deep ink tones, cold grays, spice red. As a child of the 1970s and 80s, these places feel like a second home to me. */}
+              The sounds of{' '}
               <a href="https://open.spotify.com/artist/6ozJOabZpwD8cSxLTljn1y" target="_blank" rel="noopener noreferrer">Hans Zimmer</a>,{' '}
               <a href="https://open.spotify.com/artist/1BGN1IdyiSR0ZYrkoKNchl" target="_blank" rel="noopener noreferrer">Tangerine Dream</a>,{' '}
               <a href="https://open.spotify.com/artist/2VJjRFDMvpRnapb6yv40iZ" target="_blank" rel="noopener noreferrer">Boards of Canada</a>, and{' '}
