@@ -3164,7 +3164,7 @@ body {
 
 .page-section-heading {
   font-family: 'Lineca', sans-serif !important;
-  font-size: clamp(5rem, 14vw, 10rem) !important;
+  font-size: clamp(2.5rem, 6vw, 5rem) !important;
   font-weight: 400 !important;
   letter-spacing: -0.04em;
   line-height: 0.88;
