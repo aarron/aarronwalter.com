@@ -2940,5 +2940,15 @@
       "jazz musicians"
     ],
     "description": "The life and work of American jazz saxophonist Sonny Rollins."
+  },
+  "Shaman::Kim Stanley Robinson": {
+    "coverUrl": "https://covers.openlibrary.org/b/id/8402223-M.jpg",
+    "description": "A saga of life thirty thousand years ago during the Ice Age depicts the lives of the shaman Thorn, an outsider named Elga, and Loon, the next shaman, who is struggling to find his own path in a treacherous and uncertain world."
+  },
+  "The Infinity Machine::Sebastian Mallaby": {
+    "coverUrl": "https://covers.openlibrary.org/b/id/15203597-M.jpg",
+    "firstPublished": 2026,
+    "subjects": [],
+    "description": null
   }
 }
