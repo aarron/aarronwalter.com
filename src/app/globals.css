@@ -294,6 +294,9 @@ body {
 }
 
 .hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
   font-family: "aktiv-grotesk", sans-serif;
   font-size: 0.8125rem;
   font-weight: 500;
@@ -306,6 +309,10 @@ body {
 
 .hero-link:hover {
   color: var(--signal);
+}
+
+.hero-link svg {
+  flex-shrink: 0;
 }
 
 .hero-link-sep {
