@@ -42,6 +42,7 @@ export const books: Book[] = [
   { title: 'Saxophone Colossus', author: 'Aidan Levy', year: 2026, favorite: false },
   { title: 'Shaman', author: 'Kim Stanley Robinson', year: 2026, favorite: true, coverUrl: 'https://covers.openlibrary.org/b/id/8402223-M.jpg' },
   { title: 'The Infinity Machine', author: 'Sebastian Mallaby', year: 2026, favorite: false },
+  { title: 'Maintenance of Everything', author: 'Stewart Brand', year: 2026, favorite: true },
 
   // ── 2025 ────────────────────────────────────────────────
   { title: 'Pride and Prejudice', author: 'Jane Austen', year: 2025, favorite: false, coverUrl:'https://m.media-amazon.com/images/I/41K1F3Thx4L._SY445_SX342_QL70_FMwebp_.jpg' },
