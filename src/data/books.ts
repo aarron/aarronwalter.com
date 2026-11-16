@@ -65,7 +65,7 @@ export const books: Book[] = [
   { title: 'Vienna', author: 'Richard Cockett', year: 2025, favorite: false, coverUrl:'https://m.media-amazon.com/images/I/61BsrN4hG3L._SY522_.jpg' },
   { title: 'Knife', author: 'Salman Rushdie', year: 2025, favorite: true },
   { title: 'Brideshead Revisited', author: 'Evelyn Waugh', year: 2025, favorite: true },
-  { title: 'Lights On', author: 'Anika Harris', year: 2025, favorite: true, coverUrl: 'https://annakaharris.com/wp-content/uploads/2024/10/lights-on-cover.svg' },
+  { title: 'Lights On', author: 'Annaka Harris', year: 2025, favorite: true, coverUrl: '/book-covers/lights-on.jpg' },
   { title: 'The Perks of Being a Wallflower', author: 'Stephen Chbosky', year: 2025, favorite: true, coverUrl:'https://m.media-amazon.com/images/I/814wqBWSyOL._SY522_.jpg' },
   { title: 'Blood and Thunder', author: 'Hampton Sides', year: 2025, favorite: true },
   { title: 'The Bright Sword', author: 'Lev Grossman', year: 2025, favorite: false },
