@@ -67,18 +67,44 @@ interface SubstackPost {
   publishedBylines?:           SubstackByline[]
 }
 
+// Substack's archive API responds with { posts, nextCursor } and paginates via
+// an opaque `cursor` (the previous page's nextCursor). It no longer accepts the
+// old `offset` param. We page through until the cursor runs out.
+interface SubstackResponse {
+  posts?:      SubstackPost[]
+  nextCursor?: string | null
+}
+
+const MAX_PAGES = 40 // safety cap (~2000 posts) so a bad cursor can't loop forever
+
 async function fetchSubstackNotes(): Promise<Note[]> {
   const notes: Note[] = []
-  let offset = 0
+  let cursor: string | null = null
 
-  while (true) {
-    const res = await fetch(`${SUBSTACK_API}?limit=${PAGE_SIZE}&offset=${offset}`, {
-      next: { revalidate: 3600 },
-      headers: { 'User-Agent': 'aarronwalter.com/1.0 (feed reader)' },
-    })
-    if (!res.ok) throw new Error(`Substack API failed: ${res.status}`)
+  for (let page = 0; page < MAX_PAGES; page++) {
+    const qs = cursor
+      ? `?limit=${PAGE_SIZE}&cursor=${encodeURIComponent(cursor)}`
+      : `?limit=${PAGE_SIZE}`
 
-    const posts: SubstackPost[] = await res.json()
+    let data: SubstackResponse
+    try {
+      const res = await fetch(`${SUBSTACK_API}${qs}`, {
+        next: { revalidate: 3600 },
+        headers: { 'User-Agent': 'aarronwalter.com/1.0 (feed reader)' },
+      })
+      // Degrade gracefully rather than failing the build: a Substack API change
+      // or hiccup should never crash the /notes page. Return what we have.
+      if (!res.ok) {
+        console.warn(`Substack API returned ${res.status}; using ${notes.length} notes so far`)
+        break
+      }
+      data = await res.json()
+    } catch (err) {
+      console.warn('Substack API fetch failed; using notes gathered so far', err)
+      break
+    }
+
+    const posts = data.posts ?? []
     if (!posts.length) break
 
     for (const post of posts) {
@@ -100,8 +126,8 @@ async function fetchSubstackNotes(): Promise<Note[]> {
       notes.push({ type, title, link, pubDate, excerpt, thumb, audioUrl })
     }
 
-    if (posts.length < PAGE_SIZE) break
-    offset += PAGE_SIZE
+    cursor = data.nextCursor ?? null
+    if (!cursor || posts.length < PAGE_SIZE) break
   }
 
   return notes
