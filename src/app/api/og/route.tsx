@@ -10,13 +10,14 @@ export const runtime = 'nodejs'
 const linecaRegular = readFileSync(join(process.cwd(), 'public/fonts/lineca-regular.otf'))
 const linecaMedium  = readFileSync(join(process.cwd(), 'public/fonts/lineca-medium.otf'))
 
-const logoB64 = readFileSync(join(process.cwd(), 'public/aarron-walter-logo.png')).toString('base64')
+const logoB64 = readFileSync(join(process.cwd(), 'public/aarron-walter-logo-inverted.png')).toString('base64')
 const logoSrc = `data:image/png;base64,${logoB64}`
 
 // ─── Ridgeline generation (PSR B1919+21 pulsar, static snapshot) ─────────────
-
-const BG_FILL = '#EAE8E1'
-const INK     = 'rgb(70,58,48)'
+// Midnight palette: dark page background with a faint volt-green ridgeline,
+// matching the site's dark theme and hero canvases.
+const BG_FILL = '#15171C'
+const INK     = '#C8F02A'
 
 function buildRidgeSvg(W: number, H: number): string {
   const data    = PULSAR_DATA
@@ -34,11 +35,11 @@ function buildRidgeSvg(W: number, H: number): string {
     `<defs>`,
     `<linearGradient id="g" x1="0" y1="0" x2="${W}" y2="0" gradientUnits="userSpaceOnUse">`,
     `<stop offset="0%"   stop-color="${INK}" stop-opacity="0"/>`,
-    `<stop offset="8%"   stop-color="${INK}" stop-opacity="0.018"/>`,
-    `<stop offset="25%"  stop-color="${INK}" stop-opacity="0.090"/>`,
-    `<stop offset="50%"  stop-color="${INK}" stop-opacity="0.185"/>`,
-    `<stop offset="78%"  stop-color="${INK}" stop-opacity="0.235"/>`,
-    `<stop offset="100%" stop-color="${INK}" stop-opacity="0.260"/>`,
+    `<stop offset="8%"   stop-color="${INK}" stop-opacity="0.03"/>`,
+    `<stop offset="25%"  stop-color="${INK}" stop-opacity="0.14"/>`,
+    `<stop offset="50%"  stop-color="${INK}" stop-opacity="0.30"/>`,
+    `<stop offset="78%"  stop-color="${INK}" stop-opacity="0.44"/>`,
+    `<stop offset="100%" stop-color="${INK}" stop-opacity="0.52"/>`,
     `</linearGradient>`,
     `</defs>`,
   ]
@@ -122,7 +123,7 @@ export function GET(req: NextRequest) {
             width: '65%',
             height: '100%',
             background:
-              'linear-gradient(to right, #EAE8E1 0%, #EAE8E1 45%, rgba(234, 232, 225,0.92) 65%, rgba(234, 232, 225,0.55) 85%, rgba(234, 232, 225,0) 100%)',
+              'linear-gradient(to right, #15171C 0%, #15171C 45%, rgba(21,23,28,0.92) 65%, rgba(21,23,28,0.55) 85%, rgba(21,23,28,0) 100%)',
           }}
         />
 
@@ -150,7 +151,7 @@ export function GET(req: NextRequest) {
               style={{
                 fontFamily: 'Lineca',
                 fontWeight: 400,
-                color: '#242831',
+                color: '#ECEAE3',
                 fontSize: titleSize,
                 letterSpacing: '-0.03em',
                 lineHeight: 0.92,
@@ -163,7 +164,7 @@ export function GET(req: NextRequest) {
                 style={{
                   fontFamily: 'Lineca',
                   fontWeight: 400,
-                  color: 'rgba(36, 40, 49, 0.52)',
+                  color: 'rgba(236, 234, 227, 0.62)',
                   fontSize: 22,
                   lineHeight: 1.45,
                   maxWidth: 620,
@@ -180,7 +181,7 @@ export function GET(req: NextRequest) {
               style={{
                 width: 28,
                 height: 2,
-                background: '#2B57E0',
+                background: '#C8F02A',
                 borderRadius: 1,
               }}
             />
@@ -188,7 +189,7 @@ export function GET(req: NextRequest) {
               style={{
                 fontFamily: 'Lineca',
                 fontWeight: 400,
-                color: 'rgba(36, 40, 49, 0.38)',
+                color: 'rgba(236, 234, 227, 0.42)',
                 fontSize: 17,
                 letterSpacing: '0.04em',
               }}
