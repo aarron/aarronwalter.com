@@ -739,7 +739,7 @@ body {
   height: 40px;
   border-radius: 50%;
   background: var(--band-fg);
-  color: var(--signal);
+  color: var(--band-bg);
   border: none;
   cursor: pointer;
   display: flex;
@@ -4463,6 +4463,15 @@ body {
 .note-card__thumb--podcast,
 .note-card__thumb--video {
   width: clamp(160px, 24vw, 240px);
+}
+
+/* Video stills are 16:9. Pin the ratio and centre it so the thumbnail reads as
+   a proper video frame — cover-cropping trims YouTube's letterbox bars — instead
+   of stretching to the full card height and cropping into an odd sliver. */
+.note-card__thumb--video {
+  align-self: center;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
 }
 
 .note-card__thumb-img {
