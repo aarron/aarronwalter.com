@@ -335,4 +335,9 @@ export const records: VinylRecord[] = [
   { artist: 'Stan Getz / Charlie Byrd', title: 'Jazz Samba', label: 'Verve Records', format: 'LP, Album, Mono', rating: 4, released: 1962, releaseId: 1118541 },
   { artist: 'Stan Getz', title: 'Stan Getz Plays', label: 'Verve Records', format: 'LP, Album, Comp, RE, Stereo', rating: 4, released: 1961, releaseId: 10364857 },
   { artist: 'Billie Holiday', title: '1953-56 Radio & TV Broadcasts Volume 2', label: 'ESP-Disk\'', format: 'LP, Album', rating: 4, released: 1972, releaseId: 8182380 },
+  { artist: 'The Dizzy Gillespie Big 7', title: 'At The Montreux Jazz Festival 1975', label: 'Pablo Records', format: 'LP, Album', rating: 4, released: 1975, releaseId: 4026169 },
+  { artist: 'Ray Charles', title: 'My Kind Of Jazz', label: 'Tangerine Records', format: 'LP, Album, Stereo', rating: 4, released: 1970, releaseId: 1242250 },
+  { artist: 'David "Fathead" Newman', title: 'Fathead: Ray Charles Presents David Newman', label: 'Atlantic', format: 'LP, Album, Stereo', rating: 4, released: 1960, releaseId: 5587533 },
+  { artist: 'Benny Carter & Dizzy Gillespie', title: 'Carter, Gillespie Inc.', label: 'Pablo Records', format: 'LP, Album, Stereo', rating: 4, released: 1976, releaseId: 3267785 },
+  { artist: 'Charlie Parker & Dizzy Gillespie', title: 'Charlie Parker Dizzy Gillespie', label: 'EMUS', format: 'LP, Comp, Simulated Stereo', rating: 4, released: null, releaseId: 2040258 },
 ]

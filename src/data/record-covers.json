@@ -5962,6 +5962,73 @@
       }
     ]
   },
+  "1242250": {
+    "cover": "https://i.discogs.com/l4tDrRMiPT5QQAa59ufRvX_5Isyruskv7rJXKaczhws/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDIy/NTAtMTQ4MjQzNzUz/My03NzA2LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/OHrbpZSDePVS15SfG5kq2j9Am39mZnkCcAT86ub8f7M/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDIy/NTAtMTQ4MjQzNzUz/My03NzA2LmpwZWc.jpeg",
+    "genres": [
+      "Jazz",
+      "Funk / Soul",
+      "Blues"
+    ],
+    "styles": [
+      "Soul-Jazz",
+      "Hard Bop",
+      "Swing"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Golden Boy",
+        "duration": "3:24"
+      },
+      {
+        "position": "A2",
+        "title": "Booty-Butt",
+        "duration": "4:10"
+      },
+      {
+        "position": "A3",
+        "title": "This Here",
+        "duration": "4:43"
+      },
+      {
+        "position": "A4",
+        "title": "I Remember Clifford",
+        "duration": "3:37"
+      },
+      {
+        "position": "A5",
+        "title": "Sidewinder",
+        "duration": "3:25"
+      },
+      {
+        "position": "B1",
+        "title": "Bluesette",
+        "duration": "3:20"
+      },
+      {
+        "position": "B2",
+        "title": "Pas-Se-O-Ne Blues",
+        "duration": "4:44"
+      },
+      {
+        "position": "B3",
+        "title": "Zig Zag",
+        "duration": "4:31"
+      },
+      {
+        "position": "B4",
+        "title": "Angel City",
+        "duration": "4:25"
+      },
+      {
+        "position": "B5",
+        "title": "Senor Blues",
+        "duration": "5:20"
+      }
+    ]
+  },
   "1247699": {
     "cover": "https://i.discogs.com/0uCTVhHHOpQmaXH9pao7Y36R2eH2cgn9uHdTpKtVcqc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDc2/OTktMTQ2MzI1NjEw/NC01MDc3LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/70u5cEsVomunUbe_IqmKqYaA77jqAxLPUbMyDmQAaq8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDc2/OTktMTQ2MzI1NjEw/NC01MDc3LmpwZWc.jpeg",
@@ -9282,6 +9349,52 @@
         "position": "B5",
         "title": "It's A Man's Man's Man's World",
         "duration": "2:48"
+      }
+    ]
+  },
+  "2040258": {
+    "cover": "https://i.discogs.com/e4nrjPIVyWH1YAp91d2sk2A7Xv3txkkJwVdOcnIRXFQ/rs:fit/g:sm/q:90/h:479/w:503/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNDAy/NTgtMTI2MDI4MjUx/OS5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/K8FFwEjfmNUOZ7g6AAb5alfQYZlrN_Ok7383I6GIntM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNDAy/NTgtMTI2MDI4MjUx/OS5qcGVn.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "They Can't Take That Away From Me",
+        "duration": "4:25"
+      },
+      {
+        "position": "A2",
+        "title": "Birks Works",
+        "duration": "6:00"
+      },
+      {
+        "position": "A3",
+        "title": "I Can't Get Started",
+        "duration": "3:05"
+      },
+      {
+        "position": "B1",
+        "title": "Tin Tin Deo",
+        "duration": "4:00"
+      },
+      {
+        "position": "B2",
+        "title": "Scrapple From The Apple",
+        "duration": "2:30"
+      },
+      {
+        "position": "B3",
+        "title": "Paris Swing",
+        "duration": "3:50"
+      },
+      {
+        "position": "B4",
+        "title": "Oh Lady Be Good",
+        "duration": "3:50"
       }
     ]
   },
@@ -13339,6 +13452,49 @@
       }
     ]
   },
+  "3267785": {
+    "cover": "https://i.discogs.com/geM_MAuGsO9HFJgGaavI94yHWgM47g91q0n6Ib9hjxA/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNjc3/ODUtMTUzMDA4NjYx/OC04NzY5LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/kfpbg7NBkchz3COcYtWrta8ItFizBf058uwhpbnDGaY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNjc3/ODUtMTUzMDA4NjYx/OC04NzY5LmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Sweet And Lovely",
+        "duration": "10:38"
+      },
+      {
+        "position": "A2",
+        "title": "Broadway",
+        "duration": "7:48"
+      },
+      {
+        "position": "A3",
+        "title": "The Courtship",
+        "duration": "6:29"
+      },
+      {
+        "position": "B1",
+        "title": "Constantinople",
+        "duration": "8:57"
+      },
+      {
+        "position": "B2",
+        "title": "Nobody Knows The Trouble I've Seen",
+        "duration": "9:10"
+      },
+      {
+        "position": "B3",
+        "title": "Night In Tunisia",
+        "duration": "8:26"
+      }
+    ]
+  },
   "3336238": {
     "cover": "https://i.discogs.com/r6ojcuQ2ACJQo23E_NA5kU44qJLrEyfBYE9XJ4RJkHY/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMzYy/MzgtMTQzNjU3OTkx/MS02NjMyLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/JFvBMdTF_05LPYuDnqNLhoOWuiix-j1CVQjZYOjXEKs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMzYy/MzgtMTQzNjU3OTkx/MS02NjMyLmpwZWc.jpeg",
@@ -14831,6 +14987,34 @@
         "position": "B6",
         "title": "Blues For Hawaiians",
         "duration": "2:25"
+      }
+    ]
+  },
+  "4026169": {
+    "cover": "https://i.discogs.com/PAUQ4KpDbilVkQNCzeqfWYs-52egADW8hPVGrGe-WVg/rs:fit/g:sm/q:90/h:454/w:451/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwMjYx/NjktMTM1Mjc3NzU0/My0yODcwLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/RgTDhL6nn59aBftvsyB3QeXQ1OcmEvObXpTI2INpuU4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwMjYx/NjktMTM1Mjc3NzU0/My0yODcwLmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A",
+        "title": "Lover Come Back To Me",
+        "duration": "16:00"
+      },
+      {
+        "position": "B1",
+        "title": "What's New",
+        "duration": "11:45"
+      },
+      {
+        "position": "B2",
+        "title": "Cherokee",
+        "duration": "10:53"
       }
     ]
   },
@@ -17797,6 +17981,58 @@
         "position": "B5",
         "title": "Exitus",
         "duration": "8:30"
+      }
+    ]
+  },
+  "5587533": {
+    "cover": "https://i.discogs.com/teTbWtmF_ZiYHjF78LXaebVij8GG3GYrZcbOHAYRz3U/rs:fit/g:sm/q:90/h:506/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1ODc1/MzMtMTM5NzMzMjI4/NS00OTU1LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/RH_65ELKuTs9XyLz_i8OpnQHwymF_I_5yhdy0a_93Ts/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU1ODc1/MzMtMTM5NzMzMjI4/NS00OTU1LmpwZWc.jpeg",
+    "genres": [
+      "Jazz",
+      "Funk / Soul"
+    ],
+    "styles": [],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Hard Times",
+        "duration": "4:39"
+      },
+      {
+        "position": "A2",
+        "title": "Weird Beard",
+        "duration": "4:46"
+      },
+      {
+        "position": "A3",
+        "title": "Willow Weep For Me",
+        "duration": "4:56"
+      },
+      {
+        "position": "A4",
+        "title": "Bill For Bennie",
+        "duration": "4:14"
+      },
+      {
+        "position": "B1",
+        "title": "Sweet Eyes",
+        "duration": "3:43"
+      },
+      {
+        "position": "B2",
+        "title": "Fathead",
+        "duration": "5:20"
+      },
+      {
+        "position": "B3",
+        "title": "Mean To Me",
+        "duration": "4:13"
+      },
+      {
+        "position": "B4",
+        "title": "Tin Tin Deo",
+        "duration": "5:18"
       }
     ]
   },
