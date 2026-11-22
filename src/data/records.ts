@@ -340,4 +340,9 @@ export const records: VinylRecord[] = [
   { artist: 'David "Fathead" Newman', title: 'Fathead: Ray Charles Presents David Newman', label: 'Atlantic', format: 'LP, Album, Stereo', rating: 4, released: 1960, releaseId: 5587533 },
   { artist: 'Benny Carter & Dizzy Gillespie', title: 'Carter, Gillespie Inc.', label: 'Pablo Records', format: 'LP, Album, Stereo', rating: 4, released: 1976, releaseId: 3267785 },
   { artist: 'Charlie Parker & Dizzy Gillespie', title: 'Charlie Parker Dizzy Gillespie', label: 'EMUS', format: 'LP, Comp, Simulated Stereo', rating: 4, released: null, releaseId: 2040258 },
+  { artist: 'Count Basie', title: 'Count Basie At Newport', label: 'Verve Records', format: 'LP, Album, Mono', rating: 4, released: 1957, releaseId: 3576298 },
+  { artist: 'Lester Young', title: 'The Lester Young Story Vol. 4 "Lester Leaps In"', label: 'Columbia', format: '2xLP, Comp, Mono, Promo', rating: 4, released: 1979, releaseId: 4530497 },
+  { artist: 'Jimmy Reed', title: 'Just Jimmy Reed', label: 'Vee Jay Records', format: 'LP, Album, Mono', rating: 4, released: 1962, releaseId: 3776119 },
+  { artist: 'Sarah Vaughan And Other Jazz Stars', title: 'Sarah Vaughan Sings', label: 'Palace', format: 'LP, Album, Stereo', rating: 4, released: null, releaseId: 7358324 },
+  { artist: 'Ramsey Lewis', title: 'Ramsey', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1979, releaseId: 1561782 },
 ]
