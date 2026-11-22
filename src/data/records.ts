@@ -306,4 +306,14 @@ export const records: VinylRecord[] = [
   { artist: 'Wes Montgomery', title: 'Down Here On The Ground', label: 'A&M Records', format: 'LP, Album, Stereo', rating: 4, released: 1968, releaseId: 2096091 },
   { artist: 'Wes Montgomery', title: 'A Day In The Life', label: 'A&M Records', format: 'LP, Album, Stereo', rating: 4, released: 1967, releaseId: 8540922 },
   { artist: 'Kamasi Washington', title: 'Fearless Movement', label: 'Young', format: '2xLP, Album, Stereo', rating: 4, released: 2024, releaseId: 30582370 },
+
+  // ── Added Nov 2026 ──────────────────────────────────────
+  { artist: 'Jimmy Smith', title: 'Bashin\' - The Unpredictable Jimmy Smith', label: 'Verve Records', format: 'LP, Album, Stereo', rating: 4, released: 1962, releaseId: 390441 },
+  { artist: 'Eddie Harris', title: 'High Voltage', label: 'Atlantic', format: 'LP, Album, Stereo', rating: 4, released: 1969, releaseId: 8893738 },
+  { artist: 'Gene Ammons', title: 'Bad! Bossa Nova', label: 'Prestige', format: 'LP, Album, Mono', rating: 4, released: 1962, releaseId: 5048913 },
+  { artist: 'Nina Simone', title: 'Songs Of The Poets: Dylan, Harrison & Simone', label: 'RCA Victor', format: 'LP, Comp, Stereo', rating: 4, released: 1976, releaseId: 1697519 },
+  { artist: 'Nina Simone', title: 'At The Village Gate', label: 'Colpix Records', format: 'LP, Album, Mono', rating: 4, released: 1962, releaseId: 4652953 },
+  { artist: 'Nina Simone', title: 'Nina At Newport', label: 'Colpix Records', format: 'LP, Album, Mono', rating: 4, released: 1960, releaseId: 958638 },
+  { artist: 'Ahmad Jamal', title: 'Ahmad Jamal \'73', label: '20th Century Records', format: 'LP, Album, Stereo', rating: 4, released: 1973, releaseId: 566860 },
+  { artist: 'Ahmad Jamal', title: 'Tranquility', label: 'ABC Records', format: 'LP, Album, Stereo', rating: 4, released: 1968, releaseId: 1570878 },
 ]
