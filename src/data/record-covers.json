@@ -4895,71 +4895,6 @@
       }
     ]
   },
-  "1134640": {
-    "cover": "https://i.discogs.com/BQfU-KBuiXPqZJOSfJFw0ytNQs-O_yrssfAt4SlfdEo/rs:fit/g:sm/q:90/h:520/w:519/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMzQ2/NDAtMTM2ODcwNzcw/NC00ODIwLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/yvGYINCyDg45qRGTYlJ2noPxhHvt3TmI6zOQSmfddkk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMzQ2/NDAtMTM2ODcwNzcw/NC00ODIwLmpwZWc.jpeg",
-    "genres": [
-      "Jazz",
-      "Funk / Soul"
-    ],
-    "styles": [
-      "Rhythm & Blues",
-      "Soul"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Grits",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "Tempted",
-        "duration": ""
-      },
-      {
-        "position": "A3",
-        "title": "There",
-        "duration": ""
-      },
-      {
-        "position": "A4",
-        "title": "After You're Through",
-        "duration": ""
-      },
-      {
-        "position": "A5",
-        "title": "Devil's Hideaway",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "Who's Afraid Of Virginia Woolf",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "Infatuation",
-        "duration": ""
-      },
-      {
-        "position": "B3",
-        "title": "Wee Wee",
-        "duration": ""
-      },
-      {
-        "position": "B4",
-        "title": "Mister Hip",
-        "duration": ""
-      },
-      {
-        "position": "B5",
-        "title": "Headache",
-        "duration": ""
-      }
-    ]
-  },
   "1135638": {
     "cover": "https://i.discogs.com/FkL6ucGOSsbAOQz8a2Q8LPu7N7VeqX8XOjNcrJpv7Ro/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMzU2/MzgtMTQ3OTA0MDMz/MS0zNDQwLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/T2hBRjlovb1JJ2ofity3agSrQyD0HsH141s8YmRVBEE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMzU2/MzgtMTQ3OTA0MDMz/MS0zNDQwLmpwZWc.jpeg",
@@ -16182,6 +16117,69 @@
         "position": "B6",
         "title": "Amen",
         "duration": ""
+      }
+    ]
+  },
+  "4452484": {
+    "cover": "https://i.discogs.com/jBQl3GYZR0HPRmq2xxnJo-uh3BuIC952YgJPkYK-8r0/rs:fit/g:sm/q:90/h:520/w:519/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NTI0/ODQtMTM2ODcwODQw/MS03NzQxLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/BMJVB_vTdKpBM97af4XWxg4KUrOmGVwPk1y-yHMZyhc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NTI0/ODQtMTM2ODcwODQw/MS03NzQxLmpwZWc.jpeg",
+    "genres": [
+      "Funk / Soul"
+    ],
+    "styles": [
+      "Rhythm & Blues"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Grits",
+        "duration": "3:58"
+      },
+      {
+        "position": "A2",
+        "title": "Tempted",
+        "duration": "3:08"
+      },
+      {
+        "position": "A3",
+        "title": "There",
+        "duration": "3:26"
+      },
+      {
+        "position": "A4",
+        "title": "After You're Through",
+        "duration": "3:00"
+      },
+      {
+        "position": "A5",
+        "title": "Devil's Hideaway",
+        "duration": "5:10"
+      },
+      {
+        "position": "B1",
+        "title": "Who's Afraid Of Virginia Woolf?",
+        "duration": "4:44"
+      },
+      {
+        "position": "B2",
+        "title": "Infatuation",
+        "duration": "4:25"
+      },
+      {
+        "position": "B3",
+        "title": "Wee Wee",
+        "duration": "2:32"
+      },
+      {
+        "position": "B4",
+        "title": "Mister Hip",
+        "duration": "4:32"
+      },
+      {
+        "position": "B5",
+        "title": "Headache",
+        "duration": "2:24"
       }
     ]
   },

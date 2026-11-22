@@ -239,7 +239,7 @@ export const records: VinylRecord[] = [
   { artist: 'Talking Heads', title: 'Fear Of Music', label: 'Sire', format: 'LP, Album, Jac', rating: 4, released: 1979, releaseId: 8145021 },
   { artist: 'Talking Heads', title: 'Little Creatures', label: 'Sire', format: 'LP, Album, Spe', rating: 0, released: 1985, releaseId: 224182 },
   { artist: 'The Smiths', title: 'Louder Than Bombs', label: 'Sire', format: '2xLP, Comp, All', rating: 5, released: 1987, releaseId: 5662260 },
-  { artist: 'James Brown', title: 'Grits & Soul (The Instrumental Sounds Of The James Brown Band)', label: 'Smash Records (4)', format: 'LP, Album, Promo', rating: 5, released: 1964, releaseId: 1134640 },
+  { artist: 'James Brown', title: 'Grits & Soul (The Instrumental Sounds Of The James Brown Band)', label: 'Smash Records (4)', format: 'LP, Album, Stereo', rating: 5, released: 1964, releaseId: 4452484 },
   { artist: 'Nina Simone', title: 'My Baby Just Cares For Me', label: 'Sonet', format: 'LP, Comp, RE', rating: 4, released: 1987, releaseId: 1417649 },
   { artist: 'Chuck Berry', title: 'St. Louis To Liverpool', label: 'Sonet', format: 'LP, Album', rating: 4, released: 1967, releaseId: 4776824 },
   { artist: 'Junior Walker & The All Stars', title: 'Jr. Walker & The All Stars \"Live\"', label: 'Soul', format: 'LP, Album', rating: 0, released: 1967, releaseId: 3861066 },
