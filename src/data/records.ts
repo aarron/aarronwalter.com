@@ -247,7 +247,7 @@ export const records: VinylRecord[] = [
   { artist: 'Junior Walker & The All Stars', title: 'Greatest Hits', label: 'Soul', format: 'LP, Comp', rating: 5, released: 1969, releaseId: 1390408 },
   { artist: 'Junior Walker & The All Stars', title: 'Soul Session', label: 'Soul', format: 'LP, Album, Hol', rating: 0, released: 1966, releaseId: 1688007 },
   { artist: 'Kings Of Convenience', title: 'Riot On An Empty Street', label: 'Source 360°', format: 'LP, Album, Ltd, RE', rating: 4, released: 2016, releaseId: 8395630 },
-  { artist: 'Sam & Dave', title: 'Hold On, I\'m Comin\'', label: 'Stax', format: 'LP, Album, Mono', rating: 3, released: 1966, releaseId: 781720 },
+  { artist: 'Sam & Dave', title: 'Hold On, I\'m Comin\'', label: 'Stax', format: 'LP, Album, Stereo', rating: 3, released: 1966, releaseId: 5678486 },
   { artist: 'The Staple Singers', title: 'Be Altitude: Respect Yourself', label: 'Stax', format: 'LP, Album, ARP', rating: 4, released: 1972, releaseId: 851610 },
   { artist: 'Booker T & The MG\'s', title: 'And Now!', label: 'Stax', format: 'LP, Album, Pre', rating: 4, released: 1966, releaseId: 1285290 },
   { artist: 'Father John Misty', title: 'I Love You, Honeybear', label: 'Sub Pop', format: '2x12\", Album', rating: 4, released: 2015, releaseId: 6636294 },

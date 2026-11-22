@@ -3495,79 +3495,6 @@
       }
     ]
   },
-  "781720": {
-    "cover": "https://i.discogs.com/53ImwqSv4adt_FTkXAyyPL-zpnGVrSh_aLYZoCXrcMI/rs:fit/g:sm/q:90/h:460/w:458/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4MTcy/MC0xMzEzMTE0NjM5/LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/-sIHGzmdGGL0H-xajXWTymMHg9_TWbzs_QmZkJHD8Tk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4MTcy/MC0xMzEzMTE0NjM5/LmpwZWc.jpeg",
-    "genres": [
-      "Funk / Soul"
-    ],
-    "styles": [
-      "Soul"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Hold On, I'm Comin'",
-        "duration": "2:30"
-      },
-      {
-        "position": "A2",
-        "title": "If You Got The Loving",
-        "duration": "2:30"
-      },
-      {
-        "position": "A3",
-        "title": "I Take What I Want",
-        "duration": "2:35"
-      },
-      {
-        "position": "A4",
-        "title": "Ease Me",
-        "duration": "2:25"
-      },
-      {
-        "position": "A5",
-        "title": "I Got Everything I Need",
-        "duration": "2:53"
-      },
-      {
-        "position": "A6",
-        "title": "Don't Make It So Hard On Me",
-        "duration": "2:45"
-      },
-      {
-        "position": "B1",
-        "title": "It's A Wonder",
-        "duration": "2:38"
-      },
-      {
-        "position": "B2",
-        "title": "Don't Help Me Out",
-        "duration": "2:55"
-      },
-      {
-        "position": "B3",
-        "title": "Just Me",
-        "duration": "2:35"
-      },
-      {
-        "position": "B4",
-        "title": "You Got It Made",
-        "duration": "2:30"
-      },
-      {
-        "position": "B5",
-        "title": "You Don't Know Like I Know",
-        "duration": "2:36"
-      },
-      {
-        "position": "B6",
-        "title": "Blame Me (Don't Blame My Heart)",
-        "duration": "2:18"
-      }
-    ]
-  },
   "813168": {
     "cover": "https://i.discogs.com/nfc8aw0QqmziXFCc8Je50Kg-Kd6Uvfl-Hdc5LhWdjAE/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgxMzE2/OC0xMzMzOTMyMzQ3/LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/3tx9oZ0HGuvywLAzFIyAd2as7oex-Yh8UumiUCQsh_M/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgxMzE2/OC0xMzMzOTMyMzQ3/LmpwZWc.jpeg",
@@ -18720,6 +18647,79 @@
         "position": "D2",
         "title": "Stretch Out And Wait",
         "duration": "2:37"
+      }
+    ]
+  },
+  "5678486": {
+    "cover": "https://i.discogs.com/7veCem30Xq2KdUab5ycsUA1kXIeOA3thXFi9kejT0D8/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2Nzg0/ODYtMTU4ODE4MjUy/NS01NjAxLm1wbw.jpeg",
+    "thumb": "https://i.discogs.com/zdSfgh5LGtiQ3ulEpEzugnFaDIUb3T8F415l_qfP8HQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2Nzg0/ODYtMTU4ODE4MjUy/NS01NjAxLm1wbw.jpeg",
+    "genres": [
+      "Funk / Soul"
+    ],
+    "styles": [
+      "Soul"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Hold On, I'm Comin'",
+        "duration": "2:30"
+      },
+      {
+        "position": "A2",
+        "title": "If You Got The Loving",
+        "duration": "2:30"
+      },
+      {
+        "position": "A3",
+        "title": "I Take What I Want",
+        "duration": "2:35"
+      },
+      {
+        "position": "A4",
+        "title": "Ease Me",
+        "duration": "2:25"
+      },
+      {
+        "position": "A5",
+        "title": "I Got Everything I Need",
+        "duration": "2:53"
+      },
+      {
+        "position": "A6",
+        "title": "Don't Make It So Hard On Me",
+        "duration": "2:45"
+      },
+      {
+        "position": "B1",
+        "title": "It's A Wonder",
+        "duration": "2:38"
+      },
+      {
+        "position": "B2",
+        "title": "Don't Help Me Out",
+        "duration": "2:55"
+      },
+      {
+        "position": "B3",
+        "title": "Just Me",
+        "duration": "2:35"
+      },
+      {
+        "position": "B4",
+        "title": "You Got It Made",
+        "duration": "2:30"
+      },
+      {
+        "position": "B5",
+        "title": "You Don't Know Like I Know",
+        "duration": "2:36"
+      },
+      {
+        "position": "B6",
+        "title": "Blame Me (Don't Blame My Heart)",
+        "duration": "2:18"
       }
     ]
   },
