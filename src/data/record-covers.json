@@ -1655,6 +1655,73 @@
       }
     ]
   },
+  "459606": {
+    "cover": "https://i.discogs.com/ahehBiwrW-31M93NrQmcchxH1G3-Y3FWdcVX0V7449E/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1OTYw/Ni0xNzU5NjI2MDQ5/LTM3NTkucG5n.jpeg",
+    "thumb": "https://i.discogs.com/OOfWB8OgcFQ4dNLYQog9HD0MWh4gawUc5qqSoQlfyDU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1OTYw/Ni0xNzU5NjI2MDQ5/LTM3NTkucG5n.jpeg",
+    "genres": [
+      "Rock",
+      "Funk / Soul",
+      "Pop"
+    ],
+    "styles": [
+      "Pop Rock",
+      "Funk",
+      "Soul"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Bad",
+        "duration": "4:06"
+      },
+      {
+        "position": "A2",
+        "title": "The Way You Make Me Feel",
+        "duration": "4:58"
+      },
+      {
+        "position": "A3",
+        "title": "Speed Demon",
+        "duration": "4:01"
+      },
+      {
+        "position": "A4",
+        "title": "Liberian Girl",
+        "duration": "3:52"
+      },
+      {
+        "position": "A5",
+        "title": "Just Good Friends",
+        "duration": "4:05"
+      },
+      {
+        "position": "B1",
+        "title": "Another Part Of Me",
+        "duration": "3:53"
+      },
+      {
+        "position": "B2",
+        "title": "Man In The Mirror",
+        "duration": "5:18"
+      },
+      {
+        "position": "B3",
+        "title": "I Just Can't Stop Loving You",
+        "duration": "4:23"
+      },
+      {
+        "position": "B4",
+        "title": "Dirty Diana",
+        "duration": "4:52"
+      },
+      {
+        "position": "B5",
+        "title": "Smooth Criminal",
+        "duration": "4:16"
+      }
+    ]
+  },
   "464930": {
     "cover": "https://i.discogs.com/-3mrEXyopoZNuDwbgHs04_HoKCbhpt8bDQysItwAq7s/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2NDkz/MC0xNzI1NTI0OTIw/LTk2NDYuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/8GnM3XQx6pevgMljEG34tJZqVsByTerizDk2ZDmCtO4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2NDkz/MC0xNzI1NTI0OTIw/LTk2NDYuanBlZw.jpeg",
@@ -2410,65 +2477,67 @@
       }
     ]
   },
-  "568772": {
-    "cover": "https://i.discogs.com/pFJ3AqWW0MNcWA3H4hTKYF5LF5r7S0ZtKmXSpgccr4o/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2ODc3/Mi0xNjE2OTQ5MDIz/LTc0MzEuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/uDE3Ksu7Y5_6PMw6ldscBZhmLSn2xoOgsrymjnH5an4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2ODc3/Mi0xNjE2OTQ5MDIz/LTc0MzEuanBlZw.jpeg",
+  "573221": {
+    "cover": "https://i.discogs.com/-5kY5ELgIQC2YwIjPGUvMBWy5qu9TEucGQaV4p89HVc/rs:fit/g:sm/q:90/h:596/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3MzIy/MS0xMjg5Njg4Mjk5/LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/tSEcWmjBNr7PYFvic6PXhU4Nq2HbpAPqOO7boK9c7L8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3MzIy/MS0xMjg5Njg4Mjk5/LmpwZWc.jpeg",
     "genres": [
-      "Rock",
-      "Funk / Soul",
-      "Pop"
+      "Funk / Soul"
     ],
     "styles": [
-      "Minneapolis Sound",
-      "Pop Rock",
-      "Funk"
+      "Rhythm & Blues",
+      "Soul"
     ],
     "country": "US",
     "tracklist": [
       {
         "position": "A1",
-        "title": "I No",
-        "duration": ""
+        "title": "Got To Be There",
+        "duration": "3:19"
       },
       {
         "position": "A2",
-        "title": "Alphabet St.",
-        "duration": ""
+        "title": "Ben",
+        "duration": "2:41"
       },
       {
         "position": "A3",
-        "title": "Glam Slam",
-        "duration": ""
+        "title": "With A Child's Heart",
+        "duration": "3:29"
       },
       {
         "position": "A4",
-        "title": "Anna Stesia",
-        "duration": ""
+        "title": "Happy (Love Theme From \"Lady Sings The Blues\")",
+        "duration": "3:22"
+      },
+      {
+        "position": "A5",
+        "title": "One Day In Your Life",
+        "duration": "4:10"
       },
       {
         "position": "B1",
-        "title": "Dance On",
-        "duration": ""
+        "title": "I Wanna Be Where You Are",
+        "duration": "2:56"
       },
       {
         "position": "B2",
-        "title": "Lovesexy",
-        "duration": ""
+        "title": "Rockin' Robin",
+        "duration": "2:29"
       },
       {
         "position": "B3",
-        "title": "When 2 R In Love",
-        "duration": ""
+        "title": "We're Almost There",
+        "duration": "3:37"
       },
       {
         "position": "B4",
-        "title": "I Wish U Heaven",
-        "duration": ""
+        "title": "Morning Glow",
+        "duration": "3:32"
       },
       {
         "position": "B5",
-        "title": "Positivity",
-        "duration": ""
+        "title": "Music And Me",
+        "duration": "2:33"
       }
     ]
   },
@@ -3420,76 +3489,6 @@
         "position": "B2",
         "title": "The Late Late Blues",
         "duration": "9:35"
-      }
-    ]
-  },
-  "725905": {
-    "cover": "https://i.discogs.com/sf84h2k-tbjxdBTlW4cGrbFf4PMc3u6Gc9HBaJrRxLE/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNTkw/NS0xNjg2NzkzNjQz/LTM0MDQuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/d6eOYPhcfcB9CBdNj2pmaLqImQpac8MJGqZWJ-m69Dg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNTkw/NS0xNjg2NzkzNjQz/LTM0MDQuanBlZw.jpeg",
-    "genres": [
-      "Electronic",
-      "Pop"
-    ],
-    "styles": [
-      "Disco",
-      "Synth-pop"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "1",
-        "title": "Bad",
-        "duration": "4:06"
-      },
-      {
-        "position": "2",
-        "title": "The Way You Make Me Feel",
-        "duration": "4:59"
-      },
-      {
-        "position": "3",
-        "title": "Speed Demon",
-        "duration": "4:01"
-      },
-      {
-        "position": "4",
-        "title": "Liberian Girl",
-        "duration": "3:53"
-      },
-      {
-        "position": "5",
-        "title": "Just Good Friends",
-        "duration": "4:05"
-      },
-      {
-        "position": "6",
-        "title": "Another Part Of Me",
-        "duration": "3:53"
-      },
-      {
-        "position": "7",
-        "title": "Man In The Mirror",
-        "duration": "5:18"
-      },
-      {
-        "position": "8",
-        "title": "I Just Can't Stop Loving You",
-        "duration": "4:24"
-      },
-      {
-        "position": "9",
-        "title": "Dirty Diana",
-        "duration": "4:52"
-      },
-      {
-        "position": "10",
-        "title": "Smooth Criminal",
-        "duration": "4:16"
-      },
-      {
-        "position": "11",
-        "title": "Leave Me Alone",
-        "duration": "4:37"
       }
     ]
   },
@@ -18302,6 +18301,68 @@
         "position": "D5",
         "title": "Tie Me Kangaroo Down, Sport",
         "duration": ""
+      }
+    ]
+  },
+  "5354542": {
+    "cover": "https://i.discogs.com/JKrvNcI0dAjgZ10nv6NC_EsyL-SamhlmnwR3IjrfLnQ/rs:fit/g:sm/q:90/h:222/w:227/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzNTQ1/NDItMTM5MzA5Nzg5/NS02MDUwLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/WUTYswN50bwBt3tzGIwb9mvfkOniuDsL8dn7avBJ-q8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzNTQ1/NDItMTM5MzA5Nzg5/NS02MDUwLmpwZWc.jpeg",
+    "genres": [
+      "Rock",
+      "Funk / Soul",
+      "Pop"
+    ],
+    "styles": [
+      "Minneapolis Sound",
+      "Funk",
+      "Pop Rock"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "I No",
+        "duration": "5:47"
+      },
+      {
+        "position": "A2",
+        "title": "Alphabet St.",
+        "duration": "5:38"
+      },
+      {
+        "position": "A3",
+        "title": "Glam Slam",
+        "duration": "5:04"
+      },
+      {
+        "position": "A4",
+        "title": "Anna Stesia",
+        "duration": "4:56"
+      },
+      {
+        "position": "B1",
+        "title": "Dance On",
+        "duration": "3:44"
+      },
+      {
+        "position": "B2",
+        "title": "Lovesexy",
+        "duration": "5:48"
+      },
+      {
+        "position": "B3",
+        "title": "When 2 R In Love",
+        "duration": "4:01"
+      },
+      {
+        "position": "B4",
+        "title": "I Wish U Heaven",
+        "duration": "2:43"
+      },
+      {
+        "position": "B5",
+        "title": "Positivity",
+        "duration": "7:15"
       }
     ]
   },

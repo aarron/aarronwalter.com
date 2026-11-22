@@ -129,7 +129,7 @@ export const records: VinylRecord[] = [
   { artist: 'Sly & The Family Stone', title: 'Stand!', label: 'Epic', format: 'LP, Album, San', rating: 3, released: 1969, releaseId: 813168 },
   { artist: 'Sly & The Family Stone', title: 'Dance To The Music', label: 'Epic', format: 'LP, Album, RE, Ter', rating: 3, released: 1971, releaseId: 1480717 },
   { artist: 'The Clash', title: 'London Calling', label: 'Epic', format: '2xLP, Album, RP', rating: 4, released: 1981, releaseId: 2894948 },
-  { artist: 'Michael Jackson', title: 'Bad', label: 'Epic', format: 'CD, Album, 1st', rating: 4, released: 1987, releaseId: 725905 },
+  { artist: 'Michael Jackson', title: 'Bad', label: 'Epic', format: 'LP, Album, Stereo', rating: 4, released: 1987, releaseId: 459606 },
   { artist: 'Michael Jackson', title: 'Off The Wall', label: 'Epic', format: 'LP, Album, Pit', rating: 5, released: 1979, releaseId: 120096 },
   { artist: 'Cheap Trick', title: 'Cheap Trick At Budokan', label: 'Epic', format: 'LP, Album, Ter', rating: 4, released: 1979, releaseId: 5037728 },
   { artist: 'Sly & The Family Stone', title: 'Greatest Hits', label: 'Epic', format: 'LP, Comp, Pit', rating: 3, released: 1970, releaseId: 1218116 },
@@ -193,7 +193,7 @@ export const records: VinylRecord[] = [
   { artist: 'The Quintet', title: 'Jazz At Massey Hall', label: 'Original Jazz Classics', format: 'LP, Album, Mono, RE, RP', rating: 4, released: 2010, releaseId: 4578614 },
   { artist: 'The Oliver Nelson Sextet Featuring: Eric Dolphy / Richard Williams', title: 'Screamin\' The Blues', label: 'Original Jazz Classics', format: 'LP, Album, RE, Pit', rating: 4, released: 1983, releaseId: 3185234 },
   { artist: 'Prince & The New Power Generation', title: 'Diamonds And Pearls', label: 'Paisley Park', format: '2xLP, Album', rating: 4, released: 1991, releaseId: 204869 },
-  { artist: 'Prince', title: 'Lovesexy', label: 'Paisley Park', format: 'LP, Album, Spe', rating: 4, released: 1988, releaseId: 568772 },
+  { artist: 'Prince', title: 'Lovesexy', label: 'Paisley Park', format: 'LP, Album, Promo', rating: 4, released: 1988, releaseId: 5354542 },
   { artist: 'Prince', title: 'Graffiti Bridge', label: 'Paisley Park', format: '2xLP, Album, Spe', rating: 3, released: 1990, releaseId: 1335397 },
   { artist: 'Daft Punk', title: 'Homework', label: 'Parlophone', format: '2xLP, Album, RE, RP', rating: 4, released: 2014, releaseId: 6367043 },
   { artist: 'Various', title: 'Super Disco Brake\'s Volume Two', label: 'Paul Winley Records', format: 'LP, Comp, Ltd, RE', rating: 4, released: null, releaseId: 2341281 },
@@ -360,4 +360,5 @@ export const records: VinylRecord[] = [
   { artist: 'Booker T. & The M.G.\'s', title: 'Greatest Hits', label: 'Stax', format: 'LP, Comp', rating: 4, released: 1970, releaseId: 10836394 },
   { artist: 'Ramsey Lewis', title: 'The Best Of Ramsey Lewis', label: 'Cadet', format: 'LP, Comp', rating: 4, released: 1970, releaseId: 8737835 },
   { artist: 'Various', title: 'New Soul Best Collection', label: 'Motown', format: 'LP, Comp, Stereo', rating: 4, released: 1974, releaseId: 11454269 },
+  { artist: 'Michael Jackson', title: 'The Best Of Michael Jackson', label: 'Motown', format: 'LP, Comp', rating: 4, released: 1975, releaseId: 573221 },
 ]
