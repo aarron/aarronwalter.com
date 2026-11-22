@@ -332,4 +332,6 @@ export const records: VinylRecord[] = [
   { artist: 'Art Blakey & Buddy DeFranco', title: 'Blues Bag', label: 'Atlantis', format: 'LP, Album, RE', rating: 4, released: 1986, releaseId: 2952980 },
   { artist: 'Stan Getz', title: 'Stan The Man', label: 'Verve Records', format: '2xLP, Comp', rating: 4, released: 1984, releaseId: 4231660 },
   { artist: 'Stan Getz', title: 'A Stan Getz Sampler: An Introduction To The World Of Stan Getz', label: 'Verve Records', format: 'LP, Comp, Sampler, Mono', rating: 4, released: 1964, releaseId: 4298327 },
+  { artist: 'Stan Getz / Charlie Byrd', title: 'Jazz Samba', label: 'Verve Records', format: 'LP, Album, Mono', rating: 4, released: 1962, releaseId: 1118541 },
+  { artist: 'Stan Getz', title: 'Stan Getz Plays', label: 'Verve Records', format: 'LP, Album, Comp, RE, Stereo', rating: 4, released: 1961, releaseId: 10364857 },
 ]

@@ -4781,6 +4781,56 @@
       }
     ]
   },
+  "1118541": {
+    "cover": "https://i.discogs.com/GcOPvkWmUxnCfIbEBh2CY5g1Uaw_2i9EhaODede36Ew/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTg1/NDEtMTY4ODE2MDYz/MS02MTIwLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/9pKQLTTu5aa2dyWhJTS229iUP-LI0QqLW9kVL_VMODY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTg1/NDEtMTY4ODE2MDYz/MS02MTIwLmpwZWc.jpeg",
+    "genres": [
+      "Jazz",
+      "Latin"
+    ],
+    "styles": [
+      "Bossa Nova",
+      "Samba"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Desafinado",
+        "duration": "5:47"
+      },
+      {
+        "position": "A2",
+        "title": "Samba Dees Days",
+        "duration": "3:30"
+      },
+      {
+        "position": "A3",
+        "title": "O Pato",
+        "duration": "2:35"
+      },
+      {
+        "position": "A4",
+        "title": "Samba Triste",
+        "duration": "4:45"
+      },
+      {
+        "position": "B1",
+        "title": "Samba De Uma Nota So",
+        "duration": "6:07"
+      },
+      {
+        "position": "B2",
+        "title": "E Luxo So",
+        "duration": "3:40"
+      },
+      {
+        "position": "B3",
+        "title": "Baia",
+        "duration": "6:35"
+      }
+    ]
+  },
   "1120137": {
     "cover": "https://i.discogs.com/ueXk5dFUkveMYsJxe26Y92dRLVT9UTCx6Dtn2QD1lok/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjAx/MzctMTQyMzQwMjEz/My0xNjQ5LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/8MaL8bNzvLF5IMXBiJjaj23Zp1YuF2iqoBIHkPdQr1Y/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjAx/MzctMTQyMzQwMjEz/My0xNjQ5LmpwZWc.jpeg",
@@ -21274,6 +21324,75 @@
         "position": "C",
         "title": "Kinky Hypocrite",
         "duration": "3:15"
+      }
+    ]
+  },
+  "10364857": {
+    "cover": "https://i.discogs.com/S6lLz5VgM7c3CyzElc4TV0MNwOXgDYpkGfb18O1bM60/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzY0/ODU3LTE0OTYwNTUy/NjYtMjA4Mi5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/l0b4y9rRB_SVYNrLx3KzfKAIVWjYhbatdJNwPCOxQUo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzY0/ODU3LTE0OTYwNTUy/NjYtMjA4Mi5qcGVn.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Bop",
+      "Cool Jazz"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Stella By Starlight",
+        "duration": "2:40"
+      },
+      {
+        "position": "A2",
+        "title": "Time On My Hands",
+        "duration": "2:54"
+      },
+      {
+        "position": "A3",
+        "title": "'Tis Autumn",
+        "duration": "3:11"
+      },
+      {
+        "position": "A4",
+        "title": "The Way You Look Tonight",
+        "duration": "3:00"
+      },
+      {
+        "position": "A5",
+        "title": "Lover Come Back To Me",
+        "duration": "2:54"
+      },
+      {
+        "position": "A6",
+        "title": "Body And Soul",
+        "duration": "3:13"
+      },
+      {
+        "position": "B1",
+        "title": "Stars Fell On Alabama",
+        "duration": "3:13"
+      },
+      {
+        "position": "B2",
+        "title": "You Turned The Tables On Me",
+        "duration": "2:55"
+      },
+      {
+        "position": "B3",
+        "title": "Thanks For The Memory",
+        "duration": "3:10"
+      },
+      {
+        "position": "B4",
+        "title": "Hymn Of The Orient",
+        "duration": "2:53"
+      },
+      {
+        "position": "B5",
+        "title": "These Foolish Things",
+        "duration": "3:08"
       }
     ]
   },
