@@ -77,7 +77,7 @@ export const records: VinylRecord[] = [
   { artist: 'Johnny Cash', title: 'Orange Blossom Special', label: 'CBS', format: 'LP, Album', rating: 4, released: 1965, releaseId: 4447893 },
   { artist: 'Bob Dylan & The Band', title: 'The Basement Tapes', label: 'CBS', format: '2xLP, Album', rating: 4, released: 1975, releaseId: 1605886 },
   { artist: 'Huey \"Piano\" Smith', title: 'Pitta Pattin\'', label: 'Charly R&B', format: 'LP, Comp', rating: 3, released: 1987, releaseId: 4429498 },
-  { artist: 'Howlin\' Wolf, Muddy Waters & Bo Diddley', title: 'The Super Super Blues Band', label: 'Checker', format: 'LP, Album, RE', rating: 3, released: 1972, releaseId: 3626107 },
+  { artist: 'Howlin\' Wolf, Muddy Waters & Bo Diddley', title: 'The Super Super Blues Band', label: 'Checker', format: 'LP, Album, Stereo', rating: 3, released: 1967, releaseId: 1513180 },
   { artist: 'Chuck Berry', title: 'Bio', label: 'Chess', format: 'LP, Album, RE', rating: 4, released: 1984, releaseId: 2410192 },
   { artist: 'Chuck Berry', title: 'Berry Is On Top', label: 'Chess', format: 'LP, Album, Mono', rating: 4, released: 1959, releaseId: 3861256 },
   { artist: 'Chuck Berry', title: 'San Francisco Dues', label: 'Chess', format: 'LP, Album, Mon', rating: 5, released: 1971, releaseId: 2714251 },

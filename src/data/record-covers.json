@@ -7665,6 +7665,54 @@
       }
     ]
   },
+  "1513180": {
+    "cover": "https://i.discogs.com/XbOdyHyewtCDxHTW3Nn2ocESF2_OXJuV8SnX3QwTjQg/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTMx/ODAtMTU5ODIwODYy/NS02NjcxLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/yZjj256e0EayIj1HhbQEQcwmdUi2mUDEWjRdlHwuBEA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTMx/ODAtMTU5ODIwODYy/NS02NjcxLmpwZWc.jpeg",
+    "genres": [
+      "Blues"
+    ],
+    "styles": [
+      "Chicago Blues"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Long Distance Call",
+        "duration": "9:10"
+      },
+      {
+        "position": "A2",
+        "title": "Medley: Ooh Baby & Wrecking My Love Life",
+        "duration": "6:28"
+      },
+      {
+        "position": "A3",
+        "title": "Sweet Little Angel",
+        "duration": "6:30"
+      },
+      {
+        "position": "B1",
+        "title": "Spoonful",
+        "duration": "4:10"
+      },
+      {
+        "position": "B2",
+        "title": "Diddley Daddy",
+        "duration": "5:10"
+      },
+      {
+        "position": "B3",
+        "title": "The Red Rooster",
+        "duration": "7:20"
+      },
+      {
+        "position": "B4",
+        "title": "Goin' Down Slow",
+        "duration": "4:47"
+      }
+    ]
+  },
   "1518988": {
     "cover": "https://i.discogs.com/V-lI6Y5IHDGlaE0-v9BvcECt73-tJCht60jZ7mJgCek/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTg5/ODgtMTIyNTYzNjkw/Ny5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/JSCpKhuXKdTBdr5mShgTSQzsHNJEHnGllQUVwLBw3qM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTg5/ODgtMTIyNTYzNjkw/Ny5qcGVn.jpeg",
@@ -14665,54 +14713,6 @@
         "position": "D4",
         "title": "Adiza Claire",
         "duration": "6:09"
-      }
-    ]
-  },
-  "3626107": {
-    "cover": "https://i.discogs.com/VZqKq2EpM0bx-CLWdcMTOceSk-fezf5uNvuxSY93VXg/rs:fit/g:sm/q:90/h:561/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MjYx/MDctMTQwMTQ2Nzk0/OC03NTY0LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/Lf4f_nVNs4pjOF-puHc90PQK6TEAwaqCi0Ds_71SJt4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MjYx/MDctMTQwMTQ2Nzk0/OC03NTY0LmpwZWc.jpeg",
-    "genres": [
-      "Blues"
-    ],
-    "styles": [
-      "Chicago Blues"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Long Distance Call",
-        "duration": "9:10"
-      },
-      {
-        "position": "A2",
-        "title": "Ooh Baby & Wrecking My Love Life",
-        "duration": "6:28"
-      },
-      {
-        "position": "A3",
-        "title": "Sweet Little Angel",
-        "duration": "6:30"
-      },
-      {
-        "position": "B1",
-        "title": "Spoonful",
-        "duration": "4:10"
-      },
-      {
-        "position": "B2",
-        "title": "Diddley Daddy",
-        "duration": "5:10"
-      },
-      {
-        "position": "B3",
-        "title": "The Red Rooster",
-        "duration": "7:20"
-      },
-      {
-        "position": "B4",
-        "title": "Goin' Down Slow",
-        "duration": "4:47"
       }
     ]
   },
