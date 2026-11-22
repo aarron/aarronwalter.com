@@ -342,4 +342,11 @@ export const records: VinylRecord[] = [
   { artist: 'Jimmy Reed', title: 'Just Jimmy Reed', label: 'Vee Jay Records', format: 'LP, Album, Mono', rating: 4, released: 1962, releaseId: 3776119 },
   { artist: 'Sarah Vaughan And Other Jazz Stars', title: 'Sarah Vaughan Sings', label: 'Palace', format: 'LP, Album, Stereo', rating: 4, released: null, releaseId: 7358324 },
   { artist: 'Ramsey Lewis', title: 'Ramsey', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1979, releaseId: 1561782 },
+  { artist: 'The Cannonball Adderley Quintet', title: 'Mercy, Mercy, Mercy! Live At "The Club"', label: 'Capitol Records', format: 'LP, Album, Stereo', rating: 4, released: 1967, releaseId: 1523619 },
+  { artist: 'Donald Byrd', title: 'Black Byrd', label: 'Blue Note', format: 'LP, Album, Stereo', rating: 4, released: 1973, releaseId: 444877 },
+  { artist: 'Ahmad Jamal', title: 'Happy Moods', label: 'Argo', format: 'LP, Album, Mono', rating: 4, released: 1960, releaseId: 1599578 },
+  { artist: 'Tito Puente And Others', title: 'Latin Spectacular', label: 'Guest Star', format: 'LP, Comp, Stereo', rating: 4, released: null, releaseId: 5482996 },
+  { artist: 'Nirvana', title: 'Nevermind', label: 'DGC', format: 'LP, Album', rating: 4, released: 1991, releaseId: 1813006 },
+  { artist: 'Cocteau Twins', title: 'Stars And Topsoil (A Collection 1982-1990)', label: '4AD', format: '2xLP, Comp, RM', rating: 4, released: 2012, releaseId: 3384946 },
+  { artist: 'Eno', title: 'Here Come The Warm Jets', label: 'Island Records', format: 'LP, Album', rating: 4, released: 1974, releaseId: 2062742 },
 ]

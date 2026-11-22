@@ -1554,6 +1554,54 @@
       }
     ]
   },
+  "444877": {
+    "cover": "https://i.discogs.com/y383uvzUkW3q1iwfqzM_ZpGRfL8gsKUTGinEVX3Tlfs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NDg3/Ny0xMzUxNzExMjY0/LTQ1ODkuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/eW4p-FUkM5Iub_VpK57mjLo6hFElGNRRYhAQJU7JNKU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NDg3/Ny0xMzUxNzExMjY0/LTQ1ODkuanBlZw.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Jazz-Funk"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Flight Time",
+        "duration": "8:30"
+      },
+      {
+        "position": "A2",
+        "title": "Black Byrd",
+        "duration": "8:00"
+      },
+      {
+        "position": "A3",
+        "title": "Love's So Far Away",
+        "duration": "6:00"
+      },
+      {
+        "position": "B1",
+        "title": "Mr. Thomas",
+        "duration": "5:15"
+      },
+      {
+        "position": "B2",
+        "title": "Sky High",
+        "duration": "5:59"
+      },
+      {
+        "position": "B3",
+        "title": "Slop Jar Blues",
+        "duration": "6:00"
+      },
+      {
+        "position": "B4",
+        "title": "Where Are We Going?",
+        "duration": "4:40"
+      }
+    ]
+  },
   "464930": {
     "cover": "https://i.discogs.com/-3mrEXyopoZNuDwbgHs04_HoKCbhpt8bDQysItwAq7s/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2NDkz/MC0xNzI1NTI0OTIw/LTk2NDYuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/8GnM3XQx6pevgMljEG34tJZqVsByTerizDk2ZDmCtO4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2NDkz/MC0xNzI1NTI0OTIw/LTk2NDYuanBlZw.jpeg",
@@ -7756,6 +7804,54 @@
       }
     ]
   },
+  "1523619": {
+    "cover": "https://i.discogs.com/2WNXaNJVXp2w_v2IITxeTGik-0aui8_PyZqnZoIdwb4/rs:fit/g:sm/q:90/h:584/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MjM2/MTktMTU5Mzg0NDQ0/Mi04Mjk4LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/eKL5JRz2qJ8nlhtB1J5levtfI1YNRZWEqAhUysqyywE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MjM2/MTktMTU5Mzg0NDQ0/Mi04Mjk4LmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Post Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Introduction",
+        "duration": "0:07"
+      },
+      {
+        "position": "A2",
+        "title": "Fun",
+        "duration": "7:33"
+      },
+      {
+        "position": "A3",
+        "title": "Games",
+        "duration": "8:03"
+      },
+      {
+        "position": "A4",
+        "title": "Mercy, Mercy, Mercy",
+        "duration": "5:07"
+      },
+      {
+        "position": "B1",
+        "title": "Sticks",
+        "duration": "3:53"
+      },
+      {
+        "position": "B2",
+        "title": "Hippodelphia",
+        "duration": "5:43"
+      },
+      {
+        "position": "B3",
+        "title": "Sack 'O Woe",
+        "duration": "10:45"
+      }
+    ]
+  },
   "1531708": {
     "cover": "https://i.discogs.com/R0Wxsyz2W71Ar2DRyJYXhHVLA-Wn4NmAyt-Q6bNB_N8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MzE3/MDgtMTUzNDk3NTg1/Ny0zNDc1LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/EX4OQ3hjfaOTIByOKZayoCeZQak-n0EU9wja1ICPSWE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MzE3/MDgtMTUzNDk3NTg1/Ny0zNDc1LmpwZWc.jpeg",
@@ -8049,6 +8145,67 @@
         "position": "B3",
         "title": "Manhattan Reflections",
         "duration": "6:25"
+      }
+    ]
+  },
+  "1599578": {
+    "cover": "https://i.discogs.com/KY6RpgujVo6Xv7eODpIEWDAe9jCtGcVcrzGjjJtuTrw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTk1/NzgtMTMxMDk1NjI5/OC5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/P-DJxuTmnBMnYrdtWsz2oALMVKbcThtAtnwsA-kYW6w/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTk1/NzgtMTMxMDk1NjI5/OC5qcGVn.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Little Old Lady",
+        "duration": "5:10"
+      },
+      {
+        "position": "A2",
+        "title": "For All We Know",
+        "duration": "2:42"
+      },
+      {
+        "position": "A3",
+        "title": "Pavanne",
+        "duration": "5:42"
+      },
+      {
+        "position": "A4",
+        "title": "Excerpt From The Blues",
+        "duration": "2:58"
+      },
+      {
+        "position": "A5",
+        "title": "You'd Be So Easy To Love",
+        "duration": "3:16"
+      },
+      {
+        "position": "B1",
+        "title": "Time On My Hands",
+        "duration": "1:38"
+      },
+      {
+        "position": "B2",
+        "title": "Raincheck",
+        "duration": "4:46"
+      },
+      {
+        "position": "B3",
+        "title": "I'll Never Stop Loving You",
+        "duration": "3:05"
+      },
+      {
+        "position": "B4",
+        "title": "Speak Low",
+        "duration": "4:58"
+      },
+      {
+        "position": "B5",
+        "title": "Rhumba No. 2",
+        "duration": "2:40"
       }
     ]
   },
@@ -8695,6 +8852,80 @@
         "position": "B4",
         "title": "Famous Last Words",
         "duration": "4:25"
+      }
+    ]
+  },
+  "1813006": {
+    "cover": "https://i.discogs.com/os3Gm61mroiZvEw2bIGtNDf0RXydEx8PRmIk-YYwBSU/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MTMw/MDYtMTQzNjgxNDc2/Mi05NjgxLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/TcLhjpdmx3MmaXiqlQZbPOskOdPkxDcfwtS8TIp9tvo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MTMw/MDYtMTQzNjgxNDc2/Mi05NjgxLmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Grunge",
+      "Alternative Rock"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Smells Like Teen Spirit",
+        "duration": "5:00"
+      },
+      {
+        "position": "A2",
+        "title": "In Bloom",
+        "duration": "4:13"
+      },
+      {
+        "position": "A3",
+        "title": "Come As You Are",
+        "duration": "3:38"
+      },
+      {
+        "position": "A4",
+        "title": "Breed",
+        "duration": "3:03"
+      },
+      {
+        "position": "A5",
+        "title": "Lithium",
+        "duration": "4:16"
+      },
+      {
+        "position": "A6",
+        "title": "Polly",
+        "duration": "2:56"
+      },
+      {
+        "position": "B1",
+        "title": "Territorial Pissings",
+        "duration": "2:22"
+      },
+      {
+        "position": "B2",
+        "title": "Drain You",
+        "duration": "3:43"
+      },
+      {
+        "position": "B3",
+        "title": "Lounge Act",
+        "duration": "2:35"
+      },
+      {
+        "position": "B4",
+        "title": "Stay Away",
+        "duration": "3:30"
+      },
+      {
+        "position": "B5",
+        "title": "On A Plain",
+        "duration": "3:12"
+      },
+      {
+        "position": "B6",
+        "title": "Something In The Way",
+        "duration": "3:43"
       }
     ]
   },
@@ -9472,6 +9703,69 @@
         "position": "B5",
         "title": "Music's My Life",
         "duration": "3:58"
+      }
+    ]
+  },
+  "2062742": {
+    "cover": "https://i.discogs.com/w8PZ8uvgodVQa4WsKztQQFBqlpLbo61HBisABjvgVf8/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNjI3/NDItMTM4NTc2NTU5/MS0yMTQ0LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/WX2ekZtnD9-CpZ8YS-sBUlUIDjrkZKwhqBdwGASmg1s/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNjI3/NDItMTM4NTc2NTU5/MS0yMTQ0LmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Glam"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Needles In The Camel's Eye",
+        "duration": "3:26"
+      },
+      {
+        "position": "A2",
+        "title": "The Paw Paw Negro Blowtorch",
+        "duration": "3:00"
+      },
+      {
+        "position": "A3",
+        "title": "Baby's On Fire",
+        "duration": "5:15"
+      },
+      {
+        "position": "A4",
+        "title": "Cindy Tells Me",
+        "duration": "3:30"
+      },
+      {
+        "position": "A5",
+        "title": "Driving Me Backwards",
+        "duration": "5:15"
+      },
+      {
+        "position": "B1",
+        "title": "On Some Faraway Beach",
+        "duration": "4:40"
+      },
+      {
+        "position": "B2",
+        "title": "Blank Frank",
+        "duration": "3:35"
+      },
+      {
+        "position": "B3",
+        "title": "Dead Finks Don't Talk",
+        "duration": "4:20"
+      },
+      {
+        "position": "B4",
+        "title": "Some Of Them Are Old",
+        "duration": "4:40"
+      },
+      {
+        "position": "B5",
+        "title": "Here Come The Warm Jets",
+        "duration": "4:00"
       }
     ]
   },
@@ -13619,6 +13913,110 @@
         "position": "B4",
         "title": "How About You",
         "duration": ""
+      }
+    ]
+  },
+  "3384946": {
+    "cover": "https://i.discogs.com/h_mhcsJh7n5La4hiyxBlnQ2a8RirOHIrtBk-37sOvuY/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzODQ5/NDYtMTYxNDUzODg0/Mi0xMjU1LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/VsDmZSpJAHDrbInpJo6R-U01WFabosLYVuruiYFXowA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzODQ5/NDYtMTYxNDUzODg0/Mi0xMjU1LmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Alternative Rock",
+      "Ethereal"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Blind Dumb Deaf",
+        "duration": "3:47"
+      },
+      {
+        "position": "A2",
+        "title": "Sugar Hiccup",
+        "duration": "3:41"
+      },
+      {
+        "position": "A3",
+        "title": "My Love Paramour",
+        "duration": "3:38"
+      },
+      {
+        "position": "A4",
+        "title": "Pearly-Dewdrops' Drops",
+        "duration": "4:11"
+      },
+      {
+        "position": "A5",
+        "title": "Lorelei",
+        "duration": "3:43"
+      },
+      {
+        "position": "B1",
+        "title": "Pandora",
+        "duration": "5:26"
+      },
+      {
+        "position": "B2",
+        "title": "Aikea-Guinea",
+        "duration": "3:57"
+      },
+      {
+        "position": "B3",
+        "title": "Pink Orange Red",
+        "duration": "4:38"
+      },
+      {
+        "position": "B4",
+        "title": "Pale Clouded White",
+        "duration": "4:59"
+      },
+      {
+        "position": "C1",
+        "title": "Lazy Calm",
+        "duration": "6:34"
+      },
+      {
+        "position": "C2",
+        "title": "The Thinner The Air",
+        "duration": "3:16"
+      },
+      {
+        "position": "C3",
+        "title": "Orange Appled",
+        "duration": "2:50"
+      },
+      {
+        "position": "C4",
+        "title": "Cico Buff",
+        "duration": "3:46"
+      },
+      {
+        "position": "D1",
+        "title": "Carolyn's Fingers",
+        "duration": "3:06"
+      },
+      {
+        "position": "D2",
+        "title": "Fifty-Fifty Clown",
+        "duration": "3:11"
+      },
+      {
+        "position": "D3",
+        "title": "Iceblink Luck",
+        "duration": "3:18"
+      },
+      {
+        "position": "D4",
+        "title": "Heaven Or Las Vegas",
+        "duration": "4:55"
+      },
+      {
+        "position": "D5",
+        "title": "Watchlar",
+        "duration": "3:17"
       }
     ]
   },
@@ -18148,6 +18546,72 @@
         "position": "B5",
         "title": "Exitus",
         "duration": "8:30"
+      }
+    ]
+  },
+  "5482996": {
+    "cover": "https://i.discogs.com/FeR154UKwWfO2wUxCgJrH6clDM588CAf98mTMXE0F4c/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0ODI5/OTYtMTQ2NDY1NjE2/Ni0xNzA5Lm1wbw.jpeg",
+    "thumb": "https://i.discogs.com/fKiaa0uhKreXXdYjgmf-uglywNezmX_51JAJS4wytT0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0ODI5/OTYtMTQ2NDY1NjE2/Ni0xNzA5Lm1wbw.jpeg",
+    "genres": [
+      "Latin"
+    ],
+    "styles": [
+      "Samba",
+      "Cha-Cha",
+      "Mambo",
+      "Pachanga"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Pachanga Beat",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Chinese Cha Cha",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Samba Dancero",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Viva Mambo",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Frenzy",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Cha Cha Mambo",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Mambo La Libertad",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Gee",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Mambo Fantastique",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Siesta Cha Cha",
+        "duration": ""
       }
     ]
   },
