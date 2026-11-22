@@ -169,7 +169,6 @@ export const records: VinylRecord[] = [
   { artist: 'James Brown', title: 'I Got You (I Feel Good)', label: 'King Records (3)', format: 'LP, Album, Mono', rating: 4, released: 1966, releaseId: 856166 },
   { artist: 'James Brown Directs And Dances With The James Brown Band', title: 'The Popcorn', label: 'King Records (3)', format: 'LP, Album, Club, Cap', rating: 5, released: 1969, releaseId: 502902 },
   { artist: 'James Brown', title: 'It\'s A Mother', label: 'King Records (3)', format: 'LP, Album', rating: 4, released: 1969, releaseId: 363284 },
-  { artist: 'James Brown Directs And Dances With The The James Brown Band', title: 'The Popcorn', label: 'King Records (3)', format: 'LP, Album, RE', rating: 5, released: null, releaseId: 2094282 },
   { artist: 'Fela Kuti', title: 'Vinyl Box Set 3', label: 'Knitting Factory Records', format: 'LP, Album, RE + LP, Album, RE + LP, Album, RE + LP', rating: 4, released: 2014, releaseId: 6147062 },
   { artist: 'Cannonball Adderley & John Coltrane', title: 'Cannonball & Coltrane', label: 'Limelight', format: 'LP, Album, RE, Gat', rating: 4, released: 1964, releaseId: 1060424 },
   { artist: 'Milt Jackson', title: 'Bags\' Opus', label: 'London Records', format: 'LP, Album, Mono', rating: 4, released: 1959, releaseId: 4432083 },
