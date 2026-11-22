@@ -11,6 +11,7 @@ export interface Book {
 
 export const books: Book[] = [
   // ── 2026 ────────────────────────────────────────────────
+  { title: 'The Coming Wave', author: 'Mustafa Suleyman', year: 2026, favorite: false, coverUrl:'https://images-na.ssl-images-amazon.com/images/P/0593593952.01.LZZZZZZZ.jpg' },
   { title: 'The Three-Body Problem', author: 'Cixin Liu', year: 2026, favorite: false, coverUrl:'https://covers.openlibrary.org/b/isbn/9780765382030-M.jpg' },
   { title: 'The Dark Forest', author: 'Cixin Liu', year: 2026, favorite: false },
   { title: '1984: The Graphic Novel', author: 'George Orwell and Fido Nesti', year: 2026, favorite: false },
