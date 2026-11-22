@@ -325,4 +325,11 @@ export const records: VinylRecord[] = [
   { artist: 'Buck Clayton', title: 'Jumpin\' At The Woodside', label: 'Columbia', format: 'LP, Album, Mono', rating: 4, released: 1955, releaseId: 3562814 },
   { artist: 'Herbie Hancock', title: 'Thrust', label: 'Columbia', format: 'LP, Album, Promo', rating: 4, released: 1974, releaseId: 31382 },
   { artist: 'Jimmy Smith', title: 'Midnight Special', label: 'Blue Note', format: 'LP, Album, Mono', rating: 4, released: 1961, releaseId: 2313263 },
+  { artist: 'Jimmy Smith', title: 'Black Smith', label: 'Pride', format: 'LP, Album, Stereo', rating: 4, released: 1974, releaseId: 1538413 },
+  { artist: 'Clifford Brown And Max Roach', title: 'Study In Brown', label: 'EmArcy', format: 'LP, Album, Mono', rating: 4, released: 1955, releaseId: 1146247 },
+  { artist: 'Sonny Stitt', title: 'Mr. Bojangles', label: 'Cadet', format: 'LP, Album, Stereo', rating: 4, released: 1973, releaseId: 1794866 },
+  { artist: 'The Ramsey Lewis Trio', title: 'The In Crowd', label: 'Cadet', format: 'LP, Album, Stereo', rating: 4, released: 1965, releaseId: 3410571 },
+  { artist: 'Art Blakey & Buddy DeFranco', title: 'Blues Bag', label: 'Atlantis', format: 'LP, Album, RE', rating: 4, released: 1986, releaseId: 2952980 },
+  { artist: 'Stan Getz', title: 'Stan The Man', label: 'Verve Records', format: '2xLP, Comp', rating: 4, released: 1984, releaseId: 4231660 },
+  { artist: 'Stan Getz', title: 'A Stan Getz Sampler: An Introduction To The World Of Stan Getz', label: 'Verve Records', format: 'LP, Comp, Sampler, Mono', rating: 4, released: 1964, releaseId: 4298327 },
 ]
