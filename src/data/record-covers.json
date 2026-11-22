@@ -4661,44 +4661,6 @@
       }
     ]
   },
-  "1085374": {
-    "cover": "https://i.discogs.com/-1TyavCfNJEYynjKnO0WOEcGgs7f478NGJK1FHTWuas/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODUz/NzQtMTM3MjcxNDI4/MC0yNjU4LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/7SWpY9UsK6SrzTx36XWB6x3NWODeMcZFSbjTNojdPA0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODUz/NzQtMTM3MjcxNDI4/MC0yNjU4LmpwZWc.jpeg",
-    "genres": [
-      "Jazz"
-    ],
-    "styles": [
-      "Hard Bop"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Good Bait",
-        "duration": "12:26"
-      },
-      {
-        "position": "A2",
-        "title": "I Want To Talk About You",
-        "duration": "11:10"
-      },
-      {
-        "position": "B1",
-        "title": "You Say You Care",
-        "duration": "6:25"
-      },
-      {
-        "position": "B2",
-        "title": "Theme For Ernie",
-        "duration": "5:03"
-      },
-      {
-        "position": "B3",
-        "title": "Russian Lullaby",
-        "duration": "5:42"
-      }
-    ]
-  },
   "1108943": {
     "cover": "https://i.discogs.com/5NMkqQUZqAJege8MKZc6qa7chQ-jWeeSLgWXB18cCzA/rs:fit/g:sm/q:90/h:587/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMDg5/NDMtMTE5MjY4MTIw/Ni5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/_n68fKprShFeHaCj9u5n2eqoDhv52cim0pDAOySFJto/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMDg5/NDMtMTE5MjY4MTIw/Ni5qcGVn.jpeg",
@@ -8997,85 +8959,6 @@
         "position": "B6",
         "title": "I Don't Know What It Is You Got",
         "duration": "2:31"
-      }
-    ]
-  },
-  "1903323": {
-    "cover": "https://i.discogs.com/0RgvBFHBOQyQuM20z6sqd67sE5HFH0fK3KE2NZHHgGg/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MDMz/MjMtMTM2NDEzODQ1/MS02OTAwLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/EMOv2dVXznw29A7Nk7Y1NWvklNtbxJDI9Cg2gsySfRk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MDMz/MjMtMTM2NDEzODQ1/MS02OTAwLmpwZWc.jpeg",
-    "genres": [
-      "Jazz"
-    ],
-    "styles": [
-      "Big Band",
-      "Modal"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "The Buzzard Song",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "Bess, You Is My Woman Now",
-        "duration": ""
-      },
-      {
-        "position": "A3",
-        "title": "Gone",
-        "duration": ""
-      },
-      {
-        "position": "A4",
-        "title": "Gone, Gone, Gone",
-        "duration": ""
-      },
-      {
-        "position": "A5",
-        "title": "Summertime",
-        "duration": ""
-      },
-      {
-        "position": "A6",
-        "title": "Bess, Oh Where's My Bess",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "Prayer (Oh Doctor Jesus)",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "Fishermen, Strawberry And Devil Crab",
-        "duration": ""
-      },
-      {
-        "position": "B3",
-        "title": "My Man's Gone Now",
-        "duration": ""
-      },
-      {
-        "position": "B4",
-        "title": "It Ain't Necessarily So",
-        "duration": ""
-      },
-      {
-        "position": "B5",
-        "title": "Here Come De Honey Man",
-        "duration": ""
-      },
-      {
-        "position": "B6",
-        "title": "I Loves You, Porgy",
-        "duration": ""
-      },
-      {
-        "position": "B7",
-        "title": "There's A Boat That's Leaving Soon For New York",
-        "duration": ""
       }
     ]
   },
