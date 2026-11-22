@@ -347,4 +347,6 @@ export const records: VinylRecord[] = [
   { artist: 'Nirvana', title: 'Nevermind', label: 'DGC', format: 'LP, Album', rating: 4, released: 1991, releaseId: 1813006 },
   { artist: 'Cocteau Twins', title: 'Stars And Topsoil (A Collection 1982-1990)', label: '4AD', format: '2xLP, Comp, RM', rating: 4, released: 2012, releaseId: 3384946 },
   { artist: 'Eno', title: 'Here Come The Warm Jets', label: 'Island Records', format: 'LP, Album', rating: 4, released: 1974, releaseId: 2062742 },
+  { artist: 'Kamasi Washington', title: 'Heaven And Earth', label: 'Young Turks', format: '5xLP, Album', rating: 4, released: 2018, releaseId: 12165879 },
+  { artist: 'Charlie Barnet / Dizzy Gillespie / Bill Harris / Stan Kenton / Woody Herman / Miles Davis', title: 'The Modern Idiom', label: 'Capitol Records', format: 'LP, 10", Comp', rating: 4, released: 1952, releaseId: 4566015 },
 ]

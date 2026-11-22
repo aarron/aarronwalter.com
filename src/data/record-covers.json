@@ -16457,6 +16457,62 @@
       }
     ]
   },
+  "4566015": {
+    "cover": "https://i.discogs.com/OmQrdiHchuC9QVgbZH7sm93u9723qFlKj-cWjdtWgzk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NjYw/MTUtMTQwNTQ3ODc0/My03OTUwLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/atefSHyyi03D43yZ7UMBQsY_b3fC51jaNqbO1s1vlOg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NjYw/MTUtMTQwNTQ3ODc0/My03OTUwLmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Cool Jazz",
+      "Bop",
+      "Swing",
+      "Big Band"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Round Robin",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Aishe",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Overtime",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Opus 96",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Oo-La-La",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Spain",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Budo",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Short Wave",
+        "duration": ""
+      }
+    ]
+  },
   "4570366": {
     "cover": "https://i.discogs.com/IR6_z_1KUErO-OORqXG2_MJhqWxsaPxYRi-hOLLdHic/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NzAz/NjYtMTc0OTM3MjMx/Ny0xODg1LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/rqE3sfigR3-tErFq1l1AV_4XYDHpjNV6PwD0EcENccM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NzAz/NjYtMTc0OTM3MjMx/Ny0xODg1LmpwZWc.jpeg",
@@ -22225,6 +22281,120 @@
         "position": "B5",
         "title": "These Foolish Things",
         "duration": "3:08"
+      }
+    ]
+  },
+  "12165879": {
+    "cover": "https://i.discogs.com/4cCh-0BzbpFW6btZkZvkaAEJ55e3aMP07V34kji6t40/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMTY1/ODc5LTE1Mjk2Mzkx/MDYtMjQxNS5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/Hys_oZ3NOn0MgyeBelh3OqGSI87RsCwMHSrHBmiaFY4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMTY1/ODc5LTE1Mjk2Mzkx/MDYtMjQxNS5qcGVn.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Contemporary Jazz",
+      "Fusion"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "",
+        "title": "Earth",
+        "duration": ""
+      },
+      {
+        "position": "A1",
+        "title": "Fists Of Fury",
+        "duration": "9:42"
+      },
+      {
+        "position": "A2",
+        "title": "Can You Hear Him",
+        "duration": "8:54"
+      },
+      {
+        "position": "B1",
+        "title": "Hub-Tones",
+        "duration": "9:09"
+      },
+      {
+        "position": "B2",
+        "title": "Connections",
+        "duration": "8:23"
+      },
+      {
+        "position": "C1",
+        "title": "Tiffakonkae",
+        "duration": "9:24"
+      },
+      {
+        "position": "C2",
+        "title": "The Invincible Youth",
+        "duration": "9:52"
+      },
+      {
+        "position": "D1",
+        "title": "Testify",
+        "duration": "5:43"
+      },
+      {
+        "position": "D2",
+        "title": "One Of One",
+        "duration": "9:50"
+      },
+      {
+        "position": "",
+        "title": "Heaven",
+        "duration": ""
+      },
+      {
+        "position": "E1",
+        "title": "The Space Travelers Lullaby",
+        "duration": "10:31"
+      },
+      {
+        "position": "E2",
+        "title": "Vi Lua Vi Sol",
+        "duration": "11:06"
+      },
+      {
+        "position": "F1",
+        "title": "Street Fighter Mas",
+        "duration": "5:57"
+      },
+      {
+        "position": "F2",
+        "title": "Song For The Fallen",
+        "duration": "12:41"
+      },
+      {
+        "position": "G1",
+        "title": "Journey",
+        "duration": "8:50"
+      },
+      {
+        "position": "G2",
+        "title": "The Psalmnist",
+        "duration": "7:18"
+      },
+      {
+        "position": "H1",
+        "title": "Show Us The Way",
+        "duration": "6:51"
+      },
+      {
+        "position": "H2",
+        "title": "Will You Sing",
+        "duration": "10:12"
+      },
+      {
+        "position": "",
+        "title": "The Choice",
+        "duration": ""
+      },
+      {
+        "position": "I1",
+        "title": "The Secret Of Jinsinson",
+        "duration": "8:07"
       }
     ]
   },
