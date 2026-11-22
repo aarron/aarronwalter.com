@@ -556,6 +556,59 @@
       }
     ]
   },
+  "202997": {
+    "cover": "https://i.discogs.com/hNTJ3v2h-iXyZ6myjy_PeKRy2374rMtYaTJ91l3j7NU/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMjk5/Ny0xNTU0MDY5NDQw/LTUxNjAuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/JDmCwKSTq3SiQCJ3zaFcwskTDMZT4CzYAJ3-4rlP_sE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMjk5/Ny0xNTU0MDY5NDQw/LTUxNjAuanBlZw.jpeg",
+    "genres": [
+      "Funk / Soul"
+    ],
+    "styles": [
+      "P.Funk"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Mr. Wiggles",
+        "duration": "6:44"
+      },
+      {
+        "position": "A2",
+        "title": "Rumpofsteelskin",
+        "duration": "5:35"
+      },
+      {
+        "position": "A3",
+        "title": "(You're A Fish And I'm A) Water Sign",
+        "duration": "4:35"
+      },
+      {
+        "position": "A4",
+        "title": "Aqua Boogie (A Psychoalphadiscobetabioaquadoloop)",
+        "duration": "6:40"
+      },
+      {
+        "position": "B1",
+        "title": "One Of Those Funky Things",
+        "duration": "3:46"
+      },
+      {
+        "position": "B2",
+        "title": "Liquid Sunshine",
+        "duration": "4:24"
+      },
+      {
+        "position": "B3",
+        "title": "The Motor-Booty Affair",
+        "duration": "6:15"
+      },
+      {
+        "position": "B4",
+        "title": "Deep",
+        "duration": "8:50"
+      }
+    ]
+  },
   "204869": {
     "cover": "https://i.discogs.com/T4WFA3Juv9saBMUqoZscxtMjW8rhPNvFkCnnm6NsdtA/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNDg2/OS0xMTg2NDA2MjU2/LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/BsWNdXft2ztLRM9p1e04plib0DDFVQY_Hbiy9frEPWM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNDg2/OS0xMTg2NDA2MjU2/LmpwZWc.jpeg",
@@ -22384,6 +22437,76 @@
         "position": "B5",
         "title": "These Foolish Things",
         "duration": "3:08"
+      }
+    ]
+  },
+  "10836394": {
+    "cover": "https://i.discogs.com/aExArZdbUvgTOb9R9Tgg0tcwN4TB_0Qt8qVCGIMzh1g/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODM2/Mzk0LTE1MTc3MDcy/ODItNzY5MS5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/jiEsX_1rf0tiVxL8au1ZNtfZeINLOHvs-sa_vsQCqkE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwODM2/Mzk0LTE1MTc3MDcy/ODItNzY5MS5qcGVn.jpeg",
+    "genres": [
+      "Funk / Soul"
+    ],
+    "styles": [
+      "Rhythm & Blues",
+      "Soul",
+      "Funk"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Hang 'Em High",
+        "duration": "3:53"
+      },
+      {
+        "position": "A2",
+        "title": "Eleanor Rigby",
+        "duration": "3:34"
+      },
+      {
+        "position": "A3",
+        "title": "Soul Limbo",
+        "duration": "2:23"
+      },
+      {
+        "position": "A4",
+        "title": "Over Easy",
+        "duration": "4:05"
+      },
+      {
+        "position": "A5",
+        "title": "Mrs. Robinson",
+        "duration": "3:38"
+      },
+      {
+        "position": "A6",
+        "title": "Something",
+        "duration": "3:38"
+      },
+      {
+        "position": "B1",
+        "title": "Time Is Tight",
+        "duration": "3:14"
+      },
+      {
+        "position": "B2",
+        "title": "Johnny, I Love You",
+        "duration": "3:00"
+      },
+      {
+        "position": "B3",
+        "title": "Heads Or Tails",
+        "duration": "2:30"
+      },
+      {
+        "position": "B4",
+        "title": "Meditation",
+        "duration": "3:59"
+      },
+      {
+        "position": "B5",
+        "title": "Hip Hug Her",
+        "duration": "2:22"
       }
     ]
   },

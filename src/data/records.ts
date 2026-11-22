@@ -356,4 +356,6 @@ export const records: VinylRecord[] = [
   { artist: 'Kamasi Washington', title: 'Heaven And Earth', label: 'Young Turks', format: '5xLP, Album', rating: 4, released: 2018, releaseId: 12165879 },
   { artist: 'Charlie Barnet / Dizzy Gillespie / Bill Harris / Stan Kenton / Woody Herman / Miles Davis', title: 'The Modern Idiom', label: 'Capitol Records', format: 'LP, 10", Comp', rating: 4, released: 1952, releaseId: 4566015 },
   { artist: 'Chuck Berry', title: 'Attention! Chuck Berry!', label: 'Mercury', format: 'LP, Album, RE', rating: 4, released: 1975, releaseId: 9418435 },
+  { artist: 'Parliament', title: 'Motor Booty Affair', label: 'Casablanca', format: 'LP, Album, Stereo', rating: 4, released: 1978, releaseId: 202997 },
+  { artist: 'Booker T. & The M.G.\'s', title: 'Greatest Hits', label: 'Stax', format: 'LP, Comp', rating: 4, released: 1970, releaseId: 10836394 },
 ]
