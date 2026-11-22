@@ -334,4 +334,5 @@ export const records: VinylRecord[] = [
   { artist: 'Stan Getz', title: 'A Stan Getz Sampler: An Introduction To The World Of Stan Getz', label: 'Verve Records', format: 'LP, Comp, Sampler, Mono', rating: 4, released: 1964, releaseId: 4298327 },
   { artist: 'Stan Getz / Charlie Byrd', title: 'Jazz Samba', label: 'Verve Records', format: 'LP, Album, Mono', rating: 4, released: 1962, releaseId: 1118541 },
   { artist: 'Stan Getz', title: 'Stan Getz Plays', label: 'Verve Records', format: 'LP, Album, Comp, RE, Stereo', rating: 4, released: 1961, releaseId: 10364857 },
+  { artist: 'Billie Holiday', title: '1953-56 Radio & TV Broadcasts Volume 2', label: 'ESP-Disk\'', format: 'LP, Album', rating: 4, released: 1972, releaseId: 8182380 },
 ]
