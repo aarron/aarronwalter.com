@@ -155,7 +155,7 @@ export const records: VinylRecord[] = [
   { artist: 'Ahmad Jamal', title: 'At The Top:  Poinciana Revisited', label: 'Impulse!', format: 'LP, Album, RE, Gat', rating: 3, released: 1973, releaseId: 8881055 },
   { artist: 'Bob Marley & The Wailers', title: 'Catch A Fire', label: 'Island Records', format: 'LP, Album, RP, Pit', rating: 0, released: 1975, releaseId: 636555 },
   { artist: 'Max Romeo & The Upsetters', title: 'War Ina Babylon', label: 'Island Records', format: 'LP, Album, RE, 180', rating: 3, released: 2013, releaseId: 4775059 },
-  { artist: 'Various', title: 'The Harder They Come (Original Soundtrack Recording)', label: 'Mango', format: 'LP, Comp', rating: 5, released: 1973, releaseId: 681555 },
+  { artist: 'Various', title: 'The Harder They Come (Original Soundtrack Recording)', label: 'Mango', format: 'LP, Comp', rating: 5, released: 1977, releaseId: 2544067 },
   { artist: 'U2', title: 'War', label: 'Island Records', format: 'LP, Album, AR', rating: 3, released: 1983, releaseId: 496426 },
   { artist: 'Kishi Bashi', title: '151a', label: 'Joyful Noise Recordings', format: 'LP, Album, Whi', rating: 4, released: 2012, releaseId: 3479826 },
   { artist: 'Charles Mingus With Hampton Hawes & Dannie Richmond', title: 'Mingus Three', label: 'Jubilee', format: 'LP, Album, Mono, RE', rating: 3, released: 1960, releaseId: 2284676 },
@@ -355,4 +355,5 @@ export const records: VinylRecord[] = [
   { artist: 'Eno', title: 'Here Come The Warm Jets', label: 'Island Records', format: 'LP, Album', rating: 4, released: 1974, releaseId: 2062742 },
   { artist: 'Kamasi Washington', title: 'Heaven And Earth', label: 'Young Turks', format: '5xLP, Album', rating: 4, released: 2018, releaseId: 12165879 },
   { artist: 'Charlie Barnet / Dizzy Gillespie / Bill Harris / Stan Kenton / Woody Herman / Miles Davis', title: 'The Modern Idiom', label: 'Capitol Records', format: 'LP, 10", Comp', rating: 4, released: 1952, releaseId: 4566015 },
+  { artist: 'Chuck Berry', title: 'Attention! Chuck Berry!', label: 'Mercury', format: 'LP, Album, RE', rating: 4, released: 1975, releaseId: 9418435 },
 ]

@@ -2820,82 +2820,6 @@
       }
     ]
   },
-  "681555": {
-    "cover": "https://i.discogs.com/jX40IZei8onc3sNUUEqCHBWcqEZSMxp05f7evUenwV0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MTU1/NS0xMzEyMDY4NTEw/LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/Vy61-JWNmZeNI-gZiGt2r1dl8r1pEt0LRdyI1d6iVMw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MTU1/NS0xMzEyMDY4NTEw/LmpwZWc.jpeg",
-    "genres": [
-      "Reggae",
-      "Stage & Screen"
-    ],
-    "styles": [
-      "Soundtrack",
-      "Roots Reggae",
-      "Rocksteady"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "You Can Get It If You Really Want",
-        "duration": "2:38"
-      },
-      {
-        "position": "A2",
-        "title": "Draw Your Brakes",
-        "duration": "2:55"
-      },
-      {
-        "position": "A3",
-        "title": "Rivers Of Babylon",
-        "duration": "4:12"
-      },
-      {
-        "position": "A4",
-        "title": "Many Rivers To Cross",
-        "duration": "2:57"
-      },
-      {
-        "position": "A5",
-        "title": "Sweet And Dandy",
-        "duration": "2:58"
-      },
-      {
-        "position": "A6",
-        "title": "The Harder They Come",
-        "duration": "3:36"
-      },
-      {
-        "position": "B1",
-        "title": "Johnny Too Bad",
-        "duration": "3:02"
-      },
-      {
-        "position": "B2",
-        "title": "Shanty Town",
-        "duration": "2:37"
-      },
-      {
-        "position": "B3",
-        "title": "Pressure Drop",
-        "duration": "3:43"
-      },
-      {
-        "position": "B4",
-        "title": "Sitting In Limbo",
-        "duration": "4:52"
-      },
-      {
-        "position": "B5",
-        "title": "You Can Get It If You Really Want",
-        "duration": "2:38"
-      },
-      {
-        "position": "B6",
-        "title": "The Harder They Come",
-        "duration": "3:02"
-      }
-    ]
-  },
   "696772": {
     "cover": "https://i.discogs.com/voeFelA0ho9aKgQJPbpul2EnI3zz5ad_llCKfQmxjts/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5Njc3/Mi0xNzQ1MDAyNTIz/LTIwNDUuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/Sr4Q74U4OqD5_3serIwP5AKLAWsPUwZnQmnCArgDXk8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5Njc3/Mi0xNzQ1MDAyNTIz/LTIwNDUuanBlZw.jpeg",
@@ -11635,6 +11559,84 @@
         "position": "B6",
         "title": "There Are More Questions Than Answers",
         "duration": "2:47"
+      }
+    ]
+  },
+  "2544067": {
+    "cover": "https://i.discogs.com/F0JJiFrF-8BX-u8zesqwT1zJ77EZVt65rLuUxbCEemA/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NDQw/NjctMTc4NzM2MTc3/NC00OTQ1LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/Y7seJchdmEUn0LQntPN9BFCte0B7tyaxTnwIsI9xEFw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1NDQw/NjctMTc4NzM2MTc3/NC00OTQ1LmpwZWc.jpeg",
+    "genres": [
+      "Reggae",
+      "Folk, World, & Country",
+      "Stage & Screen"
+    ],
+    "styles": [
+      "Reggae",
+      "Roots Reggae",
+      "Rocksteady",
+      "Soundtrack"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "You Can Get It If You Really Want",
+        "duration": "2:38"
+      },
+      {
+        "position": "A2",
+        "title": "Draw Your Brakes",
+        "duration": "2:55"
+      },
+      {
+        "position": "A3",
+        "title": "Rivers Of Babylon",
+        "duration": "4:10"
+      },
+      {
+        "position": "A4",
+        "title": "Many Rivers To Cross",
+        "duration": "2:57"
+      },
+      {
+        "position": "A5",
+        "title": "Sweet And Dandy",
+        "duration": "2:58"
+      },
+      {
+        "position": "A6",
+        "title": "The Harder They Come",
+        "duration": "3:36"
+      },
+      {
+        "position": "B1",
+        "title": "Johnny Too Bad",
+        "duration": "3:02"
+      },
+      {
+        "position": "B2",
+        "title": "Shanty Town",
+        "duration": "2:37"
+      },
+      {
+        "position": "B3",
+        "title": "Pressure Drop",
+        "duration": "3:43"
+      },
+      {
+        "position": "B4",
+        "title": "Sitting In Limbo",
+        "duration": "4:52"
+      },
+      {
+        "position": "B5",
+        "title": "You Can Get It If You Really Want",
+        "duration": "2:38"
+      },
+      {
+        "position": "B6",
+        "title": "The Harder They Come",
+        "duration": "3:02"
       }
     ]
   },
@@ -22238,6 +22240,80 @@
       {
         "position": "B3",
         "title": "Fight To Finish!",
+        "duration": ""
+      }
+    ]
+  },
+  "9418435": {
+    "cover": "https://i.discogs.com/fhm6mZKOlxn0dEqRL-PBozCdLA9SVW1cwFncpKNh4zQ/rs:fit/g:sm/q:90/h:596/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk0MTg0/MzUtMTUzNjM3NTE4/MC05NDMzLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/1k2QYvGwVKZKx_2aMEvsIJ62hp4MF3CkIgGwWTIV81k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk0MTg0/MzUtMTUzNjM3NTE4/MC05NDMzLmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Blues Rock",
+      "Rock & Roll"
+    ],
+    "country": "Japan",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Johnny B Goode",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Sweet Little Sixteen",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "C.C. Rider",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "School Days",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Carol",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "title": "Back In The Usa",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Rock & Roll Music",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Maybellene",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Memphis ",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "I Can't Believe ",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Hoochi Coochi Man",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Roll Over Beethoven",
         "duration": ""
       }
     ]
