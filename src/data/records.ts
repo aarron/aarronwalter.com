@@ -316,4 +316,7 @@ export const records: VinylRecord[] = [
   { artist: 'Nina Simone', title: 'Nina At Newport', label: 'Colpix Records', format: 'LP, Album, Mono', rating: 4, released: 1960, releaseId: 958638 },
   { artist: 'Ahmad Jamal', title: 'Ahmad Jamal \'73', label: '20th Century Records', format: 'LP, Album, Stereo', rating: 4, released: 1973, releaseId: 566860 },
   { artist: 'Ahmad Jamal', title: 'Tranquility', label: 'ABC Records', format: 'LP, Album, Stereo', rating: 4, released: 1968, releaseId: 1570878 },
+  { artist: 'Wes Montgomery', title: 'The Small Group Recordings', label: 'Verve Records', format: '2xLP, Album, Comp', rating: 4, released: 1976, releaseId: 23662457 },
+  { artist: 'Wes Montgomery', title: 'California Dreaming', label: 'Verve Records', format: 'LP, Album, Mono', rating: 4, released: 1967, releaseId: 2703864 },
+  { artist: 'Lee Morgan', title: 'The Sidewinder', label: 'Blue Note', format: 'LP, Album, Mono', rating: 4, released: 1964, releaseId: 579852 },
 ]
