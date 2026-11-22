@@ -3275,73 +3275,6 @@
       }
     ]
   },
-  "714317": {
-    "cover": "https://i.discogs.com/eRdqqBgvK0ROdnYiHkR1K5Bfy_VQiaBzSQQnYz1fs6Y/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxNDMx/Ny0xMzgyNTE1OTE1/LTgxNzIuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/Wzjt46ntDVRO3i0lQQY_e4Z-bFeYdfTlcwKglisaH5w/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxNDMx/Ny0xMzgyNTE1OTE1/LTgxNzIuanBlZw.jpeg",
-    "genres": [
-      "Jazz",
-      "Funk / Soul"
-    ],
-    "styles": [
-      "Rhythm & Blues",
-      "Big Band",
-      "Soul",
-      "Soul-Jazz"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "From The Heart",
-        "duration": "3:30"
-      },
-      {
-        "position": "A2",
-        "title": "I've Got News For You",
-        "duration": "4:28"
-      },
-      {
-        "position": "A3",
-        "title": "Moanin'",
-        "duration": "3:14"
-      },
-      {
-        "position": "A4",
-        "title": "Let's Go",
-        "duration": "2:39"
-      },
-      {
-        "position": "A5",
-        "title": "One Mint Julep",
-        "duration": "3:02"
-      },
-      {
-        "position": "B1",
-        "title": "I'm Gonna Move To The Outskirts Of Town",
-        "duration": "3:38"
-      },
-      {
-        "position": "B2",
-        "title": "Stompin' Room Only",
-        "duration": "3:35"
-      },
-      {
-        "position": "B3",
-        "title": "Mister C",
-        "duration": "4:28"
-      },
-      {
-        "position": "B4",
-        "title": "Strike Up The Band",
-        "duration": "2:35"
-      },
-      {
-        "position": "B5",
-        "title": "Birth Of The Blues",
-        "duration": "5:05"
-      }
-    ]
-  },
   "718813": {
     "cover": "https://i.discogs.com/uoKFKogfOcUHn60Mr_Hhqgmy8qvEUCOOBQUr5iDG9Fg/rs:fit/g:sm/q:90/h:449/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxODgx/My0xMzk0MDYwNDcw/LTYzMTIuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/HXORMyHr3ncfAMACpcBQee0atLemhrinqHxzuRuxDCw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxODgx/My0xMzk0MDYwNDcw/LTYzMTIuanBlZw.jpeg",
@@ -3489,6 +3422,73 @@
         "position": "B2",
         "title": "The Late Late Blues",
         "duration": "9:35"
+      }
+    ]
+  },
+  "728198": {
+    "cover": "https://i.discogs.com/wb78VDv1C51e8kZqYFEcFKU77Yb1W9IXmQm0o9wT3VE/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODE5/OC0xMzkyOTMyNzMz/LTU3OTUuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/6-xjFc-JyNQR6Jhucnr-OwpIZxGv5yHzuDzqV5vnkL0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODE5/OC0xMzkyOTMyNzMz/LTU3OTUuanBlZw.jpeg",
+    "genres": [
+      "Jazz",
+      "Funk / Soul"
+    ],
+    "styles": [
+      "Rhythm & Blues",
+      "Big Band",
+      "Soul",
+      "Soul-Jazz"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "From The Heart",
+        "duration": "3:30"
+      },
+      {
+        "position": "A2",
+        "title": "I've Got News For You",
+        "duration": "4:28"
+      },
+      {
+        "position": "A3",
+        "title": "Moanin'",
+        "duration": "3:14"
+      },
+      {
+        "position": "A4",
+        "title": "Let's Go",
+        "duration": "2:39"
+      },
+      {
+        "position": "A5",
+        "title": "One Mint Julep",
+        "duration": "3:02"
+      },
+      {
+        "position": "B1",
+        "title": "I'm Gonna Move To The Outskirts Of Town",
+        "duration": "3:38"
+      },
+      {
+        "position": "B2",
+        "title": "Stompin' Room Only",
+        "duration": "3:35"
+      },
+      {
+        "position": "B3",
+        "title": "Mister C",
+        "duration": "4:28"
+      },
+      {
+        "position": "B4",
+        "title": "Strike Up The Band",
+        "duration": "2:35"
+      },
+      {
+        "position": "B5",
+        "title": "Birth Of The Blues",
+        "duration": "5:05"
       }
     ]
   },
@@ -11065,64 +11065,6 @@
       }
     ]
   },
-  "2357042": {
-    "cover": "https://i.discogs.com/eHniNS3qx7kWpXcf5SrWNlrWH48mxsvwtGNVY_bKCp4/rs:fit/g:sm/q:90/h:595/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNTcw/NDItMTI3OTMwNzk2/NS5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/NnMZxJyXrzeqVpHMDk45K-PXwzTmG41C0euAWvtIaVQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNTcw/NDItMTI3OTMwNzk2/NS5qcGVn.jpeg",
-    "genres": [
-      "Funk / Soul"
-    ],
-    "styles": [
-      "Soul"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Too High",
-        "duration": "4:37"
-      },
-      {
-        "position": "A2",
-        "title": "Visions",
-        "duration": "5:17"
-      },
-      {
-        "position": "A3",
-        "title": "Living For The City",
-        "duration": "7:26"
-      },
-      {
-        "position": "A4",
-        "title": "Golden Lady",
-        "duration": "5:00"
-      },
-      {
-        "position": "B1",
-        "title": "Higher Ground",
-        "duration": "3:54"
-      },
-      {
-        "position": "B2",
-        "title": "Jesus Children Of America",
-        "duration": "4:04"
-      },
-      {
-        "position": "B3",
-        "title": "All In Love Is Fair",
-        "duration": "3:45"
-      },
-      {
-        "position": "B4",
-        "title": "Don't You Worry 'Bout A Thing",
-        "duration": "4:55"
-      },
-      {
-        "position": "B5",
-        "title": "He's Misstra Know-It-All",
-        "duration": "6:06"
-      }
-    ]
-  },
   "2357186": {
     "cover": "https://i.discogs.com/kL8nrH2KXqAUJXVRO6J79fSSCFZVRIsCKscw49IDxY8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNTcx/ODYtMTQyMjcyMTg4/NC0yMDIxLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/DX7potoL2HUePTHIZDZd7-9vT521emxLQ9128x8BzTM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNTcx/ODYtMTQyMjcyMTg4/NC0yMDIxLmpwZWc.jpeg",
@@ -15527,6 +15469,66 @@
         "position": "B4",
         "title": "The Ocean",
         "duration": "4:28"
+      }
+    ]
+  },
+  "4122185": {
+    "cover": "https://i.discogs.com/bvZO0GHbFUB4xGVkxheRmwQ40MdCCeLSxIF9zicPN6Y/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMjIx/ODUtMTM1NjAyNTgy/OC03OTUyLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/OAXQedhb1XT8qjPzCykMZxobbWMZHCIzpRbnM_4kPpE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMjIx/ODUtMTM1NjAyNTgy/OC03OTUyLmpwZWc.jpeg",
+    "genres": [
+      "Jazz",
+      "Blues"
+    ],
+    "styles": [
+      "Soul-Jazz",
+      "Rhythm & Blues"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Fingertips",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Square",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Soul Bongo",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Manhattan At Six",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Paulsby",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Some Other Time",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Wondering",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Session Number 112",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Bam",
+        "duration": ""
       }
     ]
   },
@@ -19973,67 +19975,6 @@
       }
     ]
   },
-  "6557780": {
-    "cover": "https://i.discogs.com/PTGJgHzVWjxifWB06vpgbXzxxgcznqJ9XLzeTjOUw_8/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NTc3/ODAtMTQ5NjA1NTM3/NC03ODgzLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/aWLBLsonKrRhPji0mZKM2ge0kAsG2Jk95r3wAg3Ne_w/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NTc3/ODAtMTQ5NjA1NTM3/NC03ODgzLmpwZWc.jpeg",
-    "genres": [
-      "Jazz",
-      "Funk / Soul"
-    ],
-    "styles": [
-      "Jazz-Funk",
-      "Soul",
-      "Funk"
-    ],
-    "country": "Canada",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Fingertips",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "Square",
-        "duration": ""
-      },
-      {
-        "position": "A3",
-        "title": "Soul Bongo",
-        "duration": ""
-      },
-      {
-        "position": "A4",
-        "title": "Manhattan At Six",
-        "duration": ""
-      },
-      {
-        "position": "A5",
-        "title": "Paulsby",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "Some Other Time",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "Wondering",
-        "duration": ""
-      },
-      {
-        "position": "B3",
-        "title": "Session Number 112",
-        "duration": ""
-      },
-      {
-        "position": "B4",
-        "title": "Bam",
-        "duration": ""
-      }
-    ]
-  },
   "6594580": {
     "cover": "https://i.discogs.com/Zbbj6nNbqvPb-As_syYnjrp51yP8-C631VjAPPkrJXk/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1OTQ1/ODAtMTQzNjUxMjAz/My0xNTEzLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/E1Y1HrSSIan4Ae4qH1nJm16PBJoEngIJ9L0s9Wcf9bs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1OTQ1/ODAtMTQzNjUxMjAz/My0xNTEzLmpwZWc.jpeg",
@@ -22895,6 +22836,64 @@
         "position": "B4",
         "title": "Mama Way",
         "duration": "5:50"
+      }
+    ]
+  },
+  "14731419": {
+    "cover": "https://i.discogs.com/0Oo_n2zG-Cst3Q_LsUnQRRZ549y5_qFUwuSFhWAaiaQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NzMx/NDE5LTE3ODUyOTc0/MjktOTM1OS5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/1ic3C6wJu0yv4QpjFHQ2URlQB1-BxCCh__dH6t4xcYQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NzMx/NDE5LTE3ODUyOTc0/MjktOTM1OS5qcGVn.jpeg",
+    "genres": [
+      "Funk / Soul"
+    ],
+    "styles": [
+      "Soul"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Too High",
+        "duration": "4:37"
+      },
+      {
+        "position": "A2",
+        "title": "Visions",
+        "duration": "5:17"
+      },
+      {
+        "position": "A3",
+        "title": "Living For The City",
+        "duration": "7:26"
+      },
+      {
+        "position": "A4",
+        "title": "Golden Lady",
+        "duration": "5:00"
+      },
+      {
+        "position": "B1",
+        "title": "Higher Ground",
+        "duration": "3:54"
+      },
+      {
+        "position": "B2",
+        "title": "Jesus Children Of America",
+        "duration": "4:04"
+      },
+      {
+        "position": "B3",
+        "title": "All In Love Is Fair",
+        "duration": "3:45"
+      },
+      {
+        "position": "B4",
+        "title": "Don't You Worry 'Bout A Thing",
+        "duration": "4:55"
+      },
+      {
+        "position": "B5",
+        "title": "He's Misstra Know-It-All",
+        "duration": "6:06"
       }
     ]
   },
