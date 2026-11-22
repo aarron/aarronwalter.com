@@ -319,4 +319,10 @@ export const records: VinylRecord[] = [
   { artist: 'Wes Montgomery', title: 'The Small Group Recordings', label: 'Verve Records', format: '2xLP, Album, Comp', rating: 4, released: 1976, releaseId: 23662457 },
   { artist: 'Wes Montgomery', title: 'California Dreaming', label: 'Verve Records', format: 'LP, Album, Mono', rating: 4, released: 1967, releaseId: 2703864 },
   { artist: 'Lee Morgan', title: 'The Sidewinder', label: 'Blue Note', format: 'LP, Album, Mono', rating: 4, released: 1964, releaseId: 579852 },
+  { artist: 'Wes Montgomery', title: 'The Incredible Jazz Guitar Of Wes Montgomery', label: 'Original Jazz Classics', format: 'LP, Album, RE, Stereo', rating: 4, released: 1982, releaseId: 468353 },
+  { artist: 'Billie Holiday', title: 'Last Recording', label: 'Verve Records', format: 'LP, Album, RE', rating: 4, released: 1988, releaseId: 4074635 },
+  { artist: 'Charles Mingus', title: 'Town Hall Concert', label: 'Original Jazz Classics', format: 'LP, Album, RE', rating: 4, released: 1983, releaseId: 2919762 },
+  { artist: 'Buck Clayton', title: 'Jumpin\' At The Woodside', label: 'Columbia', format: 'LP, Album, Mono', rating: 4, released: 1955, releaseId: 3562814 },
+  { artist: 'Herbie Hancock', title: 'Thrust', label: 'Columbia', format: 'LP, Album, Promo', rating: 4, released: 1974, releaseId: 31382 },
+  { artist: 'Jimmy Smith', title: 'Midnight Special', label: 'Blue Note', format: 'LP, Album, Mono', rating: 4, released: 1961, releaseId: 2313263 },
 ]

@@ -73,6 +73,40 @@
       }
     ]
   },
+  "31382": {
+    "cover": "https://i.discogs.com/oZLYNQPbSsd64gFhlYBTyqtl3_rmNK-qkDfQ3UX67ZM/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMzgy/LTEzOTYwNzk4Njkt/MTk0My5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/QyeaeUfzoa2Y00hd5TkEAX1UEPbSza5-Vgeol3Lpols/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMzgy/LTEzOTYwNzk4Njkt/MTk0My5qcGVn.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Fusion",
+      "Jazz-Funk"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Palm Grease",
+        "duration": "10:34"
+      },
+      {
+        "position": "A2",
+        "title": "Actual Proof",
+        "duration": "9:41"
+      },
+      {
+        "position": "B1",
+        "title": "Butterfly",
+        "duration": "11:18"
+      },
+      {
+        "position": "B2",
+        "title": "Spank-A-Lee",
+        "duration": "7:11"
+      }
+    ]
+  },
   "35929": {
     "cover": "https://i.discogs.com/kkuinSLbIB8h0jsk0jwHqk3NH3FhPhqTHdlPN990rWo/rs:fit/g:sm/q:90/h:586/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1OTI5/LTE1NDk5MjU5MTMt/NDMyMS5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/dDHv64VwTfLi3y_4TdPkF1IOmG95aMHimc3eZVHIPhE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1OTI5/LTE1NDk5MjU5MTMt/NDMyMS5qcGVn.jpeg",
@@ -1555,6 +1589,59 @@
         "position": "B3",
         "title": "Russian Lullaby",
         "duration": ""
+      }
+    ]
+  },
+  "468353": {
+    "cover": "https://i.discogs.com/Cwt45cCaaaPNs7Mf16zVnfAe2CFtYiPv0IUgJZe7TJA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2ODM1/My0xNjgyNTY3NzEx/LTk2ODUuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/G2fN2D47MEASfcJkGsqYCKvxK1eomvsotq6bU6omJSg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2ODM1/My0xNjgyNTY3NzEx/LTk2ODUuanBlZw.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Hard Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Airegin",
+        "duration": "4:24"
+      },
+      {
+        "position": "A2",
+        "title": "D-Natural Blues",
+        "duration": "5:18"
+      },
+      {
+        "position": "A3",
+        "title": "Polka Dots And Moonbeams",
+        "duration": "4:38"
+      },
+      {
+        "position": "A4",
+        "title": "Four On Six",
+        "duration": "6:10"
+      },
+      {
+        "position": "B1",
+        "title": "West Coast Blues",
+        "duration": "7:20"
+      },
+      {
+        "position": "B2",
+        "title": "In Your Own Sweet Way",
+        "duration": "4:45"
+      },
+      {
+        "position": "B3",
+        "title": "Mister Walker",
+        "duration": "4:28"
+      },
+      {
+        "position": "B4",
+        "title": "Gone With The Wind",
+        "duration": "6:13"
       }
     ]
   },
@@ -10199,6 +10286,45 @@
       }
     ]
   },
+  "2313263": {
+    "cover": "https://i.discogs.com/NEzpVdTFAmwFNFoKG7vVbkup6aON_xet5Vc_YmzAA88/rs:fit/g:sm/q:90/h:574/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMTMy/NjMtMTcwNjEwNzEw/NS01NjA0LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/-9FLOSVth46BNGRMNk_gLj_nb6vSnESmNsyaXHXM9o8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMTMy/NjMtMTcwNjEwNzEw/NS01NjA0LmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Soul-Jazz",
+      "Hard Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Midnight Special",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "A Subtle One",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Jumpin' The Blues",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Why Was I Born",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "One O'Clock Jump",
+        "duration": ""
+      }
+    ]
+  },
   "2341281": {
     "cover": "https://i.discogs.com/NfbYB-WrvFzXZNLUnQk2Vix9-Vs_f4AoVb6NXeC87ns/rs:fit/g:sm/q:90/h:448/w:449/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNDEy/ODEtMTI3ODE5NTg1/MS5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/UgoGPlN7ZMg13z4PEEvkvw31rcYtWQbPJ36oqGHlvZ4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNDEy/ODEtMTI3ODE5NTg1/MS5qcGVn.jpeg",
@@ -12190,6 +12316,34 @@
       }
     ]
   },
+  "2919762": {
+    "cover": "https://i.discogs.com/vnBYdWuSVmIowJ7kv4EVR4WEa2K-Xlvtq-IguP5LCLM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MTk3/NjItMTU2OTc1NDY2/Mi00ODkwLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/OAe5Jq3nry-28zlLF7myjdkHW1ND5aUUmKGwglpZVXo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MTk3/NjItMTU2OTc1NDY2/Mi00ODkwLmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Post Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "So Long Eric",
+        "duration": "18:00"
+      },
+      {
+        "position": "A2",
+        "title": "Praying With Eric",
+        "duration": "4:55"
+      },
+      {
+        "position": "B",
+        "title": "Praying With Eric (Continued)",
+        "duration": "22:07"
+      }
+    ]
+  },
   "3003117": {
     "cover": "https://i.discogs.com/MKdWRLZPBzmDywMhysblDDqPkFny9Bl16GmsbHyHQ7M/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMDMx/MTctMTM4NjUxNTk1/NC0zNjgwLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/5Nu7PfJX_bRj9CXfnrUT-4n4JwSP-F78eCcIPBqk8Zg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMDMx/MTctMTM4NjUxNTk1/NC0zNjgwLmpwZWc.jpeg",
@@ -13639,6 +13793,39 @@
       }
     ]
   },
+  "3562814": {
+    "cover": "https://i.discogs.com/Xw3egbSFrToVyUTlmJCt5yCZocT7Hqf6bSuV081NlI8/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NjI4/MTQtMTM2OTMxMTI5/MS05NTQzLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/3wwIaHcGIULBajQS_xGfbKUExZ91qTfb3wuF60cAwSM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NjI4/MTQtMTM2OTMxMTI5/MS05NTQzLmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Swing"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Rock-A-Bye Basie",
+        "duration": "8:10"
+      },
+      {
+        "position": "A2",
+        "title": "Jumpin' At The Woodside",
+        "duration": "10:40"
+      },
+      {
+        "position": "B1",
+        "title": "Blue And Sentimental",
+        "duration": "6:30"
+      },
+      {
+        "position": "B2",
+        "title": "Broadway",
+        "duration": "9:25"
+      }
+    ]
+  },
   "3581700": {
     "cover": "https://i.discogs.com/Tof2hYmHUyY0BakAuoNHlDOFmIPrMykSSNlAjB0Mz40/rs:fit/g:sm/q:90/h:599/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1ODE3/MDAtMTU0Njk1NjU0/OC0zMjE3LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/jwGQ-OSouE-sCZ3eVq6R1v21rDU3fcCbWAlmcnIIo6w/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1ODE3/MDAtMTU0Njk1NjU0/OC0zMjE3LmpwZWc.jpeg",
@@ -14329,6 +14516,79 @@
         "position": "B6",
         "title": "Blues For Hawaiians",
         "duration": "2:25"
+      }
+    ]
+  },
+  "4074635": {
+    "cover": "https://i.discogs.com/BRNYbSgKCilgyXXC_Mg-BkG5-kQQKN8GW89a7mXYUlY/rs:fit/g:sm/q:90/h:444/w:451/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNzQ2/MzUtMTQ1MTYyMzc1/OC04MTIxLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/XpRN8PFl4KD8wOikkWrHcK5W4F-GYWtss3uWuUVjQkQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNzQ2/MzUtMTQ1MTYyMzc1/OC04MTIxLmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Big Band"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "All Of You",
+        "duration": "2:30"
+      },
+      {
+        "position": "A2",
+        "title": "Sometimes I'm Happy",
+        "duration": "2:46"
+      },
+      {
+        "position": "A3",
+        "title": "You Took Advantage Of Me",
+        "duration": "3:08"
+      },
+      {
+        "position": "A4",
+        "title": "When It's Sleepy Time Down South",
+        "duration": "4:04"
+      },
+      {
+        "position": "A5",
+        "title": "There'll Be Some Changes",
+        "duration": "2:52"
+      },
+      {
+        "position": "A6",
+        "title": "'Deed I Do",
+        "duration": "2:14"
+      },
+      {
+        "position": "B1",
+        "title": "Don't Worry' Bout Me",
+        "duration": "3:08"
+      },
+      {
+        "position": "B2",
+        "title": "All The Way",
+        "duration": "3:22"
+      },
+      {
+        "position": "B3",
+        "title": "Just One More Chance",
+        "duration": "3:43"
+      },
+      {
+        "position": "B4",
+        "title": "It's Not For Me To Say",
+        "duration": "2:25"
+      },
+      {
+        "position": "B5",
+        "title": "I'll Never Smile Again",
+        "duration": "3:23"
+      },
+      {
+        "position": "B6",
+        "title": "Baby Won't You Please Come Home",
+        "duration": "3:03"
       }
     ]
   },
