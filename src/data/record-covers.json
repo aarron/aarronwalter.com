@@ -19035,122 +19035,6 @@
       }
     ]
   },
-  "6147062": {
-    "cover": "https://i.discogs.com/CBzLDnYyM8nY7QAI3MWW_pVRLq76D3NvPYwjMqgeWOA/rs:fit/g:sm/q:90/h:600/w:560/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNDcw/NjItMTYyOTgwMzMy/OC00NjkxLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/TU0HPbW8msCNLA4Ipb5_C1mRxpxE4K_jYd1oVR_F878/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNDcw/NjItMTYyOTgwMzMy/OC00NjkxLmpwZWc.jpeg",
-    "genres": [
-      "Jazz",
-      "Funk / Soul",
-      "Folk, World, & Country"
-    ],
-    "styles": [
-      "Afrobeat",
-      "Funk"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "",
-        "title": "London Scene (1971)",
-        "duration": ""
-      },
-      {
-        "position": "A1",
-        "title": "J'Ehin J'Ehin",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "Egbe Mio ",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "Who're You",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "Buy Africa",
-        "duration": ""
-      },
-      {
-        "position": "B3",
-        "title": "Fight To Finish",
-        "duration": ""
-      },
-      {
-        "position": "",
-        "title": "Shakara (1972)",
-        "duration": ""
-      },
-      {
-        "position": "C",
-        "title": "Lady",
-        "duration": ""
-      },
-      {
-        "position": "D",
-        "title": "Shakara",
-        "duration": ""
-      },
-      {
-        "position": "",
-        "title": "Afrodisiac (1973) ",
-        "duration": ""
-      },
-      {
-        "position": "E1",
-        "title": "Alu Jon Jonki Jon",
-        "duration": ""
-      },
-      {
-        "position": "E2",
-        "title": "Chop And Quench",
-        "duration": ""
-      },
-      {
-        "position": "F1",
-        "title": "Eko Ile",
-        "duration": ""
-      },
-      {
-        "position": "F2",
-        "title": "Je'Nwi Temi (Don't Gag Me)",
-        "duration": ""
-      },
-      {
-        "position": "",
-        "title": "Gentleman (1973)",
-        "duration": ""
-      },
-      {
-        "position": "G",
-        "title": "Gentleman",
-        "duration": ""
-      },
-      {
-        "position": "H1",
-        "title": "Fefe Naa Efe",
-        "duration": ""
-      },
-      {
-        "position": "H2",
-        "title": "Igbe",
-        "duration": ""
-      },
-      {
-        "position": "",
-        "title": "Upside Down (1976)",
-        "duration": ""
-      },
-      {
-        "position": "I",
-        "title": "Upside Down",
-        "duration": ""
-      }
-    ]
-  },
   "6161576": {
     "cover": "https://i.discogs.com/8q3uqLEZPmPyvHsCjhLamuiJM3TRrJfn2Fa_u5tFO-8/rs:fit/g:sm/q:90/h:359/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNjE1/NzYtMTQyODMzNjM0/OC05OTg0LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/-luYnK7-PgvsKlH1Jc60Bd8xOqOZuIdSKq3Q4cyibuk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNjE1/NzYtMTQyODMzNjM0/OC05OTg0LmpwZWc.jpeg",
@@ -19294,6 +19178,31 @@
       }
     ]
   },
+  "6225890": {
+    "cover": "https://i.discogs.com/QLBTk7qBz1_rbnyY_JLZwQSRWX393UM4q6edobkOu-Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyMjU4/OTAtMTU3MzY0NjA2/Mi0yNDU5LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/AW8c-A-9K10heBe7LkmRAyaKpCnOKiDQv26nhYWyzZo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyMjU4/OTAtMTU3MzY0NjA2/Mi0yNDU5LmpwZWc.jpeg",
+    "genres": [
+      "Jazz",
+      "Funk / Soul",
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Afrobeat"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A",
+        "title": "Lady",
+        "duration": ""
+      },
+      {
+        "position": "B",
+        "title": "Shakara (Oloje)",
+        "duration": ""
+      }
+    ]
+  },
   "6235210": {
     "cover": "https://i.discogs.com/bPEFmqCySJtB7jVLbhyxYS62MLf6qz8oEDthR07C51s/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyMzUy/MTAtMTQxNDQ4Mzkx/Ny00NzQ5LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/xx2drGxhxUH-xCSm-HBi5iYBCmAMs1SIeyhv23UBhmY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyMzUy/MTAtMTQxNDQ4Mzkx/Ny00NzQ5LmpwZWc.jpeg",
@@ -19365,6 +19274,84 @@
         "position": "B6",
         "title": "Mele Kalikimaka (Merry Christmas)",
         "duration": "2:49"
+      }
+    ]
+  },
+  "6248681": {
+    "cover": "https://i.discogs.com/n8ETh4_efYEmPNj9Tl_lyMU4S6ydUnYfJFu_IRGdPEY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDg2/ODEtMTUxNDkxNTM0/NS04MTU2LnBuZw.jpeg",
+    "thumb": "https://i.discogs.com/KpYgedbJzYqydmgF4oPe_1JFNN3Fxoff1_tV9lXlNZY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDg2/ODEtMTUxNDkxNTM0/NS04MTU2LnBuZw.jpeg",
+    "genres": [
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Afrobeat"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "I.T.T. (International Thief Thief) (Part 1)",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "I.T.T. (International Thief Thief) (Part 2)",
+        "duration": ""
+      }
+    ]
+  },
+  "6248690": {
+    "cover": "https://i.discogs.com/vWr-C2vOs7yDpxk5iocAYgsP6hnZIGG3D07BIEy5eNo/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDg2/OTAtMTQ5MTA0MDkw/NC02NTQ2LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/e2B4OSVmgcI6Vx6OsAe6JtYMJKWrQHXgk1UpM4LFLGY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDg2/OTAtMTQ5MTA0MDkw/NC02NTQ2LmpwZWc.jpeg",
+    "genres": [
+      "Jazz",
+      "Funk / Soul",
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Afrobeat",
+      "African"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Gentleman",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Fe Fe Ne Eye Fe",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Igbe",
+        "duration": ""
+      }
+    ]
+  },
+  "6248718": {
+    "cover": "https://i.discogs.com/FtlnPt1FSDRN-Wj6Qnb_xz1w76mPlpb--AyP6nvSVNs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDg3/MTgtMTUxMTQwNzYy/Ny0xMjE3LnBuZw.jpeg",
+    "thumb": "https://i.discogs.com/aA3Q1mClIrZGXhbsP51CIFOKISAveMO7rUHjNKLzRww/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyNDg3/MTgtMTUxMTQwNzYy/Ny0xMjE3LnBuZw.jpeg",
+    "genres": [
+      "Jazz",
+      "Funk / Soul"
+    ],
+    "styles": [
+      "Afrobeat"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Up Side Down",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Go Slow",
+        "duration": ""
       }
     ]
   },
@@ -22215,6 +22202,45 @@
       }
     ]
   },
+  "9143679": {
+    "cover": "https://i.discogs.com/eseq97lA6WNcdBFtM4EVrCVIYaTBzdt1AP4bpdutux8/rs:fit/g:sm/q:90/h:600/w:586/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxNDM2/NzktMTUwMTI4NjM4/OC03NTk0LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/7vf_-aGMHT0wgn4ZV9cjAROWaI_Ue9u17UjNaZaSmkE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxNDM2/NzktMTUwMTI4NjM4/OC03NTk0LmpwZWc.jpeg",
+    "genres": [
+      "Jazz",
+      "Funk / Soul"
+    ],
+    "styles": [
+      "Afrobeat"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "J'Ehin J'Ehin",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "E Gbe Mi O",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Who're You?",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Buy Africa",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Fight To Finish!",
+        "duration": ""
+      }
+    ]
+  },
   "10364857": {
     "cover": "https://i.discogs.com/S6lLz5VgM7c3CyzElc4TV0MNwOXgDYpkGfb18O1bM60/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzY0/ODU3LTE0OTYwNTUy/NjYtMjA4Mi5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/l0b4y9rRB_SVYNrLx3KzfKAIVWjYhbatdJNwPCOxQUo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzY0/ODU3LTE0OTYwNTUy/NjYtMjA4Mi5qcGVn.jpeg",
@@ -22452,6 +22478,40 @@
       }
     ]
   },
+  "14800604": {
+    "cover": "https://i.discogs.com/0MmGCoXBV3RiAxiGjnbw9WADCqtyu0dz3Whzrm3CZvM/rs:fit/g:sm/q:90/h:586/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODAw/NjA0LTE1ODE4NTU0/MTctOTI2Ni5tcG8.jpeg",
+    "thumb": "https://i.discogs.com/CECnZMOtdwtQrFjLP4P36cOosI03nolUpVqPwAp2bnI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODAw/NjA0LTE1ODE4NTU0/MTctOTI2Ni5tcG8.jpeg",
+    "genres": [
+      "Jazz",
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Afrobeat"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Alu Jon Jonki Jon",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Chop And Quench",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Eko Ile",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Je'Nwi Temi (Don't Gag Me)",
+        "duration": ""
+      }
+    ]
+  },
   "15801473": {
     "cover": "https://i.discogs.com/2_vmVt6_qjsSdOdscqAK3UZQJjYINp5eAfxTmyp8yyc/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1ODAx/NDczLTE1OTgwNDUx/MDItMTM0OS5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/oAu_GMdYUo8gsjYWHwnqhSx1u1tZbWeztrlSUZZ8_WE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1ODAx/NDczLTE1OTgwNDUx/MDItMTM0OS5qcGVn.jpeg",
@@ -22574,6 +22634,31 @@
         "position": "B5",
         "title": "Central Park Blues",
         "duration": "3:05"
+      }
+    ]
+  },
+  "19995013": {
+    "cover": "https://i.discogs.com/IpULyOq53CEzVAgvHvCOkujnY9RwDVR7orWofATsKPo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5OTk1/MDEzLTE2Mjk5MzIx/OTAtODA5My5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/LyiVlugk-jaCfLDFtSpeT_i__p3Ef5GXG2gXEu6Fu1Y/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5OTk1/MDEzLTE2Mjk5MzIx/OTAtODA5My5qcGVn.jpeg",
+    "genres": [
+      "Jazz",
+      "Funk / Soul",
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Afrobeat"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A",
+        "title": "Zombie",
+        "duration": "12:25"
+      },
+      {
+        "position": "B",
+        "title": "Mr. Follow Follow (Mister Follow Follow)",
+        "duration": "12:57"
       }
     ]
   },
