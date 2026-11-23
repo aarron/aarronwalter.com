@@ -370,4 +370,5 @@ export const records: VinylRecord[] = [
   { artist: 'Paul Simon', title: 'One-Trick Pony', label: 'Warner Bros. Records', format: 'LP, Album', rating: 4, released: 1980, releaseId: 1331268 },
   { artist: 'Charlie Christian', title: 'Charlie Christian', label: 'Archive Of Folk & Jazz Music', format: 'LP, Album, RE, Stereo', rating: 4, released: 1968, releaseId: 24036158 },
   { artist: 'Lester Young', title: 'The Immortal Lester Young', label: 'Philips', format: 'LP, Comp, Mono', rating: 4, released: 1959, releaseId: 11031691 },
+  { artist: 'Jim Hall', title: 'Jim Hall Live!', label: 'Horizon', format: 'LP, Album, Stereo', rating: 4, released: 1975, releaseId: 1447788 },
 ]
