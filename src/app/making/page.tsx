@@ -6,39 +6,40 @@ import GitHubIcon from '@/components/GitHubIcon'
 import ActivityGrid from '@/components/ActivityGrid'
 import ProjectLanes from '@/components/ProjectLanes'
 import { projects } from '@/data/projects'
-import activityJson from '@/data/github-activity.json'
+import { getActivity, type Activity } from '@/lib/github-activity'
 
 export const metadata: Metadata = {
   title: 'Making',
   description: 'Things Aarron Walter has been building: tools for Design Better, his community and his own curiosity.',
 }
 
-const activity = activityJson as unknown as {
-  generated: string
-  days: [string, number, [string, number][]][]
-  byProject: Record<string, [string, number][]>
-}
+// Rebuilt at most once a day with the latest GitHub activity (see src/lib/github-activity.ts).
+export const revalidate = 86400
 
 const names = Object.fromEntries(projects.map(p => [p.slug, p.name]))
+const featured = projects.filter(p => p.featured)
+const others = projects.filter(p => !p.featured)
 
 // Swimlanes: featured projects first (in the order listed), then the rest by
 // how much work went into them. Projects with no commits are left out.
-const featured = projects.filter(p => p.featured)
-const others = projects.filter(p => !p.featured)
-const commitsFor = (slug: string) => (activity.byProject[slug] ?? []).reduce((a, d) => a + d[1], 0)
-const lanes = [
-  ...featured,
-  ...[...others].sort((a, b) => commitsFor(b.slug) - commitsFor(a.slug)),
-]
-  .filter(p => commitsFor(p.slug) > 0)
-  .map(p => ({ slug: p.slug, name: p.name, featured: !!p.featured, days: activity.byProject[p.slug] }))
-const laneStart = lanes.flatMap(l => l.days.map(d => d[0])).sort()[0] ?? activity.days[0][0]
-// Start the axis on the first of that month
-const axisStart = laneStart.slice(0, 8) + '01'
+function buildLanes(activity: Activity) {
+  const commitsFor = (slug: string) => (activity.byProject[slug] ?? []).reduce((a, d) => a + d[1], 0)
+  const lanes = [
+    ...featured,
+    ...[...others].sort((a, b) => commitsFor(b.slug) - commitsFor(a.slug)),
+  ]
+    .filter(p => commitsFor(p.slug) > 0)
+    .map(p => ({ slug: p.slug, name: p.name, featured: !!p.featured, days: activity.byProject[p.slug] }))
+  const laneStart = lanes.flatMap(l => l.days.map(d => d[0])).sort()[0] ?? activity.days[0][0]
+  return { lanes, axisStart: laneStart.slice(0, 8) + '01' }   // axis starts on the first of that month
+}
 
 const host = (url: string) => url.replace(/^https?:\/\//, '').replace(/\/$/, '')
 
-export default function MakingPage() {
+export default async function MakingPage() {
+  const activity = await getActivity()
+  const { lanes, axisStart } = buildLanes(activity)
+
   return (
     <>
       <article className="page-article">
