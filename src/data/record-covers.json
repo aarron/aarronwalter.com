@@ -5133,7 +5133,9 @@
         "title": "Back At The Chicken Shack",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1975,
+    "genreSource": "master"
   },
   "1118541": {
     "cover": "https://i.discogs.com/GcOPvkWmUxnCfIbEBh2CY5g1Uaw_2i9EhaODede36Ew/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTg1/NDEtMTY4ODE2MDYz/MS02MTIwLmpwZWc.jpeg",
@@ -7536,7 +7538,9 @@
         "title": "Laura",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1956,
+    "genreSource": "master"
   },
   "1417649": {
     "cover": "https://i.discogs.com/TRhkSWwbu2qvaJV_cr4ZTgeCzim3vCo1-K-B4Ti5nyk/rs:fit/g:sm/q:90/h:600/w:584/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTc2/NDktMTM1MjAzMDc5/OC00MDU5LmpwZWc.jpeg",
@@ -11814,7 +11818,9 @@
         "title": "Blues Walk",
         "duration": "6:45"
       }
-    ]
+    ],
+    "originalYear": 1969,
+    "genreSource": "master"
   },
   "2537596": {
     "cover": "https://i.discogs.com/VHqhR-57GRfpE-8YgydNo7aADCjuYTtkV_ihHOjEoA8/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1Mzc1/OTYtMTU2MjQxNzk4/My0yMDQ2LmpwZWc.jpeg",
@@ -12133,7 +12139,9 @@
         "title": "Pee Wee Blues",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1958,
+    "genreSource": "master"
   },
   "2616121": {
     "cover": "https://i.discogs.com/5oKVGw4l-lnggRrORy7-koKS97Vxebri7aYSggTtJB4/rs:fit/g:sm/q:90/h:435/w:432/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MTYx/MjEtMTI5MzQxMzY2/NC5qcGVn.jpeg",
@@ -16041,8 +16049,7 @@
       "Jazz"
     ],
     "styles": [
-      "Bop",
-      "Cool Jazz"
+      "Bop"
     ],
     "country": "US",
     "tracklist": [
@@ -16086,7 +16093,9 @@
         "title": "Utter Chaos",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1959,
+    "genreSource": "master"
   },
   "3942555": {
     "cover": "https://i.discogs.com/7-ZWYpxRbkSLKODfLXTZ2pL8BapXWBNWvDyuntWN1hc/rs:fit/g:sm/q:90/h:600/w:586/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NDI1/NTUtMTc2MTMyMzgx/MS03ODQ5LmpwZWc.jpeg",
@@ -19595,7 +19604,9 @@
         "title": "The Feeling Of Jazz",
         "duration": "5:30"
       }
-    ]
+    ],
+    "originalYear": 1963,
+    "genreSource": "master"
   },
   "5312268": {
     "cover": "https://i.discogs.com/-l4wxcx-wowTNgI7H7gmcziIpAT_TvwqNB4t7YQuzR4/rs:fit/g:sm/q:90/h:593/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzMTIy/NjgtMTUzMTIxNzk5/Mi01MDE5LnBuZw.jpeg",
@@ -26204,9 +26215,9 @@
       "Jazz"
     ],
     "styles": [
+      "Free Improvisation",
       "Hard Bop",
-      "Modal",
-      "Free Improvisation"
+      "Modal"
     ],
     "country": "USA & Europe",
     "tracklist": [
@@ -26235,7 +26246,9 @@
         "title": "A Jump Ahead",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1964,
+    "genreSource": "master"
   },
   "14731419": {
     "cover": "https://i.discogs.com/0Oo_n2zG-Cst3Q_LsUnQRRZ549y5_qFUwuSFhWAaiaQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NzMx/NDE5LTE3ODUyOTc0/MjktOTM1OS5qcGVn.jpeg",
@@ -26844,7 +26857,9 @@
         "title": "Cowrie Charms",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 2023,
+    "genreSource": "master"
   },
   "28614196": {
     "cover": "https://i.discogs.com/InndHB6VSMUxE7xl3nf3IRicJplxTyoNTbcJ-eUv_LU/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NjE0/MTk2LTE2OTc3NDc0/NDYtODY2NC5wbmc.jpeg",
@@ -27062,7 +27077,9 @@
         "title": "Got To Get You Into My Life",
         "duration": "2:15"
       }
-    ]
+    ],
+    "originalYear": 1966,
+    "genreSource": "master"
   },
   "35409259": {
     "cover": "https://i.discogs.com/Eh0r5wZlJpJETCXmX4JBb4irwsWPl2h9YHH9j7y4_iY/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NDA5/MjU5LTE3NjI3NTQx/MDMtOTYyMi5qcGVn.jpeg",
