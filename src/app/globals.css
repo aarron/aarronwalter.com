@@ -5158,3 +5158,196 @@ body {
   mix-blend-mode: screen;
   filter: invert(1) brightness(1.08);
 }
+
+/* ─── Making page ─────────────────────────────────────── */
+
+.making-github { margin: 1.25rem 0 0; }
+.making-github a {
+  font-family: "aktiv-grotesk", sans-serif; font-size: 0.875rem; font-weight: 700;
+  color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--signal);
+}
+.making-github a:hover { color: var(--signal); }
+.making { display: grid; gap: clamp(3.5rem, 7vw, 6rem); }
+.making-section { display: grid; gap: 1.25rem; min-width: 0; }
+.making-heading {
+  font-family: 'Lineca', sans-serif;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--heading);
+  margin: 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgb(from var(--ink) r g b / 0.15);
+}
+.making-note, .making-footnote {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.875rem;
+  color: rgb(from var(--ink) r g b / 0.6);
+  margin: 0;
+  max-width: 62ch;
+}
+
+/* Activity grid */
+.activity { display: grid; gap: 1rem; min-width: 0; }
+.activity-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 1.5rem clamp(1.5rem, 4vw, 3.5rem);
+  margin: 0 0 clamp(1rem, 2vw, 1.75rem);
+}
+.activity-stats div { display: flex; flex-direction: column-reverse; gap: 0.4rem; }
+.activity-stats dt {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgb(from var(--ink) r g b / 0.55);
+}
+.activity-stats dd {
+  margin: 0;
+  display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap;
+  font-family: 'Lineca', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.1;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.activity-stats small { font-family: "aktiv-grotesk", sans-serif; font-size: 0.8125rem; color: rgb(from var(--ink) r g b / 0.55); }
+.activity-scroll, .lanes-scroll { position: relative; overflow-x: auto; overflow-y: visible; padding-top: 0.25rem; }
+.activity-grid { display: block; width: 100%; height: auto; }
+.activity-cell { animation: activity-in 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both; transform-box: fill-box; transform-origin: center; }
+@keyframes activity-in { from { opacity: 0; transform: scale(0.4); } }
+@media (prefers-reduced-motion: reduce) { .activity-cell { animation: none; } }
+.activity-grid text, .lanes text {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 11px;
+  fill: rgb(from var(--ink) r g b / 0.55);
+}
+.activity-cell.l0, .activity-scale .l0 { fill: rgb(from var(--ink) r g b / 0.08); background: rgb(from var(--ink) r g b / 0.08); }
+.activity-cell.l1, .activity-scale .l1 { fill: color-mix(in srgb, var(--signal) 30%, var(--paper)); background: color-mix(in srgb, var(--signal) 30%, var(--paper)); }
+.activity-cell.l2, .activity-scale .l2 { fill: color-mix(in srgb, var(--signal) 55%, var(--paper)); background: color-mix(in srgb, var(--signal) 55%, var(--paper)); }
+.activity-cell.l3, .activity-scale .l3 { fill: color-mix(in srgb, var(--signal) 80%, var(--paper)); background: color-mix(in srgb, var(--signal) 80%, var(--paper)); }
+.activity-cell.l4, .activity-scale .l4 { fill: var(--signal); background: var(--signal); }
+.activity-cell:hover { stroke: var(--ink); stroke-width: 1.5; }
+.activity-scale {
+  display: flex; align-items: center; justify-content: flex-start; gap: 4px; margin: 0; padding-left: 34px;
+  font-family: "aktiv-grotesk", sans-serif; font-size: 0.75rem; color: rgb(from var(--ink) r g b / 0.55);
+}
+.activity-scale i { display: inline-block; width: 12px; height: 12px; border-radius: 2px; }
+.activity-scale span { margin: 0 0.25rem; }
+.activity-tip-date { opacity: 0.7; }
+
+.activity-tip {
+  position: absolute;
+  transform: translate(-50%, calc(-100% - 8px));
+  z-index: 5;
+  pointer-events: none;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  padding: 0.45rem 0.65rem;
+  border-radius: 3px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  font-variant-numeric: tabular-nums;
+}
+.activity-tip strong { font-weight: 700; }
+
+/* Project swimlanes */
+.lanes { display: block; width: 100%; min-width: 720px; height: auto; }
+.lanes-grid, .lanes-base { stroke: rgb(from var(--ink) r g b / 0.1); }
+.lanes .lanes-group { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.lanes .lane-name { fill: var(--ink); font-size: 12.5px; }
+.lanes .lane.is-featured .lane-name { font-weight: 700; }
+.lanes .lane-total { font-variant-numeric: tabular-nums; }
+.lane-tick { fill: rgb(from var(--ink) r g b / 0.45); }
+.lane.is-featured .lane-tick { fill: var(--signal); }
+.lane-tick:hover { fill: var(--ink); }
+
+/* Featured projects */
+.project-list { display: grid; gap: 0; }
+.project {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr);
+  gap: 1rem clamp(2rem, 5vw, 4rem);
+  padding: clamp(1.75rem, 3.5vw, 2.75rem) 0;
+  border-bottom: 1px solid rgb(from var(--ink) r g b / 0.12);
+  scroll-margin-top: 2rem;
+}
+.project-context {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.625rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgb(from var(--ink) r g b / 0.55);
+  margin: 0 0 0.5rem;
+}
+.project-name {
+  font-family: 'Lineca', sans-serif;
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  font-weight: 400; letter-spacing: -0.02em; line-height: 1.05;
+  color: var(--ink);
+  margin: 0;
+  text-wrap: balance;
+}
+.project-pitch {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 1.0625rem; line-height: 1.45;
+  color: var(--signal);
+  margin: 0.75rem 0 0;
+  max-width: 30ch;
+}
+.project-body { display: grid; gap: 1rem; align-content: start; min-width: 0; }
+.project-about {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.9688rem; line-height: 1.65;
+  color: rgb(from var(--ink) r g b / 0.8);
+  margin: 0;
+  max-width: 62ch;
+}
+.project-highlights { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.4rem; }
+.project-highlights li {
+  font-family: "aktiv-grotesk", sans-serif; font-size: 0.875rem; line-height: 1.5;
+  color: var(--ink);
+  padding-left: 1.1rem; position: relative;
+}
+.project-highlights li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 0.45rem; height: 2px; background: var(--signal); }
+.project-stack { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.project-stack li {
+  font-family: "aktiv-grotesk", sans-serif; font-size: 0.6875rem; letter-spacing: 0.04em;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid rgb(from var(--ink) r g b / 0.2);
+  border-radius: 2rem;
+  color: rgb(from var(--ink) r g b / 0.75);
+}
+.project-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 0.25rem 0 0; }
+.project-links a {
+  font-family: "aktiv-grotesk", sans-serif; font-size: 0.8125rem; font-weight: 700;
+  color: var(--ink); text-decoration: none;
+  border-bottom: 1px solid var(--signal);
+}
+.project-links a:hover { color: var(--signal); }
+
+/* More projects */
+.project-more { list-style: none; margin: 0; padding: 0; display: grid; }
+.project-more li {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.9fr) minmax(0, 1.8fr) auto;
+  gap: 0.25rem 1.5rem;
+  align-items: baseline;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgb(from var(--ink) r g b / 0.1);
+  font-family: "aktiv-grotesk", sans-serif;
+}
+.project-more-name { font-weight: 700; color: var(--ink); font-size: 0.9375rem; }
+.project-more-name a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--signal); }
+.project-more-pitch { font-size: 0.875rem; color: rgb(from var(--ink) r g b / 0.7); }
+.project-more-context { font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgb(from var(--ink) r g b / 0.5); }
+
+@media (max-width: 760px) {
+  .project { grid-template-columns: 1fr; }
+  .project-more li { grid-template-columns: 1fr; }
+}

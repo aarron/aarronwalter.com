@@ -12,7 +12,8 @@
     "fetch-record-covers": "node --experimental-strip-types scripts/fetch-record-covers.ts",
     "sync-discogs": "node --experimental-strip-types scripts/sync-discogs-collection.ts",
     "fetch-spotify": "node --experimental-strip-types scripts/fetch-spotify-albums.ts",
-    "fetch-mb-credits": "node --experimental-strip-types scripts/fetch-musicbrainz-credits.ts"
+    "fetch-mb-credits": "node --experimental-strip-types scripts/fetch-musicbrainz-credits.ts",
+    "fetch-github-activity": "node --experimental-strip-types scripts/fetch-github-activity.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

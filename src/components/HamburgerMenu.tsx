@@ -16,6 +16,7 @@ const TOP_LINKS = [
   { label: 'Home',      href: '/' },
   { label: 'Reading',   href: '/reading' },
   { label: 'Listening', href: '/listening' },
+  { label: 'Making',    href: '/making' },
   { label: 'Feed',      href: '/notes' },
   { label: 'About',     href: '/about' },
   { label: 'Contact',   href: '/contact' },
