@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import FooterWave from '@/components/FooterWave'
+import BrowserFrame from '@/components/BrowserFrame'
 import ActivityGrid from '@/components/ActivityGrid'
 import ProjectLanes from '@/components/ProjectLanes'
 import { projects } from '@/data/projects'
@@ -66,7 +68,14 @@ export default function MakingPage() {
             <h2 id="making-featured" className="making-heading">Featured projects</h2>
             <div className="project-list">
               {featured.map(p => (
-                <article key={p.slug} id={p.slug} className="project">
+                <article key={p.slug} id={p.slug} className={p.image ? 'project has-image' : 'project'}>
+                  {p.image && (
+                    <div className="project-shot">
+                      <BrowserFrame>
+                        <Image src={p.image} alt={`${p.name} home page`} width={1600} height={1000} sizes="(max-width: 760px) 100vw, 50vw" />
+                      </BrowserFrame>
+                    </div>
+                  )}
                   <header className="project-head">
                     {p.context && <p className="project-context">{p.context}</p>}
                     <h3 className="project-name">{p.name}</h3>

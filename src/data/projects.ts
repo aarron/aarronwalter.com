@@ -15,11 +15,13 @@ export interface Project {
   repos:       string[]        // GitHub repos whose commits count toward this project
   featured?:   boolean
   context?:    string          // where it lives, e.g. "Design Better" or "Personal"
+  image?:      string          // screenshot in /public/making, shown in a browser frame
 }
 
 export const projects: Project[] = [
   {
     slug: 'curious',
+    image: '/making/curious.webp',
     name: 'Curious',
     context: 'Design Better',
     featured: true,
@@ -37,6 +39,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'designbetter-com',
+    image: '/making/designbetter-com.webp',
     name: 'designbetter.com',
     context: 'Design Better',
     featured: true,
@@ -53,6 +56,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'design-system',
+    image: '/making/design-system.webp',
     name: 'Design Better Design System',
     context: 'Design Better',
     featured: true,
@@ -69,6 +73,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'athens-holiday-market',
+    image: '/making/athens-holiday-market.webp',
     name: 'Athens Holiday Market',
     context: 'Community',
     featured: true,
@@ -104,7 +109,7 @@ export const projects: Project[] = [
     name: 'Power Dashboard',
     context: 'Personal',
     featured: true,
-    pitch: 'Why the power bill keeps rising when the panels are still on the roof.',
+    pitch: 'A dashboard for tracking solar power generation at my home and our power consumption. It connects to the microinverters on my roof and Georgia Power to help us optimize power usage and reduce power bills.',
     about: 'Our house in Athens, Georgia, has had an 11-kilowatt solar array for ten years, yet the electric bill kept climbing. This dashboard combines ten years of bills, solar production and local weather to separate the causes. The panels now make about a third less power than in 2017, and two-thirds of the recent increase comes from using more electricity, not higher rates. It updates itself every morning.',
     highlights: [
       'Ten years of bills, solar output and weather in one place',
