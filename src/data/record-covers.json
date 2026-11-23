@@ -2198,51 +2198,6 @@
     "originalYear": 1969,
     "genreSource": "master"
   },
-  "516995": {
-    "cover": "https://i.discogs.com/UU7MZa5HHTq1vZ6gX8hOx7rAgWQ_Zp0yZcGluI2DuXg/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxNjk5/NS0xNDkyODUyODY4/LTMxMjIuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/gZyUI2N6fzgA0wWRZcedzNOVKoDTh9CSbYQ2krv2fg4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUxNjk5/NS0xNDkyODUyODY4/LTMxMjIuanBlZw.jpeg",
-    "genres": [
-      "Jazz"
-    ],
-    "styles": [
-      "Hard Bop"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Juju",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "Deluge",
-        "duration": ""
-      },
-      {
-        "position": "A3",
-        "title": "House Of Jade",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "Mahjong",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "Yes Or No",
-        "duration": ""
-      },
-      {
-        "position": "B3",
-        "title": "Twelve More Bars To Go",
-        "duration": ""
-      }
-    ],
-    "originalYear": 1965,
-    "genreSource": "master"
-  },
   "528152": {
     "cover": "https://i.discogs.com/ec2Jw0_kkAarayRalM6EhMVNKTZPXPJFZeiNwW5Q8Do/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyODE1/Mi0xMzYzMTM0OTE2/LTYxNjUuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/yJGoZvSrKQNgR_6sBMt0VgeSyDnMGlFNVmlwP31n7yY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyODE1/Mi0xMzYzMTM0OTE2/LTYxNjUuanBlZw.jpeg",
@@ -26707,6 +26662,51 @@
       }
     ],
     "originalYear": 2024,
+    "genreSource": "master"
+  },
+  "31488536": {
+    "cover": "https://i.discogs.com/Ib1zgivksKM6H9VZ6TE1tl2Zu44hbOESEwVXR3sBLY4/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNDg4/NTM2LTE3MjY5Mjg0/MTUtODU3Mi5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/t5M9Ztnd8W0OU0kFbeFNZwJwXiHbEYkjX-h54wCCicM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNDg4/NTM2LTE3MjY5Mjg0/MTUtODU3Mi5qcGVn.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Hard Bop"
+    ],
+    "country": "Worldwide",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Juju",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Deluge",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "House Of Jade",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Mahjong",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Yes Or No",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Twelve More Bars To Go",
+        "duration": ""
+      }
+    ],
+    "originalYear": 1965,
     "genreSource": "master"
   },
   "33706674": {
