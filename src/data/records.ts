@@ -297,7 +297,7 @@ export const records: VinylRecord[] = [
 
   // ── Added Aug 2026 ──────────────────────────────────────
   { artist: 'Kenny Burrell', title: 'Kenny Burrell', label: 'Blue Note', format: 'LP, Album, Mono', rating: 4, released: 1956, releaseId: 3377796 },
-  { artist: 'Grant Green', title: 'Solid', label: 'Blue Note', format: 'LP, Album, Stereo', rating: 4, released: 1979, releaseId: 1179757 },
+  { artist: 'Grant Green', title: 'Solid', label: 'Blue Note', format: 'LP, Album, RE, Stereo', rating: 4, released: 2025, releaseId: 35409259 },
   { artist: 'Tears For Fears', title: 'The Seeds Of Love', label: 'Fontana', format: 'LP, Album, Stereo', rating: 4, released: 1989, releaseId: 1800734 },
   { artist: 'Herb Alpert & Hugh Masekela', title: 'Main Event Live', label: 'A&M Records', format: 'LP, Album', rating: 4, released: 1978, releaseId: 13094495 },
   { artist: 'Kamasi Washington', title: 'The Epic', label: 'Brainfeeder', format: '3xLP, Box Set, Album', rating: 4, released: 2015, releaseId: 7383499 },

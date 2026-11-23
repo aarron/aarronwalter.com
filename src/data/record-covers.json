@@ -5379,44 +5379,6 @@
       }
     ]
   },
-  "1179757": {
-    "cover": "https://i.discogs.com/0531ZbN15rbaf-sjemu1MjgWTAZYPOg3H615l-D7Zvs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzk3/NTctMTM2MjkyNDYx/OS05NjQxLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/PQkWD0nawF9-EJ7gng9isrSD3fBPLzN7Lc3Pd5LJtiU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzk3/NTctMTM2MjkyNDYx/OS05NjQxLmpwZWc.jpeg",
-    "genres": [
-      "Jazz"
-    ],
-    "styles": [
-      "Hard Bop"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Minor League",
-        "duration": "7:05"
-      },
-      {
-        "position": "A2",
-        "title": "Ezz-Thetic",
-        "duration": "10:39"
-      },
-      {
-        "position": "B1",
-        "title": "Grant's Tune",
-        "duration": "6:58"
-      },
-      {
-        "position": "B2",
-        "title": "Solid",
-        "duration": "7:20"
-      },
-      {
-        "position": "B3",
-        "title": "The Kicker",
-        "duration": "6:19"
-      }
-    ]
-  },
   "1181383": {
     "cover": "https://i.discogs.com/hrk8ZDs7fOVoLJ2-mmw-JbrqLbq6tjokdHIzp0CIdig/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODEz/ODMtMTY3NjI0Njg5/My02NzI5LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/Pby2OnO-qce52cj7aqy-MCGJGjTmgNCI-72EprAH9dU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExODEz/ODMtMTY3NjI0Njg5/My02NzI5LmpwZWc.jpeg",
@@ -25085,6 +25047,44 @@
         "position": "B6",
         "title": "Got To Get You Into My Life",
         "duration": "2:15"
+      }
+    ]
+  },
+  "35409259": {
+    "cover": "https://i.discogs.com/Eh0r5wZlJpJETCXmX4JBb4irwsWPl2h9YHH9j7y4_iY/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NDA5/MjU5LTE3NjI3NTQx/MDMtOTYyMi5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/nl2ZEUyr63r4n8Va8kvWml_if0UuQFpL7LRyKybMXFQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NDA5/MjU5LTE3NjI3NTQx/MDMtOTYyMi5qcGVn.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Hard Bop"
+    ],
+    "country": "Worldwide",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Minor League",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Ezz-Thetic",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Grant's Tune",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Solid",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "The Kicker",
+        "duration": ""
       }
     ]
   }
