@@ -1691,6 +1691,65 @@
       }
     ]
   },
+  "424774": {
+    "cover": "https://i.discogs.com/ylO0Lsvumru9wFteyVs6SWVBowHdl0DwcvKDsTYfmZk/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyNDc3/NC0xMjkwMzQ3MTM1/LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/ACB1bA32aATpfVFB2BMlUHGxduYq49B_rGQGVnwhGrc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyNDc3/NC0xMjkwMzQ3MTM1/LmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Hard Bop",
+      "Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Better Git It In Your Soul",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Goodbye Pork Pie Hat",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Boogie Stop Shuffle",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Self-Portrait In Three Colors",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Open Letter To Duke",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Bird Calls",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Fables Of Faubus",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Pussy Cat Dues",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Jelly Roll",
+        "duration": ""
+      }
+    ]
+  },
   "438865": {
     "cover": "https://i.discogs.com/vBdP_eem2syIxHAUueUvDdfxNfyp8ESNhOxuDfJKDVo/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzODg2/NS0xNTc5NDE3NTYy/LTY1MTUuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/NVyuODmMQHrz_yitAdfypYFpZI7d5Nj14HJ6lheEK_k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzODg2/NS0xNTc5NDE3NTYy/LTY1MTUuanBlZw.jpeg",
@@ -7001,65 +7060,6 @@
       {
         "position": "B2",
         "title": "Flamenco Sketches",
-        "duration": ""
-      }
-    ]
-  },
-  "1355742": {
-    "cover": "https://i.discogs.com/GsTjRis5h8jKE280mEK71gSIowywxLfYd07nPmT72xU/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNTU3/NDItMTQzNDM0MDE4/OS0zNDc0LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/xzGacHTaZXiBiW5ZYTI_zY-z4Ylbju9ll1-L1CttAGQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNTU3/NDItMTQzNDM0MDE4/OS0zNDc0LmpwZWc.jpeg",
-    "genres": [
-      "Jazz"
-    ],
-    "styles": [
-      "Hard Bop",
-      "Bop"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Better Git It In Your Soul",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "Goodbye Pork Pie Hat",
-        "duration": ""
-      },
-      {
-        "position": "A3",
-        "title": "Boogie Stop Shuffle",
-        "duration": ""
-      },
-      {
-        "position": "A4",
-        "title": "Self-Portrait In Three Colors",
-        "duration": ""
-      },
-      {
-        "position": "A5",
-        "title": "Open Letter To Duke",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "Bird Calls",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "Fables Of Faubus",
-        "duration": ""
-      },
-      {
-        "position": "B3",
-        "title": "Pussy Cat Dues",
-        "duration": ""
-      },
-      {
-        "position": "B4",
-        "title": "Jelly Roll",
         "duration": ""
       }
     ]

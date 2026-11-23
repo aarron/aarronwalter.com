@@ -90,7 +90,7 @@ export const records: VinylRecord[] = [
   { artist: 'Broken Bells (2)', title: 'After The Disco', label: 'Columbia', format: 'LP, Album, 180', rating: 5, released: 2014, releaseId: 5350470 },
   { artist: 'Bob Dylan', title: 'Blonde On Blonde', label: 'Columbia', format: '2xLP, Album, Stereo, Gat', rating: 5, released: 1966, releaseId: 8501119 },
   { artist: 'Miles Davis', title: 'Porgy And Bess', label: 'Columbia', format: 'LP, Album, Mono, Hol', rating: 3, released: 1959, releaseId: 606389 },
-  { artist: 'Charles Mingus', title: 'Mingus Ah Um', label: 'Columbia', format: 'LP, Album, Mono', rating: 5, released: 1959, releaseId: 1355742 },
+  { artist: 'Charles Mingus', title: 'Mingus Ah Um', label: 'Columbia', format: 'LP, Album, Stereo', rating: 5, released: 1959, releaseId: 424774 },
   { artist: 'Miles Davis', title: 'Sketches Of Spain', label: 'Columbia', format: 'LP, Album, Mono', rating: 3, released: 1960, releaseId: 1914353 },
   { artist: 'Bob Dylan', title: 'The Times They Are A-Changin\'', label: 'Columbia', format: 'LP, Album, Mono, Pit', rating: 4, released: 1964, releaseId: 4577604 },
   { artist: 'Bob Dylan', title: 'Bringing It All Back Home', label: 'Columbia', format: 'LP, Album, Mono, RP', rating: 5, released: 1965, releaseId: 3355724 },
