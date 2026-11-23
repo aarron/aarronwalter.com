@@ -3400,17 +3400,13 @@ body {
 .record-toolbar {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 0.75rem;
+  align-items: flex-end;
+  gap: 1rem 2rem;
   margin-bottom: 1.25rem;
 }
-
-.record-filters {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-}
+.record-toolbar-group { display: flex; flex-direction: column; gap: 0.5rem; }
+.record-toolbar-group--sort { margin-left: auto; }
+.record-toolbar-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
 
 .record-toolbar-label {
   display: inline-flex;
@@ -3422,7 +3418,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: rgb(from var(--ink) r g b / 0.55);
-  margin-right: 0.25rem;
+  padding-left: 0.9rem;
 }
 
 /* Filter menus: outlined pills that fill in when they're narrowing the list */
@@ -3443,8 +3439,7 @@ body {
   border-color: var(--signal);
   background: rgb(from var(--signal) r g b / 0.12);
 }
-.record-menu::after,
-.record-sort::after {  /* chevron */
+.record-menu::after {  /* chevron */
   content: '';
   position: absolute;
   right: 0.9rem;
@@ -3457,8 +3452,7 @@ body {
   color: rgb(from var(--ink) r g b / 0.6);
   pointer-events: none;
 }
-.record-menu select,
-.record-sort select {
+.record-menu select {
   appearance: none;
   -webkit-appearance: none;
   background: none;
@@ -3471,8 +3465,7 @@ body {
   padding: 0.4rem 2rem 0.4rem 0;
   outline: none;
 }
-.record-menu select option,
-.record-sort select option { color: #242831; background: #fff; }
+.record-menu select option { color: #242831; background: #fff; }
 
 .record-clear {
   font-family: "aktiv-grotesk", sans-serif;
@@ -3497,25 +3490,6 @@ body {
 .record-search-wrap svg { position: absolute; left: 0.9rem; pointer-events: none; }
 .record-toolbar .record-search { height: 2.25rem; padding-left: 2.25rem; }
 
-/* Sort: a plain text control on the right, so it doesn't read as another filter */
-.record-sort {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin-left: auto;
-  font-family: "aktiv-grotesk", sans-serif;
-  font-size: 0.8125rem;
-  color: rgb(from var(--ink) r g b / 0.6);
-  border-bottom: 1px solid rgb(from var(--ink) r g b / 0.25);
-  height: 2.25rem;
-  transition: border-color 0.15s;
-}
-.record-sort::after { right: 0.2rem; }
-.record-sort:hover,
-.record-sort:focus-within { border-color: var(--signal); }
-.record-sort select { padding-right: 1.4rem; }
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -3527,20 +3501,19 @@ body {
 
 .record-count {
   font-family: "aktiv-grotesk", sans-serif;
-  font-size: 0.6875rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: rgb(from var(--ink) r g b / 0.5);
+  font-size: 0.9375rem;
+  color: rgb(from var(--ink) r g b / 0.7);
   margin: 0 0 clamp(1.5rem, 3vw, 2.5rem);
 }
+.record-count strong { color: var(--ink); font-weight: 700; }
+.record-count-total { color: rgb(from var(--ink) r g b / 0.5); }
 
 @media (max-width: 640px) {
-  .record-filters { width: 100%; }
+  .record-toolbar-group { width: 100%; }
+  .record-toolbar-group--sort { margin-left: 0; }
   .record-menu { flex: 1 1 40%; }
   .record-menu select { width: 100%; }
   .record-search-wrap, .record-toolbar .record-search { width: 100%; }
-  .record-sort { margin-left: 0; }
 }
 
 .record-section { margin-bottom: clamp(3rem, 6vw, 4.5rem); }

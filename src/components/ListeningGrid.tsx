@@ -240,66 +240,71 @@ export default function ListeningGrid({ records, initialSlug }: Props) {
 
   return (
     <>
-      {/* ── Toolbar: filters (left), search, sort (right) ── */}
+      {/* ── Toolbar: Filter group (menus + search) and Sort group, each labelled above ── */}
       <div className="record-toolbar">
-        <div className="record-filters" role="group" aria-label="Filter records">
-          <span className="record-toolbar-label"><FilterIcon /> Filter</span>
-          <label className={`record-menu${genre ? ' is-set' : ''}`}>
-            <span className="sr-only">Genre</span>
-            <select value={genre ?? ''} onChange={e => setGenre(e.target.value || null)}>
-              <option value="">All genres</option>
-              {availableGenres.map(g => <option key={g} value={g}>{g}</option>)}
-            </select>
-          </label>
-          <label className={`record-menu${ratingFilter !== 'any' ? ' is-set' : ''}`}>
-            <span className="sr-only">Rating</span>
-            <select value={ratingFilter} onChange={e => setRatingFilter(e.target.value as RatingFilter)}>
-              <option value="any">Any rating</option>
-              <option value="5">★★★★★ only</option>
-              <option value="4">★★★★ and up</option>
-              <option value="3">★★★ and up</option>
-              {CAN_RATE && <option value="unrated">Unrated ({unratedCount})</option>}
-            </select>
-          </label>
-          {(genre || ratingFilter !== 'any' || search) && (
-            <button
-              type="button"
-              className="record-clear"
-              onClick={() => { setGenre(null); setRatingFilter('any'); setSearch('') }}
-            >Clear</button>
-          )}
+        <div className="record-toolbar-group record-toolbar-group--filter" role="group" aria-labelledby="record-filter-label">
+          <span id="record-filter-label" className="record-toolbar-label"><FilterIcon /> Filter</span>
+          <div className="record-toolbar-row">
+            <label className={`record-menu${genre ? ' is-set' : ''}`}>
+              <span className="sr-only">Genre</span>
+              <select value={genre ?? ''} onChange={e => setGenre(e.target.value || null)}>
+                <option value="">All genres</option>
+                {availableGenres.map(g => <option key={g} value={g}>{g}</option>)}
+              </select>
+            </label>
+            <label className={`record-menu${ratingFilter !== 'any' ? ' is-set' : ''}`}>
+              <span className="sr-only">Rating</span>
+              <select value={ratingFilter} onChange={e => setRatingFilter(e.target.value as RatingFilter)}>
+                <option value="any">Any rating</option>
+                <option value="5">★★★★★ only</option>
+                <option value="4">★★★★ and up</option>
+                <option value="3">★★★ and up</option>
+                {CAN_RATE && <option value="unrated">Unrated ({unratedCount})</option>}
+              </select>
+            </label>
+            <label className="record-search-wrap">
+              <SearchIcon />
+              <input
+                type="search"
+                className="record-search"
+                placeholder="Search artist or album…"
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                aria-label="Search records"
+              />
+            </label>
+            {(genre || ratingFilter !== 'any' || search) && (
+              <button
+                type="button"
+                className="record-clear"
+                onClick={() => { setGenre(null); setRatingFilter('any'); setSearch('') }}
+              >Clear</button>
+            )}
+          </div>
         </div>
 
-        <label className="record-search-wrap">
-          <SearchIcon />
-          <input
-            type="search"
-            className="record-search"
-            placeholder="Search artist or album…"
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            aria-label="Search records"
-          />
-        </label>
-
-        <label className="record-sort">
-          <SortIcon />
-          <span>Sort by</span>
-          <select
-            value={sort === 'year' ? (newest ? 'year-new' : 'year-old') : sort}
-            onChange={e => {
-              const v = e.target.value
-              if (v.startsWith('year')) { setSort('year'); setNewest(v === 'year-new') }
-              else setSort(v as SortMode)
-            }}
-          >
-            <option value="rating">Rating</option>
-            <option value="artist">Artist A–Z</option>
-            <option value="year-old">Year, oldest first</option>
-            <option value="year-new">Year, newest first</option>
-            <option value="genre">Genre</option>
-          </select>
-        </label>
+        <div className="record-toolbar-group record-toolbar-group--sort" role="group" aria-labelledby="record-sort-label">
+          <span id="record-sort-label" className="record-toolbar-label"><SortIcon /> Sort</span>
+          <div className="record-toolbar-row">
+            <label className="record-menu">
+              <span className="sr-only">Sort by</span>
+              <select
+                value={sort === 'year' ? (newest ? 'year-new' : 'year-old') : sort}
+                onChange={e => {
+                  const v = e.target.value
+                  if (v.startsWith('year')) { setSort('year'); setNewest(v === 'year-new') }
+                  else setSort(v as SortMode)
+                }}
+              >
+                <option value="rating">By rating</option>
+                <option value="artist">Artist A–Z</option>
+                <option value="year-old">Year, oldest first</option>
+                <option value="year-new">Year, newest first</option>
+                <option value="genre">By genre</option>
+              </select>
+            </label>
+          </div>
+        </div>
       </div>
 
       {CAN_RATE && (
@@ -310,7 +315,8 @@ export default function ListeningGrid({ records, initialSlug }: Props) {
       )}
 
       <p className="record-count">
-        {filtered.length} {filtered.length === 1 ? 'record' : 'records'}
+        <strong>{filtered.length}</strong> {filtered.length === 1 ? 'record' : 'records'}
+        {filtered.length !== records.length && <span className="record-count-total"> of {records.length}</span>}
         {sort === 'genre' && ' · records with more than one genre appear in each'}
       </p>
 
