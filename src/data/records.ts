@@ -66,7 +66,7 @@ export const records: VinylRecord[] = [
   { artist: 'Kraftwerk', title: 'Radio-Activity', label: 'Capitol Records', format: 'LP, Album, Win', rating: 4, released: 1975, releaseId: 252195 },
   { artist: 'Crowded House', title: 'Crowded House', label: 'Capitol Records', format: 'LP, Album, All', rating: 2, released: 1986, releaseId: 747153 },
   { artist: 'Lou Rawls', title: 'Carryin\' On!', label: 'Capitol Records', format: 'LP, Album, Mono', rating: 3, released: 1966, releaseId: 2214465 },
-  { artist: 'Miles Davis', title: 'Birth Of The Cool', label: 'Capitol Records', format: 'LP, Comp, Mono', rating: 5, released: 1958, releaseId: 1914400 },
+  { artist: 'Miles Davis', title: 'Birth Of The Cool', label: 'Capitol Records', format: 'LP, Comp, Mono', rating: 5, released: 1957, releaseId: 5456857 },
   { artist: 'Beastie Boys', title: 'Paul\'s Boutique', label: 'Capitol Records', format: 'LP, Album, Gat', rating: 4, released: 1989, releaseId: 1992136 },
   { artist: 'Various', title: 'Christmas Cocktails', label: 'Capitol Records', format: '2xLP, Comp, RE', rating: 3, released: 2014, releaseId: 6346975 },
   { artist: 'The Beach Boys', title: 'Pet Sounds', label: 'Capitol Records', format: 'LP, Album, LA', rating: 5, released: 1966, releaseId: 390866 },

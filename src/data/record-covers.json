@@ -9119,74 +9119,6 @@
       }
     ]
   },
-  "1914400": {
-    "cover": "https://i.discogs.com/RYJKnx-lES30c5jJEUwlvKkg_Rtc1kucJzSEfg7ecmw/rs:fit/g:sm/q:90/h:446/w:437/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MTQ0/MDAtMTU2NjIzNzQ3/NS0yNjA0LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/2H1f5o_Gf0BANcf7N1ERnzxMLP71C2H_3Q26aQ7rrYc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MTQ0/MDAtMTU2NjIzNzQ3/NS0yNjA0LmpwZWc.jpeg",
-    "genres": [
-      "Jazz"
-    ],
-    "styles": [
-      "Cool Jazz"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Move",
-        "duration": "2:29"
-      },
-      {
-        "position": "A2",
-        "title": "Jeru",
-        "duration": "3:09"
-      },
-      {
-        "position": "A3",
-        "title": "Moon Dreams",
-        "duration": "3:17"
-      },
-      {
-        "position": "A4",
-        "title": "Venus De Milo",
-        "duration": "3:09"
-      },
-      {
-        "position": "A5",
-        "title": "Budo",
-        "duration": "2:29"
-      },
-      {
-        "position": "A6",
-        "title": "Deception",
-        "duration": "2:41"
-      },
-      {
-        "position": "B1",
-        "title": "Godchild",
-        "duration": "3:06"
-      },
-      {
-        "position": "B2",
-        "title": "Boplicity",
-        "duration": "2:57"
-      },
-      {
-        "position": "B3",
-        "title": "Rocker",
-        "duration": "3:03"
-      },
-      {
-        "position": "B4",
-        "title": "Israel",
-        "duration": "2:14"
-      },
-      {
-        "position": "B5",
-        "title": "Rouge",
-        "duration": "3:11"
-      }
-    ]
-  },
   "1919801": {
     "cover": "https://i.discogs.com/g64ca8T1-2ZpN7EQX0vU9a8JoDgsCvuDcU2aXfO8aiI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MTk4/MDEtMTM2NDY5OTgx/Mi05NTYxLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/gkMjrdxM_Kp-ML3xbN61rEyfPXt0oYhO4lmBhHO8WDo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MTk4/MDEtMTM2NDY5OTgx/Mi05NTYxLmpwZWc.jpeg",
@@ -19026,6 +18958,74 @@
         "position": "B4",
         "title": "Suzie Q",
         "duration": "8:34"
+      }
+    ]
+  },
+  "5456857": {
+    "cover": "https://i.discogs.com/5PjN3ERLk-bhldEaikIIpDjGOOCOhhSp5SqIYoNrERM/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0NTY4/NTctMTQ0ODQzNTQ4/My04ODEzLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/5zz-HABh-tN9XVuKxHn2GE0IXTODDEiYbyX40FXbp7o/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0NTY4/NTctMTQ0ODQzNTQ4/My04ODEzLmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Cool Jazz"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Move",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Jeru",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Moon Dreams",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Venus De Milo",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Budo",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "title": "Deception",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Godchild",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Boplicity",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Rocker",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Israel",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Rouge",
+        "duration": ""
       }
     ]
   },
