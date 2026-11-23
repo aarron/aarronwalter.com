@@ -15856,81 +15856,6 @@
       }
     ]
   },
-  "4447893": {
-    "cover": "https://i.discogs.com/fvIpCKekYrHwZZQcaWGYLOMpKTwv_45vdcA--3LCksU/rs:fit/g:sm/q:90/h:320/w:314/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NDc4/OTMtMTM2NTE1ODQ4/MS04MjgwLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/p_WzSPE7aNYCvllGKOUlmVY4SkrrKHF3kgUMhb4xi9o/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NDc4/OTMtMTM2NTE1ODQ4/MS04MjgwLmpwZWc.jpeg",
-    "genres": [
-      "Rock",
-      "Folk, World, & Country"
-    ],
-    "styles": [
-      "Folk Rock",
-      "Country Rock"
-    ],
-    "country": "UK",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Orange Blossom Special",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "The Long Black Veil",
-        "duration": ""
-      },
-      {
-        "position": "A3",
-        "title": "It Ain't Me, Babe",
-        "duration": ""
-      },
-      {
-        "position": "A4",
-        "title": "The Wall",
-        "duration": ""
-      },
-      {
-        "position": "A5",
-        "title": "Don't Think Twice, It's All Right",
-        "duration": ""
-      },
-      {
-        "position": "A6",
-        "title": "You Wild Colorado",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "Mama, You Been On My Mind",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "When It's Springtime In Alaska (It's Forty Below)",
-        "duration": ""
-      },
-      {
-        "position": "B3",
-        "title": "All Of God's Children Ain't Free",
-        "duration": ""
-      },
-      {
-        "position": "B4",
-        "title": "Danny Boy",
-        "duration": ""
-      },
-      {
-        "position": "B5",
-        "title": "Wildwood Flower",
-        "duration": ""
-      },
-      {
-        "position": "B6",
-        "title": "Amen",
-        "duration": ""
-      }
-    ]
-  },
   "4452484": {
     "cover": "https://i.discogs.com/jBQl3GYZR0HPRmq2xxnJo-uh3BuIC952YgJPkYK-8r0/rs:fit/g:sm/q:90/h:520/w:519/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NTI0/ODQtMTM2ODcwODQw/MS03NzQxLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/BMJVB_vTdKpBM97af4XWxg4KUrOmGVwPk1y-yHMZyhc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NTI0/ODQtMTM2ODcwODQw/MS03NzQxLmpwZWc.jpeg",
@@ -22690,6 +22615,81 @@
       {
         "position": "B3",
         "title": "Fight To Finish!",
+        "duration": ""
+      }
+    ]
+  },
+  "9390404": {
+    "cover": "https://i.discogs.com/J6pv55zdaKc-d2gDLYoS24OazAtYRR5QmOBF3i_h-w8/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzOTA0/MDQtMTcxMjA2MTQw/Ny02Nzc0LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/iiVAnbc6FmOOBmeFBB1ZPuKD0C-9kqFsgFRP7Ag_lL0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzOTA0/MDQtMTcxMjA2MTQw/Ny02Nzc0LmpwZWc.jpeg",
+    "genres": [
+      "Rock",
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Folk Rock",
+      "Country Rock"
+    ],
+    "country": "UK",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Orange Blossom Special",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "The Long Black Veil",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "It Ain't Me, Babe",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "The Wall",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Don't Think Twice, It's All Right",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "title": "You Wild Colorado",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Mama, You Been On My Mind",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "When It's Springtime In Alaska (It's Forty Below)",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "All Of God's Children Ain't Free",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Danny Boy",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Wildwood Flower",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Amen",
         "duration": ""
       }
     ]

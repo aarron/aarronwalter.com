@@ -74,7 +74,7 @@ export const records: VinylRecord[] = [
   { artist: 'The Beatles', title: 'Revolver', label: 'Capitol Records', format: 'LP, Album, Los', rating: 5, released: 1966, releaseId: 1498484 },
   { artist: 'The Beatles', title: 'Beatles \'65', label: 'Capitol Records', format: 'LP, Album, Mono, Pin', rating: 3, released: 1964, releaseId: 611439 },
   { artist: 'Frank Sinatra', title: 'Come Fly With Me', label: 'Capitol Records', format: 'LP, Album, Mono, Scr', rating: 4, released: 1958, releaseId: 3054363 },
-  { artist: 'Johnny Cash', title: 'Orange Blossom Special', label: 'CBS', format: 'LP, Album', rating: 4, released: 1965, releaseId: 4447893 },
+  { artist: 'Johnny Cash', title: 'Orange Blossom Special', label: 'CBS', format: 'LP, Album, RE, Stereo', rating: 4, released: 1970, releaseId: 9390404 },
   { artist: 'Bob Dylan & The Band', title: 'The Basement Tapes', label: 'Columbia', format: '2xLP, Album, Stereo', rating: 4, released: 1975, releaseId: 2012979 },
   { artist: 'Huey \"Piano\" Smith', title: 'Pitta Pattin\'', label: 'Charly R&B', format: 'LP, Comp', rating: 3, released: 1987, releaseId: 4429498 },
   { artist: 'Howlin\' Wolf, Muddy Waters & Bo Diddley', title: 'The Super Super Blues Band', label: 'Checker', format: 'LP, Album, Stereo', rating: 3, released: 1967, releaseId: 1513180 },
