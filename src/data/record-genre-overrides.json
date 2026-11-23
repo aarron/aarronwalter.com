@@ -1,0 +1,4 @@
+{
+  "_comment": "Corrections applied on top of Discogs genres and styles, keyed by Discogs release ID. remove/add lists take genre or style names exactly as Discogs spells them.",
+  "3581700": { "removeGenres": ["Latin"] }
+}
