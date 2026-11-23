@@ -3933,6 +3933,17 @@ body {
 .rm-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 2rem; }
 .rm-links a { color: var(--rm-fg); font-weight: 700; font-size: 0.875rem; text-decoration: none; border-bottom: 1px solid var(--rm-line); }
 .rm-links a:hover { border-color: var(--rm-fg); }
+.rm-copy {
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--rm-accent);
+  background: none;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  padding: 0;
+  cursor: pointer;
+}
 .rm-position { margin-top: 1.5rem; font-size: 0.75rem; color: var(--rm-muted); }
 
 .rm-close,

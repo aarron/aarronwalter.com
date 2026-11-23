@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useCallback, useMemo } from 'react'
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import RecordCard, { type RecordMeta } from './RecordCard'
 import RecordModal from './RecordModal'
@@ -13,6 +13,8 @@ interface RecordWithMeta {
 
 interface Props {
   records: RecordWithMeta[]
+  /** Open this record's modal on load (from /listening/{slug}). */
+  initialSlug?: string
 }
 
 type SortMode = 'rating' | 'artist' | 'year' | 'genre'
@@ -71,7 +73,7 @@ const FilterIcon = () => <svg {...iconProps}><path d="M3 5h18l-7 8.5V19l-4 2v-7.
 const SortIcon = () => <svg {...iconProps}><path d="M7 4v16M3 8l4-4 4 4M17 20V4M13 16l4 4 4-4" /></svg>
 const SearchIcon = () => <svg {...iconProps}><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
 
-export default function ListeningGrid({ records }: Props) {
+export default function ListeningGrid({ records, initialSlug }: Props) {
   const [modal,    setModal]    = useState<{ id: number; nav: number[] } | null>(null)
   const [search,   setSearch]   = useState('')
   const [genre,    setGenre]    = useState<string | null>(null)
@@ -149,6 +151,45 @@ export default function ListeningGrid({ records }: Props) {
     // Remember the order at open time so arrow keys still work after ratings re-sort the grid.
     setModal({ id: record.releaseId, nav: ordered.map(r => r.record.releaseId!).filter(id => id != null) })
   }, [ordered])
+
+  // ── Each open record has its own URL: /listening/{slug} ──
+  const bySlug = useMemo(() => new Map(records.map(r => [r.meta.slug, r.record.releaseId])), [records])
+  const slugOf = useCallback((id: number) => byId.get(id)?.meta.slug, [byId])
+  const navIds = useCallback(() => ordered.map(r => r.record.releaseId!).filter(id => id != null), [ordered])
+
+  // Landing on a record's URL opens it.
+  const opened = useRef(false)
+  useEffect(() => {
+    if (opened.current || !initialSlug) return
+    opened.current = true
+    const id = bySlug.get(initialSlug)
+    if (id != null) setModal({ id, nav: navIds() })
+  }, [initialSlug, bySlug, navIds])
+
+  // Keep the address bar in step with the modal.
+  const wasOpen = useRef(false)
+  useEffect(() => {
+    if (!mounted) return
+    const path = modal ? `/listening/${slugOf(modal.id) ?? ''}` : '/listening'
+    if (window.location.pathname !== path) {
+      // Opening adds a history entry (so Back closes it); stepping and closing replace it.
+      if (modal && !wasOpen.current) window.history.pushState(null, '', path)
+      else window.history.replaceState(null, '', path)
+    }
+    wasOpen.current = !!modal
+  }, [modal, mounted, slugOf])
+
+  // Back/forward buttons open or close records to match the URL.
+  useEffect(() => {
+    const onPop = () => {
+      const m = window.location.pathname.match(/^\/listening\/([^/]+)\/?$/)
+      const id = m ? bySlug.get(decodeURIComponent(m[1])) : undefined
+      if (id != null) setModal(prev => ({ id, nav: prev?.nav ?? navIds() }))
+      else setModal(null)
+    }
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [bySlug, navIds])
 
   const rate = useCallback(async (releaseId: number, rating: number) => {
     setRatings(prev => ({ ...prev, [releaseId]: rating }))

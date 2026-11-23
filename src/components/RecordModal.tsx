@@ -108,6 +108,20 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
   const details = useDetails(record.releaseId)
   const [imageIndex, setImageIndex] = useState(0)
   const [playing, setPlaying] = useState(false)
+  const [copied, setCopied] = useState(false)
+  useEffect(() => { setCopied(false) }, [record.releaseId])
+  const copyLink = async () => {
+    if (!meta.slug) return
+    const url = `${window.location.origin}/listening/${meta.slug}`
+    try {
+      if (navigator.share && window.matchMedia('(pointer: coarse)').matches) {
+        await navigator.share({ title: `${record.title} by ${record.artist}`, url })
+      } else {
+        await navigator.clipboard.writeText(url)
+        setCopied(true)
+      }
+    } catch { /* share sheet dismissed */ }
+  }
   useEffect(() => { setImageIndex(0) }, [record.releaseId])
 
   const cover = meta.cover ?? meta.thumb ?? null
@@ -228,6 +242,11 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
           )}
 
           <div className="rm-links">
+            {meta.slug && (
+              <button type="button" className="rm-copy" onClick={copyLink}>
+                {copied ? 'Link copied ✓' : 'Copy link to this record'}
+              </button>
+            )}
             {meta.discogsUrl && <a href={meta.discogsUrl} target="_blank" rel="noopener noreferrer">This pressing on Discogs →</a>}
             {details?.masterUrl && <a href={details.masterUrl} target="_blank" rel="noopener noreferrer">All versions →</a>}
             {details?.musicbrainzUrl && <a href={details.musicbrainzUrl} target="_blank" rel="noopener noreferrer">Credits on MusicBrainz →</a>}

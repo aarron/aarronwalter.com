@@ -16,6 +16,8 @@ export interface RecordMeta {
   originalYear?: number | null
   /** Spotify album ID, for the player in the modal. */
   spotifyAlbumId?: string
+  /** URL name: /listening/{slug} */
+  slug?: string
 }
 
 interface Props {

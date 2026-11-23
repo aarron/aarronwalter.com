@@ -63,7 +63,6 @@ export const records: VinylRecord[] = [
   { artist: 'Professor Longhair', title: 'Rock \'N\' Roll Gumbo', label: 'Blue Star', format: 'LP, Album, Mono', rating: 4, released: 1974, releaseId: 2780500 },
   { artist: 'Kraftwerk', title: 'Radio-Activity', label: 'Capitol Records', format: 'LP, Album, RE', rating: 4, released: 1979, releaseId: 5828247 },
   { artist: 'Crowded House', title: 'Crowded House', label: 'Capitol Records', format: 'LP, Album, All', rating: 2, released: 1986, releaseId: 747153 },
-  { artist: 'Lou Rawls', title: 'Carryin\' On!', label: 'Capitol Records', format: 'LP, Album, Mono', rating: 3, released: 1966, releaseId: 2214465 },
   { artist: 'Miles Davis', title: 'Birth Of The Cool', label: 'Capitol Records', format: 'LP, Comp, Mono', rating: 5, released: 1957, releaseId: 5456857 },
   { artist: 'Beastie Boys', title: 'Paul\'s Boutique', label: 'Capitol Records', format: 'LP, Album, Gat', rating: 5, released: 1989, releaseId: 1992136 },
   { artist: 'Various', title: 'Christmas Cocktails', label: 'Capitol Records', format: '2xLP, Comp, RE', rating: 3, released: 2014, releaseId: 6346975 },
