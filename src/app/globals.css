@@ -3757,7 +3757,6 @@ body {
   margin: 0 0 0.875rem;
 }
 
-.rm-listen iframe { display: block; border: 0; border-radius: 12px; background: rgb(255 255 255 / 0.04); }
 .rm-listen-note { font-size: 0.75rem; margin: 0.6rem 0 0; }
 
 .rm-facts {
@@ -3782,10 +3781,59 @@ body {
 .rm-tracks li {
   display: grid;
   grid-template-columns: 2.5rem 1fr auto;
+  align-items: center;
   gap: 0.75rem;
   padding: 0.4rem 0;
   border-bottom: 1px solid rgb(242 239 232 / 0.06);
 }
+.rm-tracks li.is-current { color: var(--rm-accent); }
+.rm-tracks-hint { text-transform: none; letter-spacing: 0; font-weight: 400; }
+
+/* Track number that turns into a play button on hover (or while playing) */
+.rm-play {
+  position: relative;
+  width: 1.9rem;
+  height: 1.9rem;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  color: var(--rm-muted);
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+}
+.rm-play-pos { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.8125em; }
+.rm-play-icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+  opacity: 0;
+  color: #0B0C0F;
+  background: var(--rm-fg);
+  border-radius: 50%;
+  transition: opacity 0.12s, transform 0.12s;
+  transform: scale(0.85);
+}
+.rm-tracks li:hover .rm-play-icon,
+.rm-play:focus-visible .rm-play-icon,
+.rm-tracks li.is-current .rm-play-icon { opacity: 1; transform: scale(1); }
+.rm-tracks li.is-current .rm-play-icon { background: var(--rm-accent); }
+.rm-play:focus-visible { outline: 2px solid var(--rm-accent); outline-offset: 2px; }
+
+/* Slim Spotify bar, pinned to the bottom of the screen while a track plays */
+.rm-now-playing:empty { display: none; }
+.rm-now-playing.is-active {
+  position: sticky;
+  bottom: 1rem;
+  z-index: 3;
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgb(0 0 0 / 0.5);
+}
+.rm-now-playing iframe { display: block; border: 0; }
 
 .rm-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 2rem; }
 .rm-tags span {

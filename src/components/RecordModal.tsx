@@ -4,6 +4,7 @@ import { Fragment, useEffect, useState } from 'react'
 import type { VinylRecord } from '@/data/records'
 import type { RecordMeta } from './RecordCard'
 import RatingStars from './RatingStars'
+import SpotifyTracklist from './SpotifyTracklist'
 
 // Written per release by scripts/fetch-record-covers.ts into public/data/records/{id}.json
 interface Credit { name: string; role: string; tracks?: string }
@@ -167,22 +168,8 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
           <p className="rm-artist">{record.artist}</p>
           <RatingStars rating={record.rating} onRate={onRate} size="large" />
 
-          {meta.spotifyAlbumId && (
-            <section className="rm-section rm-listen">
-              <h3>Listen</h3>
-              <iframe
-                key={meta.spotifyAlbumId}
-                title={`${record.title} on Spotify`}
-                src={`https://open.spotify.com/embed/album/${meta.spotifyAlbumId}?utm_source=generator&theme=0`}
-                width="100%"
-                height="352"
-                loading="lazy"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              />
-              <p className="rm-muted rm-listen-note">
-                Full tracks if you're signed in to Spotify in this browser; 30-second previews otherwise.
-              </p>
-            </section>
+          {meta.tracklist && meta.tracklist.length > 0 && (
+            <SpotifyTracklist releaseId={record.releaseId} albumId={meta.spotifyAlbumId} tracklist={meta.tracklist} />
           )}
 
           <section className="rm-section">
@@ -214,21 +201,6 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
             </section>
           ))}
 
-          {meta.tracklist && meta.tracklist.length > 0 && (
-            <section className="rm-section">
-              <h3>Tracklist</h3>
-              <ol className="rm-tracks">
-                {meta.tracklist.map((t, i) => (
-                  <li key={i}>
-                    <span className="rm-mono rm-muted">{t.position || i + 1}</span>
-                    <span>{t.title}</span>
-                    <span className="rm-mono rm-muted">{t.duration}</span>
-                  </li>
-                ))}
-              </ol>
-            </section>
-          )}
-
           {tags.length > 0 && (
             <div className="rm-tags">{tags.map(t => <span key={t}>{t}</span>)}</div>
           )}
@@ -243,6 +215,7 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
           <div className="rm-links">
             {meta.discogsUrl && <a href={meta.discogsUrl} target="_blank" rel="noopener noreferrer">This pressing on Discogs →</a>}
             {details?.masterUrl && <a href={details.masterUrl} target="_blank" rel="noopener noreferrer">All versions →</a>}
+            {meta.spotifyAlbumId && <a href={`https://open.spotify.com/album/${meta.spotifyAlbumId}`} target="_blank" rel="noopener noreferrer">Open in Spotify →</a>}
           </div>
           <p className="rm-position">{position}{onRate ? ' · press 1–5 to rate and advance' : ''} · ← → to browse</p>
         </div>

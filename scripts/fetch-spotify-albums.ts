@@ -13,7 +13,7 @@
  * at the end for a manual look; set an ID by hand in the JSON to override, and
  * use "manual": true so later runs keep it.
  */
-import { readFileSync, writeFileSync, existsSync } from 'fs'
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, rmSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 // @ts-ignore
@@ -48,6 +48,8 @@ export interface SpotifyMatch {
   year: string
   score: number
   manual?: boolean
+  /** [Spotify track ID, track name] in album order, for per-track play buttons. */
+  tracks?: [string, string][]
 }
 
 const ALL = process.argv.includes('--all')
@@ -74,6 +76,7 @@ async function api(path: string): Promise<any> {
     if (res.status === 401) { await getToken(); continue }
     if (res.status === 429) {
       const wait = Number(res.headers.get('retry-after') ?? 5)
+      if (wait > 300) throw new Error(`Spotify rate limit: try again in about ${Math.ceil(wait / 3600)} hours (progress is saved)`)
       console.warn(`  rate limited, waiting ${wait}s`)
       await sleep(wait * 1000 + 500)
       continue
@@ -154,6 +157,16 @@ async function find(record: { artist: string; title: string }) {
   return best
 }
 
+// One small file per record with its Spotify track IDs, loaded by the modal on demand.
+function writeTrackFiles(out: Record<string, SpotifyMatch | null>) {
+  const dir = join(__dirname, '../public/data/spotify')
+  mkdirSync(dir, { recursive: true })
+  for (const f of readdirSync(dir)) rmSync(join(dir, f))
+  for (const [id, m] of Object.entries(out)) {
+    if (m?.tracks?.length) writeFileSync(join(dir, `${id}.json`), JSON.stringify(m.tracks))
+  }
+}
+
 async function main() {
   await getToken()
   const out: Record<string, SpotifyMatch | null> = { ...existing }
@@ -186,9 +199,30 @@ async function main() {
     await sleep(250)
   }
 
+  // Track IDs for every matched album, so the modal can play individual tracks.
+  const needTracks = Object.entries(out).filter(([, m]) => m && !m.tracks)
+  console.log(`\nFetching tracks for ${needTracks.length} albums`)
+  for (const [id, m] of needTracks) {
+    const tracks: [string, string][] = []
+    let path: string | null = `/albums/${m!.albumId}/tracks?limit=50&market=US`
+    while (path) {
+      const data = await api(path)
+      for (const t of data.items ?? []) if (t) tracks.push([t.id, t.name])
+      path = data.next ? data.next.replace('https://api.spotify.com/v1', '') : null
+    }
+    out[id] = { ...m!, tracks }
+    writeFileSync(OUT, JSON.stringify(out, null, 1) + '\n')
+    await sleep(150)
+  }
+
+  writeTrackFiles(out)
   const matched = Object.values(out).filter(Boolean).length
   console.log(`\n${matched}/${Object.keys(out).length} matched. Saved to ${OUT}`)
   if (weak.length) console.log(`\nNo confident match (check by hand):\n${weak.join('\n')}`)
 }
 
-main().catch(err => { console.error(err.message); process.exit(1) })
+main().catch(err => {
+  console.error(err.message)
+  if (existsSync(OUT)) writeTrackFiles(JSON.parse(readFileSync(OUT, 'utf8')))
+  process.exit(1)
+})
