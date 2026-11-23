@@ -176,7 +176,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'meghan-the-engineer', name: 'Meghan the Engineer', context: 'Personal',
-    pitch: 'A Tufte-inspired Ghost theme for Meghan Walter\'s site.',
+    pitch: 'A website built on Ghost for my sister, who publishes her civil engineering research.',
     about: '', stack: ['Ghost'], repos: ['aarron/meghantheengineer'],
   },
 ]
