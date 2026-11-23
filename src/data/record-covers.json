@@ -20795,45 +20795,6 @@
       }
     ]
   },
-  "6652132": {
-    "cover": "https://i.discogs.com/muyy7YaVJ6t0r3htm60HI1dZVUlpI-2U5cs8Pb32OM4/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2NTIx/MzItMTQ4MTU0ODMx/NS0zNDc5LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/wDeEW8GdgIpUla2LNGlUf3hB7YlQi3JqhEVmog5JLFk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2NTIx/MzItMTQ4MTU0ODMx/NS0zNDc5LmpwZWc.jpeg",
-    "genres": [
-      "Jazz"
-    ],
-    "styles": [
-      "Bop",
-      "Hard Bop"
-    ],
-    "country": "Japan",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Movin' Out",
-        "duration": "4:29"
-      },
-      {
-        "position": "A2",
-        "title": "Swingin' For Bumsy",
-        "duration": "5:47"
-      },
-      {
-        "position": "A3",
-        "title": "Silk N' Satin",
-        "duration": "4:01"
-      },
-      {
-        "position": "B1",
-        "title": "Solid",
-        "duration": "6:26"
-      },
-      {
-        "position": "B2",
-        "title": "More Than You Know",
-        "duration": "10:55"
-      }
-    ]
-  },
   "6805168": {
     "cover": "https://i.discogs.com/EIMpX6gejKjly2vzrfz0W-WPCZw5siCQH_qukaH8W88/rs:fit/g:sm/q:90/h:600/w:582/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MDUx/NjgtMTQ2ODU3MTQ3/OC0zNDAwLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/BoKa6GXfXxY3PvTDjsDOcm31zXZpQDHH69-wbwUCEvQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4MDUx/NjgtMTQ2ODU3MTQ3/OC0zNDAwLmpwZWc.jpeg",
@@ -23303,6 +23264,45 @@
       {
         "position": "B6",
         "title": "Roll Over Beethoven",
+        "duration": ""
+      }
+    ]
+  },
+  "9655195": {
+    "cover": "https://i.discogs.com/aHHcWtlevgNxBtTJY_nxjWC0IOxUYPG2AuGH9vRgZBo/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk2NTUx/OTUtMTQ4NjIxOTQy/OC03Mjc0LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/31is-1M1RYikdhmL4x8O8rG2CAhi5cwVNooiX6IFVvo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk2NTUx/OTUtMTQ4NjIxOTQy/OC03Mjc0LmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Bop",
+      "Hard Bop"
+    ],
+    "country": "Japan",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Movin' Out",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Swingin' For Bumsy",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Silk N' Satin",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Solid",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "More Than You Know",
         "duration": ""
       }
     ]

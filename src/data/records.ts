@@ -203,7 +203,7 @@ export const records: VinylRecord[] = [
   { artist: 'James Brown', title: 'Get On The Good Foot', label: 'Polydor', format: '2xLP, Album, All', rating: 4, released: 1972, releaseId: 224448 },
   { artist: 'Miles Davis', title: 'Bags\' Groove', label: 'Prestige', format: 'LP, Comp, Mono', rating: 5, released: 1957, releaseId: 2311979 },
   { artist: 'John Coltrane With Red Garland', title: 'Soultrane', label: 'Prestige', format: 'LP, Album, Mono', rating: 3, released: 1958, releaseId: 464930 },
-  { artist: 'Sonny Rollins', title: 'Moving Out', label: 'Prestige', format: 'LP, Album, Mono, RE', rating: 4, released: 1978, releaseId: 6652132 },
+  { artist: 'Sonny Rollins', title: 'Moving Out', label: 'Prestige', format: 'LP, Album, Mono, RE', rating: 4, released: 1972, releaseId: 9655195 },
   { artist: 'Miles Davis And Milt Jackson', title: 'Quintet / Sextet', label: 'Prestige', format: 'LP, Album, Mono, RE', rating: 4, released: 1972, releaseId: 6494315 },
   { artist: 'Run-DMC', title: 'Tougher Than Leather', label: 'Profile Records', format: 'LP, Album, Spe', rating: 4, released: 1988, releaseId: 7970928 },
   { artist: 'David Bowie', title: 'Young Americans', label: 'RCA Victor', format: 'LP, Album, RE, RP', rating: 4, released: 1976, releaseId: 3481960 },
