@@ -8123,119 +8123,6 @@
       }
     ]
   },
-  "1605886": {
-    "cover": "https://i.discogs.com/5qxSSWrV2HY5wYCsQme4xFwNevZ-2Oex_nUfDTwf5HQ/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDU4/ODYtMTQwMTc5MTQ5/OS05MDYxLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/JucToygWmSBCJMVqcjXJxvH8D43rXG1mJaN8SjsCEgo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDU4/ODYtMTQwMTc5MTQ5/OS05MDYxLmpwZWc.jpeg",
-    "genres": [
-      "Rock"
-    ],
-    "styles": [
-      "Folk Rock"
-    ],
-    "country": "UK",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Odds And Ends",
-        "duration": "1:43"
-      },
-      {
-        "position": "A2",
-        "title": "Orange Juice Blues (Blues For Breakfast)",
-        "duration": "3:40"
-      },
-      {
-        "position": "A3",
-        "title": "Million Dollar Bash",
-        "duration": "2:30"
-      },
-      {
-        "position": "A4",
-        "title": "Yazoo Street Scandal",
-        "duration": "3:26"
-      },
-      {
-        "position": "A5",
-        "title": "Goin' To Acapulco",
-        "duration": "5:25"
-      },
-      {
-        "position": "A6",
-        "title": "Katie's Been Gone",
-        "duration": "2:49"
-      },
-      {
-        "position": "B1",
-        "title": "You Ain't Goin' Nowhere",
-        "duration": "2:39"
-      },
-      {
-        "position": "B2",
-        "title": "Don't Ya Tell Henry",
-        "duration": "3:12"
-      },
-      {
-        "position": "B3",
-        "title": "Nothing Was Delivered",
-        "duration": "4:22"
-      },
-      {
-        "position": "B4",
-        "title": "Open The Door, Homer",
-        "duration": "2:47"
-      },
-      {
-        "position": "B5",
-        "title": "Long Distance Operator",
-        "duration": "3:38"
-      },
-      {
-        "position": "B6",
-        "title": "This Wheel's On Fire",
-        "duration": "3:55"
-      },
-      {
-        "position": "C1",
-        "title": "Lo And Behold!",
-        "duration": "2:43"
-      },
-      {
-        "position": "C2",
-        "title": "Bessie Smith",
-        "duration": "4:17"
-      },
-      {
-        "position": "C3",
-        "title": "Clothes Line Saga",
-        "duration": "2:56"
-      },
-      {
-        "position": "C4",
-        "title": "Apple Suckling Tree",
-        "duration": "2:47"
-      },
-      {
-        "position": "C5",
-        "title": "Please, Mrs. Henry",
-        "duration": "2:31"
-      },
-      {
-        "position": "C6",
-        "title": "Tears Of Rage",
-        "duration": "4:17"
-      },
-      {
-        "position": "D1",
-        "title": "Too Much Of Nothing",
-        "duration": "3:00"
-      },
-      {
-        "position": "D2",
-        "title": "Yea! Heavy And A Bottle Of Bread",
-        "duration": "2:14"
-      }
-    ]
-  },
   "1606397": {
     "cover": "https://i.discogs.com/VyuF6_KFyhRMpmiUfCSpQAsgSJcXgcxT0cbgMo6xlv0/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDYz/OTctMTYxMDU0NDQ3/NC03ODQxLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/X0FMHWOz9lTC80yxqqGSs3pMPmLLmT5HM78kWTPtF4g/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MDYz/OTctMTYxMDU0NDQ3/NC03ODQxLmpwZWc.jpeg",
@@ -9352,6 +9239,120 @@
         "position": "B5",
         "title": "Carol",
         "duration": "2:35"
+      }
+    ]
+  },
+  "2012979": {
+    "cover": "https://i.discogs.com/y_dzcMINPHaq1DfZAoNNMSaRAQEBjJnVNsY2qlxJ5ZY/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTI5/NzktMTY5OTk3ODA2/NS01MTk4LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/u-fbFrIKfo2RCpilX5vErgM3tMCFmhTKQaqGPQRQRIs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTI5/NzktMTY5OTk3ODA2/NS01MTk4LmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Folk Rock",
+      "Country Rock"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Odds And Ends",
+        "duration": "1:43"
+      },
+      {
+        "position": "A2",
+        "title": "Orange Juice Blues (Blues For Breakfast)",
+        "duration": "3:40"
+      },
+      {
+        "position": "A3",
+        "title": "Million Dollar Bash",
+        "duration": "2:30"
+      },
+      {
+        "position": "A4",
+        "title": "Yazoo Street Scandal",
+        "duration": "3:26"
+      },
+      {
+        "position": "A5",
+        "title": "Goin' To Acapulco",
+        "duration": "5:25"
+      },
+      {
+        "position": "A6",
+        "title": "Katie's Been Gone",
+        "duration": "2:49"
+      },
+      {
+        "position": "B1",
+        "title": "Lo And Behold!",
+        "duration": "2:43"
+      },
+      {
+        "position": "B2",
+        "title": "Bessie Smith",
+        "duration": "4:17"
+      },
+      {
+        "position": "B3",
+        "title": "Clothes Line Saga",
+        "duration": "2:56"
+      },
+      {
+        "position": "B4",
+        "title": "Apple Suckling Tree",
+        "duration": "2:47"
+      },
+      {
+        "position": "B5",
+        "title": "Please, Mrs. Henry",
+        "duration": "2:31"
+      },
+      {
+        "position": "B6",
+        "title": "Tears Of Rage",
+        "duration": "4:17"
+      },
+      {
+        "position": "C1",
+        "title": "Too Much Of Nothing",
+        "duration": "3:00"
+      },
+      {
+        "position": "C2",
+        "title": "Yea! Heavy And A Bottle Of Bread",
+        "duration": "2:14"
+      },
+      {
+        "position": "C3",
+        "title": "Ain't No More Cane",
+        "duration": "3:57"
+      },
+      {
+        "position": "C4",
+        "title": "Crash On The Levee (Down In The Flood)",
+        "duration": "2:06"
+      },
+      {
+        "position": "C5",
+        "title": "Ruben Remus",
+        "duration": "3:11"
+      },
+      {
+        "position": "C6",
+        "title": "Tiny Montgomery",
+        "duration": "2:51"
+      },
+      {
+        "position": "D1",
+        "title": "You Ain't Goin' Nowhere",
+        "duration": "2:39"
+      },
+      {
+        "position": "D2",
+        "title": "Don't Ya Tell Henry",
+        "duration": "3:12"
       }
     ]
   },
