@@ -42,7 +42,7 @@ export const records: VinylRecord[] = [
   { artist: 'Various', title: 'Rhythm & Blues', label: 'Atlantic', format: '2xLP, Album, Comp, RE', rating: 5, released: 1979, releaseId: 7124398 },
   { artist: 'Ray Charles', title: 'The Great Ray Charles', label: 'Atlantic', format: 'LP, Album, RE', rating: 5, released: null, releaseId: 8420533 },
   { artist: 'Ray Charles & Milt Jackson', title: 'Soul Meeting', label: 'Atlantic', format: 'LP, Album', rating: 4, released: 1962, releaseId: 1319801 },
-  { artist: 'Milt Jackson & John Coltrane', title: 'Bags & Trane', label: 'Atlantic', format: 'LP, Album, RE', rating: 4, released: 1966, releaseId: 722772 },
+  { artist: 'Milt Jackson & John Coltrane', title: 'Bags & Trane', label: 'Atlantic', format: 'LP, Album, RE, Stereo', rating: 4, released: 1975, releaseId: 8242613 },
   { artist: 'Led Zeppelin', title: 'Led Zeppelin', label: 'Atlantic', format: 'LP, Album, RE, SP', rating: 5, released: 1977, releaseId: 735340 },
   { artist: 'Led Zeppelin', title: 'Untitled', label: 'Atlantic', format: 'LP, Album, RE, RI', rating: 5, released: 1977, releaseId: 1149786 },
   { artist: 'Aretha Franklin With Rev. James Cleveland & The Southern California Community Choir', title: 'Amazing Grace', label: 'Atlantic', format: '2xLP, Album, RI', rating: 5, released: 1972, releaseId: 1043593 },

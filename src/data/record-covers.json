@@ -3634,44 +3634,6 @@
       }
     ]
   },
-  "722772": {
-    "cover": "https://i.discogs.com/9H8na5tBfDcGxTsP6sju-Ptjeldpjc2s06e0lxBpz_k/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyMjc3/Mi0xNTAxMjQxNjY4/LTYyNDkuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/6VF4oaIJy-r5LMR33PG-3FReAi6ki7VWjXSAZS22Jls/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyMjc3/Mi0xNTAxMjQxNjY4/LTYyNDkuanBlZw.jpeg",
-    "genres": [
-      "Jazz"
-    ],
-    "styles": [
-      "Hard Bop"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Bags & Trane",
-        "duration": "7:23"
-      },
-      {
-        "position": "A2",
-        "title": "Three Little Words",
-        "duration": "7:27"
-      },
-      {
-        "position": "A3",
-        "title": "The Night We Called It A Day",
-        "duration": "4:19"
-      },
-      {
-        "position": "B1",
-        "title": "Be-Bop",
-        "duration": "7:57"
-      },
-      {
-        "position": "B2",
-        "title": "The Late Late Blues",
-        "duration": "9:35"
-      }
-    ]
-  },
   "728154": {
     "cover": "https://i.discogs.com/OKXLsNFDK4F-IRwhq91qpG2t3XY9V7pi-VSwM_JYVbk/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODE1/NC0xNjEyMDI2ODE2/LTQzNTEuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/6V1sye5jHI9yblZBvWWVk-0n2qFgCD46Q2T6IQQye6A/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODE1/NC0xNjEyMDI2ODE2/LTQzNTEuanBlZw.jpeg",
@@ -22269,6 +22231,44 @@
         "position": "B7",
         "title": "Trouble Man",
         "duration": "3:46"
+      }
+    ]
+  },
+  "8242613": {
+    "cover": "https://i.discogs.com/ynHa132GoaDORFBNzKJs2HV_p9zjA0TLnbQoLXTB-UE/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyNDI2/MTMtMTQ1NzgxMDYw/NS05ODg0LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/30r8JTTV6nCUSHBzTTEg_nqjmcL1kubfoTn6_s4GeTY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyNDI2/MTMtMTQ1NzgxMDYw/NS05ODg0LmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Hard Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Bags & Trane",
+        "duration": "7:23"
+      },
+      {
+        "position": "A2",
+        "title": "Three Little Words",
+        "duration": "7:27"
+      },
+      {
+        "position": "A3",
+        "title": "The Night We Called It A Day",
+        "duration": "4:19"
+      },
+      {
+        "position": "B1",
+        "title": "Be-Bop",
+        "duration": "7:57"
+      },
+      {
+        "position": "B2",
+        "title": "The Late Late Blues",
+        "duration": "9:35"
       }
     ]
   },
