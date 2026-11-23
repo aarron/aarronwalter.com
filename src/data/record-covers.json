@@ -7638,40 +7638,6 @@
       }
     ]
   },
-  "1488165": {
-    "cover": "https://i.discogs.com/TNjuvHUS-Z-B6rRKOeMlJJIuUiLnonPTU9SxSqJ_zPA/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODgx/NjUtMTUxMDYyOTk5/OC0xOTQyLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/WVTnB9Ok7F58AuWF-8i6kNlhepYF0jN9mJmkaOAhQ1M/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODgx/NjUtMTUxMDYyOTk5/OC0xOTQyLmpwZWc.jpeg",
-    "genres": [
-      "Jazz"
-    ],
-    "styles": [
-      "Post Bop",
-      "Fusion"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Stuff",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "Paraphernalia",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "Black Comedy",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "Country Son",
-        "duration": ""
-      }
-    ]
-  },
   "1498484": {
     "cover": "https://i.discogs.com/ONoDPET8tGQ_rzrgMuhfAlaOSD6xl7pNa5LymB9iiDM/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTg0/ODQtMTQ4OTMzNjQ4/My01NTA3Lm1wbw.jpeg",
     "thumb": "https://i.discogs.com/jtJpEDm05-y4KIroksTJMqrbAEv82NGMQokoxPOsYdA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTg0/ODQtMTQ4OTMzNjQ4/My01NTA3Lm1wbw.jpeg",
@@ -15501,6 +15467,40 @@
         "position": "B6",
         "title": "Blues For Hawaiians",
         "duration": "2:25"
+      }
+    ]
+  },
+  "3942555": {
+    "cover": "https://i.discogs.com/7-ZWYpxRbkSLKODfLXTZ2pL8BapXWBNWvDyuntWN1hc/rs:fit/g:sm/q:90/h:600/w:586/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NDI1/NTUtMTc2MTMyMzgx/MS03ODQ5LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/M-ukvczTIL4_xa7tB0kDLU2-Ep4y7XqL6FOb2LcKh4g/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NDI1/NTUtMTc2MTMyMzgx/MS03ODQ5LmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Post Bop",
+      "Fusion"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Stuff",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Paraphernalia",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Black Comedy",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Country Son",
+        "duration": ""
       }
     ]
   },

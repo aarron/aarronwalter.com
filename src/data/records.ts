@@ -100,7 +100,7 @@ export const records: VinylRecord[] = [
   { artist: 'Bob Dylan', title: 'Highway 61 Revisited', label: 'Columbia', format: 'LP, Album, Alt', rating: 5, released: 1965, releaseId: 3336238 },
   { artist: 'Son House', title: 'Father Of Folk Blues', label: 'Columbia', format: 'LP, Album, RP, Pit', rating: 5, released: 1967, releaseId: 7021033 },
   { artist: 'Simon & Garfunkel', title: 'Sounds Of Silence', label: 'Columbia', format: 'LP, Album, Stereo', rating: 3, released: 1966, releaseId: 13123972 },
-  { artist: 'Miles Davis', title: 'Miles In The Sky', label: 'Columbia', format: 'LP, Album, Pit', rating: 3, released: 1968, releaseId: 1488165 },
+  { artist: 'Miles Davis', title: 'Miles In The Sky', label: 'Columbia', format: 'LP, Album, RE, Stereo', rating: 3, released: 1971, releaseId: 3942555 },
   { artist: 'Johnny Cash', title: 'At Folsom Prison', label: 'Columbia', format: 'LP, Album', rating: 4, released: 1968, releaseId: 1287354 },
   { artist: 'Herbie Hancock', title: 'Future Shock', label: 'Columbia', format: 'LP, Album, Pit', rating: 0, released: 1983, releaseId: 35929 },
   { artist: 'Elvis Costello & The Attractions', title: 'The Best Of Elvis Costello And The Attractions', label: 'Columbia', format: 'LP, Comp, Car', rating: 4, released: 1985, releaseId: 581131 },
