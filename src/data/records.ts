@@ -361,4 +361,5 @@ export const records: VinylRecord[] = [
   { artist: 'Ramsey Lewis', title: 'The Best Of Ramsey Lewis', label: 'Cadet', format: 'LP, Comp', rating: 4, released: 1970, releaseId: 8737835 },
   { artist: 'Various', title: 'New Soul Best Collection', label: 'Motown', format: 'LP, Comp, Stereo', rating: 4, released: 1974, releaseId: 11454269 },
   { artist: 'Michael Jackson', title: 'The Best Of Michael Jackson', label: 'Motown', format: 'LP, Comp', rating: 4, released: 1975, releaseId: 573221 },
+  { artist: 'Sex Pistols', title: 'Never Mind The Bollocks Here\'s The Sex Pistols', label: 'Warner Bros. Records', format: 'LP, Album, RP', rating: 4, released: 1979, releaseId: 2741824 },
 ]
