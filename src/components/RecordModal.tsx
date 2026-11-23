@@ -60,7 +60,7 @@ function groupCredits(credits: Credit[]) {
     if (!people.has(c.name)) people.set(c.name, { roles: new Map(), tracks: new Set(), whole: false })
     const p = people.get(c.name)!
     c.role.split(/,\s*/).forEach(r => {
-      const clean = r.replace(/\s*\[.*?\]/g, '').trim()
+      const clean = r.replace(/\s*\[.*?\]/g, '').replace(/^Drums \(Drum Set\)$/i, 'Drums').trim()
       if (clean && !p.roles.has(clean.toLowerCase())) p.roles.set(clean.toLowerCase(), clean)
     })
     if (c.tracks) c.tracks.split(/,\s*/).forEach(t => p.tracks.add(t))
