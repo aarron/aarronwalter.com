@@ -138,7 +138,7 @@ export default function BooksPage() {
               avatar: '/portfolio/other/jake-knapp.jpg',
             },
             {
-              quote: 'Goes beyond just functional to what is truly delightful.',
+              quote: 'Chock-full of simple yet powerful concepts and relatable examples, this book will have you feeling more inspired and capable of making wonderful things.',
               name: 'Julie Zhuo',
               role: 'Author of The Making of a Manager',
               avatar: '/portfolio/other/julie-zhuo.jpg',
