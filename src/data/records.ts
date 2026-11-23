@@ -384,4 +384,5 @@ export const records: VinylRecord[] = [
   { artist: 'Various', title: 'A Decade Of Jazz Volume Two (1949-1959)', label: 'Blue Note', format: '2xLP, Comp, RE', rating: 4, released: 1975, releaseId: 2537141 },
   { artist: 'Dizzy Gillespie And Chuck Lewis', title: 'Spotlight On Dizzie Gillespie And Chuck Lewis', label: 'Tiara', format: 'LP, Album, Mono', rating: 4, released: 1958, releaseId: 2603733 },
   { artist: 'Yussef Dayes', title: 'Black Classical Music', label: 'Brownswood Recordings', format: '2xLP, Album', rating: 4, released: 2023, releaseId: 28195162 },
+  { artist: 'Duke Ellington & John Coltrane', title: 'Duke Ellington & John Coltrane', label: 'MCA Records', format: 'LP, Album, RE', rating: 4, released: 1980, releaseId: 5274523 },
 ]
