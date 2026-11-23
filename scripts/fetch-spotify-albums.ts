@@ -127,7 +127,10 @@ function score(record: { artist: string; title: string }, album: any) {
     ? Math.max(...artistNames.map(n => similarity(lead, n)), similarity(record.artist, artistNames.join(' ')))
     : (artistNames.some(n => /various/i.test(n)) ? 1 : 0.5)
   const typeBonus = album.album_type === 'album' || album.album_type === 'compilation' ? 0 : -0.1
-  return 0.6 * t + 0.4 * a + typeBonus
+  // Prefer the plain album over deluxe, live or anniversary editions unless the record is one.
+  const extras = /deluxe|super|expanded|anniversary|live|bonus|collector|edition|sessions/i
+  const editionPenalty = extras.test(album.name) && !extras.test(record.title) ? -0.04 : 0
+  return 0.6 * t + 0.4 * a + typeBonus + editionPenalty
 }
 
 async function find(record: { artist: string; title: string }) {
