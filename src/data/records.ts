@@ -385,4 +385,5 @@ export const records: VinylRecord[] = [
   { artist: 'Dizzy Gillespie And Chuck Lewis', title: 'Spotlight On Dizzie Gillespie And Chuck Lewis', label: 'Tiara', format: 'LP, Album, Mono', rating: 4, released: 1958, releaseId: 2603733 },
   { artist: 'Yussef Dayes', title: 'Black Classical Music', label: 'Brownswood Recordings', format: '2xLP, Album', rating: 4, released: 2023, releaseId: 28195162 },
   { artist: 'Duke Ellington & John Coltrane', title: 'Duke Ellington & John Coltrane', label: 'MCA Records', format: 'LP, Album, RE', rating: 4, released: 1980, releaseId: 5274523 },
+  { artist: 'Herbie Hancock', title: 'Inventions And Dimensions', label: 'Blue Note', format: 'LP, Album, RE, Stereo', rating: 4, released: 2019, releaseId: 14216796 },
 ]
