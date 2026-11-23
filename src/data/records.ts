@@ -27,7 +27,7 @@ export const records: VinylRecord[] = [
   { artist: 'The Beatles', title: 'Abbey Road', label: 'Apple Records', format: 'LP, Album', rating: 5, released: 1969, releaseId: 2498807 },
   { artist: 'The Beatles', title: '1967-1970', label: 'Apple Records', format: '2xLP, Comp, Win', rating: 5, released: 1973, releaseId: 1294404 },
   { artist: 'The Beatles', title: 'The Beatles', label: 'Apple Records', format: '2xLP, Album, Num, RP, Jac', rating: 5, released: 1968, releaseId: 1436445 },
-  { artist: 'Ahmad Jamal Trio', title: 'Ahmad Jamal At The Pershing', label: 'Argo (6)', format: 'LP, Album, Mono, RE', rating: 3, released: 1959, releaseId: 4473096 },
+  { artist: 'Ahmad Jamal Trio', title: 'Ahmad Jamal At The Pershing', label: 'Argo (6)', format: 'LP, Album, Mono', rating: 3, released: 1958, releaseId: 371461 },
   { artist: 'Ahmad Jamal Trio', title: 'Volume IV', label: 'Argo (6)', format: 'LP, Mono', rating: 4, released: 1958, releaseId: 2415548 },
   { artist: 'Ahmad Jamal', title: 'Portfolio Of Ahmad Jamal', label: 'Argo (6)', format: '2xLP, Ltd, Gat', rating: 5, released: 1959, releaseId: 2082902 },
   { artist: 'Fred McDowell', title: 'Vol. 2', label: 'Arhoolie Records', format: 'LP, Album, RE', rating: 4, released: 2012, releaseId: 3628483 },

@@ -1120,6 +1120,60 @@
       }
     ]
   },
+  "371461": {
+    "cover": "https://i.discogs.com/gHfh6euZFzZumT-C6dvwU9YBTdmj7tsmMy9Nc4TSW9k/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MTQ2/MS0xNTU5NTgwODIw/LTcyMjMuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/CathVYdd1phukqTGzIneiB8iOZ42ORLU_QCbfwqcvl8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3MTQ2/MS0xNTU5NTgwODIw/LTcyMjMuanBlZw.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Post Bop",
+      "Modal"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "But Not For Me",
+        "duration": "3:15"
+      },
+      {
+        "position": "A2",
+        "title": "Surrey With The Fringe On Top",
+        "duration": "2:23"
+      },
+      {
+        "position": "A3",
+        "title": "Moonlight In Vermont",
+        "duration": "2:55"
+      },
+      {
+        "position": "A4",
+        "title": "Music, Music, Music",
+        "duration": "2:43"
+      },
+      {
+        "position": "A5",
+        "title": "No Greater Love",
+        "duration": "3:08"
+      },
+      {
+        "position": "B1",
+        "title": "Poinciana",
+        "duration": "7:38"
+      },
+      {
+        "position": "B2",
+        "title": "Wood'yn You",
+        "duration": "3:18"
+      },
+      {
+        "position": "B3",
+        "title": "What's New",
+        "duration": "3:43"
+      }
+    ]
+  },
   "377554": {
     "cover": "https://i.discogs.com/OlMMNhXcbrNgsBWwJDs-c8CleqjbHZcvJSKFtBGpqZE/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3NzU1/NC0xNzQxNjM5OTg4/LTY1MTAuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/37RGyWQ1A1POGvNNVyivEZQ7ajBGhrgZ_o7GUuADVLs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3NzU1/NC0xNzQxNjM5OTg4/LTY1MTAuanBlZw.jpeg",
@@ -16480,60 +16534,6 @@
         "position": "B7",
         "title": "Today Your Love, Tomorrow The World",
         "duration": "2:09"
-      }
-    ]
-  },
-  "4473096": {
-    "cover": "https://i.discogs.com/VTH7Kniy1LUMQYzV1w1tHBrzt5z3bG0QyC7BD0L-4vY/rs:fit/g:sm/q:90/h:582/w:581/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NzMw/OTYtMTM2ODQwODky/Mi0xMzY0LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/T6wTo4ZUpJf8IvftR0dWkrrUNNAiu8OCX0sBuDYX_aA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NzMw/OTYtMTM2ODQwODky/Mi0xMzY0LmpwZWc.jpeg",
-    "genres": [
-      "Jazz"
-    ],
-    "styles": [
-      "Bop",
-      "Cool Jazz"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "But Not For Me",
-        "duration": "3:15"
-      },
-      {
-        "position": "A2",
-        "title": "Surrey With The Fringe On Top",
-        "duration": "2:23"
-      },
-      {
-        "position": "A3",
-        "title": "Moonlight In Vermont",
-        "duration": "2:55"
-      },
-      {
-        "position": "A4",
-        "title": "Music, Music, Music",
-        "duration": "2:43"
-      },
-      {
-        "position": "A5",
-        "title": "No Greater Love",
-        "duration": "3:08"
-      },
-      {
-        "position": "B1",
-        "title": "Poinciana",
-        "duration": "7:38"
-      },
-      {
-        "position": "B2",
-        "title": "Wood'yn You",
-        "duration": "3:18"
-      },
-      {
-        "position": "B3",
-        "title": "What's New",
-        "duration": "3:43"
       }
     ]
   },
