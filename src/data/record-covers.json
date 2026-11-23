@@ -5855,6 +5855,70 @@
       }
     ]
   },
+  "1228272": {
+    "cover": "https://i.discogs.com/D_U3qPZRG5vCLBpxUYIgbBbihpIN31XUrTzyh305Lyg/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjgy/NzItMTM0OTgyMDkw/MS03NDM4LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/MTi9XXkhjHH2zIGJePZwcA_vniSYEwjy0z1Rm4-d3WA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjgy/NzItMTM0OTgyMDkw/MS03NDM4LmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Swing",
+      "Vocal"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Do Nothin' Till You Hear From Me",
+        "duration": "2:49"
+      },
+      {
+        "position": "A2",
+        "title": "I Got It Bad And That Ain't Good",
+        "duration": "4:07"
+      },
+      {
+        "position": "A3",
+        "title": "Hey, Buddy Bolden",
+        "duration": "2:28"
+      },
+      {
+        "position": "A4",
+        "title": "Something To Live For",
+        "duration": "2:55"
+      },
+      {
+        "position": "A5",
+        "title": "You Better Know It",
+        "duration": "2:25"
+      },
+      {
+        "position": "B1",
+        "title": "I Like The Sunrise",
+        "duration": "3:02"
+      },
+      {
+        "position": "B2",
+        "title": "Solitude",
+        "duration": "3:45"
+      },
+      {
+        "position": "B3",
+        "title": "The Gal From Joe's",
+        "duration": "2:15"
+      },
+      {
+        "position": "B4",
+        "title": "Satin Doll",
+        "duration": "3:37"
+      },
+      {
+        "position": "B5",
+        "title": "It Don't Mean A Thing (If It Ain't Got That Swing)",
+        "duration": "2:30"
+      }
+    ]
+  },
   "1236563": {
     "cover": "https://i.discogs.com/VuQd0vyCv2oQHvYostluOVrWlyEuGQrH688EAa9v5tI/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzY1/NjMtMTQ1NTgwNDQ4/MC05ODUyLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/Y6zJevtfOVLZvnHWTi5xF-CPxicDETUfL5707XKXymY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzY1/NjMtMTQ1NTgwNDQ4/MC05ODUyLmpwZWc.jpeg",
@@ -11540,75 +11604,6 @@
         "position": "B4",
         "title": "Pee Wee Blues",
         "duration": ""
-      }
-    ]
-  },
-  "2608678": {
-    "cover": "https://i.discogs.com/Pj1iL9vQ4sE2_qYD7G0jdc-Iymt_nNc0RjNcxSkITr4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MDg2/NzgtMTYyODA4NjY4/Ni04MTE2LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/nJCpPeEmtjg_kELWm2RWt22rekP1Kjit0I6Lj8_bDa8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MDg2/NzgtMTYyODA4NjY4/Ni04MTE2LmpwZWc.jpeg",
-    "genres": [
-      "Jazz",
-      "Pop"
-    ],
-    "styles": [
-      "Vocal"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Do Nothin' Till You Hear From Me",
-        "duration": "2:49"
-      },
-      {
-        "position": "A2",
-        "title": "I Got It Bad",
-        "duration": "4:07"
-      },
-      {
-        "position": "A3",
-        "title": "Hey, Buddy Bolden",
-        "duration": "2:28"
-      },
-      {
-        "position": "A4",
-        "title": "Merry Mending",
-        "duration": "2:35"
-      },
-      {
-        "position": "A5",
-        "title": "Something To Live For",
-        "duration": "2:55"
-      },
-      {
-        "position": "A6",
-        "title": "You Better Know It",
-        "duration": "2:25"
-      },
-      {
-        "position": "B1",
-        "title": "I Like The Sunrise",
-        "duration": "3:02"
-      },
-      {
-        "position": "B2",
-        "title": "Solitude",
-        "duration": "3:45"
-      },
-      {
-        "position": "B3",
-        "title": "The Gal From Joe's",
-        "duration": "2:15"
-      },
-      {
-        "position": "B4",
-        "title": "Satin Doll",
-        "duration": "3:37"
-      },
-      {
-        "position": "B5",
-        "title": "It Don't Mean A Thing",
-        "duration": "2:20"
       }
     ]
   },
@@ -22003,6 +21998,115 @@
       }
     ]
   },
+  "7282845": {
+    "cover": "https://i.discogs.com/D-aDbfely4YrgneCm2-b3MOI7ggDcPNqJHZMVrnwzTc/rs:fit/g:sm/q:90/h:600/w:584/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODI4/NDUtMTQ5NjE4MjEz/OC03ODI0LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/JSYPo4Ftx2iu0gNwyV24BaaIRX9PoDQh0l8OwDQ3Ilc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODI4/NDUtMTQ5NjE4MjEz/OC03ODI0LmpwZWc.jpeg",
+    "genres": [
+      "Pop"
+    ],
+    "styles": [
+      "Calypso",
+      "Vocal"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Introduction Darlin' Cora",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Sylvie",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Cotton Fields",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "John Henry",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Take My Mother Home",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "The Marching Saints",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Day O",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Jamaica Farewell",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Man Piaba",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "All My Trials",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "Mama Look A Boo Boo",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Come Back Liza",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "title": "Man Smart (Woman Smarter)",
+        "duration": ""
+      },
+      {
+        "position": "C4",
+        "title": "Hava Nageela",
+        "duration": ""
+      },
+      {
+        "position": "C5",
+        "title": "Danny Boy",
+        "duration": ""
+      },
+      {
+        "position": "C6",
+        "title": "Merci Bon Dieu (From The \"Haitian Suite\")",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "Cu Cu Ru Cu Cu Paloma",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "Shenandoah",
+        "duration": ""
+      },
+      {
+        "position": "D3",
+        "title": "Matilda",
+        "duration": ""
+      }
+    ]
+  },
   "7358324": {
     "cover": "https://i.discogs.com/sh3fhmZ0x71gI22Rfat6YOlUeb4AEqk3KBQPz-kS8iM/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTczNTgz/MjQtMTY5OTcyOTQz/NC00NjU0LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/sKqohfZ_0hHXQYpR-m-Nkxzh4bcGgM9sIMrjv3CpusI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTczNTgz/MjQtMTY5OTcyOTQz/NC00NjU0LmpwZWc.jpeg",
@@ -23106,122 +23210,6 @@
         "position": "B5",
         "title": "The Joker",
         "duration": "3:00"
-      }
-    ]
-  },
-  "8542623": {
-    "cover": "https://i.discogs.com/que9tb3wbRUnHYlUwUDSkQyJyZ4DwhbAmyrl76MmEnk/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1NDI2/MjMtMTQ2MzcwNDM2/MS0yODc5LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/qnJFTktQdClyvujX0y5qAyX7UA0wi95nzdrZe0m06ek/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1NDI2/MjMtMTQ2MzcwNDM2/MS0yODc5LmpwZWc.jpeg",
-    "genres": [
-      "Pop",
-      "Folk, World, & Country"
-    ],
-    "styles": [
-      "Vocal",
-      "Calypso",
-      "Ballad"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "",
-        "title": "Act I - Moods Of The American Negro",
-        "duration": ""
-      },
-      {
-        "position": "A1a",
-        "title": "Introduction",
-        "duration": ""
-      },
-      {
-        "position": "A1b",
-        "title": "Darlin' Cora",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "Sylvie",
-        "duration": ""
-      },
-      {
-        "position": "A3",
-        "title": "Cotton Fields",
-        "duration": ""
-      },
-      {
-        "position": "A4",
-        "title": "John Henry",
-        "duration": ""
-      },
-      {
-        "position": "A5",
-        "title": "Take My Mother Home",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "The Marching Saints",
-        "duration": ""
-      },
-      {
-        "position": "",
-        "title": "Act II - In The Caribbean",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "Day O",
-        "duration": ""
-      },
-      {
-        "position": "B3",
-        "title": "Jamaica Farewell",
-        "duration": ""
-      },
-      {
-        "position": "B4",
-        "title": "Man Piaba",
-        "duration": ""
-      },
-      {
-        "position": "B5",
-        "title": "All My Trials",
-        "duration": ""
-      },
-      {
-        "position": "C1",
-        "title": "Mama Look A Boo Boo",
-        "duration": ""
-      },
-      {
-        "position": "C2",
-        "title": "Come Back Liza",
-        "duration": ""
-      },
-      {
-        "position": "C3",
-        "title": "Man Smart (Woman Smarter)",
-        "duration": ""
-      },
-      {
-        "position": "",
-        "title": "Act III - Round The World",
-        "duration": ""
-      },
-      {
-        "position": "C4",
-        "title": "Hava Nageela",
-        "duration": ""
-      },
-      {
-        "position": "C5",
-        "title": "Danny Boy",
-        "duration": ""
-      },
-      {
-        "position": "C6",
-        "title": "Merci Bon Dieu (From The \"Haitian Suite\")",
-        "duration": ""
       }
     ]
   },
