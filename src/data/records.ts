@@ -395,4 +395,5 @@ export const records: VinylRecord[] = [
   { artist: 'Herbie Hancock', title: 'Empyrean Isles', label: 'Blue Note', format: 'LP, Album, RE, Stereo', rating: 4, released: 2023, releaseId: 26441327 },
   { artist: 'Ahmad Jamal', title: 'Emerald City Nights - Live At The Penthouse 1963-1964', label: 'Jazz Detective', format: '2xLP, Album, RSD, Ltd, Num', rating: 4, released: 2022, releaseId: 25279990 },
   { artist: 'Ahmad Jamal', title: 'Reevaluations: The Impulse Years', label: 'Impulse!', format: '2xLP, Comp, Stereo', rating: 4, released: 1973, releaseId: 1351458 },
+  { artist: 'Various', title: '20 Bluegrass Originals "Hymns"', label: 'Gusto Records', format: 'LP, Comp', rating: 4, released: 1978, releaseId: 4776001 },
 ]
