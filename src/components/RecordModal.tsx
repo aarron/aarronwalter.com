@@ -16,6 +16,8 @@ interface RecordDetails {
   companies: { name: string; role: string }[]
   identifiers: { type: string; value: string; description?: string }[]
   credits: Credit[]
+  mbCredits?: Credit[]       // from MusicBrainz, added by scripts/fetch-musicbrainz-credits.ts
+  musicbrainzUrl?: string
   notes?: string
   images: { uri: string; width: number; height: number; type: string }[]
   masterUrl?: string
@@ -50,23 +52,36 @@ const CREDIT_GROUPS: { title: string; test: RegExp }[] = [
 ]
 
 function groupCredits(credits: Credit[]) {
-  const groups = new Map<string, Map<string, { roles: Set<string>; tracks: Set<string> }>>()
+  const groups = new Map<string, Map<string, { roles: Map<string, string>; tracks: Set<string>; whole: boolean }>>()
   for (const c of credits) {
     const title = CREDIT_GROUPS.find(g => g.test.test(c.role))?.title ?? 'Musicians'
     if (!groups.has(title)) groups.set(title, new Map())
     const people = groups.get(title)!
-    if (!people.has(c.name)) people.set(c.name, { roles: new Set(), tracks: new Set() })
+    if (!people.has(c.name)) people.set(c.name, { roles: new Map(), tracks: new Set(), whole: false })
     const p = people.get(c.name)!
-    c.role.split(/,\s*/).forEach(r => r && p.roles.add(r.replace(/\s*\[.*?\]/g, '')))
-    if (c.tracks) p.tracks.add(c.tracks)
+    c.role.split(/,\s*/).forEach(r => {
+      const clean = r.replace(/\s*\[.*?\]/g, '').trim()
+      if (clean && !p.roles.has(clean.toLowerCase())) p.roles.set(clean.toLowerCase(), clean)
+    })
+    if (c.tracks) c.tracks.split(/,\s*/).forEach(t => p.tracks.add(t))
+    else p.whole = true
   }
   return ['Musicians', ...CREDIT_GROUPS.map(g => g.title)]
     .filter(t => groups.has(t))
     .map(t => ({
       title: t,
-      people: [...groups.get(t)!.entries()].map(([name, { roles, tracks }]) => ({
-        name, roles: [...roles].join(', '), tracks: [...tracks].join(', '),
-      })),
+      people: [...groups.get(t)!.entries()]
+        // Whole-album credits first, then whoever appears on the most tracks.
+        .sort(([, a], [, b]) => Number(b.whole) - Number(a.whole) || b.tracks.size - a.tracks.size)
+        .map(([name, { roles, tracks, whole }]) => {
+          const list = [...roles.values()]
+          return {
+            name,
+            roles: list.length > 6 ? `${list.slice(0, 6).join(', ')} and ${list.length - 6} more` : list.join(', '),
+            // Long track lists add noise; show them only for players on a few tracks.
+            tracks: !whole && tracks.size <= 5 ? [...tracks].join(', ') : '',
+          }
+        }),
     }))
 }
 
@@ -109,7 +124,7 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
     return names.length ? [{ role, names: names.join(', ') }] : []
   })
   const barcode = details?.identifiers.find(i => i.type === 'Barcode')
-  const credits = details ? groupCredits(details.credits) : []
+  const credits = details ? groupCredits([...(details.mbCredits ?? []), ...details.credits]) : []
   const tags = [...new Set([...(meta.genres ?? []), ...(meta.styles ?? [])])]
 
   return (
@@ -216,6 +231,7 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
           <div className="rm-links">
             {meta.discogsUrl && <a href={meta.discogsUrl} target="_blank" rel="noopener noreferrer">This pressing on Discogs →</a>}
             {details?.masterUrl && <a href={details.masterUrl} target="_blank" rel="noopener noreferrer">All versions →</a>}
+            {details?.musicbrainzUrl && <a href={details.musicbrainzUrl} target="_blank" rel="noopener noreferrer">Credits on MusicBrainz →</a>}
             {meta.spotifyAlbumId && <a href={`https://open.spotify.com/album/${meta.spotifyAlbumId}`} target="_blank" rel="noopener noreferrer">Open in Spotify →</a>}
           </div>
           <p className="rm-position">{position}{onRate ? ' · press 1–5 to rate and advance' : ''} · ← → to browse</p>
