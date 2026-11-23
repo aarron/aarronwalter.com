@@ -60,8 +60,24 @@ const norm = (s: string) => s
   .replace(/&/g, 'and')
   .replace(/[^a-z0-9]/g, '')
 
-// Pair each Discogs track with a Spotify track: by title first, then by position
-// when both lists are the same length.
+// Edit-distance similarity (0–1), to forgive typos like "Autum Leaves".
+function similar(a: string, b: string) {
+  if (!a || !b) return 0
+  const prev = Array.from({ length: b.length + 1 }, (_, j) => j)
+  for (let i = 1; i <= a.length; i++) {
+    let diag = prev[0]
+    prev[0] = i
+    for (let j = 1; j <= b.length; j++) {
+      const tmp = prev[j]
+      prev[j] = Math.min(prev[j] + 1, prev[j - 1] + 1, diag + (a[i - 1] === b[j - 1] ? 0 : 1))
+      diag = tmp
+    }
+  }
+  return 1 - prev[b.length] / Math.max(a.length, b.length)
+}
+
+// Pair each Discogs track with a Spotify track: exact title, then a title that
+// starts the other, then a close spelling, then position when both lists match in length.
 function pairTracks(discogs: { title: string }[], spotify: [string, string][]) {
   const byName = new Map<string, string>()
   for (const [id, name] of spotify) if (!byName.has(norm(name))) byName.set(norm(name), id)
@@ -73,6 +89,12 @@ function pairTracks(discogs: { title: string }[], spotify: [string, string][]) {
       return n.length > 3 && m.length > 3 && (m.startsWith(n) || n.startsWith(m))
     })
     if (loose) return loose[0]
+    let best: [string, number] | null = null
+    for (const [id, name] of spotify) {
+      const score = similar(n, norm(name))
+      if (score >= 0.8 && (!best || score > best[1])) best = [id, score]
+    }
+    if (best) return best[0]
     return discogs.length === spotify.length ? spotify[i][0] : null
   })
 }
@@ -166,11 +188,11 @@ export default function SpotifyTracklist({ releaseId, albumId, tracklist, onPlay
                   onClick={() => play(id)}
                   aria-label={`${isCurrent && !paused ? 'Pause' : 'Play'} ${t.title}`}
                 >
-                  <span className="rm-play-pos" aria-hidden>{t.position || i + 1}</span>
+                  <span className="rm-track-num" aria-hidden>{t.position || i + 1}</span>
                   <span className="rm-play-icon" aria-hidden>{isCurrent && !paused ? '❚❚' : '▶'}</span>
                 </button>
               ) : (
-                <span className="rm-mono rm-muted">{t.position || i + 1}</span>
+                <span className="rm-track-num" aria-hidden>{t.position || i + 1}</span>
               )}
               <span>{t.title}</span>
               <span className="rm-mono rm-muted">{t.duration}</span>

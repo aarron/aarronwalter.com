@@ -3790,19 +3790,28 @@ body {
 .rm-tracks-hint { text-transform: none; letter-spacing: 0; font-weight: 400; }
 
 /* Track number that turns into a play button on hover (or while playing) */
+/* Every track number sits in the same 1.9rem cell, with or without a play button */
+.rm-track-num {
+  display: grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.8125em;
+  color: var(--rm-muted);
+}
 .rm-play {
   position: relative;
+  display: block;
   width: 1.9rem;
   height: 1.9rem;
   border: none;
   border-radius: 50%;
   background: none;
-  color: var(--rm-muted);
   cursor: pointer;
   padding: 0;
   font: inherit;
 }
-.rm-play-pos { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.8125em; }
 .rm-play-icon {
   position: absolute;
   inset: 0;
