@@ -96,7 +96,7 @@ export const records: VinylRecord[] = [
   { artist: 'Bob Dylan', title: 'Bringing It All Back Home', label: 'Columbia', format: 'LP, Album, Mono, RP', rating: 5, released: 1965, releaseId: 3355724 },
   { artist: 'Miles Davis', title: 'Kind Of Blue', label: 'Columbia', format: 'LP, Album', rating: 5, released: 1959, releaseId: 1353040 },
   { artist: 'Bob Dylan', title: 'The Freewheelin\' Bob Dylan', label: 'Columbia', format: 'LP, Album', rating: 5, released: 1963, releaseId: 3035991 },
-  { artist: 'Bob Dylan', title: 'Another Side Of Bob Dylan', label: 'Columbia', format: 'LP, Album, Pit', rating: 3, released: 1964, releaseId: 1383791 },
+  { artist: 'Bob Dylan', title: 'Another Side Of Bob Dylan', label: 'Columbia', format: 'LP, Album, RP, Stereo', rating: 3, released: 1967, releaseId: 6512038 },
   { artist: 'Bob Dylan', title: 'Highway 61 Revisited', label: 'Columbia', format: 'LP, Album, Alt', rating: 5, released: 1965, releaseId: 3336238 },
   { artist: 'Son House', title: 'Father Of Folk Blues', label: 'Columbia', format: 'LP, Album, RP, Pit', rating: 5, released: 1967, releaseId: 7021033 },
   { artist: 'Simon & Garfunkel', title: 'Sounds Of Silence', label: 'Columbia', format: 'LP, Album', rating: 3, released: 1966, releaseId: 1108943 },

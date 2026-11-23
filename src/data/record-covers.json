@@ -7003,74 +7003,6 @@
       }
     ]
   },
-  "1383791": {
-    "cover": "https://i.discogs.com/siD0HaZzapflZGLUkHDeZUsb2JX4nznchafa3yinnN0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODM3/OTEtMTQzOTE0MTY4/MS0yMjc1LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/H5FpUwVAwYQjrdmDE30GBUc7HGf4pcEkXd8D6C4SI8w/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODM3/OTEtMTQzOTE0MTY4/MS0yMjc1LmpwZWc.jpeg",
-    "genres": [
-      "Folk, World, & Country"
-    ],
-    "styles": [
-      "Folk"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "All I Really Want To Do",
-        "duration": "4:02"
-      },
-      {
-        "position": "A2",
-        "title": "Black Crow Blues",
-        "duration": "3:12"
-      },
-      {
-        "position": "A3",
-        "title": "Spanish Harlem Incident",
-        "duration": "2:22"
-      },
-      {
-        "position": "A4",
-        "title": "Chimes Of Freedom",
-        "duration": "7:09"
-      },
-      {
-        "position": "A5",
-        "title": "I Shall Be Free No. 10",
-        "duration": "4:45"
-      },
-      {
-        "position": "A6",
-        "title": "To Ramona",
-        "duration": "3:50"
-      },
-      {
-        "position": "B1",
-        "title": "Motorpsycho Nitemare",
-        "duration": "4:31"
-      },
-      {
-        "position": "B2",
-        "title": "My Back Pages",
-        "duration": "4:20"
-      },
-      {
-        "position": "B3",
-        "title": "I Don't Believe You",
-        "duration": "4:20"
-      },
-      {
-        "position": "B4",
-        "title": "Ballad In Plain D",
-        "duration": "8:15"
-      },
-      {
-        "position": "B5",
-        "title": "It Ain't Me Babe",
-        "duration": "3:30"
-      }
-    ]
-  },
   "1390408": {
     "cover": "https://i.discogs.com/L51KJlpIN_eF5baoowMCykAdzeBv4UpO5kC10yAjDuA/rs:fit/g:sm/q:90/h:598/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzOTA0/MDgtMTM0NTg4Mjgw/Ni02Njk1LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/uVEpDSCrjHVlm_1iSoxM7kAsFfJyW0hrAn9T7uYjAvE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzOTA0/MDgtMTM0NTg4Mjgw/Ni02Njk1LmpwZWc.jpeg",
@@ -20045,6 +19977,75 @@
         "position": "B5",
         "title": "Some Girls Are Bigger Than Others",
         "duration": "3:14"
+      }
+    ]
+  },
+  "6512038": {
+    "cover": "https://i.discogs.com/s7V4KuPgq1Gd0pZN50ms3sWVv9GhOOFrCnoU-qEkrNw/rs:fit/g:sm/q:90/h:320/w:320/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1MTIw/MzgtMTQyMDk0MDQ1/OS04OTA0LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/JIFwLbnpAxJbexxEBQXrQMrvokRHh9Gg1e_qvMZx5Vg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1MTIw/MzgtMTQyMDk0MDQ1/OS04OTA0LmpwZWc.jpeg",
+    "genres": [
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Ballad",
+      "Folk"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "All I Really Want To Do",
+        "duration": "4:02"
+      },
+      {
+        "position": "A2",
+        "title": "Black Crow Blues",
+        "duration": "3:12"
+      },
+      {
+        "position": "A3",
+        "title": "Spanish Harlem Incident",
+        "duration": "2:22"
+      },
+      {
+        "position": "A4",
+        "title": "Chimes Of Freedom",
+        "duration": "7:09"
+      },
+      {
+        "position": "A5",
+        "title": "I Shall Be Free No. 10",
+        "duration": "4:45"
+      },
+      {
+        "position": "A6",
+        "title": "To Ramona",
+        "duration": "3:50"
+      },
+      {
+        "position": "B1",
+        "title": "Motorpsycho Nitemare",
+        "duration": "4:31"
+      },
+      {
+        "position": "B2",
+        "title": "My Back Pages",
+        "duration": "4:20"
+      },
+      {
+        "position": "B3",
+        "title": "I Don't Believe You",
+        "duration": "4:20"
+      },
+      {
+        "position": "B4",
+        "title": "Ballad In Plain D",
+        "duration": "8:15"
+      },
+      {
+        "position": "B5",
+        "title": "It Ain't Me Babe",
+        "duration": "3:30"
       }
     ]
   },
