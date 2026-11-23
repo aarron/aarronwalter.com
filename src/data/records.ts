@@ -373,4 +373,5 @@ export const records: VinylRecord[] = [
   { artist: 'Jim Hall', title: 'Jim Hall Live!', label: 'Horizon', format: 'LP, Album, Stereo', rating: 4, released: 1975, releaseId: 1447788 },
   { artist: 'Art Farmer', title: 'The Art Farmer Quintet Plays The Great Jazz Hits', label: 'Columbia', format: 'LP, Album, RE', rating: 4, released: 1980, releaseId: 1168819 },
   { artist: 'Duke Ellington And His Orchestra', title: 'Ellington Indigos', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1958, releaseId: 728154 },
+  { artist: 'Various', title: 'Columbia Jazz Masterpieces Sampler Volume II', label: 'Columbia', format: 'LP, Comp, RM', rating: 4, released: 1987, releaseId: 4340124 },
 ]
