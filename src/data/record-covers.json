@@ -1335,6 +1335,117 @@
       }
     ]
   },
+  "393261": {
+    "cover": "https://i.discogs.com/CqX9WxHsCqnt3HI535F3nev3IgjhY__Ow4He-iVsmSY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MzI2/MS0xNDAzNTUzNDYz/LTExNDcuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/_GVjsgAYcmqYpgVHkqbKUhbzny5M8PrdiTDH2kECCDc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MzI2/MS0xNDAzNTUzNDYz/LTExNDcuanBlZw.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Punk",
+      "Ska",
+      "Rock & Roll",
+      "New Wave"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "London Calling",
+        "duration": "3:19"
+      },
+      {
+        "position": "A2",
+        "title": "Brand New Cadillac",
+        "duration": "2:58"
+      },
+      {
+        "position": "A3",
+        "title": "Jimmy Jazz",
+        "duration": "3:00"
+      },
+      {
+        "position": "A4",
+        "title": "Hateful",
+        "duration": "2:47"
+      },
+      {
+        "position": "A5",
+        "title": "Rudie Can't Fail",
+        "duration": "3:26"
+      },
+      {
+        "position": "B1",
+        "title": "Spanish Bombs",
+        "duration": "3:18"
+      },
+      {
+        "position": "B2",
+        "title": "The Right Profile",
+        "duration": "4:00"
+      },
+      {
+        "position": "B3",
+        "title": "Lost In The Supermarket",
+        "duration": "3:47"
+      },
+      {
+        "position": "B4",
+        "title": "Clampdown",
+        "duration": "3:50"
+      },
+      {
+        "position": "B5",
+        "title": "The Guns Of Brixton",
+        "duration": "3:07"
+      },
+      {
+        "position": "C1",
+        "title": "Wrong 'Em Boyo",
+        "duration": "3:10"
+      },
+      {
+        "position": "C2",
+        "title": "Death Or Glory",
+        "duration": "3:55"
+      },
+      {
+        "position": "C3",
+        "title": "Koka Kola",
+        "duration": "2:05"
+      },
+      {
+        "position": "C4",
+        "title": "The Card Cheat",
+        "duration": "3:05"
+      },
+      {
+        "position": "D1",
+        "title": "Lover's Rock",
+        "duration": "4:01"
+      },
+      {
+        "position": "D2",
+        "title": "Four Horsemen",
+        "duration": "3:00"
+      },
+      {
+        "position": "D3",
+        "title": "I'm Not Down",
+        "duration": "3:00"
+      },
+      {
+        "position": "D4",
+        "title": "Revolution Rock",
+        "duration": "5:50"
+      },
+      {
+        "position": "D5",
+        "title": "Train In Vain",
+        "duration": ""
+      }
+    ]
+  },
   "394397": {
     "cover": "https://i.discogs.com/Nz2sSAppO8vgZOTXd83O_L5zsdvu2EoOLTVVQ3xrQSg/rs:fit/g:sm/q:90/h:578/w:586/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NDM5/Ny0xMjMwMjU3NjUy/LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/KKb7X4uDmQspgX9IQRfb2jANLoJytDcjnK-yzhMdPQY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NDM5/Ny0xMjMwMjU3NjUy/LmpwZWc.jpeg",
@@ -12786,115 +12897,6 @@
       }
     ]
   },
-  "2894948": {
-    "cover": "https://i.discogs.com/_1AS5H1nsr3cnWd9fmN_BO1HhVsyiAqXKOty7Pj-3EI/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4OTQ5/NDgtMTMyOTkyNjg5/MC5wbmc.jpeg",
-    "thumb": "https://i.discogs.com/tDAAjJDAxhHFVZ61wOrcsBXWHHJo3C6TedNrjT6MAF8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4OTQ5/NDgtMTMyOTkyNjg5/MC5wbmc.jpeg",
-    "genres": [
-      "Rock"
-    ],
-    "styles": [
-      "Punk",
-      "New Wave"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "London Calling",
-        "duration": "3:19"
-      },
-      {
-        "position": "A2",
-        "title": "Brand New Cadillac",
-        "duration": "2:58"
-      },
-      {
-        "position": "A3",
-        "title": "Jimmy Jazz",
-        "duration": "3:00"
-      },
-      {
-        "position": "A4",
-        "title": "Hateful",
-        "duration": "2:47"
-      },
-      {
-        "position": "A5",
-        "title": "Rudie Can't Fail",
-        "duration": "3:26"
-      },
-      {
-        "position": "B1",
-        "title": "Spanish Bombs",
-        "duration": "3:18"
-      },
-      {
-        "position": "B2",
-        "title": "The Right Profile",
-        "duration": "4:00"
-      },
-      {
-        "position": "B3",
-        "title": "Lost In The Supermarket",
-        "duration": "3:47"
-      },
-      {
-        "position": "B4",
-        "title": "Clampdown",
-        "duration": "3:50"
-      },
-      {
-        "position": "B5",
-        "title": "The Guns Of Brixton",
-        "duration": "3:07"
-      },
-      {
-        "position": "C1",
-        "title": "Wrong 'Em Boyo",
-        "duration": "3:10"
-      },
-      {
-        "position": "C2",
-        "title": "Death Or Glory",
-        "duration": "3:55"
-      },
-      {
-        "position": "C3",
-        "title": "Koka Kola",
-        "duration": "2:05"
-      },
-      {
-        "position": "C4",
-        "title": "The Card Cheat",
-        "duration": "3:05"
-      },
-      {
-        "position": "D1",
-        "title": "Lover's Rock",
-        "duration": "4:01"
-      },
-      {
-        "position": "D2",
-        "title": "Four Horsemen",
-        "duration": "3:00"
-      },
-      {
-        "position": "D3",
-        "title": "I'm Not Down",
-        "duration": "3:00"
-      },
-      {
-        "position": "D4",
-        "title": "Revolution Rock",
-        "duration": "5:50"
-      },
-      {
-        "position": "D5",
-        "title": "Train In Vain",
-        "duration": ""
-      }
-    ]
-  },
   "2911293": {
     "cover": "https://i.discogs.com/dWe2AyguSxJpaaEWbK_mVLL3zs2ejuta0sJCx5BvS8o/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MTEy/OTMtMTU5NDI0NTgx/Mi03OTMxLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/eBPOYCDUuYDq0968DizypNaHc5oylaoLFG6o3ordpWk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5MTEy/OTMtMTU5NDI0NTgx/Mi03OTMxLmpwZWc.jpeg",
@@ -17578,6 +17580,69 @@
         "position": "B7",
         "title": "I Got A Woman",
         "duration": "2:48"
+      }
+    ]
+  },
+  "4896252": {
+    "cover": "https://i.discogs.com/_GxfozNi0vhfN1FwykpiawU6jxXzNxWmBTshzFPLmYY/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4OTYy/NTItMTQwNzYzNjg5/Ni04MzU2LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/E8qb4EbtEnugD6ML60tUuLZDSRbIToHTjiEEpLD52iE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4OTYy/NTItMTQwNzYzNjg5/Ni04MzU2LmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Art Rock"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Berlin",
+        "duration": "3:23"
+      },
+      {
+        "position": "A2",
+        "title": "Lady Day",
+        "duration": "3:40"
+      },
+      {
+        "position": "A3",
+        "title": "Men Of Good Fortune",
+        "duration": "4:37"
+      },
+      {
+        "position": "A4",
+        "title": "Caroline Says I",
+        "duration": "3:57"
+      },
+      {
+        "position": "A5",
+        "title": "How Do You Think It Feels",
+        "duration": "3:42"
+      },
+      {
+        "position": "A6",
+        "title": "Oh, Jim",
+        "duration": "5:13"
+      },
+      {
+        "position": "B1",
+        "title": "Caroline Says II",
+        "duration": "4:10"
+      },
+      {
+        "position": "B2",
+        "title": "The Kids",
+        "duration": "7:55"
+      },
+      {
+        "position": "B3",
+        "title": "The Bed",
+        "duration": "5:51"
+      },
+      {
+        "position": "B4",
+        "title": "Sad Song",
+        "duration": "6:55"
       }
     ]
   },

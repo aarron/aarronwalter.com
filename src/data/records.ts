@@ -128,7 +128,7 @@ export const records: VinylRecord[] = [
   { artist: 'Wire', title: 'A Bell Is A Cup... Until It Is Struck', label: 'Enigma (4)', format: 'LP, Album, Gat', rating: 2, released: 1988, releaseId: 1191109 },
   { artist: 'Sly & The Family Stone', title: 'Stand!', label: 'Epic', format: 'LP, Album, San', rating: 3, released: 1969, releaseId: 813168 },
   { artist: 'Sly & The Family Stone', title: 'Dance To The Music', label: 'Epic', format: 'LP, Album, RE, Ter', rating: 3, released: 1971, releaseId: 1480717 },
-  { artist: 'The Clash', title: 'London Calling', label: 'Epic', format: '2xLP, Album, RP', rating: 4, released: 1981, releaseId: 2894948 },
+  { artist: 'The Clash', title: 'London Calling', label: 'Epic', format: '2xLP, Album, Stereo', rating: 4, released: 1980, releaseId: 393261 },
   { artist: 'Michael Jackson', title: 'Bad', label: 'Epic', format: 'LP, Album, Stereo', rating: 4, released: 1987, releaseId: 459606 },
   { artist: 'Michael Jackson', title: 'Off The Wall', label: 'Epic', format: 'LP, Album, Pit', rating: 5, released: 1979, releaseId: 120096 },
   { artist: 'Cheap Trick', title: 'Cheap Trick At Budokan', label: 'Epic', format: 'LP, Album, Ter', rating: 4, released: 1979, releaseId: 5037728 },
@@ -362,4 +362,5 @@ export const records: VinylRecord[] = [
   { artist: 'Various', title: 'New Soul Best Collection', label: 'Motown', format: 'LP, Comp, Stereo', rating: 4, released: 1974, releaseId: 11454269 },
   { artist: 'Michael Jackson', title: 'The Best Of Michael Jackson', label: 'Motown', format: 'LP, Comp', rating: 4, released: 1975, releaseId: 573221 },
   { artist: 'Sex Pistols', title: 'Never Mind The Bollocks Here\'s The Sex Pistols', label: 'Warner Bros. Records', format: 'LP, Album, RP', rating: 4, released: 1979, releaseId: 2741824 },
+  { artist: 'Lou Reed', title: 'Berlin', label: 'RCA Victor', format: 'LP, Album, Stereo', rating: 4, released: 1973, releaseId: 4896252 },
 ]
