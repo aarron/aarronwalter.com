@@ -393,4 +393,5 @@ export const records: VinylRecord[] = [
   { artist: 'Dexter Gordon', title: 'Doin\' Allright', label: 'Blue Note', format: 'LP, Album, RE, RM, DMM', rating: 4, released: 1985, releaseId: 3691474 },
   { artist: 'Stan Getz / Eddie Sauter', title: 'Focus', label: 'Verve Records', format: 'LP, Album, Stereo', rating: 4, released: 1961, releaseId: 1352828 },
   { artist: 'Herbie Hancock', title: 'Empyrean Isles', label: 'Blue Note', format: 'LP, Album, RE, Stereo', rating: 4, released: 2023, releaseId: 26441327 },
+  { artist: 'Ahmad Jamal', title: 'Emerald City Nights - Live At The Penthouse 1963-1964', label: 'Jazz Detective', format: '2xLP, Album, RSD, Ltd, Num', rating: 4, released: 2022, releaseId: 25279990 },
 ]
