@@ -14499,6 +14499,77 @@
       }
     ]
   },
+  "3606693": {
+    "cover": "https://i.discogs.com/eBH9MHHmWWlxT9qe4tCeFVuoMY0CrZc_yiShH1SY4Uw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MDY2/OTMtMTU0MDA3MTM1/NC0yMTA1LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/PfxH3zVtkLVSTEeaTlC-ARN7riQgS3MXMOVpZbir9jU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MDY2/OTMtMTU0MDA3MTM1/NC0yMTA1LmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "But Beautiful",
+        "duration": "2:48"
+      },
+      {
+        "position": "A2",
+        "title": "Swingin On A Star",
+        "duration": "2:50"
+      },
+      {
+        "position": "A3",
+        "title": "I Could Have Told You",
+        "duration": "2:47"
+      },
+      {
+        "position": "A4",
+        "title": "It Could Happen To You",
+        "duration": "2:04"
+      },
+      {
+        "position": "A5",
+        "title": "Oh You Crazy Moon",
+        "duration": "2:32"
+      },
+      {
+        "position": "A6",
+        "title": "I Thought About You",
+        "duration": "2:10"
+      },
+      {
+        "position": "B1",
+        "title": "Deep In A Dream",
+        "duration": "2:47"
+      },
+      {
+        "position": "B2",
+        "title": "So Help Me",
+        "duration": "2:50"
+      },
+      {
+        "position": "B3",
+        "title": "Nancy",
+        "duration": "3:11"
+      },
+      {
+        "position": "B4",
+        "title": "Polka Dots And Moon Beams",
+        "duration": "2:41"
+      },
+      {
+        "position": "B5",
+        "title": "Darn That Dream",
+        "duration": "3:28"
+      },
+      {
+        "position": "B6",
+        "title": "Imagination",
+        "duration": "2:33"
+      }
+    ]
+  },
   "3628483": {
     "cover": "https://i.discogs.com/WTu4ZWbOM_5gN4IeBKg4pxE1Ghq1iaRLSP78-d7LSlA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2Mjg0/ODMtMTYxMTQwMDcz/OC04MTU0LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/57iwkW09nNvOfhr7ZMOqQhyi9FmlK0HjZNNYzwSN-ps/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2Mjg0/ODMtMTYxMTQwMDcz/OC04MTU0LmpwZWc.jpeg",
@@ -15210,6 +15281,60 @@
         "position": "B6",
         "title": "Blues For Hawaiians",
         "duration": "2:25"
+      }
+    ]
+  },
+  "3870843": {
+    "cover": "https://i.discogs.com/-tmF8zpecRK9TOpr_O0XVNQ_9p3rgKJZE_eVjAEFKkA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NzA4/NDMtMTY1NTU3NTY2/NS01MzIwLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/ONq-nSLiXXP92mUNFzQP5jDnhpU6RUTW3McmDdrVjLU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NzA4/NDMtMTY1NTU3NTY2/NS01MzIwLmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Bop",
+      "Cool Jazz"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "What Is There To Say?",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Just In Time",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "News From Blueport",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Festive Minor",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "As Catch Can",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "My Funny Valentine",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Blueport",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Utter Chaos",
+        "duration": ""
       }
     ]
   },

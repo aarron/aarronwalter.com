@@ -388,4 +388,6 @@ export const records: VinylRecord[] = [
   { artist: 'Herbie Hancock', title: 'Inventions And Dimensions', label: 'Blue Note', format: 'LP, Album, RE, Stereo', rating: 4, released: 2019, releaseId: 14216796 },
   { artist: 'Charlie Parker And His Orchestra', title: 'The Genius Of Charlie Parker #1 - Night And Day', label: 'Verve Records', format: 'LP, Comp, Mono, RE', rating: 4, released: 1960, releaseId: 1390754 },
   { artist: 'Chet Baker And The Carmel Strings', title: 'Into My Life', label: 'World Pacific', format: 'LP, Album, Stereo', rating: 4, released: 1966, releaseId: 33706674 },
+  { artist: 'The Gerry Mulligan Quartet', title: 'What Is There To Say?', label: 'Columbia Special Products', format: 'LP, Album, RE, Stereo', rating: 4, released: 1968, releaseId: 3870843 },
+  { artist: 'Johnny Smith', title: 'Johnny Smith Plays Jimmy Van Heusen', label: 'Roost', format: 'LP, Album, Mono', rating: 4, released: 1955, releaseId: 3606693 },
 ]
