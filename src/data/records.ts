@@ -287,7 +287,7 @@ export const records: VinylRecord[] = [
   { artist: 'Prince', title: 'Controversy', label: 'Warner Bros. Records', format: 'LP, Album', rating: 4, released: 1981, releaseId: 407398 },
   { artist: 'Kraftwerk', title: 'Computer World', label: 'Warner Bros. Records', format: 'LP, Album, Win', rating: 4, released: 1981, releaseId: 23300 },
   { artist: 'Kraftwerk', title: 'Tour De France', label: 'Warner Bros. Records', format: '12\"', rating: 0, released: 1983, releaseId: 3966 },
-  { artist: 'Van Halen', title: '1984', label: 'Warner Bros. Records', format: 'LP, Album, Win', rating: 3, released: 1984, releaseId: 949843 },
+  { artist: 'Van Halen', title: '1984', label: 'Warner Bros. Records', format: 'LP, Album, Club', rating: 3, released: 1984, releaseId: 7632307 },
   { artist: 'Prince And The Revolution', title: 'Purple Rain', label: 'Warner Bros. Records', format: 'LP, Album, Club', rating: 5, released: 1984, releaseId: 3056253 },
   { artist: 'Prince', title: '1999', label: 'Warner Bros. Records', format: '2xLP, Album, Jac', rating: 4, released: 1982, releaseId: 125881 },
   { artist: 'Boards Of Canada', title: 'The Campfire Headphase', label: 'Warp Records', format: '2xLP, Album, RE', rating: 4, released: 2013, releaseId: 5006888 },
@@ -405,5 +405,6 @@ export const records: VinylRecord[] = [
   { artist: 'Split Enz', title: 'Waiata', label: 'A&M Records', format: 'LP, Album, Stereo', rating: 4, released: 1981, releaseId: 3055220 },
   { artist: 'R.E.M.', title: 'Out Of Time', label: 'Craft Recordings', format: 'LP, Album, RE, RM', rating: 4, released: 2016, releaseId: 9371803 },
   { artist: 'Willie Nelson', title: 'Greatest Hits (& Some That Will Be)', label: 'Columbia', format: '2xLP, Comp, Stereo', rating: 4, released: 1981, releaseId: 644616 },
+  { artist: 'Eagles', title: 'Their Greatest Hits 1971-1975', label: 'Asylum Records', format: 'LP, Comp, SP', rating: 4, released: 1976, releaseId: 5386878 },
   { artist: 'Glenn Miller And His Orchestra', title: 'Glenn Miller Plays Selections From "The Glenn Miller Story" And Other Hits', label: 'RCA', format: 'LP, Album, RE', rating: 4, released: null, releaseId: 6205175 },
 ]
