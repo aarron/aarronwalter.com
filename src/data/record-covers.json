@@ -12039,81 +12039,6 @@
       }
     ]
   },
-  "2666064": {
-    "cover": "https://i.discogs.com/bNsm27TWPuAkXSekAdwphgN49nZH5oHFpL0U_wN-P48/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NjYw/NjQtMTI5NTY3NzEw/OS5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/_16AZ5h7qEmaNu1-JPx3H0xdV00H64EXtEOTzveXjoQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NjYw/NjQtMTI5NTY3NzEw/OS5qcGVn.jpeg",
-    "genres": [
-      "Rock",
-      "Pop"
-    ],
-    "styles": [
-      "Beat",
-      "Pop Rock"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "I've Just Seen A Face",
-        "duration": "2:04"
-      },
-      {
-        "position": "A2",
-        "title": "Norwegian Wood (This Bird Has Flown)",
-        "duration": "2:00"
-      },
-      {
-        "position": "A3",
-        "title": "You Won't See Me",
-        "duration": "3:19"
-      },
-      {
-        "position": "A4",
-        "title": "Think For Yourself",
-        "duration": "2:16"
-      },
-      {
-        "position": "A5",
-        "title": "The Word",
-        "duration": "2:42"
-      },
-      {
-        "position": "A6",
-        "title": "Michelle",
-        "duration": "2:42"
-      },
-      {
-        "position": "B1",
-        "title": "It's Only Love",
-        "duration": "1:53"
-      },
-      {
-        "position": "B2",
-        "title": "Girl",
-        "duration": "2:26"
-      },
-      {
-        "position": "B3",
-        "title": "I'm Looking Through You",
-        "duration": "2:20"
-      },
-      {
-        "position": "B4",
-        "title": "In My Life",
-        "duration": "2:23"
-      },
-      {
-        "position": "B5",
-        "title": "Wait",
-        "duration": "2:13"
-      },
-      {
-        "position": "B6",
-        "title": "Run For Your Life",
-        "duration": "2:21"
-      }
-    ]
-  },
   "2703864": {
     "cover": "https://i.discogs.com/Q5kPpB8rVVL2ELyHTvqmbKgwQf7XisghjDudzloV_aA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MDM4/NjQtMTMxOTA3Nzc4/My5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/hvV7OrQakGFC3hg-IwuPzbBv2aAHtwNcWPSt82eKD9Y/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MDM4/NjQtMTMxOTA3Nzc4/My5qcGVn.jpeg",
@@ -15209,6 +15134,80 @@
         "position": "B2",
         "title": "Cherokee",
         "duration": "10:53"
+      }
+    ]
+  },
+  "4059841": {
+    "cover": "https://i.discogs.com/pug_KZ6NmOJOWJgg1UUgjHsxv8rROMfq2e3aBVqsS98/rs:fit/g:sm/q:90/h:498/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNTk4/NDEtMTM1Mzg4MDUx/MC05NDYzLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/INVJhD3a4ZspNmroAp9GIaYPGNwRh0scfby0LEs9FqU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNTk4/NDEtMTM1Mzg4MDUx/MC05NDYzLmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Pop Rock",
+      "Beat"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "I've Just Seen A Face",
+        "duration": "2:04"
+      },
+      {
+        "position": "A2",
+        "title": "Norwegian Wood (This Bird Has Flown)",
+        "duration": "2:00"
+      },
+      {
+        "position": "A3",
+        "title": "You Won't See Me",
+        "duration": "3:19"
+      },
+      {
+        "position": "A4",
+        "title": "Think For Yourself",
+        "duration": "2:16"
+      },
+      {
+        "position": "A5",
+        "title": "The Word",
+        "duration": "2:42"
+      },
+      {
+        "position": "A6",
+        "title": "Michelle",
+        "duration": "2:42"
+      },
+      {
+        "position": "B1",
+        "title": "It's Only Love",
+        "duration": "1:53"
+      },
+      {
+        "position": "B2",
+        "title": "Girl",
+        "duration": "2:26"
+      },
+      {
+        "position": "B3",
+        "title": "I'm Looking Through You",
+        "duration": "2:20"
+      },
+      {
+        "position": "B4",
+        "title": "In My Life",
+        "duration": "2:23"
+      },
+      {
+        "position": "B5",
+        "title": "Wait",
+        "duration": "2:13"
+      },
+      {
+        "position": "B6",
+        "title": "Run For Your Life",
+        "duration": "2:21"
       }
     ]
   },

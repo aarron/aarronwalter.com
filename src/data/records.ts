@@ -70,7 +70,7 @@ export const records: VinylRecord[] = [
   { artist: 'Beastie Boys', title: 'Paul\'s Boutique', label: 'Capitol Records', format: 'LP, Album, Gat', rating: 4, released: 1989, releaseId: 1992136 },
   { artist: 'Various', title: 'Christmas Cocktails', label: 'Capitol Records', format: '2xLP, Comp, RE', rating: 3, released: 2014, releaseId: 6346975 },
   { artist: 'The Beach Boys', title: 'Pet Sounds', label: 'Capitol Records', format: 'LP, Album, LA', rating: 5, released: 1966, releaseId: 390866 },
-  { artist: 'The Beatles', title: 'Rubber Soul', label: 'Capitol Records', format: 'LP, Album, RP, Los', rating: 4, released: 1966, releaseId: 2666064 },
+  { artist: 'The Beatles', title: 'Rubber Soul', label: 'Capitol Records', format: 'LP, Album, RE, Stereo', rating: 4, released: 1969, releaseId: 4059841 },
   { artist: 'The Beatles', title: 'Revolver', label: 'Capitol Records', format: 'LP, Album, Los', rating: 5, released: 1966, releaseId: 1498484 },
   { artist: 'The Beatles', title: 'Beatles \'65', label: 'Capitol Records', format: 'LP, Album, Mono, Pin', rating: 3, released: 1964, releaseId: 611439 },
   { artist: 'Frank Sinatra', title: 'Come Fly With Me', label: 'Capitol Records', format: 'LP, Album, Mono, Scr', rating: 4, released: 1958, releaseId: 3054363 },
