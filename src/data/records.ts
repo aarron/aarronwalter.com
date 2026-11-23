@@ -406,5 +406,6 @@ export const records: VinylRecord[] = [
   { artist: 'R.E.M.', title: 'Out Of Time', label: 'Craft Recordings', format: 'LP, Album, RE, RM', rating: 4, released: 2016, releaseId: 9371803 },
   { artist: 'Willie Nelson', title: 'Greatest Hits (& Some That Will Be)', label: 'Columbia', format: '2xLP, Comp, Stereo', rating: 4, released: 1981, releaseId: 644616 },
   { artist: 'Eagles', title: 'Their Greatest Hits 1971-1975', label: 'Asylum Records', format: 'LP, Comp, SP', rating: 4, released: 1976, releaseId: 5386878 },
+  { artist: 'Bee Gees', title: 'Bee Gees Greatest', label: 'RSO', format: '2xLP, Comp', rating: 4, released: 1979, releaseId: 9825889 },
   { artist: 'Glenn Miller And His Orchestra', title: 'Glenn Miller Plays Selections From "The Glenn Miller Story" And Other Hits', label: 'RCA', format: 'LP, Album, RE', rating: 4, released: null, releaseId: 6205175 },
 ]
