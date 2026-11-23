@@ -3883,6 +3883,13 @@ body {
 @keyframes rm-spin { to { transform: rotate(360deg); } }
 .rm-sleeve-wrap:hover .rm-disc { animation: none; transform: translateX(30%); }
 
+/* The record rests until a track plays, then slides further out and turns */
+.rm-disc-spin,
+.rm-disc-spin::before { animation-play-state: paused; }
+.rm-sleeve-wrap.is-playing .rm-disc { animation: none; transform: translateX(42%); }
+.rm-sleeve-wrap.is-playing .rm-disc-spin,
+.rm-sleeve-wrap.is-playing .rm-disc-spin::before { animation-play-state: running; animation-duration: 1.8s; }
+
 @media (max-width: 860px) {
   .rm-layout { grid-template-columns: 1fr; padding: 4.5rem 1rem 3rem; gap: 2rem; }
   .rm-stage { position: static; }

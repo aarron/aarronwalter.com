@@ -66,7 +66,7 @@ const nextConfig: NextConfig = {
               // Inline styles needed by Next.js + Adobe Fonts
               "style-src 'self' 'unsafe-inline' https://use.typekit.net https://p.typekit.net",
               // Scripts: self + Adobe Fonts loader
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://use.typekit.net https://open.spotify.com",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://use.typekit.net https://open.spotify.com https://*.spotifycdn.com",
               // Fonts: self + Adobe Fonts CDN
               "font-src 'self' https://use.typekit.net https://p.typekit.net",
               // Images: self + podcast artwork + Open Library covers (redirect via archive.org) + Discogs + Amazon CDN
@@ -74,7 +74,7 @@ const nextConfig: NextConfig = {
               // API calls: self + Discogs + OpenLibrary (contact form now hits /api/contact internally)
               "connect-src 'self' https://api.discogs.com https://openlibrary.org https://designbetterpodcast.com",
               // Spotify player (iFrame API) in the Listening modal
-              "frame-src 'self' https://open.spotify.com",
+              "frame-src 'self' https://open.spotify.com https://*.spotify.com",
               // Media: self + all Megaphone CDN subdomains + Vercel Blob (portfolio videos)
               // traffic.megaphone.fm redirects to dcs-spotify.megaphone.fm (dynamic ad insertion)
               "media-src 'self' https://*.megaphone.fm https://*.public.blob.vercel-storage.com",

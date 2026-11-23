@@ -92,6 +92,7 @@ interface Props {
 export default function RecordModal({ record, meta, year, position, hasPrev, hasNext, onPrev, onNext, onClose, onRate }: Props) {
   const details = useDetails(record.releaseId)
   const [imageIndex, setImageIndex] = useState(0)
+  const [playing, setPlaying] = useState(false)
   useEffect(() => { setImageIndex(0) }, [record.releaseId])
 
   const cover = meta.cover ?? meta.thumb ?? null
@@ -125,7 +126,7 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
       <div className="rm-layout" onClick={e => e.stopPropagation()} key={record.releaseId ?? record.title}>
         {/* ── The sleeve, with the record sliding out of it ── */}
         <div className="rm-stage">
-          <div className="rm-sleeve-wrap">
+          <div className={`rm-sleeve-wrap${playing ? ' is-playing' : ''}`}>
             {cover && (
               <div className="rm-disc" aria-hidden>
                 <div className="rm-disc-spin">
@@ -169,7 +170,7 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
           <RatingStars rating={record.rating} onRate={onRate} size="large" />
 
           {meta.tracklist && meta.tracklist.length > 0 && (
-            <SpotifyTracklist releaseId={record.releaseId} albumId={meta.spotifyAlbumId} tracklist={meta.tracklist} />
+            <SpotifyTracklist releaseId={record.releaseId} albumId={meta.spotifyAlbumId} tracklist={meta.tracklist} onPlayingChange={setPlaying} />
           )}
 
           <section className="rm-section">

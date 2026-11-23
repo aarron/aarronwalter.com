@@ -17,14 +17,17 @@ declare global {
   interface Window { onSpotifyIframeApiReady?: (api: IFrameAPI) => void }
 }
 
-let apiPromise: Promise<IFrameAPI> | null = null
+// Resolves to null if Spotify's API can't load (blocked, offline), so callers can fall back.
+let apiPromise: Promise<IFrameAPI | null> | null = null
 function loadSpotifyApi() {
   if (!apiPromise) {
     apiPromise = new Promise(resolve => {
-      window.onSpotifyIframeApiReady = resolve
+      const timer = setTimeout(() => { console.warn('Spotify iFrame API did not load; using plain embeds'); resolve(null) }, 5000)
+      window.onSpotifyIframeApiReady = api => { clearTimeout(timer); resolve(api) }
       const s = document.createElement('script')
       s.src = 'https://open.spotify.com/embed/iframe-api/v1'
       s.async = true
+      s.onerror = () => { clearTimeout(timer); resolve(null) }
       document.body.appendChild(s)
     })
   }
@@ -78,9 +81,11 @@ interface Props {
   releaseId: number | null
   albumId?: string
   tracklist: { position: string; title: string; duration: string }[]
+  /** Called with true while a track is playing, false when paused or stopped. */
+  onPlayingChange?: (playing: boolean) => void
 }
 
-export default function SpotifyTracklist({ releaseId, albumId, tracklist }: Props) {
+export default function SpotifyTracklist({ releaseId, albumId, tracklist, onPlayingChange }: Props) {
   const spotify = useSpotifyTracks(releaseId, albumId)
   const ids = useMemo(() => (spotify ? pairTracks(tracklist, spotify) : []), [spotify, tracklist])
 
@@ -108,8 +113,22 @@ export default function SpotifyTracklist({ releaseId, albumId, tracklist }: Prop
       setCurrent(trackId)
       return
     }
+    setCurrent(trackId)
     const api = await loadSpotifyApi()
     if (!wrapRef.current) return
+    if (!api) {
+      // Fallback: Spotify's plain single-track player (one more click to start).
+      wrapRef.current.innerHTML = ''
+      const f = document.createElement('iframe')
+      f.src = `https://open.spotify.com/embed/track/${trackId}?utm_source=generator&theme=0`
+      f.width = '100%'
+      f.height = '80'
+      f.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
+      f.title = 'Spotify player'
+      wrapRef.current.appendChild(f)
+      setPaused(false)
+      return
+    }
     // Spotify replaces this element with its iframe, so give it one React doesn't own.
     const el = document.createElement('div')
     wrapRef.current.appendChild(el)
@@ -123,6 +142,8 @@ export default function SpotifyTracklist({ releaseId, albumId, tracklist }: Prop
       c.addListener('playback_update', e => setPaused(e.data.isPaused))
     })
   }, [current])
+
+  useEffect(() => { onPlayingChange?.(current != null && !paused) }, [current, paused, onPlayingChange])
 
   const hasAny = ids.some(Boolean)
 
