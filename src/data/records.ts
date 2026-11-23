@@ -88,7 +88,7 @@ export const records: VinylRecord[] = [
   { artist: 'Nina Simone', title: 'The Amazing Nina Simone', label: 'Colpix Records', format: 'LP, Album, Mono, RP, Abb', rating: 0, released: 1959, releaseId: 1223231 },
   { artist: 'Broken Bells (2)', title: 'Broken Bells', label: 'Columbia', format: 'LP, Album', rating: 5, released: 2010, releaseId: 2183622 },
   { artist: 'Broken Bells (2)', title: 'After The Disco', label: 'Columbia', format: 'LP, Album, 180', rating: 5, released: 2014, releaseId: 5350470 },
-  { artist: 'Bob Dylan', title: 'Blonde On Blonde', label: 'Columbia', format: '2xLP, Album, RP, Pit', rating: 5, released: 1968, releaseId: 954182 },
+  { artist: 'Bob Dylan', title: 'Blonde On Blonde', label: 'Columbia', format: '2xLP, Album, Stereo, Gat', rating: 5, released: 1966, releaseId: 8501119 },
   { artist: 'Miles Davis', title: 'Porgy And Bess', label: 'Columbia', format: 'LP, Album, Mono, Hol', rating: 3, released: 1959, releaseId: 606389 },
   { artist: 'Charles Mingus', title: 'Mingus Ah Um', label: 'Columbia', format: 'LP, Album, Mono', rating: 5, released: 1959, releaseId: 1355742 },
   { artist: 'Miles Davis', title: 'Sketches Of Spain', label: 'Columbia', format: 'LP, Album, Mono', rating: 3, released: 1960, releaseId: 1914353 },
@@ -365,4 +365,5 @@ export const records: VinylRecord[] = [
   { artist: 'Lou Reed', title: 'Berlin', label: 'RCA Victor', format: 'LP, Album, Stereo', rating: 4, released: 1973, releaseId: 4896252 },
   { artist: 'Led Zeppelin', title: 'Led Zeppelin II', label: 'Atlantic', format: 'LP, Album, Stereo, Gat', rating: 4, released: 1969, releaseId: 6524212 },
   { artist: 'The Rolling Stones', title: 'Beggars Banquet', label: 'London Records', format: 'LP, Album, RE, Stereo, Gat', rating: 4, released: null, releaseId: 6942666 },
+  { artist: 'Bruce Springsteen', title: 'Born To Run', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1975, releaseId: 1874253 },
 ]

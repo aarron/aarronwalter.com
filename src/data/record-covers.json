@@ -4484,90 +4484,6 @@
       }
     ]
   },
-  "954182": {
-    "cover": "https://i.discogs.com/00w50wzkNoK78jEN2R7JHYlHc9Xp8UBlq_eil_JCbIE/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk1NDE4/Mi0xNjM4ODA4NDA2/LTcyMTMuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/7TrKt5hU1difeISBdSNBiMMteiBve4IgQgNl_jJ9uxU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk1NDE4/Mi0xNjM4ODA4NDA2/LTcyMTMuanBlZw.jpeg",
-    "genres": [
-      "Rock"
-    ],
-    "styles": [
-      "Folk Rock",
-      "Blues Rock"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Rainy Day Women #12 & 35",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "Pledging My Time",
-        "duration": ""
-      },
-      {
-        "position": "A3",
-        "title": "Visions Of Johanna",
-        "duration": ""
-      },
-      {
-        "position": "A4",
-        "title": "One Of Us Must Know (Sooner Or Later)",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "I Want You",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "Stuck Inside Of Mobile With The",
-        "duration": ""
-      },
-      {
-        "position": "B3",
-        "title": "Leopard-Skin Pill-Box Hat",
-        "duration": ""
-      },
-      {
-        "position": "B4",
-        "title": "Just Like A Woman",
-        "duration": ""
-      },
-      {
-        "position": "C1",
-        "title": "Most Likely You Go Your Way And I'll Go Mine",
-        "duration": ""
-      },
-      {
-        "position": "C2",
-        "title": "Temporary Like Achilles",
-        "duration": ""
-      },
-      {
-        "position": "C3",
-        "title": "Absolutely Sweet Marie",
-        "duration": ""
-      },
-      {
-        "position": "C4",
-        "title": "4th Time Around",
-        "duration": ""
-      },
-      {
-        "position": "C5",
-        "title": "Obviously 5 Believers",
-        "duration": ""
-      },
-      {
-        "position": "D1",
-        "title": "Sad Eyed Lady Of The Lowlands",
-        "duration": ""
-      }
-    ]
-  },
   "958638": {
     "cover": "https://i.discogs.com/0788VVttmUr7oTJoTWyewTlNpjRLqU76XDsBCitZLTM/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk1ODYz/OC0xNTk4MDMyODY1/LTQ3NjEuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/4DIxmOXrnkEouxKvAfA5KOtQqMhnj1jWdlqZH0waRjM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk1ODYz/OC0xNTk4MDMyODY1/LTQ3NjEuanBlZw.jpeg",
@@ -8798,6 +8714,60 @@
         "position": "B6",
         "title": "I Don't Know What It Is You Got",
         "duration": "2:31"
+      }
+    ]
+  },
+  "1874253": {
+    "cover": "https://i.discogs.com/Ko0PmM0LTv-X1yntH9WL_M3mwrBxt0nECy6OpsNSV2s/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NzQy/NTMtMTU4ODE3NzA1/MS0zMzkwLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/hIMRiV5mWG3vbv15VN7bplJkAh1tQo7nk8vVIgoMB5Y/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NzQy/NTMtMTU4ODE3NzA1/MS0zMzkwLmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Pop Rock",
+      "Rock & Roll"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Thunder Road",
+        "duration": "4:50"
+      },
+      {
+        "position": "A2",
+        "title": "Tenth Avenue Freeze-Out",
+        "duration": "3:11"
+      },
+      {
+        "position": "A3",
+        "title": "Night",
+        "duration": "3:01"
+      },
+      {
+        "position": "A4",
+        "title": "Backstreets",
+        "duration": "6:29"
+      },
+      {
+        "position": "B1",
+        "title": "Born To Run",
+        "duration": "4:30"
+      },
+      {
+        "position": "B2",
+        "title": "She's The One",
+        "duration": "4:30"
+      },
+      {
+        "position": "B3",
+        "title": "Meeting Across The River",
+        "duration": "3:16"
+      },
+      {
+        "position": "B4",
+        "title": "Jungleland",
+        "duration": "9:33"
       }
     ]
   },
@@ -21992,6 +21962,91 @@
         "position": "B4",
         "title": "Undecided",
         "duration": "3:36"
+      }
+    ]
+  },
+  "8501119": {
+    "cover": "https://i.discogs.com/Dq7XIu4UFP-9X5SXLg04yUNfZSvEhHvtnv1TLzEmFls/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1MDEx/MTktMTUyNjcwODgz/NS0xMjEyLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/HFeMihCClMyhsmnaPWLDlwjMYPXznfO4qXeCbUZGbgQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1MDEx/MTktMTUyNjcwODgz/NS0xMjEyLmpwZWc.jpeg",
+    "genres": [
+      "Rock",
+      "Blues"
+    ],
+    "styles": [
+      "Folk Rock",
+      "Rhythm & Blues"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Rainy Day Women #12 & 35",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Pledging My Time",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Visions Of Johanna",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "One Of Us Must Know",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": " I Want You ",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Memphis Blues Again",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": " Leopard-Skin Pill-Box Hat ",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Just Like A Woman",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "Most Likely You Go Your Way And I'll Go Mine",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Temporary Like Achilles",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "title": "Absolutely Sweet Marie",
+        "duration": ""
+      },
+      {
+        "position": "C4",
+        "title": "4th Time Around",
+        "duration": ""
+      },
+      {
+        "position": "C5",
+        "title": "Obviously 5 Believers",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": " Sad Eyed Lady Of The Lowlands ",
+        "duration": ""
       }
     ]
   },
