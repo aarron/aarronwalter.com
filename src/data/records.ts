@@ -381,4 +381,5 @@ export const records: VinylRecord[] = [
   { artist: 'Gerry Mulligan & Stan Getz', title: 'Gerry Mulligan Meets Stan Getz', label: 'Verve Records', format: 'LP, Album, Mono', rating: 4, released: 1961, releaseId: 641119 },
   { artist: 'Duke Ellington • Charles Mingus • Max Roach', title: 'Money Jungle', label: 'United Artists Jazz', format: 'LP, Album, Stereo', rating: 4, released: 1962, releaseId: 2936339 },
   { artist: 'Jimmy Smith', title: 'Jimmy Smith (The Blue Note Re-Issue Series)', label: 'Blue Note', format: '2xLP, Comp', rating: 4, released: 1975, releaseId: 1052620 },
+  { artist: 'Various', title: 'A Decade Of Jazz Volume Two (1949-1959)', label: 'Blue Note', format: '2xLP, Comp, RE', rating: 4, released: 1975, releaseId: 2537141 },
 ]
