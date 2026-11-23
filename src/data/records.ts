@@ -99,7 +99,7 @@ export const records: VinylRecord[] = [
   { artist: 'Bob Dylan', title: 'Another Side Of Bob Dylan', label: 'Columbia', format: 'LP, Album, RP, Stereo', rating: 3, released: 1967, releaseId: 6512038 },
   { artist: 'Bob Dylan', title: 'Highway 61 Revisited', label: 'Columbia', format: 'LP, Album, Alt', rating: 5, released: 1965, releaseId: 3336238 },
   { artist: 'Son House', title: 'Father Of Folk Blues', label: 'Columbia', format: 'LP, Album, RP, Pit', rating: 5, released: 1967, releaseId: 7021033 },
-  { artist: 'Simon & Garfunkel', title: 'Sounds Of Silence', label: 'Columbia', format: 'LP, Album', rating: 3, released: 1966, releaseId: 1108943 },
+  { artist: 'Simon & Garfunkel', title: 'Sounds Of Silence', label: 'Columbia', format: 'LP, Album, Stereo', rating: 3, released: 1966, releaseId: 13123972 },
   { artist: 'Miles Davis', title: 'Miles In The Sky', label: 'Columbia', format: 'LP, Album, Pit', rating: 3, released: 1968, releaseId: 1488165 },
   { artist: 'Johnny Cash', title: 'At Folsom Prison', label: 'Columbia', format: 'LP, Album', rating: 4, released: 1968, releaseId: 1287354 },
   { artist: 'Herbie Hancock', title: 'Future Shock', label: 'Columbia', format: 'LP, Album, Pit', rating: 0, released: 1983, releaseId: 35929 },
@@ -367,4 +367,5 @@ export const records: VinylRecord[] = [
   { artist: 'The Rolling Stones', title: 'Beggars Banquet', label: 'London Records', format: 'LP, Album, RE, Stereo, Gat', rating: 4, released: null, releaseId: 6942666 },
   { artist: 'Bruce Springsteen', title: 'Born To Run', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1975, releaseId: 1874253 },
   { artist: 'Pink Floyd', title: 'The Dark Side Of The Moon', label: 'Pink Floyd Records', format: 'LP, Album, RE, RM, 180', rating: 5, released: 2023, releaseId: 28614196 },
+  { artist: 'Paul Simon', title: 'One-Trick Pony', label: 'Warner Bros. Records', format: 'LP, Album', rating: 4, released: 1980, releaseId: 1331268 },
 ]

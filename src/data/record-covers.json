@@ -4790,77 +4790,6 @@
       }
     ]
   },
-  "1108943": {
-    "cover": "https://i.discogs.com/5NMkqQUZqAJege8MKZc6qa7chQ-jWeeSLgWXB18cCzA/rs:fit/g:sm/q:90/h:587/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMDg5/NDMtMTE5MjY4MTIw/Ni5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/_n68fKprShFeHaCj9u5n2eqoDhv52cim0pDAOySFJto/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMDg5/NDMtMTE5MjY4MTIw/Ni5qcGVn.jpeg",
-    "genres": [
-      "Pop",
-      "Folk, World, & Country"
-    ],
-    "styles": [
-      "Folk Rock",
-      "Pop Rock",
-      "Vocal"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "The Sounds Of Silence",
-        "duration": "3:02"
-      },
-      {
-        "position": "A2",
-        "title": "Leaves That Are Green",
-        "duration": "2:21"
-      },
-      {
-        "position": "A3",
-        "title": "Blessed",
-        "duration": "3:14"
-      },
-      {
-        "position": "A4",
-        "title": "Kathy's Song",
-        "duration": "3:16"
-      },
-      {
-        "position": "A5",
-        "title": "Somewhere They Can't Find Me",
-        "duration": "2:34"
-      },
-      {
-        "position": "A6",
-        "title": "Angie",
-        "duration": "2:15"
-      },
-      {
-        "position": "B1",
-        "title": "Richard Cory",
-        "duration": "2:56"
-      },
-      {
-        "position": "B2",
-        "title": "A Most Peculiar Man",
-        "duration": "2:29"
-      },
-      {
-        "position": "B3",
-        "title": "April Come She Will",
-        "duration": "1:49"
-      },
-      {
-        "position": "B4",
-        "title": "We've Got A Groovey Thing Goin'",
-        "duration": "1:55"
-      },
-      {
-        "position": "B5",
-        "title": "I Am A Rock",
-        "duration": "2:50"
-      }
-    ]
-  },
   "1118541": {
     "cover": "https://i.discogs.com/GcOPvkWmUxnCfIbEBh2CY5g1Uaw_2i9EhaODede36Ew/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTg1/NDEtMTY4ODE2MDYz/MS02MTIwLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/9pKQLTTu5aa2dyWhJTS229iUP-LI0QqLW9kVL_VMODY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTg1/NDEtMTY4ODE2MDYz/MS02MTIwLmpwZWc.jpeg",
@@ -6590,6 +6519,72 @@
         "position": "B6",
         "title": "Death Is A Star",
         "duration": "3:08"
+      }
+    ]
+  },
+  "1331268": {
+    "cover": "https://i.discogs.com/xESENr-tJhNZtH7p02xtBzu0_VhVcB3-QR6pZvsRsPc/rs:fit/g:sm/q:90/h:598/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzEy/NjgtMTIyNTQxNDk1/OC5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/z2bkw-ocnDaqFUQPi5Ve6RflqwB0Qh8b1EDHhDv8TtU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzEy/NjgtMTIyNTQxNDk1/OC5qcGVn.jpeg",
+    "genres": [
+      "Pop",
+      "Stage & Screen"
+    ],
+    "styles": [
+      "Soundtrack",
+      "Ballad",
+      "Vocal"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Late In The Evening",
+        "duration": "4:02"
+      },
+      {
+        "position": "A2",
+        "title": "That's Why God Made The Movies",
+        "duration": "3:38"
+      },
+      {
+        "position": "A3",
+        "title": "One-Trick Pony",
+        "duration": "3:54"
+      },
+      {
+        "position": "A4",
+        "title": "How The Heart Approaches What It Yearns",
+        "duration": "2:49"
+      },
+      {
+        "position": "A5",
+        "title": "Oh, Marion",
+        "duration": "4:00"
+      },
+      {
+        "position": "B1",
+        "title": "Ace In The Hole",
+        "duration": "5:43"
+      },
+      {
+        "position": "B2",
+        "title": "Nobody",
+        "duration": "3:33"
+      },
+      {
+        "position": "B3",
+        "title": "Jonah",
+        "duration": "3:30"
+      },
+      {
+        "position": "B4",
+        "title": "God Bless The Absentee",
+        "duration": "3:15"
+      },
+      {
+        "position": "B5",
+        "title": "Long, Long Day",
+        "duration": "3:48"
       }
     ]
   },
@@ -23148,6 +23143,75 @@
         "position": "B4",
         "title": "Mama Way",
         "duration": "5:50"
+      }
+    ]
+  },
+  "13123972": {
+    "cover": "https://i.discogs.com/7ABMuJns75pY_Xhat8vfMc9I_iMCMAxi6284ZNBoyA4/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTIz/OTcyLTE1NDg0Nzkw/MDktMTA1OS5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/dyQnF_uaNn3se9kI45iWox9FJVglpEVmEHjclDPsHBY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTIz/OTcyLTE1NDg0Nzkw/MDktMTA1OS5qcGVn.jpeg",
+    "genres": [
+      "Rock",
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Folk Rock"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "The Sounds Of Silence",
+        "duration": "3:02"
+      },
+      {
+        "position": "A2",
+        "title": "Leaves That Are Green",
+        "duration": "2:21"
+      },
+      {
+        "position": "A3",
+        "title": "Blessed",
+        "duration": "3:14"
+      },
+      {
+        "position": "A4",
+        "title": "Kathy's Song",
+        "duration": "3:16"
+      },
+      {
+        "position": "A5",
+        "title": "Somewhere They Can't Find Me",
+        "duration": "2:34"
+      },
+      {
+        "position": "A6",
+        "title": "Angie",
+        "duration": "2:15"
+      },
+      {
+        "position": "B1",
+        "title": "Richard Cory",
+        "duration": "2:56"
+      },
+      {
+        "position": "B2",
+        "title": "A Most Peculiar Man",
+        "duration": "2:29"
+      },
+      {
+        "position": "B3",
+        "title": "April Come She Will",
+        "duration": "1:49"
+      },
+      {
+        "position": "B4",
+        "title": "We've Got A Groovey Thing Goin'",
+        "duration": "1:55"
+      },
+      {
+        "position": "B5",
+        "title": "I Am A Rock",
+        "duration": "2:50"
       }
     ]
   },
