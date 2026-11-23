@@ -1375,8 +1375,7 @@
       "Pop"
     ],
     "styles": [
-      "Pop Rock",
-      "Alternative Rock"
+      "Pop Rock"
     ],
     "country": "US",
     "tracklist": [
@@ -1440,7 +1439,9 @@
         "title": "Tiny Daggers",
         "duration": "3:29"
       }
-    ]
+    ],
+    "originalYear": 1987,
+    "genreSource": "master"
   },
   "394949": {
     "cover": "https://i.discogs.com/_VZnoB69h9L5tkqMo2ng39RC2sR-ZfRRlDplkGctRKE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5NDk0/OS0xMzgzNTUyODI5/LTg0MzYuanBlZw.jpeg",
@@ -1524,6 +1525,7 @@
       "Jazz"
     ],
     "styles": [
+      "Bop",
       "Hard Bop"
     ],
     "country": "US",
@@ -1553,7 +1555,9 @@
         "title": "Dancing In The Dark",
         "duration": "4:00"
       }
-    ]
+    ],
+    "originalYear": 1958,
+    "genreSource": "master"
   },
   "407398": {
     "cover": "https://i.discogs.com/Ye7__ApIH1TbwSgRS4Yn7WnT8zKcySTWWL7DFs055os/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNzM5/OC0xMzg0ODYyNzkx/LTY1NzguanBlZw.jpeg",
@@ -1732,8 +1736,8 @@
       "Rock"
     ],
     "styles": [
-      "Blues Rock",
-      "Folk Rock",
+      "Classic Rock",
+      "Hard Rock",
       "Psychedelic Rock"
     ],
     "country": "US",
@@ -1788,7 +1792,9 @@
         "title": "Hats Off To (Roy) Harper",
         "duration": "3:41"
       }
-    ]
+    ],
+    "originalYear": 1970,
+    "genreSource": "master"
   },
   "442478": {
     "cover": "https://i.discogs.com/oPI8i-0If3cYsEqZ-rim1JUKPDw2j21tSLTYuwXyQKk/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0MjQ3/OC0xNzc3NDEyNzIy/LTIwMzcuanBlZw.jpeg",
@@ -2519,8 +2525,7 @@
       "Funk / Soul"
     ],
     "styles": [
-      "Soul",
-      "Rhythm & Blues"
+      "Soul"
     ],
     "country": "US",
     "tracklist": [
@@ -2579,7 +2584,9 @@
         "title": "I've Seen What Loneliness Can Do",
         "duration": "2:58"
       }
-    ]
+    ],
+    "originalYear": 1967,
+    "genreSource": "master"
   },
   "566860": {
     "cover": "https://i.discogs.com/YUNc67LPGsYHKYJc43mP_ed__aO4O8OiMmMs84Zs9_I/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2Njg2/MC0xMjAzNzgxNTEw/LmpwZWc.jpeg",
@@ -2701,7 +2708,7 @@
     ],
     "styles": [
       "Hard Rock",
-      "Classic Rock"
+      "Blues Rock"
     ],
     "country": "US",
     "tracklist": [
@@ -2745,7 +2752,9 @@
         "title": "The Ocean",
         "duration": "4:28"
       }
-    ]
+    ],
+    "originalYear": 1973,
+    "genreSource": "master"
   },
   "579852": {
     "cover": "https://i.discogs.com/aJPE1UkOs5TR_jM3dy0S2o_1ww3kOgIH2gZ0lPbbUCE/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU3OTg1/Mi0xMzUyMDUwMTQ0/LTgzMDAuanBlZw.jpeg",
@@ -4314,7 +4323,9 @@
         "title": "The Coming Of Gwilu",
         "duration": "13:37"
       }
-    ]
+    ],
+    "originalYear": 1968,
+    "genreSource": "master"
   },
   "894229": {
     "cover": "https://i.discogs.com/09gxz-cHoSdZoxJEY9tWimw80cLCUkJDgfjMBXzN6eQ/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg5NDIy/OS0xMTcxMjQwNzA1/LmpwZWc.jpeg",
@@ -4872,7 +4883,9 @@
         "title": "Never Grow Old",
         "duration": "9:57"
       }
-    ]
+    ],
+    "originalYear": 1972,
+    "genreSource": "master"
   },
   "1052620": {
     "cover": "https://i.discogs.com/_SDUYxktecjoGvYmpeddunsYAJBeiuH94Gny6VLWzIU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNTI2/MjAtMTQwODkwMjQy/OC0zNDUxLmpwZWc.jpeg",
@@ -10703,7 +10716,9 @@
         "title": "Love Is A Beautiful Thing",
         "duration": "2:12"
       }
-    ]
+    ],
+    "originalYear": 1967,
+    "genreSource": "master"
   },
   "2284676": {
     "cover": "https://i.discogs.com/wpK1F9FJdo7BOn9Y9QYlUuJktWUZKJZBzHd6U6MKVzU/rs:fit/g:sm/q:90/h:573/w:578/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODQ2/NzYtMTI3NDQwNzgy/Ny5qcGVn.jpeg",
@@ -10916,7 +10931,9 @@
         "title": "One O'Clock Jump",
         "duration": "7:40"
       }
-    ]
+    ],
+    "originalYear": 1975,
+    "genreSource": "master"
   },
   "2343062": {
     "cover": "https://i.discogs.com/0Rv-3-yOV8esy1znzH7IcBv5u8d2PZI8BQCPu2yr65Y/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNDMw/NjItMTM3OTcwMjcz/My03NDI2LmpwZWc.jpeg",
@@ -11873,7 +11890,9 @@
         "title": "I Found A True Love",
         "duration": "2:22"
       }
-    ]
+    ],
+    "originalYear": 1971,
+    "genreSource": "master"
   },
   "2622872": {
     "cover": "https://i.discogs.com/k2T0EnPt1Gkm_3kQ4eP9kOGS6OUelbYH2QUREUAvlkI/rs:fit/g:sm/q:90/h:451/w:449/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MjI4/NzItMTI5Mzc2MzUy/MC5qcGVn.jpeg",
@@ -13491,13 +13510,10 @@
     "cover": "https://i.discogs.com/4MjZ5DHONSAM7dYCCzED_qAUo3Wp_OKwcRimDP6P940/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNTc3/NjktMTMzMDIxMTc5/My5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/MJSShE1vHKQuIfyJgr39bLyyamfDOjIJe3ceqG3zuNE/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNTc3/NjktMTMzMDIxMTc5/My5qcGVn.jpeg",
     "genres": [
-      "Jazz",
-      "Funk / Soul"
+      "Jazz"
     ],
     "styles": [
-      "Soul-Jazz",
-      "Rhythm & Blues",
-      "Cool Jazz"
+      "Soul-Jazz"
     ],
     "country": "US",
     "tracklist": [
@@ -13526,7 +13542,9 @@
         "title": "Deed I Do",
         "duration": "5:49"
       }
-    ]
+    ],
+    "originalYear": 1958,
+    "genreSource": "master"
   },
   "3185234": {
     "cover": "https://i.discogs.com/a6cZ7WuT9Jlg9kDZ-DjPEEEIYwsPxIKgGptcV7KfWzU/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxODUy/MzQtMTYxNzAzODI1/Ny0yOTAzLmpwZWc.jpeg",
@@ -17973,8 +17991,8 @@
       "Electronic"
     ],
     "styles": [
-      "Electro",
-      "Abstract"
+      "Abstract",
+      "Electro"
     ],
     "country": "UK",
     "tracklist": [
@@ -18013,7 +18031,9 @@
         "title": "Hidden Xs",
         "duration": "10:13"
       }
-    ]
+    ],
+    "originalYear": 2013,
+    "genreSource": "master"
   },
   "4775059": {
     "cover": "https://i.discogs.com/Aw2YTEhmyQkAw6GuylmX9iFDjav467XDbxbjUjTt7SI/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NzUw/NTktMTM4OTQ0ODIy/My0zNjYzLmpwZWc.jpeg",
@@ -21226,10 +21246,13 @@
     "cover": "https://i.discogs.com/tVn7EhZZz80_A6Zw1gJ8bowQIGDkQ3tu_pl9RMx-ocU/rs:fit/g:sm/q:90/h:349/w:351/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0ODE0/NzgtMTQyMDI4Njk0/NS0yMzAyLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/9m_GPv2cfkwaoHeEEYGNsUyJ9aaSlaS3Mslb2PYkNOQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0ODE0/NzgtMTQyMDI4Njk0/NS0yMzAyLmpwZWc.jpeg",
     "genres": [
-      "Jazz"
+      "Jazz",
+      "Pop"
     ],
     "styles": [
-      "Swing"
+      "Swing",
+      "Ballad",
+      "Vocal"
     ],
     "country": "Japan",
     "tracklist": [
@@ -21288,7 +21311,9 @@
         "title": "Lover Come Back To Me",
         "duration": "1:41"
       }
-    ]
+    ],
+    "originalYear": 1986,
+    "genreSource": "master"
   },
   "6494315": {
     "cover": "https://i.discogs.com/4iQ0fDhq8RPuoiyiwlbIOKVGePOWuDTeXiYItuJvilU/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0OTQz/MTUtMTY3MDc2NTUy/NS00MzgxLmpwZWc.jpeg",
@@ -21979,7 +22004,9 @@
         "title": "Brash",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1955,
+    "genreSource": "master"
   },
   "7021033": {
     "cover": "https://i.discogs.com/aldMAM1_M8AG1U3nTBvCMwgZl0JJfkyKMjXcCZBN8vY/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwMjEw/MzMtMTU4NTg0ODk3/NC00ODg0LmpwZWc.jpeg",
@@ -22378,7 +22405,9 @@
         "title": "Would'n You (Alternate Master)",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1955,
+    "genreSource": "master"
   },
   "7253362": {
     "cover": "https://i.discogs.com/6Q9ku7DripRIwozYn2Kyjpae87bjCJBOX4w1Umbqei0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNTMz/NjItMTQ1ODE2Nzk0/OC00ODg5LmpwZWc.jpeg",
@@ -24326,7 +24355,9 @@
         "title": "Kinky Hypocrite",
         "duration": "3:15"
       }
-    ]
+    ],
+    "originalYear": 2016,
+    "genreSource": "master"
   },
   "9143679": {
     "cover": "https://i.discogs.com/eseq97lA6WNcdBFtM4EVrCVIYaTBzdt1AP4bpdutux8/rs:fit/g:sm/q:90/h:600/w:586/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxNDM2/NzktMTUwMTI4NjM4/OC03NTk0LmpwZWc.jpeg",
