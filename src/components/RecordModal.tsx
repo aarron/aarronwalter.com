@@ -183,6 +183,9 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
           <h2 className="rm-title">{record.title}</h2>
           <p className="rm-artist">{record.artist}</p>
           <RatingStars rating={record.rating} onRate={onRate} size="large" />
+          {tags.length > 0 && (
+            <div className="rm-tags">{tags.map(t => <span key={t}>{t}</span>)}</div>
+          )}
 
           {meta.tracklist && meta.tracklist.length > 0 && (
             <SpotifyTracklist releaseId={record.releaseId} albumId={meta.spotifyAlbumId} tracklist={meta.tracklist} onPlayingChange={setPlaying} />
@@ -216,10 +219,6 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
               </ul>
             </section>
           ))}
-
-          {tags.length > 0 && (
-            <div className="rm-tags">{tags.map(t => <span key={t}>{t}</span>)}</div>
-          )}
 
           {details?.notes && (
             <details className="rm-notes">

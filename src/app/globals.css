@@ -3844,7 +3844,7 @@ body {
 }
 .rm-now-playing iframe { display: block; border: 0; }
 
-.rm-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 2rem; }
+.rm-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
 .rm-tags span {
   font-size: 0.6875rem;
   letter-spacing: 0.04em;
