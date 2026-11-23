@@ -86,7 +86,7 @@ export default function ActivityGrid({ days, names }: Props) {
         <svg className="activity-grid" viewBox={`0 0 ${W} ${H}`} style={{ minWidth: W * 0.8 }} role="img"
           aria-label={`${stats.total} commits over the past year`} onMouseLeave={() => setTip(null)}>
           {months.map(m => <text key={m.x} x={m.x} y={12}>{m.label}</text>)}
-          {['Mon', 'Wed', 'Fri'].map((t, i) => <text key={t} x={0} y={TOP + (i * 2 + 1) * STEP + CELL - 2}>{t}</text>)}
+          {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map((t, i) => <text key={t} x={0} y={TOP + i * STEP + CELL - 3}>{t}</text>)}
           {days.map((d, i) => (
             <rect
               key={d[0]}
