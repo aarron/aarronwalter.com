@@ -8,7 +8,7 @@
  * Requires DISCOGS_TOKEN in your environment (or .env.local).
  * Authenticated rate limit: 60 req/min → we use a 1100ms delay to stay safe.
  */
-import { writeFileSync, readFileSync, existsSync } from 'fs'
+import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 // @ts-ignore
@@ -16,6 +16,10 @@ import { records } from '../src/data/records.ts'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const OUT = join(__dirname, '../src/data/record-covers.json')
+// Per-record pressing details and credits, loaded by the Listening modal on demand.
+const DETAILS_DIR = join(__dirname, '../public/data/records')
+mkdirSync(DETAILS_DIR, { recursive: true })
+const detailsPath = (id: number) => join(DETAILS_DIR, `${id}.json`)
 
 // Load .env.local if present
 try {
@@ -44,6 +48,67 @@ export interface RecordCoverData {
   styles?:   string[]
   country?:  string
   tracklist?: { position: string; title: string; duration: string }[]
+  // Year the album was first released (from its Discogs master). null when the
+  // release has no master; undefined in entries cached before this field existed.
+  originalYear?: number | null
+  // Where genres and styles came from: the album's Discogs master (preferred,
+  // because it describes the album rather than one pressing) or the release.
+  genreSource?: 'master' | 'release'
+}
+
+interface Credit { name: string; role: string; tracks?: string }
+
+export interface RecordDetails {
+  released?: string                     // this pressing's release date, as Discogs formats it
+  country?: string
+  labels: { name: string; catno: string }[]
+  formats: { name: string; qty: string; descriptions: string[]; text?: string }[]
+  companies: { name: string; role: string }[]   // pressed by, recorded at, mastered at…
+  identifiers: { type: string; value: string; description?: string }[]
+  credits: Credit[]                     // album and per-track credits, merged
+  notes?: string
+  images: { uri: string; width: number; height: number; type: string }[]
+  masterUrl?: string
+}
+
+// Discogs names carry a numeric suffix to tell apart artists with the same name.
+const clean = (name: string) => name.replace(/ \(\d+\)$/, '')
+
+// Discogs notes use link markup such as [r12345], [m678] or [a=Name].
+const cleanNotes = (notes?: string) => notes
+  ?.replace(/\[(?:a|l|r|m)=([^\]]+)\]/g, '$1')
+  .replace(/\[(?:r|m|a|l)\d+\]/g, '(another Discogs entry)')
+  .replace(/\[url=[^\]]+\]([^\[]*)\[\/url\]/g, '$1')
+  .replace(/\[\/?[bi]\]/g, '')
+  .trim() || undefined
+
+function buildDetails(data: any, masterId?: number): RecordDetails {
+  const credits: Credit[] = (data.extraartists ?? []).map((c: any) => ({
+    name: clean(c.anv || c.name), role: c.role, ...(c.tracks ? { tracks: c.tracks } : {}),
+  }))
+  for (const t of data.tracklist ?? []) {
+    for (const c of t.extraartists ?? []) {
+      credits.push({ name: clean(c.anv || c.name), role: c.role, tracks: t.position })
+    }
+  }
+  return {
+    released:    data.released_formatted ?? data.released,
+    country:     data.country,
+    labels:      (data.labels ?? []).map((l: any) => ({ name: clean(l.name), catno: l.catno })),
+    formats:     (data.formats ?? []).map((f: any) => ({
+      name: f.name, qty: f.qty, descriptions: f.descriptions ?? [], ...(f.text ? { text: f.text } : {}),
+    })),
+    companies:   (data.companies ?? []).map((c: any) => ({ name: clean(c.name), role: c.entity_type_name })),
+    identifiers: (data.identifiers ?? []).map((i: any) => ({
+      type: i.type, value: i.value, ...(i.description ? { description: i.description } : {}),
+    })),
+    credits,
+    notes:       cleanNotes(data.notes),
+    images:      (data.images ?? []).slice(0, 10).map((i: any) => ({
+      uri: i.uri, width: i.width, height: i.height, type: i.type,
+    })),
+    ...(masterId ? { masterUrl: `https://www.discogs.com/master/${masterId}` } : {}),
+  }
 }
 
 // Load existing cache — only re-fetch missing entries
@@ -73,24 +138,55 @@ async function fetchRelease(releaseId: number): Promise<RecordCoverData | null> 
       console.warn(`  HTTP ${res.status} for release ${releaseId}`)
       return null
     }
-    const data = await res.json() as {
+    const raw = await res.json()
+    writeFileSync(detailsPath(releaseId), JSON.stringify(buildDetails(raw, raw.master_id)))
+    const data = raw as {
       images?: { uri: string; thumb: string }[]
       thumb?: string
       genres?: string[]
       styles?: string[]
       country?: string
       tracklist?: { position: string; title: string; duration: string }[]
+      master_id?: number
+      year?: number
+    }
+    let originalYear: number | null = data.year || null
+    let genres = data.genres ?? []
+    let styles = data.styles ?? []
+    let genreSource: 'master' | 'release' = 'release'
+    if (data.master_id) {
+      await sleep(DELAY_MS)
+      const m = await fetch(`https://api.discogs.com/masters/${data.master_id}`, {
+        headers,
+        signal: AbortSignal.timeout(TIMEOUT_MS),
+      })
+      if (m.status === 429) {
+        console.warn(`  rate limited — waiting 60s`)
+        await sleep(60_000)
+        return fetchRelease(releaseId)  // retry
+      }
+      if (m.ok) {
+        const master = await m.json() as { year?: number; genres?: string[]; styles?: string[] }
+        if (master.year) originalYear = master.year
+        if (master.genres?.length) {
+          genres = master.genres
+          styles = master.styles ?? []
+          genreSource = 'master'
+        }
+      }
     }
     return {
       cover:     data.images?.[0]?.uri ?? null,
       thumb:     data.images?.[0]?.thumb ?? data.thumb ?? null,
-      genres:    data.genres ?? [],
-      styles:    data.styles ?? [],
+      genres,
+      styles,
       country:   data.country,
       tracklist: (data.tracklist ?? [])
         .filter(t => t.title)
         .slice(0, 20)
         .map(t => ({ position: t.position ?? '', title: t.title, duration: t.duration ?? '' })),
+      originalYear,
+      genreSource,
     }
   } catch (err) {
     console.warn(`  fetch error for ${releaseId}:`, err)
@@ -101,7 +197,7 @@ async function fetchRelease(releaseId: number): Promise<RecordCoverData | null> 
 async function main() {
   const out: Record<string, RecordCoverData> = { ...existing }
   const todo = records.filter((r: { releaseId: number | null }) =>
-    r.releaseId && !existing[String(r.releaseId)]
+    r.releaseId && (!existing[String(r.releaseId)] || existing[String(r.releaseId)].genreSource === undefined || !existsSync(detailsPath(r.releaseId)))
   )
 
   console.log(`${records.length} total records — ${todo.length} to fetch, ${Object.keys(existing).length} cached`)

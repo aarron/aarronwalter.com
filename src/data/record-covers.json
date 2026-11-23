@@ -990,8 +990,8 @@
       "Jazz"
     ],
     "styles": [
-      "Post Bop",
-      "Modal"
+      "Bop",
+      "Cool Jazz"
     ],
     "country": "US",
     "tracklist": [
@@ -1035,7 +1035,9 @@
         "title": "What's New",
         "duration": "3:43"
       }
-    ]
+    ],
+    "originalYear": 1958,
+    "genreSource": "master"
   },
   "377554": {
     "cover": "https://i.discogs.com/OlMMNhXcbrNgsBWwJDs-c8CleqjbHZcvJSKFtBGpqZE/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM3NzU1/NC0xNzQxNjM5OTg4/LTY1MTAuanBlZw.jpeg",
@@ -1108,7 +1110,9 @@
         "title": "Get Back",
         "duration": "3:09"
       }
-    ]
+    ],
+    "originalYear": 1970,
+    "genreSource": "master"
   },
   "385654": {
     "cover": "https://i.discogs.com/c0EPWGkYgsnxpU4PFYcXgGbB1OHJh276J2Ruv2kW6Bc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NTY1/NC0xMzM4NDE4NjMz/LTIzOTkuanBlZw.jpeg",
@@ -1793,7 +1797,6 @@
       "Rock"
     ],
     "styles": [
-      "Alternative Rock",
       "New Wave"
     ],
     "country": "US",
@@ -1853,7 +1856,9 @@
         "title": "The Other Way Of Stopping",
         "duration": "3:21"
       }
-    ]
+    ],
+    "originalYear": 1980,
+    "genreSource": "master"
   },
   "444877": {
     "cover": "https://i.discogs.com/y383uvzUkW3q1iwfqzM_ZpGRfL8gsKUTGinEVX3Tlfs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0NDg3/Ny0xMzUxNzExMjY0/LTQ1ODkuanBlZw.jpeg",
@@ -5511,7 +5516,9 @@
         "title": "She's So Good To Me",
         "duration": "2:15"
       }
-    ]
+    ],
+    "originalYear": 1966,
+    "genreSource": "master"
   },
   "1191109": {
     "cover": "https://i.discogs.com/KWomXLjfnj0T4YsJfYX_2UVMQtILJbMO3uyOhbAVF0k/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExOTEx/MDktMTQ1OTE5NzQ4/NS03NDgxLmpwZWc.jpeg",
@@ -5705,7 +5712,9 @@
         "title": "I'm Movin' On",
         "duration": "2:13"
       }
-    ]
+    ],
+    "originalYear": 1961,
+    "genreSource": "master"
   },
   "1218116": {
     "cover": "https://i.discogs.com/oKnmKCmHXhM7sBwMbOcV6h6pKsYDtQkJ44DDYJI1QCs/rs:fit/g:sm/q:90/h:550/w:550/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMTgx/MTYtMTIwMTQ3ODE4/MC5qcGVn.jpeg",
@@ -6001,7 +6010,8 @@
       "Funk / Soul"
     ],
     "styles": [
-      "Rhythm & Blues"
+      "Rhythm & Blues",
+      "Soul"
     ],
     "country": "US",
     "tracklist": [
@@ -6065,7 +6075,9 @@
         "title": "You've Got A Problem",
         "duration": "3:24"
       }
-    ]
+    ],
+    "originalYear": 1966,
+    "genreSource": "master"
   },
   "1242250": {
     "cover": "https://i.discogs.com/l4tDrRMiPT5QQAa59ufRvX_5Isyruskv7rJXKaczhws/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDIy/NTAtMTQ4MjQzNzUz/My03NzA2LmpwZWc.jpeg",
@@ -6449,11 +6461,9 @@
     "cover": "https://i.discogs.com/x8y7G1kmPCA6NIJE8AGw9drO5olcNP7nJSxuf4l3lHo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTQ0/MDQtMTI0ODQ2MTEw/NS5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/EK8oLS6yCfq2zcBg84ddn3tn2ww3NDH4_Ky-n6-5AZw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTQ0/MDQtMTI0ODQ2MTEw/NS5qcGVn.jpeg",
     "genres": [
-      "Rock",
-      "Pop"
+      "Rock"
     ],
     "styles": [
-      "Rock & Roll",
       "Pop Rock",
       "Psychedelic Rock"
     ],
@@ -6559,7 +6569,9 @@
         "title": "The Ballad Of John & Yoko",
         "duration": "2:58"
       }
-    ]
+    ],
+    "originalYear": 1973,
+    "genreSource": "master"
   },
   "1319801": {
     "cover": "https://i.discogs.com/s0HPjd0CxMVlJtLUKZXSxwh94-lrGTvMCN52R-3OlSs/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTk4/MDEtMTY5OTA3NjI4/My00NTI5LmpwZWc.jpeg",
@@ -7362,12 +7374,11 @@
     "cover": "https://i.discogs.com/gOfsu0ld4NfpUoE9c5qO3-Uqx-mWjTv-YGud-LyTUFI/rs:fit/g:sm/q:90/h:464/w:465/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MzY0/NDUtMTIzMzY5Nzgx/Ny5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/4zlNs4yfuqu23zZf0TSE_zd3GzDmpPpqaGDDwIKl0_0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MzY0/NDUtMTIzMzY5Nzgx/Ny5qcGVn.jpeg",
     "genres": [
-      "Rock",
-      "Pop"
+      "Rock"
     ],
     "styles": [
-      "Psychedelic Rock",
-      "Pop Rock"
+      "Pop Rock",
+      "Experimental"
     ],
     "country": "US",
     "tracklist": [
@@ -7471,7 +7482,9 @@
         "title": "Mother Nature's Son",
         "duration": "2:46"
       }
-    ]
+    ],
+    "originalYear": 1968,
+    "genreSource": "master"
   },
   "1444504": {
     "cover": "https://i.discogs.com/S7JburRiB0g3v1my3CvJJSwQmPe12guh-3VP0Ip-zeU/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NDQ1/MDQtMTU2NDUxMzUx/OS00MDgxLmpwZWc.jpeg",
@@ -8391,7 +8404,9 @@
         "title": "Darkness",
         "duration": "3:11"
       }
-    ]
+    ],
+    "originalYear": 1981,
+    "genreSource": "master"
   },
   "1619880": {
     "cover": "https://i.discogs.com/Ziee56mPj4dF878OkWV_MBH7e4_2fOmfHj_7hmeRHDs/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MTk4/ODAtMTI3MzI3MzY4/Ny5qcGVn.jpeg",
@@ -8464,7 +8479,9 @@
         "title": "Delfonics Theme",
         "duration": "4:15"
       }
-    ]
+    ],
+    "originalYear": 1984,
+    "genreSource": "master"
   },
   "1688007": {
     "cover": "https://i.discogs.com/Dcn8UWOB_BofgnJW0E2R_wz6CekhcwWC3J8Z-aDmDxg/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODgw/MDctMTMzNjk2ODc4/MC02MzMxLmpwZWc.jpeg",
@@ -8864,7 +8881,9 @@
         "title": "I Don't Know What It Is You Got",
         "duration": "2:31"
       }
-    ]
+    ],
+    "originalYear": 1985,
+    "genreSource": "master"
   },
   "1874253": {
     "cover": "https://i.discogs.com/Ko0PmM0LTv-X1yntH9WL_M3mwrBxt0nECy6OpsNSV2s/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4NzQy/NTMtMTU4ODE3NzA1/MS0zMzkwLmpwZWc.jpeg",
@@ -9553,7 +9572,9 @@
         "title": "Music's My Life",
         "duration": "3:58"
       }
-    ]
+    ],
+    "originalYear": 1972,
+    "genreSource": "master"
   },
   "2062742": {
     "cover": "https://i.discogs.com/w8PZ8uvgodVQa4WsKztQQFBqlpLbo61HBisABjvgVf8/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNjI3/NDItMTM4NTc2NTU5/MS0yMTQ0LmpwZWc.jpeg",
@@ -9778,7 +9799,9 @@
         "title": "Our Delight",
         "duration": "4:50"
       }
-    ]
+    ],
+    "originalYear": 1959,
+    "genreSource": "master"
   },
   "2096091": {
     "cover": "https://i.discogs.com/NEC90BD-2L0hISwh92OassULKcRDnFNabppmKInnS-Y/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwOTYw/OTEtMTI4NzkwNjY1/NC5qcGVn.jpeg",
@@ -10603,7 +10626,9 @@
         "title": "One Mint Julep",
         "duration": "3:02"
       }
-    ]
+    ],
+    "originalYear": 1962,
+    "genreSource": "master"
   },
   "2269095": {
     "cover": "https://i.discogs.com/7lKKy-NbTHskC54MJZkJFMWvWbnc2mvKKsVwX8-BP7o/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNjkw/OTUtMTU5NTU5ODk5/OS01MjgzLmpwZWc.jpeg",
@@ -11199,7 +11224,9 @@
         "title": "That's All",
         "duration": "2:29"
       }
-    ]
+    ],
+    "originalYear": 1958,
+    "genreSource": "master"
   },
   "2483952": {
     "cover": "https://i.discogs.com/YS_EujYapcQxx6WKJqovQBfv34E9k0dh9yCJacDmFCw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0ODM5/NTItMTMyNjI1NTEy/NS5qcGVn.jpeg",
@@ -11275,8 +11302,7 @@
     "cover": "https://i.discogs.com/cbf37J_Xnkf1zITpO_To5UDxU-jPoGMgN6xGd-gTbL8/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0OTg4/MDctMTQyNTI3OTI5/Ni0xMjM1LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/qIMnIUeLe6EN6b6_TmmyqdwQ1vucBfCEGvr9ODxryUY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0OTg4/MDctMTQyNTI3OTI5/Ni0xMjM1LmpwZWc.jpeg",
     "genres": [
-      "Rock",
-      "Pop"
+      "Rock"
     ],
     "styles": [
       "Pop Rock"
@@ -11368,7 +11394,9 @@
         "title": "Her Majesty",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1969,
+    "genreSource": "master"
   },
   "2537141": {
     "cover": "https://i.discogs.com/nRNYWZVgWe7XiBVLP_TAJpUGCs2Pd5x7tD-o_9QFHY0/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1Mzcx/NDEtMTY2OTMwNjY3/NS02ODYxLmpwZWc.jpeg",
@@ -12387,7 +12415,9 @@
         "title": "Leave My Woman Alone",
         "duration": "2:36"
       }
-    ]
+    ],
+    "originalYear": 1958,
+    "genreSource": "master"
   },
   "2741824": {
     "cover": "https://i.discogs.com/Rn3Q3h1EYXuy6Ix8lS-cqH3R0cCV1VrjQ13QndsbAUY/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3NDE4/MjQtMTUyMzgxNTA3/NC01ODA0LmpwZWc.jpeg",
@@ -12943,12 +12973,13 @@
     "cover": "https://i.discogs.com/MKdWRLZPBzmDywMhysblDDqPkFny9Bl16GmsbHyHQ7M/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMDMx/MTctMTM4NjUxNTk1/NC0zNjgwLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/5Nu7PfJX_bRj9CXfnrUT-4n4JwSP-F78eCcIPBqk8Zg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMDMx/MTctMTM4NjUxNTk1/NC0zNjgwLmpwZWc.jpeg",
     "genres": [
+      "Rock",
       "Funk / Soul",
       "Pop"
     ],
     "styles": [
+      "Pop Rock",
       "Soul",
-      "Vocal",
       "Holiday"
     ],
     "country": "US",
@@ -13018,7 +13049,9 @@
         "title": "Silent Night",
         "duration": "2:08"
       }
-    ]
+    ],
+    "originalYear": 1963,
+    "genreSource": "master"
   },
   "3030024": {
     "cover": "https://i.discogs.com/h7Fcy9tQDqfDFq3px9sqc4FtgggEDUI-5X28HeGJ0oQ/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMzAw/MjQtMTQzMjMwNDIz/OC0xNDIxLmpwZWc.jpeg",
@@ -14389,7 +14422,9 @@
         "title": "I'm A Tellin' You",
         "duration": "2:41"
       }
-    ]
+    ],
+    "originalYear": 1966,
+    "genreSource": "master"
   },
   "3531333": {
     "cover": "https://i.discogs.com/cZGjggN1K857H8Z_G6RIyQvICIDMa8qSCXEyVlDFjKQ/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1MzEz/MzMtMTY1OTk5NDc1/Mi02ODYzLmpwZWc.jpeg",
@@ -14656,7 +14691,7 @@
       },
       {
         "position": "A2",
-        "title": "Wegne´Nda M´Banda",
+        "title": "Wegne'Nda M'Banda",
         "duration": "3:17"
       },
       {
@@ -14729,7 +14764,9 @@
         "title": "Adiza Claire",
         "duration": "6:09"
       }
-    ]
+    ],
+    "originalYear": 2012,
+    "genreSource": "master"
   },
   "3606693": {
     "cover": "https://i.discogs.com/eBH9MHHmWWlxT9qe4tCeFVuoMY0CrZc_yiShH1SY4Uw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MDY2/OTMtMTU0MDA3MTM1/NC0yMTA1LmpwZWc.jpeg",
@@ -14810,7 +14847,8 @@
     ],
     "styles": [
       "Country Blues",
-      "Delta Blues"
+      "Delta Blues",
+      "Hill Country Blues"
     ],
     "country": "US",
     "tracklist": [
@@ -14874,7 +14912,9 @@
         "title": "I Wish I Was In Heaven Sittin' Down",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1966,
+    "genreSource": "master"
   },
   "3657906": {
     "cover": "https://i.discogs.com/jL6Xy4hrNHimBsI79K61ystxzig8Z355k6y0k0NBaUY/rs:fit/g:sm/q:90/h:318/w:318/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NTc5/MDYtMTM4MDMxODgx/My0zMjAwLmpwZWc.jpeg",
@@ -17484,7 +17524,10 @@
     "genres": [
       "Hip Hop"
     ],
-    "styles": [],
+    "styles": [
+      "Boom Bap",
+      "Conscious"
+    ],
     "country": "US",
     "tracklist": [
       {
@@ -17587,7 +17630,9 @@
         "title": "My Melody (Dub)",
         "duration": "6:30"
       }
-    ]
+    ],
+    "originalYear": 1987,
+    "genreSource": "master"
   },
   "4709425": {
     "cover": "https://i.discogs.com/KnIbs0pOg4dEgi-8BSxeAg9baPuuGGVq_YBgmV2JAus/rs:fit/g:sm/q:90/h:219/w:216/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3MDk0/MjUtMTM3Mjk2NjMx/Ni02MzQ5LmpwZWc.jpeg",
@@ -17862,10 +17907,7 @@
     "genres": [
       "Jazz"
     ],
-    "styles": [
-      "Soul-Jazz",
-      "Hard Bop"
-    ],
+    "styles": [],
     "country": "US",
     "tracklist": [
       {
@@ -17913,7 +17955,9 @@
         "title": "The Turfer",
         "duration": "3:33"
       }
-    ]
+    ],
+    "originalYear": 1967,
+    "genreSource": "master"
   },
   "4748480": {
     "cover": "https://i.discogs.com/zn31-LWvui9WeqgfbDeBsBMQ0yVaEmHtnUF4KCpkXac/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NDg0/ODAtMTYwNDQ1Njkz/Mi01MDAzLmpwZWc.jpeg",
@@ -18424,7 +18468,9 @@
         "title": "I Got A Woman",
         "duration": "2:48"
       }
-    ]
+    ],
+    "originalYear": 1957,
+    "genreSource": "master"
   },
   "4896252": {
     "cover": "https://i.discogs.com/_GxfozNi0vhfN1FwykpiawU6jxXzNxWmBTshzFPLmYY/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4OTYy/NTItMTQwNzYzNjg5/Ni04MzU2LmpwZWc.jpeg",
@@ -19093,15 +19139,11 @@
     "cover": "https://i.discogs.com/bNXvtAcdtoUf7xktr3gNbqG3oqFiONLks7A53_Y3UE4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzMzY4/OTgtMTUxOTY1MzI3/NC02NTE3LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/26aiiWkNp-eIXuT_LhULZ8CRJN_TKc7A1TnXJeWxyjU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzMzY4/OTgtMTUxOTY1MzI3/NC02NTE3LmpwZWc.jpeg",
     "genres": [
-      "Blues",
-      "Non-Music",
-      "Folk, World, & Country"
+      "Blues"
     ],
     "styles": [
-      "Delta Blues",
-      "Spoken Word",
-      "Folk",
-      "Gospel"
+      "Country Blues",
+      "Delta Blues"
     ],
     "country": "US",
     "tracklist": [
@@ -19150,7 +19192,9 @@
         "title": "Jesus Is On The Mainline",
         "duration": "3:38"
       }
-    ]
+    ],
+    "originalYear": 1969,
+    "genreSource": "master"
   },
   "5350470": {
     "cover": "https://i.discogs.com/UGNbmretPwhLoPtF13sdMqIVkX6D3lrAKLxBh_sanlg/rs:fit/g:sm/q:90/h:311/w:320/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzNTA0/NzAtMTM5MTI4ODU1/Ni01NjMwLmpwZWc.jpeg",
@@ -21676,10 +21720,12 @@
     "cover": "https://i.discogs.com/EISAlSMh9PJAioku7U4iPfEe64BMxNQS6ZX1a8kQCpk/rs:fit/g:sm/q:90/h:470/w:469/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2NDMw/MTUtMTQyMzcwMjc0/MS0zNjk0LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/DBmtCgrpeS3dS25pLEDLBKnhlqxwUHvBef_ZV7MEvcI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2NDMw/MTUtMTQyMzcwMjc0/MS0zNjk0LmpwZWc.jpeg",
     "genres": [
-      "Rock"
+      "Rock",
+      "Pop"
     ],
     "styles": [
-      "Alternative Rock"
+      "New Wave",
+      "Pop Rock"
     ],
     "country": "US",
     "tracklist": [
@@ -21733,7 +21779,9 @@
         "title": "Tea In The Sahara",
         "duration": "4:11"
       }
-    ]
+    ],
+    "originalYear": 1983,
+    "genreSource": "master"
   },
   "6643107": {
     "cover": "https://i.discogs.com/n5KrlVjg-MsFZ_2TnkhPyUXBHrlSHkbH4R4ROy-8Fws/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY2NDMx/MDctMTU5MjU1NjU2/Mi04NDgzLmpwZWc.jpeg",
@@ -22056,7 +22104,9 @@
         "title": "That's All",
         "duration": "3:22"
       }
-    ]
+    ],
+    "originalYear": 1958,
+    "genreSource": "master"
   },
   "7124398": {
     "cover": "https://i.discogs.com/5h-yVFvb_t1wHxY5BInIC2uUTYVhIZVHOPLimgapKLY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxMjQz/OTgtMTQ4NzE1MDg2/NS05MTQzLmpwZWc.jpeg",
@@ -22171,7 +22221,8 @@
         "title": "Patches",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1979
   },
   "7154297": {
     "cover": "https://i.discogs.com/TRXNoaORuec6SXgwNmHcUdl2GeOxnh4BLjFlf6kRj6c/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxNTQy/OTctMTYzMTkyNzEx/MS0yNjA1LmpwZWc.jpeg",
@@ -23004,7 +23055,9 @@
         "title": "Cheek To Cheek",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1966,
+    "genreSource": "master"
   },
   "8049885": {
     "cover": "https://i.discogs.com/Z3rN33bA0Ni5nDfjqgGQWCqT_3x_lJ-Lz5nxbqbeR6k/rs:fit/g:sm/q:90/h:600/w:523/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwNDk4/ODUtMTQ1NDE3ODEz/Mi04ODU3LmpwZWc.jpeg",
@@ -23037,7 +23090,9 @@
         "title": "Love Chant",
         "duration": "14:56"
       }
-    ]
+    ],
+    "originalYear": 1956,
+    "genreSource": "master"
   },
   "8145021": {
     "cover": "https://i.discogs.com/HEaoLckvPTMZ0_HFRicc4q6wiwDhasbgHDEuDeXQjsg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgxNDUw/MjEtMTc2MTk2NTM2/My00MTc3LmpwZWc.jpeg",
@@ -24830,10 +24885,7 @@
     "genres": [
       "Rock"
     ],
-    "styles": [
-      "New Wave",
-      "Pop Rock"
-    ],
+    "styles": [],
     "country": "US",
     "tracklist": [
       {
@@ -24891,7 +24943,9 @@
         "title": "No Time This Time",
         "duration": "3:18"
       }
-    ]
+    ],
+    "originalYear": 1979,
+    "genreSource": "master"
   },
   "11031691": {
     "cover": "https://i.discogs.com/bTKQ0-VW2VNbJ0CheTS_bU80dIBWgzCEj96UJTK76xs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMDMx/NjkxLTE2MzcwNTU3/MjItMzc0Ny5qcGVn.jpeg",

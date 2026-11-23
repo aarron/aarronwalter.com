@@ -18,14 +18,11 @@ const covers = coversJson as Record<string, {
   styles?: string[]
   country?: string | null
   tracklist?: { position: string; title: string; duration: string }[]
+  originalYear?: number | null
 }>
 
-// Sort: 5-star first, then by artist
-const sorted = [...records]
-  .sort((a, b) => {
-    if (b.rating !== a.rating) return b.rating - a.rating
-    return a.artist.localeCompare(b.artist)
-  })
+// Sorting and grouping happen in ListeningGrid so visitors can switch views.
+const withMeta = records
   .map(r => {
     const cached = r.releaseId ? covers[String(r.releaseId)] : undefined
     const meta: RecordMeta = cached
@@ -37,6 +34,7 @@ const sorted = [...records]
           styles:     cached.styles,
           country:    cached.country ?? undefined,
           tracklist:  cached.tracklist,
+          originalYear: cached.originalYear ?? r.released,
           discogsUrl: r.releaseId ? `https://www.discogs.com/release/${r.releaseId}` : undefined,
         }
       : { found: false }
@@ -59,7 +57,7 @@ export default function ListeningPage() {
         </header>
 
         <div className="page-content">
-          <ListeningGrid records={sorted} />
+          <ListeningGrid records={withMeta} />
         </div>
       </article>
 
