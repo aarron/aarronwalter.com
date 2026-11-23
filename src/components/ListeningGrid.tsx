@@ -65,6 +65,12 @@ function SectionTitle({ heading }: { heading: string }) {
   )
 }
 
+// Small inline icons (stroke follows the text colour)
+const iconProps = { width: 14, height: 14, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true }
+const FilterIcon = () => <svg {...iconProps}><path d="M3 5h18l-7 8.5V19l-4 2v-7.5z" /></svg>
+const SortIcon = () => <svg {...iconProps}><path d="M7 4v16M3 8l4-4 4 4M17 20V4M13 16l4 4 4-4" /></svg>
+const SearchIcon = () => <svg {...iconProps}><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+
 export default function ListeningGrid({ records }: Props) {
   const [modal,    setModal]    = useState<{ id: number; nav: number[] } | null>(null)
   const [search,   setSearch]   = useState('')
@@ -193,10 +199,51 @@ export default function ListeningGrid({ records }: Props) {
 
   return (
     <>
-      {/* ── Toolbar: sort and filter menus, search ── */}
+      {/* ── Toolbar: filters (left), search, sort (right) ── */}
       <div className="record-toolbar">
-        <label className="record-menu">
-          <span>Sort</span>
+        <div className="record-filters" role="group" aria-label="Filter records">
+          <span className="record-toolbar-label"><FilterIcon /> Filter</span>
+          <label className={`record-menu${genre ? ' is-set' : ''}`}>
+            <span className="sr-only">Genre</span>
+            <select value={genre ?? ''} onChange={e => setGenre(e.target.value || null)}>
+              <option value="">All genres</option>
+              {availableGenres.map(g => <option key={g} value={g}>{g}</option>)}
+            </select>
+          </label>
+          <label className={`record-menu${ratingFilter !== 'any' ? ' is-set' : ''}`}>
+            <span className="sr-only">Rating</span>
+            <select value={ratingFilter} onChange={e => setRatingFilter(e.target.value as RatingFilter)}>
+              <option value="any">Any rating</option>
+              <option value="5">★★★★★ only</option>
+              <option value="4">★★★★ and up</option>
+              <option value="3">★★★ and up</option>
+              {CAN_RATE && <option value="unrated">Unrated ({unratedCount})</option>}
+            </select>
+          </label>
+          {(genre || ratingFilter !== 'any' || search) && (
+            <button
+              type="button"
+              className="record-clear"
+              onClick={() => { setGenre(null); setRatingFilter('any'); setSearch('') }}
+            >Clear</button>
+          )}
+        </div>
+
+        <label className="record-search-wrap">
+          <SearchIcon />
+          <input
+            type="search"
+            className="record-search"
+            placeholder="Search artist or album…"
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            aria-label="Search records"
+          />
+        </label>
+
+        <label className="record-sort">
+          <SortIcon />
+          <span>Sort by</span>
           <select
             value={sort === 'year' ? (newest ? 'year-new' : 'year-old') : sort}
             onChange={e => {
@@ -212,34 +259,6 @@ export default function ListeningGrid({ records }: Props) {
             <option value="genre">Genre</option>
           </select>
         </label>
-
-        <label className="record-menu">
-          <span>Genre</span>
-          <select value={genre ?? ''} onChange={e => setGenre(e.target.value || null)}>
-            <option value="">All genres</option>
-            {availableGenres.map(g => <option key={g} value={g}>{g}</option>)}
-          </select>
-        </label>
-
-        <label className="record-menu">
-          <span>Rating</span>
-          <select value={ratingFilter} onChange={e => setRatingFilter(e.target.value as RatingFilter)}>
-            <option value="any">Any rating</option>
-            <option value="5">★★★★★ only</option>
-            <option value="4">★★★★ and up</option>
-            <option value="3">★★★ and up</option>
-            {CAN_RATE && <option value="unrated">Unrated ({unratedCount})</option>}
-          </select>
-        </label>
-
-        <input
-          type="search"
-          className="record-search"
-          placeholder="Search artist or album…"
-          value={search}
-          onChange={e => setSearch(e.target.value)}
-          aria-label="Search records"
-        />
       </div>
 
       {CAN_RATE && (
