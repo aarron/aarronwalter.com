@@ -132,9 +132,9 @@ export default function BooksPage() {
         <TestimonialPair
           testimonials={[
             {
-              quote: 'Emotion becomes an unfair advantage for your business.',
+              quote: 'Emotion can be a fuzzy word, but with Aarron Walter\u2019s expertise and insight, you\u2019ll learn how to turn it into an advantage for your business.',
               name: 'Jake Knapp',
-              role: 'Author of Sprint',
+              role: 'New York Times bestselling author of Sprint',
               avatar: '/portfolio/other/jake-knapp.jpg',
             },
             {
@@ -142,6 +142,16 @@ export default function BooksPage() {
               name: 'Julie Zhuo',
               role: 'Author of The Making of a Manager',
               avatar: '/portfolio/other/julie-zhuo.jpg',
+            },
+          ]}
+        />
+
+        <TestimonialPair
+          testimonials={[
+            {
+              quote: 'We\u2019ve seen by now that digital experiences not only delight and empower people, but can also destroy and depress them. Aarron\u2019s reboot addresses these darker concerns while still exhibiting the unfettered optimism he\u2019s brought to the intersection of creative expression and business.',
+              name: 'John Maeda',
+              url: 'https://maedastudio.com/',
             },
           ]}
         />

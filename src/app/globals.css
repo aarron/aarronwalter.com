@@ -2302,6 +2302,36 @@ body {
   padding-top: 0;
 }
 
+.quote-pair--solo {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.quote-pair--solo .pf-testimonial__quote {
+  max-width: 40em;
+}
+
+.quote-pair .pf-testimonial__name a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgb(from var(--pf-cream) r g b / 0.35);
+  text-underline-offset: 0.2em;
+}
+
+.quote-pair .pf-testimonial__name a:hover {
+  text-decoration-color: currentColor;
+}
+
+.pf-testimonial__avatar--initials {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--pf-cream);
+  background: rgb(from var(--pf-cream) r g b / 0.14);
+}
+
 .quote-pair__col {
   padding-right: var(--pf-gap);
 }
