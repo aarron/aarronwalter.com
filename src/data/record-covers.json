@@ -6555,111 +6555,6 @@
       }
     ]
   },
-  "1297607": {
-    "cover": "https://i.discogs.com/1DxnDeKaaWNWoP2c2nFV8inD7S4-YNzLywCjG9Xw1Nc/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTc2/MDctMTI3MzI2MTkw/My5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/EKFSUrUKWHxp5V2bo5qLoiWxhk1oPPX8d4neFKFddRY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTc2/MDctMTI3MzI2MTkw/My5qcGVn.jpeg",
-    "genres": [
-      "Rock"
-    ],
-    "styles": [
-      "Blues Rock",
-      "Rock & Roll",
-      "Country Rock"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Rocks Off",
-        "duration": "4:33"
-      },
-      {
-        "position": "A2",
-        "title": "Rip This Joint",
-        "duration": "2:24"
-      },
-      {
-        "position": "A3",
-        "title": "Shake Your Hips",
-        "duration": "2:58"
-      },
-      {
-        "position": "A4",
-        "title": "Casino Boogie",
-        "duration": "3:30"
-      },
-      {
-        "position": "A5",
-        "title": "Tumbling Dice",
-        "duration": "3:30"
-      },
-      {
-        "position": "B1",
-        "title": "Sweet Virginia",
-        "duration": "4:25"
-      },
-      {
-        "position": "B2",
-        "title": "Torn And Frayed",
-        "duration": "3:40"
-      },
-      {
-        "position": "B3",
-        "title": "Sweet Black Angel",
-        "duration": "3:05"
-      },
-      {
-        "position": "B4",
-        "title": "Loving Cup",
-        "duration": "4:22"
-      },
-      {
-        "position": "C1",
-        "title": "Happy",
-        "duration": "3:00"
-      },
-      {
-        "position": "C2",
-        "title": "Turd On The Run",
-        "duration": "2:33"
-      },
-      {
-        "position": "C3",
-        "title": "Ventilator Blues",
-        "duration": "3:20"
-      },
-      {
-        "position": "C4",
-        "title": "I Just Want To See His Face",
-        "duration": "3:15"
-      },
-      {
-        "position": "C5",
-        "title": "Let It Loose",
-        "duration": "5:17"
-      },
-      {
-        "position": "D1",
-        "title": "All Down The Line",
-        "duration": "3:50"
-      },
-      {
-        "position": "D2",
-        "title": "Stop Breaking Down",
-        "duration": "4:34"
-      },
-      {
-        "position": "D3",
-        "title": "Shine A Light",
-        "duration": "4:15"
-      },
-      {
-        "position": "D4",
-        "title": "Soul Survivor",
-        "duration": "3:50"
-      }
-    ]
-  },
   "1319801": {
     "cover": "https://i.discogs.com/s0HPjd0CxMVlJtLUKZXSxwh94-lrGTvMCN52R-3OlSs/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTk4/MDEtMTY5OTA3NjI4/My00NTI5LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/HzMHwYSURq7Q1oGtSmRInkBJ3vYiBBkQkDukx1CXq9U/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTk4/MDEtMTY5OTA3NjI4/My00NTI5LmpwZWc.jpeg",
@@ -16586,6 +16481,110 @@
         "position": "D2",
         "title": "You're Just A No Account",
         "duration": "2:56"
+      }
+    ]
+  },
+  "4537620": {
+    "cover": "https://i.discogs.com/Yb2rZvqD-r-u9lSfbmgTwvaNX4yHrKa2O8WaBZEzB9o/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Mzc2/MjAtMTM2ODY0Njgy/Ny0zNzEzLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/aaviLC1CR2QKb22RdL6jL-45Owq2spLlBQIlNSX4mNY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Mzc2/MjAtMTM2ODY0Njgy/Ny0zNzEzLmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Blues Rock",
+      "Classic Rock"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Rocks Off",
+        "duration": "4:33"
+      },
+      {
+        "position": "A2",
+        "title": "Rip This Joint",
+        "duration": "2:24"
+      },
+      {
+        "position": "A3",
+        "title": "Shake Your Hips",
+        "duration": "2:58"
+      },
+      {
+        "position": "A4",
+        "title": "Casino Boogie",
+        "duration": "3:30"
+      },
+      {
+        "position": "A5",
+        "title": "Tumbling Dice",
+        "duration": "3:30"
+      },
+      {
+        "position": "B1",
+        "title": "Sweet Virginia",
+        "duration": "4:25"
+      },
+      {
+        "position": "B2",
+        "title": "Torn And Frayed",
+        "duration": "3:40"
+      },
+      {
+        "position": "B3",
+        "title": "Sweet Black Angel",
+        "duration": "3:05"
+      },
+      {
+        "position": "B4",
+        "title": "Loving Cup",
+        "duration": "4:22"
+      },
+      {
+        "position": "C1",
+        "title": "Happy",
+        "duration": "3:00"
+      },
+      {
+        "position": "C2",
+        "title": "Turd On The Run",
+        "duration": "2:33"
+      },
+      {
+        "position": "C3",
+        "title": "Ventilator Blues",
+        "duration": "3:20"
+      },
+      {
+        "position": "C4",
+        "title": "I Just Want To See His Face",
+        "duration": "3:15"
+      },
+      {
+        "position": "C5",
+        "title": "Let It Loose",
+        "duration": "5:17"
+      },
+      {
+        "position": "D1",
+        "title": "All Down The Line",
+        "duration": "3:50"
+      },
+      {
+        "position": "D2",
+        "title": "Stop Breaking Down",
+        "duration": "4:34"
+      },
+      {
+        "position": "D3",
+        "title": "Shine A Light",
+        "duration": "4:15"
+      },
+      {
+        "position": "D4",
+        "title": "Soul Survivor",
+        "duration": "3:50"
       }
     ]
   },
