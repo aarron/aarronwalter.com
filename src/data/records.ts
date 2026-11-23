@@ -54,7 +54,6 @@ export const records: VinylRecord[] = [
   { artist: 'Sam & Dave', title: 'Soul Men', label: 'Stax', format: 'LP, Album, Stereo', rating: 3, released: 1967, releaseId: 565111 },
   { artist: 'Milt Jackson & Ray Charles', title: 'Soul Brothers', label: 'Atlantic', format: 'LP, Album', rating: 4, released: 1958, releaseId: 3057769 },
   { artist: 'Drive-By Truckers', title: 'American Band', label: 'ATO Records', format: 'LP + 7\", S/Sided + Album', rating: 0, released: 2016, releaseId: 9128247 },
-  { artist: 'Chet Baker Quartet', title: 'Chet Baker Quartet', label: 'Barclay', format: 'LP, Album, Mono', rating: 4, released: 1955, releaseId: 7001747 },
   { artist: 'Billie Holiday', title: 'At Monterey 1958', label: 'Blackhawk Records', format: 'LP, Album, RM', rating: 3, released: 1986, releaseId: 6481478 },
   { artist: 'Stanley Turrentine', title: 'Stanley Turrentine', label: 'Blue Note', format: '2xLP, Comp, Gat', rating: 3, released: 1975, releaseId: 2341292 },
   { artist: 'Eddie Gale', title: 'Eddie Gale\'s Ghetto Music', label: 'Blue Note', format: 'LP, Album, Uni', rating: 2, released: 1968, releaseId: 872192 },
