@@ -93,7 +93,7 @@ export const records: VinylRecord[] = [
   { artist: 'Charles Mingus', title: 'Mingus Ah Um', label: 'Columbia', format: 'LP, Album, Mono', rating: 5, released: 1959, releaseId: 1355742 },
   { artist: 'Miles Davis', title: 'Sketches Of Spain', label: 'Columbia', format: 'LP, Album, Mono', rating: 3, released: 1960, releaseId: 1914353 },
   { artist: 'Bob Dylan', title: 'The Times They Are A-Changin\'', label: 'Columbia', format: 'LP, Album, Mono, Pit', rating: 4, released: 1964, releaseId: 4577604 },
-  { artist: 'Bob Dylan', title: 'Bringing It All Back Home', label: 'Columbia', format: 'LP, Album, Mono, Pit', rating: 5, released: 1965, releaseId: 1376800 },
+  { artist: 'Bob Dylan', title: 'Bringing It All Back Home', label: 'Columbia', format: 'LP, Album, Mono, RP', rating: 5, released: 1965, releaseId: 3355724 },
   { artist: 'Miles Davis', title: 'Kind Of Blue', label: 'Columbia', format: 'LP, Album', rating: 5, released: 1959, releaseId: 1353040 },
   { artist: 'Bob Dylan', title: 'The Freewheelin\' Bob Dylan', label: 'Columbia', format: 'LP, Album', rating: 5, released: 1963, releaseId: 3035991 },
   { artist: 'Bob Dylan', title: 'Another Side Of Bob Dylan', label: 'Columbia', format: 'LP, Album, Pit', rating: 3, released: 1964, releaseId: 1383791 },

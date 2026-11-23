@@ -6929,77 +6929,6 @@
       }
     ]
   },
-  "1376800": {
-    "cover": "https://i.discogs.com/JbpnC07knFzc3BYTs_Hk7PvIIl4V4h7A0wm7pVIOqJE/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNzY4/MDAtMTU2MTE3NzM0/Ny03ODA0LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/3wqPrkwm76_FC7TP01EX_svTNvs5sUmylzDy51_R0D0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNzY4/MDAtMTU2MTE3NzM0/Ny03ODA0LmpwZWc.jpeg",
-    "genres": [
-      "Rock",
-      "Folk, World, & Country"
-    ],
-    "styles": [
-      "Folk Rock",
-      "Folk",
-      "Acoustic"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Subterranean Homesick Blues",
-        "duration": "2:17"
-      },
-      {
-        "position": "A2",
-        "title": "She Belongs To Me",
-        "duration": "2:48"
-      },
-      {
-        "position": "A3",
-        "title": "Maggie's Farm",
-        "duration": "3:51"
-      },
-      {
-        "position": "A4",
-        "title": "Love Minus Zero/No Limit",
-        "duration": "2:47"
-      },
-      {
-        "position": "A5",
-        "title": "Outlaw Blues",
-        "duration": "3:00"
-      },
-      {
-        "position": "A6",
-        "title": "On The Road Again",
-        "duration": "2:30"
-      },
-      {
-        "position": "A7",
-        "title": "Bob Dylan's 115th Dream",
-        "duration": "6:29"
-      },
-      {
-        "position": "B1",
-        "title": "Mr. Tambourine Man",
-        "duration": "5:25"
-      },
-      {
-        "position": "B2",
-        "title": "Gates Of Eden",
-        "duration": "5:42"
-      },
-      {
-        "position": "B3",
-        "title": "It's Alright, Ma (I'm Only Bleeding)",
-        "duration": "7:30"
-      },
-      {
-        "position": "B4",
-        "title": "It's All Over Now, Baby Blue",
-        "duration": "4:13"
-      }
-    ]
-  },
   "1383770": {
     "cover": "https://i.discogs.com/lqIZV0A5H-nFjTqnQTeQrRyWVhr5dC9n0DTjH9LOCTs/rs:fit/g:sm/q:90/h:480/w:480/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODM3/NzAtMTI3ODI1MDQ5/Ny5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/4Kzcw7ExyYfZoIkTFcOd3qS4sk9RfLNRWGL2TYwsGS4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODM3/NzAtMTI3ODI1MDQ5/Ny5qcGVn.jpeg",
@@ -13737,6 +13666,76 @@
         "position": "B4",
         "title": "Desolation Row",
         "duration": "11:18"
+      }
+    ]
+  },
+  "3355724": {
+    "cover": "https://i.discogs.com/hlcXezydvBw_LFKOxI-RdxPHHFQwbhSNAZKdQt4iku0/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNTU3/MjQtMTY3NzY5Nzk0/MC0yMDcyLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/OtfbqAeSaKack2_ToFWXqo6jrUpeyQn7TrmmFDC-nxw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNTU3/MjQtMTY3NzY5Nzk0/MC0yMDcyLmpwZWc.jpeg",
+    "genres": [
+      "Rock",
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Folk",
+      "Folk Rock"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Subterranean Homesick Blues",
+        "duration": "2:17"
+      },
+      {
+        "position": "A2",
+        "title": "She Belongs To Me",
+        "duration": "2:48"
+      },
+      {
+        "position": "A3",
+        "title": "Maggie's Farm",
+        "duration": "3:51"
+      },
+      {
+        "position": "A4",
+        "title": "Love Minus Zero/No Limit",
+        "duration": "2:47"
+      },
+      {
+        "position": "A5",
+        "title": "Outlaw Blues",
+        "duration": "3:00"
+      },
+      {
+        "position": "A6",
+        "title": "On The Road Again",
+        "duration": "2:30"
+      },
+      {
+        "position": "A7",
+        "title": "Bob Dylan's 115th Dream",
+        "duration": "6:29"
+      },
+      {
+        "position": "B1",
+        "title": "Mr. Tambourine Man",
+        "duration": "5:25"
+      },
+      {
+        "position": "B2",
+        "title": "Gates Of Eden",
+        "duration": "5:42"
+      },
+      {
+        "position": "B3",
+        "title": "It's Alright, Ma (I'm Only Bleeding)",
+        "duration": "7:30"
+      },
+      {
+        "position": "B4",
+        "title": "It's All Over Now, Baby Blue",
+        "duration": "4:13"
       }
     ]
   },
