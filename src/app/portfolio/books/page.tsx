@@ -152,6 +152,7 @@ export default function BooksPage() {
               quote: 'We\u2019ve seen by now that digital experiences not only delight and empower people, but can also destroy and depress them. Aarron\u2019s reboot addresses these darker concerns while still exhibiting the unfettered optimism he\u2019s brought to the intersection of creative expression and business.',
               name: 'John Maeda',
               url: 'https://maedastudio.com/',
+              avatar: '/portfolio/other/john-maeda.jpg',
             },
           ]}
         />
