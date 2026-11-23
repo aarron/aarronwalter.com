@@ -5,7 +5,6 @@ import { records } from '@/data/records'
 import type { RecordMeta } from '@/components/RecordCard'
 import coversJson from '@/data/record-covers.json'
 import spotifyJson from '@/data/record-spotify.json'
-import overridesJson from '@/data/record-genre-overrides.json'
 
 const covers = coversJson as Record<string, {
   cover: string | null
@@ -16,15 +15,6 @@ const covers = coversJson as Record<string, {
   tracklist?: { position: string; title: string; duration: string }[]
   originalYear?: number | null
 }>
-
-// Hand corrections to Discogs genres/styles (src/data/record-genre-overrides.json)
-type Override = { removeGenres?: string[]; addGenres?: string[]; removeStyles?: string[]; addStyles?: string[] }
-const overrides = overridesJson as unknown as Record<string, Override>
-function corrected(list: string[] | undefined, remove?: string[], add?: string[]) {
-  const out = (list ?? []).filter(x => !remove?.includes(x))
-  for (const x of add ?? []) if (!out.includes(x)) out.push(x)
-  return out
-}
 
 // Spotify album IDs, matched by scripts/fetch-spotify-albums.ts
 const spotify = spotifyJson as Record<string, { albumId: string } | null>
@@ -63,8 +53,8 @@ export const withMeta = records
           found:      true,
           cover:      cached.cover,
           thumb:      cached.thumb,
-          genres:     corrected(cached.genres, overrides[String(r.releaseId)]?.removeGenres, overrides[String(r.releaseId)]?.addGenres),
-          styles:     corrected(cached.styles, overrides[String(r.releaseId)]?.removeStyles, overrides[String(r.releaseId)]?.addStyles),
+          genres:     cached.genres,
+          styles:     cached.styles,
           country:    cached.country ?? undefined,
           tracklist:  cached.tracklist,
           originalYear: cached.originalYear ?? r.released,
