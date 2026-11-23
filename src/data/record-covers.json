@@ -2092,69 +2092,6 @@
       }
     ]
   },
-  "496426": {
-    "cover": "https://i.discogs.com/38WqB3U65_iIeY0LiepNRqrLN_d-pQ_e8qsngV_hvjU/rs:fit/g:sm/q:90/h:594/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5NjQy/Ni0xMjUwOTgzODYz/LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/JOB25t_dn0UqfNGRwY3gnDGapJIHQtDQTsW8bfzPha4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ5NjQy/Ni0xMjUwOTgzODYz/LmpwZWc.jpeg",
-    "genres": [
-      "Rock"
-    ],
-    "styles": [
-      "Alternative Rock"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Sunday Bloody Sunday",
-        "duration": "4:38"
-      },
-      {
-        "position": "A2",
-        "title": "Seconds",
-        "duration": "3:24"
-      },
-      {
-        "position": "A3",
-        "title": "New Year's Day",
-        "duration": "5:38"
-      },
-      {
-        "position": "A4",
-        "title": "Like A Song...",
-        "duration": "4:48"
-      },
-      {
-        "position": "A5",
-        "title": "Drowning Man",
-        "duration": "4:12"
-      },
-      {
-        "position": "B1",
-        "title": "The Refugee",
-        "duration": "3:40"
-      },
-      {
-        "position": "B2",
-        "title": "Two Hearts Beat As One",
-        "duration": "4:10"
-      },
-      {
-        "position": "B3",
-        "title": "Red Light",
-        "duration": "4:09"
-      },
-      {
-        "position": "B4",
-        "title": "Surrender",
-        "duration": "5:33"
-      },
-      {
-        "position": "B5",
-        "title": "\"40\"",
-        "duration": "2:38"
-      }
-    ]
-  },
   "502902": {
     "cover": "https://i.discogs.com/rB0hB2l5rUhWVIQhpHIBDNv168jqmv5MPdONGF3XCgI/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwMjkw/Mi0xMTkwNTU3Njg0/LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/mAPJeKv3IxfMOdpMwwU672PvU9sPf84keQFAsyzMHsg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwMjkw/Mi0xMTkwNTU3Njg0/LmpwZWc.jpeg",
@@ -17805,6 +17742,71 @@
       }
     ]
   },
+  "4747737": {
+    "cover": "https://i.discogs.com/5mjWGoEDOwkjBhWNgEYWal1yjCGfVtK4f_NLOFuY5Ew/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NDc3/MzctMTQyNDUyNzEz/NS02NTcwLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/PDSnxpPlgFfpEyXK51k7jNUXW99quD9V5khOy4wfGms/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NDc3/MzctMTQyNDUyNzEz/NS02NTcwLmpwZWc.jpeg",
+    "genres": [
+      "Rock",
+      "Pop"
+    ],
+    "styles": [
+      "Alternative Rock",
+      "Post-Punk"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Sunday Bloody Sunday",
+        "duration": "4:38"
+      },
+      {
+        "position": "A2",
+        "title": "Seconds",
+        "duration": "3:24"
+      },
+      {
+        "position": "A3",
+        "title": "New Year's Day",
+        "duration": "5:38"
+      },
+      {
+        "position": "A4",
+        "title": "Like A Song...",
+        "duration": "4:48"
+      },
+      {
+        "position": "A5",
+        "title": "Drowning Man",
+        "duration": "4:12"
+      },
+      {
+        "position": "B1",
+        "title": "The Refugee",
+        "duration": "3:40"
+      },
+      {
+        "position": "B2",
+        "title": "Two Hearts Beat As One",
+        "duration": "5:00"
+      },
+      {
+        "position": "B3",
+        "title": "Red Light",
+        "duration": "4:09"
+      },
+      {
+        "position": "B4",
+        "title": "Surrender",
+        "duration": "6:01"
+      },
+      {
+        "position": "B5",
+        "title": "\"40\"",
+        "duration": "2:08"
+      }
+    ]
+  },
   "4747880": {
     "cover": "https://i.discogs.com/lHK4e6D26ZbgpaPi7tbfDUYWpn9w8gSA2iB93o34ca4/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NDc4/ODAtMTM4NzAzMTg0/Mi0xMjgyLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/nWuBy5QBScXB9jawDgF4JtuPobQBWPq9GNsgFrUvfEo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3NDc4/ODAtMTM4NzAzMTg0/Mi0xMjgyLmpwZWc.jpeg",
@@ -24193,6 +24195,84 @@
         "position": "B3",
         "title": "Fight To Finish!",
         "duration": ""
+      }
+    ]
+  },
+  "9371803": {
+    "cover": "https://i.discogs.com/k8QU-ILKuFuu8LwzJ49gIIhiuQZDSoR-K25hd-z1zkk/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzNzE4/MDMtMTc2MDcyMTY0/OC03MzE4LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/-2imOOgSF3WY20XZ5K-wn3z2fQmZP4ETLvEje4FnRIw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzNzE4/MDMtMTc2MDcyMTY0/OC03MzE4LmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Alternative Rock"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "",
+        "title": "Time Side",
+        "duration": ""
+      },
+      {
+        "position": "A1",
+        "title": "Radio Song",
+        "duration": "4:12"
+      },
+      {
+        "position": "A2",
+        "title": "Losing My Religion",
+        "duration": "4:26"
+      },
+      {
+        "position": "A3",
+        "title": "Low",
+        "duration": "4:55"
+      },
+      {
+        "position": "A4",
+        "title": "Near Wild Heaven",
+        "duration": "3:17"
+      },
+      {
+        "position": "A5",
+        "title": "Endgame",
+        "duration": "3:48"
+      },
+      {
+        "position": "",
+        "title": "Memory Side",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Shiny Happy People",
+        "duration": "3:44"
+      },
+      {
+        "position": "B2",
+        "title": "Belong",
+        "duration": "4:03"
+      },
+      {
+        "position": "B3",
+        "title": "Half A World Away",
+        "duration": "3:26"
+      },
+      {
+        "position": "B4",
+        "title": "Texarkana",
+        "duration": "3:36"
+      },
+      {
+        "position": "B5",
+        "title": "Country Feedback",
+        "duration": "4:07"
+      },
+      {
+        "position": "B6",
+        "title": "Me In Honey",
+        "duration": "4:06"
       }
     ]
   },

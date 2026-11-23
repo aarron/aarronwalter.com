@@ -156,7 +156,7 @@ export const records: VinylRecord[] = [
   { artist: 'Bob Marley & The Wailers', title: 'Catch A Fire', label: 'Island Records', format: 'LP, Album, RP, Pit', rating: 0, released: 1975, releaseId: 636555 },
   { artist: 'Max Romeo & The Upsetters', title: 'War Ina Babylon', label: 'Island Records', format: 'LP, Album, RE, 180', rating: 3, released: 2013, releaseId: 4775059 },
   { artist: 'Various', title: 'The Harder They Come (Original Soundtrack Recording)', label: 'Mango', format: 'LP, Comp', rating: 5, released: 1977, releaseId: 2544067 },
-  { artist: 'U2', title: 'War', label: 'Island Records', format: 'LP, Album, AR', rating: 3, released: 1983, releaseId: 496426 },
+  { artist: 'U2', title: 'War', label: 'Island Records', format: 'LP, Album, SP, Gat', rating: 3, released: 1983, releaseId: 4747737 },
   { artist: 'Kishi Bashi', title: '151a', label: 'Joyful Noise Recordings', format: 'LP, Album, Whi', rating: 4, released: 2012, releaseId: 3479826 },
   { artist: 'Charles Mingus With Hampton Hawes & Dannie Richmond', title: 'Mingus Three', label: 'Jubilee', format: 'LP, Album, Mono, RE', rating: 3, released: 1960, releaseId: 2284676 },
   { artist: 'Professor Longhair', title: 'Rare Recordings', label: 'King Biscuit Records (2)', format: 'LP', rating: 4, released: null, releaseId: 6594580 },
@@ -403,5 +403,6 @@ export const records: VinylRecord[] = [
   { artist: 'Men At Work', title: 'Business As Usual', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1982, releaseId: 587059 },
   { artist: 'Public Enemy', title: 'Fear Of A Black Planet', label: 'Def Jam Recordings', format: 'LP, Album, RE', rating: 4, released: 2014, releaseId: 6398519 },
   { artist: 'Split Enz', title: 'Waiata', label: 'A&M Records', format: 'LP, Album, Stereo', rating: 4, released: 1981, releaseId: 3055220 },
+  { artist: 'R.E.M.', title: 'Out Of Time', label: 'Craft Recordings', format: 'LP, Album, RE, RM', rating: 4, released: 2016, releaseId: 9371803 },
   { artist: 'Glenn Miller And His Orchestra', title: 'Glenn Miller Plays Selections From "The Glenn Miller Story" And Other Hits', label: 'RCA', format: 'LP, Album, RE', rating: 4, released: null, releaseId: 6205175 },
 ]
