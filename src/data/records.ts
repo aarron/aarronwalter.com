@@ -56,7 +56,6 @@ export const records: VinylRecord[] = [
   { artist: 'Drive-By Truckers', title: 'American Band', label: 'ATO Records', format: 'LP + 7\", S/Sided + Album', rating: 4, released: 2016, releaseId: 9128247 },
   { artist: 'Billie Holiday', title: 'At Monterey 1958', label: 'Blackhawk Records', format: 'LP, Album, RM', rating: 3, released: 1986, releaseId: 6481478 },
   { artist: 'Stanley Turrentine', title: 'Stanley Turrentine', label: 'Blue Note', format: '2xLP, Comp, Gat', rating: 3, released: 1975, releaseId: 2341292 },
-  { artist: 'Eddie Gale', title: 'Eddie Gale\'s Ghetto Music', label: 'Blue Note', format: 'LP, Album, Uni', rating: 2, released: 1968, releaseId: 872192 },
   { artist: 'Miles Davis', title: 'Volume 1', label: 'Blue Note', format: 'LP, Comp, Mono, Ltd, RE', rating: 4, released: 1994, releaseId: 7251433 },
   { artist: 'Cannonball Adderley', title: 'Somethin\' Else', label: 'Blue Note', format: 'LP, Album, RE, DMM', rating: 5, released: 1985, releaseId: 399639 },
   { artist: 'Dexter Gordon', title: 'Our Man In Paris', label: 'Blue Note', format: 'LP, Album, Mono, Ltd, RE', rating: 5, released: 2013, releaseId: 6805168 },
