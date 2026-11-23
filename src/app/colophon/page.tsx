@@ -193,7 +193,9 @@ export default function ColophonPage() {
             <p className="pf-label">Under the Hood</p>
             <h2 className="pf-heading">Tech Stack</h2>
             <p className="pf-body">
-              The site is a statically generated Next.js application deployed on Vercel.
+              The site is a Next.js application deployed on Vercel. Most pages are statically
+              generated, and the ones fed by outside services rebuild themselves on a schedule:
+              the feed every hour, the Making page once a day.
             </p>
           </div>
 
@@ -201,7 +203,7 @@ export default function ColophonPage() {
             <div className="colophon-stack-row">
               <dt className="colophon-stack-term">Framework</dt>
               <dd className="colophon-stack-def">
-                <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">Next.js</a> 16 App Router (TypeScript)
+                <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer">Next.js</a> 16 App Router, <a href="https://react.dev" target="_blank" rel="noopener noreferrer">React</a> 19 and TypeScript, built with Turbopack
               </dd>
             </div>
             <div className="colophon-stack-row">
@@ -211,9 +213,9 @@ export default function ColophonPage() {
               </dd>
             </div>
             <div className="colophon-stack-row">
-              <dt className="colophon-stack-term">Deployment</dt>
+              <dt className="colophon-stack-term">Hosting</dt>
               <dd className="colophon-stack-def">
-                <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a> — pushed to master, ships automatically
+                <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a>, pushed to master and shipped automatically; images on <a href="https://vercel.com/storage/blob" target="_blank" rel="noopener noreferrer">Vercel Blob</a>
               </dd>
             </div>
             <div className="colophon-stack-row">
@@ -225,43 +227,55 @@ export default function ColophonPage() {
             <div className="colophon-stack-row">
               <dt className="colophon-stack-term">Contact form</dt>
               <dd className="colophon-stack-def">
-                <a href="https://resend.com" target="_blank" rel="noopener noreferrer">Resend</a> — email delivery via verified domain
+                <a href="https://resend.com" target="_blank" rel="noopener noreferrer">Resend</a>, email delivery via verified domain
               </dd>
             </div>
             <div className="colophon-stack-row">
-              <dt className="colophon-stack-term">Now Listening</dt>
+              <dt className="colophon-stack-term">Listening</dt>
               <dd className="colophon-stack-def">
-                <a href="https://www.discogs.com/developers" target="_blank" rel="noopener noreferrer">Discogs API</a>
+                <a href="https://www.discogs.com/developers" target="_blank" rel="noopener noreferrer">Discogs API</a> for the record collection, <a href="https://developer.spotify.com" target="_blank" rel="noopener noreferrer">Spotify</a> for albums and track playback, <a href="https://musicbrainz.org/doc/MusicBrainz_API" target="_blank" rel="noopener noreferrer">MusicBrainz</a> for credits
               </dd>
             </div>
             <div className="colophon-stack-row">
-              <dt className="colophon-stack-term">Now Reading</dt>
+              <dt className="colophon-stack-term">Reading</dt>
               <dd className="colophon-stack-def">
-                <a href="https://openlibrary.org/dev/docs/api" target="_blank" rel="noopener noreferrer">Open Library Covers API</a>
+                <a href="https://openlibrary.org/dev/docs/api" target="_blank" rel="noopener noreferrer">Open Library</a> search and covers
+              </dd>
+            </div>
+            <div className="colophon-stack-row">
+              <dt className="colophon-stack-term">Making</dt>
+              <dd className="colophon-stack-def">
+                <a href="https://docs.github.com/en/graphql" target="_blank" rel="noopener noreferrer">GitHub GraphQL API</a>, refreshed daily
+              </dd>
+            </div>
+            <div className="colophon-stack-row">
+              <dt className="colophon-stack-term">Feed</dt>
+              <dd className="colophon-stack-def">
+                <a href="https://substack.com" target="_blank" rel="noopener noreferrer">Substack</a> posts, YouTube videos via the Design Better Corpus, and the Design Better podcast feed
+              </dd>
+            </div>
+            <div className="colophon-stack-row">
+              <dt className="colophon-stack-term">Icons</dt>
+              <dd className="colophon-stack-def">
+                <a href="https://simpleicons.org" target="_blank" rel="noopener noreferrer">Simple Icons</a> for brand marks
               </dd>
             </div>
             <div className="colophon-stack-row">
               <dt className="colophon-stack-term">Animations</dt>
               <dd className="colophon-stack-def">
-                Canvas 2D — real terrain from{' '}
-                <a href="https://www.ncei.noaa.gov/products/etopo-global-relief-model" target="_blank" rel="noopener noreferrer">ETOPO1</a>{' '}
-                (reading),{' '}
-                <a href="https://en.wikipedia.org/wiki/PSR_B1919%2B21" target="_blank" rel="noopener noreferrer">PSR B1919+21</a>{' '}
-                pulsar (colophon), LIGO{' '}
-                <a href="https://gwosc.org/events/GW150914/" target="_blank" rel="noopener noreferrer">GW150914</a>{' '}
-                (listening), 2004 Sumatra{' '}
-                <a href="https://www.iris.edu/hq/" target="_blank" rel="noopener noreferrer">IRIS/USGS</a>{' '}
-                seismogram (Mailchimp), geomagnetic{' '}
-                <a href="https://kp.gfz-potsdam.de/" target="_blank" rel="noopener noreferrer">Ap index</a>{' '}
-                (InVision),{' '}
-                <a href="https://gml.noaa.gov/ccgg/trends/" target="_blank" rel="noopener noreferrer">Mauna Loa CO₂</a>{' '}
-                (RTSL), SILSO{' '}
-                <a href="https://www.sidc.be/SILSO/datafiles" target="_blank" rel="noopener noreferrer">sunspot</a>{' '}
-                (books),{' '}
-                <a href="https://psl.noaa.gov/enso/mei/" target="_blank" rel="noopener noreferrer">ENSO MEI</a>{' '}
-                (consulting),{' '}
-                <a href="https://tidesandcurrents.noaa.gov/" target="_blank" rel="noopener noreferrer">NOAA tide gauge</a>{' '}
-                (footer)
+                Canvas 2D drawn from real data:{' '}
+                <a href="https://en.wikipedia.org/wiki/PSR_B1919%2B21" target="_blank" rel="noopener noreferrer">PSR B1919+21</a> pulsar (colophon),{' '}
+                <a href="https://www.ncei.noaa.gov/products/etopo-global-relief-model" target="_blank" rel="noopener noreferrer">ETOPO1</a> terrain (reading),{' '}
+                <a href="https://voyager.jpl.nasa.gov/golden-record/" target="_blank" rel="noopener noreferrer">Voyager Golden Record</a> (listening),{' '}
+                my <a href="https://github.com/aarron" target="_blank" rel="noopener noreferrer">GitHub commits</a> (making),{' '}
+                <a href="https://omniweb.gsfc.nasa.gov/" target="_blank" rel="noopener noreferrer">OMNI2</a> solar wind (feed),{' '}
+                2004 Sumatra <a href="https://www.iris.edu/hq/" target="_blank" rel="noopener noreferrer">IRIS/USGS</a> seismogram (Mailchimp),{' '}
+                geomagnetic <a href="https://kp.gfz-potsdam.de/" target="_blank" rel="noopener noreferrer">Ap index</a> (InVision),{' '}
+                <a href="https://www.ncbi.nlm.nih.gov/nuccore/NC_045512.2" target="_blank" rel="noopener noreferrer">SARS-CoV-2 genome</a> (RTSL),{' '}
+                <a href="https://www.pmel.noaa.gov/acoustics/" target="_blank" rel="noopener noreferrer">NOAA PMEL</a> humpback whale song (Curious),{' '}
+                <a href="https://www.sidc.be/SILSO/datafiles" target="_blank" rel="noopener noreferrer">SILSO</a> sunspots (books),{' '}
+                Yale Bright Star / <a href="https://www.cosmos.esa.int/web/hipparcos" target="_blank" rel="noopener noreferrer">Hipparcos</a> catalog (consulting),{' '}
+                2011 Tōhoku tsunami <a href="https://tidesandcurrents.noaa.gov/" target="_blank" rel="noopener noreferrer">NOAA tide gauges</a> (footer)
               </dd>
             </div>
             <div className="colophon-stack-row">
