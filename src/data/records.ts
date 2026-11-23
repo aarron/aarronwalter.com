@@ -220,7 +220,7 @@ export const records: VinylRecord[] = [
   { artist: 'Jimi Hendrix', title: 'Jimi Plays Monterey Original Motion Picture Sound Track', label: 'Reprise Records', format: 'LP, Album, Club', rating: 3, released: 1986, releaseId: 6534188 },
   { artist: 'Talking Heads', title: 'Speaking In Tongues', label: 'Rhino Vinyl', format: 'LP, Album, RE, 180', rating: 5, released: 2013, releaseId: 4620453 },
   { artist: 'The Rolling Stones', title: 'Some Girls', label: 'Rolling Stones Records', format: 'LP, Album, 1st', rating: 4, released: 1978, releaseId: 3030024 },
-  { artist: 'The Rolling Stones', title: 'Sticky Fingers', label: 'Rolling Stones Records', format: 'LP, Album', rating: 5, released: 1971, releaseId: 3492494 },
+  { artist: 'The Rolling Stones', title: 'Sticky Fingers', label: 'Rolling Stones Records', format: 'LP, Album, Stereo, Zipper', rating: 5, released: 1971, releaseId: 5812988 },
   { artist: 'The Rolling Stones', title: 'Exile On Main St', label: 'Rolling Stones Records', format: '2xLP, Album, RI', rating: 5, released: 1972, releaseId: 1297607 },
   { artist: 'Sonny Stitt', title: 'Sonny Stitt Plays Arrangements From The Pen Of Quincy Jones', label: 'Roost', format: 'LP, Album, Mono', rating: 5, released: 1956, releaseId: 5881894 },
   { artist: 'Etta James', title: 'Tell Mama Volume 1', label: 'Roots (6)', format: 'LP, Comp, RM', rating: 5, released: 1990, releaseId: 5471827 },

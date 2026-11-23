@@ -14386,72 +14386,6 @@
       }
     ]
   },
-  "3492494": {
-    "cover": "https://i.discogs.com/ItEx8j5XaQEozvZH5LZklA4XBWEjtbI9rEvCUSMWUnI/rs:fit/g:sm/q:90/h:586/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0OTI0/OTQtMTcyMTAwNzk0/MS03NTk2LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/UpK50kJwULXH5E7dac6H1gu5Z0C9aGvDNkn2uWWd6ZU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0OTI0/OTQtMTcyMTAwNzk0/MS03NTk2LmpwZWc.jpeg",
-    "genres": [
-      "Rock",
-      "Blues"
-    ],
-    "styles": [
-      "Blues Rock",
-      "Rhythm & Blues",
-      "Rock & Roll"
-    ],
-    "country": "UK",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Brown Sugar",
-        "duration": "3:50"
-      },
-      {
-        "position": "A2",
-        "title": "Sway",
-        "duration": "3:45"
-      },
-      {
-        "position": "A3",
-        "title": "Wild Horses",
-        "duration": "5:41"
-      },
-      {
-        "position": "A4",
-        "title": "Can't You Hear Me Knocking",
-        "duration": "7:17"
-      },
-      {
-        "position": "A5",
-        "title": "You Gotta Move",
-        "duration": "2:32"
-      },
-      {
-        "position": "B1",
-        "title": "Bitch",
-        "duration": "3:42"
-      },
-      {
-        "position": "B2",
-        "title": "I Got The Blues",
-        "duration": "4:00"
-      },
-      {
-        "position": "B3",
-        "title": "Sister Morphine",
-        "duration": "5:34"
-      },
-      {
-        "position": "B4",
-        "title": "Dead Flowers",
-        "duration": "4:05"
-      },
-      {
-        "position": "B5",
-        "title": "Moonlight Mile",
-        "duration": "5:56"
-      }
-    ]
-  },
   "3503033": {
     "cover": "https://i.discogs.com/jFDUTJzo0SfABZmd1T1poLrcs8fqtMxQuOkYbx8djAk/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1MDMw/MzMtMTUzMzQ5NzUy/MC04NzQ1LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/1jTm9BX1ZxilGyd1BChqhYcDn_aW2NGzJ4dgmocer9w/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1MDMw/MzMtMTUzMzQ5NzUy/MC04NzQ1LmpwZWc.jpeg",
@@ -19043,6 +18977,69 @@
         "position": "B6",
         "title": "Blame Me (Don't Blame My Heart)",
         "duration": "2:18"
+      }
+    ]
+  },
+  "5812988": {
+    "cover": "https://i.discogs.com/rJkxlU4vFcKqrfeCk18EhG7LLSaCVdw7ias8BFQtPwc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4MTI5/ODgtMTQ4MTMyNTY0/OC0yNTc0LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/sbiHf-r4_xojuB89lTxSAyxCghF8ImQQ7tS_eRM495o/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4MTI5/ODgtMTQ4MTMyNTY0/OC0yNTc0LmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Blues Rock"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Brown Sugar",
+        "duration": "3:50"
+      },
+      {
+        "position": "A2",
+        "title": "Sway",
+        "duration": "3:45"
+      },
+      {
+        "position": "A3",
+        "title": "Wild Horses",
+        "duration": "5:41"
+      },
+      {
+        "position": "A4",
+        "title": "Can't You Hear Me Knocking",
+        "duration": "7:17"
+      },
+      {
+        "position": "A5",
+        "title": "You Gotta Move",
+        "duration": "2:32"
+      },
+      {
+        "position": "B1",
+        "title": "Bitch",
+        "duration": "3:42"
+      },
+      {
+        "position": "B2",
+        "title": "I Got The Blues",
+        "duration": "4:00"
+      },
+      {
+        "position": "B3",
+        "title": "Sister Morphine",
+        "duration": "5:34"
+      },
+      {
+        "position": "B4",
+        "title": "Dead Flowers",
+        "duration": "4:05"
+      },
+      {
+        "position": "B5",
+        "title": "Moonlight Mile",
+        "duration": "5:56"
       }
     ]
   },
