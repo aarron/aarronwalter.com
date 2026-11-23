@@ -134,7 +134,7 @@ export const records: VinylRecord[] = [
   { artist: 'Michael Jackson', title: 'Thriller', label: 'Epic', format: 'LP, Album, Pit', rating: 5, released: 1982, releaseId: 2911293 },
   { artist: 'The Clash', title: 'Combat Rock', label: 'Epic', format: 'LP, Album, Car', rating: 3, released: 1982, releaseId: 1321434 },
   { artist: 'Cannonball Adderley', title: 'Big Man: The Legend Of John Henry', label: 'Fantasy', format: '2xLP, Album, Promo, Gat', rating: 2, released: 1975, releaseId: 5085929 },
-  { artist: 'Vince Guaraldi Trio', title: 'A Charlie Brown Christmas', label: 'Fantasy', format: 'LP, Album, RE', rating: 5, released: 1988, releaseId: 394949 },
+  { artist: 'Vince Guaraldi Trio', title: 'A Charlie Brown Christmas', label: 'Fantasy', format: 'LP, Album, Ltd, RE, Green Translucent', rating: 5, released: 2018, releaseId: 12818963 },
   { artist: 'Creedence Clearwater Revival', title: 'Creedence Gold', label: 'Fantasy', format: 'LP, Comp, Ind', rating: 3, released: 1972, releaseId: 5396432 },
   { artist: 'Peter Gabriel', title: 'Passion (Music For The Last Temptation Of Christ)', label: 'Geffen Records', format: '2xLP, Album', rating: 5, released: 1989, releaseId: 2194771 },
   { artist: 'Toots & The Maytals', title: 'Funky Kingston', label: 'Get On Down', format: 'LP, Album, RE', rating: 4, released: 2013, releaseId: 5016381 },
