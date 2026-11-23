@@ -106,7 +106,6 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
     const names = [...new Set(details?.companies.filter(c => c.role === role).map(c => c.name))]
     return names.length ? [{ role, names: names.join(', ') }] : []
   })
-  const matrix = details?.identifiers.filter(i => i.type === 'Matrix / Runout') ?? []
   const barcode = details?.identifiers.find(i => i.type === 'Barcode')
   const credits = details ? groupCredits(details.credits) : []
   const tags = [...new Set([...(meta.genres ?? []), ...(meta.styles ?? [])])]
@@ -196,16 +195,6 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
               {(details?.released || record.released) && <><dt>Pressed</dt><dd>{details?.released ?? record.released}{(details?.country ?? meta.country) ? `, ${details?.country ?? meta.country}` : ''}</dd></>}
               {year && <><dt>First released</dt><dd>{year}</dd></>}
               {companies.map(c => <Fragment key={c.role}><dt>{c.role}</dt><dd>{c.names}</dd></Fragment>)}
-              {matrix.length > 0 && (
-                <><dt>Matrix / runout</dt>
-                <dd>
-                  <ul className="rm-matrix">
-                    {matrix.slice(0, 6).map((m, i) => (
-                      <li key={i}><span className="rm-mono">{m.value}</span>{m.description && <span className="rm-muted"> {m.description}</span>}</li>
-                    ))}
-                  </ul>
-                </dd></>
-              )}
               {barcode && <><dt>Barcode</dt><dd className="rm-mono">{barcode.value}</dd></>}
             </dl>
             {details === undefined && <p className="rm-muted">Loading pressing details…</p>}
