@@ -209,7 +209,7 @@ export const records: VinylRecord[] = [
   { artist: 'David Bowie', title: 'Young Americans', label: 'RCA Victor', format: 'LP, Album, RE, RP', rating: 4, released: 1976, releaseId: 3481960 },
   { artist: 'David Bowie', title: 'Diamond Dogs', label: 'RCA Victor', format: 'LP, Album, Hol', rating: 3, released: 1974, releaseId: 710506 },
   { artist: 'Nina Simone', title: 'The Best Of Nina Simone', label: 'RCA Victor', format: 'LP, Comp, RE', rating: 4, released: null, releaseId: 5901096 },
-  { artist: 'David Bowie', title: 'Hunky Dory', label: 'RCA Victor', format: 'LP, Album, Hol', rating: 5, released: 1971, releaseId: 1623547 },
+  { artist: 'David Bowie', title: 'Hunky Dory', label: 'RCA Victor', format: 'LP, Album, RE', rating: 5, released: 1976, releaseId: 4709425 },
   { artist: 'Tousan', title: 'The Wild Sound Of New Orleans By Tousan', label: 'RCA Victor', format: 'LP, Album, Mono, Ind', rating: 4, released: 1958, releaseId: 915930 },
   { artist: 'Chet Atkins', title: 'Christmas With Chet Atkins', label: 'RCA Victor', format: 'LP, Album, Mono, Roc', rating: 4, released: 1961, releaseId: 1518988 },
   { artist: 'Harry Belafonte', title: 'Belafonte At Carnegie Hall: The Complete Concert', label: 'RCA Victor', format: '2xLP, Album, RE', rating: 3, released: 1971, releaseId: 8542623 },

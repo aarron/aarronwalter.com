@@ -8177,67 +8177,6 @@
       }
     ]
   },
-  "1623547": {
-    "cover": "https://i.discogs.com/GqQ3s3q1rn0GqQLn6gmsfc95naibeeF8hiaChFQhjWo/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjM1/NDctMTIzMjgzNzgx/Ny5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/UEE9D6fsOqZ0Q_56IRIt7zPsYXpyUa3UqT01Z2GSCCI/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2MjM1/NDctMTIzMjgzNzgx/Ny5qcGVn.jpeg",
-    "genres": [
-      "Rock"
-    ],
-    "styles": [
-      "Classic Rock",
-      "Glam",
-      "Art Rock",
-      "Pop Rock"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Changes",
-        "duration": "2:32"
-      },
-      {
-        "position": "A2",
-        "title": "Oh! You Pretty Things / Eight Line Poem",
-        "duration": "6:04"
-      },
-      {
-        "position": "A3",
-        "title": "Life On Mars?",
-        "duration": "3:45"
-      },
-      {
-        "position": "A4",
-        "title": "Kooks",
-        "duration": "2:45"
-      },
-      {
-        "position": "A5",
-        "title": "Quicksand",
-        "duration": "5:03"
-      },
-      {
-        "position": "B1",
-        "title": "Fill Your Heart / Andy Warhol",
-        "duration": "7:02"
-      },
-      {
-        "position": "B2",
-        "title": "Song For Bob Dylan",
-        "duration": "4:10"
-      },
-      {
-        "position": "B3",
-        "title": "Queen Bitch",
-        "duration": "3:14"
-      },
-      {
-        "position": "B4",
-        "title": "The Bewlay Brothers",
-        "duration": "5:21"
-      }
-    ]
-  },
   "1688007": {
     "cover": "https://i.discogs.com/Dcn8UWOB_BofgnJW0E2R_wz6CekhcwWC3J8Z-aDmDxg/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODgw/MDctMTMzNjk2ODc4/MC02MzMxLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/xPsCgSaIBIW3BFxTuaqV5DXaLUk0T5nIiDuDSf-0adM/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2ODgw/MDctMTMzNjk2ODc4/MC02MzMxLmpwZWc.jpeg",
@@ -16952,6 +16891,75 @@
         "position": "F4",
         "title": "My Melody (Dub)",
         "duration": "6:30"
+      }
+    ]
+  },
+  "4709425": {
+    "cover": "https://i.discogs.com/KnIbs0pOg4dEgi-8BSxeAg9baPuuGGVq_YBgmV2JAus/rs:fit/g:sm/q:90/h:219/w:216/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3MDk0/MjUtMTM3Mjk2NjMx/Ni02MzQ5LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/g6GnKugXZ5oMBQipHCu-9NDHld6hXO56Xtxt2wikDec/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ3MDk0/MjUtMTM3Mjk2NjMx/Ni02MzQ5LmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Classic Rock",
+      "Glam"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Changes",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Oh! You Pretty Things",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Eight Line Poem",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Life On Mars?",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Kooks",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "title": "Quicksand",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Fill Your Heart",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Andy Warhol",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Song For Bob Dylan",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Queen Bitch",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "The Bewlay Brothers",
+        "duration": ""
       }
     ]
   },
