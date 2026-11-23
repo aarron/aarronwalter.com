@@ -379,4 +379,5 @@ export const records: VinylRecord[] = [
   { artist: 'Sonny Stitt', title: 'Constellation', label: 'Cobblestone', format: 'LP, Album, Promo', rating: 4, released: 1972, releaseId: 9044918 },
   { artist: 'Various', title: 'The Best Of Blue Note', label: 'Blue Note', format: '2xLP, Comp', rating: 4, released: 1984, releaseId: 3574660 },
   { artist: 'Gerry Mulligan & Stan Getz', title: 'Gerry Mulligan Meets Stan Getz', label: 'Verve Records', format: 'LP, Album, Mono', rating: 4, released: 1961, releaseId: 641119 },
+  { artist: 'Duke Ellington • Charles Mingus • Max Roach', title: 'Money Jungle', label: 'United Artists Jazz', format: 'LP, Album, Stereo', rating: 4, released: 1962, releaseId: 2936339 },
 ]
