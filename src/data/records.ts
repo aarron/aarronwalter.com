@@ -276,7 +276,7 @@ export const records: VinylRecord[] = [
   { artist: 'Various', title: 'The Great Blues Men', label: 'Vanguard', format: '2xLP, Comp', rating: 3, released: 1972, releaseId: 859378 },
   { artist: 'John Coltrane, Eric Dolphy, McCoy Tyner, Jimmy Garrison, Elvin Jones', title: 'The Inner Man', label: 'Vee Jay Records', format: 'LP, Album, Mono, RE', rating: 4, released: 1988, releaseId: 7609374 },
   { artist: 'Black Sabbath', title: 'Paranoid', label: 'Vertigo', format: 'LP, Album, Gat', rating: 3, released: 1970, releaseId: 696772 },
-  { artist: 'The Velvet Underground & Nico (3)', title: 'The Velvet Underground & Nico', label: 'Verve Records', format: 'LP, Album, RP, Wes', rating: 5, released: 1968, releaseId: 4605058 },
+  { artist: 'The Velvet Underground & Nico (3)', title: 'The Velvet Underground & Nico', label: 'Verve Records', format: 'LP, Album, RP, Stereo, Gat', rating: 5, released: 1968, releaseId: 3820535 },
   { artist: 'Stan Getz & João Gilberto', title: 'Getz / Gilberto', label: 'Verve Records', format: 'LP, Album, Mono, Gat', rating: 4, released: 1964, releaseId: 170884 },
   { artist: 'Otis Redding', title: 'The Otis Redding Dictionary Of Soul - Complete & Unbelievable', label: 'Volt', format: 'LP, Album', rating: 4, released: 1966, releaseId: 2537596 },
   { artist: 'Otis Redding', title: 'Otis Blue / Otis Redding Sings Soul', label: 'Volt', format: 'LP, Album, Pit', rating: 4, released: 1965, releaseId: 1200101 },

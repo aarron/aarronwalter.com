@@ -15111,6 +15111,78 @@
       }
     ]
   },
+  "3820535": {
+    "cover": "https://i.discogs.com/KGkC5Lf784_VKf-Cck30OX04TgnYcE200kE-GwUN15M/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MjA1/MzUtMTM5NDMwMTU3/OC04MzkxLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/yoOU-10ijJO-w2OWNu2kmOvlNQGJ279xSGe8XDTYp5k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MjA1/MzUtMTM5NDMwMTU3/OC04MzkxLmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Psychedelic Rock",
+      "Garage Rock",
+      "Folk Rock",
+      "Experimental",
+      "Art Rock"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Sunday Morning",
+        "duration": "2:53"
+      },
+      {
+        "position": "A2",
+        "title": "I'm Waiting For The Man",
+        "duration": "4:37"
+      },
+      {
+        "position": "A3",
+        "title": "Femme Fatale",
+        "duration": "2:35"
+      },
+      {
+        "position": "A4",
+        "title": "Venus In Furs",
+        "duration": "5:07"
+      },
+      {
+        "position": "A5",
+        "title": "Run, Run, Run",
+        "duration": "4:18"
+      },
+      {
+        "position": "A6",
+        "title": "All Tomorrow's Parties",
+        "duration": "5:55"
+      },
+      {
+        "position": "B1",
+        "title": "Heroin",
+        "duration": "7:05"
+      },
+      {
+        "position": "B2",
+        "title": "There She Goes Again",
+        "duration": "2:30"
+      },
+      {
+        "position": "B3",
+        "title": "I'll Be Your Mirror",
+        "duration": "2:01"
+      },
+      {
+        "position": "B4",
+        "title": "Black Angel's Death Song",
+        "duration": "3:10"
+      },
+      {
+        "position": "B5",
+        "title": "European Son To Delmore Schwartz",
+        "duration": "7:40"
+      }
+    ]
+  },
   "3861066": {
     "cover": "https://i.discogs.com/fRvF0LzIWBqpE8lkOp9wUaYWZiZKUw3C6590FbGH1WE/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NjEw/NjYtMTUzMTg5NDUy/MS01NDg5LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/c16WtLx5tDg3GaeCBik54ZjpRwGws72flNHeLbtCx2w/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NjEw/NjYtMTUzMTg5NDUy/MS01NDg5LmpwZWc.jpeg",
@@ -16753,76 +16825,6 @@
         "position": "B3",
         "title": "A Night In Tunisia",
         "duration": "7:15"
-      }
-    ]
-  },
-  "4605058": {
-    "cover": "https://i.discogs.com/q8Li11qztWymdDwFkwA26b6BFyxqhNDq--_DkQD4j5E/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MDUw/NTgtMTQxMDA5NDky/Mi03MTMwLmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/4FHceNWYILMEoazvmSdfvaATOFRRtFDP4lnCN0KaZAU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2MDUw/NTgtMTQxMDA5NDky/Mi03MTMwLmpwZWc.jpeg",
-    "genres": [
-      "Rock"
-    ],
-    "styles": [
-      "Psychedelic Rock",
-      "Garage Rock",
-      "Art Rock"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Sunday Morning",
-        "duration": "2:53"
-      },
-      {
-        "position": "A2",
-        "title": "I'm Waiting For The Man",
-        "duration": "4:37"
-      },
-      {
-        "position": "A3",
-        "title": "Femme Fatale",
-        "duration": "2:35"
-      },
-      {
-        "position": "A4",
-        "title": "Venus In Furs",
-        "duration": "5:07"
-      },
-      {
-        "position": "A5",
-        "title": "Run Run Run",
-        "duration": "4:18"
-      },
-      {
-        "position": "A6",
-        "title": "All Tomorrow's Parties",
-        "duration": "5:55"
-      },
-      {
-        "position": "B1",
-        "title": "Heroin",
-        "duration": "7:05"
-      },
-      {
-        "position": "B2",
-        "title": "There She Goes Again",
-        "duration": "2:30"
-      },
-      {
-        "position": "B3",
-        "title": "I'll Be Your Mirror",
-        "duration": "2:01"
-      },
-      {
-        "position": "B4",
-        "title": "The Black Angel's Death Song",
-        "duration": "3:10"
-      },
-      {
-        "position": "B5",
-        "title": "European Son",
-        "duration": "7:40"
       }
     ]
   },
