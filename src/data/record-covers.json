@@ -3897,7 +3897,9 @@
         "title": "How Many More Times",
         "duration": "3:30"
       }
-    ]
+    ],
+    "originalYear": 1969,
+    "genreSource": "master"
   },
   "747153": {
     "cover": "https://i.discogs.com/0zYlf-bd8PBiJtwyJ5FD4p7bf8X2yRS6H1eQd_6vK9I/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0NzE1/My0xMzg0NDE2MDgy/LTM3MTguanBlZw.jpeg",
@@ -5192,7 +5194,8 @@
       "Rock"
     ],
     "styles": [
-      "Classic Rock"
+      "Hard Rock",
+      "Blues Rock"
     ],
     "country": "US",
     "tracklist": [
@@ -5236,7 +5239,9 @@
         "title": "When The Levee Breaks",
         "duration": "7:08"
       }
-    ]
+    ],
+    "originalYear": 1971,
+    "genreSource": "master"
   },
   "1151793": {
     "cover": "https://i.discogs.com/I3hy7IP1uAvbvsFa3e5bxo46KJk8XOz8hv-6GAjik58/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNTE3/OTMtMTYxOTY5MDIx/My01ODQ0LmpwZWc.jpeg",
@@ -6618,7 +6623,9 @@
         "title": "Bags Of Blues",
         "duration": "8:49"
       }
-    ]
+    ],
+    "originalYear": 1962,
+    "genreSource": "master"
   },
   "1321434": {
     "cover": "https://i.discogs.com/pBjFPdrO1qjt4jaaOa-lZMoiXRWldb-nBJ_Cd9H_oTk/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMjE0/MzQtMTQ5NTgxMTMy/Ni00MTkzLmpwZWc.jpeg",
@@ -22112,13 +22119,9 @@
     "cover": "https://i.discogs.com/5h-yVFvb_t1wHxY5BInIC2uUTYVhIZVHOPLimgapKLY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxMjQz/OTgtMTQ4NzE1MDg2/NS05MTQzLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/Jj9McrMWvscafUjVhz6OGp-lgGoD03F95YXutzj_irs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxMjQz/OTgtMTQ4NzE1MDg2/NS05MTQzLmpwZWc.jpeg",
     "genres": [
-      "Funk / Soul",
-      "Blues"
+      "Funk / Soul"
     ],
-    "styles": [
-      "Rhythm & Blues",
-      "Soul"
-    ],
+    "styles": [],
     "country": "Japan",
     "tracklist": [
       {
@@ -22222,7 +22225,8 @@
         "duration": ""
       }
     ],
-    "originalYear": 1979
+    "originalYear": 1979,
+    "genreSource": "master"
   },
   "7154297": {
     "cover": "https://i.discogs.com/TRXNoaORuec6SXgwNmHcUdl2GeOxnh4BLjFlf6kRj6c/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxNTQy/OTctMTYzMTkyNzEx/MS0yNjA1LmpwZWc.jpeg",
@@ -23447,7 +23451,9 @@
         "title": "The Late Late Blues",
         "duration": "9:35"
       }
-    ]
+    ],
+    "originalYear": 1961,
+    "genreSource": "master"
   },
   "8395630": {
     "cover": "https://i.discogs.com/sC_U2T4B06oTMFvxyZNwVhxgQc_2SMQ_mRwx713SVLQ/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgzOTU2/MzAtMTQ2MDgwODk3/NC03NTk3LmpwZWc.jpeg",
@@ -23579,7 +23585,9 @@
         "title": "Undecided",
         "duration": "3:36"
       }
-    ]
+    ],
+    "originalYear": 1957,
+    "genreSource": "master"
   },
   "8501119": {
     "cover": "https://i.discogs.com/Dq7XIu4UFP-9X5SXLg04yUNfZSvEhHvtnv1TLzEmFls/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1MDEx/MTktMTUyNjcwODgz/NS0xMjEyLmpwZWc.jpeg",
