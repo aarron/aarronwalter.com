@@ -5,6 +5,7 @@ import GrooveCanvas from '@/components/GrooveCanvas'
 import { records } from '@/data/records'
 import type { RecordMeta } from '@/components/RecordCard'
 import coversJson from '@/data/record-covers.json'
+import spotifyJson from '@/data/record-spotify.json'
 
 export const metadata: Metadata = {
   title: 'Listening — Aarron Walter',
@@ -21,6 +22,9 @@ const covers = coversJson as Record<string, {
   originalYear?: number | null
 }>
 
+// Spotify album IDs, matched by scripts/fetch-spotify-albums.ts
+const spotify = spotifyJson as Record<string, { albumId: string } | null>
+
 // Sorting and grouping happen in ListeningGrid so visitors can switch views.
 const withMeta = records
   .map(r => {
@@ -35,6 +39,7 @@ const withMeta = records
           country:    cached.country ?? undefined,
           tracklist:  cached.tracklist,
           originalYear: cached.originalYear ?? r.released,
+          spotifyAlbumId: r.releaseId ? spotify[String(r.releaseId)]?.albumId : undefined,
           discogsUrl: r.releaseId ? `https://www.discogs.com/release/${r.releaseId}` : undefined,
         }
       : { found: false }

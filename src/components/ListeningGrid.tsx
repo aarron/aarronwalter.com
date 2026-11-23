@@ -50,7 +50,19 @@ function byArtist(a: RecordWithMeta, b: RecordWithMeta) {
 }
 
 function ratingHeading(r: number) {
-  return r === 0 ? 'Unrated' : '★'.repeat(r)
+  return r === 0 ? 'Unrated' : `${r} star${r === 1 ? '' : 's'}`
+}
+
+// Rating sections draw small filled/outlined stars; other sections show their title.
+function SectionTitle({ heading }: { heading: string }) {
+  const m = heading.match(/^(\d) stars?$/)
+  if (!m) return <>{heading}</>
+  const n = Number(m[1])
+  return (
+    <span className="record-section-stars" aria-label={heading}>
+      {[1, 2, 3, 4, 5].map(i => <span key={i} aria-hidden className={i <= n ? 'is-on' : 'is-off'}>{i <= n ? '★' : '☆'}</span>)}
+    </span>
+  )
 }
 
 export default function ListeningGrid({ records }: Props) {
@@ -244,8 +256,11 @@ export default function ListeningGrid({ records }: Props) {
 
       {/* ── Sections ── */}
       {sections.map(([heading, items]) => (
-        <section key={heading} className="page-section">
-          <h2 className="page-section-heading">{heading}</h2>
+        <section key={heading} className="record-section">
+          <h2 className="record-section-heading">
+            <SectionTitle heading={heading} />
+            <span className="record-section-count">{items.length}</span>
+          </h2>
           <div className="book-grid record-grid">
             {items.map(({ record, meta }, i) => (
               <RecordCard

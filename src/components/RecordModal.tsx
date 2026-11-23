@@ -168,6 +168,24 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
           <p className="rm-artist">{record.artist}</p>
           <RatingStars rating={record.rating} onRate={onRate} size="large" />
 
+          {meta.spotifyAlbumId && (
+            <section className="rm-section rm-listen">
+              <h3>Listen</h3>
+              <iframe
+                key={meta.spotifyAlbumId}
+                title={`${record.title} on Spotify`}
+                src={`https://open.spotify.com/embed/album/${meta.spotifyAlbumId}?utm_source=generator&theme=0`}
+                width="100%"
+                height="352"
+                loading="lazy"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              />
+              <p className="rm-muted rm-listen-note">
+                Full tracks if you're signed in to Spotify in this browser; 30-second previews otherwise.
+              </p>
+            </section>
+          )}
+
           <section className="rm-section">
             <h3>This pressing</h3>
             <dl className="rm-facts">

@@ -73,8 +73,8 @@ const nextConfig: NextConfig = {
               "img-src 'self' data: blob: https://megaphone.imgix.net https://covers.openlibrary.org https://archive.org https://*.archive.org https://*.us.archive.org https://img.discogs.com https://i.discogs.com https://m.media-amazon.com https://images-na.ssl-images-amazon.com https://substackcdn.com https://substack-post-media.s3.amazonaws.com https://*.ytimg.com https://substack-video.s3.amazonaws.com",
               // API calls: self + Discogs + OpenLibrary (contact form now hits /api/contact internally)
               "connect-src 'self' https://api.discogs.com https://openlibrary.org https://designbetterpodcast.com",
-              // Podcast player embed (if any iframes)
-              "frame-src 'self'",
+              // Spotify album players in the Listening modal
+              "frame-src 'self' https://open.spotify.com",
               // Media: self + all Megaphone CDN subdomains + Vercel Blob (portfolio videos)
               // traffic.megaphone.fm redirects to dcs-spotify.megaphone.fm (dynamic ad insertion)
               "media-src 'self' https://*.megaphone.fm https://*.public.blob.vercel-storage.com",

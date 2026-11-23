@@ -3471,6 +3471,40 @@ body {
   .record-toolbar .record-search { margin-left: 0; width: 100%; }
 }
 
+.record-section { margin-bottom: clamp(3rem, 6vw, 4.5rem); }
+
+.record-section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-family: 'Lineca', sans-serif;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--heading);
+  padding-bottom: 0.75rem;
+  margin: 0 0 clamp(1.25rem, 2.5vw, 2rem);
+  border-bottom: 1px solid rgb(from var(--ink) r g b / 0.15);
+}
+
+.record-section-stars {
+  display: inline-flex;
+  gap: 0.15em;
+  font-size: 0.8em;
+  letter-spacing: 0;
+}
+.record-section-stars .is-on { color: var(--heading); }
+.record-section-stars .is-off { color: rgb(from var(--ink) r g b / 0.25); }
+
+.record-section-count {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgb(from var(--ink) r g b / 0.45);
+}
+
 .record-card-year { color: rgb(from var(--ink) r g b / 0.5); }
 
 .record-rate-hint {
@@ -3722,6 +3756,9 @@ body {
   color: var(--rm-muted);
   margin: 0 0 0.875rem;
 }
+
+.rm-listen iframe { display: block; border: 0; border-radius: 12px; background: rgb(255 255 255 / 0.04); }
+.rm-listen-note { font-size: 0.75rem; margin: 0.6rem 0 0; }
 
 .rm-facts {
   display: grid;

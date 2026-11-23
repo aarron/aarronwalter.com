@@ -14,6 +14,8 @@ export interface RecordMeta {
   discogsUrl?: string
   /** Year the album was first released, from its Discogs master. */
   originalYear?: number | null
+  /** Spotify album ID, for the player in the modal. */
+  spotifyAlbumId?: string
 }
 
 interface Props {
