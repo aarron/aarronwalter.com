@@ -390,4 +390,5 @@ export const records: VinylRecord[] = [
   { artist: 'Chet Baker And The Carmel Strings', title: 'Into My Life', label: 'World Pacific', format: 'LP, Album, Stereo', rating: 4, released: 1966, releaseId: 33706674 },
   { artist: 'The Gerry Mulligan Quartet', title: 'What Is There To Say?', label: 'Columbia Special Products', format: 'LP, Album, RE, Stereo', rating: 4, released: 1968, releaseId: 3870843 },
   { artist: 'Johnny Smith', title: 'Johnny Smith Plays Jimmy Van Heusen', label: 'Roost', format: 'LP, Album, Mono', rating: 4, released: 1955, releaseId: 3606693 },
+  { artist: 'Dexter Gordon', title: 'Doin\' Allright', label: 'Blue Note', format: 'LP, Album, RE, RM, DMM', rating: 4, released: 1985, releaseId: 3691474 },
 ]
