@@ -3426,7 +3426,9 @@
         "title": "Ballad",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1957,
+    "genreSource": "master"
   },
   "644616": {
     "cover": "https://i.discogs.com/L55gm2_o3JqPCiPmn_Ejy_19CBb1nv7nB13mb91XQKk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NDYx/Ni0xMzEyOTA2MTA5/LmpwZWc.jpeg",
@@ -3888,7 +3890,8 @@
       "Jazz"
     ],
     "styles": [
-      "Big Band"
+      "Big Band",
+      "Swing"
     ],
     "country": "US",
     "tracklist": [
@@ -3932,7 +3935,9 @@
         "title": "Dancing In The Dark",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1958,
+    "genreSource": "master"
   },
   "728198": {
     "cover": "https://i.discogs.com/wb78VDv1C51e8kZqYFEcFKU77Yb1W9IXmQm0o9wT3VE/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODE5/OC0xMzkyOTMyNzMz/LTU3OTUuanBlZw.jpeg",
@@ -5581,7 +5586,9 @@
         "title": "The \"In\" Crowd",
         "duration": "4:11"
       }
-    ]
+    ],
+    "originalYear": 1967,
+    "genreSource": "master"
   },
   "1174296": {
     "cover": "https://i.discogs.com/7y0jjFTZp88uBO380fsYcO36I3ex_er3lZn8COq90Vc/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzQy/OTYtMTY5NzMyNzQ3/Ny0yMzQ1LmpwZWc.jpeg",
@@ -6935,13 +6942,13 @@
     "cover": "https://i.discogs.com/xESENr-tJhNZtH7p02xtBzu0_VhVcB3-QR6pZvsRsPc/rs:fit/g:sm/q:90/h:598/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzEy/NjgtMTIyNTQxNDk1/OC5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/z2bkw-ocnDaqFUQPi5Ve6RflqwB0Qh8b1EDHhDv8TtU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzEy/NjgtMTIyNTQxNDk1/OC5qcGVn.jpeg",
     "genres": [
+      "Rock",
       "Pop",
       "Stage & Screen"
     ],
     "styles": [
       "Soundtrack",
-      "Ballad",
-      "Vocal"
+      "Pop Rock"
     ],
     "country": "US",
     "tracklist": [
@@ -6995,7 +7002,9 @@
         "title": "Long, Long Day",
         "duration": "3:48"
       }
-    ]
+    ],
+    "originalYear": 1980,
+    "genreSource": "master"
   },
   "1335397": {
     "cover": "https://i.discogs.com/YBlsbMX97kbyJ6MHV2qxnsqXMllI-u40rQkPLNXmUlg/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMzUz/OTctMTQ0NzA5NzEz/OS0zNTgxLmpwZWc.jpeg",
@@ -7833,7 +7842,9 @@
         "title": "I Hear A Rhapsody",
         "duration": "8:31"
       }
-    ]
+    ],
+    "originalYear": 1975,
+    "genreSource": "master"
   },
   "1480717": {
     "cover": "https://i.discogs.com/ZHlPdbs_BaawlfqlYTjmO6c-wz90ecy71ttNLyBtPfs/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0ODA3/MTctMTU0ODYyNDky/MS04MDk4LmpwZWc.jpeg",
@@ -9210,7 +9221,9 @@
         "title": "Jungleland",
         "duration": "9:33"
       }
-    ]
+    ],
+    "originalYear": 1975,
+    "genreSource": "master"
   },
   "1907961": {
     "cover": "https://i.discogs.com/zQ7jmVRigZsLguhapmPSvtjrDaMLxuLKqKY2W7wuNKA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MDc5/NjEtMTQ2MjY5NDc0/NS02NTU4LmpwZWc.jpeg",
@@ -13229,14 +13242,15 @@
         "title": "Solitude",
         "duration": "5:30"
       }
-    ]
+    ],
+    "originalYear": 1962,
+    "genreSource": "master"
   },
   "2938478": {
     "cover": "https://i.discogs.com/dxF4an3t7ZKAkZ6IIA5l2nMxQzK2o7_CWYd-I2-fB8c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Mzg0/NzgtMTMwODIwMDkz/Ny5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/vtaXjoX5eaNvVEncQv2Ls4Ob11kvLcSYSytRc3wXOFs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Mzg0/NzgtMTMwODIwMDkz/Ny5qcGVn.jpeg",
     "genres": [
-      "Jazz",
-      "Funk / Soul"
+      "Jazz"
     ],
     "styles": [
       "Soul-Jazz",
@@ -13279,7 +13293,9 @@
         "title": "Gemini Rising",
         "duration": "5:50"
       }
-    ]
+    ],
+    "originalYear": 1974,
+    "genreSource": "master"
   },
   "2952980": {
     "cover": "https://i.discogs.com/raWsXmFhgvwrOm0oREwm4K1lojRPb5s8b7GLfnw-Ncw/rs:fit/g:sm/q:90/h:514/w:512/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NTI5/ODAtMTQwNDEzMDY0/Ni00MjkyLmpwZWc.jpeg",
@@ -15017,7 +15033,9 @@
         "title": "The Sidewinder",
         "duration": "10:20"
       }
-    ]
+    ],
+    "originalYear": 1984,
+    "genreSource": "master"
   },
   "3576298": {
     "cover": "https://i.discogs.com/uub2WGDq5fm9_ryTBnfsgb11QX-VD796btb104wOM6E/rs:fit/g:sm/q:90/h:410/w:409/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NzYy/OTgtMTM3MTEzODY4/NC03NjU0LmpwZWc.jpeg",
@@ -15867,7 +15885,9 @@
         "title": "Blues After All",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1958,
+    "genreSource": "master"
   },
   "3861066": {
     "cover": "https://i.discogs.com/fRvF0LzIWBqpE8lkOp9wUaYWZiZKUw3C6590FbGH1WE/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NjEw/NjYtMTUzMTg5NDUy/MS01NDg5LmpwZWc.jpeg",
@@ -16958,7 +16978,9 @@
         "title": "Gone With The Wind",
         "duration": "6:21"
       }
-    ]
+    ],
+    "originalYear": 1987,
+    "genreSource": "master"
   },
   "4391759": {
     "cover": "https://i.discogs.com/9TTBaXADeqwCOojZ7rObkSa_XUlm0MEtCIaIoeNpqz0/rs:fit/g:sm/q:90/h:467/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzOTE3/NTktMTM2MzY0MzYw/Ni05Njc2LmpwZWc.jpeg",
@@ -22471,7 +22493,7 @@
     ],
     "styles": [
       "Blues Rock",
-      "Classic Rock"
+      "Rock & Roll"
     ],
     "country": "US",
     "tracklist": [
@@ -22525,7 +22547,9 @@
         "title": "Salt Of The Earth",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1968,
+    "genreSource": "master"
   },
   "7001747": {
     "cover": "https://i.discogs.com/Q_8bbzvKBLVT4i8ojSrukaVobYI_5GgC0n3cTLuYBxc/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwMDE3/NDctMTY2MTc5MDA0/NS0zMzM3LmpwZWc.jpeg",
@@ -24856,7 +24880,9 @@
         "title": "Topsy",
         "duration": "5:35"
       }
-    ]
+    ],
+    "originalYear": 1972,
+    "genreSource": "master"
   },
   "9117080": {
     "cover": "https://i.discogs.com/qMs99ROlII89hudRwO47aqwv7aovgbIj-jnV11X8sO8/rs:fit/g:sm/q:90/h:340/w:340/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxMTcw/ODAtMTQ3NTA3MDY0/Ni00NTg5LmpwZWc.jpeg",
@@ -25714,7 +25740,9 @@
         "title": "The World Is Mad",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1959,
+    "genreSource": "master"
   },
   "11118466": {
     "cover": "https://i.discogs.com/IhyZR2xPgp2gFyL70mofoid4mmTV2CpEF_MI7MnL4TM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTE4/NDY2LTE3NjE5NDMx/MTctODc1Ny5qcGVn.jpeg",
@@ -26510,7 +26538,9 @@
         "title": "Lips Flips",
         "duration": "5:05"
       }
-    ]
+    ],
+    "originalYear": 1957,
+    "genreSource": "master"
   },
   "24762311": {
     "cover": "https://i.discogs.com/FHzSqJ13HbqsvIyGdO8J8Gwc6AxRKTPra_CmMXBOIBQ/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NzYy/MzExLTE2NjUyNzcy/NjgtMjA5My5qcGVn.jpeg",
@@ -26824,7 +26854,7 @@
     ],
     "styles": [
       "Prog Rock",
-      "Art Rock"
+      "Psychedelic Rock"
     ],
     "country": "US",
     "tracklist": [
@@ -26878,7 +26908,9 @@
         "title": "Eclipse",
         "duration": "1:45"
       }
-    ]
+    ],
+    "originalYear": 1973,
+    "genreSource": "master"
   },
   "30582370": {
     "cover": "https://i.discogs.com/QQ3WhupYSWVv2-WQLNzP9kxi9mfzXAzcy8IDdUBHXEE/rs:fit/g:sm/q:90/h:581/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNTgy/MzcwLTE3MTQ4MjY0/ODQtNTQyOS5qcGVn.jpeg",
