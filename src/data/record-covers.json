@@ -21,18 +21,20 @@
         "title": "Tour De France (Remix)",
         "duration": "6:47"
       }
-    ]
+    ],
+    "originalYear": 1983,
+    "genreSource": "master"
   },
   "23300": {
     "cover": "https://i.discogs.com/DSyoPJcUZLEQPR8-mSio96Czq06iXFH9bxAEI7JYQQI/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMzAw/LTEyMjExNDI4NjAu/anBlZw.jpeg",
     "thumb": "https://i.discogs.com/KEkdSuevxiKPUTMJE_IKHDeMWWUNYv5r-qSja9kgmAU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMzAw/LTEyMjExNDI4NjAu/anBlZw.jpeg",
     "genres": [
-      "Electronic"
+      "Electronic",
+      "Pop"
     ],
     "styles": [
       "Electro",
-      "Synth-pop",
-      "Experimental"
+      "Synth-pop"
     ],
     "country": "US",
     "tracklist": [
@@ -71,7 +73,9 @@
         "title": "It’s More Fun To Compute",
         "duration": "4:14"
       }
-    ]
+    ],
+    "originalYear": 1981,
+    "genreSource": "master"
   },
   "31382": {
     "cover": "https://i.discogs.com/oZLYNQPbSsd64gFhlYBTyqtl3_rmNK-qkDfQ3UX67ZM/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMzgy/LTEzOTYwNzk4Njkt/MTk0My5qcGVn.jpeg",
@@ -226,15 +230,17 @@
     "genreSource": "master"
   },
   "125881": {
-    "cover": "https://i.discogs.com/mucJg8046XTDhTZA60uSjibfipL2w7OYXbpK4DQ01u8/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTg4/MS0xMzYzNDY3NTQy/LTc0NTkuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/K89TnTA3eKL9C26fwl-r9PVQV8HJDATz7iaBsAvnZHY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTg4/MS0xMzYzNDY3NTQy/LTc0NTkuanBlZw.jpeg",
+    "cover": "https://i.discogs.com/dUYjR1Ai3awDueVNVA1pxys0DxHq2-kCUhmJHptliA8/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTg4/MS0xNjMzNTczODk0/LTk5ODMuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/DGYtI2EQIaWqsm2kZtHlQYbWN5HVFe7k9G0mRIx4n0w/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTg4/MS0xNjMzNTczODk0/LTk5ODMuanBlZw.jpeg",
     "genres": [
+      "Rock",
       "Funk / Soul",
       "Pop"
     ],
     "styles": [
+      "Minneapolis Sound",
       "Funk",
-      "Minneapolis Sound"
+      "Pop Rock"
     ],
     "country": "US",
     "tracklist": [
@@ -293,7 +299,9 @@
         "title": "International Lover",
         "duration": "6:35"
       }
-    ]
+    ],
+    "originalYear": 1982,
+    "genreSource": "master"
   },
   "170884": {
     "cover": "https://i.discogs.com/snOjVGbcA1MCeUThkeMWLjRyl8zjOqQ2BFWclMBcET8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MDg4/NC0xMzI0MjQ4OTkw/LmpwZWc.jpeg",
@@ -1592,14 +1600,11 @@
     "cover": "https://i.discogs.com/Ye7__ApIH1TbwSgRS4Yn7WnT8zKcySTWWL7DFs055os/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNzM5/OC0xMzg0ODYyNzkx/LTY1NzguanBlZw.jpeg",
     "thumb": "https://i.discogs.com/ReMsnOkGqgXSQxufEOioy5vh22WZ5cjHpzvUNKLE844/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNzM5/OC0xMzg0ODYyNzkx/LTY1NzguanBlZw.jpeg",
     "genres": [
-      "Rock",
       "Funk / Soul",
       "Pop"
     ],
     "styles": [
-      "Funk",
-      "Pop Rock",
-      "Minneapolis Sound"
+      "Funk"
     ],
     "country": "US",
     "tracklist": [
@@ -1643,7 +1648,9 @@
         "title": "Jack U Off",
         "duration": "3:12"
       }
-    ]
+    ],
+    "originalYear": 1981,
+    "genreSource": "master"
   },
   "424774": {
     "cover": "https://i.discogs.com/ylO0Lsvumru9wFteyVs6SWVBowHdl0DwcvKDsTYfmZk/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyNDc3/NC0xMjkwMzQ3MTM1/LmpwZWc.jpeg",
@@ -2575,8 +2582,7 @@
     "thumb": "https://i.discogs.com/ZNDab8TL608xo5wyrunUy32vM7KenApeY_gmz_Ljzfg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2MDMw/My0xNzQ0NzI1NDI0/LTQxMzEuanBlZw.jpeg",
     "genres": [
       "Electronic",
-      "Funk / Soul",
-      "Pop"
+      "Funk / Soul"
     ],
     "styles": [
       "New Wave",
@@ -2624,7 +2630,9 @@
         "title": "Partyup",
         "duration": "4:24"
       }
-    ]
+    ],
+    "originalYear": 1980,
+    "genreSource": "master"
   },
   "565111": {
     "cover": "https://i.discogs.com/0Xsu72ntBbSZiwUwS3rIg2H3usySWfCeJWd3-ecGERU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2NTEx/MS0xMzMyNzg1ODg1/LmpwZWc.jpeg",
@@ -4878,7 +4886,9 @@
         "title": "It's Gonna Be Lonely",
         "duration": "5:30"
       }
-    ]
+    ],
+    "originalYear": 1979,
+    "genreSource": "master"
   },
   "1004679": {
     "cover": "https://i.discogs.com/dzSu7CLTwO0C3Os5MRxIu0gtkcADCLN_o3ElzjroOpM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDQ2/NzktMTQyODc3NDc5/Ni0xNjI2LmpwZWc.jpeg",
@@ -6648,7 +6658,9 @@
         "title": "I'm Yours",
         "duration": "5:01"
       }
-    ]
+    ],
+    "originalYear": 1978,
+    "genreSource": "master"
   },
   "1294404": {
     "cover": "https://i.discogs.com/x8y7G1kmPCA6NIJE8AGw9drO5olcNP7nJSxuf4l3lHo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTQ0/MDQtMTI0ODQ2MTEw/NS5qcGVn.jpeg",
@@ -13731,10 +13743,10 @@
       "Stage & Screen"
     ],
     "styles": [
-      "Soundtrack",
-      "Pop Rock",
       "Funk",
-      "Minneapolis Sound"
+      "Minneapolis Sound",
+      "Pop Rock",
+      "Soundtrack"
     ],
     "country": "US",
     "tracklist": [
@@ -13783,7 +13795,9 @@
         "title": "Purple Rain",
         "duration": "8:45"
       }
-    ]
+    ],
+    "originalYear": 1984,
+    "genreSource": "master"
   },
   "3057769": {
     "cover": "https://i.discogs.com/4MjZ5DHONSAM7dYCCzED_qAUo3Wp_OKwcRimDP6P940/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNTc3/NjktMTMzMDIxMTc5/My5qcGVn.jpeg",
@@ -18946,6 +18960,7 @@
       "Electronic"
     ],
     "styles": [
+      "Post Rock",
       "Downtempo",
       "Ambient"
     ],
@@ -18954,79 +18969,81 @@
       {
         "position": "A1",
         "title": "Into The Rainbow Vein",
-        "duration": "0:44"
+        "duration": ""
       },
       {
         "position": "A2",
         "title": "Chromakey Dreamcoat",
-        "duration": "5:47"
+        "duration": ""
       },
       {
         "position": "A3",
         "title": "Satellite Anthem Icarus",
-        "duration": "6:08"
+        "duration": ""
       },
       {
         "position": "A4",
         "title": "Peacock Tail",
-        "duration": "5:24"
+        "duration": ""
       },
       {
         "position": "B1",
         "title": "Dayvan Cowboy",
-        "duration": "5:00"
+        "duration": ""
       },
       {
         "position": "B2",
         "title": "A Moment Of Clarity",
-        "duration": "0:51"
+        "duration": ""
       },
       {
         "position": "B3",
         "title": "'84 Pontiac Dream",
-        "duration": "3:49"
+        "duration": ""
       },
       {
         "position": "B4",
         "title": "Sherbet Head",
-        "duration": "2:41"
+        "duration": ""
       },
       {
         "position": "C1",
         "title": "Oscar See Through Red Eye",
-        "duration": "5:08"
+        "duration": ""
       },
       {
         "position": "C2",
         "title": "Ataronchronon",
-        "duration": "1:14"
+        "duration": ""
       },
       {
         "position": "C3",
         "title": "Hey Saturday Sun",
-        "duration": "4:56"
+        "duration": ""
       },
       {
         "position": "C4",
         "title": "Constants Are Changing",
-        "duration": "1:42"
+        "duration": ""
       },
       {
         "position": "D1",
         "title": "Slow This Bird Down",
-        "duration": "6:09"
+        "duration": ""
       },
       {
         "position": "D2",
         "title": "Tears From The Compound Eye",
-        "duration": "4:03"
+        "duration": ""
       },
       {
         "position": "D3",
         "title": "Farewell Fire",
-        "duration": "8:28"
+        "duration": ""
       }
-    ]
+    ],
+    "originalYear": 2005,
+    "genreSource": "master"
   },
   "5006908": {
     "cover": "https://i.discogs.com/8R1pK_WHrFD56W4XlJAAAQilpQ0pS95Fm8s9F2oC7Fo/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwMDY5/MDgtMTUwMzkzNzYy/Ny0xNzgwLmpwZWc.jpeg",
@@ -19036,7 +19053,8 @@
     ],
     "styles": [
       "IDM",
-      "Ambient"
+      "Ambient",
+      "Trip Hop"
     ],
     "country": "UK",
     "tracklist": [
@@ -19125,7 +19143,9 @@
         "title": "One Very Important Thought",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1998,
+    "genreSource": "master"
   },
   "5016381": {
     "cover": "https://i.discogs.com/KaUvzdg7Qd5mJdhezZwcWYddIckCnfTXdP-Mu3AZdIc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwMTYz/ODEtMTQxNjgxODY3/NS0zOTg2LmpwZWc.jpeg",
@@ -23426,7 +23446,9 @@
         "title": "House Of Pain",
         "duration": "3:18"
       }
-    ]
+    ],
+    "originalYear": 1984,
+    "genreSource": "master"
   },
   "7970928": {
     "cover": "https://i.discogs.com/HBUhJ0nOQDg0H0HY89M0J7dlGaDrFAuzf-eis6Cbeac/rs:fit/g:sm/q:90/h:600/w:566/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc5NzA5/MjgtMTQ1NDM0MTk1/MS04NjkyLmpwZWc.jpeg",
