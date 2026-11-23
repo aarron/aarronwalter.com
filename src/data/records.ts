@@ -386,4 +386,6 @@ export const records: VinylRecord[] = [
   { artist: 'Yussef Dayes', title: 'Black Classical Music', label: 'Brownswood Recordings', format: '2xLP, Album', rating: 4, released: 2023, releaseId: 28195162 },
   { artist: 'Duke Ellington & John Coltrane', title: 'Duke Ellington & John Coltrane', label: 'MCA Records', format: 'LP, Album, RE', rating: 4, released: 1980, releaseId: 5274523 },
   { artist: 'Herbie Hancock', title: 'Inventions And Dimensions', label: 'Blue Note', format: 'LP, Album, RE, Stereo', rating: 4, released: 2019, releaseId: 14216796 },
+  { artist: 'Charlie Parker And His Orchestra', title: 'The Genius Of Charlie Parker #1 - Night And Day', label: 'Verve Records', format: 'LP, Comp, Mono, RE', rating: 4, released: 1960, releaseId: 1390754 },
+  { artist: 'Chet Baker And The Carmel Strings', title: 'Into My Life', label: 'World Pacific', format: 'LP, Album, Stereo', rating: 4, released: 1966, releaseId: 33706674 },
 ]

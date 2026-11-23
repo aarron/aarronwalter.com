@@ -7004,6 +7004,69 @@
       }
     ]
   },
+  "1390754": {
+    "cover": "https://i.discogs.com/5BbqtriPpsBMwypJiQIIrVAiVE1nHRRSMWSW7eWJeio/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzOTA3/NTQtMTU0MTY3MjA4/NC00NTg2LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/IOa_RGEQ3jSJHTQsWNvxE9zEd7Iw9C0Q11M68oOyukk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzOTA3/NTQtMTU0MTY3MjA4/NC00NTg2LmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Temptation",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Autumn In New York",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Lover",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Stella By Starlight",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Dancing In The Dark",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Night And Day",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Almost Like Being In Love",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "I Can't Get Started",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "What Is This Thing Called Love",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Laura",
+        "duration": ""
+      }
+    ]
+  },
   "1417649": {
     "cover": "https://i.discogs.com/TRhkSWwbu2qvaJV_cr4ZTgeCzim3vCo1-K-B4Ti5nyk/rs:fit/g:sm/q:90/h:600/w:584/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTc2/NDktMTM1MjAzMDc5/OC00MDU5LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/HcTBhLnpKDGJVhc0xBpZ5eICEpEQr47WL8gTDogIUqU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0MTc2/NDktMTM1MjAzMDc5/OC00MDU5LmpwZWc.jpeg",
@@ -24736,6 +24799,80 @@
         "position": "D12",
         "title": "Prologue",
         "duration": ""
+      }
+    ]
+  },
+  "33706674": {
+    "cover": "https://i.discogs.com/j5v3Gy10MsATpv48OGBkJHi276I1aDrd67vLAhmMKZE/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNzA2/Njc0LTE3NDQ3Mjc3/MjUtNDkzMS5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/Hb-V-PI8Vlg9upH_U_bgEGMMCWKccl2iu1qrtN8yqrA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNzA2/Njc0LTE3NDQ3Mjc3/MjUtNDkzMS5qcGVn.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Cool Jazz",
+      "Easy Listening"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "A Man And A Woman (Un Homme Et Une Femme)",
+        "duration": "2:10"
+      },
+      {
+        "position": "A2",
+        "title": "Guantanamera",
+        "duration": "3:05"
+      },
+      {
+        "position": "A3",
+        "title": "I've Got My Love To Keep Me Warm",
+        "duration": "3:04"
+      },
+      {
+        "position": "A4",
+        "title": "The Ballad Of The Sad Young Men",
+        "duration": "4:09"
+      },
+      {
+        "position": "A5",
+        "title": "Here, There And Everywhere",
+        "duration": "2:45"
+      },
+      {
+        "position": "A6",
+        "title": "Cherry Pink And Apple Blossom White",
+        "duration": "2:50"
+      },
+      {
+        "position": "B1",
+        "title": "Serenata",
+        "duration": "1:50"
+      },
+      {
+        "position": "B2",
+        "title": "More And More Amor",
+        "duration": "2:59"
+      },
+      {
+        "position": "B3",
+        "title": "All",
+        "duration": "2:56"
+      },
+      {
+        "position": "B4",
+        "title": "If He Walked Into My Life",
+        "duration": "4:03"
+      },
+      {
+        "position": "B5",
+        "title": "Trains And Boats And Planes",
+        "duration": "2:22"
+      },
+      {
+        "position": "B6",
+        "title": "Got To Get You Into My Life",
+        "duration": "2:15"
       }
     ]
   }
