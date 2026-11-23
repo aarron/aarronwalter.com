@@ -181,7 +181,7 @@ export const records: VinylRecord[] = [
   { artist: 'Belle & Sebastian', title: 'Write About Love', label: 'Matador', format: 'LP, Album', rating: 3, released: 2010, releaseId: 2483952 },
   { artist: 'Elton John', title: 'Greatest Hits', label: 'MCA Records', format: 'LP, Comp, Pin', rating: 3, released: 1974, releaseId: 1120137 },
   { artist: 'Bing Crosby', title: 'Merry Christmas', label: 'MCA Records', format: 'LP, Album, Comp, Mono, RE, Bla', rating: 3, released: 1973, releaseId: 6235210 },
-  { artist: 'Tears For Fears', title: 'Songs From The Big Chair', label: 'Mercury', format: 'LP, Album', rating: 4, released: 1985, releaseId: 124187 },
+  { artist: 'Tears For Fears', title: 'Songs From The Big Chair', label: 'Mercury', format: 'LP, Album, Stereo', rating: 4, released: 1985, releaseId: 438688 },
   { artist: 'Various', title: 'Motown Highlights 1976-1979', label: 'Motown', format: 'LP, Comp', rating: 3, released: 1980, releaseId: 1780068 },
   { artist: 'Edwin Starr', title: 'Edwin Starr', label: 'Motown', format: 'LP, Comp', rating: 3, released: 1980, releaseId: 2412093 },
   { artist: 'Stevie Wonder', title: 'For Once In My Life', label: 'Motown', format: 'LP, Album, RE', rating: 4, released: 1982, releaseId: 712634 },
@@ -399,5 +399,7 @@ export const records: VinylRecord[] = [
   { artist: 'Roy Orbison', title: 'The Very Best Of Roy Orbison', label: 'Monument', format: 'LP, Comp, Stereo', rating: 4, released: 1966, releaseId: 6144131 },
   { artist: 'R.E.M.', title: 'Automatic For The People', label: 'Craft Recordings', format: 'LP, Album, RE, RM', rating: 4, released: 2017, releaseId: 11118466 },
   { artist: 'R.E.M.', title: 'Nightswimming', label: 'Warner Bros. Records', format: '12", Single Sided, Picture Disc', rating: 4, released: 1993, releaseId: 587798 },
+  { artist: 'Elvis Costello', title: 'My Aim Is True', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1977, releaseId: 2343062 },
+  { artist: 'Men At Work', title: 'Business As Usual', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1982, releaseId: 587059 },
   { artist: 'Glenn Miller And His Orchestra', title: 'Glenn Miller Plays Selections From "The Glenn Miller Story" And Other Hits', label: 'RCA', format: 'LP, Album, RE', rating: 4, released: null, releaseId: 6205175 },
 ]

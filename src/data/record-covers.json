@@ -221,68 +221,6 @@
       }
     ]
   },
-  "124187": {
-    "cover": "https://i.discogs.com/wbveeAFdX4QYUdMQ-SXYrWme1i0c_LPmqWZlZ9H7DCc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDE4/Ny0xMzQ5MDA0MzE1/LTU5NDguanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/8l0dBm7Cl5TMuZ07t1nOBSJq6T934BVLpvIxPK6ueL4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDE4/Ny0xMzQ5MDA0MzE1/LTU5NDguanBlZw.jpeg",
-    "genres": [
-      "Electronic",
-      "Rock",
-      "Pop"
-    ],
-    "styles": [
-      "New Wave",
-      "Pop Rock",
-      "Synth-pop"
-    ],
-    "country": "UK",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Shout",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "The Working Hour",
-        "duration": ""
-      },
-      {
-        "position": "A3",
-        "title": "Everybody Wants To Rule The World",
-        "duration": ""
-      },
-      {
-        "position": "A4",
-        "title": "Mothers Talk",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "I Believe",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "Broken",
-        "duration": ""
-      },
-      {
-        "position": "B3",
-        "title": "Head Over Heels",
-        "duration": ""
-      },
-      {
-        "position": "B4",
-        "title": "Broken (Live)",
-        "duration": ""
-      },
-      {
-        "position": "B5",
-        "title": "Listen",
-        "duration": ""
-      }
-    ]
-  },
   "125881": {
     "cover": "https://i.discogs.com/mucJg8046XTDhTZA60uSjibfipL2w7OYXbpK4DQ01u8/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTg4/MS0xMzYzNDY3NTQy/LTc0NTkuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/K89TnTA3eKL9C26fwl-r9PVQV8HJDATz7iaBsAvnZHY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNTg4/MS0xMzYzNDY3NTQy/LTc0NTkuanBlZw.jpeg",
@@ -1804,6 +1742,60 @@
       }
     ]
   },
+  "438688": {
+    "cover": "https://i.discogs.com/XRtCMtqvMIyg1zhNE2Spk7qQFWud8FW2o-cRoOLvC_I/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzODY4/OC0xMzczOTk2OTI2/LTc4MTMuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/q_u5-MuCMK3s9iaXHiYOlnN9EE27JGjIUXgM0euFpdg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzODY4/OC0xMzczOTk2OTI2/LTc4MTMuanBlZw.jpeg",
+    "genres": [
+      "Electronic",
+      "Rock"
+    ],
+    "styles": [
+      "Synth-pop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Shout",
+        "duration": "6:35"
+      },
+      {
+        "position": "A2",
+        "title": "The Working Hour",
+        "duration": "6:29"
+      },
+      {
+        "position": "A3",
+        "title": "Everybody Wants To Rule The World",
+        "duration": "4:10"
+      },
+      {
+        "position": "A4",
+        "title": "Mothers Talk",
+        "duration": "3:53"
+      },
+      {
+        "position": "B1",
+        "title": "I Believe",
+        "duration": "4:53"
+      },
+      {
+        "position": "B2",
+        "title": "Broken",
+        "duration": "2:33"
+      },
+      {
+        "position": "B3",
+        "title": "Head Over Heels",
+        "duration": "5:00"
+      },
+      {
+        "position": "B4",
+        "title": "Listen",
+        "duration": "6:54"
+      }
+    ]
+  },
   "438865": {
     "cover": "https://i.discogs.com/vBdP_eem2syIxHAUueUvDdfxNfyp8ESNhOxuDfJKDVo/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzODg2/NS0xNTc5NDE3NTYy/LTY1MTUuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/NVyuODmMQHrz_yitAdfypYFpZI7d5Nj14HJ6lheEK_k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzODg2/NS0xNTc5NDE3NTYy/LTY1MTUuanBlZw.jpeg",
@@ -2949,6 +2941,69 @@
         "position": "B8",
         "title": "The Only Flame In Town",
         "duration": "3:31"
+      }
+    ]
+  },
+  "587059": {
+    "cover": "https://i.discogs.com/r8oqPvsb_eoru0EfwP80Pq_10ZjJf_klw2Tw4Yc5wM4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4NzA1/OS0xNDA3MzY5NzU4/LTcyMDkuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/qYgisDReR7Vl4NmLPAp8MXeSGcK0ojZ5z7n8wivQYJs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4NzA1/OS0xNDA3MzY5NzU4/LTcyMDkuanBlZw.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Pop Rock"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Who Can It Be Now?",
+        "duration": "3:21"
+      },
+      {
+        "position": "A2",
+        "title": "I Can See It In Your Eyes",
+        "duration": "3:28"
+      },
+      {
+        "position": "A3",
+        "title": "Down Under",
+        "duration": "3:41"
+      },
+      {
+        "position": "A4",
+        "title": "Underground",
+        "duration": "3:02"
+      },
+      {
+        "position": "A5",
+        "title": "Helpless Automaton",
+        "duration": "3:21"
+      },
+      {
+        "position": "B1",
+        "title": "People Just Love To Play With Words",
+        "duration": "3:28"
+      },
+      {
+        "position": "B2",
+        "title": "Be Good Johnny",
+        "duration": "3:34"
+      },
+      {
+        "position": "B3",
+        "title": "Touching The Untouchables",
+        "duration": "3:39"
+      },
+      {
+        "position": "B4",
+        "title": "Catch A Star",
+        "duration": "3:27"
+      },
+      {
+        "position": "B5",
+        "title": "Down By The Sea",
+        "duration": "6:38"
       }
     ]
   },
@@ -10842,6 +10897,85 @@
         "position": "D3",
         "title": "One O'Clock Jump",
         "duration": "7:40"
+      }
+    ]
+  },
+  "2343062": {
+    "cover": "https://i.discogs.com/0Rv-3-yOV8esy1znzH7IcBv5u8d2PZI8BQCPu2yr65Y/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNDMw/NjItMTM3OTcwMjcz/My03NDI2LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/7yB_Iw-qw0_q9C8w0UAd5n6VxSgPfzoLIiLZ1gpSAjg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNDMw/NjItMTM3OTcwMjcz/My03NDI2LmpwZWc.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "New Wave",
+      "Rock & Roll"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Welcome To The Working Week",
+        "duration": "1:22"
+      },
+      {
+        "position": "A2",
+        "title": "Miracle Man",
+        "duration": "3:28"
+      },
+      {
+        "position": "A3",
+        "title": "No Dancing",
+        "duration": "2:37"
+      },
+      {
+        "position": "A4",
+        "title": "Blame It On Cain",
+        "duration": "2:48"
+      },
+      {
+        "position": "A5",
+        "title": "Alison",
+        "duration": "3:21"
+      },
+      {
+        "position": "A6",
+        "title": "Sneaky Feelings",
+        "duration": "2:08"
+      },
+      {
+        "position": "A7",
+        "title": "Watching The Detectives",
+        "duration": "3:42"
+      },
+      {
+        "position": "B1",
+        "title": "(The Angels Wanna Wear My) Red Shoes",
+        "duration": "2:46"
+      },
+      {
+        "position": "B2",
+        "title": "Less Than Zero",
+        "duration": "3:11"
+      },
+      {
+        "position": "B3",
+        "title": "Mystery Dance",
+        "duration": "1:35"
+      },
+      {
+        "position": "B4",
+        "title": "Pay It Back",
+        "duration": "2:32"
+      },
+      {
+        "position": "B5",
+        "title": "I'm Not Angry",
+        "duration": "2:57"
+      },
+      {
+        "position": "B6",
+        "title": "Waiting For The End Of The World",
+        "duration": "3:21"
       }
     ]
   },
