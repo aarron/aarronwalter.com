@@ -52,7 +52,7 @@ export default function ListeningPage() {
           <h1 className="page-header-title">Listening</h1>
           <hr className="page-header-rule" />
           <p className="page-header-intro">
-            Music is the heart of my studio. Vinyl is how I love to listen. Keep them spinning — here's what's in rotation.
+            Music is the heart of my studio. Vinyl is how I love to listen. Here's my current vinyl collection.
           </p>
         </header>
 
