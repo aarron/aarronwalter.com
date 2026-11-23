@@ -33,7 +33,7 @@ export const records: VinylRecord[] = [
   { artist: 'Fred McDowell', title: 'Vol. 2', label: 'Arhoolie Records', format: 'LP, Album, RE', rating: 4, released: 2012, releaseId: 3628483 },
   { artist: 'The Delfonics', title: 'The Best Of The Delfonics', label: 'Arista', format: 'LP, Comp', rating: 3, released: 1984, releaseId: 1619880 },
   { artist: 'James & Bobby Purify', title: 'The Best Of James & Bobby Purify. Do It Right!', label: 'Arista', format: 'LP, Comp', rating: 5, released: 1985, releaseId: 1834470 },
-  { artist: 'Hank Crawford', title: 'Mr. Blues', label: 'Atlantic', format: 'LP, Album, Mono, Promo, MO', rating: 4, released: 1967, releaseId: 6076729 },
+  { artist: 'Hank Crawford', title: 'Mr. Blues', label: 'Atlantic', format: 'LP, Album, Mono', rating: 4, released: 1967, releaseId: 4747880 },
   { artist: 'Ray Charles', title: 'Ray Charles', label: 'Atlantic', format: 'LP, Comp, Mono', rating: 5, released: 1957, releaseId: 4839693 },
   { artist: 'Ray Charles', title: 'Yes Indeed!', label: 'Atlantic', format: 'LP, Album, Mono', rating: 4, released: 1958, releaseId: 2727189 },
   { artist: 'Ray Charles', title: 'Do The Twist With Ray Charles', label: 'Atlantic', format: 'LP, Comp, Mono, MGM', rating: 3, released: 1961, releaseId: 1207335 },
@@ -380,4 +380,5 @@ export const records: VinylRecord[] = [
   { artist: 'Various', title: 'The Best Of Blue Note', label: 'Blue Note', format: '2xLP, Comp', rating: 4, released: 1984, releaseId: 3574660 },
   { artist: 'Gerry Mulligan & Stan Getz', title: 'Gerry Mulligan Meets Stan Getz', label: 'Verve Records', format: 'LP, Album, Mono', rating: 4, released: 1961, releaseId: 641119 },
   { artist: 'Duke Ellington • Charles Mingus • Max Roach', title: 'Money Jungle', label: 'United Artists Jazz', format: 'LP, Album, Stereo', rating: 4, released: 1962, releaseId: 2936339 },
+  { artist: 'Jimmy Smith', title: 'Jimmy Smith (The Blue Note Re-Issue Series)', label: 'Blue Note', format: '2xLP, Comp', rating: 4, released: 1975, releaseId: 1052620 },
 ]
