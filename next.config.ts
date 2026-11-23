@@ -13,6 +13,12 @@ const nextConfig: NextConfig = {
         hostname: 'megaphone.imgix.net',
         pathname: '/**',
       },
+      // Megaphone now serves episode artwork from Spotify's CDN
+      {
+        protocol: 'https',
+        hostname: 'megaphone-images.spotifycdn.com',
+        pathname: '/**',
+      },
       {
         protocol: 'https',
         hostname: 'substackcdn.com',
@@ -70,7 +76,7 @@ const nextConfig: NextConfig = {
               // Fonts: self + Adobe Fonts CDN
               "font-src 'self' https://use.typekit.net https://p.typekit.net",
               // Images: self + podcast artwork + Open Library covers (redirect via archive.org) + Discogs + Amazon CDN
-              "img-src 'self' data: blob: https://megaphone.imgix.net https://covers.openlibrary.org https://archive.org https://*.archive.org https://*.us.archive.org https://img.discogs.com https://i.discogs.com https://m.media-amazon.com https://images-na.ssl-images-amazon.com https://substackcdn.com https://substack-post-media.s3.amazonaws.com https://*.ytimg.com https://substack-video.s3.amazonaws.com",
+              "img-src 'self' data: blob: https://megaphone.imgix.net https://megaphone-images.spotifycdn.com https://covers.openlibrary.org https://archive.org https://*.archive.org https://*.us.archive.org https://img.discogs.com https://i.discogs.com https://m.media-amazon.com https://images-na.ssl-images-amazon.com https://substackcdn.com https://substack-post-media.s3.amazonaws.com https://*.ytimg.com https://substack-video.s3.amazonaws.com",
               // API calls: self + Discogs + OpenLibrary (contact form now hits /api/contact internally)
               "connect-src 'self' https://api.discogs.com https://openlibrary.org https://designbetterpodcast.com",
               // Spotify player (iFrame API) in the Listening modal
