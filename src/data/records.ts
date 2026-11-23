@@ -371,4 +371,6 @@ export const records: VinylRecord[] = [
   { artist: 'Charlie Christian', title: 'Charlie Christian', label: 'Archive Of Folk & Jazz Music', format: 'LP, Album, RE, Stereo', rating: 4, released: 1968, releaseId: 24036158 },
   { artist: 'Lester Young', title: 'The Immortal Lester Young', label: 'Philips', format: 'LP, Comp, Mono', rating: 4, released: 1959, releaseId: 11031691 },
   { artist: 'Jim Hall', title: 'Jim Hall Live!', label: 'Horizon', format: 'LP, Album, Stereo', rating: 4, released: 1975, releaseId: 1447788 },
+  { artist: 'Art Farmer', title: 'The Art Farmer Quintet Plays The Great Jazz Hits', label: 'Columbia', format: 'LP, Album, RE', rating: 4, released: 1980, releaseId: 1168819 },
+  { artist: 'Duke Ellington And His Orchestra', title: 'Ellington Indigos', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1958, releaseId: 728154 },
 ]

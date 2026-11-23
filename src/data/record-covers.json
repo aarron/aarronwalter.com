@@ -3590,6 +3590,59 @@
       }
     ]
   },
+  "728154": {
+    "cover": "https://i.discogs.com/OKXLsNFDK4F-IRwhq91qpG2t3XY9V7pi-VSwM_JYVbk/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODE1/NC0xNjEyMDI2ODE2/LTQzNTEuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/6V1sye5jHI9yblZBvWWVk-0n2qFgCD46Q2T6IQQye6A/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODE1/NC0xNjEyMDI2ODE2/LTQzNTEuanBlZw.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Big Band"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Solitude",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Where Or When",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Mood Indigo",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Autumn Leaves",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Prelude To A Kiss",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Willow Weep For Me",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Tenderly",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Dancing In The Dark",
+        "duration": ""
+      }
+    ]
+  },
   "728198": {
     "cover": "https://i.discogs.com/wb78VDv1C51e8kZqYFEcFKU77Yb1W9IXmQm0o9wT3VE/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODE5/OC0xMzkyOTMyNzMz/LTU3OTUuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/6-xjFc-JyNQR6Jhucnr-OwpIZxGv5yHzuDzqV5vnkL0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyODE5/OC0xMzkyOTMyNzMz/LTU3OTUuanBlZw.jpeg",
@@ -5234,6 +5287,69 @@
         "position": "B6",
         "title": "Fine And Mellow",
         "duration": "3:18"
+      }
+    ]
+  },
+  "1168819": {
+    "cover": "https://i.discogs.com/-4GwqJY7c09GVkN-Hmetnd5XLss4NPzqU9oB3okoV90/rs:fit/g:sm/q:90/h:500/w:496/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjg4/MTktMTI1NDU2Nzk0/OC5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/3UCGd4n0rEUcuFH0sZEavm6diOmJxnfp06rh1OzQX0c/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjg4/MTktMTI1NDU2Nzk0/OC5qcGVn.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Song For My Father",
+        "duration": "4:36"
+      },
+      {
+        "position": "A2",
+        "title": "'Round Midnight",
+        "duration": "5:30"
+      },
+      {
+        "position": "A3",
+        "title": "Sidewinder",
+        "duration": "3:58"
+      },
+      {
+        "position": "A4",
+        "title": "Moanin'",
+        "duration": "4:49"
+      },
+      {
+        "position": "A5",
+        "title": "Watermelon Man",
+        "duration": "3:55"
+      },
+      {
+        "position": "B1",
+        "title": "Mercy, Mercy, Mercy",
+        "duration": "3:13"
+      },
+      {
+        "position": "B2",
+        "title": "I Remember Clifford",
+        "duration": "5:41"
+      },
+      {
+        "position": "B3",
+        "title": "Take Five",
+        "duration": "3:37"
+      },
+      {
+        "position": "B4",
+        "title": "Gemini",
+        "duration": "5:28"
+      },
+      {
+        "position": "B5",
+        "title": "The \"In\" Crowd",
+        "duration": "4:11"
       }
     ]
   },
