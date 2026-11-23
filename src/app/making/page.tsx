@@ -75,7 +75,7 @@ export default function MakingPage() {
                   {p.image && (
                     <div className="project-shot">
                       <BrowserFrame>
-                        <Image src={p.image} alt={`${p.name} home page`} width={1600} height={1000} sizes="(max-width: 760px) 100vw, 50vw" />
+                        <Image src={p.image} alt={`${p.name} home page`} width={1600} height={1333} sizes="(max-width: 760px) 100vw, 50vw" />
                       </BrowserFrame>
                     </div>
                   )}
