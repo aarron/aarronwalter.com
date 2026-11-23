@@ -403,5 +403,5 @@ export const records: VinylRecord[] = [
   { artist: 'Glenn Miller And His Orchestra', title: 'Glenn Miller Plays Selections From "The Glenn Miller Story" And Other Hits', label: 'RCA', format: 'LP, Album, RE', rating: 4, released: null, releaseId: 6205175 },
   { artist: 'Ahmad Jamal', title: 'The Piano Scene Of Ahmad Jamal', label: 'Epic', format: 'LP, Album, Mono', rating: 4, released: 1959, releaseId: 941374 },
   { artist: 'Ahmad Jamal', title: 'Ahmad Jamal\'s Alhambra', label: 'Argo', format: 'LP, Album, Mono', rating: 4, released: 1961, releaseId: 2235757 },
-  { artist: 'Ahmad Jamal', title: 'Chamber Music Of The New Jazz', label: 'Argo', format: 'LP, Album, RE', rating: 5, released: 1958, releaseId: 2599279 },
+  { artist: 'Ahmad Jamal', title: 'Chamber Music Of The New Jazz', label: 'Argo', format: 'LP, Album, RE', rating: 5, released: 1955, releaseId: 2599279 },
 ]
