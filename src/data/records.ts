@@ -366,4 +366,5 @@ export const records: VinylRecord[] = [
   { artist: 'Led Zeppelin', title: 'Led Zeppelin II', label: 'Atlantic', format: 'LP, Album, Stereo, Gat', rating: 4, released: 1969, releaseId: 6524212 },
   { artist: 'The Rolling Stones', title: 'Beggars Banquet', label: 'London Records', format: 'LP, Album, RE, Stereo, Gat', rating: 4, released: null, releaseId: 6942666 },
   { artist: 'Bruce Springsteen', title: 'Born To Run', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1975, releaseId: 1874253 },
+  { artist: 'Pink Floyd', title: 'The Dark Side Of The Moon', label: 'Pink Floyd Records', format: 'LP, Album, RE, RM, 180', rating: 5, released: 2023, releaseId: 28614196 },
 ]
