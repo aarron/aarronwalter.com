@@ -3418,7 +3418,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: rgb(from var(--ink) r g b / 0.55);
-  padding-left: 0.9rem;
 }
 
 /* Filter menus: outlined pills that fill in when they're narrowing the list */
