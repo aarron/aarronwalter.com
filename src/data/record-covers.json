@@ -10846,55 +10846,6 @@
       }
     ]
   },
-  "2311979": {
-    "cover": "https://i.discogs.com/m9beINTfGrqMpOdvpjXgRlDvAg4GbMH--6iOAm9vpQs/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMTE5/NzktMTU1NTAwNDY1/Ni04MjY4LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/q6506q7251biCCSQ2GdjqTueoEnCp1pm_SrdatM0-JY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMTE5/NzktMTU1NTAwNDY1/Ni04MjY4LmpwZWc.jpeg",
-    "genres": [
-      "Jazz"
-    ],
-    "styles": [
-      "Bop",
-      "Hard Bop"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Bags' Groove (Take 1)",
-        "duration": ""
-      },
-      {
-        "position": "A2",
-        "title": "Bags' Groove (Take 2)",
-        "duration": ""
-      },
-      {
-        "position": "B1",
-        "title": "Airegin",
-        "duration": ""
-      },
-      {
-        "position": "B2",
-        "title": "Oleo",
-        "duration": ""
-      },
-      {
-        "position": "B3",
-        "title": "But Not For Me (Take 2)",
-        "duration": ""
-      },
-      {
-        "position": "B4",
-        "title": "Doxy",
-        "duration": ""
-      },
-      {
-        "position": "B5",
-        "title": "But Not For Me (Take 1)",
-        "duration": ""
-      }
-    ]
-  },
   "2313263": {
     "cover": "https://i.discogs.com/NEzpVdTFAmwFNFoKG7vVbkup6aON_xet5Vc_YmzAA88/rs:fit/g:sm/q:90/h:574/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMTMy/NjMtMTcwNjEwNzEw/NS01NjA0LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/-9FLOSVth46BNGRMNk_gLj_nb6vSnESmNsyaXHXM9o8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMTMy/NjMtMTcwNjEwNzEw/NS01NjA0LmpwZWc.jpeg",
@@ -15458,6 +15409,54 @@
         "position": "B6",
         "title": "Blues For Hawaiians",
         "duration": "2:25"
+      }
+    ]
+  },
+  "3985122": {
+    "cover": "https://i.discogs.com/S3a6swj6F9riNvJM9P6SGQl8SAtJWdS2yXossQTajy8/rs:fit/g:sm/q:90/h:596/w:585/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5ODUx/MjItMTM1MTQyMzU4/MC0zNTk4LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/ISlYN_Opq4e_ufLPKsxxiyvWqxLTsSL8N0HAJ08Kyys/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5ODUx/MjItMTM1MTQyMzU4/MC0zNTk4LmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Hard Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Bags' Groove (Take 1)",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Bags' Groove (Take 2)",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Airegin",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Oleo",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "But Not For Me (Take 2)",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Doxy",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "But Not For Me (Take 1)",
+        "duration": ""
       }
     ]
   },
