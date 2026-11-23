@@ -63,7 +63,7 @@ export const records: VinylRecord[] = [
   { artist: 'Cannonball Adderley', title: 'Somethin\' Else', label: 'Blue Note', format: 'LP, Album, RE, DMM', rating: 5, released: 1985, releaseId: 399639 },
   { artist: 'Dexter Gordon', title: 'Our Man In Paris', label: 'Blue Note', format: 'LP, Album, Mono, Ltd, RE', rating: 4, released: 2013, releaseId: 6805168 },
   { artist: 'Professor Longhair', title: 'Rock \'N\' Roll Gumbo', label: 'Blue Star', format: 'LP, Album, Mono', rating: 4, released: 1974, releaseId: 2780500 },
-  { artist: 'Kraftwerk', title: 'Radio-Activity', label: 'Capitol Records', format: 'LP, Album, Win', rating: 4, released: 1975, releaseId: 252195 },
+  { artist: 'Kraftwerk', title: 'Radio-Activity', label: 'Capitol Records', format: 'LP, Album, RE', rating: 4, released: 1979, releaseId: 5828247 },
   { artist: 'Crowded House', title: 'Crowded House', label: 'Capitol Records', format: 'LP, Album, All', rating: 2, released: 1986, releaseId: 747153 },
   { artist: 'Lou Rawls', title: 'Carryin\' On!', label: 'Capitol Records', format: 'LP, Album, Mono', rating: 3, released: 1966, releaseId: 2214465 },
   { artist: 'Miles Davis', title: 'Birth Of The Cool', label: 'Capitol Records', format: 'LP, Comp, Mono', rating: 5, released: 1957, releaseId: 5456857 },

@@ -832,81 +832,6 @@
       }
     ]
   },
-  "252195": {
-    "cover": "https://i.discogs.com/K1Lz9Jflp8vlAigrvXlX8R-4wWhyUamht3wFZN5HNHA/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjE5/NS0xMzg4NzczMjk5/LTcwNTIuanBlZw.jpeg",
-    "thumb": "https://i.discogs.com/KP9iT-QLo7NCJOlXkM1tVOH3e9OQQ3xdUkzLiatFc2c/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MjE5/NS0xMzg4NzczMjk5/LTcwNTIuanBlZw.jpeg",
-    "genres": [
-      "Electronic",
-      "Rock"
-    ],
-    "styles": [
-      "Minimal",
-      "Krautrock"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Geiger Counter",
-        "duration": "1:04"
-      },
-      {
-        "position": "A2",
-        "title": "Radioactivity",
-        "duration": "6:44"
-      },
-      {
-        "position": "A3",
-        "title": "Radioland",
-        "duration": "5:53"
-      },
-      {
-        "position": "A4",
-        "title": "Airwaves",
-        "duration": "4:53"
-      },
-      {
-        "position": "A5",
-        "title": "Intermission",
-        "duration": "0:15"
-      },
-      {
-        "position": "A6",
-        "title": "News",
-        "duration": "1:31"
-      },
-      {
-        "position": "B1",
-        "title": "The Voice Of Energy",
-        "duration": "0:54"
-      },
-      {
-        "position": "B2",
-        "title": "Antenna",
-        "duration": "3:45"
-      },
-      {
-        "position": "B3",
-        "title": "Radio Stars",
-        "duration": "3:38"
-      },
-      {
-        "position": "B4",
-        "title": "Uranium",
-        "duration": "1:24"
-      },
-      {
-        "position": "B5",
-        "title": "Transistor",
-        "duration": "2:15"
-      },
-      {
-        "position": "B6",
-        "title": "Ohm Sweet Ohm",
-        "duration": "5:40"
-      }
-    ]
-  },
   "347861": {
     "cover": "https://i.discogs.com/quMTtfZf_rzt0zeC5pCo4RLVukYe7FUcGGAYgkWxFtM/rs:fit/g:sm/q:90/h:320/w:320/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0Nzg2/MS0xNTA0NjIwOTY3/LTk0NzYuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/KOtD6YxlH0ORPPxK3Va1IIWd51-payIWGPEYZsiih00/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM0Nzg2/MS0xNTA0NjIwOTY3/LTk0NzYuanBlZw.jpeg",
@@ -20203,6 +20128,80 @@
         "position": "B5",
         "title": "Moonlight Mile",
         "duration": "5:56"
+      }
+    ]
+  },
+  "5828247": {
+    "cover": "https://i.discogs.com/38JjepwlHmfk08zoIZpIh4Zo28z10nTRcPgb_PZpCrE/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4Mjgy/NDctMTQzOTk0NjAw/OC0xMjk1LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/jrwrEE4G92x8Ss7fgafYLSrMAEYQYEgVbx5w3mBRChQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4Mjgy/NDctMTQzOTk0NjAw/OC0xMjk1LmpwZWc.jpeg",
+    "genres": [
+      "Electronic"
+    ],
+    "styles": [
+      "Minimal",
+      "Experimental"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Geiger Counter ",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Radioactivity",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Radioland ",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Airwaves",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Intermission",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "title": "News",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "The Voice Of Energy",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Antenna",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Radio Stars",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Uranium",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Transistor",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Ohm Sweet Ohm",
+        "duration": ""
       }
     ]
   },
