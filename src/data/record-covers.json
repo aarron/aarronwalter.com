@@ -2952,6 +2952,40 @@
       }
     ]
   },
+  "587798": {
+    "cover": "https://i.discogs.com/bzyXHh1bCvRutW3BJZ25_8mdvbqG046LghKt4TE2F2U/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4Nzc5/OC0xNTA4NjAzMjIy/LTkxNjguanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/J2rc8V97YN5bqUnVahDvWvGRKczda-ZecPxLYMIU5PA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4Nzc5/OC0xNTA4NjAzMjIy/LTkxNjguanBlZw.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Pop Rock",
+      "Alternative Rock"
+    ],
+    "country": "UK",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Nightswimming",
+        "duration": "4:16"
+      },
+      {
+        "position": "A2",
+        "title": "World Leader Pretend (Live - Previously Unreleased)",
+        "duration": "5:14"
+      },
+      {
+        "position": "A3",
+        "title": "Belong (Live - Previously Unreleased)",
+        "duration": "4:38"
+      },
+      {
+        "position": "A4",
+        "title": "Low (Live - Previously Unreleased)",
+        "duration": "4:58"
+      }
+    ]
+  },
   "611439": {
     "cover": "https://i.discogs.com/FyQ5lYK1Gc76emd2z3P7NO4tSU14p5nSHZeIHYT6aqo/rs:fit/g:sm/q:90/h:600/w:563/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxMTQz/OS0xMzQ0NTM2NjQ3/LTkwODcuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/GeUSObW5HZsTnPEenBKJ80edjsLE4I4K_oLyX2SocLY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxMTQz/OS0xMzQ0NTM2NjQ3/LTkwODcuanBlZw.jpeg",
@@ -24247,6 +24281,90 @@
         "position": "B6",
         "title": "The World Is Mad",
         "duration": ""
+      }
+    ]
+  },
+  "11118466": {
+    "cover": "https://i.discogs.com/IhyZR2xPgp2gFyL70mofoid4mmTV2CpEF_MI7MnL4TM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTE4/NDY2LTE3NjE5NDMx/MTctODc1Ny5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/4B1zbqV7ermqjjNRtOPb0aasPafKvAreFcZeCmguSX8/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMTE4/NDY2LTE3NjE5NDMx/MTctODc1Ny5qcGVn.jpeg",
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Alternative Rock",
+      "Pop Rock"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "",
+        "title": "Drive",
+        "duration": ""
+      },
+      {
+        "position": "A1",
+        "title": "Drive",
+        "duration": "4:30"
+      },
+      {
+        "position": "A2",
+        "title": "Try Not To Breathe",
+        "duration": "3:49"
+      },
+      {
+        "position": "A3",
+        "title": "The Sidewinder Sleeps Tonite",
+        "duration": "4:06"
+      },
+      {
+        "position": "A4",
+        "title": "Everybody Hurts",
+        "duration": "5:17"
+      },
+      {
+        "position": "A5",
+        "title": "New Orleans Instrumental No. 1",
+        "duration": "2:12"
+      },
+      {
+        "position": "A6",
+        "title": "Sweetness Follows",
+        "duration": "4:19"
+      },
+      {
+        "position": "",
+        "title": "Ride",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Monty Got A Raw Deal",
+        "duration": "3:16"
+      },
+      {
+        "position": "B2",
+        "title": "Ignoreland",
+        "duration": "4:24"
+      },
+      {
+        "position": "B3",
+        "title": "Star Me Kitten",
+        "duration": "3:15"
+      },
+      {
+        "position": "B4",
+        "title": "Man On The Moon",
+        "duration": "5:12"
+      },
+      {
+        "position": "B5",
+        "title": "Nightswimming",
+        "duration": "4:16"
+      },
+      {
+        "position": "B6",
+        "title": "Find The River",
+        "duration": "3:49"
       }
     ]
   },
