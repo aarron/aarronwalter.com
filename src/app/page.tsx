@@ -210,6 +210,7 @@ export default async function Home() {
               { index: '03', company: 'InVision', role: 'VP of Design Education & Content', years: '2016–2020', href: '/portfolio/invision' },
               { index: '04', company: 'Consulting', role: 'Speaker · Advisor · Strategist', years: 'Ongoing', href: '/portfolio/other' },
               { index: '05', company: 'My Books', role: 'Designing for Emotion · Principles of Product Design', years: 'Author', href: '/portfolio/books' },
+              { index: '06', company: 'Making', role: 'Websites · Software · Hardware', years: 'Ongoing', href: '/making' },
             ].map((item) => (
               <li key={item.company} className="work-item">
                 <a href={item.href} className="work-link">

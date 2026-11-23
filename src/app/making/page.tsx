@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import FooterWave from '@/components/FooterWave'
 import BrowserFrame from '@/components/BrowserFrame'
+import GitHubIcon from '@/components/GitHubIcon'
 import ActivityGrid from '@/components/ActivityGrid'
 import ProjectLanes from '@/components/ProjectLanes'
 import { projects } from '@/data/projects'
@@ -49,7 +50,9 @@ export default function MakingPage() {
             is boundless it would seem. Here are a few things I&rsquo;ve been working on lately.
           </p>
           <p className="making-github">
-            <a href="https://github.com/aarron" target="_blank" rel="noopener noreferrer">github.com/aarron →</a>
+            <a className="making-btn making-btn--ghost" href="https://github.com/aarron" target="_blank" rel="noopener noreferrer">
+              <GitHubIcon /> Follow me on GitHub
+            </a>
           </p>
         </header>
 
@@ -93,8 +96,8 @@ export default function MakingPage() {
                     </ul>
                     {(p.url || p.repo) && (
                       <p className="project-links">
-                        {p.url && <a href={p.url} target="_blank" rel="noopener noreferrer">Visit {host(p.url)} →</a>}
-                        {p.repo && <a href={p.repo} target="_blank" rel="noopener noreferrer">Code on GitHub →</a>}
+                        {p.url && <a className="making-btn" href={p.url} target="_blank" rel="noopener noreferrer">Visit {host(p.url)} <span aria-hidden="true">↗</span></a>}
+                        {p.repo && <a className="making-btn making-btn--ghost" href={p.repo} target="_blank" rel="noopener noreferrer"><GitHubIcon /> View the code</a>}
                       </p>
                     )}
                   </div>

@@ -5161,12 +5161,23 @@ body {
 
 /* ─── Making page ─────────────────────────────────────── */
 
-.making-github { margin: 1.25rem 0 0; }
-.making-github a {
+.making-github { margin: 1.5rem 0 0; }
+.making-btn {
+  display: inline-flex; align-items: center; gap: 0.55rem;
   font-family: "aktiv-grotesk", sans-serif; font-size: 0.875rem; font-weight: 700;
-  color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--signal);
+  line-height: 1;
+  padding: 0.8rem 1.25rem;
+  border-radius: 2rem;
+  border: 1px solid var(--signal);
+  background: var(--signal);
+  color: var(--on-signal);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
-.making-github a:hover { color: var(--signal); }
+.making-btn:hover { background: var(--signal-strong, var(--signal)); border-color: var(--signal-strong, var(--signal)); }
+.making-btn--ghost { background: transparent; color: var(--ink); border-color: rgb(from var(--ink) r g b / 0.35); }
+.making-btn--ghost:hover { background: transparent; color: var(--signal); border-color: var(--signal); }
+.making-btn:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
 .making { display: grid; gap: clamp(3.5rem, 7vw, 6rem); }
 .making-section { display: grid; gap: 1.25rem; min-width: 0; }
 .making-heading {
@@ -5190,31 +5201,46 @@ body {
 
 /* Activity grid */
 .activity { display: grid; gap: 1rem; min-width: 0; }
+/* Stats: a bordered table, matching the Design Better stats on the home page */
 .activity-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
-  gap: 1.5rem clamp(1.5rem, 4vw, 3.5rem);
-  margin: 0 0 clamp(1rem, 2vw, 1.75rem);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 0 clamp(1.5rem, 3vw, 2.5rem);
+  border-top: 1px solid rgb(from var(--ink) r g b / 0.15);
+  border-bottom: 1px solid rgb(from var(--ink) r g b / 0.15);
 }
-.activity-stats div { display: flex; flex-direction: column-reverse; gap: 0.4rem; }
-.activity-stats dt {
+.activity-stat {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.4rem;
+  min-width: 0;
+  padding: clamp(0.9rem, 1.6vw, 1.25rem) clamp(1rem, 2vw, 1.5rem);
+}
+.activity-stat + .activity-stat { border-left: 1px solid rgb(from var(--ink) r g b / 0.15); }
+.activity-stat:first-child { padding-left: 0; }
+.activity-stat dt {
   font-family: "aktiv-grotesk", sans-serif;
   font-size: 0.625rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgb(from var(--ink) r g b / 0.55);
+  color: rgb(from var(--ink) r g b / 0.6);
 }
-.activity-stats dd {
+.activity-stat dd {
   margin: 0;
-  display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap;
   font-family: 'Lineca', sans-serif;
-  font-size: clamp(2rem, 4vw, 3.25rem);
-  line-height: 1.1;
-  color: var(--ink);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--signal);
   font-variant-numeric: tabular-nums;
 }
-.activity-stats small { font-family: "aktiv-grotesk", sans-serif; font-size: 0.8125rem; color: rgb(from var(--ink) r g b / 0.55); }
+@media (max-width: 760px) {
+  .activity-stats { grid-template-columns: 1fr 1fr; }
+  .activity-stat:nth-child(3) { border-left: 0; padding-left: 0; }
+  .activity-stat:nth-child(n+3) { border-top: 1px solid rgb(from var(--ink) r g b / 0.15); }
+}
 .activity-scroll, .lanes-scroll { position: relative; overflow-x: auto; overflow-y: visible; padding-top: 0.25rem; }
 .activity-grid { display: block; width: 100%; height: auto; }
 .activity-cell { animation: activity-in 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both; transform-box: fill-box; transform-origin: center; }
@@ -5232,7 +5258,8 @@ body {
 .activity-cell.l4, .activity-scale .l4 { fill: var(--signal); background: var(--signal); }
 .activity-cell:hover { stroke: var(--ink); stroke-width: 1.5; }
 .activity-scale {
-  display: flex; align-items: center; justify-content: flex-start; gap: 4px; margin: 0; padding-left: 34px;
+  display: flex; align-items: center; justify-content: flex-start; gap: 4px;
+  width: fit-content; margin: 0 auto 0 0; padding-left: 34px;
   font-family: "aktiv-grotesk", sans-serif; font-size: 0.75rem; color: rgb(from var(--ink) r g b / 0.55);
 }
 .activity-scale i { display: inline-block; width: 12px; height: 12px; border-radius: 2px; }
@@ -5261,7 +5288,6 @@ body {
 /* Project swimlanes */
 .lanes { display: block; width: 100%; min-width: 720px; height: auto; }
 .lanes-grid, .lanes-base { stroke: rgb(from var(--ink) r g b / 0.1); }
-.lanes .lanes-group { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
 .lanes .lane-name { fill: var(--ink); font-size: 12.5px; }
 .lanes .lane.is-featured .lane-name { font-weight: 700; }
 .lanes .lane-total { font-variant-numeric: tabular-nums; }
@@ -5323,19 +5349,15 @@ body {
   border-radius: 2rem;
   color: rgb(from var(--ink) r g b / 0.75);
 }
-.project-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 0.25rem 0 0; }
-.project-links a {
-  font-family: "aktiv-grotesk", sans-serif; font-size: 0.8125rem; font-weight: 700;
-  color: var(--ink); text-decoration: none;
-  border-bottom: 1px solid var(--signal);
-}
-.project-links a:hover { color: var(--signal); }
+.project-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.5rem 0 0; }
 
 /* More projects */
 .project-more { list-style: none; margin: 0; padding: 0; display: grid; }
 .project-more li {
   display: grid;
-  grid-template-columns: minmax(10rem, 0.9fr) minmax(0, 1.8fr) auto;
+  /* Fixed tracks so every row's columns line up, whatever their content */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) 9rem;
+  text-align: left;
   gap: 0.25rem 1.5rem;
   align-items: baseline;
   padding: 0.85rem 0;
@@ -5344,6 +5366,7 @@ body {
 }
 .project-more-name { font-weight: 700; color: var(--ink); font-size: 0.9375rem; }
 .project-more-name a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--signal); }
+.project-more-name, .project-more-pitch, .project-more-context { min-width: 0; justify-self: start; }
 .project-more-pitch { font-size: 0.875rem; color: rgb(from var(--ink) r g b / 0.7); }
 .project-more-context { font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgb(from var(--ink) r g b / 0.5); }
 

@@ -15,7 +15,7 @@ interface Props {
   end:   string
 }
 
-const W = 1000, LANE = 28, LEFT = 210, RIGHT = 52, TOP = 26, BREAK = 30   // BREAK: space above the 'more projects' rows
+const W = 1000, LANE = 28, LEFT = 210, RIGHT = 52, TOP = 26, BREAK = 10   // BREAK: a little space between featured and other projects
 const t = (iso: string) => Date.parse(iso + 'T00:00:00Z')
 const fmt = (iso: string, opts: Intl.DateTimeFormatOptions) => new Date(iso + 'T00:00:00Z').toLocaleDateString('en-US', { ...opts, timeZone: 'UTC' })
 
@@ -74,7 +74,6 @@ export default function ProjectLanes({ lanes, start, end }: Props) {
           const first = lane.days[0]?.[0], last = lane.days[lane.days.length - 1]?.[0]
           return (
             <g key={lane.slug} className={lane.featured ? 'lane is-featured' : 'lane'}>
-              {hasBreak && i === featuredCount && <text x={0} y={rowTop(i) - 6} className="lanes-group">More projects</text>}
               <text x={0} y={base} className="lane-name">{lane.name}</text>
               <line x1={LEFT} x2={W - RIGHT} y1={base + 0.5} y2={base + 0.5} className="lanes-base" />
               <text x={W} y={base} textAnchor="end" className="lane-total">{total}</text>

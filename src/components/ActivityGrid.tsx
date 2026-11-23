@@ -64,15 +64,21 @@ export default function ActivityGrid({ days, names }: Props) {
   return (
     <div className="activity">
       <dl className="activity-stats">
-        <div><dt>Commits this year</dt><dd><OdometerValue value={stats.total.toLocaleString()} /></dd></div>
-        <div><dt>Days building</dt><dd><OdometerValue value={String(stats.active)} /></dd></div>
-        <div><dt>Longest streak</dt><dd><OdometerValue value={String(stats.best)} /><small>days in a row</small></dd></div>
-        <div>
-          <dt>Most commits in a day</dt>
-          <dd>
-            <OdometerValue value={String(stats.busiest[1])} />
-            <small>{new Date(stats.busiest[0] + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</small>
-          </dd>
+        <div className="activity-stat">
+          <dt>Commits this year</dt>
+          <dd><OdometerValue value={stats.total.toLocaleString()} /></dd>
+        </div>
+        <div className="activity-stat">
+          <dt>Days building</dt>
+          <dd><OdometerValue value={String(stats.active)} /></dd>
+        </div>
+        <div className="activity-stat">
+          <dt>Longest streak (days)</dt>
+          <dd><OdometerValue value={String(stats.best)} /></dd>
+        </div>
+        <div className="activity-stat">
+          <dt>Most commits in a day ({new Date(stats.busiest[0] + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' })})</dt>
+          <dd><OdometerValue value={String(stats.busiest[1])} /></dd>
         </div>
       </dl>
 
