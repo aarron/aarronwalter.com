@@ -402,5 +402,6 @@ export const records: VinylRecord[] = [
   { artist: 'Elvis Costello', title: 'My Aim Is True', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1977, releaseId: 2343062 },
   { artist: 'Men At Work', title: 'Business As Usual', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1982, releaseId: 587059 },
   { artist: 'Public Enemy', title: 'Fear Of A Black Planet', label: 'Def Jam Recordings', format: 'LP, Album, RE', rating: 4, released: 2014, releaseId: 6398519 },
+  { artist: 'Split Enz', title: 'Waiata', label: 'A&M Records', format: 'LP, Album, Stereo', rating: 4, released: 1981, releaseId: 3055220 },
   { artist: 'Glenn Miller And His Orchestra', title: 'Glenn Miller Plays Selections From "The Glenn Miller Story" And Other Hits', label: 'RCA', format: 'LP, Album, RE', rating: 4, released: null, releaseId: 6205175 },
 ]
