@@ -83,7 +83,7 @@ export const records: VinylRecord[] = [
   { artist: 'Chuck Berry', title: 'San Francisco Dues', label: 'Chess', format: 'LP, Album, Mon', rating: 5, released: 1971, releaseId: 2714251 },
   { artist: 'Chuck Berry', title: 'One Dozen Berrys', label: 'Chess', format: 'LP, Album, RP, GRT', rating: 4, released: null, releaseId: 2762306 },
   { artist: 'Muddy Waters', title: 'Folk Singer', label: 'Classic Records', format: 'LP, Album, RE, RP, 200', rating: 5, released: 2002, releaseId: 3212018 },
-  { artist: 'Nina Simone', title: 'Nina Simone At Town Hall', label: 'Colpix Records', format: 'LP, Album, Mono', rating: 4, released: 1959, releaseId: 1156721 },
+  { artist: 'Nina Simone', title: 'Nina Simone At Town Hall', label: 'Colpix Records', format: 'LP, Album, Stereo', rating: 4, released: 1959, releaseId: 4142125 },
   { artist: 'Nina Simone', title: 'Nina Simone Sings Ellington', label: 'Colpix Records', format: 'LP, Album', rating: 2, released: 1962, releaseId: 2608678 },
   { artist: 'Nina Simone', title: 'The Amazing Nina Simone', label: 'Colpix Records', format: 'LP, Album, Mono, RP, Abb', rating: 0, released: 1959, releaseId: 1223231 },
   { artist: 'Broken Bells (2)', title: 'Broken Bells', label: 'Columbia', format: 'LP, Album', rating: 5, released: 2010, releaseId: 2183622 },

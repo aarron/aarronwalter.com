@@ -5234,75 +5234,6 @@
       }
     ]
   },
-  "1156721": {
-    "cover": "https://i.discogs.com/dZLj_JQ8z8yiaK5CLcjAa4OJg4mngO0ODKnOA0fo43I/rs:fit/g:sm/q:90/h:455/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNTY3/MjEtMTIwMTgzODE3/OC5naWY.jpeg",
-    "thumb": "https://i.discogs.com/EyWu4OGdBfDgUZ5CWkuomKCAMqOvE8RCjXM585JM34w/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNTY3/MjEtMTIwMTgzODE3/OC5naWY.jpeg",
-    "genres": [
-      "Jazz",
-      "Pop"
-    ],
-    "styles": [
-      "Vocal"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Black Is The Color Of My True Love's Hair",
-        "duration": "3:23"
-      },
-      {
-        "position": "A2",
-        "title": "Exactly Like You",
-        "duration": "3:06"
-      },
-      {
-        "position": "A3",
-        "title": "The Other Woman",
-        "duration": "2:52"
-      },
-      {
-        "position": "A4",
-        "title": "Under The Lowest",
-        "duration": "5:18"
-      },
-      {
-        "position": "A5",
-        "title": "You Can Have Him",
-        "duration": "5:43"
-      },
-      {
-        "position": "B1",
-        "title": "Summertime (Instrumental)",
-        "duration": "2:49"
-      },
-      {
-        "position": "B2",
-        "title": "Summertime (Vocal)",
-        "duration": "2:39"
-      },
-      {
-        "position": "B3",
-        "title": "Cotton Eyed Joe",
-        "duration": "2:51"
-      },
-      {
-        "position": "B4",
-        "title": "Return Home",
-        "duration": "4:55"
-      },
-      {
-        "position": "B5",
-        "title": "Wild Is The Wind",
-        "duration": "3:22"
-      },
-      {
-        "position": "B6",
-        "title": "Fine And Mellow",
-        "duration": "3:18"
-      }
-    ]
-  },
   "1168819": {
     "cover": "https://i.discogs.com/-4GwqJY7c09GVkN-Hmetnd5XLss4NPzqU9oB3okoV90/rs:fit/g:sm/q:90/h:500/w:496/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjg4/MTktMTI1NDU2Nzk0/OC5qcGVn.jpeg",
     "thumb": "https://i.discogs.com/3UCGd4n0rEUcuFH0sZEavm6diOmJxnfp06rh1OzQX0c/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjg4/MTktMTI1NDU2Nzk0/OC5qcGVn.jpeg",
@@ -15772,6 +15703,75 @@
         "position": "B4",
         "title": "Bam",
         "duration": ""
+      }
+    ]
+  },
+  "4142125": {
+    "cover": "https://i.discogs.com/qJXEM8a5wxcoSijKaNyXOQ-w71gJdd0zgAxmZ5Swa0I/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNDIx/MjUtMTUwNDkwMTk5/Ny00NjE4LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/-VmQ-ZeikeDM-sp9nZATcHpQXZhYr_UhOa6Qg40FDo0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNDIx/MjUtMTUwNDkwMTk5/Ny00NjE4LmpwZWc.jpeg",
+    "genres": [
+      "Jazz",
+      "Pop"
+    ],
+    "styles": [
+      "Vocal"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Black Is The Color Of My True Love's Hair",
+        "duration": "3:23"
+      },
+      {
+        "position": "A2",
+        "title": "Exactly Like You",
+        "duration": "3:06"
+      },
+      {
+        "position": "A3",
+        "title": "The Other Woman",
+        "duration": "2:52"
+      },
+      {
+        "position": "A4",
+        "title": "Under The Lowest",
+        "duration": "5:18"
+      },
+      {
+        "position": "A5",
+        "title": "You Can Have Him",
+        "duration": "5:43"
+      },
+      {
+        "position": "B1",
+        "title": "Summertime (Instrumental)",
+        "duration": "2:49"
+      },
+      {
+        "position": "B2",
+        "title": "Summertime",
+        "duration": "2:39"
+      },
+      {
+        "position": "B3",
+        "title": "Cotton Eyed Joe",
+        "duration": "2:51"
+      },
+      {
+        "position": "B4",
+        "title": "Return Home",
+        "duration": "4:55"
+      },
+      {
+        "position": "B5",
+        "title": "Wild Is The Wind",
+        "duration": "3:22"
+      },
+      {
+        "position": "B6",
+        "title": "Fine And Mellow",
+        "duration": "3:18"
       }
     ]
   },
