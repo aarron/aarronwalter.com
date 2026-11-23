@@ -46,10 +46,12 @@ async function fetchWindow(token: string, from: Date, to: Date): Promise<RepoCon
     next: { revalidate: 86400 },
   })
   if (!res.ok) throw new Error(`GitHub GraphQL HTTP ${res.status}`)
+  lastScopes = res.headers.get('x-oauth-scopes') ?? '(fine-grained or none reported)'
   const json = await res.json()
   if (json.errors?.length) throw new Error(json.errors[0].message)
   return json.data.viewer.contributionsCollection.commitContributionsByRepository
 }
+let lastScopes = ''
 
 export async function getActivity(): Promise<Activity> {
   const token = process.env.GITHUB_TOKEN
@@ -98,7 +100,10 @@ export async function getActivity(): Promise<Activity> {
     const liveTotal = days.reduce((a, d) => a + d[1], 0)
     const snapTotal = snapshot.days.reduce((a, d) => a + d[1], 0)
     if (liveTotal < snapTotal * 0.6) {
+      const perRepo = new Map<string, number>()
+      for (const r of results) perRepo.set(r.repository.nameWithOwner, (perRepo.get(r.repository.nameWithOwner) ?? 0) + r.contributions.nodes.reduce((a, n) => a + n.commitCount, 0))
       console.warn(`GitHub returned ${liveTotal} commits vs ${snapTotal} in the snapshot; check the token's access. Using snapshot.`)
+      console.warn(`Token scopes: ${lastScopes}. Repos seen: ${[...perRepo].sort((a, b) => b[1] - a[1]).map(([r, n]) => `${r}=${n}`).join(', ')}`)
       return snapshot
     }
 
