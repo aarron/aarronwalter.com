@@ -374,4 +374,7 @@ export const records: VinylRecord[] = [
   { artist: 'Art Farmer', title: 'The Art Farmer Quintet Plays The Great Jazz Hits', label: 'Columbia', format: 'LP, Album, RE', rating: 4, released: 1980, releaseId: 1168819 },
   { artist: 'Duke Ellington And His Orchestra', title: 'Ellington Indigos', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1958, releaseId: 728154 },
   { artist: 'Various', title: 'Columbia Jazz Masterpieces Sampler Volume II', label: 'Columbia', format: 'LP, Comp, RM', rating: 4, released: 1987, releaseId: 4340124 },
+  { artist: 'Jimmy Smith', title: 'House Party', label: 'Blue Note', format: 'LP, Album, RE, RM, DMM', rating: 4, released: 1985, releaseId: 3833349 },
+  { artist: 'Ramsey Lewis', title: 'Sun Goddess', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1974, releaseId: 2938478 },
+  { artist: 'Sonny Stitt', title: 'Constellation', label: 'Cobblestone', format: 'LP, Album, Promo', rating: 4, released: 1972, releaseId: 9044918 },
 ]

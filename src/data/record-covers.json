@@ -12780,6 +12780,56 @@
       }
     ]
   },
+  "2938478": {
+    "cover": "https://i.discogs.com/dxF4an3t7ZKAkZ6IIA5l2nMxQzK2o7_CWYd-I2-fB8c/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Mzg0/NzgtMTMwODIwMDkz/Ny5qcGVn.jpeg",
+    "thumb": "https://i.discogs.com/vtaXjoX5eaNvVEncQv2Ls4Ob11kvLcSYSytRc3wXOFs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Mzg0/NzgtMTMwODIwMDkz/Ny5qcGVn.jpeg",
+    "genres": [
+      "Jazz",
+      "Funk / Soul"
+    ],
+    "styles": [
+      "Soul-Jazz",
+      "Jazz-Funk"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Sun Goddess",
+        "duration": "8:29"
+      },
+      {
+        "position": "A2",
+        "title": "Living For The City",
+        "duration": "5:20"
+      },
+      {
+        "position": "A3",
+        "title": "Love Song",
+        "duration": "5:53"
+      },
+      {
+        "position": "B1",
+        "title": "Jungle Strut (Obirin Aiye MirelleKoso)",
+        "duration": "4:40"
+      },
+      {
+        "position": "B2",
+        "title": "Hot Dawgit",
+        "duration": "3:00"
+      },
+      {
+        "position": "B3",
+        "title": "Tambura",
+        "duration": "2:53"
+      },
+      {
+        "position": "B4",
+        "title": "Gemini Rising",
+        "duration": "5:50"
+      }
+    ]
+  },
   "2952980": {
     "cover": "https://i.discogs.com/raWsXmFhgvwrOm0oREwm4K1lojRPb5s8b7GLfnw-Ncw/rs:fit/g:sm/q:90/h:514/w:512/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NTI5/ODAtMTQwNDEzMDY0/Ni00MjkyLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/Qvwx-IfDE2CHNRbQnbAnMFQPk42Pja9-o3mrRsBAMuo/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NTI5/ODAtMTQwNDEzMDY0/Ni00MjkyLmpwZWc.jpeg",
@@ -15053,6 +15103,40 @@
         "position": "B5",
         "title": "European Son To Delmore Schwartz",
         "duration": "7:40"
+      }
+    ]
+  },
+  "3833349": {
+    "cover": "https://i.discogs.com/U0CCUZ3MN-dcUz591X7zVf-ZBCdI51DgYV7zLD3V8rE/rs:fit/g:sm/q:90/h:600/w:578/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MzMz/NDktMTM0NjE5MTY2/NS01MTAwLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/EVDlmHiLdSiKjvQA0b2KA80Umn0e_E4w04RxqnJXOhc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4MzMz/NDktMTM0NjE5MTY2/NS01MTAwLmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Hard Bop",
+      "Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Au Private",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Lover Man",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Just Friends",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Blues After All",
+        "duration": ""
       }
     ]
   },
@@ -22733,6 +22817,57 @@
         "position": "B4",
         "title": "Listen Here",
         "duration": "4:13"
+      }
+    ]
+  },
+  "9044918": {
+    "cover": "https://i.discogs.com/j3S_bAtyqtKNPjSO3T0Ru-4W1ihhhHKlnT7pb4-rsSI/rs:fit/g:sm/q:90/h:589/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwNDQ5/MTgtMTQ3MzgwMTY3/My02NjIyLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/fqfpwt8-u8zMSfGVcQpFUz-MhSo06OQ0s0k-YouGbiw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwNDQ5/MTgtMTQ3MzgwMTY3/My02NjIyLmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Constellation",
+        "duration": "5:00"
+      },
+      {
+        "position": "A2",
+        "title": "Ghost Of A Chance",
+        "duration": "4:46"
+      },
+      {
+        "position": "A3",
+        "title": "Webb City",
+        "duration": "3:30"
+      },
+      {
+        "position": "A4",
+        "title": "By Accident",
+        "duration": "6:42"
+      },
+      {
+        "position": "B1",
+        "title": "Ray's Idea",
+        "duration": "3:53"
+      },
+      {
+        "position": "B2",
+        "title": "Casbah",
+        "duration": "5:02"
+      },
+      {
+        "position": "B3",
+        "title": "It's Magic",
+        "duration": "5:11"
+      },
+      {
+        "position": "B4",
+        "title": "Topsy",
+        "duration": "5:35"
       }
     ]
   },
