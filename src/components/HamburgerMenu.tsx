@@ -10,13 +10,13 @@ const PORTFOLIO_LINKS = [
   { label: 'Resolve to Save Lives',  href: '/portfolio/rtsl' },
   { label: 'Consulting',             href: '/portfolio/other' },
   { label: 'My Books',               href: '/portfolio/books' },
+  { label: 'Making',                 href: '/making' },
 ]
 
 const TOP_LINKS = [
   { label: 'Home',      href: '/' },
   { label: 'Reading',   href: '/reading' },
   { label: 'Listening', href: '/listening' },
-  { label: 'Making',    href: '/making' },
   { label: 'Feed',      href: '/notes' },
   { label: 'About',     href: '/about' },
   { label: 'Contact',   href: '/contact' },
@@ -59,7 +59,7 @@ export default function HamburgerMenu() {
     }
   }, [open])
 
-  const isPortfolioActive = pathname.startsWith('/portfolio/')
+  const isPortfolioActive = pathname.startsWith('/portfolio/') || pathname === '/making'
 
   return (
     <>
