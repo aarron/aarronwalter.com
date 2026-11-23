@@ -397,6 +397,5 @@ export const records: VinylRecord[] = [
   { artist: 'Ahmad Jamal', title: 'Reevaluations: The Impulse Years', label: 'Impulse!', format: '2xLP, Comp, Stereo', rating: 4, released: 1973, releaseId: 1351458 },
   { artist: 'Various', title: '20 Bluegrass Originals "Hymns"', label: 'Gusto Records', format: 'LP, Comp', rating: 4, released: 1978, releaseId: 4776001 },
   { artist: 'Roy Orbison', title: 'The Very Best Of Roy Orbison', label: 'Monument', format: 'LP, Comp, Stereo', rating: 4, released: 1966, releaseId: 6144131 },
-  { artist: 'Wilco', title: 'A Ghost Is Born', label: 'Nonesuch', format: '2xLP, Album, RE', rating: 4, released: null, releaseId: 1222645 },
   { artist: 'Glenn Miller And His Orchestra', title: 'Glenn Miller Plays Selections From "The Glenn Miller Story" And Other Hits', label: 'RCA', format: 'LP, Album, RE', rating: 4, released: null, releaseId: 6205175 },
 ]
