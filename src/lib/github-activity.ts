@@ -93,8 +93,14 @@ export async function getActivity(): Promise<Activity> {
         .filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1]).slice(0, 3)
       days.push([day, perDay.get(day) ?? 0, top])
     }
-    // A sudden empty year means the token can't see the repositories; keep the snapshot.
-    if (days.every(d => d[1] === 0)) return snapshot
+    // If the token can see far less than the snapshot did (for example only public
+    // repositories), it is missing access; keep the snapshot rather than shrink the year.
+    const liveTotal = days.reduce((a, d) => a + d[1], 0)
+    const snapTotal = snapshot.days.reduce((a, d) => a + d[1], 0)
+    if (liveTotal < snapTotal * 0.6) {
+      console.warn(`GitHub returned ${liveTotal} commits vs ${snapTotal} in the snapshot; check the token's access. Using snapshot.`)
+      return snapshot
+    }
 
     const byProject = Object.fromEntries(
       [...perProjectDay.entries()].map(([slug, m]) => [slug, [...m.entries()].sort((a, b) => a[0].localeCompare(b[0]))]),
@@ -175,7 +181,10 @@ export async function getCommitTimes(): Promise<CommitTimes> {
         after = history.pageInfo.endCursor
       }
     }))
-    if (stamps.length === 0) return timesSnapshot
+    if (stamps.length < timesSnapshot.points.length * 0.6) {
+      console.warn(`GitHub returned ${stamps.length} commit times vs ${timesSnapshot.points.length} in the snapshot; check the token's access. Using snapshot.`)
+      return timesSnapshot
+    }
 
     const locals = stamps.map(local).sort((a, b) => a.day.localeCompare(b.day))
     const start = locals[0].day
