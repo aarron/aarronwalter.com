@@ -1184,8 +1184,9 @@
     ],
     "styles": [
       "Pop Rock",
+      "Vocal",
       "Psychedelic Rock",
-      "Surf"
+      "Art Rock"
     ],
     "country": "US",
     "tracklist": [
@@ -1254,7 +1255,9 @@
         "title": "Caroline, No",
         "duration": "2:16"
       }
-    ]
+    ],
+    "originalYear": 1966,
+    "genreSource": "master"
   },
   "393261": {
     "cover": "https://i.discogs.com/CqX9WxHsCqnt3HI535F3nev3IgjhY__Ow4He-iVsmSY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5MzI2/MS0xNDAzNTUzNDYz/LTExNDcuanBlZw.jpeg",
@@ -1673,7 +1676,9 @@
         "title": "Jelly Roll",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1959,
+    "genreSource": "master"
   },
   "438688": {
     "cover": "https://i.discogs.com/XRtCMtqvMIyg1zhNE2Spk7qQFWud8FW2o-cRoOLvC_I/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzODY4/OC0xMzczOTk2OTI2/LTc4MTMuanBlZw.jpeg",
@@ -2990,11 +2995,9 @@
     "cover": "https://i.discogs.com/FyQ5lYK1Gc76emd2z3P7NO4tSU14p5nSHZeIHYT6aqo/rs:fit/g:sm/q:90/h:600/w:563/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxMTQz/OS0xMzQ0NTM2NjQ3/LTkwODcuanBlZw.jpeg",
     "thumb": "https://i.discogs.com/GeUSObW5HZsTnPEenBKJ80edjsLE4I4K_oLyX2SocLY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxMTQz/OS0xMzQ0NTM2NjQ3/LTkwODcuanBlZw.jpeg",
     "genres": [
-      "Rock",
-      "Pop"
+      "Rock"
     ],
     "styles": [
-      "Beat",
       "Rock & Roll",
       "Pop Rock"
     ],
@@ -3055,7 +3058,9 @@
         "title": "Everybody's Trying To Be My Baby",
         "duration": "2:24"
       }
-    ]
+    ],
+    "originalYear": 1964,
+    "genreSource": "master"
   },
   "618952": {
     "cover": "https://i.discogs.com/4TUq8_ePEkq6DVl5_RwvnRN-FT8itJ8q6PlWEAdgbOg/rs:fit/g:sm/q:90/h:600/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxODk1/Mi0xNzcwMTMyMTkw/LTgyMTMuanBlZw.jpeg",
@@ -3973,7 +3978,9 @@
         "title": "That's What I Call Love",
         "duration": "4:22"
       }
-    ]
+    ],
+    "originalYear": 1986,
+    "genreSource": "master"
   },
   "813168": {
     "cover": "https://i.discogs.com/nfc8aw0QqmziXFCc8Je50Kg-Kd6Uvfl-Hdc5LhWdjAE/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgxMzE2/OC0xMzMzOTMyMzQ3/LmpwZWc.jpeg",
@@ -5888,10 +5895,13 @@
     "cover": "https://i.discogs.com/r55hTYwSIt51Ni_r8QsH-V4w5-nQU4lvSUPwTVFgnzo/rs:fit/g:sm/q:90/h:600/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjMy/MzEtMTM3MDMwMDQ3/Ny03MDYzLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/nWWhS5BflhkVeOegBTd9NSrFM7ISNDRALQ92dq93-S4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjMy/MzEtMTM3MDMwMDQ3/Ny03MDYzLmpwZWc.jpeg",
     "genres": [
-      "Jazz"
+      "Jazz",
+      "Funk / Soul",
+      "Blues"
     ],
     "styles": [
-      "Soul-Jazz"
+      "Soul-Jazz",
+      "Piano Blues"
     ],
     "country": "US",
     "tracklist": [
@@ -5955,16 +5965,18 @@
         "title": "Solitaire",
         "duration": "3:20"
       }
-    ]
+    ],
+    "originalYear": 1959,
+    "genreSource": "master"
   },
   "1228272": {
     "cover": "https://i.discogs.com/D_U3qPZRG5vCLBpxUYIgbBbihpIN31XUrTzyh305Lyg/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjgy/NzItMTM0OTgyMDkw/MS03NDM4LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/MTi9XXkhjHH2zIGJePZwcA_vniSYEwjy0z1Rm4-d3WA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjgy/NzItMTM0OTgyMDkw/MS03NDM4LmpwZWc.jpeg",
     "genres": [
-      "Jazz"
+      "Jazz",
+      "Pop"
     ],
     "styles": [
-      "Swing",
       "Vocal"
     ],
     "country": "US",
@@ -6019,7 +6031,9 @@
         "title": "It Don't Mean A Thing (If It Ain't Got That Swing)",
         "duration": "2:30"
       }
-    ]
+    ],
+    "originalYear": 1962,
+    "genreSource": "master"
   },
   "1236563": {
     "cover": "https://i.discogs.com/VuQd0vyCv2oQHvYostluOVrWlyEuGQrH688EAa9v5tI/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMzY1/NjMtMTQ1NTgwNDQ4/MC05ODUyLmpwZWc.jpeg",
@@ -7092,7 +7106,9 @@
         "title": "Flamenco Sketches",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1959,
+    "genreSource": "master"
   },
   "1383770": {
     "cover": "https://i.discogs.com/lqIZV0A5H-nFjTqnQTeQrRyWVhr5dC9n0DTjH9LOCTs/rs:fit/g:sm/q:90/h:480/w:480/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODM3/NzAtMTI3ODI1MDQ5/Ny5qcGVn.jpeg",
@@ -7736,12 +7752,11 @@
     "cover": "https://i.discogs.com/ONoDPET8tGQ_rzrgMuhfAlaOSD6xl7pNa5LymB9iiDM/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTg0/ODQtMTQ4OTMzNjQ4/My01NTA3Lm1wbw.jpeg",
     "thumb": "https://i.discogs.com/jtJpEDm05-y4KIroksTJMqrbAEv82NGMQokoxPOsYdA/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTg0/ODQtMTQ4OTMzNjQ4/My01NTA3Lm1wbw.jpeg",
     "genres": [
-      "Rock",
-      "Pop"
+      "Rock"
     ],
     "styles": [
-      "Pop Rock",
-      "Psychedelic Rock"
+      "Psychedelic Rock",
+      "Pop Rock"
     ],
     "country": "US",
     "tracklist": [
@@ -7800,7 +7815,9 @@
         "title": "Tomorrow Never Knows",
         "duration": "3:00"
       }
-    ]
+    ],
+    "originalYear": 1966,
+    "genreSource": "master"
   },
   "1513180": {
     "cover": "https://i.discogs.com/XbOdyHyewtCDxHTW3Nn2ocESF2_OXJuV8SnX3QwTjQg/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTMx/ODAtMTU5ODIwODYy/NS02NjcxLmpwZWc.jpeg",
@@ -7848,7 +7865,9 @@
         "title": "Goin' Down Slow",
         "duration": "4:47"
       }
-    ]
+    ],
+    "originalYear": 1967,
+    "genreSource": "master"
   },
   "1518988": {
     "cover": "https://i.discogs.com/V-lI6Y5IHDGlaE0-v9BvcECt73-tJCht60jZ7mJgCek/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTg5/ODgtMTIyNTYzNjkw/Ny5qcGVn.jpeg",
@@ -9150,9 +9169,7 @@
     "genres": [
       "Hip Hop"
     ],
-    "styles": [
-      "Hip Hop"
-    ],
+    "styles": [],
     "country": "US",
     "tracklist": [
       {
@@ -9230,7 +9247,9 @@
         "title": "B-Boy Bouillabaisse",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1989,
+    "genreSource": "master"
   },
   "1997596": {
     "cover": "https://i.discogs.com/Q2ufHzQKgXBkRH56Tgu3Zc-TM6XlTvvLzSYoEO9rde0/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5OTc1/OTYtMTQwMjE2MTY5/OC04NzQzLmpwZWc.jpeg",
@@ -9406,7 +9425,9 @@
         "title": "Don't Ya Tell Henry",
         "duration": "3:12"
       }
-    ]
+    ],
+    "originalYear": 1975,
+    "genreSource": "master"
   },
   "2015507": {
     "cover": "https://i.discogs.com/O7cLGmNvrR9MG_P6AZt-VrK4jX7zngT9a2eHvW69mtk/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMTU1/MDctMTMyOTExNDky/MC5qcGVn.jpeg",
@@ -10276,7 +10297,9 @@
         "title": "The Mall & Misery",
         "duration": "4:07"
       }
-    ]
+    ],
+    "originalYear": 2010,
+    "genreSource": "master"
   },
   "2194771": {
     "cover": "https://i.discogs.com/u1uWV6ng-BcThlZrM0jxXu6nk2wY3BJYD-WoeBTjSYk/rs:fit/g:sm/q:90/h:596/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxOTQ3/NzEtMTI2OTEzNDI1/MC5qcGVn.jpeg",
@@ -10473,7 +10496,8 @@
     "cover": "https://i.discogs.com/aXymstzbAzLgUHW1bpJPN0l86QHS-oJovHd3R22_SUo/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMTQ0/NjUtMTM3NjA4ODc2/OS00NDMzLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/tAcilvcEXpJbopKUWRI2ODB2NgFyDn-ZRvFVGYI9RrY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyMTQ0/NjUtMTM3NjA4ODc2/OS00NDMzLmpwZWc.jpeg",
     "genres": [
-      "Funk / Soul"
+      "Funk / Soul",
+      "Blues"
     ],
     "styles": [
       "Soul"
@@ -10540,7 +10564,9 @@
         "title": "On Broadway",
         "duration": "2:24"
       }
-    ]
+    ],
+    "originalYear": 1966,
+    "genreSource": "master"
   },
   "2258481": {
     "cover": "https://i.discogs.com/YMyTqGVUi3c9ZZsEmn86bbCJfYQ84dMiWc2sw1Q7AIk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyNTg0/ODEtMTQ2NTMwOTky/MS0xMDAxLmpwZWc.jpeg",
@@ -11074,7 +11100,9 @@
     "genres": [
       "Rock"
     ],
-    "styles": [],
+    "styles": [
+      "Rock & Roll"
+    ],
     "country": "US",
     "tracklist": [
       {
@@ -11112,7 +11140,9 @@
         "title": "Talkin' About My Buddy",
         "duration": "6:53"
       }
-    ]
+    ],
+    "originalYear": 1973,
+    "genreSource": "master"
   },
   "2412093": {
     "cover": "https://i.discogs.com/R3Fdo-ILArsfJvsZtui-8MejEJf8Ur-A9HvU-_KLmX4/rs:fit/g:sm/q:90/h:224/w:225/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MTIw/OTMtMTMyMjUwODk2/My5qcGVn.jpeg",
@@ -12357,7 +12387,9 @@
         "title": "Lonely School Days",
         "duration": "2:36"
       }
-    ]
+    ],
+    "originalYear": 1971,
+    "genreSource": "master"
   },
   "2727189": {
     "cover": "https://i.discogs.com/HmFav4xevKM8PCoj72DhRnXlTKHqH2lVisYGsKFA7cQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3Mjcx/ODktMTM3NDA0MDk0/NC0zMDEzLmpwZWc.jpeg",
@@ -12522,13 +12554,10 @@
     "cover": "https://i.discogs.com/UuEePEboCXWRrgnqRSEHlv-4mefVrWWUxBSdgMZ4JHU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3NjIz/MDYtMTQ3NjAxNjU1/MS0xMTUzLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/LbK0KH1wsgqyAPfxvQFJkjf2zPfpWgaBNFWWSySy-Gc/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3NjIz/MDYtMTQ3NjAxNjU1/MS0xMTUzLmpwZWc.jpeg",
     "genres": [
-      "Rock",
-      "Blues"
+      "Rock"
     ],
     "styles": [
-      "Rock & Roll",
-      "Rockabilly",
-      "Chicago Blues"
+      "Rock & Roll"
     ],
     "country": "US",
     "tracklist": [
@@ -12592,7 +12621,9 @@
         "title": "It Don't Take But A Few Minutes",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1958,
+    "genreSource": "master"
   },
   "2780500": {
     "cover": "https://i.discogs.com/SMa-kN7dUn7NGBu0TtcBhzIvEftgFZqpcppZ6pkAdKY/rs:fit/g:sm/q:90/h:590/w:586/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3ODA1/MDAtMTMwMDcyMTQ2/OC5qcGVn.jpeg",
@@ -12667,7 +12698,9 @@
         "title": "(They Call Me) Doctor Professor Longhair",
         "duration": "4:17"
       }
-    ]
+    ],
+    "originalYear": 1974,
+    "genreSource": "master"
   },
   "2882564": {
     "cover": "https://i.discogs.com/qocjvpLJwjZPCB4nXneRf08l_jJ_hdhANfZOsMunVfw/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4ODI1/NjQtMTMyNTU2NTIz/My5qcGVn.jpeg",
@@ -13220,7 +13253,9 @@
         "title": "I Shall Be Free",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1963,
+    "genreSource": "master"
   },
   "3052756": {
     "cover": "https://i.discogs.com/KQk59LQWk6OiL6KJ1TyHH-Vo6NF0VihKoXXU1X_hH0E/rs:fit/g:sm/q:90/h:452/w:452/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNTI3/NTYtMTMxMzQ5MjUw/Mi5qcGVn.jpeg",
@@ -13370,7 +13405,9 @@
         "title": "It's Nice To Go Trav'ling",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1958,
+    "genreSource": "master"
   },
   "3055220": {
     "cover": "https://i.discogs.com/7dHs5xt3zCOSRroDL8aYiGecobW9jA8D2k0T5vgs2To/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNTUy/MjAtMTcwNjE0MzUz/My0xOTUxLmpwZWc.jpeg",
@@ -13645,7 +13682,9 @@
         "title": "Feel Like Going Home",
         "duration": "3:51"
       }
-    ]
+    ],
+    "originalYear": 1964,
+    "genreSource": "master"
   },
   "3230062": {
     "cover": "https://i.discogs.com/2tYyNK67mQ6vyndYqqb0FEVQ2SEjDMseXZ9VLtGf7oQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyMzAw/NjItMTMyMTQ2MTIz/NS5qcGVn.jpeg",
@@ -13767,11 +13806,12 @@
     "cover": "https://i.discogs.com/r6ojcuQ2ACJQo23E_NA5kU44qJLrEyfBYE9XJ4RJkHY/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMzYy/MzgtMTQzNjU3OTkx/MS02NjMyLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/JFvBMdTF_05LPYuDnqNLhoOWuiix-j1CVQjZYOjXEKs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMzYy/MzgtMTQzNjU3OTkx/MS02NjMyLmpwZWc.jpeg",
     "genres": [
-      "Rock"
+      "Rock",
+      "Folk, World, & Country"
     ],
     "styles": [
-      "Blues Rock",
-      "Folk Rock"
+      "Folk Rock",
+      "Blues Rock"
     ],
     "country": "US",
     "tracklist": [
@@ -13820,7 +13860,9 @@
         "title": "Desolation Row",
         "duration": "11:18"
       }
-    ]
+    ],
+    "originalYear": 1965,
+    "genreSource": "master"
   },
   "3355724": {
     "cover": "https://i.discogs.com/hlcXezydvBw_LFKOxI-RdxPHHFQwbhSNAZKdQt4iku0/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNTU3/MjQtMTY3NzY5Nzk0/MC0yMDcyLmpwZWc.jpeg",
@@ -13830,8 +13872,8 @@
       "Folk, World, & Country"
     ],
     "styles": [
-      "Folk",
-      "Folk Rock"
+      "Folk Rock",
+      "Folk"
     ],
     "country": "US",
     "tracklist": [
@@ -13890,7 +13932,9 @@
         "title": "It's All Over Now, Baby Blue",
         "duration": "4:13"
       }
-    ]
+    ],
+    "originalYear": 1965,
+    "genreSource": "master"
   },
   "3375753": {
     "cover": "https://i.discogs.com/TSuhtf4BMCoYBrXujgdPTtiavBaQtd5Z6e4-CkLtzf0/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzNzU3/NTMtMTMyNzkzNzg4/MC5qcGVn.jpeg",
@@ -15617,7 +15661,9 @@
         "title": "Blues For Hawaiians",
         "duration": "2:25"
       }
-    ]
+    ],
+    "originalYear": 1959,
+    "genreSource": "master"
   },
   "3870843": {
     "cover": "https://i.discogs.com/-tmF8zpecRK9TOpr_O0XVNQ_9p3rgKJZE_eVjAEFKkA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NzA4/NDMtMTY1NTU3NTY2/NS01MzIwLmpwZWc.jpeg",
@@ -15705,7 +15751,9 @@
         "title": "Country Son",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1968,
+    "genreSource": "master"
   },
   "3985122": {
     "cover": "https://i.discogs.com/S3a6swj6F9riNvJM9P6SGQl8SAtJWdS2yXossQTajy8/rs:fit/g:sm/q:90/h:596/w:585/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5ODUx/MjItMTM1MTQyMzU4/MC0zNTk4LmpwZWc.jpeg",
@@ -15787,10 +15835,10 @@
     "cover": "https://i.discogs.com/pug_KZ6NmOJOWJgg1UUgjHsxv8rROMfq2e3aBVqsS98/rs:fit/g:sm/q:90/h:498/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNTk4/NDEtMTM1Mzg4MDUx/MC05NDYzLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/INVJhD3a4ZspNmroAp9GIaYPGNwRh0scfby0LEs9FqU/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNTk4/NDEtMTM1Mzg4MDUx/MC05NDYzLmpwZWc.jpeg",
     "genres": [
-      "Rock"
+      "Rock",
+      "Pop"
     ],
     "styles": [
-      "Pop Rock",
       "Beat"
     ],
     "country": "US",
@@ -15855,7 +15903,9 @@
         "title": "Run For Your Life",
         "duration": "2:21"
       }
-    ]
+    ],
+    "originalYear": 1965,
+    "genreSource": "master"
   },
   "4074635": {
     "cover": "https://i.discogs.com/BRNYbSgKCilgyXXC_Mg-BkG5-kQQKN8GW89a7mXYUlY/rs:fit/g:sm/q:90/h:444/w:451/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNzQ2/MzUtMTQ1MTYyMzc1/OC04MTIxLmpwZWc.jpeg",
@@ -16057,7 +16107,9 @@
         "title": "Fine And Mellow",
         "duration": "3:18"
       }
-    ]
+    ],
+    "originalYear": 1959,
+    "genreSource": "master"
   },
   "4204533": {
     "cover": "https://i.discogs.com/mjVn3MjygXst14L0RHq_ueaTr8xO9_IhDqxgGPXklbA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyMDQ1/MzMtMTYzNDMyNjc1/MS0xNTI3LmpwZWc.jpeg",
@@ -16415,7 +16467,9 @@
         "title": "Solea",
         "duration": "12:14"
       }
-    ]
+    ],
+    "originalYear": 1960,
+    "genreSource": "master"
   },
   "4298327": {
     "cover": "https://i.discogs.com/JKmQtc7BdWkn7LGrRJ9PP3us0O1sMF1K7Q38RWAItQM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQyOTgz/MjctMTM2MTA2MzI2/My0zODM3LmpwZWc.jpeg",
@@ -16700,7 +16754,9 @@
         "title": "High Blood Pressure",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1987,
+    "genreSource": "master"
   },
   "4432083": {
     "cover": "https://i.discogs.com/xybWZ00aY22j9gGgclknUBvE_9Jeg2dX0bWm2yCuwR4/rs:fit/g:sm/q:90/h:505/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0MzIw/ODMtMTM2NDcyMzky/NC04MTg2LmpwZWc.jpeg",
@@ -17386,7 +17442,9 @@
         "title": "Restless Farewell",
         "duration": "5:32"
       }
-    ]
+    ],
+    "originalYear": 1964,
+    "genreSource": "master"
   },
   "4578614": {
     "cover": "https://i.discogs.com/2kHqOFnufx1C6wmT_wAnbhCoJHwK2NwBltW0uhjjIaE/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Nzg2/MTQtMTM2ODk1MjUx/My04NDI4LmpwZWc.jpeg",
@@ -19290,7 +19348,9 @@
         "title": "The Remains Of Rock & Roll",
         "duration": "4:54"
       }
-    ]
+    ],
+    "originalYear": 2014,
+    "genreSource": "master"
   },
   "5351017": {
     "cover": "https://i.discogs.com/SY93ugLD-KquB0-tS19_d-G7Fnk4Tdx5BuMDrD9zH0k/rs:fit/g:sm/q:90/h:600/w:572/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUzNTEw/MTctMTQ4OTE3Mjk3/NS02MTYzLmpwZWc.jpeg",
@@ -19652,7 +19712,9 @@
         "title": "Rouge",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1957,
+    "genreSource": "master"
   },
   "5471827": {
     "cover": "https://i.discogs.com/YoG1FPjVShsEq_D3wuqqPfAc5FwbWefwa6xY_cK4Qzg/rs:fit/g:sm/q:90/h:240/w:320/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU0NzE4/MjctMTM5NDMyMDk5/MS03NDEyLmpwZWc.jpeg",
@@ -20209,7 +20271,6 @@
       "Electronic"
     ],
     "styles": [
-      "Minimal",
       "Experimental"
     ],
     "country": "US",
@@ -20274,7 +20335,9 @@
         "title": "Ohm Sweet Ohm",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1975,
+    "genreSource": "master"
   },
   "5881894": {
     "cover": "https://i.discogs.com/TFnnzneYZlIHNlVZlhnSBCIvxJKgUdxVYm2uL5PNaks/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4ODE4/OTQtMTQwNTMwMTQ2/MC01NTgyLmpwZWc.jpeg",
@@ -20931,12 +20994,15 @@
     "cover": "https://i.discogs.com/wx8xbLylm5dRubvuqogLHw98qiKyxffMbuoEEPF8Mxo/rs:fit/g:sm/q:90/h:200/w:200/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzNDY5/NzUtMTQxOTgyNzkw/OS02NzIwLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/aSbTUQ0g7aqUDr65LEEOqGyqWHesEL0dcz8jU7clCB0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzNDY5/NzUtMTQxOTgyNzkw/OS02NzIwLmpwZWc.jpeg",
     "genres": [
-      "Jazz",
-      "Pop"
+      "Jazz"
     ],
     "styles": [
       "Easy Listening",
-      "Holiday"
+      "Holiday",
+      "Vocal",
+      "Religious",
+      "Ballad",
+      "Swing"
     ],
     "country": "UK & Europe",
     "tracklist": [
@@ -21030,7 +21096,9 @@
         "title": "Ring Those Christmas Bells",
         "duration": "5:00"
       }
-    ]
+    ],
+    "originalYear": 1996,
+    "genreSource": "master"
   },
   "6367043": {
     "cover": "https://i.discogs.com/rAaw0sUBU8AXsaqUUbEigTDlUOwUmbStyX-E1q__MyM/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzNjcw/NDMtMTQ0NzA5ODk2/NS03NzYwLmpwZWc.jpeg",
@@ -21419,7 +21487,6 @@
       "Folk, World, & Country"
     ],
     "styles": [
-      "Ballad",
       "Folk"
     ],
     "country": "US",
@@ -21479,7 +21546,9 @@
         "title": "It Ain't Me Babe",
         "duration": "3:30"
       }
-    ]
+    ],
+    "originalYear": 1964,
+    "genreSource": "master"
   },
   "6524212": {
     "cover": "https://i.discogs.com/O8WU8Zb_j4IINpItBNP9Cb6Fgto1CQCmzuTAweCOe0w/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1MjQy/MTItMTU4NDgyNDM3/Ny01NzYzLmpwZWc.jpeg",
@@ -21881,7 +21950,9 @@
         "title": "A Night In Tunisia",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1963,
+    "genreSource": "master"
   },
   "6942666": {
     "cover": "https://i.discogs.com/OoKUXrJp9lmDaAYVBuJCpM3b-pYIIZM9cTb1ofw6-IY/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY5NDI2/NjYtMTQ1MTU4NTQy/OS03Mjc0LmpwZWc.jpeg",
@@ -22064,7 +22135,9 @@
         "title": "Levee Camp Moan",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1965,
+    "genreSource": "master"
   },
   "7104199": {
     "cover": "https://i.discogs.com/pa0U28G6RZOLJXjIQ1Qrt-wNX1nZMFNqPz0NMCdfee0/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxMDQx/OTktMTYxMjQxMjcy/Ny0yNzUzLnBuZw.jpeg",
@@ -22332,7 +22405,9 @@
         "title": "There's A Boat That's Leaving Soon For New York",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1959,
+    "genreSource": "master"
   },
   "7251433": {
     "cover": "https://i.discogs.com/pz14jz9cYF6MlbY3fsN5wD-HSRqPZQo9ANIRALdtR5E/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcyNTE0/MzMtMTQzNzM4MTA2/NC04NTgyLnBuZw.jpeg",
@@ -23622,12 +23697,11 @@
     "cover": "https://i.discogs.com/Dq7XIu4UFP-9X5SXLg04yUNfZSvEhHvtnv1TLzEmFls/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1MDEx/MTktMTUyNjcwODgz/NS0xMjEyLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/HFeMihCClMyhsmnaPWLDlwjMYPXznfO4qXeCbUZGbgQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1MDEx/MTktMTUyNjcwODgz/NS0xMjEyLmpwZWc.jpeg",
     "genres": [
-      "Rock",
-      "Blues"
+      "Rock"
     ],
     "styles": [
       "Folk Rock",
-      "Rhythm & Blues"
+      "Blues Rock"
     ],
     "country": "US",
     "tracklist": [
@@ -23701,7 +23775,9 @@
         "title": " Sad Eyed Lady Of The Lowlands ",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1966,
+    "genreSource": "master"
   },
   "8540922": {
     "cover": "https://i.discogs.com/euiZAmRl9J4IrJ9snJv0X-zM8XFlS1DVJfXfsBCn--o/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg1NDA5/MjItMTQ2MzY3NDI0/MS0zODAxLmpwZWc.jpeg",
@@ -24549,7 +24625,9 @@
         "title": "Amen",
         "duration": ""
       }
-    ]
+    ],
+    "originalYear": 1965,
+    "genreSource": "master"
   },
   "9418435": {
     "cover": "https://i.discogs.com/fhm6mZKOlxn0dEqRL-PBozCdLA9SVW1cwFncpKNh4zQ/rs:fit/g:sm/q:90/h:596/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk0MTg0/MzUtMTUzNjM3NTE4/MC05NDMzLmpwZWc.jpeg",
@@ -25403,7 +25481,8 @@
       "Folk, World, & Country"
     ],
     "styles": [
-      "Folk Rock"
+      "Folk Rock",
+      "Pop Rock"
     ],
     "country": "US",
     "tracklist": [
@@ -25462,7 +25541,9 @@
         "title": "I Am A Rock",
         "duration": "2:50"
       }
-    ]
+    ],
+    "originalYear": 1966,
+    "genreSource": "master"
   },
   "13804335": {
     "cover": "https://i.discogs.com/5IBJPidQvM7Y8piKZF8HZAd10mOL82m5Kowcj6wcLxg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzODA0/MzM1LTE1NjE0OTAz/NzMtMzI3Ni5qcGVn.jpeg",

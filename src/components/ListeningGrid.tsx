@@ -16,13 +16,7 @@ interface Props {
 }
 
 type SortMode = 'rating' | 'artist' | 'year' | 'genre'
-
-const SORT_LABELS: Record<SortMode, string> = {
-  rating: 'Rating',
-  artist: 'A–Z',
-  year:   'Year',
-  genre:  'Genre',
-}
+type RatingFilter = 'any' | '5' | '4' | '3' | 'unrated'
 
 // Discogs genres, in display order. A record can belong to several; genres and
 // styles come from the album's Discogs master release, so they describe the album
@@ -65,7 +59,7 @@ export default function ListeningGrid({ records }: Props) {
   const [genre,    setGenre]    = useState<string | null>(null)
   const [sort,     setSort]     = useState<SortMode>('rating')
   const [newest,   setNewest]   = useState(false)
-  const [unrated,  setUnrated]  = useState(false)
+  const [ratingFilter, setRatingFilter] = useState<RatingFilter>('any')
   const [mounted,  setMounted]  = useState(false)
   // Local overrides so a new rating shows immediately, before the page reloads.
   const [ratings,  setRatings]  = useState<Record<number, number>>({})
@@ -88,9 +82,9 @@ export default function ListeningGrid({ records }: Props) {
     return withRatings.filter(({ record: r, meta }) =>
       (!q || r.artist.toLowerCase().includes(q) || r.title.toLowerCase().includes(q)) &&
       (!genre || meta.genres?.includes(genre)) &&
-      (!unrated || r.rating === 0)
+      (ratingFilter === 'any' ? true : ratingFilter === 'unrated' ? r.rating === 0 : r.rating >= Number(ratingFilter))
     )
-  }, [withRatings, search, genre, unrated])
+  }, [withRatings, search, genre, ratingFilter])
 
   // Group into titled sections according to the sort mode.
   const sections = useMemo(() => {
@@ -187,45 +181,45 @@ export default function ListeningGrid({ records }: Props) {
 
   return (
     <>
-      {/* ── Sort ── */}
-      <div className="record-sort-nav" role="group" aria-label="Sort records">
-        <span className="record-sort-label">Sort</span>
-        {(Object.keys(SORT_LABELS) as SortMode[]).map(m => (
-          <button
-            key={m}
-            className={`page-filter-btn${sort === m ? ' is-active' : ''}`}
-            onClick={() => setSort(m)}
-            aria-pressed={sort === m}
-          >{SORT_LABELS[m]}</button>
-        ))}
-        {sort === 'year' && (
-          <button className="page-filter-btn" onClick={() => setNewest(n => !n)}>
-            {newest ? 'Newest first ↓' : 'Oldest first ↑'}
-          </button>
-        )}
-      </div>
+      {/* ── Toolbar: sort and filter menus, search ── */}
+      <div className="record-toolbar">
+        <label className="record-menu">
+          <span>Sort</span>
+          <select
+            value={sort === 'year' ? (newest ? 'year-new' : 'year-old') : sort}
+            onChange={e => {
+              const v = e.target.value
+              if (v.startsWith('year')) { setSort('year'); setNewest(v === 'year-new') }
+              else setSort(v as SortMode)
+            }}
+          >
+            <option value="rating">Rating</option>
+            <option value="artist">Artist A–Z</option>
+            <option value="year-old">Year, oldest first</option>
+            <option value="year-new">Year, newest first</option>
+            <option value="genre">Genre</option>
+          </select>
+        </label>
 
-      {/* ── Filters ── */}
-      <div className="page-filter-nav record-filter-nav">
-        <div className="page-filter-btns">
-          <button
-            className={`page-filter-btn${!genre ? ' is-active' : ''}`}
-            onClick={() => setGenre(null)}
-          >All</button>
-          {availableGenres.map(g => (
-            <button
-              key={g}
-              className={`page-filter-btn${genre === g ? ' is-active' : ''}`}
-              onClick={() => setGenre(genre === g ? null : g)}
-            >{g}</button>
-          ))}
-          {CAN_RATE && (
-            <button
-              className={`page-filter-btn record-unrated-btn${unrated ? ' is-active' : ''}`}
-              onClick={() => setUnrated(u => !u)}
-            >Unrated ({unratedCount})</button>
-          )}
-        </div>
+        <label className="record-menu">
+          <span>Genre</span>
+          <select value={genre ?? ''} onChange={e => setGenre(e.target.value || null)}>
+            <option value="">All genres</option>
+            {availableGenres.map(g => <option key={g} value={g}>{g}</option>)}
+          </select>
+        </label>
+
+        <label className="record-menu">
+          <span>Rating</span>
+          <select value={ratingFilter} onChange={e => setRatingFilter(e.target.value as RatingFilter)}>
+            <option value="any">Any rating</option>
+            <option value="5">★★★★★ only</option>
+            <option value="4">★★★★ and up</option>
+            <option value="3">★★★ and up</option>
+            {CAN_RATE && <option value="unrated">Unrated ({unratedCount})</option>}
+          </select>
+        </label>
+
         <input
           type="search"
           className="record-search"
@@ -238,7 +232,7 @@ export default function ListeningGrid({ records }: Props) {
 
       {CAN_RATE && (
         <p className="record-rate-hint">
-          Rating mode (local only): click the stars under a cover, or open a record and press 1–5 to rate and move on, 0 to clear, ← → to browse.
+          Rating mode (local only): filled stars are your rating. Click a star to change it, or click your current rating to clear it. Or open a record and press 1–5 to rate and move on, 0 to clear, ← → to browse.
           {saveError && <span className="record-rate-error"> {saveError}</span>}
         </p>
       )}

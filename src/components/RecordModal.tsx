@@ -109,7 +109,7 @@ export default function RecordModal({ record, meta, year, position, hasPrev, has
   const matrix = details?.identifiers.filter(i => i.type === 'Matrix / Runout') ?? []
   const barcode = details?.identifiers.find(i => i.type === 'Barcode')
   const credits = details ? groupCredits(details.credits) : []
-  const tags = [...(meta.genres ?? []), ...(meta.styles ?? [])]
+  const tags = [...new Set([...(meta.genres ?? []), ...(meta.styles ?? [])])]
 
   return (
     <div className="rm-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-label={`${record.title} by ${record.artist}`}>

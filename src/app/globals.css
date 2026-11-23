@@ -3396,16 +3396,66 @@ body {
   border-color: var(--signal);
 }
 
-/* Record sort row, count, ratings */
-.record-sort-nav {
+/* Record toolbar: menus + search */
+.record-toolbar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.75rem;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 
-.record-sort-label,
+.record-menu {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "aktiv-grotesk", sans-serif;
+  border: 1px solid rgb(from var(--ink) r g b / 0.25);
+  border-radius: 2rem;
+  padding: 0 0 0 0.9rem;
+  height: 2.25rem;
+  transition: border-color 0.15s;
+}
+.record-menu:hover,
+.record-menu:focus-within { border-color: var(--signal); }
+.record-menu::after {  /* chevron */
+  content: '';
+  position: absolute;
+  right: 0.9rem;
+  top: 50%;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-70%) rotate(45deg);
+  color: rgb(from var(--ink) r g b / 0.6);
+  pointer-events: none;
+}
+.record-menu span {
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgb(from var(--ink) r g b / 0.5);
+}
+.record-menu select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 0.4rem 2rem 0.4rem 0;
+  outline: none;
+}
+.record-menu select option { color: #242831; background: #fff; }
+
+.record-toolbar .record-search { margin-left: auto; height: 2.25rem; }
+
 .record-count {
   font-family: "aktiv-grotesk", sans-serif;
   font-size: 0.6875rem;
@@ -3413,11 +3463,13 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: rgb(from var(--ink) r g b / 0.5);
-  margin-right: 0.25rem;
+  margin: 0 0 clamp(1.5rem, 3vw, 2.5rem);
 }
 
-.record-filter-nav { margin-bottom: 1.5rem; }
-.record-count { margin: 0 0 clamp(1.5rem, 3vw, 2.5rem); }
+@media (max-width: 640px) {
+  .record-menu { flex: 1 1 100%; justify-content: space-between; }
+  .record-toolbar .record-search { margin-left: 0; width: 100%; }
+}
 
 .record-card-year { color: rgb(from var(--ink) r g b / 0.5); }
 
@@ -3434,14 +3486,15 @@ body {
 
 .rating-stars {
   display: flex;
+  align-items: center;
   gap: 0.05rem;
   margin: 0.35rem 0 0;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1;
-  color: var(--signal);
 }
-.rating-stars--large { font-size: 1.35rem; margin: 0.75rem 0; }
-.rating-stars-empty { color: rgb(from var(--ink) r g b / 0.18); }
+.rating-stars--large { font-size: 1.5rem; margin: 0.75rem 0; }
+.rating-stars .is-on { color: var(--signal); }
+.rating-stars .is-off { color: rgb(from var(--ink) r g b / 0.35); }
 
 .rating-stars.is-editable button {
   background: none;
@@ -3450,14 +3503,23 @@ body {
   font: inherit;
   line-height: 1;
   cursor: pointer;
-  color: rgb(from var(--ink) r g b / 0.2);
-  transition: color 0.1s, transform 0.1s;
+  transition: transform 0.1s;
 }
-.rating-stars.is-editable button.is-on { color: var(--signal); }
-.rating-stars.is-editable:hover button { color: var(--signal); }
-.rating-stars.is-editable button:hover ~ button { color: rgb(from var(--ink) r g b / 0.2); }
 .rating-stars.is-editable button:hover { transform: scale(1.2); }
 .rating-stars.is-editable button:focus-visible { outline: 2px solid var(--signal); outline-offset: 1px; }
+/* While hovering, the preview is shown at reduced strength so it reads as "not saved yet" */
+.rating-stars.is-previewing .is-on { opacity: 0.7; }
+
+.rating-stars-value {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(from var(--ink) r g b / 0.5);
+  margin-left: 0.4rem;
+}
+.rating-stars--large .rating-stars-value { font-size: 0.75rem; }
 
 /* ── Record modal: the sleeve is the star ──
    Always dark, whatever the site theme, so cover art reads like it does in a listening room. */
@@ -3647,12 +3709,9 @@ body {
   text-wrap: balance;
 }
 .rm-artist { font-size: 1.125rem; margin: 0.6rem 0 0; color: var(--rm-fg); opacity: 0.85; }
-.rm-panel .rating-stars { color: var(--rm-accent); }
-.rm-panel .rating-stars-empty,
-.rm-panel .rating-stars.is-editable button { color: rgb(242 239 232 / 0.2); }
-.rm-panel .rating-stars.is-editable button.is-on,
-.rm-panel .rating-stars.is-editable:hover button { color: var(--rm-accent); }
-.rm-panel .rating-stars.is-editable button:hover ~ button { color: rgb(242 239 232 / 0.2); }
+.rm-panel .rating-stars .is-on { color: var(--rm-accent); }
+.rm-panel .rating-stars .is-off { color: rgb(242 239 232 / 0.35); }
+.rm-panel .rating-stars-value { color: var(--rm-muted); }
 
 .rm-section { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--rm-line); }
 .rm-section h3 {
