@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "eslint",
     "fetch-covers": "node --experimental-strip-types scripts/fetch-book-covers.ts",
-    "fetch-record-covers": "node --experimental-strip-types scripts/fetch-record-covers.ts"
+    "fetch-record-covers": "node --experimental-strip-types scripts/fetch-record-covers.ts",
+    "sync-discogs": "node --experimental-strip-types scripts/sync-discogs-collection.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
