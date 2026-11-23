@@ -404,5 +404,6 @@ export const records: VinylRecord[] = [
   { artist: 'Public Enemy', title: 'Fear Of A Black Planet', label: 'Def Jam Recordings', format: 'LP, Album, RE', rating: 4, released: 2014, releaseId: 6398519 },
   { artist: 'Split Enz', title: 'Waiata', label: 'A&M Records', format: 'LP, Album, Stereo', rating: 4, released: 1981, releaseId: 3055220 },
   { artist: 'R.E.M.', title: 'Out Of Time', label: 'Craft Recordings', format: 'LP, Album, RE, RM', rating: 4, released: 2016, releaseId: 9371803 },
+  { artist: 'Willie Nelson', title: 'Greatest Hits (& Some That Will Be)', label: 'Columbia', format: '2xLP, Comp, Stereo', rating: 4, released: 1981, releaseId: 644616 },
   { artist: 'Glenn Miller And His Orchestra', title: 'Glenn Miller Plays Selections From "The Glenn Miller Story" And Other Hits', label: 'RCA', format: 'LP, Album, RE', rating: 4, released: null, releaseId: 6205175 },
 ]
