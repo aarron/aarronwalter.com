@@ -3,10 +3,12 @@ import Image from 'next/image'
 import FooterWave from '@/components/FooterWave'
 import BrowserFrame from '@/components/BrowserFrame'
 import GitHubIcon from '@/components/GitHubIcon'
+import StackPill from '@/components/StackPill'
 import ActivityGrid from '@/components/ActivityGrid'
 import ProjectLanes from '@/components/ProjectLanes'
 import { projects } from '@/data/projects'
-import { getActivity, type Activity } from '@/lib/github-activity'
+import { getActivity, getCommitTimes, type Activity } from '@/lib/github-activity'
+import CommitClockCanvas from '@/components/CommitClockCanvas'
 
 export const metadata: Metadata = {
   title: 'Making',
@@ -37,12 +39,17 @@ function buildLanes(activity: Activity) {
 const host = (url: string) => url.replace(/^https?:\/\//, '').replace(/\/$/, '')
 
 export default async function MakingPage() {
-  const activity = await getActivity()
+  const [activity, times] = await Promise.all([getActivity(), getCommitTimes()])
+  const since = new Date(times.start + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' })
   const { lanes, axisStart } = buildLanes(activity)
 
   return (
     <>
       <article className="page-article">
+        <CommitClockCanvas data={times} className="page-hero-canvas" />
+        <span className="viz-credit" style={{ bottom: 'auto', top: 'calc(clamp(700px, 95vh, 1200px) * 0.42 + min(27vw, clamp(700px, 95vh, 1200px) * 0.36) + 64px)' }}>
+          Data source: <a href="https://github.com/aarron" target="_blank" rel="noopener noreferrer">my commits on GitHub</a> · {times.points.length.toLocaleString()} commits since {since} · each mark at the hour it was made
+        </span>
         <header className="page-header">
           <h1 className="page-header-title">Making</h1>
           <hr className="page-header-rule" />
@@ -84,6 +91,12 @@ export default async function MakingPage() {
                     {p.context && <p className="project-context">{p.context}</p>}
                     <h3 className="project-name">{p.name}</h3>
                     <p className="project-pitch">{p.pitch}</p>
+                    {(p.url || p.repo) && (
+                      <p className="project-links">
+                        {p.url && <a className="making-btn" href={p.url} target="_blank" rel="noopener noreferrer">Visit {host(p.url)} <span aria-hidden="true">↗</span></a>}
+                        {p.repo && <a className="making-btn making-btn--ghost" href={p.repo} target="_blank" rel="noopener noreferrer"><GitHubIcon /> View the code</a>}
+                      </p>
+                    )}
                   </header>
                   <div className="project-body">
                     <p className="project-about">{p.about}</p>
@@ -92,14 +105,15 @@ export default async function MakingPage() {
                         {p.highlights.map(h => <li key={h}>{h}</li>)}
                       </ul>
                     )}
-                    <ul className="project-stack" aria-label="Built with">
-                      {p.stack.map(s => <li key={s}>{s}</li>)}
-                    </ul>
-                    {(p.url || p.repo) && (
-                      <p className="project-links">
-                        {p.url && <a className="making-btn" href={p.url} target="_blank" rel="noopener noreferrer">Visit {host(p.url)} <span aria-hidden="true">↗</span></a>}
-                        {p.repo && <a className="making-btn making-btn--ghost" href={p.repo} target="_blank" rel="noopener noreferrer"><GitHubIcon /> View the code</a>}
-                      </p>
+                    <div className="project-tools">
+                      <p className="project-tools-label">Built with</p>
+                      <ul className="project-stack">{p.stack.map(t => <StackPill key={t} name={t} />)}</ul>
+                    </div>
+                    {p.services && p.services.length > 0 && (
+                      <div className="project-tools">
+                        <p className="project-tools-label">Connects to</p>
+                        <ul className="project-stack">{p.services.map(t => <StackPill key={t} name={t} />)}</ul>
+                      </div>
                     )}
                   </div>
                 </article>

@@ -8,6 +8,8 @@
 
 import snapshotJson from '@/data/github-activity.json'
 import { projects } from '@/data/projects'
+import commitTimesJson from '@/data/commit-times.json'
+import type { CommitTimes } from '@/components/CommitClockCanvas'
 
 export interface Activity {
   generated: string
@@ -101,5 +103,87 @@ export async function getActivity(): Promise<Activity> {
   } catch (err) {
     console.error('GitHub activity fetch failed; using snapshot.', err)
     return snapshot
+  }
+}
+
+// ── Commit times, for the 24-hour clock behind the page header ──
+
+
+const timesSnapshot = commitTimesJson as unknown as CommitTimes
+const TIME_ZONE = 'America/New_York'   // where the work happens (Athens, Georgia)
+
+const HISTORY = `
+  query($owner: String!, $name: String!, $since: GitTimestamp!, $author: ID!, $after: String) {
+    repository(owner: $owner, name: $name) {
+      defaultBranchRef { target { ... on Commit {
+        history(first: 100, since: $since, author: { id: $author }, after: $after) {
+          nodes { authoredDate }
+          pageInfo { hasNextPage endCursor }
+        }
+      } } }
+    }
+  }`
+
+async function gql(token: string, query: string, variables: Record<string, unknown>) {
+  const res = await fetch('https://api.github.com/graphql', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json', 'User-Agent': 'aarronwalter.com' },
+    body: JSON.stringify({ query, variables }),
+    next: { revalidate: 86400 },
+  })
+  if (!res.ok) throw new Error(`GitHub GraphQL HTTP ${res.status}`)
+  const json = await res.json()
+  if (json.errors?.length) throw new Error(json.errors[0].message)
+  return json.data
+}
+
+// Local date and fractional hour for a UTC timestamp.
+const localParts = new Intl.DateTimeFormat('en-CA', {
+  timeZone: TIME_ZONE, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23',
+})
+function local(ts: string) {
+  const p = Object.fromEntries(localParts.formatToParts(new Date(ts)).map(x => [x.type, x.value]))
+  return { day: `${p.year}-${p.month}-${p.day}`, hour: Number(p.hour) + Number(p.minute) / 60 }
+}
+
+export async function getCommitTimes(): Promise<CommitTimes> {
+  const token = process.env.GITHUB_TOKEN
+  if (!token) return timesSnapshot
+  try {
+    const since = new Date(Date.now() - 365 * DAY)
+    const { viewer } = await gql(token, `{ viewer { id } }`, {})
+    // Repositories with commits in the past year, from the contributions API.
+    const windows: [Date, Date][] = []
+    for (let from = since; from < new Date(); ) {
+      const to = new Date(Math.min(Date.now(), from.getTime() + 30 * DAY))
+      windows.push([from, to]); from = new Date(to.getTime() + 1000)
+    }
+    const repos = new Set(
+      (await Promise.all(windows.map(([f, t]) => fetchWindow(token, f, t)))).flat().map(r => r.repository.nameWithOwner),
+    )
+
+    const stamps: string[] = []
+    await Promise.all([...repos].map(async full => {
+      const [owner, name] = full.split('/')
+      let after: string | null = null
+      for (let page = 0; page < 30; page++) {
+        const data = await gql(token, HISTORY, { owner, name, since: since.toISOString(), author: viewer.id, after })
+        const history = data.repository?.defaultBranchRef?.target?.history
+        if (!history) break
+        for (const n of history.nodes) stamps.push(n.authoredDate)
+        if (!history.pageInfo.hasNextPage) break
+        after = history.pageInfo.endCursor
+      }
+    }))
+    if (stamps.length === 0) return timesSnapshot
+
+    const locals = stamps.map(local).sort((a, b) => a.day.localeCompare(b.day))
+    const start = locals[0].day
+    const t0 = Date.parse(start + 'T00:00:00Z')
+    const points = locals.map(l => [Math.round((Date.parse(l.day + 'T00:00:00Z') - t0) / DAY), Math.round(l.hour * 100) / 100] as [number, number])
+    return { start, days: points[points.length - 1][0] + 1, points }
+  } catch (err) {
+    console.error('GitHub commit-time fetch failed; using snapshot.', err)
+    return timesSnapshot
   }
 }

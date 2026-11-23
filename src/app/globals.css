@@ -5342,13 +5342,21 @@ body {
 }
 .project-highlights li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 0.45rem; height: 2px; background: var(--signal); }
 .project-stack { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0.4rem; }
-.project-stack li {
+.stack-pill {
+  display: inline-flex; align-items: center; gap: 0.4rem;
   font-family: "aktiv-grotesk", sans-serif; font-size: 0.6875rem; letter-spacing: 0.04em;
-  padding: 0.25rem 0.65rem;
+  padding: 0.3rem 0.7rem;
   border: 1px solid rgb(from var(--ink) r g b / 0.2);
   border-radius: 2rem;
-  color: rgb(from var(--ink) r g b / 0.75);
+  color: rgb(from var(--ink) r g b / 0.8);
 }
+.stack-pill svg { flex: none; opacity: 0.85; }
+.project-tools { display: grid; gap: 0.45rem; }
+.project-tools-label {
+  font-family: "aktiv-grotesk", sans-serif; font-size: 0.625rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: rgb(from var(--ink) r g b / 0.5); margin: 0;
+}
+.project-head .project-links { margin-top: 1.25rem; }
 .project-links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.5rem 0 0; }
 
 /* More projects */

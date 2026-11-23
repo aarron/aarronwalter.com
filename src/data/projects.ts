@@ -9,7 +9,8 @@ export interface Project {
   pitch:       string          // one line: what it is
   about:       string          // a short paragraph for someone new to it
   highlights?: string[]
-  stack:       string[]
+  stack:       string[]        // frameworks and infrastructure ("Built with")
+  services?:   string[]        // outside services and APIs it connects to ("Connects to")
   url?:        string          // live site, if public
   repo?:       string          // public GitHub repository URL
   repos:       string[]        // GitHub repos whose commits count toward this project
@@ -33,7 +34,8 @@ export const projects: Project[] = [
       'Real-time co-editing for multiple hosts',
       'A post-interview review of question craft and talk time',
     ],
-    stack: ['Next.js', 'Claude', 'Neon Postgres', 'Stripe', 'PartyServer', 'AssemblyAI'],
+    stack: ['Next.js', 'React', 'TypeScript', 'Neon Postgres', 'Auth.js', 'Cloudflare Workers', 'PartyServer', 'Vercel', 'Vercel Blob', 'Sentry'],
+    services: ['Claude', 'OpenAI', 'Gemini', 'Perplexity', 'AssemblyAI', 'Stripe', 'Resend', 'Google Calendar', 'Calendly', 'Slack'],
     url: 'https://imcurious.io',
     repos: ['Design-Better/showprep'],
   },
@@ -50,7 +52,8 @@ export const projects: Project[] = [
       'Search across everything Design Better has published',
       'Live jobs board and the nine Design Better books',
     ],
-    stack: ['Next.js', 'Tailwind', 'Substack', 'YouTube API'],
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+    services: ['Substack', 'YouTube', 'Resend', 'Design Better Corpus', 'Designer Directory jobs'],
     url: 'https://designbetter.com',
     repos: ['Design-Better/designbetter.com'],
   },
@@ -67,7 +70,7 @@ export const projects: Project[] = [
       'Served to AI assistants over the Model Context Protocol',
       'A build check keeps the site and the MCP server in agreement',
     ],
-    stack: ['Next.js', 'MCP', 'TypeScript'],
+    stack: ['Next.js', 'React', 'TypeScript', 'MCP', 'Zod', 'Vercel'],
     url: 'https://designbetter.style',
     repos: ['Design-Better/dbdesignsystem'],
   },
@@ -85,7 +88,8 @@ export const projects: Project[] = [
       'Booth-fee invoices sent and tracked automatically',
       'Accepted artists build their own public pages',
     ],
-    stack: ['Next.js', 'Neon Postgres', 'Drizzle', 'Resend', 'Twilio', 'PayPal'],
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Drizzle', 'Neon Postgres', 'Zod', 'React Email', 'Sharp', 'Vercel', 'Vercel Blob', 'Vercel Cron'],
+    services: ['Resend', 'Twilio', 'PayPal', 'Claude'],
     url: 'https://athensholidaymarket.com',
     repo: 'https://github.com/aarron/athens-holiday-market',
     repos: ['aarron/athens-holiday-market'],
@@ -101,7 +105,8 @@ export const projects: Project[] = [
       '231 chords with 876 fingerings, 204 scales and 25 songs',
       'A practice app with 956 questions and spaced repetition',
     ],
-    stack: ['Python', 'Next.js', 'Claude', 'Obsidian'],
+    stack: ['Python', 'Next.js', 'React', 'Neon Postgres', 'Obsidian', 'Puppeteer', 'SVGuitar', 'abcjs'],
+    services: ['Claude'],
     repos: ['aarron/guitar-reference', 'aarron/guitar-reference-vault'],
   },
   {
@@ -116,7 +121,8 @@ export const projects: Project[] = [
       'Weather-normalized analysis separates usage from rates',
       'Refreshes daily from the utility and the solar inverters',
     ],
-    stack: ['Next.js', 'Recharts', 'Enphase API'],
+    stack: ['Next.js', 'React', 'TypeScript', 'Recharts', 'PDF.js', 'SheetJS', 'Vercel'],
+    services: ['Enphase', 'Bayou Energy (Georgia Power)', 'Open-Meteo'],
     repos: ['aarron/power-dashboard'],
   },
   {
@@ -130,7 +136,8 @@ export const projects: Project[] = [
       'Text a phone number and the board flips to your message',
       'Off-grid messages arrive over long-range radio',
     ],
-    stack: ['Python', 'Raspberry Pi', 'Meshtastic', 'Twilio'],
+    stack: ['Python', 'Flask', 'Raspberry Pi', 'Meshtastic', 'LoRa radio'],
+    services: ['Twilio', 'Cloudflare Tunnel', 'Vestaboard Local API'],
     repo: 'https://github.com/aarron/vestabridge',
     repos: ['aarron/vestabridge'],
   },
