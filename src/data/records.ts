@@ -364,4 +364,5 @@ export const records: VinylRecord[] = [
   { artist: 'Sex Pistols', title: 'Never Mind The Bollocks Here\'s The Sex Pistols', label: 'Warner Bros. Records', format: 'LP, Album, RP', rating: 4, released: 1979, releaseId: 2741824 },
   { artist: 'Lou Reed', title: 'Berlin', label: 'RCA Victor', format: 'LP, Album, Stereo', rating: 4, released: 1973, releaseId: 4896252 },
   { artist: 'Led Zeppelin', title: 'Led Zeppelin II', label: 'Atlantic', format: 'LP, Album, Stereo, Gat', rating: 4, released: 1969, releaseId: 6524212 },
+  { artist: 'The Rolling Stones', title: 'Beggars Banquet', label: 'London Records', format: 'LP, Album, RE, Stereo, Gat', rating: 4, released: null, releaseId: 6942666 },
 ]
