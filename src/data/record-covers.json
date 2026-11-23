@@ -19972,6 +19972,71 @@
       }
     ]
   },
+  "6144131": {
+    "cover": "https://i.discogs.com/9NKr_oYZQld-4a9h9V7HxU2jks4klsiocAl6WQ5U2eU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNDQx/MzEtMTUxMjk1OTQw/My0xNjc0LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/3zIN_WomNA6im-KOS67BsLal5QyW27XrVtVGhucgpqw/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNDQx/MzEtMTUxMjk1OTQw/My0xNjc0LmpwZWc.jpeg",
+    "genres": [
+      "Rock",
+      "Pop"
+    ],
+    "styles": [
+      "Rock & Roll",
+      "Pop Rock"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Only The Lonely",
+        "duration": "2:24"
+      },
+      {
+        "position": "A2",
+        "title": "Crying",
+        "duration": "2:45"
+      },
+      {
+        "position": "A3",
+        "title": "Running Scared",
+        "duration": "2:10"
+      },
+      {
+        "position": "A4",
+        "title": "It's Over",
+        "duration": "2:47"
+      },
+      {
+        "position": "A5",
+        "title": "Candy Man",
+        "duration": "2:48"
+      },
+      {
+        "position": "B1",
+        "title": "Oh Pretty Woman",
+        "duration": "2:55"
+      },
+      {
+        "position": "B2",
+        "title": "Blue Angel",
+        "duration": "2:50"
+      },
+      {
+        "position": "B3",
+        "title": "In Dreams",
+        "duration": "2:46"
+      },
+      {
+        "position": "B4",
+        "title": "Dream Baby",
+        "duration": "2:35"
+      },
+      {
+        "position": "B5",
+        "title": "Mean Woman Blues",
+        "duration": "2:23"
+      }
+    ]
+  },
   "6161576": {
     "cover": "https://i.discogs.com/8q3uqLEZPmPyvHsCjhLamuiJM3TRrJfn2Fa_u5tFO-8/rs:fit/g:sm/q:90/h:359/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNjE1/NzYtMTQyODMzNjM0/OC05OTg0LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/-luYnK7-PgvsKlH1Jc60Bd8xOqOZuIdSKq3Q4cyibuk/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYxNjE1/NzYtMTQyODMzNjM0/OC05OTg0LmpwZWc.jpeg",
@@ -20112,6 +20177,80 @@
         "position": "B6",
         "title": "It Is No Secret (What God Can Do)",
         "duration": "3:54"
+      }
+    ]
+  },
+  "6205175": {
+    "cover": "https://i.discogs.com/gc02U8B0AM-hgMVERJz6euPuofU2iBu7iSKzwXr9Irk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyMDUx/NzUtMTQxMzY3NTMw/OS02OTU0LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/_sOo9oK8ooccZVIlyt3R_8DG1f2DEThnLAaDDutRH_k/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyMDUx/NzUtMTQxMzY3NTMw/OS02OTU0LmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Big Band",
+      "Swing"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Moonlight Serenade",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "American Patrol",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Pennsylvania Six-Five Thousand",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "In The Mood",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "(I've Got A Gal In) Kalamazoo",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "title": "Boulder Buff",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Tuxedo Junction",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "St. Louis Blues",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "String Of Pearls",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Little Brown Jug",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Farewell Blues",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "King Porter Stomp",
+        "duration": ""
       }
     ]
   },
