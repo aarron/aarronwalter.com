@@ -296,7 +296,7 @@ export const records: VinylRecord[] = [
   { artist: 'Radiohead', title: 'Amnesiac', label: 'XL Recordings', format: '2x12\", Album, RE, 180', rating: 0, released: 2016, releaseId: 8712137 },
 
   // ── Added Aug 2026 ──────────────────────────────────────
-  { artist: 'Kenny Burrell', title: 'Kenny Burrell', label: 'Blue Note', format: 'LP, Album, Mono', rating: 4, released: 1956, releaseId: 3377796 },
+  { artist: 'Kenny Burrell', title: 'Kenny Burrell', label: 'Blue Note', format: 'LP, Album, RE, Mono', rating: 4, released: 2022, releaseId: 24762311 },
   { artist: 'Grant Green', title: 'Solid', label: 'Blue Note', format: 'LP, Album, RE, Stereo', rating: 4, released: 2025, releaseId: 35409259 },
   { artist: 'Tears For Fears', title: 'The Seeds Of Love', label: 'Fontana', format: 'LP, Album, Stereo', rating: 4, released: 1989, releaseId: 1800734 },
   { artist: 'Herb Alpert & Hugh Masekela', title: 'Main Event Live', label: 'A&M Records', format: 'LP, Album', rating: 4, released: 1978, releaseId: 13094495 },
@@ -392,4 +392,5 @@ export const records: VinylRecord[] = [
   { artist: 'Johnny Smith', title: 'Johnny Smith Plays Jimmy Van Heusen', label: 'Roost', format: 'LP, Album, Mono', rating: 4, released: 1955, releaseId: 3606693 },
   { artist: 'Dexter Gordon', title: 'Doin\' Allright', label: 'Blue Note', format: 'LP, Album, RE, RM, DMM', rating: 4, released: 1985, releaseId: 3691474 },
   { artist: 'Stan Getz / Eddie Sauter', title: 'Focus', label: 'Verve Records', format: 'LP, Album, Stereo', rating: 4, released: 1961, releaseId: 1352828 },
+  { artist: 'Herbie Hancock', title: 'Empyrean Isles', label: 'Blue Note', format: 'LP, Album, RE, Stereo', rating: 4, released: 2023, releaseId: 26441327 },
 ]
