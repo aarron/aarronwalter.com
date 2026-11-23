@@ -252,7 +252,7 @@ export const records: VinylRecord[] = [
   { artist: 'Booker T & The MG\'s', title: 'And Now!', label: 'Stax', format: 'LP, Album, Pre', rating: 4, released: 1966, releaseId: 1285290 },
   { artist: 'Father John Misty', title: 'I Love You, Honeybear', label: 'Sub Pop', format: '2x12\", Album', rating: 4, released: 2015, releaseId: 6636294 },
   { artist: 'Iron And Wine', title: 'Our Endless Numbered Days', label: 'Sub Pop', format: 'LP, Album, RP', rating: 4, released: 2005, releaseId: 1135638 },
-  { artist: 'The Stooges', title: 'Raw Power', label: 'Sundazed Music', format: 'LP, Album, RE', rating: 5, released: 2010, releaseId: 2357186 },
+  { artist: 'Iggy And The Stooges', title: 'Raw Power', label: 'Columbia', format: 'LP, Album, Stereo', rating: 5, released: 1973, releaseId: 489717 },
   { artist: 'Charles Mingus', title: 'The Young Rebel', label: 'Swingtime', format: 'LP, Comp', rating: 3, released: 1986, releaseId: 2622872 },
   { artist: 'Stevie Wonder', title: 'Innervisions', label: 'Tamla', format: 'LP, Album', rating: 4, released: 1973, releaseId: 14731419 },
   { artist: 'Stevie Wonder', title: 'Fulfillingness\' First Finale', label: 'Tamla', format: 'LP, Album, Gat', rating: 3, released: 1974, releaseId: 223420 },
