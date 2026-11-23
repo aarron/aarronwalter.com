@@ -401,5 +401,6 @@ export const records: VinylRecord[] = [
   { artist: 'R.E.M.', title: 'Nightswimming', label: 'Warner Bros. Records', format: '12", Single Sided, Picture Disc', rating: 4, released: 1993, releaseId: 587798 },
   { artist: 'Elvis Costello', title: 'My Aim Is True', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1977, releaseId: 2343062 },
   { artist: 'Men At Work', title: 'Business As Usual', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1982, releaseId: 587059 },
+  { artist: 'Public Enemy', title: 'Fear Of A Black Planet', label: 'Def Jam Recordings', format: 'LP, Album, RE', rating: 4, released: 2014, releaseId: 6398519 },
   { artist: 'Glenn Miller And His Orchestra', title: 'Glenn Miller Plays Selections From "The Glenn Miller Story" And Other Hits', label: 'RCA', format: 'LP, Album, RE', rating: 4, released: null, releaseId: 6205175 },
 ]
