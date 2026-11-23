@@ -1596,6 +1596,44 @@
       }
     ]
   },
+  "399639": {
+    "cover": "https://i.discogs.com/AZfuyHQ3MKA9BqCfZRwPRu0D9HzzthqwqDA6zEcOZuM/rs:fit/g:sm/q:90/h:487/w:482/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5OTYz/OS0xNjYwMzg0NDE0/LTg0OTcuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/_xZ_07q27lRE1A0fXvBRHMBJboNjkYtADpS0wPlTEyQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5OTYz/OS0xNjYwMzg0NDE0/LTg0OTcuanBlZw.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Hard Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Autum Leaves",
+        "duration": "11:00"
+      },
+      {
+        "position": "A2",
+        "title": "Love For Sale",
+        "duration": "7:00"
+      },
+      {
+        "position": "B1",
+        "title": "Somethin' Else",
+        "duration": "8:10"
+      },
+      {
+        "position": "B2",
+        "title": "One For The Daddy-O",
+        "duration": "8:20"
+      },
+      {
+        "position": "B3",
+        "title": "Dancing In The Dark",
+        "duration": "4:00"
+      }
+    ]
+  },
   "407398": {
     "cover": "https://i.discogs.com/Ye7__ApIH1TbwSgRS4Yn7WnT8zKcySTWWL7DFs055os/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNzM5/OC0xMzg0ODYyNzkx/LTY1NzguanBlZw.jpeg",
     "thumb": "https://i.discogs.com/ReMsnOkGqgXSQxufEOioy5vh22WZ5cjHpzvUNKLE844/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNzM5/OC0xMzg0ODYyNzkx/LTY1NzguanBlZw.jpeg",
@@ -3173,6 +3211,50 @@
         "position": "B5",
         "title": "Evil",
         "duration": "3:35"
+      }
+    ]
+  },
+  "641119": {
+    "cover": "https://i.discogs.com/mVv2et__usGMG5Cj2_ULMS-iUJ0ww7OORy-Mmk_fd_8/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0MTEx/OS0xMzgwMzA4Mzg3/LTgxNDEuanBlZw.jpeg",
+    "thumb": "https://i.discogs.com/E6WU-jPKyaMWS7Jk28qDaF6e1qye58nAKBAPNqcgQMs/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0MTEx/OS0xMzgwMzA4Mzg3/LTgxNDEuanBlZw.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Bop",
+      "Hard Bop"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Let's Fall In Love",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Anything Goes",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Too Close For Comfort",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "That Old Feeling",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "This Can't Be Love",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Ballad",
+        "duration": ""
       }
     ]
   },
@@ -12608,45 +12690,6 @@
       }
     ]
   },
-  "2883753": {
-    "cover": "https://i.discogs.com/6DYUtqvsS6o6CSx-PH8Tun5WkNTd--slXgy9Yp8ljaw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4ODM3/NTMtMTY3MzM1NDY3/MS03OTQ0LmpwZWc.jpeg",
-    "thumb": "https://i.discogs.com/bQr3govu9W1dyMmyL5yNApqeWYItx792A-ejrlyCVOQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4ODM3/NTMtMTY3MzM1NDY3/MS03OTQ0LmpwZWc.jpeg",
-    "genres": [
-      "Jazz"
-    ],
-    "styles": [
-      "Bop",
-      "Hard Bop"
-    ],
-    "country": "France",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Autumn Leaves",
-        "duration": "10:58"
-      },
-      {
-        "position": "A2",
-        "title": "Love For Sale",
-        "duration": "7:03"
-      },
-      {
-        "position": "B1",
-        "title": "Somethin' Else",
-        "duration": "8:12"
-      },
-      {
-        "position": "B2",
-        "title": "One For The Daddy-O",
-        "duration": "8:21"
-      },
-      {
-        "position": "B3",
-        "title": "Dancing In The Dark",
-        "duration": "4:04"
-      }
-    ]
-  },
   "2886045": {
     "cover": "https://i.discogs.com/QeWdBiEP-sucZ66xqQ3ju4zGffJKpjAI2uyM8UKIyGk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4ODYw/NDUtMTM4MjI2ODQ2/MC0xMjI5LmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/_a0F9-o_9vqBAGR_l-EVz68C55P-dWAxBJlzOKbFqe4/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4ODYw/NDUtMTM4MjI2ODQ2/MC0xMjI5LmpwZWc.jpeg",
@@ -14415,6 +14458,95 @@
         "position": "B2",
         "title": "Broadway",
         "duration": "9:25"
+      }
+    ]
+  },
+  "3574660": {
+    "cover": "https://i.discogs.com/4NBNyTmBEu7ufqXLg9R22sG-BuR06z7cGwZgFPYQmP8/rs:fit/g:sm/q:90/h:600/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NzQ2/NjAtMTU3MDY0MjU2/Ny0xNzQwLmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/WtrFUoC-iN8Q0ZLdPsFg1JoZVZlJT8xrqPjWHf3CZeg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NzQ2/NjAtMTU3MDY0MjU2/Ny0xNzQwLmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Hard Bop",
+      "Modal"
+    ],
+    "country": "US",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Un Poco Loco",
+        "duration": "4:43"
+      },
+      {
+        "position": "A2",
+        "title": "Tin Tin Deo",
+        "duration": "2:44"
+      },
+      {
+        "position": "A3",
+        "title": "Criss Cross",
+        "duration": "2:53"
+      },
+      {
+        "position": "A4",
+        "title": "Bags' Groove",
+        "duration": "3:00"
+      },
+      {
+        "position": "A5",
+        "title": "Cherokee",
+        "duration": "3:23"
+      },
+      {
+        "position": "A6",
+        "title": "Tempus Fugit",
+        "duration": "3:49"
+      },
+      {
+        "position": "B1",
+        "title": "Blue Train",
+        "duration": "10:40"
+      },
+      {
+        "position": "B2",
+        "title": "Maiden Voyage",
+        "duration": "7:55"
+      },
+      {
+        "position": "B3",
+        "title": "Christo Redentor",
+        "duration": "5:40"
+      },
+      {
+        "position": "C1",
+        "title": "Moanin'",
+        "duration": "9:30"
+      },
+      {
+        "position": "C2",
+        "title": "Blues Walk",
+        "duration": "6:40"
+      },
+      {
+        "position": "C3",
+        "title": "Song For My Father",
+        "duration": "7:15"
+      },
+      {
+        "position": "D1",
+        "title": "Back To The Chicken Shack",
+        "duration": "8:00"
+      },
+      {
+        "position": "D2",
+        "title": "Chitlins Con Carne",
+        "duration": "4:00"
+      },
+      {
+        "position": "D3",
+        "title": "The Sidewinder",
+        "duration": "10:20"
       }
     ]
   },

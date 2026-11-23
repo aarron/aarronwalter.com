@@ -60,7 +60,7 @@ export const records: VinylRecord[] = [
   { artist: 'Stanley Turrentine', title: 'Stanley Turrentine', label: 'Blue Note', format: '2xLP, Comp, Gat', rating: 3, released: 1975, releaseId: 2341292 },
   { artist: 'Eddie Gale', title: 'Eddie Gale\'s Ghetto Music', label: 'Blue Note', format: 'LP, Album, Uni', rating: 2, released: 1968, releaseId: 872192 },
   { artist: 'Miles Davis', title: 'Volume 1', label: 'Blue Note', format: 'LP, Comp, Mono, Ltd, RE', rating: 4, released: 1994, releaseId: 7251433 },
-  { artist: 'Cannonball Adderley', title: 'Somethin\' Else', label: 'Blue Note', format: 'LP, Album, RE, RM, DMM', rating: 5, released: 1985, releaseId: 2883753 },
+  { artist: 'Cannonball Adderley', title: 'Somethin\' Else', label: 'Blue Note', format: 'LP, Album, RE, DMM', rating: 5, released: 1985, releaseId: 399639 },
   { artist: 'Dexter Gordon', title: 'Our Man In Paris', label: 'Blue Note', format: 'LP, Album, Mono, Ltd, RE', rating: 4, released: 2013, releaseId: 6805168 },
   { artist: 'Professor Longhair', title: 'Rock \'N\' Roll Gumbo', label: 'Blue Star', format: 'LP, Album, Mono', rating: 4, released: 1974, releaseId: 2780500 },
   { artist: 'Kraftwerk', title: 'Radio-Activity', label: 'Capitol Records', format: 'LP, Album, Win', rating: 4, released: 1975, releaseId: 252195 },
@@ -377,4 +377,6 @@ export const records: VinylRecord[] = [
   { artist: 'Jimmy Smith', title: 'House Party', label: 'Blue Note', format: 'LP, Album, RE, RM, DMM', rating: 4, released: 1985, releaseId: 3833349 },
   { artist: 'Ramsey Lewis', title: 'Sun Goddess', label: 'Columbia', format: 'LP, Album, Stereo', rating: 4, released: 1974, releaseId: 2938478 },
   { artist: 'Sonny Stitt', title: 'Constellation', label: 'Cobblestone', format: 'LP, Album, Promo', rating: 4, released: 1972, releaseId: 9044918 },
+  { artist: 'Various', title: 'The Best Of Blue Note', label: 'Blue Note', format: '2xLP, Comp', rating: 4, released: 1984, releaseId: 3574660 },
+  { artist: 'Gerry Mulligan & Stan Getz', title: 'Gerry Mulligan Meets Stan Getz', label: 'Verve Records', format: 'LP, Album, Mono', rating: 4, released: 1961, releaseId: 641119 },
 ]
