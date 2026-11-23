@@ -23682,6 +23682,74 @@
       }
     ]
   },
+  "9117080": {
+    "cover": "https://i.discogs.com/qMs99ROlII89hudRwO47aqwv7aovgbIj-jnV11X8sO8/rs:fit/g:sm/q:90/h:340/w:340/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxMTcw/ODAtMTQ3NTA3MDY0/Ni00NTg5LmpwZWc.jpeg",
+    "thumb": "https://i.discogs.com/eCgYj-lgXMQe65wTF35fXp3KieWHonOe_jhd2Q7j9YQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxMTcw/ODAtMTQ3NTA3MDY0/Ni00NTg5LmpwZWc.jpeg",
+    "genres": [
+      "Jazz"
+    ],
+    "styles": [
+      "Soul-Jazz"
+    ],
+    "country": "Europe",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Mood Indigo",
+        "duration": "4:01"
+      },
+      {
+        "position": "A2",
+        "title": "Don't Smoke In Bed",
+        "duration": "3:13"
+      },
+      {
+        "position": "A3",
+        "title": "He Needs Me",
+        "duration": "2:30"
+      },
+      {
+        "position": "A4",
+        "title": "Little Girl Blue",
+        "duration": "4:19"
+      },
+      {
+        "position": "A5",
+        "title": "Love Me Or Leave Me",
+        "duration": "3:22"
+      },
+      {
+        "position": "A6",
+        "title": "My Baby Just Cares For Me",
+        "duration": "3:38"
+      },
+      {
+        "position": "B1",
+        "title": "Good Bait",
+        "duration": "5:28"
+      },
+      {
+        "position": "B2",
+        "title": "Plain Gold Ring",
+        "duration": "3:53"
+      },
+      {
+        "position": "B3",
+        "title": "You'll Never Walk Alone",
+        "duration": "3:49"
+      },
+      {
+        "position": "B4",
+        "title": "I Loves You Porgy",
+        "duration": "4:11"
+      },
+      {
+        "position": "B5",
+        "title": "Central Park Blues",
+        "duration": "6:51"
+      }
+    ]
+  },
   "9128247": {
     "cover": "https://i.discogs.com/F5OyE6sI9o6wNr1pQRGqV6Nvt8TMH4SzcMrYXn_Id88/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxMjgy/NDctMTc1OTkyNzI4/Ni0yNTUzLmpwZWc.jpeg",
     "thumb": "https://i.discogs.com/GUtSjZofy3eYbdhkViSjH-uHoe6PFboj5aYnf7fD3RY/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxMjgy/NDctMTc1OTkyNzI4/Ni0yNTUzLmpwZWc.jpeg",
@@ -24736,75 +24804,6 @@
         "position": "B4",
         "title": "Where Have All The Flowers Gone?",
         "duration": "3:00"
-      }
-    ]
-  },
-  "18845746": {
-    "cover": "https://i.discogs.com/Aayc7cqFM9auX3yEPk0XTCrmWceBWGiAmS99bLJqCqU/rs:fit/g:sm/q:90/h:320/w:320/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4ODQ1/NzQ2LTE2MjE3NjU3/MDItOTE5MC5qcGVn.jpeg",
-    "thumb": "https://i.discogs.com/7Me0rmpxRlnY9gSSZ-kYSTyRLxyp4bL-7IoHRdekHQQ/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4ODQ1/NzQ2LTE2MjE3NjU3/MDItOTE5MC5qcGVn.jpeg",
-    "genres": [
-      "Jazz"
-    ],
-    "styles": [
-      "Soul-Jazz",
-      "Cool Jazz"
-    ],
-    "country": "US",
-    "tracklist": [
-      {
-        "position": "A1",
-        "title": "Mood Indigo",
-        "duration": "4:00"
-      },
-      {
-        "position": "A2",
-        "title": "Don't Smoke In Bed",
-        "duration": "3:09"
-      },
-      {
-        "position": "A3",
-        "title": "He Needs Me",
-        "duration": "2:26"
-      },
-      {
-        "position": "A4",
-        "title": "Little Girl Blue",
-        "duration": "4:12"
-      },
-      {
-        "position": "A5",
-        "title": "Love Me Or Leave Me",
-        "duration": "3:18"
-      },
-      {
-        "position": "A6",
-        "title": "My Baby Just Cares For Me",
-        "duration": "3:33"
-      },
-      {
-        "position": "B1",
-        "title": "Good Bait",
-        "duration": "5:25"
-      },
-      {
-        "position": "B2",
-        "title": "Plain Gold Ring",
-        "duration": "3:50"
-      },
-      {
-        "position": "B3",
-        "title": "You'll Never Walk Alone",
-        "duration": "3:58"
-      },
-      {
-        "position": "B4",
-        "title": "I Loves You Porgy",
-        "duration": "4:03"
-      },
-      {
-        "position": "B5",
-        "title": "Central Park Blues",
-        "duration": "3:05"
       }
     ]
   },

@@ -302,7 +302,7 @@ export const records: VinylRecord[] = [
   { artist: 'Herb Alpert & Hugh Masekela', title: 'Main Event Live', label: 'A&M Records', format: 'LP, Album', rating: 4, released: 1978, releaseId: 13094495 },
   { artist: 'Kamasi Washington', title: 'The Epic', label: 'Brainfeeder', format: '3xLP, Box Set, Album', rating: 4, released: 2015, releaseId: 7383499 },
   { artist: 'Wayne Shorter', title: 'Juju', label: 'Blue Note', format: 'LP, Album, Stereo', rating: 4, released: 1965, releaseId: 516995 },
-  { artist: 'Nina Simone', title: 'Little Girl Blue', label: 'Bethlehem Records', format: 'LP, Album, Mono', rating: 4, released: 1959, releaseId: 18845746 },
+  { artist: 'Nina Simone', title: 'Little Girl Blue', label: 'Jazz Images', format: 'LP, Album, Dlx, Ltd, RE, 180', rating: 4, released: 2016, releaseId: 9117080 },
   { artist: 'Wes Montgomery', title: 'Road Song', label: 'A&M Records', format: 'LP, Album', rating: 4, released: 1968, releaseId: 15801473 },
   { artist: 'Wes Montgomery', title: 'Down Here On The Ground', label: 'A&M Records', format: 'LP, Album, Stereo', rating: 4, released: 1968, releaseId: 2096091 },
   { artist: 'Wes Montgomery', title: 'A Day In The Life', label: 'A&M Records', format: 'LP, Album, Stereo', rating: 4, released: 1967, releaseId: 8540922 },
