@@ -47,7 +47,7 @@ export const records: VinylRecord[] = [
   { artist: 'Led Zeppelin', title: 'Untitled', label: 'Atlantic', format: 'LP, Album, RE, RI', rating: 5, released: 1977, releaseId: 1149786 },
   { artist: 'Aretha Franklin With Rev. James Cleveland & The Southern California Community Choir', title: 'Amazing Grace', label: 'Atlantic', format: '2xLP, Album, RI', rating: 5, released: 1972, releaseId: 1043593 },
   { artist: 'Led Zeppelin', title: 'Led Zeppelin III', label: 'Atlantic', format: 'LP, Album, PR', rating: 5, released: 1970, releaseId: 438865 },
-  { artist: 'Led Zeppelin', title: 'Houses Of The Holy', label: 'Atlantic', format: 'LP, Album, Pre', rating: 0, released: 1973, releaseId: 4082265 },
+  { artist: 'Led Zeppelin', title: 'Houses Of The Holy', label: 'Atlantic', format: 'LP, Album, Stereo', rating: 0, released: 1973, releaseId: 577498 },
   { artist: 'Wilson Pickett', title: 'The Sound Of Wilson Pickett', label: 'Atlantic', format: 'LP, Album, Stereo', rating: 0, released: 1967, releaseId: 2269095 },
   { artist: 'Wilson Pickett', title: 'The Best Of Wilson Pickett Vol. II', label: 'Atlantic', format: 'LP, Comp, PR', rating: 3, released: 1971, releaseId: 2616121 },
   { artist: 'INXS', title: 'Kick', label: 'Atlantic', format: 'LP, Album, SP', rating: 4, released: 1987, releaseId: 394397 },
@@ -363,4 +363,5 @@ export const records: VinylRecord[] = [
   { artist: 'Michael Jackson', title: 'The Best Of Michael Jackson', label: 'Motown', format: 'LP, Comp', rating: 4, released: 1975, releaseId: 573221 },
   { artist: 'Sex Pistols', title: 'Never Mind The Bollocks Here\'s The Sex Pistols', label: 'Warner Bros. Records', format: 'LP, Album, RP', rating: 4, released: 1979, releaseId: 2741824 },
   { artist: 'Lou Reed', title: 'Berlin', label: 'RCA Victor', format: 'LP, Album, Stereo', rating: 4, released: 1973, releaseId: 4896252 },
+  { artist: 'Led Zeppelin', title: 'Led Zeppelin II', label: 'Atlantic', format: 'LP, Album, Stereo, Gat', rating: 4, released: 1969, releaseId: 6524212 },
 ]
